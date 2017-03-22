@@ -36,6 +36,10 @@
     <link rel="stylesheet" href="plugins/owl-carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
     <!--[if lt IE 9]><link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/blue.css" id="style_color">
@@ -113,7 +117,7 @@
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#" class="btn-u">Our Work</a>
+                        <a href="#" class="btn-u">Hire us</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -164,7 +168,7 @@
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+                        <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Hire us</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -215,7 +219,7 @@
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+                        <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Hire us</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -230,28 +234,90 @@
         Hay que montárselo bien.<br/>
         Primero simple y luego smart.
     </div>
+
+    <!--=== Contact Form ===-->
+    <div class="container content">
+        <div class="row margin-bottom-30">
+            <div class="col-md-9 mb-margin-bottom-30">
+                <div class="headline"><h2>Contact Form</h2></div>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit landitiis.</p><br />
+
+                <form action="php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
+                    <fieldset class="no-padding">
+                        <label>Name <span class="color-red">*</span></label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="name" id="name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Email <span class="color-red">*</span></label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <div>
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Message <span class="color-red">*</span></label>
+                        <div class="row sky-space-20">
+                            <div class="col-md-11 col-md-offset-0">
+                                <div>
+                                    <textarea rows="8" name="message" id="message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p><button type="submit" class="btn-u">Send Message</button></p>
+                    </fieldset>
+
+                    <div class="message">
+                        <i class="rounded-x fa fa-check"></i>
+                        <p>Your message was successfully sent!</p>
+                    </div>
+                </form>
+            </div><!--/col-md-9-->
+
+            <div class="col-md-3">
+                <!-- Contacts -->
+                <div class="headline"><h2>Contacts</h2></div>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><a href="#"><i class="fa fa-home"></i>5B Streat, City 50987 New Town US</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>info@example.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>1(222) 5x86 x97x</a></li>
+                    <li><a href="#"><i class="fa fa-globe"></i>http://www.example.com</a></li>
+                </ul>
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+    </div><!--/container-->
+    <!--=== End Contact Form ===-->
 </div>
 
 <!-- JS Global Compulsory -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/jquery/jquery-migrate.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="plugins/back-to-top.js"></script>
-<script src="plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="plugins/smoothScroll.js"></script>
 <script type="text/javascript" src="plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
+<script type="text/javascript" src="plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+<script type="text/javascript" src="plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
 
 <!-- JS Customization -->
 <script type="text/javascript" src="js/custom.js"></script>
 
 <!-- JS Page Level -->
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/forms/contact.js"></script>
 <script type="text/javascript" src="js/plugins/fancy-box.js"></script>
 <script type="text/javascript" src="js/plugins/owl-carousel.js"></script>
 <script type="text/javascript" src="js/plugins/revolution-slider.js"></script>
@@ -269,9 +335,9 @@
 </script>
 
 <!--[if lt IE 9]>
-<script src="plugins/respond.js"></script>
-<script src="plugins/html5shiv.js"></script>
-<script src="plugins/placeholder-IE-fixes.js"></script>
+<script type="text/javascript" src="plugins/respond.js"></script>
+<script type="text/javascript" src="plugins/html5shiv.js"></script>
+<script type="text/javascript" src="plugins/placeholder-IE-fixes.js"></script>
 <![endif]-->
 
 </body>
