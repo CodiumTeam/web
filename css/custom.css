@@ -1,1 +1,5 @@
 /* Add here all your css styles (customizations) */
+
+.no-decoration:hover {
+    text-decoration: none;
+}
