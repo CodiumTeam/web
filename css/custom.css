@@ -21,3 +21,23 @@
 .flat-testimonials-in.flat-testimonials-black-bg {
     background: rgba(0,0,0,0.5);
 }
+
+.team-social li a.white {
+    color:  #ffffff;
+    border: 1px solid #ffffff;
+}
+/* LinkedIn */
+.team-social li a.li:hover {
+    color:      #ffffff;
+    background: #0077B5;
+}
+/* Github */
+.team-social li a.gh:hover {
+    color:      #ffffff;
+    background: #888888;
+}
+/* Instagram */
+.team-social li a.in:hover {
+    color:      #ffffff;
+    background: #d10869;
+}
