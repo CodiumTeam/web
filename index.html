@@ -41,7 +41,7 @@
     <!--[if lt IE 9]><link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
     <!-- CSS Page Style -->
-    <link rel="stylesheet" href="css/portfolio-v1.css">
+    <link rel="stylesheet" href="css/portfolio-v2.css">
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/blue.css" id="style_color">
@@ -559,7 +559,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
     <!--=== Clients Block ===-->
     <div id="clients">
-        <div class="container content-sm portfolio-4-columns">
+        <div class="container content-sm">
             <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
                 <h2>Clients</h2>
                 <span class="bordered-icon"><i class="fa fa-th-large"></i></span>
@@ -567,45 +567,114 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     We build your website to realise your vision and we <strong>deliver</strong> the ready product.</p>
             </div>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="view view-tenth">
-                        <img class="img-responsive" src="img/main/img1.jpg" alt="" />
-                        <div class="mask">
-                            <h2>Portfolio</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                        </div>
-                    </div>
+            <!-- Portfolio Sorting Blocks -->
+            <div class="sorting-block">
+                <div class="content-xs">
+                    <ul class="sorting-nav sorting-nav-v1 text-center">
+                        <li class="filter" data-filter="all">All</li>
+                        <li class="filter" data-filter="category_1">UI Design</li>
+                        <li class="filter" data-filter="category_2">Wordpress</li>
+                        <li class="filter" data-filter="category_3">HTML5/CSS3</li>
+                        <li class="filter" data-filter="category_4">Bootstrap 3</li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="view view-tenth">
-                        <img class="img-responsive" src="img/main/img2.jpg" alt="" />
-                        <div class="mask">
-                            <h2>Portfolio</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="view view-tenth">
-                        <img class="img-responsive" src="img/main/img5.jpg" alt="" />
-                        <div class="mask">
-                            <h2>Portfolio</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="view view-tenth">
-                        <img class="img-responsive" src="img/main/img7.jpg" alt="" />
-                        <div class="mask">
-                            <h2>Portfolio</h2>
-                            <p>At vero eos et accusamus et iusto odio dignissimos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/row-->
 
+                <ul class="row sorting-grid">
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_3" data-cat="1">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img11.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_1" data-cat="3">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img12.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1" data-cat="2">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img13.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_4" data-cat="3">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img3.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1 category_4" data-cat="2">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img2.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_4" data-cat="1">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img6.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_3  category_4" data-cat="2">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img8.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_2 category_3" data-cat="1">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img1.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_4 category_2" data-cat="1">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img11.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_2" data-cat="3">
+                        <a href="#">
+                            <img class="img-responsive" src="img/main/img12.jpg" alt="">
+                            <span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+            <!-- End Portfolio Sorting Blocks -->
         </div>
     </div>
     <!--=== End Clients Block ===-->
@@ -680,6 +749,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <script type="text/javascript" src="plugins/back-to-top.js"></script>
 <script type="text/javascript" src="plugins/smoothScroll.js"></script>
 <script type="text/javascript" src="plugins/jquery.parallax.js"></script>
+<script type="text/javascript" src="plugins/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
@@ -697,6 +767,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <script type="text/javascript" src="js/plugins/owl-carousel.js"></script>
 <script type="text/javascript" src="js/plugins/revolution-slider.js"></script>
 <script type="text/javascript" src="js/plugins/style-switcher.js"></script>
+<script type="text/javascript" src="js/pages/page_portfolio.js"></script>
+
 
 <script>
     jQuery(document).ready(function() {
@@ -706,6 +778,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         OwlCarousel.initOwlCarousel();
         StyleSwitcher.initStyleSwitcher();
         RevolutionSlider.initRSfullWidth();
+        PortfolioPage.init();
     });
 </script>
 
