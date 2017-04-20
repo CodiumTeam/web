@@ -3,3 +3,7 @@
 .no-decoration:hover {
     text-decoration: none;
 }
+
+.sky-form fieldset {
+    background: inherit;
+}

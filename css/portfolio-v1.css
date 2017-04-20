@@ -169,7 +169,7 @@
       margin-bottom: 0px;
    }
 
-   /*.portfolio-4-columns .mask p {*/
-      /*display: none;*/
-   /*}*/
+   .portfolio-4-columns .mask p {
+      display: none;
+   }
 }
