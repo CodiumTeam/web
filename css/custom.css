@@ -7,3 +7,13 @@
 .sky-form fieldset {
     background: inherit;
 }
+
+.headline-center-v2.color-white h2,
+.headline-center-v2.color-white p {
+    color: #ffffff;
+}
+
+.flat-testimonials-in.about-us img {
+    width: 192px;
+    height: 192px;
+}
