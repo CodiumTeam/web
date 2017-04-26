@@ -30,7 +30,7 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="plugins/animate.css">
-    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/simple-line-icons/simple-line-icons.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/fancybox/source/jquery.fancybox.css">
     <link rel="stylesheet" href="plugins/owl-carousel/owl-carousel/owl.carousel.css">
@@ -43,6 +43,7 @@
     <!-- CSS Page Style -->
     <link rel="stylesheet" href="css/portfolio-v1.css">
     <link rel="stylesheet" href="css/portfolio-v2.css">
+    <link rel="stylesheet" href="css/pricing_v4.css">
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/blue.css" id="style_color">
@@ -304,39 +305,61 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipiscing elit. Morbi libero libero, imperdiet fringilla </p>
             </div><!--/Headline Center v2-->
 
-            <div class="col-md-4 page-scroll">
-                <a href="#trainings" class="no-decoration">
-                    <div class="service">
-                        <i class="fa fa-compress service-icon"></i>
-                        <div class="desc">
-                            <h4>Training</h4>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+            <!-- Pricing Table v4-->
+            <div class="row pricing-table-v4 no-space-pricing">
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-v4 pricing-v4-green ">
+                        <div class="pricing-v4-head text-center">
+                            <i class="icon-custom icon-color-light rounded-x icon-line icon-graduation"></i>
+                            <h2 class="heading-md">TRAINING & CONSOLIDATION</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                        </div>
+                        <ul class="list-unstyled pricing-v4-content text-center">
+                            <li><span class="icon-hourglass"></span> 2 days of training + 3 days of consolidation</li>
+                            <li><span class="icon-people"></span> 6-15 attendees</li>
+                            <li><span class="icon-location-pin"></span> At your office</li>
+                        </ul>
+                        <div class="pricing-v4-footer">
+                            <a href="#" class="btn-u btn-block text-center">More info</a>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-4 page-scroll">
-                <a href="#development" class="no-decoration">
-                    <div class="service">
-                        <i class="fa fa-cogs service-icon"></i>
-                        <div class="desc">
-                            <h4>Web Development</h4>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-v4 pricing-v4-red">
+                        <div class="pricing-v4-head text-center">
+                            <i class="icon-custom icon-color-light rounded-x icon-line icon-energy"></i>
+                            <h2 class="heading-md">CONSULTING & COACHING</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                        </div>
+                        <ul class="list-unstyled pricing-v4-content text-center">
+                            <li><span class="icon-hourglass"></span> 1-10 days</li>
+                            <li><span class="icon-people"></span> 1-10 participants</li>
+                            <li><span class="icon-location-pin"></span> At your office</li>
+                        </ul>
+                        <div class="pricing-v4-footer">
+                            <a href="#" class="btn-u btn-block text-center">More info</a>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-4 page-scroll">
-                <a href="#coaching" class="no-decoration">
-                    <div class="service">
-                        <i class="fa fa-rocket service-icon"></i>
-                        <div class="desc">
-                            <h4>Coaching</h4>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="pricing-v4 pricing-v4-dark-blue ">
+                        <div class="pricing-v4-head text-center">
+                            <i class="icon-custom icon-color-light rounded-x icon-line icon-screen-desktop"></i>
+                            <h2 class="heading-md">WEB DEVELOPMENT</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                        </div>
+                        <ul class="list-unstyled pricing-v4-content text-center">
+                            <li><span class="icon-hourglass"></span> 2 weeks sprint</li>
+                            <li><span class="icon-people"></span> - </li>
+                            <li><span class="icon-location-pin"></span> Remotely</li>
+                        </ul>
+                        <div class="pricing-v4-footer">
+                            <a href="#" class="btn-u btn-block text-center">More info</a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </div><!--/row-->
+            <!-- End Pricing Table v4-->
         </div>
     </div>
     <!-- End Service Blokcs -->
@@ -491,7 +514,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!--=== End Coaching Block ===-->
 
     <!--=== Methodology Block ===-->
-    <div id="methodology" class="bg-color-light">
+    <div id="methodology" class="bg-color-light"page_pricing_flat>
         <div class="container content-sm">
             <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
                 <h2>Methodology</h2>
