@@ -101,3 +101,7 @@
 .pricing-table-v4 .pricing-v4-footer {
     padding: 0;
 }
+
+.pricing-table-v4 .pricing-v4-footer a {
+    padding: 12px 13px;
+}
