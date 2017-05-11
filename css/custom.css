@@ -116,6 +116,11 @@
     .pricing-table-v4 .pricing-v4-head {
         height:  265px;
     }
+
+    .pricing-coaching .pricing-v4-content li:first-child,
+    .pricing-development .pricing-v4-content li:first-child {
+        line-height: 44.8px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -127,5 +132,10 @@
 @media (max-width: 768px) {
     .pricing-table-v4 .pricing-v4-head {
         height:  inherit;
+    }
+
+    .pricing-coaching .pricing-v4-content li:first-child,
+    .pricing-development .pricing-v4-content li:first-child {
+        line-height: inherit;
     }
 }
