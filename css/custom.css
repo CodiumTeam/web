@@ -67,19 +67,44 @@
 }
 
 /* Services - Pricing Table */
-.pricing-table-v4 .pricing-v4-green .pricing-v4-head,
-.pricing-table-v4 .pricing-v4-green .btn-u {
-    background: rgba(116, 197, 44, 1);
+.pricing-table-v4 .pricing-trainings .pricing-v4-head,
+.pricing-table-v4 .pricing-trainings .btn-u {
+    background: rgb(192, 57, 43);
 }
 
-.pricing-table-v4 .pricing-v4-red .pricing-v4-head,
-.pricing-table-v4 .pricing-v4-red .btn-u {
-    background: rgba(231, 76, 60, 1);
+.pricing-table-v4 .pricing-trainings {
+    border: 1px solid rgba(192, 57, 43, 0.3);
 }
 
-.pricing-table-v4 .pricing-v4-dark-blue .pricing-v4-head,
-.pricing-table-v4 .pricing-v4-dark-blue .btn-u {
-    background: rgba(71, 101, 160, 1);
+.pricing-table-v4 .pricing-trainings .pricing-v4-content li {
+    color: rgb(192, 57, 43);
+}
+
+.pricing-table-v4 .pricing-coaching .pricing-v4-head,
+.pricing-table-v4 .pricing-coaching .btn-u {
+    background: rgb(50, 76, 128);
+
+}
+
+.pricing-table-v4 .pricing-coaching {
+    border: 1px solid rgba(50, 76, 128, 0.3);
+}
+
+.pricing-table-v4 .pricing-coaching .pricing-v4-content li {
+    color: rgb(50, 76, 128);
+}
+
+.pricing-table-v4 .pricing-development .pricing-v4-head,
+.pricing-table-v4 .pricing-development .btn-u {
+    background: rgba(85, 85, 85, 1);
+}
+
+.pricing-table-v4 .pricing-development {
+    border: 1px solid rgba(85, 85, 85, 0.3);
+}
+
+.pricing-table-v4 .pricing-development .pricing-v4-content li {
+    color: rgba(85, 85, 85, 1);
 }
 
 .pricing-table-v4 .pricing-v4-head {
