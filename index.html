@@ -965,9 +965,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="row margin-bottom-30">
             <div class="col-md-9 mb-margin-bottom-30">
                 <div class="headline"><h2>Contacta con nosotros</h2></div>
-                <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un momento para hablar.</p><br />
-
-                <form action="php/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
+                <div id="formulario-contacto">
+                    <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un momento para hablar.</p><br />
+                    <form action="php/demo-contacts-process.php" method="post" id="formulario-contacto-form" class="sky-form contact-style">
                     <fieldset class="no-padding">
                         <label for="name">Nombre <span class="color-red">*</span></label>
                         <div class="row sky-space-20">
@@ -1006,6 +1006,37 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <p>Your message was successfully sent!</p>
                     </div>
                 </form>
+                </div>
+                <div id="gracias-contacto" class="row" style="display: none">
+                    <div id="testimonials-3" class="carousel slide testimonials testimonials-v1 testimonials-bg-dark">
+                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+                            <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
+                                Te contestaremos lo antes posible.</p>
+                            <div class="testimonial-info">
+                                <img class="rounded-2x" src="img/about-us/jordi.jpeg" alt="">
+                                <img class="rounded-2x" src="img/about-us/luis.jpg" alt="">
+                                <span class="testimonial-author">
+												Jordi y Luis
+											</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="error-contacto" class="row" style="display: none">
+                    <div class="carousel slide testimonials testimonials-v1 testimonials-bg-dark">
+                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+                            <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
+                                Por favor mándanos el mensaje via info@dojo.com</p>
+                            <div class="testimonial-info">
+                                <img class="rounded-2x" src="img/about-us/jordi.jpeg" alt="">
+                                <img class="rounded-2x" src="img/about-us/luis.jpg" alt="">
+                                <span class="testimonial-author">
+												Jordi y Luis
+											</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div><!--/col-md-9-->
 
             <div class="col-md-3">
