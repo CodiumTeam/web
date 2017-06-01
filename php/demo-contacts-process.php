@@ -1,20 +1,26 @@
 <?php
-session_start();
-if( isset($_POST['name']) && strtoupper($_POST['captcha']) == $_SESSION['captcha_id'] )
-{
-	$to = 'support@htmlstream.com'; // Replace with your email	
-	$subject = 'Message from website'; // Replace with your $subject
-	$headers = 'From: ' . $_POST['email'] . "\r\n" . 'Reply-To: ' . $_POST['email'];	
-	
-	$message = 'Name: ' . $_POST['name'] . "\n" .
-	           'E-mail: ' . $_POST['email'] . "\n" .
-	           'Subject: ' . $_POST['subject'] . "\n" .
-	           'Message: ' . $_POST['message'];
-	
-	mail($to, $subject, $message, $headers);	
-	if( $_POST['copy'] == 'on' )
-	{
-		mail($_POST['email'], $subject, $message, $headers);
-	}
-}
-?>
+require_once __DIR__ . '/vendor/autoload.php';
+
+$transport = (new Swift_SmtpTransport('in-v3.mailjet.com', 587))
+    ->setUsername('494fb687ee5235f531bc7a6a426bb6c1')
+    ->setPassword('9dd332b69575a9ab2a49cc65a7ee6b20');
+
+$mailer = new Swift_Mailer($transport);
+
+$email = $_POST['email'];
+$name = $_POST['name'];
+$body = $_POST['message'] . "\n\nEmail $email";
+
+$message = (new Swift_Message('Wonderful Subject'))
+    ->setFrom(['luisrovirosa@gmail.com' => $name])
+    ->setTo(['luisrovirosa@gmail.com' => 'Luis Rovirosa', 'jordi.anguela@gmail.com' => 'Jordi Anguela'])
+    ->setBody($body);
+
+$result = $mailer->send($message);
+
+
+
+
+
+
+

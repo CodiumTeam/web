@@ -1,0 +1,8 @@
+{
+    "name": "dojo/web",
+    "description": "Dojo web",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0",
+        "silex/silex": "~2.0"
+    }
+}
