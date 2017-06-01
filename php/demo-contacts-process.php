@@ -10,8 +10,9 @@ $mailer = new Swift_Mailer($transport);
 $email = $_POST['email'];
 $name = $_POST['name'];
 $body = $_POST['message'] . "\n\nEmail $email";
+$subject = '[Dojo] ' . $_POST['action'];
 
-$message = (new Swift_Message('Wonderful Subject'))
+$message = (new Swift_Message($subject))
     ->setFrom(['luisrovirosa@gmail.com' => $name])
     ->setTo(['luisrovirosa@gmail.com' => 'Luis Rovirosa', 'jordi.anguela@gmail.com' => 'Jordi Anguela'])
     ->setBody($body);

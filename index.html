@@ -100,7 +100,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="#clientes">Clientes</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contacto">Contacto</a>
+                            <a href="#contacto" onclick="setContactAction('Navbar')">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -161,7 +161,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Slider 1')">Contáctanos</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -212,7 +212,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#contacto" class="btn-u btn-brd btn-brd-hover btn-u-light">Contáctanos</a>
+                        <a href="#contacto" class="btn-u btn-brd btn-brd-hover btn-u-light" onclick="setContactAction('Slider 2')">Contáctanos</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -263,7 +263,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                          data-captionhidden="off"
                          style="z-index: 6">
                         <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                        <a href="#contacto" class="btn-u btn-brd btn-brd-hover btn-u-light">Contáctanos</a>
+                        <a href="#contacto" class="btn-u btn-brd btn-brd-hover btn-u-light" onclick="setContactAction('Slider 3')">Contáctanos</a>
                     </div>
                 </li>
                 <!-- END SLIDE -->
@@ -384,7 +384,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Cómo testear código legado</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Formación TDD');">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-50">
@@ -398,7 +398,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Aprende a identificar malos olores</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Formación Patrones')">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-50">
@@ -412,7 +412,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Despliega, ejecuta y gestiona tus procesos</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Formación Bonita')">Contáctanos</a>
                     </div>
                 </div>
             </div><!--/end row-->
@@ -430,7 +430,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Testing unitario y End2End</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Formación Javascript')">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-50 col-md-offset-1">
@@ -445,7 +445,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Mejora el rendimiento de tus aplicaciones</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Formación PHP')">Contáctanos</a>
                     </div>
                 </div>
             </div><!--/end row-->
@@ -475,7 +475,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Compromiso a medio y largo plazo</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Mentorización')">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-md-6 md-margin-bottom-50">
@@ -489,7 +489,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Identificar problemas estructurales desapercibidos</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Consultoría')">Contáctanos</a>
                     </div>
                 </div>
             </div><!--/end row-->
@@ -519,7 +519,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Aliquam et orci orci</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Desarrollo front-end')">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-md-6 md-margin-bottom-50">
@@ -533,7 +533,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li><i class="fa fa-angle-right"></i>Aliquam et orci orci</li>
                     </ul>
                     <div class="text-center page-scroll">
-                        <a href="#contacto" class="btn-u">Contáctanos</a>
+                        <a href="#contacto" class="btn-u" onclick="setContactAction('Desarrollo back-end')">Contáctanos</a>
                     </div>
                 </div>
             </div><!--/end row-->
@@ -614,7 +614,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </div><!--/end row-->
 
             <div class="text-center page-scroll">
-                <a href="#contacto" class="btn-u">Contáctanos</a>
+                <a href="#contacto" class="btn-u" onclick="setContactAction('Metodología')">Contáctanos</a>
             </div>
         </div>
     </div>
@@ -986,6 +986,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 </div>
                             </div>
                         </div>
+
+                        <input type="hidden" name="action" id="contact-action" class="form-control" value="Formulario de contacto">
 
                         <label for="message">Mensaje <span class="color-red">*</span></label>
                         <div class="row sky-space-20">
