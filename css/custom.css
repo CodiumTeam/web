@@ -179,9 +179,9 @@
 }
 
 .testimonials-bg-dark p.alert {
-    color: #a94442 ;
-    background-color: #f2dede ;
-    border-color: #ebccd1 ;
+    color:            #a94442;
+    background-color: #f2dede;
+    border-color:     #ebccd1;
 }
 
 .testimonials.testimonials-bg-dark .item p.alert:after {
@@ -189,9 +189,20 @@
 }
 
 .fullscreen-static-image1 {
-    background: url(https://static.wixstatic.com/media/4c3a66_aff49e6c563b444482b3b275d2dda881~mv2.jpg) no-repeat center center fixed;
+    background:              url(https://static.wixstatic.com/media/4c3a66_aff49e6c563b444482b3b275d2dda881~mv2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+}
+
+#landing-screen .container {
+    position: absolute;
+    bottom:   60px;
+    left:     50%;
+}
+
+#landing-screen .row {
+    position: relative;
+    left:     -50%;
 }
