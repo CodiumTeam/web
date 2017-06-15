@@ -199,10 +199,10 @@
 #landing-screen .container {
     position: absolute;
     bottom:   60px;
-    left:     50%;
+    right:    50%;
 }
 
 #landing-screen .row {
     position: relative;
-    left:     -50%;
+    right:    -50%;
 }
