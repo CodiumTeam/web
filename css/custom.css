@@ -206,3 +206,16 @@
     position: relative;
     right:    -50%;
 }
+
+.reason-why {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.reason-why i {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.reason-why h2,
+.reason-why h4 {
+    color: #FFFFFF;
+}
