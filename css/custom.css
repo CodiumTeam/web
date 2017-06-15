@@ -203,12 +203,13 @@
 }
 
 #landing-screen .row {
-    position: relative;
-    right:    -50%;
+    position:   relative;
+    right:      -50%;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .reason-why {
-    background: rgba(0, 0, 0, 0.4);
+
 }
 
 .reason-why i {
