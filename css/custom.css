@@ -187,3 +187,11 @@
 .testimonials.testimonials-bg-dark .item p.alert:after {
     border-top-color: #f2dede;
 }
+
+.fullscreen-static-image1 {
+    background: url(https://static.wixstatic.com/media/4c3a66_aff49e6c563b444482b3b275d2dda881~mv2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
