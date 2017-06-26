@@ -222,7 +222,7 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation:portrait) {
     #landing-screen .container {
         /*position: relative;*/
         bottom:        0;
@@ -235,6 +235,38 @@
         padding-top: 45px;
     }
 
+    .content-boxes-v6 i {
+        width:       60px;
+        height:      60px;
+        font-size:   30px;
+        line-height: 30px;
+        padding:     15px;
+    }
+
+    .landing-horizontal {
+        display: none;
+    }
+}
+
+@media (orientation:landscape) {
+    .landing-mobile-vertical {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+    #landing-screen .container {
+        width: 100%;
+        /*position: relative;*/
+        bottom:        0;
+        right:         0;
+        padding-right: 15px;
+        padding-left:  15px;
+    }
+
+    #landing-screen .row{
+        right:         0;
+    }
     .content-boxes-v6 i {
         width:       60px;
         height:      60px;
