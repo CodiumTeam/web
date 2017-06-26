@@ -226,7 +226,8 @@
     #landing-screen .container {
         /*position: relative;*/
         bottom:        0;
-        right:         0;
+        right:         inherit;
+        width:         100%;
         padding-right: 15px;
         padding-left:  15px;
     }
