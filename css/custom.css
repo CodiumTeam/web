@@ -248,7 +248,7 @@
     }
 }
 
-@media (orientation:landscape) {
+@media all and (orientation:landscape) {
     .landing-mobile-vertical {
         display: none;
     }
