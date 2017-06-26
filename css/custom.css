@@ -243,6 +243,10 @@
         padding:     15px;
     }
 
+    #landing-screen .row{
+        right:         0;
+    }
+
     .landing-horizontal {
         display: none;
     }
