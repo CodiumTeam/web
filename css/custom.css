@@ -222,7 +222,7 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 768px) and (orientation:portrait) {
+@media (max-width: 767px) and (orientation:portrait) {
     #landing-screen .container {
         /*position: relative;*/
         bottom:        0;
@@ -252,13 +252,19 @@
     }
 }
 
+@media (min-width: 768px) and (orientation:portrait) {
+    .landing-mobile-vertical {
+        display: none;
+    }
+}
+
 @media all and (orientation:landscape) {
     .landing-mobile-vertical {
         display: none;
     }
 }
 
-@media (max-width: 768px) and (orientation:landscape) {
+@media (max-width: 767px) and (orientation:landscape) {
     #landing-screen .container {
         width: 100%;
         /*position: relative;*/
