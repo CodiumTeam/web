@@ -196,6 +196,10 @@
     background-size:         cover;
 }
 
+#landing-screen {
+    height: 2000px;
+}
+
 #landing-screen .container {
     position: absolute;
     bottom:   60px;
@@ -222,7 +226,7 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 767px) and (orientation:portrait) {
+@media (max-width: 767px) and (orientation: portrait) {
     #landing-screen .container {
         /*position: relative;*/
         bottom:        0;
@@ -244,8 +248,8 @@
         padding:     15px;
     }
 
-    #landing-screen .row{
-        right:         0;
+    #landing-screen .row {
+        right: 0;
     }
 
     .landing-horizontal {
@@ -253,21 +257,21 @@
     }
 }
 
-@media (min-width: 768px) and (orientation:portrait) {
+@media (min-width: 768px) and (orientation: portrait) {
     .landing-mobile-vertical {
         display: none;
     }
 }
 
-@media all and (orientation:landscape) {
+@media all and (orientation: landscape) {
     .landing-mobile-vertical {
         display: none;
     }
 }
 
-@media (max-width: 767px) and (orientation:landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
     #landing-screen .container {
-        width: 100%;
+        width:         100%;
         /*position: relative;*/
         bottom:        0;
         right:         0;
@@ -275,9 +279,10 @@
         padding-left:  15px;
     }
 
-    #landing-screen .row{
-        right:         0;
+    #landing-screen .row {
+        right: 0;
     }
+
     .content-boxes-v6 i {
         width:       60px;
         height:      60px;
@@ -287,6 +292,12 @@
     }
 }
 
-#landing-screen {
-    height: 2000px;
+#doorbell-button {
+    right:         0;
+    top:           40%;
+    height:        45px;
+    transform:     rotate(-90deg);
+    margin-right:  -29px;
+    padding-left:  15px;
+    padding-right: 15px;
 }
