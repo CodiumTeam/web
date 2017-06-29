@@ -13,6 +13,10 @@ function moreInfo(service) {
     trackEvent('services', 'more_information', service);
 }
 
+function socialNetwork(name, networkName) {
+    trackEvent('social_network', networkName, name);
+}
+
 function setContactAction(actionMessage) {
     $('#contact-action').val(actionMessage);
     trackEvent('contact_us', 'show_form', actionMessage);
