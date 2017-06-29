@@ -5,6 +5,10 @@ function trackEvent(category, action, label) {
     ga('send', 'event', category, action, label);
 }
 
+function navigateTo(destination) {
+    trackEvent('navar', 'navigate', destination);
+}
+
 function setContactAction(actionMessage) {
     $('#contact-action').val(actionMessage);
     trackEvent('contact_us', 'show_form', actionMessage);
