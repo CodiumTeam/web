@@ -1,8 +1,9 @@
 /* Write here your custom javascript codes */
 'use strict';
 
-function setContactAction($actionMessage) {
-    $('#contact-action').val($actionMessage);
+function setContactAction(actionMessage) {
+    $('#contact-action').val(actionMessage);
+    ga('send', 'event', 'contact_us', 'show_form', actionMessage);
 }
 
 $('#formulario-contacto-form').submit(function (e) {
