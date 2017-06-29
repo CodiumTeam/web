@@ -9,6 +9,10 @@ function navigateTo(destination) {
     trackEvent('navar', 'navigate', destination);
 }
 
+function moreInfo(service) {
+    trackEvent('services', 'more_information', service);
+}
+
 function setContactAction(actionMessage) {
     $('#contact-action').val(actionMessage);
     trackEvent('contact_us', 'show_form', actionMessage);
@@ -31,14 +35,4 @@ $('#formulario-contacto-form').submit(function (e) {
             $("html, body").animate({scrollTop: $(document).height()}, 1000);
         });
     e.preventDefault();
-});
-
-$('#training-more-info-btn').click(function () {
-    trackEvent('services', 'more_information', 'training');
-});
-$('#coaching-more-info-btn').click(function () {
-    trackEvent('services', 'more_information', 'coaching');
-});
-$('#development-more-info-btn').click(function () {
-    trackEvent('services', 'more_information', 'development');
 });
