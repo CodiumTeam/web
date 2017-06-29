@@ -23,3 +23,13 @@ $('#formulario-contacto-form').submit(function (e) {
         });
     e.preventDefault();
 });
+
+$('#training-more-info-btn').click(function () {
+    ga('send', 'event', 'services', 'more_information', 'training');
+});
+$('#coaching-more-info-btn').click(function () {
+    ga('send', 'event', 'services', 'more_information', 'coaching');
+});
+$('#development-more-info-btn').click(function () {
+    ga('send', 'event', 'services', 'more_information', 'development');
+});
