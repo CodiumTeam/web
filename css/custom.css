@@ -319,7 +319,7 @@ p.about-us-description {
 
 .bottom-contact-btn {
     position: absolute;
-    bottom:   0;
+    bottom:   20px;
     left:     50%;
 }
 
@@ -328,6 +328,8 @@ p.about-us-description {
     left:     -50%;
 }
 
-.padding-bottom-40 {
-    padding-bottom: 40px;
+.jl-tag-box {
+    margin-bottom:  0;
+    padding-bottom: 60px;
+    height:         100%;
 }
