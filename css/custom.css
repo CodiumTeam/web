@@ -310,3 +310,24 @@ p.about-us-description {
     padding-left:  15px;
     padding-right: 15px;
 }
+
+.equal-height {
+    display:   flex;
+    display:   -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.bottom-contact-btn {
+    position: absolute;
+    bottom:   0;
+    left:     50%;
+}
+
+.bottom-contact-btn-link {
+    position: relative;
+    left:     -50%;
+}
+
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
