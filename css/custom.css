@@ -26,6 +26,7 @@ p.about-us-description {
 }
 
 .about-us-panel {
+    height:     100%;
     background: rgba(0, 0, 0, 0.5);
     padding:    30px;
     text-align: center;
