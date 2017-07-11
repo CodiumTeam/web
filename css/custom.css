@@ -16,6 +16,11 @@
     color: #ffffff;
 }
 
+p.about-us-description {
+    background: rgba(0, 0, 0, 0.5);
+    padding:    20px 5px;
+}
+
 .about-us-panel {
     background: rgba(0, 0, 0, 0.5);
     padding:    30px;
