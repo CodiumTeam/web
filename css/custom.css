@@ -11,6 +11,10 @@
     background: inherit;
 }
 
+#navbar-home:before {
+    content: "";
+}
+
 .headline-center-v2.color-white h2,
 .headline-center-v2.color-white p {
     color: #ffffff;
