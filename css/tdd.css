@@ -1,3 +1,7 @@
+body {
+    font-size: 16px;
+}
+
 #landing {
     background-image: url("../img/tdd/landing.jpg");
     background-size:  cover;
@@ -37,4 +41,7 @@
 
 .timeline-v2 > li .cbp_tmlabel h2 {
     text-transform: none;
+}
+.timeline-v2 > li .cbp_tmlabel {
+    line-height: 1.8;
 }
