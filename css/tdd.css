@@ -1,0 +1,14 @@
+#landing {
+    background-image: url("../img/tdd/landing.jpg");
+    background-size:  cover;
+}
+
+#landing h1,
+#landing h2,
+#landing p {
+    color: #FFFFFF;
+}
+
+#tdd-contact-form {
+   border: none;
+}
