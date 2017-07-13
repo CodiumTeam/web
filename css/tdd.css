@@ -34,3 +34,7 @@
     line-height: 0.9;
     padding-top: 10px;
 }
+
+.timeline-v2 > li .cbp_tmlabel h2 {
+    text-transform: none;
+}
