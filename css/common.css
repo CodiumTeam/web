@@ -1,0 +1,10 @@
+body,
+.one-page-header .navbar-nav > li > a,
+.pricing-table-v4 .pricing-v4-content li,
+.btn-u {
+    font-size: 16px;
+}
+
+#navbar-home:before {
+    content: "";
+}
