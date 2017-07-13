@@ -10,5 +10,10 @@
 }
 
 #tdd-contact-form {
-   border: none;
+    border: none;
+}
+
+.summary-icon {
+    padding-top: 10px;
+    text-align:  right;
 }
