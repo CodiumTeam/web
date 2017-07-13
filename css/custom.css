@@ -58,9 +58,9 @@ p.about-us-description {
 }
 
 .about-us-panel p {
-    color:       #fff;
-    position:    relative;
-    text-align:  justify;
+    color:      #fff;
+    position:   relative;
+    text-align: justify;
 }
 
 .team-social li a.white {
@@ -153,7 +153,7 @@ p.about-us-description {
 
 @media (min-width: 1200px) {
     .pricing-table-v4 .pricing-v4-head {
-        height: 245px;
+        height: 275px;
     }
 
     .reasons-subtitle {
@@ -163,7 +163,7 @@ p.about-us-description {
 
 @media (max-width: 1200px) {
     .pricing-table-v4 .pricing-v4-head {
-        height: 265px;
+        height: 300px;
     }
 
     .pricing-coaching .pricing-v4-content li:first-child,
@@ -174,7 +174,8 @@ p.about-us-description {
 
 @media (max-width: 992px) {
     .pricing-table-v4 .pricing-v4-head {
-        height: 305px;
+        height:  320px;
+        padding: 30px 15px 0 15px;
     }
 }
 
