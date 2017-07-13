@@ -20,11 +20,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/one.style.css">
 
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/blue.css" id="style_color">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="css/custom.css">
+    <!--<link rel="stylesheet" href="css/custom.css">-->
+
 </head>
 <!--
 The #page-top ID is part of the scrolling feature.
@@ -84,6 +91,73 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     </nav>
     <!--=== End Header ===-->
 
+    <!--=== Landing ===-->
+    <div id="landing" class="bg-color-light padding-top-60">
+        <div class="container content-sm">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Curso de TDD</h1>
+                    <h2>Slogan del curso</h2>
+                    <p>Potenciamos tu valor profesional mediante el desarrollo de competencias directivas imprescindibles en la gestión del entorno actual y futuro mediante una experiencia de aprendizaje diferente. </p>
+                </div>
+                <div class="col-md-6">
+                    <form class="sky-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-user"></i>
+                                        <input type="text" class="form-control" id="fullname" placeholder="* Nombre y apellidos" required>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-phone"></i>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Teléfono">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-envelope"></i>
+                                        <input type="email" class="form-control" id="email" placeholder="* Email" required>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-map-marker"></i>
+                                        <input type="text" class="form-control" id="province" placeholder="Provincia">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Landing ===-->
+
 </div>
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="plugins/respond.js"></script>
+<script type="text/javascript" src="plugins/html5shiv.js"></script>
+<script type="text/javascript" src="plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
 </body>
+
 </html>
