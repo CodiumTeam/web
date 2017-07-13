@@ -18,6 +18,10 @@
     text-align:  right;
 }
 
+.bg-color-light {
+    color: #555555;
+}
+
 .timeline-v2 > li .cbp_tmtime span:first-child {
     color:       #585f69;
     font-size:   20px;
