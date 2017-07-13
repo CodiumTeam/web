@@ -3,6 +3,7 @@
 #landing {
     background-image: url("../img/tdd/landing.jpg");
     background-size:  cover;
+    height: 580px;
 }
 
 #landing h1,
