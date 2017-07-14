@@ -29,13 +29,8 @@
 }
 
 #contact-form-footer {
-    padding:    0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-#contact-form-footer-inner {
+    background: #3498db;
     padding:    10px 0;
-    background: rgba(52, 152, 219, 0.6);
     text-align: center;
     color:      #FFFFFF;
 }
