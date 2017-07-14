@@ -17,10 +17,15 @@
     padding:    24px;
 }
 
-#tdd-contact-form input {
-    -webkit-border-radius: 50px;
-    -moz-border-radius:    50px;
-    border-radius:         50px;
+#tdd-contact-form input,
+#tdd-contact-form button {
+    -webkit-border-radius: 15px;
+    -moz-border-radius:    15px;
+    border-radius:         15px;
+}
+
+#tdd-contact-form .icon-prepend {
+    padding-right: 3px;
 }
 
 .summary-icon {
