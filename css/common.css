@@ -5,6 +5,10 @@ body,
     font-size: 16px;
 }
 
+.headline-center-v2 p {
+    font-size: 18px;
+}
+
 #navbar-home:before {
     content: "";
 }
