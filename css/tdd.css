@@ -64,3 +64,13 @@
 .timeline-v2 > li .cbp_tmlabel {
     line-height: 1.8;
 }
+
+.lists-v1 li {
+    margin-left: 30px;
+}
+
+.vcenter {
+    display:        inline-block;
+    vertical-align: middle;
+    float:          none;
+}
