@@ -1,9 +1,8 @@
 
-
 #landing {
     background-image: url("../img/tdd/landing.jpg");
     background-size:  cover;
-    height: 580px;
+    height:           580px;
 }
 
 #landing h1,
@@ -13,7 +12,15 @@
 }
 
 #tdd-contact-form {
-    border: none;
+    border:     none;
+    background: rgba(0, 0, 0, 0.6);
+    padding:    24px;
+}
+
+#tdd-contact-form input {
+    -webkit-border-radius: 50px;
+    -moz-border-radius:    50px;
+    border-radius:         50px;
 }
 
 .summary-icon {
@@ -41,6 +48,7 @@
 .timeline-v2 > li .cbp_tmlabel h2 {
     text-transform: none;
 }
+
 .timeline-v2 > li .cbp_tmlabel {
     line-height: 1.8;
 }

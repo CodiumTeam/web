@@ -8,3 +8,7 @@ body,
 #navbar-home:before {
     content: "";
 }
+
+.main-color1 {
+    color: #3498db;
+}
