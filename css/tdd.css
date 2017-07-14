@@ -28,6 +28,13 @@
     padding-right: 3px;
 }
 
+#contact-form-footer {
+    background: rgba(52, 152, 219, 0.6);
+    text-align: center;
+    padding:    10px 0;
+    color:      #FFFFFF;
+}
+
 .summary-icon {
     padding-top: 10px;
     text-align:  right;
