@@ -67,25 +67,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="menu-container">
                     <ul class="nav navbar-nav">
                         <li class="page-scroll">
-                            <a id="navbar-home" href="#landing-screen" onclick="navigateTo('Inicio')">Inicio</a>
+                            <a id="navbar-home" href="#body">Inicio</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#servicios" onclick="navigateTo('Servicios')">Servicios</a>
+                            <a href="#training-content-timeline">Contenido del curso</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#metodologia" onclick="navigateTo('Metodología')">Metodología</a>
-                        </li>
-                        <!--<li class="page-scroll">-->
-                        <!--<a href="#">Projects</a>-->
-                        <!--</li>-->
-                        <li class="page-scroll">
-                            <a href="#sobre-nosotros" onclick="navigateTo('Nosotros')">Nosotros</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#clientes" onclick="navigateTo('Clientes')">Clientes</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#contacto" onclick="setContactAction('Navbar')">Contacto</a>
+                            <a href="#objectives">El valor de TDD</a>
                         </li>
                     </ul>
                 </div>
@@ -210,6 +198,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!--=== Training content ===-->
     <div id="training-content-timeline">
         <div class="container content-sm">
+            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+                <h2>Contenido del curso</h2>
+                <span class="bordered-icon"><i class="fa fa-th-large"></i></span>
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <ul class="timeline-v2">
@@ -347,6 +339,21 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="plugins/smoothScroll.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/one.app.js"></script>
+
+
+<script>
+  jQuery(document).ready(function() {
+    App.init();
+  });
+</script>
+
 
 <!--[if lt IE 9]>
 <script type="text/javascript" src="plugins/respond.js"></script>
