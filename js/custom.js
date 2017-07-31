@@ -28,6 +28,7 @@ $('#formulario-contacto-form').submit(function (e) {
         .done(function () {
             trackEvent('contact_us', 'sent', $('#contact-action').val());
 
+            $('#error-contacto').fadeOut();
             $('#formulario-contacto').fadeOut().promise().done(function () {
                 $('#gracias-contacto').fadeIn();
             });
