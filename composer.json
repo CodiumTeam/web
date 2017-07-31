@@ -13,7 +13,8 @@
     ],
     "require": {
         "swiftmailer/swiftmailer": "^6.0",
-        "silex/silex": "~2.0"
+        "silex/silex": "~2.0",
+        "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^121.0"
