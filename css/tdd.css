@@ -11,6 +11,25 @@
     color: #FFFFFF;
 }
 
+#main-title {
+    font-size:     32px;
+    margin-bottom: 20px;
+}
+
+#main-title span {
+    color: #3498db;
+}
+
+#slogan {
+    font-size:     26px;
+    margin-bottom: 20px;
+}
+
+#slogan-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 #tdd-contact-form {
     border:     none;
     background: rgba(0, 0, 0, 0.6);
