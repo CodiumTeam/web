@@ -11,9 +11,19 @@
     color: #FFFFFF;
 }
 
+#landing .content-sm {
+    padding-top:    30px;
+    padding-bottom: 30px;
+}
+
+#tdd-contact {
+    padding-top: 30px;
+}
+
 #main-title {
-    font-size:     32px;
+    font-size:     40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #main-title span {
@@ -21,13 +31,9 @@
 }
 
 #slogan {
-    font-size:     26px;
+    font-size:     30px;
     margin-bottom: 20px;
-}
-
-#slogan-description {
-    font-size: 20px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 #tdd-contact-form {
