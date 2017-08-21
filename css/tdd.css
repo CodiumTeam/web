@@ -54,6 +54,10 @@
     color:      #FFFFFF;
 }
 
+#summary h2 {
+    margin-bottom: 0px;
+}
+
 .summary-icon {
     padding-top: 10px;
     text-align:  right;
