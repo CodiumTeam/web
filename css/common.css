@@ -26,3 +26,60 @@ body,
 .cryptedmail:after {
     content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 }
+
+/* About Us classes */
+
+.about-us-panel {
+    height:     100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding:    30px;
+    text-align: center;
+}
+
+.about-us-panel img {
+    width:  192px;
+    height: 192px;
+    margin: 0 auto 25px;
+}
+
+.about-us-panel h3 {
+    color:       #fff;
+    font-size:   22px;
+    font-weight: 200;
+}
+
+.about-us-panel span {
+    display:       block;
+    margin-bottom: 5px;
+}
+
+.about-us-panel p {
+    color:      #fff;
+    position:   relative;
+    text-align: justify;
+}
+
+
+.team-social li a.white {
+    color:  #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* LinkedIn */
+.team-social li a.li:hover {
+    color:      #ffffff;
+    background: #0077B5;
+}
+
+/* Github */
+.team-social li a.gh:hover {
+    color:      #ffffff;
+    background: #888888;
+}
+
+/* Instagram */
+.team-social li a.in:hover {
+    color:      #ffffff;
+    background: #d10869;
+}
+/* end About us classes*/

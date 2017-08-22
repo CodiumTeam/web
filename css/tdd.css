@@ -128,3 +128,7 @@
 #gracias-contacto-tdd {
     display: none;
 }
+
+.about-us-panel {
+    background: rgba(0, 0, 0, 0.8);
+}
