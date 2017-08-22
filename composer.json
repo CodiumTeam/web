@@ -11,6 +11,9 @@
             "email": "jordi.anguela@gmail.com"
         }
     ],
+    "autoload": {
+        "files": ["php/mail.php"]
+    },
     "require": {
         "swiftmailer/swiftmailer": "^6.0",
         "silex/silex": "~2.0",
