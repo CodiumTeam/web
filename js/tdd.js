@@ -4,10 +4,9 @@ form.submit(function (e) {
   $.post(url, form.serialize())
   .done(function () {
     // $('#error-contacto').fadeOut();
-    // $('#formulario-contacto').fadeOut().promise().done(function () {
-    //   $('#gracias-contacto').fadeIn();
-    // });
-    alert("Gracias por contactar");
+    $('#tdd-contact').fadeOut().promise().done(function () {
+      $('#gracias-contacto-tdd').fadeIn();
+    });
   })
   .fail(function () {
     // $('#error-contacto').fadeIn();
