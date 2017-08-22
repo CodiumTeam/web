@@ -1,12 +1,13 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-validateRecaptcha();
-sendEmail();
+validateRecaptcha($_POST['g-recaptcha-response']);
+$params = $_POST;
+$params['subject'] = 'Web contact triggered by ' . $params['action'];
+sendEmail($_POST);
 
-function validateRecaptcha()
+function validateRecaptcha($recaptcha)
 {
-    $recaptcha = $_POST['g-recaptcha-response'];
     $client = new \GuzzleHttp\Client();
     $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
         'form_params' => [
@@ -21,7 +22,7 @@ function validateRecaptcha()
     }
 }
 
-function sendEmail()
+function sendEmail($params)
 {
     $transport = (new Swift_SmtpTransport('in-v3.mailjet.com', 587))
         ->setUsername('494fb687ee5235f531bc7a6a426bb6c1')
@@ -29,14 +30,14 @@ function sendEmail()
 
     $mailer = new Swift_Mailer($transport);
 
-    $email = $_POST['email'];
-    $name = $_POST['name'];
-    $body = $_POST['message'] . "\n\nEmail $email";
-    $subject = '[Dojo] ' . $_POST['action'];
+    $email = $params['email'];
+    $name = $params['name'];
+    $subject = $params['subject'];
+    $body = $params['message'] . "\n\nEmail $email";
 
     $message = (new Swift_Message($subject))
         ->setFrom(['luisrovirosa@gmail.com' => $name])
-        ->setTo(['luisrovirosa@gmail.com' => 'Luis Rovirosa', 'jordi.anguela@gmail.com' => 'Jordi Anguela'])
+        ->setTo(['luis@codium.team' => 'Luis Rovirosa', 'jordi@codium.team' => 'Jordi Anguela'])
         ->setBody($body);
 
     $mailer->send($message);

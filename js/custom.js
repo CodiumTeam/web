@@ -23,7 +23,7 @@ function setContactAction(actionMessage) {
 }
 
 $('#formulario-contacto-form').submit(function (e) {
-    var url = '/php/demo-contacts-process.php';
+    var url = '/php/contact.php';
     $.post(url, $('#formulario-contacto-form').serialize())
         .done(function () {
             trackEvent('contact_us', 'sent', $('#contact-action').val());
