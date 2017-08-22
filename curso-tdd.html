@@ -46,7 +46,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <div class="wrapper">
 
     <!--=== Header ===-->
-    <nav id="navbar" class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="navbar" class="one-page-header navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="menu-container page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -96,7 +96,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <h2 id="slogan">Revoluciona tu forma de desarrollar</h2>
                 </div>
                 <div id="tdd-contact" class="col-md-5">
-                    <form id="tdd-contact-form" class="sky-form">
+                    <form id="tdd-contact-form" method="post" action="php/contact-tdd.php" class="sky-form">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
@@ -107,7 +107,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 <div class="form-group">
                                     <label class="input">
                                         <i class="icon-prepend fa fa-user"></i>
-                                        <input type="text" class="form-control" id="fullname" placeholder="Nombre y apellidos" required>
+                                        <input class="form-control" id="name" name="name" placeholder="Nombre y apellidos" required>
                                     </label>
                                 </div>
                             </div>
@@ -115,13 +115,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 <div class="form-group">
                                     <label class="input">
                                         <i class="icon-prepend fa fa-envelope"></i>
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">PEDIR INFORMACIÓN</button>
+                                    <button class="btn btn-primary btn-block">PEDIR INFORMACIÓN</button>
                                 </div>
                             </div>
                         </div>

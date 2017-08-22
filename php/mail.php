@@ -24,15 +24,16 @@ function sendEmail($params)
 
     $mailer = new Swift_Mailer($transport);
 
-    $email = $params['email'];
-    $name = $params['name'];
-    $subject = $params['subject'];
-    $body = $params['message'] . "\n\nEmail $email";
+    $emailAddress = $params['email'] ?? 'Email not specified';
+    $name = $params['name'] ?? 'Name not specified';
+    $subject = $params['subject'] ?? 'Subject not specified';
+    $message = $params['message'] ?? '';
+    $body = "$message\n\nNombre: $name.\nEmail $emailAddress";
 
-    $message = (new Swift_Message($subject))
+    $email = (new Swift_Message($subject))
         ->setFrom(['luisrovirosa@gmail.com' => $name])
         ->setTo(['luis@codium.team' => 'Luis Rovirosa', 'jordi@codium.team' => 'Jordi Anguela'])
         ->setBody($body);
 
-    $mailer->send($message);
+    $mailer->send($email);
 }
