@@ -146,3 +146,10 @@
 .about-us-panel {
     background: rgba(0, 0, 0, 0.6);
 }
+
+/* Extra small devices */
+@media (max-width: 767px) {
+    #vision .text-justify p {
+        padding: 0 8px;
+    }
+}
