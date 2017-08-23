@@ -60,6 +60,19 @@
     color:      #FFFFFF;
 }
 
+#summary {
+    position: absolute;
+    width:    100%;
+    bottom:   0;
+}
+
+#summary,
+#summary h2,
+#summary p {
+
+    color: #555555;
+}
+
 #summary h2 {
     margin-bottom: 0px;
 }
