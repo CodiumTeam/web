@@ -145,7 +145,7 @@
 
 /* Extra small devices */
 @media (max-width: 767px) {
-    #vision .text-justify p {
+    .headline-center-v2 p {
         padding: 0 8px;
     }
 }
