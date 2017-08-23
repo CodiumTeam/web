@@ -2,7 +2,6 @@
 #landing {
     background-image: url("../img/tdd/landing-skis.jpg");
     background-size:  cover;
-    height:           580px;
 }
 
 #landing h1,
@@ -61,16 +60,13 @@
 }
 
 #summary {
-    position:   absolute;
-    width:      100%;
-    bottom:     0;
     background: rgba(255, 255, 255, 0.8);
+    width:      100%;
 }
 
 #summary,
 #summary h2,
 #summary p {
-
     color: #555555;
 }
 
@@ -151,5 +147,12 @@
 @media (max-width: 767px) {
     #vision .text-justify p {
         padding: 0 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    #summary {
+        position: absolute;
+        bottom:   0;
     }
 }
