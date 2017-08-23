@@ -132,3 +132,7 @@
 .about-us-panel {
     background: rgba(0, 0, 0, 0.8);
 }
+
+#vision .text-justify p {
+    padding: 0;
+}
