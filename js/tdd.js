@@ -20,6 +20,7 @@ function fixLandingResponsiveness() {
     var desktopDeviceWidth = 992;
     if (browserWidth < desktopDeviceWidth) {
         $('#landing').removeClass('fullheight');
+        $('#landing').css("height", "inherit");
     } else {
         $('#landing').addClass('fullheight');
     }
