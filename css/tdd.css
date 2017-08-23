@@ -61,9 +61,10 @@
 }
 
 #summary {
-    position: absolute;
-    width:    100%;
-    bottom:   0;
+    position:   absolute;
+    width:      100%;
+    bottom:     0;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #summary,
