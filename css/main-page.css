@@ -262,6 +262,11 @@ p.about-us-description {
         line-height: 30px;
         padding:     15px;
     }
+
+    #slogan.container {
+        bottom:    149px;
+        font-size: 28px;
+    }
 }
 
 #doorbell-button {
