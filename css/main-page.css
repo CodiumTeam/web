@@ -181,8 +181,14 @@ p.about-us-description {
     font-size:  32px;
 }
 
-#slogan p {
+#slogan p,
+#slogan-mobile p {
     color: #fff;
+}
+
+#slogan-mobile {
+    text-align: center;
+    font-size:  24px;
 }
 
 .reason-why {
