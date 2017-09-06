@@ -273,8 +273,12 @@ p.about-us-description {
     }
 
     #slogan.container {
-        bottom:    149px;
-        font-size: 28px;
+        font-size:     24px;
+    }
+
+    #slogan.container .row {
+        padding-right: 30px;
+        padding-left:  30px;
     }
 }
 
