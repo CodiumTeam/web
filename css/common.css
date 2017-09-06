@@ -9,6 +9,9 @@ body,
     font-size: 18px;
 }
 
+#navbar {
+    background: rgba(0,0,0,0.8);
+}
 #navbar-home:before {
     content: "";
 }
