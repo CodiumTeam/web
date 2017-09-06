@@ -187,8 +187,11 @@ p.about-us-description {
 }
 
 #slogan-mobile {
-    text-align: center;
-    font-size:  24px;
+    text-align:    center;
+    font-size:     24px;
+    bottom:        100px;
+    padding-left:  30px;
+    padding-right: 30px;
 }
 
 .reason-why {
