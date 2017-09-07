@@ -282,6 +282,13 @@ p.about-us-description {
     }
 }
 
+/** All mobile devices */
+@media (max-width: 767px) {
+    #doorbell-button {
+        display: none;
+    }
+}
+
 #doorbell-button {
     right:         0;
     top:           40%;
