@@ -10,10 +10,26 @@ body,
 }
 
 #navbar {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
+
 #navbar-home:before {
     content: "";
+}
+
+.one-page-header.top-nav-collapse .dropdown-menu > li {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.one-page-header.top-nav-collapse .navbar-brand,
+.one-page-header.top-nav-collapse .navbar-nav > li > a,
+.one-page-header.top-nav-collapse .navbar-nav > li > a:before,
+.one-page-header.top-nav-collapse .dropdown-menu > li > a {
+    color: #eee;
+}
+
+.one-page-header.top-nav-collapse .navbar-brand {
+    color: #fff !important;
 }
 
 .main-color1 {
@@ -62,7 +78,6 @@ body,
     text-align: justify;
 }
 
-
 .team-social li a.white {
     color:  #ffffff;
     border: 1px solid #ffffff;
@@ -85,4 +100,5 @@ body,
     color:      #ffffff;
     background: #d10869;
 }
+
 /* end About us classes*/

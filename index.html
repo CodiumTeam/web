@@ -84,8 +84,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li class="page-scroll">
                             <a id="navbar-home" href="#landing-screen" onclick="navigateTo('Inicio')">Inicio</a>
                         </li>
-                        <li class="page-scroll">
+                        <li class="dropdown page-scroll">
                             <a href="#servicios" onclick="navigateTo('Servicios')">Servicios</a>
+                            <ul class="dropdown-menu">
+                                <li class="page-scroll"><a href="#formacion" onclick="navigateTo('Formación')">Formación</a></li>
+                                <li class="page-scroll"><a href="#acompanamiento" onclick="navigateTo('Acompanamiento')">Acompanamiento</a></li>
+                                <li class="page-scroll"><a href="#desarrollo" onclick="navigateTo('Desarrollo')">Desarrollo</a></li>
+                            </ul>
                         </li>
                         <li class="page-scroll">
                             <a href="#metodologia" onclick="navigateTo('Metodología')">Metodología</a>
