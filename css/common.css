@@ -23,12 +23,21 @@ body,
 }
 
 .one-page-header .dropdown-menu > li,
-.one-page-header.top-nav-collapse .navbar-brand,
 .one-page-header.top-nav-collapse .navbar-nav > li > a,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:before,
 .one-page-header.top-nav-collapse .dropdown-menu > li > a {
     color:          #eee;
     text-transform: uppercase;
+}
+
+.one-page-header.top-nav-collapse .navbar-brand {
+    color:          #eee;
+}
+
+.one-page-header.top-nav-collapse .navbar-nav > li > a:hover,
+.one-page-header .dropdown-menu > li > a:hover,
+.one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {
+    color: #3498db;
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
