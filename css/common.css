@@ -25,7 +25,8 @@ body,
 .one-page-header.top-nav-collapse .navbar-nav > li > a,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:before,
 .one-page-header.top-nav-collapse .dropdown-menu > li > a {
-    color: #eee;
+    color:          #eee;
+    text-transform: uppercase;
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
