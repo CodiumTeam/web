@@ -3,7 +3,9 @@ form.submit(function (e) {
     var url = '/php/contact-tdd.php';
     $.post(url, form.serialize())
         .done(function () {
-            // $('#error-contacto').fadeOut();
+        trackEvent('tdd_training', 'sent');
+
+        // $('#error-contacto').fadeOut();
             $('#tdd-contact').fadeOut().promise().done(function () {
                 $('#gracias-contacto-tdd').fadeIn();
             });
