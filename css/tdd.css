@@ -153,6 +153,14 @@
     font-weight:    bolder;
 }
 
+#next-trainings tbody tr {
+    border-bottom: 2px solid #ddd;
+}
+
+#next-trainings tbody tr:last-of-type {
+    border: none;
+}
+
 /* Extra small devices */
 @media (max-width: 767px) {
     .headline-center-v2 p {
@@ -187,16 +195,6 @@
         left:     -9999px;
     }
 
-    table.responsive-table tbody td:last-of-type {
-        border-bottom:  2px solid #ddd;
-        margin-bottom:  1.333rem;
-        padding-bottom: 1.333rem;
-    }
-
-    table.responsive-table tbody tr:last-of-type td:last-of-type {
-        border: none;
-    }
-
     table.responsive-table td {
         /* Behave  like a "row" */
         border:       none;
@@ -228,4 +226,23 @@
         content: "Descripción";
     }
 
+}
+
+@media only screen and (min-width: 761px) {
+    table.responsive-table th {
+        color: #777777;
+    }
+
+    table.responsive-table th:nth-of-type(1),
+    table.responsive-table th:nth-of-type(2),
+    table.responsive-table td:nth-of-type(1),
+    table.responsive-table td:nth-of-type(2) {
+        text-align: center;
+        padding:    0 20px;
+    }
+
+    table.responsive-table td:nth-of-type(3) {
+        padding-top:    10px;
+        padding-bottom: 10px;
+    }
 }
