@@ -143,6 +143,24 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
+#next-trainings {
+    font-size: 18px;
+}
+
+#next-trainings .training-location {
+    color:          #3498db;
+    text-transform: uppercase;
+    font-weight:    bolder;
+}
+
+#next-trainings tbody tr {
+    border-bottom: 2px solid #ddd;
+}
+
+#next-trainings tbody tr:last-of-type {
+    border: none;
+}
+
 /* Extra small devices */
 @media (max-width: 767px) {
     .headline-center-v2 p {
@@ -154,5 +172,84 @@
     #summary {
         position: absolute;
         bottom:   0;
+    }
+}
+
+/*
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+*/
+@media only screen and (max-width: 760px) {
+    /* Force table to not be like tables anymore */
+    table.responsive-table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    table.responsive-table thead tr {
+        position: absolute;
+        top:      -9999px;
+        left:     -9999px;
+    }
+
+    table.responsive-table tbody tr {
+        margin-top:  1.333rem;
+        padding-top: 1.333rem;
+    }
+
+    table.responsive-table tbody td:last-of-type {
+        margin-bottom:  1.333rem;
+        padding-bottom: 1.333rem;
+    }
+
+    table.responsive-table td {
+        /* Behave  like a "row" */
+        border:       none;
+        position:     relative;
+        padding-left: 40%;
+        min-height:   50px;
+    }
+
+    table.responsive-table td:before {
+        /* Now like a table header */
+        position:      absolute;
+        /* Top/left values mimic padding */
+        left:          6px;
+        width:         55%;
+        padding-right: 10px;
+        white-space:   nowrap;
+    }
+
+    /* Label the data */
+    table.responsive-table td:nth-of-type(1):before {
+        content: "Localidad";
+    }
+
+    table.responsive-table td:nth-of-type(2):before {
+        content: "Fechas";
+    }
+
+    table.responsive-table td:nth-of-type(3):before {
+        content: "Descripción";
+    }
+
+}
+
+@media only screen and (min-width: 761px) {
+    table.responsive-table th {
+        color: #777777;
+    }
+
+    table.responsive-table th:nth-of-type(1),
+    table.responsive-table th:nth-of-type(2),
+    table.responsive-table td:nth-of-type(1),
+    table.responsive-table td:nth-of-type(2) {
+        text-align: center;
+        padding:    0 20px;
+    }
+
+    table.responsive-table td:nth-of-type(3) {
+        padding-top:    10px;
+        padding-bottom: 10px;
     }
 }

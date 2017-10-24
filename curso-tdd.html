@@ -76,6 +76,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a id="navbar-home" href="#body">Inicio</a>
                         </li>
                         <li class="page-scroll">
+                            <a href="#trainings">Próximos cursos</a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="#value">El valor de TDD</a>
                         </li>
                         <li class="page-scroll">
@@ -85,7 +88,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="#training-content-timeline">Contenido</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#faq">Preguntas frecuentes</a>
+                            <a href="#faq">FAQs</a>
                         </li>
                     </ul>
                 </div>
@@ -224,8 +227,49 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </div>
         </div>
     </div>
+    <!--=== End Landing ===-->
 
-    <!--=== End Summary ===-->
+    <!--=== TDD Next trainings Block ===-->
+    <div id="trainings" class="bg-color-light">
+        <div class="container content-sm">
+            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+                <h2>Próximos cursos</h2>
+                <span class="bordered-icon"><i class="fa fa-th-large"></i></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <table id="next-trainings" class="responsive-table">
+                        <thead>
+                        <tr>
+                            <th>Localidad</th>
+                            <th>Fechas</th>
+                            <th>Descripción</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td data-header="Localidad" nowrap><span class="training-location">Murcia</span> <span class="label label-red">New</span></td>
+                            <td data-header="Fechas" nowrap><strong>28, 29, 30 Nov. y 1 de Dic. </strong></td>
+                            <td data-header="Descripción">Curso de TDD organizado con Colegio de Ingenieros en Informática de la Región de Murcia. <a href="http://www.cii-murcia.es/index.php?option=com_content&view=article&id=2147">Más información y inscripciones</a></td>
+                        </tr>
+                        <tr>
+                            <td data-header="Localidad" nowrap><span class="training-location">Islas Baleares</span></td>
+                            <td data-header="Fechas" nowrap><strong>Finales de 2017</strong></td>
+                            <td data-header="Descripción">Estamos hablando con varias empresas de las Islas Baleares para dar una formación de TDD allí. Si estás interesado, escríbenos y nos pondremos en contacto contigo. <a href="#landing">Contáctanos</a></td>
+                        </tr>
+                        <tr>
+                            <td data-header="Localidad" nowrap><span class="training-location">Galicia</span></td>
+                            <td data-header="Fechas" nowrap><strong>Principios de 2018</strong></td>
+                            <td data-header="Descripción">Estamos hablando con varias empresas de Galicia para dar una formación de TDD allí. Si estás interesado, escríbenos y nos pondremos en contacto contigo. <a href="#landing">Contáctanos</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Next trainings Block ===-->
 
     <!--=== TDD Value Block ===-->
     <div id="value">
