@@ -95,11 +95,6 @@ p.about-us-description {
         height: 275px;
     }
 
-    .pricing-coaching .pricing-v4-content li:first-child,
-    .pricing-development .pricing-v4-content li:first-child {
-        line-height: 50px;
-    }
-
     .reasons-subtitle {
         padding: 0 30px;
     }
@@ -108,11 +103,6 @@ p.about-us-description {
 @media (max-width: 1200px) {
     .pricing-table-v4 .pricing-v4-head {
         height: 300px;
-    }
-
-    .pricing-coaching .pricing-v4-content li:first-child,
-    .pricing-development .pricing-v4-content li:first-child {
-        line-height: 50px;
     }
 }
 
