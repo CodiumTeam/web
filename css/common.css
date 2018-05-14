@@ -114,3 +114,20 @@ body,
 }
 
 /* end About us classes*/
+
+@font-face {
+    font-family: 'goudytrajan-bold-pro';
+    src: url('../fonts/goudytrajan-bold-pro-webfont.woff2') format('woff2'),
+                 url('../fonts/goudytrajan-bold-pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar li a {
+    font-family: 'goudytrajan-bold-pro', serif;
+}
+
+.headline-center-v2 h2 {
+    font-family: 'goudytrajan-bold-pro', serif;
+    font-size:   40px;
+}
