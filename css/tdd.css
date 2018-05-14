@@ -26,7 +26,7 @@
 }
 
 #main-title span {
-    color: #3498db;
+    color: #0aa0f4;
 }
 
 #slogan {
@@ -53,7 +53,7 @@
 }
 
 #contact-form-footer {
-    background: #3498db;
+    background: #0aa0f4;
     padding:    10px 0;
     text-align: center;
     color:      #FFFFFF;
@@ -123,12 +123,12 @@
 }
 
 .testimonials-bg-dark .item p {
-    background-color: #3498db;
+    background-color: #0aa0f4;
     font-size:        18px;
 }
 
 .testimonials.testimonials-bg-dark .item p:after {
-    border-top-color: #3498db;
+    border-top-color: #0aa0f4;
 }
 
 .testimonials .testimonial-info span {
@@ -148,7 +148,7 @@
 }
 
 #next-trainings .training-location {
-    color:          #3498db;
+    color:          #0aa0f4;
     text-transform: uppercase;
     font-weight:    bolder;
 }

@@ -659,7 +659,7 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-u-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 .btn-u.btn-u-blue:hover,
 .btn-u.btn-u-blue:focus,
@@ -887,7 +887,7 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-brd.btn-u-blue {
-	border-color: #3498db;
+	border-color: #0aa0f4;
 }
 .btn-u.btn-brd.btn-u-blue:hover {
 	color: #2980b9;
@@ -1091,7 +1091,7 @@ span.badge-u,
 span.label-blue,
 span.badge-blue,
 .list-group-item.active>.badge {
-	background: #3498db;
+	background: #0aa0f4;
 }
 
 span.label-red,
@@ -1416,8 +1416,8 @@ i.icon-color-u {
 	border: solid 1px #72c02c;
 }
 i.icon-color-blue {
-	color: #3498db;
-	border: solid 1px #3498db;
+	color: #0aa0f4;
+	border: solid 1px #0aa0f4;
 }
 i.icon-color-red {
 	color: #e74c3c;
@@ -1497,7 +1497,7 @@ i.icon-bg-u {
 	background: #72c02c;
 }
 i.icon-bg-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 i.icon-bg-red {
 	background: #e74c3c;
@@ -1606,7 +1606,7 @@ i.icon-bg-light-grey {
 	background: #72c02c;
 }
 .text-highlights-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 .text-highlights-red {
 	background: #e74c3c;
@@ -1648,7 +1648,7 @@ i.icon-bg-light-grey {
 	border-color: #72c02c;
 }
 .text-border-blue {
-	border-color: #3498db;
+	border-color: #0aa0f4;
 }
 .text-border-red {
 	border-color: #e74c3c;
@@ -1855,11 +1855,11 @@ blockquote.hero.hero-default small {
 
 /*Panel Blue*/
 .panel-blue {
-	border-color: #3498db;
+	border-color: #0aa0f4;
 }
 
 .panel-blue > .panel-heading {
-	background: #3498db;
+	background: #0aa0f4;
 }
 
 /*Panel Red*/
@@ -2023,7 +2023,7 @@ blockquote.hero.hero-default small {
 }
 
 .progress-bar-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 
 .progress-bar-orange {
@@ -2346,7 +2346,7 @@ img.image-md {
 .color-sea { color: #1abc9c;}
 .color-red { color: #e74c3c;}
 .color-aqua { color: #27d7e7;}
-.color-blue { color: #3498db;}
+.color-blue { color: #0aa0f4;}
 .color-grey { color: #95a5a6;}
 .color-dark { color: #555;}
 /*.color-dark1 { color: #444;}*/
@@ -2395,7 +2395,7 @@ img.image-md {
 .bg-color-sea { background-color: #1abc9c !important;}
 .bg-color-red { background-color: #e74c3c !important;}
 .bg-color-aqua { background-color: #27d7e7 !important;}
-.bg-color-blue { background-color: #3498db !important;}
+.bg-color-blue { background-color: #0aa0f4 !important;}
 .bg-color-grey { background-color: #95a5a6 !important;}
 .bg-color-light { background-color: #f7f7f7 !important;}
 .bg-color-green { background-color: #72c02c !important;}

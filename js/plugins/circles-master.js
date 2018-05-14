@@ -116,7 +116,7 @@ var CirclesMaster = function () {
         //Circles Master v2
         initCirclesMaster2: function () {
 		    var colors = [
-		        ['#D3B6C6', '#9B6BCC'], ['#C9FF97', '#72c02c'], ['#BEE3F7', '#3498DB'], ['#FFC2BB', '#E74C3C']
+		        ['#D3B6C6', '#9B6BCC'], ['#C9FF97', '#72c02c'], ['#BEE3F7', '#0aa0f4'], ['#FFC2BB', '#E74C3C']
 		    ];
 
 		    for (var i = 1; i <= 4; i++) {

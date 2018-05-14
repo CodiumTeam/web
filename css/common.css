@@ -37,7 +37,7 @@ body,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:hover,
 .one-page-header .dropdown-menu > li > a:hover,
 .one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {
-    color: #3498db;
+    color: #0aa0f4;
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
@@ -45,12 +45,12 @@ body,
 }
 
 .main-color1 {
-    color: #3498db;
+    color: #0aa0f4;
 }
 
 .btn-primary {
     color:            #fff;
-    background-color: #3498db;
+    background-color: #0aa0f4;
     border-color:     #2e6da4
 }
 

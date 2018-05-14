@@ -1041,7 +1041,7 @@
 	background: #72c02c;
 }
 .service-block-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 .service-block-red {
 	background: #e74c3c;
@@ -1160,7 +1160,7 @@
 
 /*Blue Funny Box*/
 .funny-boxes-blue {
-	background: #3498db;
+	background: #0aa0f4;
 }
 
 /*Grey Funny Box*/
@@ -1229,7 +1229,7 @@
 
 /*Blue Left Bordered Funny Box**/
 .funny-boxes-left-blue {
-	border-left: solid 2px #3498db;
+	border-left: solid 2px #0aa0f4;
 }
 
 .funny-boxes-left-blue:hover {
@@ -1375,8 +1375,8 @@
 
 .team-v1 li > .team-img li i.fa-twitter:hover {
   color: #fff;
-  background: #3498db;
-  border-color: #3498db;
+  background: #0aa0f4;
+  border-color: #0aa0f4;
 }
 
 .team-v1 li > .team-img li i.fa-facebook:hover {
@@ -6497,7 +6497,7 @@
 }
 
 .latest-tweets .latest-tweets-inner a {
-	/*color: #3498db;*/
+	/*color: #0aa0f4;*/
 	text-decoration: none;
 }
 .latest-tweets .latest-tweets-inner a:hover {
