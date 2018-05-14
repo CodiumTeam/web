@@ -131,3 +131,9 @@ body,
     font-family: 'goudytrajan-bold-pro', serif;
     font-size:   40px;
 }
+
+@media (max-width: 768px) {
+    .headline-center-v2 h2 {
+        font-size:   30px;
+    }
+}
