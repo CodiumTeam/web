@@ -137,3 +137,8 @@ body,
         font-size:   30px;
     }
 }
+@media (max-width: 1200px) {
+    body, .one-page-header .navbar-nav > li > a {
+        font-size: 14px;
+    }
+}
