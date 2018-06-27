@@ -1,9 +1,6 @@
 <div id="trainings" class="bg-color-light">
     <div class="container content-sm">
-        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
-            <h2>Próximos cursos de TDD</h2>
-            <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-        </div>
+        {{ include('components/block_header.html.twig', { name: 'Próximos cursos de TDD' }) }}
 
         <div class="row">
             <div class="col-md-8 col-md-offset-3">
@@ -64,7 +61,9 @@
                     <tr>
                         <td data-header="Localidad" nowrap><span class="training-location">Mallorca</span></td>
                         <td data-header="Fechas" nowrap><strong>18 y 19 de Septiembre de 2018</strong></td>
-                        <td data-header="Descripción"><button class="btn-u btn-lg btn-u-blue" type="button">Próximante</button></td>
+                        <td data-header="Descripción">
+                            <button class="btn-u btn-lg btn-u-blue" type="button">Próximante</button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

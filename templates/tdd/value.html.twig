@@ -1,16 +1,15 @@
 <div id="value">
     <div class="container content-sm">
-        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-            <h2>El valor de TDD</h2>
-            <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            <p>El simple hecho de pensar y escribir un test antes que el código de producción representa un cambio de paradigma en el desarrollo de software y un salto de calidad inimaginable en tu código.</p>
-        </div><!--/Headline Center v2-->
+        {{ include('components/extended_block_header.html.twig', {
+            name: 'El valor de TDD',
+            summary: '<p>El simple hecho de pensar y escribir un test antes que el código de producción representa un cambio de paradigma en el desarrollo de software y un salto de calidad inimaginable en tu código.</p>'
+        }) }}
 
-        <div class="row margin-bottom-50">
+        <div class="row margin-bottom-50 margin-top-60">
             <div class="col-md-6 vcenter">
                 <img src="/img/tdd/fast-cheap-good.png" class="img-responsive center-block" draggable="false">
             </div><!--
-                --><div class="col-md-6 vcenter">
+                --><div class="col-md-6 vcenter ">
                 <h3>Transforma al desarrollador</h3>
                 <ul class="list-unstyled lists-v1">
                     <li><i class="fa fa-angle-right"></i>Obligando a pensar antes de programar</li>
