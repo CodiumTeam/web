@@ -1,14 +1,13 @@
 <div id="metodologia" class="bg-color-light">
     <div class="container content-sm">
-        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-            <h2>Metodología</h2>
-            <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            <p>Como <strong>Software Craftsmen</strong> desarrollamos <strong>software bien elaborado</strong>
+        {{ include('components/extended_block_header.html.twig', {
+            name: 'Metodología',
+            summary: '<p>Como <strong>Software Craftsmen</strong> desarrollamos <strong>software bien elaborado</strong>
                 y formamos parte de una <strong>comunidad excepcional de profesionales</strong></p>
-            <p>Nuestro principio clave: <em>Primero simple y luego smart</em></p>
-        </div>
+            <p>Nuestro principio clave: <em>Primero simple y luego smart</em></p>'
+        }) }}
 
-        <div class="row">
+        <div class="row margin-top-60">
             <div class="col-md-4">
                 <div class="content-boxes-v5 margin-bottom-30">
                     <i class="rounded-x icon-loop"></i>

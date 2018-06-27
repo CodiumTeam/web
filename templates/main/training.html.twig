@@ -1,15 +1,14 @@
 <div id="formacion">
     <div class="container content-sm">
-        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-            <h2>Formación</h2>
-            <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            <p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de
+        {{ include('components/extended_block_header.html.twig', {
+            name: 'Formación',
+            summary: '<p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de
                 desarrollo del software. Nuestros cursos prácticos se centran en aprender una habilidad específica.
                 Después de la formación acompañamos a tu equipo a poner en práctica en su día a día lo que han
-                aprendido.</p>
-        </div><!--/Headline Center v2-->
+                aprendido.</p>'
+        }) }}
 
-        <div class="row margin-bottom-30 equal-height">
+        <div class="row margin-bottom-30 equal-height margin-top-60">
             <div class="col-md-6 md-margin-bottom-50">
                 {{ include('main/services/training/tdd.html.twig') }}
             </div>

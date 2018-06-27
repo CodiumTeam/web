@@ -1,9 +1,6 @@
 <div id="servicios" class="bg-color-light">
     <div class="container content-sm">
-        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-30">
-            <h2>Servicios</h2>
-            <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-        </div>
+        {{ include('components/block_header.html.twig', { name: 'Servicios' }) }}
 
         <div class="row pricing-table-v4 no-space-pricing">
             {{ include('main/services/summary/training.html.twig') }}
