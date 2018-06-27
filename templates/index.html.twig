@@ -62,74 +62,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
    {{ include('main_header.html.twig') }}
    {{ include('main_landing_screen.html.twig') }}
-
-    <!-- Service Blocks -->
-    <div id="servicios" class="bg-color-light">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-30">
-                <h2>Servicios</h2>
-                <span class="bordered-icon"><img src="img/favicons/favicon-16x16.png"></span>
-            </div><!--/Headline Center v2-->
-
-            <!-- Pricing Table v4-->
-            <div class="row pricing-table-v4 no-space-pricing">
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-trainings">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-graduation"></i>
-                            <h2 class="heading-md">FORMACIÓN</h2>
-                            <p>Formación corta, específica y práctica. Busca ser un punto de inflexión en la forma de trabajar de tu equipo. Ayudamos a ponerlo en práctica.</p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> 2 días de formación</li>
-                            <li><span class="icon-people"></span> hasta 16 asistentes</li>
-                            <li><span class="icon-location-pin"></span> En tus oficinas</li>
-                        </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#formacion" class="btn-u btn-block text-center" onclick="moreInfo('training')">Más información</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-coaching">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-energy"></i>
-                            <h2 class="heading-md">ACOMPAÑAMIENTO</h2>
-                            <p>Soluciona problemas específicos con la ayuda de expertos. Obtén feedback y mejora los puntos que requieren atención.</p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> 1 o más días</li>
-                            <li><span class="icon-people"></span> 1 o más participantes</li>
-                            <li><span class="icon-location-pin"></span> En tus oficinas o en remoto</li>
-                        </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#acompanamiento" class="btn-u btn-block text-center" onclick="moreInfo('coaching')">Más información</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-development">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-screen-desktop"></i>
-                            <h2 class="heading-md">DESARROLLO WEB</h2>
-                            <p>Desarrollo front y back-end.<br>
-                                Entregamos el software que más valor te aporta y con pruebas automáticas en cada sprint.</p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> Sprints de 2 semanas</li>
-                            <li><span class="icon-people"></span> - </li>
-                            <li><span class="icon-location-pin"></span> En remoto</li>
-                        </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#desarrollo" class="btn-u btn-block text-center" onclick="moreInfo('development')">Más información</a>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/row-->
-            <!-- End Pricing Table v4-->
-        </div>
-    </div>
-    <!-- End Service Blokcs -->
+   {{ include('main_services.html.twig') }}
 
     <!--=== Trainings Block ===-->
     <div id="formacion">
