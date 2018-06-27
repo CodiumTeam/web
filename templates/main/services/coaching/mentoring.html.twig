@@ -1,0 +1,18 @@
+{% extends "main/services/service.html.twig" %}
+
+{% set image = "/img/accompaniment/mentor.jpg" %}
+{% set title = "Mentorización" %}
+{% set summary = "El objetivo es transformar al equipo transmitiendo nuestros conocimientos trabajando codo con codo. Estamos convencidos que esa es la mejor forma de consolidar el aprendizaje." %}
+{% set sellingPoints = [
+    "Integración con el equipo",
+    "Aumentar la calidad y los resultados",
+    "Feedback constante para mejorar",
+    "Compromiso a medio y largo plazo",
+] %}
+
+{% block link %}
+    <div class="bottom-contact-btn page-scroll">
+        <a href="#contacto" class="btn-u bottom-contact-btn-link"
+           onclick="setContactAction('Mentorización')">Contáctanos</a>
+    </div>
+{% endblock %}

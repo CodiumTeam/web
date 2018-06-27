@@ -1,0 +1,18 @@
+{% extends "main/services/service.html.twig" %}
+
+{% set image = "/img/accompaniment/consulting.png" %}
+{% set title = "Consultoría" %}
+{% set summary = "Quieres validar cómo trabajas o implantar nuevas ideas con la ayuda de alguien que conoce el camino y tiene experiencia en ese campo." %}
+{% set sellingPoints = [
+    "Desencallar un problema",
+    "Resolución de dudas",
+    "Intervenciones puntuales y efectivas",
+    "Identificar problemas estructurales desapercibidos",
+] %}
+
+{% block link %}
+    <div class="bottom-contact-btn page-scroll">
+        <a href="#contacto" class="btn-u bottom-contact-btn-link"
+           onclick="setContactAction('Consultoría')">Contáctanos</a>
+    </div>
+{% endblock %}
