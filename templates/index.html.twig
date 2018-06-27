@@ -11,7 +11,8 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="author" content="Jordi Anguela y Luis Rovirosa">
-    <meta name="description" content="Formamos y acompañamos a equipos de programación. Estamos especializados en Clean code, TDD y patrones de diseño.">
+    <meta name="description"
+          content="Formamos y acompañamos a equipos de programación. Estamos especializados en Clean code, TDD y patrones de diseño.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
@@ -37,7 +38,8 @@
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms.css">
     <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
-    <!--[if lt IE 9]><link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
     <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
 
     <!-- CSS Page Style -->
@@ -60,9 +62,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="header-fixed header-fixed-space">
 <div class="wrapper">
 
-   {{ include('main_header.html.twig') }}
-   {{ include('main_landing_screen.html.twig') }}
-   {{ include('main_services.html.twig') }}
+    {{ include('main/header.html.twig') }}
+    {{ include('main/landing_screen.html.twig') }}
+    {{ include('main/services.html.twig') }}
 
     <!--=== Trainings Block ===-->
     <div id="formacion">
@@ -70,15 +72,20 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
                 <h2>Formación</h2>
                 <span class="bordered-icon"><img src="img/favicons/favicon-16x16.png"></span>
-                <p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de desarrollo del software. Nuestros cursos prácticos se centran en aprender una habilidad específica. Después de la formación acompañamos a tu equipo a poner en práctica en su día a día lo que han aprendido.</p>
+                <p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de
+                    desarrollo del software. Nuestros cursos prácticos se centran en aprender una habilidad específica.
+                    Después de la formación acompañamos a tu equipo a poner en práctica en su día a día lo que han
+                    aprendido.</p>
             </div><!--/Headline Center v2-->
 
             <div class="row margin-bottom-30 equal-height">
                 <div class="col-md-6 md-margin-bottom-50">
                     <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30" src="img/trainings/tdd_flow.gif" alt="">
+                        <img class="img-responsive center-block margin-bottom-30" src="img/trainings/tdd_flow.gif"
+                             alt="">
                         <h3 class="text-center">TDD</h3>
-                        <p>Cambia la forma en la que piensas para simplificar el desarrollo y asegurar la calidad.</p><br>
+                        <p>Cambia la forma en la que piensas para simplificar el desarrollo y asegurar la calidad.</p>
+                        <br>
                         <ul class="list-unstyled lists-v1">
                             <li><i class="fa fa-angle-right"></i>Ciclo de desarrollo usando TDD</li>
                             <li><i class="fa fa-angle-right"></i>Test dobles para aislar capas</li>
@@ -92,7 +99,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 </div>
                 <div class="col-md-6 md-margin-bottom-50">
                     <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30" src="img/trainings/refactoring_to_patterns.jpg" alt="">
+                        <img class="img-responsive center-block margin-bottom-30"
+                             src="img/trainings/refactoring_to_patterns.jpg" alt="">
                         <h3 class="text-center">Working with Legacy Code</h3>
                         <p>Desacopla tu código para reducir los costes de desarrollo y mantimiento.</p><br>
 
@@ -103,7 +111,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <li><i class="fa fa-angle-right"></i>Estrategias para transformar tu monolito.</li>
                         </ul>
                         <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link" onclick="setContactAction('Legacy Code')">Contáctanos</a>
+                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
+                               onclick="setContactAction('Legacy Code')">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +127,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
                 <h2>Acompañamiento</h2>
                 <span class="bordered-icon"><img src="img/favicons/favicon-16x16.png"></span>
-                <p>Buscas transformar tu equipo incorporando experiencia y conocimiento para afrontar las dificultades de tu día a día.<br />
-                    Llevamos más de 10 años desarrollando aplicaciones web y acompañando equipos tanto en startups como en multinacionales en varios países.</p>
+                <p>Buscas transformar tu equipo incorporando experiencia y conocimiento para afrontar las dificultades
+                    de tu día a día.<br/>
+                    Llevamos más de 10 años desarrollando aplicaciones web y acompañando equipos tanto en startups como
+                    en multinacionales en varios países.</p>
             </div><!--/Headline Center v2-->
 
             <div class="row equal-height">
@@ -127,7 +138,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
                         <img class="img-responsive center-block" src="img/accompaniment/mentor.jpg" alt="">
                         <h3 class="text-center">Mentorización</h3>
-                        <p>El objetivo es transformar al equipo transmitiendo nuestros conocimientos trabajando codo con codo. Estamos convencidos que esa es la mejor forma de consolidar el aprendizaje.</p><br>
+                        <p>El objetivo es transformar al equipo transmitiendo nuestros conocimientos trabajando codo con
+                            codo. Estamos convencidos que esa es la mejor forma de consolidar el aprendizaje.</p><br>
                         <ul class="list-unstyled lists-v1">
                             <li><i class="fa fa-angle-right"></i>Integración con el equipo</li>
                             <li><i class="fa fa-angle-right"></i>Aumentar la calidad y los resultados</li>
@@ -135,7 +147,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <li><i class="fa fa-angle-right"></i>Compromiso a medio y largo plazo</li>
                         </ul>
                         <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link" onclick="setContactAction('Mentorización')">Contáctanos</a>
+                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
+                               onclick="setContactAction('Mentorización')">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +156,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
                         <img class="img-responsive center-block" src="img/accompaniment/consulting.png" alt="">
                         <h3 class="text-center">Consultoría</h3>
-                        <p>Quieres validar cómo trabajas o implantar nuevas ideas con la ayuda de alguien que conoce el camino y tiene experiencia en ese campo.</p><br>
+                        <p>Quieres validar cómo trabajas o implantar nuevas ideas con la ayuda de alguien que conoce el
+                            camino y tiene experiencia en ese campo.</p><br>
                         <ul class="list-unstyled lists-v1">
                             <li><i class="fa fa-angle-right"></i>Desencallar un problema</li>
                             <li><i class="fa fa-angle-right"></i>Resolución de dudas</li>
@@ -151,7 +165,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <li><i class="fa fa-angle-right"></i>Identificar problemas estructurales desapercibidos</li>
                         </ul>
                         <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link" onclick="setContactAction('Consultoría')">Contáctanos</a>
+                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
+                               onclick="setContactAction('Consultoría')">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +181,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
                 <h2>Desarrollo Web</h2>
                 <span class="bordered-icon"><img src="img/favicons/favicon-16x16.png"></span>
-                <p>Contacta con nosotros si quieres desarrollar una aplicación completa, un módulo de tu aplicación, una integración con un servicio externo o mejorar el rendimiento y la escalabilidad de tu aplicación.</p>
+                <p>Contacta con nosotros si quieres desarrollar una aplicación completa, un módulo de tu aplicación, una
+                    integración con un servicio externo o mejorar el rendimiento y la escalabilidad de tu
+                    aplicación.</p>
             </div><!--/Headline Center v2-->
 
             <div class="row margin-bottom-50">
@@ -234,10 +251,15 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 </div>
                 <div class="col-md-6">
                     <h3>Desarrollar una aplicación o módulo</h3>
-                    <p>Desarrollamos el front-end rico usando Angular o React. En el back-end exponemos una API programada con Symfony o NodeJS.</p>
-                    <p>Mediante una comunicación estrecha buscamos llegar a la raíz del problema para encontrar las soluciones más simples para obtener unos resultados más satisfactorios.</p>
-                    <p>Trabajamos en sprints de dos semanas. Al principio de cada sprint nos centramos en definir qué es lo que más valor aporta al siguiente desarrollo.</p>
-                    <p>Garantizamos que la aplicación se comporta como se espera mediante tests automáticos que reducen los costes de mantenimiento. De esta forma nos aseguramos de que se puede añadir funcionalidad sin miedo a que deje de funcionar lo que ya se ha entregado.</p>
+                    <p>Desarrollamos el front-end rico usando Angular o React. En el back-end exponemos una API
+                        programada con Symfony o NodeJS.</p>
+                    <p>Mediante una comunicación estrecha buscamos llegar a la raíz del problema para encontrar las
+                        soluciones más simples para obtener unos resultados más satisfactorios.</p>
+                    <p>Trabajamos en sprints de dos semanas. Al principio de cada sprint nos centramos en definir qué es
+                        lo que más valor aporta al siguiente desarrollo.</p>
+                    <p>Garantizamos que la aplicación se comporta como se espera mediante tests automáticos que reducen
+                        los costes de mantenimiento. De esta forma nos aseguramos de que se puede añadir funcionalidad
+                        sin miedo a que deje de funcionar lo que ya se ha entregado.</p>
                 </div>
             </div><!--/end row-->
 
@@ -246,7 +268,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <h3>Desarrollo de integraciones</h3>
                     <p>Servicios de terceros: Google, Dropbox, Slack, Twitter, Amazon...</p>
                     <p>Seguridad: Single sign-on, OAuth, LDAP, Active Directory y ACL</p>
-                    <br />
+                    <br/>
                     <h3>Mejorar el rendimiento</h3>
                     <p>Análisis en profundidad para detectar de cuellos de botella</p>
                     <p>Optimización de queries, índices y tablas en bases de datos</p>
@@ -461,11 +483,14 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="headline-center-v2 headline-light color-white margin-bottom-60">
                     <h2>Sobre nosotros</h2>
                     <span class="bordered-icon"><img src="img/favicons/favicon-16x16-white.png"></span>
-                    <p class="about-us-description">Somos un equipo que llevamos trabajando juntos los últimos 5 años: uno es especialista en desarrollo front-end y el otro en back-end.<br>
+                    <p class="about-us-description">Somos un equipo que llevamos trabajando juntos los últimos 5 años:
+                        uno es especialista en desarrollo front-end y el otro en back-end.<br>
                         No comprometemos la <span class="color-green">calidad</span>. Estamos enfocados a
-                        <span class="color-green">resultados</span>, buscando además <span class="color-green">mejorar</span>
-                        las habilidades y motivación de los equipos.<br >
-                        Con nuestra <span class="color-green">experiencia demostrable</span> en tomar el control de proyectos en marcha.</p>
+                        <span class="color-green">resultados</span>, buscando además <span
+                                class="color-green">mejorar</span>
+                        las habilidades y motivación de los equipos.<br>
+                        Con nuestra <span class="color-green">experiencia demostrable</span> en tomar el control de
+                        proyectos en marcha.</p>
                 </div>
 
                 <div class="row equal-height">
@@ -475,15 +500,21 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <h3>Luis Rovirosa</h3>
                             <span class="color-green">Desarrollador back-end | Coach en desarrollo de software</span>
                             <div class="margin-bottom-20">
-                                <p>Luis es calmado, una persona de confianza y que tiene un gran afán por probar y aprender cosas nuevas.</p>
-                                <p>Es un ‘doer’, enfocado a producir y sacar el trabajo adelante sabiendo captar los momentos en los que hay que parar y pensar.</p>
+                                <p>Luis es calmado, una persona de confianza y que tiene un gran afán por probar y
+                                    aprender cosas nuevas.</p>
+                                <p>Es un ‘doer’, enfocado a producir y sacar el trabajo adelante sabiendo captar los
+                                    momentos en los que hay que parar y pensar.</p>
                                 <p>Pasión por la calidad y el trabajo bien hecho. Le preocupa la calidad del código.<br>
-                                    Le gustan las cosas buenas y no le importa pagar su precio si sabe que lo va a disfrutar.</p>
+                                    Le gustan las cosas buenas y no le importa pagar su precio si sabe que lo va a
+                                    disfrutar.</p>
                                 <p>Le gusta viajar, las series de TV y la buena comida</p>
-                                <p>Tiene interiorizado que los libros son una fuente inagotable de sabiduría aunque es crítico con lo lee y forma su propia opinión. De ellos aprende rápido y lo aplica en su día a día.
+                                <p>Tiene interiorizado que los libros son una fuente inagotable de sabiduría aunque es
+                                    crítico con lo lee y forma su propia opinión. De ellos aprende rápido y lo aplica en
+                                    su día a día.
                                     Disfruta compartiendo sus conocimientos y le gusta que la gente aprenda y mejore.
                                     Gran habilidad para mediar en los conflictos.</p>
-                                <p>Sabe escuchar y mide las palabras antes de hablar para dar una respuesta ajustada.</p>
+                                <p>Sabe escuchar y mide las palabras antes de hablar para dar una respuesta
+                                    ajustada.</p>
                                 <p>Su máxima: <em>"Atrévete a salir de tu zona de confort"</em></p>
 
                                 <p>Película: Interstate 60 - Bob Gale<br>
@@ -493,17 +524,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                             <ul class="list-inline team-social">
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips" data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa" onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
+                                       data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa"
+                                       onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips" data-original-title="Twitter" href="http://twitter.com/luisrovirosa" onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
+                                       data-original-title="Twitter" href="http://twitter.com/luisrovirosa"
+                                       onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips" data-original-title="Github" href="http://github.com/luisrovirosa" onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
+                                       data-original-title="Github" href="http://github.com/luisrovirosa"
+                                       onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </li>
@@ -516,11 +553,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <h3>Jordi Anguela</h3>
                             <span class="color-green">Desarrollador front-end | Coach en desarrollo de software</span>
                             <div class="margin-bottom-20">
-                                <p>Jordi es muy sociable, alegre y calmado. Destaca por su facilidad de integración en cualquier ambiente y trabajar en equipo. Tiene una gran capacidad para aprender y le entusiasma compartir sus conocimientos.</p>
-                                <p>Le gusta profundizar y entender los por qués de las cosas y hace énfasis en que si no está subido a producción no sirve de nada.</p>
-                                <p>Dedica mucho tiempo a jugar con sus hijos y a cocinar. Utiliza sus dotes de artesano para crear nuevos juguetes o hacer pan.</p>
-                                <p>Le encanta viajar y es un apasionado de la cocina hecha con amor, los vinos y las cervezas artesanas.</p>
-                                <p>Amante del mar y el océano donde aprovecha para practicar surf y recargarse de energía.</p>
+                                <p>Jordi es muy sociable, alegre y calmado. Destaca por su facilidad de integración en
+                                    cualquier ambiente y trabajar en equipo. Tiene una gran capacidad para aprender y le
+                                    entusiasma compartir sus conocimientos.</p>
+                                <p>Le gusta profundizar y entender los por qués de las cosas y hace énfasis en que si no
+                                    está subido a producción no sirve de nada.</p>
+                                <p>Dedica mucho tiempo a jugar con sus hijos y a cocinar. Utiliza sus dotes de artesano
+                                    para crear nuevos juguetes o hacer pan.</p>
+                                <p>Le encanta viajar y es un apasionado de la cocina hecha con amor, los vinos y las
+                                    cervezas artesanas.</p>
+                                <p>Amante del mar y el océano donde aprovecha para practicar surf y recargarse de
+                                    energía.</p>
 
                                 <p>Su máxima: <em>"En la vida hay que saber montárselo bien"</em></p>
 
@@ -530,17 +573,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             </div>
                             <ul class="list-inline team-social">
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips" data-original-title="LinkedIn" href="http://linkedin.com/in/jordianguela" onclick="socialNetwork('Jordi', 'LinkedIn')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
+                                       data-original-title="LinkedIn" href="http://linkedin.com/in/jordianguela"
+                                       onclick="socialNetwork('Jordi', 'LinkedIn')" target="_blank">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips" data-original-title="Twitter" href="http://twitter.com/jordianguela" onclick="socialNetwork('Jordi', 'Twitter')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
+                                       data-original-title="Twitter" href="http://twitter.com/jordianguela"
+                                       onclick="socialNetwork('Jordi', 'Twitter')" target="_blank">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips" data-original-title="Github" href="http://github.com/jordianguela" onclick="socialNetwork('Jordi', 'GitHub')" target="_blank">
+                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
+                                       data-original-title="Github" href="http://github.com/jordianguela"
+                                       onclick="socialNetwork('Jordi', 'GitHub')" target="_blank">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </li>
@@ -565,7 +614,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="sorting-block">
                 <div class="content-xs">
                     <div class="sorting-nav sorting-nav-v1 text-center">
-                        <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_training">Formación</a>
+                        <a class="filter btn-u btn-brd btn-brd-hover rounded"
+                           data-filter="category_training">Formación</a>
                         <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_coaching">Acompañamiento</a>
                         <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_development">Desarrollo</a>
                     </div>
@@ -574,7 +624,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <ul class="row sorting-grid">
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/ironhack.png" alt="" />
+                            <img class="img-responsive" src="img/clients/ironhack.png" alt=""/>
                             <div class="mask">
                                 <h2>Ironhack</h2>
                                 <p>Formación jQuery en Barcelona and Madrid</p>
@@ -583,7 +633,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/hotelbeds.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/hotelbeds.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Hotelbeds</h2>
                                 <p>Formación en TDD</p>
@@ -592,7 +642,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/logitravel.png" alt="" />
+                            <img class="img-responsive" src="img/clients/logitravel.png" alt=""/>
                             <div class="mask">
                                 <h2>Logitravel</h2>
                                 <p>Formación en TDD + Formación en Working with legacy code</p>
@@ -601,7 +651,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/ustglobal.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/ustglobal.jpg" alt=""/>
                             <div class="mask">
                                 <h2>UST Global</h2>
                                 <p>Formación en TDD</p>
@@ -610,7 +660,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/idiada.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/idiada.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Idiada</h2>
                                 <p>Formación en buenas prácticas de Front-end + Desarrollos Java Full-stack</p>
@@ -619,7 +669,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/schibsted.png" alt="" />
+                            <img class="img-responsive" src="img/clients/schibsted.png" alt=""/>
                             <div class="mask">
                                 <h2>Schibsted</h2>
                                 <p>Formación en TDD</p>
@@ -628,7 +678,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/habitissimo.png" alt="" />
+                            <img class="img-responsive" src="img/clients/habitissimo.png" alt=""/>
                             <div class="mask">
                                 <h2>Habitissimo</h2>
                                 <p>Formación en TDD</p>
@@ -637,7 +687,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training category_coaching" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/ccma.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/ccma.jpg" alt=""/>
                             <div class="mask">
                                 <h2>TV3</h2>
                                 <p>Formación en TDD + Acompañamiento en PHP y cliclo de vida del desarrollo</p>
@@ -646,16 +696,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/generali.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/generali.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Generali</h2>
-                                <p>Desarrollo de aplicaciones basadas en procesos + Formación avanzada de integración de BonitaBPM</p>
+                                <p>Desarrollo de aplicaciones basadas en procesos + Formación avanzada de integración de
+                                    BonitaBPM</p>
                             </div>
                         </div>
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/decathlon.png" alt="" />
+                            <img class="img-responsive" src="img/clients/decathlon.png" alt=""/>
                             <div class="mask">
                                 <h2>Decathlon</h2>
                                 <p>Consultoría en historias de usuario y código legado</p>
@@ -664,25 +715,28 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/bankinter.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/bankinter.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Bankinter</h2>
-                                <p>Consultoría en buenas prácticas de desarrollo y cíclo de vida del desarrollo de software.</p>
+                                <p>Consultoría en buenas prácticas de desarrollo y cíclo de vida del desarrollo de
+                                    software.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="col-md-3 col-xs-6 mix category_training category_coaching category_development" data-cat="1">
+                    <li class="col-md-3 col-xs-6 mix category_training category_coaching category_development"
+                        data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/talentclue.png" alt="" />
+                            <img class="img-responsive" src="img/clients/talentclue.png" alt=""/>
                             <div class="mask">
                                 <h2>TalentClue</h2>
-                                <p>Formación en TDD, BDD y Front-end + Acompañamiento en buenas práctica de desarrollo + Desarrollo en Angular y PHP</p>
+                                <p>Formación en TDD, BDD y Front-end + Acompañamiento en buenas práctica de desarrollo +
+                                    Desarrollo en Angular y PHP</p>
                             </div>
                         </div>
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/globalo2.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/globalo2.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Global O2</h2>
                                 <p>Due diligence técnica y asesoramiento tecnológico.</p>
@@ -691,7 +745,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/meta4.png" alt="" />
+                            <img class="img-responsive" src="img/clients/meta4.png" alt=""/>
                             <div class="mask">
                                 <h2>Meta 4</h2>
                                 <p>Consultoría en TDD</p>
@@ -700,7 +754,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/coches.com.png" alt="" />
+                            <img class="img-responsive" src="img/clients/coches.com.png" alt=""/>
                             <div class="mask">
                                 <h2>Coches.com</h2>
                                 <p>Formación en TDD</p>
@@ -709,7 +763,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/oesia.png" alt="" />
+                            <img class="img-responsive" src="img/clients/oesia.png" alt=""/>
                             <div class="mask">
                                 <h2>Oesia</h2>
                                 <p>Formación en TDD</p>
@@ -718,16 +772,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/bonitasoft.png" alt="" />
+                            <img class="img-responsive" src="img/clients/bonitasoft.png" alt=""/>
                             <div class="mask">
                                 <h2>Bonitasoft</h2>
-                                <p>Formador oficial + Desarrollo de conectores para integrar con múltiples servicios y plugins maven</p>
+                                <p>Formador oficial + Desarrollo de conectores para integrar con múltiples servicios y
+                                    plugins maven</p>
                             </div>
                         </div>
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/avanzaentucarrera.gif" alt="" />
+                            <img class="img-responsive" src="img/clients/avanzaentucarrera.gif" alt=""/>
                             <div class="mask">
                                 <h2>Avanza en tu carrera</h2>
                                 <p>Arquitectura y desarrollo en PHP</p>
@@ -736,16 +791,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_coaching category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/canoe.png" alt="" />
+                            <img class="img-responsive" src="img/clients/canoe.png" alt=""/>
                             <div class="mask">
                                 <h2>Canoe</h2>
-                                <p>Acompañamiento de stack tecnológico + Integraciones de back-end con dropbox y frontend en Angular</p>
+                                <p>Acompañamiento de stack tecnológico + Integraciones de back-end con dropbox y
+                                    frontend en Angular</p>
                             </div>
                         </div>
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/lahuella.png" alt="" />
+                            <img class="img-responsive" src="img/clients/lahuella.png" alt=""/>
                             <div class="mask">
                                 <h2>La huella</h2>
                                 <p>Desarrollo en React y Javascript.</p>
@@ -754,7 +810,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/deutschetelekom.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/deutschetelekom.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Deutche Telekom</h2>
                                 <p>Desarrollo front-end en Angular</p>
@@ -763,7 +819,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/inditex.png" alt="" />
+                            <img class="img-responsive" src="img/clients/inditex.png" alt=""/>
                             <div class="mask">
                                 <h2>Inditex</h2>
                                 <p>Arquitectura y desarrollo en PHP</p>
@@ -772,7 +828,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/lobster.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/lobster.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Lobster</h2>
                                 <p>Arquitectura y desarrollo front-end en React y Flux</p>
@@ -781,7 +837,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/irchispano.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/irchispano.jpg" alt=""/>
                             <div class="mask">
                                 <h2>IRC Hispano</h2>
                                 <p>Desarrollo front-end en Angular e Ionic</p>
@@ -790,7 +846,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </li>
                     <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
                         <div class="view view-tenth">
-                            <img class="img-responsive" src="img/clients/wouzee.jpg" alt="" />
+                            <img class="img-responsive" src="img/clients/wouzee.jpg" alt=""/>
                             <div class="mask">
                                 <h2>Wouzee</h2>
                                 <p>Arquitectura y desarrollo en PHP</p>
@@ -829,7 +885,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="row margin-bottom-30">
                 <div class="col-md-9 mb-margin-bottom-30">
                     <div id="formulario-contacto">
-                        <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un momento para hablar.</p><br />
+                        <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un
+                            momento para hablar.</p><br/>
                         <form action="#" method="post" id="formulario-contacto-form" class="sky-form contact-style">
                             <fieldset class="no-padding">
                                 <label for="name">Nombre <span class="color-red">*</span></label>
@@ -850,19 +907,24 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                     </div>
                                 </div>
 
-                                <input type="hidden" name="action" id="contact-action" class="form-control" value="Formulario de contacto">
+                                <input type="hidden" name="action" id="contact-action" class="form-control"
+                                       value="Formulario de contacto">
 
                                 <label for="message">Mensaje <span class="color-red">*</span></label>
                                 <div class="row sky-space-20">
                                     <div class="col-md-11 col-md-offset-0">
                                         <div>
-                                            <textarea rows="8" name="message" id="message" class="form-control" required></textarea>
+                                            <textarea rows="8" name="message" id="message" class="form-control"
+                                                      required></textarea>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div><br />
-                                <p><button type="submit" class="btn-u">Manda el mensaje</button></p>
+                                <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div>
+                                <br/>
+                                <p>
+                                    <button type="submit" class="btn-u">Manda el mensaje</button>
+                                </p>
                             </fieldset>
 
                             <div class="message">
@@ -891,7 +953,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
                                 <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
                                     Por favor mándanos el mensaje a
-                                    <a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+                                    <a data-name="info" data-domain="codium" data-tld="team" href="#"
+                                       class="cryptedmail"
+                                       onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
                                 </p>
                                 <div class="testimonial-info">
                                     <img class="rounded-2x" src="img/about-us/jordi.jpeg" alt="">
@@ -910,15 +974,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="headline"><h2>Datos de contacto</h2></div>
                     <ul class="list-unstyled who margin-bottom-30">
                         <li><a href="#"><i class="fa fa-home"></i>Madrid y Barcelona</a></li>
-                        <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i class="fa fa-envelope"></i></a></li>
+                        <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail"
+                               onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i
+                                        class="fa fa-envelope"></i></a></li>
                         <li><a href="https://twitter.com/codiumteam"><i class="fa fa-twitter"></i>@CodiumTeam</a></li>
                     </ul>
                 </div><!--/col-md-3-->
             </div><!--/row-->
-            <br />
-            <br />
-            <br />
-            <br />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div><!--/container-->
     </div>
     <!--=== End Contact Form ===-->
@@ -957,10 +1023,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 </script>
 
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-101845458-1', 'auto');
     ga('send', 'pageview');
