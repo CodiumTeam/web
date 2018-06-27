@@ -11,8 +11,6 @@
 ] %}
 
 {% block link %}
-    <div class="bottom-contact-btn page-scroll">
-        <a href="#contacto" class="btn-u bottom-contact-btn-link"
-           onclick="setContactAction('Consultoría')">Contáctanos</a>
-    </div>
+    {{ include('main/component/service_contact_us_button.html.twig', { actionName: 'Consultoría'}) }}
+
 {% endblock %}

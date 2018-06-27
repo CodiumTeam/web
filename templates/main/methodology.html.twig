@@ -68,8 +68,6 @@
             </div>
         </div><!--/end row-->
 
-        <div class="text-center page-scroll">
-            <a href="#contacto" class="btn-u" onclick="setContactAction('Metodología')">Contáctanos</a>
-        </div>
+        {{ include('main/component/contact_us_button.html.twig', { actionName: 'Metodología'}) }}
     </div>
 </div>
