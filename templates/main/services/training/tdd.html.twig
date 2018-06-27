@@ -1,0 +1,17 @@
+{% extends "main/services/service.html.twig" %}
+
+{% set image = "/img/trainings/tdd_flow.gif" %}
+{% set title = "TDD" %}
+{% set summary = "Cambia la forma en la que piensas para simplificar el desarrollo y asegurar la calidad." %}
+{% set sellingPoints = [
+    "Ciclo de desarrollo usando TDD",
+    "Test dobles para aislar capas",
+    "Buenas prácticas y olores en el código",
+    "Cómo testear código legado",
+] %}
+
+{% block link %}
+    <div class="bottom-contact-btn">
+        <a href="/curso-tdd.html" class="btn-u bottom-contact-btn-link">Más información</a>
+    </div>
+{% endblock %}

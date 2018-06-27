@@ -1,0 +1,18 @@
+{% extends "main/services/service.html.twig" %}
+
+{% set image = "/img/trainings/refactoring_to_patterns.jpg" %}
+{% set title = "Working with Legacy Code" %}
+{% set summary = "Desacopla tu código para reducir los costes de desarrollo y mantimiento." %}
+{% set sellingPoints = [
+    "Aprende a desacoplar las dependencias.",
+    "Identifica los problemas en el código.",
+    "De código spagetti a uno bien diseñado.",
+    "Estrategias para transformar tu monolito.",
+] %}
+
+{% block link %}
+    <div class="bottom-contact-btn page-scroll">
+        <a href="#contacto" class="btn-u bottom-contact-btn-link"
+           onclick="setContactAction('Legacy Code')">Contáctanos</a>
+    </div>
+{% endblock %}

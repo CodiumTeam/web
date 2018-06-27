@@ -1,0 +1,17 @@
+<div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
+    <img class="img-responsive center-block margin-bottom-30" src="{{ image }}"
+         alt="">
+    <h3 class="text-center">{{ title }}</h3>
+    <p>{{ summary }}</p>
+    <br>
+    <ul class="list-unstyled lists-v1">
+        {% for sellingPoint in sellingPoints %}
+            <li><i class="fa fa-angle-right"></i>{{ sellingPoint }}</li>
+        {% endfor %}
+    </ul>
+    {% block link %}
+        <div class="bottom-contact-btn">
+            <a href="{{ link }}" class="btn-u bottom-contact-btn-link">{{ buttonText }}</a>
+        </div>
+    {% endblock %}
+</div>
