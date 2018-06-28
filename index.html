@@ -63,1071 +63,1054 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <div class="wrapper">
 
     <nav id="navbar" class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="menu-container page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="container">
+        <div class="menu-container page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <a class="navbar-brand" href="#body">
-                    <img height="30px" src="/img/codium-white.png"/>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <div class="menu-container">
-                    <ul class="nav navbar-nav">
-                        <li class="page-scroll">
-                            <a id="navbar-home" href="#landing-screen" onclick="navigateTo('Inicio')">Inicio</a>
-                        </li>
-                        <li class="dropdown page-scroll">
-                            <a href="#servicios" onclick="navigateTo('Servicios')">Servicios</a>
-                            <ul class="dropdown-menu">
-                                <li class="page-scroll"><a href="#formacion"
-                                                           onclick="navigateTo('Formación')">Formación</a></li>
-                                <li class="page-scroll"><a href="#acompanamiento"
-                                                           onclick="navigateTo('Acompanamiento')">Acompanamiento</a>
-                                </li>
-                                <li class="page-scroll"><a href="#desarrollo" onclick="navigateTo('Desarrollo')">Desarrollo</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#metodologia" onclick="navigateTo('Metodología')">Metodología</a>
-                        </li>
-                        <!--<li class="page-scroll">-->
-                        <!--<a href="#">Projects</a>-->
-                        <!--</li>-->
-                        <li class="page-scroll">
-                            <a href="#sobre-nosotros" onclick="navigateTo('Nosotros')">Nosotros</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#clientes" onclick="navigateTo('Clientes')">Clientes</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#contacto" onclick="setContactAction('Navbar')">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.navbar-collapse -->
+            <a class="navbar-brand" href="#body">
+                <img height="30px" src="/img/codium-white.png" />
+            </a>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <div id="landing-screen" class="fullscreen-static-image1 fullheight bg-color-darker">
-        <div id="slogan" class="container landing-horizontal">
-            <div class="row">
-                <p>Formamos y acompañamos a equipos de programación.</p>
-                <p>Especializados en Clean code, TDD y patrones de diseño.</p>
-            </div>
-        </div>
-        <div class="container landing-horizontal hidden-xs">
-            <div class="row">
-                <div class="col-xs-4 content-boxes-v6 reason-why">
-                    <i class="rounded-x icon-trophy"></i>
-                    <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Resultados</h2>
-                    <h4 class="reasons-subtitle hidden-xs">Acelera tu desarrollo y recupera el control de tu
-                        proyecto</h4>
-                </div>
-                <div class="col-xs-4 content-boxes-v6 reason-why">
-                    <i class="rounded-x icon-diamond"></i>
-                    <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Calidad</h2>
-                    <h4 class="reasons-subtitle hidden-xs">Quieres un producto excelente y rodearte de los mejores</h4>
-                </div>
-                <div class="col-xs-4 content-boxes-v6 reason-why">
-                    <i class="rounded-x icon-speedometer"></i>
-                    <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Mejora</h2>
-                    <h4 class="reasons-subtitle hidden-xs">Impulsa las habilidades y la motivación de tu equipo</h4>
-                </div>
-            </div>
-        </div>
-        <div class="container landing-mobile-vertical">
-            <div id="slogan-mobile" class="row">
-                <p>Formamos y acompañamos a equipos de programación.</p>
-                <p>Especializados en Clean code, TDD y patrones de diseño.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="servicios" class="bg-color-light">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-30">
-                <h2>Servicios</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            </div>
-
-            <div class="row pricing-table-v4 no-space-pricing">
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-trainings">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-graduation"></i>
-                            <h2 class="heading-md">FORMACIÓN</h2>
-                            <p>Formación corta, específica y práctica. Busca ser un punto de inflexión en la forma de
-                                trabajar de tu equipo. Ayudamos a ponerlo en práctica.</p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> 2 días de formación</li>
-                            <li><span class="icon-people"></span> hasta 16 asistentes</li>
-                            <li><span class="icon-location-pin"></span> En tus oficinas</li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="menu-container">
+                <ul class="nav navbar-nav">
+                    <li class="page-scroll">
+                        <a id="navbar-home" href="#landing-screen" onclick="navigateTo('Inicio')">Inicio</a>
+                    </li>
+                    <li class="dropdown page-scroll">
+                        <a href="#servicios" onclick="navigateTo('Servicios')">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#formacion" onclick="navigateTo('Formación')">Formación</a></li>
+                            <li class="page-scroll"><a href="#acompanamiento" onclick="navigateTo('Acompanamiento')">Acompanamiento</a></li>
+                            <li class="page-scroll"><a href="#desarrollo" onclick="navigateTo('Desarrollo')">Desarrollo</a></li>
                         </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#formacion" class="btn-u btn-block text-center" onclick="moreInfo('training')">Más
-                                información</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-coaching">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-energy"></i>
-                            <h2 class="heading-md">ACOMPAÑAMIENTO</h2>
-                            <p>Soluciona problemas específicos con la ayuda de expertos. Obtén feedback y mejora los
-                                puntos que requieren atención.</p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> 1 o más días</li>
-                            <li><span class="icon-people"></span> 1 o más participantes</li>
-                            <li><span class="icon-location-pin"></span> En tus oficinas o en remoto</li>
-                        </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#acompanamiento" class="btn-u btn-block text-center"
-                               onclick="moreInfo('coaching')">Más información</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pricing-v4 pricing-development">
-                        <div class="pricing-v4-head text-center">
-                            <i class="icon-custom icon-color-light rounded-x icon-line icon-screen-desktop"></i>
-                            <h2 class="heading-md">DESARROLLO WEB</h2>
-                            <p>Desarrollo front y back-end.<br>
-                                Entregamos el software que más valor te aporta y con pruebas automáticas en cada sprint.
-                            </p>
-                        </div>
-                        <ul class="list-unstyled pricing-v4-content text-center">
-                            <li><span class="icon-hourglass"></span> Sprints de 2 semanas</li>
-                            <li><span class="icon-people"></span> -</li>
-                            <li><span class="icon-location-pin"></span> En remoto</li>
-                        </ul>
-                        <div class="pricing-v4-footer page-scroll">
-                            <a href="#desarrollo" class="btn-u btn-block text-center" onclick="moreInfo('development')">Más
-                                información</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="formacion">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-                <h2>Formación</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-                <p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de
-                    desarrollo del software. Nuestros cursos prácticos se centran en aprender una habilidad específica.
-                    Después de la formación acompañamos a tu equipo a poner en práctica en su día a día lo que han
-                    aprendido.</p>
-            </div><!--/Headline Center v2-->
-
-            <div class="row margin-bottom-30 equal-height">
-                <div class="col-md-6 md-margin-bottom-50">
-                    <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30" src="/img/trainings/tdd_flow.gif"
-                             alt="">
-                        <h3 class="text-center">TDD</h3>
-                        <p>Cambia la forma en la que piensas para simplificar el desarrollo y asegurar la calidad.</p>
-                        <br>
-                        <ul class="list-unstyled lists-v1">
-                            <li><i class="fa fa-angle-right"></i>Ciclo de desarrollo usando TDD</li>
-                            <li><i class="fa fa-angle-right"></i>Test dobles para aislar capas</li>
-                            <li><i class="fa fa-angle-right"></i>Buenas prácticas y olores en el código</li>
-                            <li><i class="fa fa-angle-right"></i>Cómo testear código legado</li>
-                        </ul>
-                        <div class="bottom-contact-btn">
-                            <a href="/curso-tdd.html" class="btn-u bottom-contact-btn-link">Más información</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 md-margin-bottom-50">
-                    <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30"
-                             src="/img/trainings/refactoring_to_patterns.jpg" alt="">
-                        <h3 class="text-center">Working with Legacy Code</h3>
-                        <p>Desacopla tu código para reducir los costes de desarrollo y mantimiento.</p><br>
-                        <ul class="list-unstyled lists-v1">
-                            <li><i class="fa fa-angle-right"></i>Aprende a desacoplar las dependencias.</li>
-                            <li><i class="fa fa-angle-right"></i>Identifica los problemas en el código.</li>
-                            <li><i class="fa fa-angle-right"></i>De código spagetti a uno bien diseñado.</li>
-                            <li><i class="fa fa-angle-right"></i>Estrategias para transformar tu monolito.</li>
-                        </ul>
-                        <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
-                               onclick="setContactAction('Legacy Code')">Contáctanos</a>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/end row-->
-        </div>
-    </div>
-
-    <div id="acompanamiento" class="bg-color-light">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-                <h2>Acompañamiento</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-                <p>Buscas transformar tu equipo incorporando experiencia y conocimiento para afrontar las dificultades
-                    de tu día a día.<br/>
-                    Llevamos más de 10 años desarrollando aplicaciones web y acompañando equipos tanto en startups como
-                    en multinacionales en varios países.</p>
-            </div><!--/Headline Center v2-->
-
-            <div class="row equal-height">
-                <div class="col-md-6 md-margin-bottom-50">
-                    <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30" src="/img/accompaniment/mentor.jpg" alt="">
-                        <h3 class="text-center">Mentorización</h3>
-                        <p>El objetivo es transformar al equipo transmitiendo nuestros conocimientos trabajando codo con
-                            codo. Estamos convencidos que esa es la mejor forma de consolidar el aprendizaje.</p><br>
-                        <ul class="list-unstyled lists-v1">
-                            <li><i class="fa fa-angle-right"></i>Integración con el equipo</li>
-                            <li><i class="fa fa-angle-right"></i>Aumentar la calidad y los resultados</li>
-                            <li><i class="fa fa-angle-right"></i>Feedback constante para mejorar</li>
-                            <li><i class="fa fa-angle-right"></i>Compromiso a medio y largo plazo</li>
-                        </ul>
-                        <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
-                               onclick="setContactAction('Mentorización')">Contáctanos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 md-margin-bottom-50">
-                    <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-                        <img class="img-responsive center-block margin-bottom-30" src="/img/accompaniment/consulting.png" alt="">
-                        <h3 class="text-center">Consultoría</h3>
-                        <p>Quieres validar cómo trabajas o implantar nuevas ideas con la ayuda de alguien que conoce el
-                            camino y tiene experiencia en ese campo.</p><br>
-                        <ul class="list-unstyled lists-v1">
-                            <li><i class="fa fa-angle-right"></i>Desencallar un problema</li>
-                            <li><i class="fa fa-angle-right"></i>Resolución de dudas</li>
-                            <li><i class="fa fa-angle-right"></i>Intervenciones puntuales y efectivas</li>
-                            <li><i class="fa fa-angle-right"></i>Identificar problemas estructurales desapercibidos</li>
-                        </ul>
-                        <div class="bottom-contact-btn page-scroll">
-                            <a href="#contacto" class="btn-u bottom-contact-btn-link"
-                               onclick="setContactAction('Consultoría')">Contáctanos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="desarrollo">
-        <div class="container content-sm" id="effect-2">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-                <h2>Desarrollo Web</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-                <p>Contacta con nosotros si quieres desarrollar una aplicación completa, un módulo de tu aplicación, una
-                    integración con un servicio externo o mejorar el rendimiento y la escalabilidad de tu
-                    aplicación.</p>
-            </div><!--/Headline Center v2-->
-
-            <div class="row margin-bottom-50">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-3">
-                            <ul class="list-inline our-clients">
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/javascript.png" alt="JavaScript">
-                                        <div class="img-hover">
-                                            <h4>JavaScript</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/angular.svg" alt="Angular">
-                                        <div class="img-hover">
-                                            <h4>Angular</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/react.svg" alt="React">
-                                        <div class="img-hover">
-                                            <h4>React</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <ul class="list-inline our-clients">
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/php.png" alt="PHP">
-                                        <div class="img-hover">
-                                            <h4>PHP</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/symfony.png" alt="Symfony">
-                                        <div class="img-hover">
-                                            <h4>Symfony</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="/img/development/nodejs.png" alt="NodeJS">
-                                        <div class="img-hover">
-                                            <h4>NodeJS</h4>
-                                        </div>
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h3>Desarrollar una aplicación o módulo</h3>
-                    <p>Desarrollamos el front-end rico usando Angular o React. En el back-end exponemos una API
-                        programada con Symfony o NodeJS.</p>
-                    <p>Mediante una comunicación estrecha buscamos llegar a la raíz del problema para encontrar las
-                        soluciones más simples para obtener unos resultados más satisfactorios.</p>
-                    <p>Trabajamos en sprints de dos semanas. Al principio de cada sprint nos centramos en definir qué es
-                        lo que más valor aporta al siguiente desarrollo.</p>
-                    <p>Garantizamos que la aplicación se comporta como se espera mediante tests automáticos que reducen
-                        los costes de mantenimiento. De esta forma nos aseguramos de que se puede añadir funcionalidad
-                        sin miedo a que deje de funcionar lo que ya se ha entregado.</p>
-                </div>
-            </div><!--/end row-->
-
-            <div class="row margin-bottom-50">
-                <div class="col-md-6">
-                    <h3>Desarrollo de integraciones</h3>
-                    <p>Servicios de terceros: Google, Dropbox, Slack, Twitter, Amazon...</p>
-                    <p>Seguridad: Single sign-on, OAuth, LDAP, Active Directory y ACL</p>
-                    <br/>
-                    <h3>Mejorar el rendimiento</h3>
-                    <p>Análisis en profundidad para detectar de cuellos de botella</p>
-                    <p>Optimización de queries, índices y tablas en bases de datos</p>
-                    <p>Acelerar el acceso a datos mediante cachés</p>
-                    <p>Prevenir incidencias mediante la correcta monitorización del sistema</p>
-                    <p>Realizar las tareas más costosas de forma asíncrona utilizando colas</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <ul class="list-inline our-clients">
-                            <li>
-                                <figure>
-                                    <img src="/img/development/docker.png" alt="Docker">
-                                    <div class="img-hover">
-                                        <h4>Docker</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/amazon.png" alt="Amazon">
-                                    <div class="img-hover">
-                                        <h4>Amazon</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/google.png" alt="Google">
-                                    <div class="img-hover">
-                                        <h4>Google</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/twitter.png" alt="Twitter">
-                                    <div class="img-hover">
-                                        <h4>Twitter</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <ul class="list-inline our-clients">
-                            <li>
-                                <figure>
-                                    <img src="/img/development/nginx.png" alt="Nginx">
-                                    <div class="img-hover">
-                                        <h4>Nginx</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/redis.png" alt="Redis">
-                                    <div class="img-hover">
-                                        <h4>Redis</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/solr.png" alt="Solr">
-                                    <div class="img-hover">
-                                        <h4>Solr</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/rabbitmq.png" alt="RabbitMQ">
-                                    <div class="img-hover">
-                                        <h4>RabbitMQ</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <ul class="list-inline our-clients">
-                            <li>
-                                <figure>
-                                    <img src="/img/development/newrelic.png" alt="NewRelic">
-                                    <div class="img-hover">
-                                        <h4>NewRelic</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/blackfire.png" alt="Blackfire">
-                                    <div class="img-hover">
-                                        <h4>Blackfire</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/jmeter.jpg" alt="JMeter">
-                                    <div class="img-hover">
-                                        <h4>JMeter</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/development/sonarqube.png" alt="SonarQube">
-                                    <div class="img-hover">
-                                        <h4>SonarQube</h4>
-                                    </div>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="text-center page-scroll">
-                    <a href="#contacto" class="btn-u" onclick="setContactAction('Desarrollo back-end')">Contáctanos</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="metodologia" class="bg-color-light">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark margin-bottom-60">
-                <h2>Metodología</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-                <p>Como <strong>Software Craftsmen</strong> desarrollamos <strong>software bien elaborado</strong>
-                    y formamos parte de una <strong>comunidad excepcional de profesionales</strong></p>
-                <p>Nuestro principio clave: <em>Primero simple y luego smart</em></p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-loop"></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">Metodología Lean</h3>
-                            <p>Reducimos el desperdicio con procesos cortos e iterativos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-bulb"></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">Los 5 porqués</h3>
-                            <p>Buscamos la raíz de los problemas para simplificar la solución</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-graduation"></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">Enseñando y liderando</h3>
-                            <p>Enseñando y liderando generamos un gran impacto en los que nos rodean</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/end row-->
-
-            <div class="row margin-bottom-40">
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-heart "></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">Craftsmanship</h3>
-                            <p>Nuestro impulso y deseo de hacer bien el trabajo por el simple placer de hacerlo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-wrench"></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">Practicando TDD</h3>
-                            <p>Desarrollamos usando Desarrollo dirigido por pruebas en nuestro día a día</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-boxes-v5 margin-bottom-30">
-                        <i class="rounded-x icon-globe"></i>
-                        <div class="overflow-h">
-                            <h3 class="no-top-space">En tus oficinas y en remoto</h3>
-                            <p>Nos adaptamos a tus necesidades</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/end row-->
-
-            <div class="text-center page-scroll">
-                <a href="#contacto" class="btn-u" onclick="setContactAction('Metodología')">Contáctanos</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="sobre-nosotros">
-        <div class="flat-testimonials bg-image-v1 parallaxBg1" style="background-position: 50% 241px;">
-            <div class="container">
-                <div class="headline-center-v2 headline-light color-white margin-bottom-60">
-                    <h2>Sobre nosotros</h2>
-                    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16-white.png"></span>
-                    <p class="about-us-description">Somos un equipo que llevamos trabajando juntos los últimos 5 años:
-                        uno es especialista en desarrollo front-end y el otro en back-end.<br>
-                        No comprometemos la <span class="color-green">calidad</span>. Estamos enfocados a
-                        <span class="color-green">resultados</span>, buscando además <span
-                                class="color-green">mejorar</span>
-                        las habilidades y motivación de los equipos.<br>
-                        Con nuestra <span class="color-green">experiencia demostrable</span> en tomar el control de
-                        proyectos en marcha.</p>
-                </div>
-
-                <div class="row equal-height">
-                    <div class="col-md-6">
-                        <div class="about-us-panel md-margin-bottom-50">
-                            <img alt="" src="/img/about-us/luis.jpg" class="rounded-x img-responsive">
-                            <h3>Luis Rovirosa</h3>
-                            <span class="color-green">Desarrollador back-end | Coach en desarrollo de software</span>
-                            <div class="margin-bottom-20">
-                                <p>Luis es calmado, una persona de confianza y que tiene un gran afán por probar y
-                                    aprender cosas nuevas.</p>
-                                <p>Es un ‘doer’, enfocado a producir y sacar el trabajo adelante sabiendo captar los
-                                    momentos en los que hay que parar y pensar.</p>
-                                <p>Pasión por la calidad y el trabajo bien hecho. Le preocupa la calidad del código.<br>
-                                    Le gustan las cosas buenas y no le importa pagar su precio si sabe que lo va a
-                                    disfrutar.</p>
-                                <p>Le gusta viajar, las series de TV y la buena comida</p>
-                                <p>Tiene interiorizado que los libros son una fuente inagotable de sabiduría aunque es
-                                    crítico con lo lee y forma su propia opinión. De ellos aprende rápido y lo aplica en
-                                    su día a día.
-                                    Disfruta compartiendo sus conocimientos y le gusta que la gente aprenda y mejore.
-                                    Gran habilidad para mediar en los conflictos.</p>
-                                <p>Sabe escuchar y mide las palabras antes de hablar para dar una respuesta
-                                    ajustada.</p>
-                                <p>Su máxima: <em>"Atrévete a salir de tu zona de confort"</em></p>
-
-                                <p>Película: Interstate 60 - Bob Gale<br>
-                                    Libro: The prayer of the frog - Anthony de Mello<br>
-                                    Canción: Mis cenizas - Sôber</p>
-                            </div>
-
-                            <ul class="list-inline team-social">
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                       data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa"
-                                       onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                       data-original-title="Twitter" href="http://twitter.com/luisrovirosa"
-                                       onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                       data-original-title="Github" href="http://github.com/luisrovirosa"
-                                       onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-us-panel md-margin-bottom-50">
-                            <img alt="" src="/img/about-us/jordi.jpeg" class="rounded-x img-responsive">
-                            <h3>Jordi Anguela</h3>
-                            <span class="color-green">Desarrollador front-end | Coach en desarrollo de software</span>
-                            <div class="margin-bottom-20">
-                                <p>Jordi es muy sociable, alegre y calmado. Destaca por su facilidad de integración en
-                                    cualquier ambiente y trabajar en equipo. Tiene una gran capacidad para aprender y le
-                                    entusiasma compartir sus conocimientos.</p>
-                                <p>Le gusta profundizar y entender los por qués de las cosas y hace énfasis en que si no
-                                    está subido a producción no sirve de nada.</p>
-                                <p>Dedica mucho tiempo a jugar con sus hijos y a cocinar. Utiliza sus dotes de artesano
-                                    para crear nuevos juguetes o hacer pan.</p>
-                                <p>Le encanta viajar y es un apasionado de la cocina hecha con amor, los vinos y las
-                                    cervezas artesanas.</p>
-                                <p>Amante del mar y el océano donde aprovecha para practicar surf y recargarse de
-                                    energía.</p>
-
-                                <p>Su máxima: <em>"En la vida hay que saber montárselo bien"</em></p>
-
-                                <p>Película: The Matrix - the Wachowski Brothers<br>
-                                    Libro: The Kingkiller Chronicle - Patrick Rothfuss<br>
-                                    Canción: The Golden Path - The Chemical Brothers</p>
-                            </div>
-                            <ul class="list-inline team-social">
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                       data-original-title="LinkedIn" href="http://linkedin.com/in/jordianguela"
-                                       onclick="socialNetwork('Jordi', 'LinkedIn')" target="_blank">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                       data-original-title="Twitter" href="http://twitter.com/jordianguela"
-                                       onclick="socialNetwork('Jordi', 'Twitter')" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                       data-original-title="Github" href="http://github.com/jordianguela"
-                                       onclick="socialNetwork('Jordi', 'GitHub')" target="_blank">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--/end row-->
-            </div><!--/end container-->
-        </div>
-    </div>
-
-    <div id="clientes" class="bg-color-light">
-        <div class="container content-sm no-padding-bottom">
-            <div class="headline-center-v2 headline-center-v2-dark">
-                <h2>Clientes</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            </div>
-
-            <!-- Portfolio Sorting Blocks -->
-            <div class="sorting-block">
-                <div class="content-xs">
-                    <div class="sorting-nav sorting-nav-v1 text-center">
-                        <a class="filter btn-u btn-brd btn-brd-hover rounded"
-                           data-filter="category_training">Formación</a>
-                        <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_coaching">Acompañamiento</a>
-                        <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_development">Desarrollo</a>
-                    </div>
-                </div>
-
-                <ul class="row sorting-grid">
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/ironhack.png" alt=""/>
-                            <div class="mask">
-                                <h2>Ironhack</h2>
-                                <p>Formación jQuery en Barcelona and Madrid</p>
-                            </div>
-                        </div>
                     </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/hotelbeds.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Hotelbeds</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
+                    <li class="page-scroll">
+                        <a href="#metodologia" onclick="navigateTo('Metodología')">Metodología</a>
                     </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/logitravel.png" alt=""/>
-                            <div class="mask">
-                                <h2>Logitravel</h2>
-                                <p>Formación en Working with legacy code + Formación en TDD</p>
-                            </div>
-                        </div>
+                    <!--<li class="page-scroll">-->
+                    <!--<a href="#">Projects</a>-->
+                    <!--</li>-->
+                    <li class="page-scroll">
+                        <a href="#sobre-nosotros" onclick="navigateTo('Nosotros')">Nosotros</a>
                     </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/ustglobal.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>UST Global</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
+                    <li class="page-scroll">
+                        <a href="#clientes" onclick="navigateTo('Clientes')">Clientes</a>
                     </li>
-                    <li class="col-md-3 col-xs-6 mix category_training category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/idiada.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Idiada</h2>
-                                <p>Formación en buenas prácticas de Front-end + Desarrollos Java Full-stack</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/schibsted.png" alt=""/>
-                            <div class="mask">
-                                <h2>Schibsted</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/habitissimo.png" alt=""/>
-                            <div class="mask">
-                                <h2>Habitissimo</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/ccma.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>TV3</h2>
-                                <p>Formación en TDD + Acompañamiento en PHP y cliclo de vida del desarrollo</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/generali.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Generali</h2>
-                                <p>Desarrollo de aplicaciones basadas en procesos + Formación avanzada de integración de
-                                    BonitaBPM</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/decathlon.png" alt=""/>
-                            <div class="mask">
-                                <h2>Decathlon</h2>
-                                <p>Consultoría en historias de usuario y código legado</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/bankinter.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Bankinter</h2>
-                                <p>Consultoría en buenas prácticas de desarrollo y cíclo de vida del desarrollo de
-                                    software.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training category_coaching category_development"
-                        data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/talentclue.png" alt=""/>
-                            <div class="mask">
-                                <h2>TalentClue</h2>
-                                <p>Formación en TDD, BDD y Front-end + Acompañamiento en buenas práctica de desarrollo +
-                                    Desarrollo en Angular y PHP</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/globalo2.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Global O2</h2>
-                                <p>Due diligence técnica y asesoramiento tecnológico.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/meta4.png" alt=""/>
-                            <div class="mask">
-                                <h2>Meta 4</h2>
-                                <p>Consultoría en TDD.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/coches.com.png" alt=""/>
-                            <div class="mask">
-                                <h2>Coches.com</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/oesia.png" alt=""/>
-                            <div class="mask">
-                                <h2>Oesia</h2>
-                                <p>Formación en TDD</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/bonitasoft.png" alt=""/>
-                            <div class="mask">
-                                <h2>Bonitasoft</h2>
-                                <p>Formador oficial + Desarrollo de conectores para integrar con múltiples servicios y
-                                    plugins maven</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/avanzaentucarrera.gif" alt=""/>
-                            <div class="mask">
-                                <h2>Avanza en tu carrera</h2>
-                                <p>Arquitectura y desarrollo en PHP.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_coaching category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/canoe.png" alt=""/>
-                            <div class="mask">
-                                <h2>Canoe</h2>
-                                <p>Acompañamiento de stack tecnológico + Integraciones de back-end con dropbox y
-                                    frontend en Angular</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/lahuella.png" alt=""/>
-                            <div class="mask">
-                                <h2>La huella</h2>
-                                <p>Desarrollo en React y Javascript.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/deutschetelekom.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Deutche Telekom</h2>
-                                <p>Desarrollo front-end en Angular</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/inditex.png" alt=""/>
-                            <div class="mask">
-                                <h2>Inditex</h2>
-                                <p>Arquitectura y desarrollo en PHP</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/lobster.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Lobster</h2>
-                                <p>Arquitectura y desarrollo front-end en React y Flux</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/irchispano.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>IRC Hispano</h2>
-                                <p>Desarrollo front-end en Angular e Ionic</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
-                        <div class="view view-tenth">
-                            <img class="img-responsive" src="/img/clients/wouzee.jpg" alt=""/>
-                            <div class="mask">
-                                <h2>Wouzee</h2>
-                                <p>Arquitectura y desarrollo en PHP</p>
-                            </div>
-                        </div>
+                    <li class="page-scroll">
+                        <a href="#contacto" onclick="setContactAction('Navbar')">Contacto</a>
                     </li>
                 </ul>
-                <div class="clearfix"></div>
             </div>
-            <!-- End Portfolio Sorting Blocks -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+    <div id="landing-screen" class="fullscreen-static-image1 fullheight bg-color-darker">
+    <div id="slogan" class="container landing-horizontal">
+        <div class="row">
+            <p>Formamos y acompañamos a equipos de programación.</p>
+            <p>Especializados en Clean code, TDD y patrones de diseño.</p>
         </div>
     </div>
+    <div class="container landing-horizontal hidden-xs">
+        <div class="row">
+            <div class="col-xs-4 content-boxes-v6 reason-why">
+                <i class="rounded-x icon-trophy"></i>
+                <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Resultados</h2>
+                <h4 class="reasons-subtitle hidden-xs">Acelera tu desarrollo y recupera el control de tu proyecto</h4>
+            </div>
+            <div class="col-xs-4 content-boxes-v6 reason-why">
+                <i class="rounded-x icon-diamond"></i>
+                <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Calidad</h2>
+                <h4 class="reasons-subtitle hidden-xs">Quieres un producto excelente y rodearte de los mejores</h4>
+            </div>
+            <div class="col-xs-4 content-boxes-v6 reason-why">
+                <i class="rounded-x icon-speedometer"></i>
+                <h2 class="title-v3-md text-uppercase margin-bottom-10 color-corp">Mejora</h2>
+                <h4 class="reasons-subtitle hidden-xs">Impulsa las habilidades y la motivación de tu equipo</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container landing-mobile-vertical">
+        <div id="slogan-mobile" class="row">
+            <p>Formamos y acompañamos a equipos de programación.</p>
+            <p>Especializados en Clean code, TDD y patrones de diseño.</p>
+        </div>
+    </div>
+</div>
+
+    <div id="servicios" class="bg-color-light">
+    <div class="container content-sm">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Servicios</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    </div>
+
+        <div class="row pricing-table-v4 no-space-pricing">
+            <div class="col-sm-4">
+    <div class="pricing-v4 pricing-trainings">
+        <div class="pricing-v4-head text-center">
+            <i class="icon-custom icon-color-light rounded-x icon-line icon-graduation"></i>
+            <h2 class="heading-md">FORMACIÓN</h2>
+            <p>Formación corta, específica y práctica. Busca ser un punto de inflexión en la forma de trabajar de tu equipo. Ayudamos a ponerlo en práctica.</p>
+        </div>
+        <ul class="list-unstyled pricing-v4-content text-center">
+            <li><span class="icon-hourglass"></span> 2 días de formación</li>
+            <li><span class="icon-people"></span> hasta 16 asistentes</li>
+            <li><span class="icon-location-pin"></span> En tus oficinas</li>
+        </ul>
+        <div class="pricing-v4-footer page-scroll">
+            <a href="#formacion" class="btn-u btn-block text-center" onclick="moreInfo('training')">Más información</a>
+        </div>
+    </div>
+</div>
+            <div class="col-sm-4">
+    <div class="pricing-v4 pricing-coaching">
+        <div class="pricing-v4-head text-center">
+            <i class="icon-custom icon-color-light rounded-x icon-line icon-energy"></i>
+            <h2 class="heading-md">ACOMPAÑAMIENTO</h2>
+            <p>Soluciona problemas específicos con la ayuda de expertos. Obtén feedback y mejora los puntos que requieren atención.</p>
+        </div>
+        <ul class="list-unstyled pricing-v4-content text-center">
+            <li><span class="icon-hourglass"></span> 1 o más días</li>
+            <li><span class="icon-people"></span> 1 o más participantes</li>
+            <li><span class="icon-location-pin"></span> En tus oficinas o en remoto</li>
+        </ul>
+        <div class="pricing-v4-footer page-scroll">
+            <a href="#acompanamiento" class="btn-u btn-block text-center" onclick="moreInfo('coaching')">Más información</a>
+        </div>
+    </div>
+</div>
+            <div class="col-sm-4">
+    <div class="pricing-v4 pricing-development">
+        <div class="pricing-v4-head text-center">
+            <i class="icon-custom icon-color-light rounded-x icon-line icon-screen-desktop"></i>
+            <h2 class="heading-md">DESARROLLO WEB</h2>
+            <p>Desarrollo front y back-end.<br>Entregamos el software que más valor te aporta y con pruebas automáticas en cada sprint.</p>
+        </div>
+        <ul class="list-unstyled pricing-v4-content text-center">
+            <li><span class="icon-hourglass"></span> Sprints de 2 semanas</li>
+            <li><span class="icon-people"></span> -</li>
+            <li><span class="icon-location-pin"></span> En remoto</li>
+        </ul>
+        <div class="pricing-v4-footer page-scroll">
+            <a href="#desarrollo" class="btn-u btn-block text-center" onclick="moreInfo('development')">Más información</a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+    <div id="formacion">
+    <div class="container content-sm">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Formación</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    <p>Como formadores profesionales enseñamos a tu equipo todos los temas relacionados con el ciclo de
+                desarrollo del software. Nuestros cursos prácticos se centran en aprender una habilidad específica.
+                Después de la formación acompañamos a tu equipo a poner en práctica en su día a día lo que han
+                aprendido.</p></div>
+
+        <div class="row margin-bottom-30 equal-height margin-top-60">
+            <div class="col-md-6 md-margin-bottom-50">
+                <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
+    <img class="img-responsive center-block margin-bottom-30" src="/img/trainings/tdd_flow.gif"
+         alt="">
+    <h3 class="text-center">TDD</h3>
+    <p>Cambia la forma en la que piensas para simplificar el desarrollo y asegurar la calidad.</p>
+    <br>
+    <ul class="list-unstyled lists-v1">
+                    <li><i class="fa fa-angle-right"></i>Ciclo de desarrollo usando TDD</li>
+                    <li><i class="fa fa-angle-right"></i>Test dobles para aislar capas</li>
+                    <li><i class="fa fa-angle-right"></i>Buenas prácticas y olores en el código</li>
+                    <li><i class="fa fa-angle-right"></i>Cómo testear código legado</li>
+            </ul>
+        <div class="bottom-contact-btn">
+        <a href="/curso-tdd.html" class="btn-u bottom-contact-btn-link">Más información</a>
+    </div>
+</div>
+            </div>
+            <div class="col-md-6 md-margin-bottom-50">
+                <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
+    <img class="img-responsive center-block margin-bottom-30" src="/img/trainings/refactoring_to_patterns.jpg"
+         alt="">
+    <h3 class="text-center">Working with Legacy Code</h3>
+    <p>Desacopla tu código para reducir los costes de desarrollo y mantimiento.</p>
+    <br>
+    <ul class="list-unstyled lists-v1">
+                    <li><i class="fa fa-angle-right"></i>Aprende a desacoplar las dependencias.</li>
+                    <li><i class="fa fa-angle-right"></i>Identifica los problemas en el código.</li>
+                    <li><i class="fa fa-angle-right"></i>De código spagetti a uno bien diseñado.</li>
+                    <li><i class="fa fa-angle-right"></i>Estrategias para transformar tu monolito.</li>
+            </ul>
+        <div class="bottom-contact-btn page-scroll">
+    <a href="#contacto" class="btn-u bottom-contact-btn-link"
+       onclick="setContactAction('Legacy Code')">Contáctanos</a>
+</div>
+</div>
+            </div>
+        </div><!--/end row-->
+    </div>
+</div>
+
+    <div id="acompanamiento" class="bg-color-light">
+    <div class="container content-sm">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Acompañamiento</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    <p>Buscas transformar tu equipo incorporando experiencia y conocimiento para afrontar las dificultades
+                de tu día a día.<br/>
+                Llevamos más de 10 años desarrollando aplicaciones web y acompañando equipos tanto en startups como
+                en multinacionales en varios países.</p></div>
+
+        <div class="row equal-height equal-height margin-top-60">
+            <div class="col-md-6 md-margin-bottom-50">
+                <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
+    <img class="img-responsive center-block margin-bottom-30" src="/img/accompaniment/mentor.jpg"
+         alt="">
+    <h3 class="text-center">Mentorización</h3>
+    <p>El objetivo es transformar al equipo transmitiendo nuestros conocimientos trabajando codo con codo. Estamos convencidos que esa es la mejor forma de consolidar el aprendizaje.</p>
+    <br>
+    <ul class="list-unstyled lists-v1">
+                    <li><i class="fa fa-angle-right"></i>Integración con el equipo</li>
+                    <li><i class="fa fa-angle-right"></i>Aumentar la calidad y los resultados</li>
+                    <li><i class="fa fa-angle-right"></i>Feedback constante para mejorar</li>
+                    <li><i class="fa fa-angle-right"></i>Compromiso a medio y largo plazo</li>
+            </ul>
+        <div class="bottom-contact-btn page-scroll">
+    <a href="#contacto" class="btn-u bottom-contact-btn-link"
+       onclick="setContactAction('Mentorización')">Contáctanos</a>
+</div>
+</div>
+            </div>
+            <div class="col-md-6 md-margin-bottom-50">
+                <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
+    <img class="img-responsive center-block margin-bottom-30" src="/img/accompaniment/consulting.png"
+         alt="">
+    <h3 class="text-center">Consultoría</h3>
+    <p>Quieres validar cómo trabajas o implantar nuevas ideas con la ayuda de alguien que conoce el camino y tiene experiencia en ese campo.</p>
+    <br>
+    <ul class="list-unstyled lists-v1">
+                    <li><i class="fa fa-angle-right"></i>Desencallar un problema</li>
+                    <li><i class="fa fa-angle-right"></i>Resolución de dudas</li>
+                    <li><i class="fa fa-angle-right"></i>Intervenciones puntuales y efectivas</li>
+                    <li><i class="fa fa-angle-right"></i>Identificar problemas estructurales desapercibidos</li>
+            </ul>
+        <div class="bottom-contact-btn page-scroll">
+    <a href="#contacto" class="btn-u bottom-contact-btn-link"
+       onclick="setContactAction('Consultoría')">Contáctanos</a>
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="desarrollo">
+    <div class="container content-sm" id="effect-2">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Desarrollo Web</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    <p>Contacta con nosotros si quieres desarrollar una aplicación completa, un módulo de tu aplicación, una
+                integración con un servicio externo o mejorar el rendimiento y la escalabilidad de tu
+                aplicación.</p></div>
+
+        <div class="row margin-bottom-50 margin-top-60">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="list-inline our-clients">
+                            <li>
+    <figure>
+        <img src="/img/development/javascript.png" alt="JavaScript">
+        <div class="img-hover">
+            <h4>JavaScript</h4>
+        </div>
+    </figure>
+</li>
+                            <li>
+    <figure>
+        <img src="/img/development/angular.svg" alt="Angular">
+        <div class="img-hover">
+            <h4>Angular</h4>
+        </div>
+    </figure>
+</li>
+                            <li>
+    <figure>
+        <img src="/img/development/react.svg" alt="React">
+        <div class="img-hover">
+            <h4>React</h4>
+        </div>
+    </figure>
+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="list-inline our-clients">
+                            <li>
+    <figure>
+        <img src="/img/development/php.png" alt="PHP">
+        <div class="img-hover">
+            <h4>PHP</h4>
+        </div>
+    </figure>
+</li>
+                            <li>
+    <figure>
+        <img src="/img/development/symfony.png" alt="Symfony">
+        <div class="img-hover">
+            <h4>Symfony</h4>
+        </div>
+    </figure>
+</li>
+                            <li>
+    <figure>
+        <img src="/img/development/nodejs.png" alt="NodeJS">
+        <div class="img-hover">
+            <h4>NodeJS</h4>
+        </div>
+    </figure>
+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Desarrollar una aplicación o módulo</h3>
+                <p>Desarrollamos el front-end rico usando Angular o React. En el back-end exponemos una API
+                    programada con Symfony o NodeJS.</p>
+                <p>Mediante una comunicación estrecha buscamos llegar a la raíz del problema para encontrar las
+                    soluciones más simples para obtener unos resultados más satisfactorios.</p>
+                <p>Trabajamos en sprints de dos semanas. Al principio de cada sprint nos centramos en definir qué es
+                    lo que más valor aporta al siguiente desarrollo.</p>
+                <p>Garantizamos que la aplicación se comporta como se espera mediante tests automáticos que reducen
+                    los costes de mantenimiento. De esta forma nos aseguramos de que se puede añadir funcionalidad
+                    sin miedo a que deje de funcionar lo que ya se ha entregado.</p>
+            </div>
+        </div><!--/end row-->
+
+        <div class="row margin-bottom-50">
+            <div class="col-md-6">
+                <h3>Desarrollo de integraciones</h3>
+                <p>Servicios de terceros: Google, Dropbox, Slack, Twitter, Amazon...</p>
+                <p>Seguridad: Single sign-on, OAuth, LDAP, Active Directory y ACL</p>
+                <br/>
+                <h3>Mejorar el rendimiento</h3>
+                <p>Análisis en profundidad para detectar de cuellos de botella</p>
+                <p>Optimización de queries, índices y tablas en bases de datos</p>
+                <p>Acelerar el acceso a datos mediante cachés</p>
+                <p>Prevenir incidencias mediante la correcta monitorización del sistema</p>
+                <p>Realizar las tareas más costosas de forma asíncrona utilizando colas</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <ul class="list-inline our-clients">
+                        <li>
+    <figure>
+        <img src="/img/development/docker.png" alt="Docker">
+        <div class="img-hover">
+            <h4>Docker</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/amazon.png" alt="Amazon">
+        <div class="img-hover">
+            <h4>Amazon</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/google.png" alt="Google">
+        <div class="img-hover">
+            <h4>Google</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/twitter.png" alt="Twitter">
+        <div class="img-hover">
+            <h4>Twitter</h4>
+        </div>
+    </figure>
+</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline our-clients">
+                        <li>
+    <figure>
+        <img src="/img/development/nginx.png" alt="Nginx">
+        <div class="img-hover">
+            <h4>Nginx</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/redis.png" alt="Redis">
+        <div class="img-hover">
+            <h4>Redis</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/solr.png" alt="Solr">
+        <div class="img-hover">
+            <h4>Solr</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/rabbitmq.png" alt="RabbitMQ">
+        <div class="img-hover">
+            <h4>RabbitMQ</h4>
+        </div>
+    </figure>
+</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline our-clients">
+                        <li>
+    <figure>
+        <img src="/img/development/newrelic.png" alt="NewRelic">
+        <div class="img-hover">
+            <h4>NewRelic</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/blackfire.png" alt="Blackfire">
+        <div class="img-hover">
+            <h4>Blackfire</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/jmeter.jpg" alt="JMeter">
+        <div class="img-hover">
+            <h4>JMeter</h4>
+        </div>
+    </figure>
+</li>
+                        <li>
+    <figure>
+        <img src="/img/development/sonarqube.png" alt="SonarQube">
+        <div class="img-hover">
+            <h4>SonarQube</h4>
+        </div>
+    </figure>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center page-scroll">
+    <a href="#contacto" class="btn-u"
+       onclick="setContactAction('Desarrollo back-end')">Contáctanos</a>
+</div>
+        </div>
+    </div>
+</div>
+
+    <div id="metodologia" class="bg-color-light">
+    <div class="container content-sm">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Metodología</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    <p>Como <strong>Software Craftsmen</strong> desarrollamos <strong>software bien elaborado</strong>
+                y formamos parte de una <strong>comunidad excepcional de profesionales</strong></p>
+            <p>Nuestro principio clave: <em>Primero simple y luego smart</em></p></div>
+
+        <div class="row margin-top-60">
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-loop"></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">Metodología Lean</h3>
+                        <p>Reducimos el desperdicio con procesos cortos e iterativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-bulb"></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">Los 5 porqués</h3>
+                        <p>Buscamos la raíz de los problemas para simplificar la solución</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-graduation"></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">Enseñando y liderando</h3>
+                        <p>Enseñando y liderando generamos un gran impacto en los que nos rodean</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--/end row-->
+
+        <div class="row margin-bottom-40">
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-heart "></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">Craftsmanship</h3>
+                        <p>Nuestro impulso y deseo de hacer bien el trabajo por el simple placer de hacerlo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-wrench"></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">Practicando TDD</h3>
+                        <p>Desarrollamos usando Desarrollo dirigido por pruebas en nuestro día a día</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-boxes-v5 margin-bottom-30">
+                    <i class="rounded-x icon-globe"></i>
+                    <div class="overflow-h">
+                        <h3 class="no-top-space">En tus oficinas y en remoto</h3>
+                        <p>Nos adaptamos a tus necesidades</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--/end row-->
+
+        <div class="text-center page-scroll">
+    <a href="#contacto" class="btn-u"
+       onclick="setContactAction('Metodología')">Contáctanos</a>
+</div>
+    </div>
+</div>
+
+    <div id="sobre-nosotros">
+    <div class="flat-testimonials bg-image-v1 parallaxBg1" style="background-position: 50% 241px;">
+        <div class="container">
+            <div class="headline-center-v2 headline-light color-white margin-bottom-60">
+                <h2>Sobre nosotros</h2>
+                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16-white.png"></span>
+                <p class="about-us-description">Somos un equipo que llevamos trabajando juntos los últimos 5 años:
+                    uno es especialista en desarrollo front-end y el otro en back-end.<br>
+                    No comprometemos la <span class="color-green">calidad</span>. Estamos enfocados a
+                    <span class="color-green">resultados</span>, buscando además <span
+                            class="color-green">mejorar</span>
+                    las habilidades y motivación de los equipos.<br>
+                    Con nuestra <span class="color-green">experiencia demostrable</span> en tomar el control de
+                    proyectos en marcha.</p>
+            </div>
+
+            <div class="row equal-height">
+                <div class="col-md-6">
+                    <div class="about-us-panel md-margin-bottom-50">
+                        <img alt="" src="/img/about-us/luis.jpg" class="rounded-x img-responsive">
+                        <h3>Luis Rovirosa</h3>
+                        <span class="color-green">Desarrollador back-end | Coach en desarrollo de software</span>
+                        <div class="margin-bottom-20">
+                            <p>Luis es calmado, una persona de confianza y que tiene un gran afán por probar y
+                                aprender cosas nuevas.</p>
+                            <p>Es un ‘doer’, enfocado a producir y sacar el trabajo adelante sabiendo captar los
+                                momentos en los que hay que parar y pensar.</p>
+                            <p>Pasión por la calidad y el trabajo bien hecho. Le preocupa la calidad del código.<br>
+                                Le gustan las cosas buenas y no le importa pagar su precio si sabe que lo va a
+                                disfrutar.</p>
+                            <p>Le gusta viajar, las series de TV y la buena comida</p>
+                            <p>Tiene interiorizado que los libros son una fuente inagotable de sabiduría aunque es
+                                crítico con lo lee y forma su propia opinión. De ellos aprende rápido y lo aplica en
+                                su día a día.
+                                Disfruta compartiendo sus conocimientos y le gusta que la gente aprenda y mejore.
+                                Gran habilidad para mediar en los conflictos.</p>
+                            <p>Sabe escuchar y mide las palabras antes de hablar para dar una respuesta
+                                ajustada.</p>
+                            <p>Su máxima: <em>"Atrévete a salir de tu zona de confort"</em></p>
+
+                            <p>Película: Interstate 60 - Bob Gale<br>
+                                Libro: The prayer of the frog - Anthony de Mello<br>
+                                Canción: Mis cenizas - Sôber</p>
+                        </div>
+
+                        <ul class="list-inline team-social">
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
+                                   data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa"
+                                   onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
+                                   data-original-title="Twitter" href="http://twitter.com/luisrovirosa"
+                                   onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
+                                   data-original-title="Github" href="http://github.com/luisrovirosa"
+                                   onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-us-panel md-margin-bottom-50">
+                        <img alt="" src="/img/about-us/jordi.jpeg" class="rounded-x img-responsive">
+                        <h3>Jordi Anguela</h3>
+                        <span class="color-green">Desarrollador front-end | Coach en desarrollo de software</span>
+                        <div class="margin-bottom-20">
+                            <p>Jordi es muy sociable, alegre y calmado. Destaca por su facilidad de integración en
+                                cualquier ambiente y trabajar en equipo. Tiene una gran capacidad para aprender y le
+                                entusiasma compartir sus conocimientos.</p>
+                            <p>Le gusta profundizar y entender los por qués de las cosas y hace énfasis en que si no
+                                está subido a producción no sirve de nada.</p>
+                            <p>Dedica mucho tiempo a jugar con sus hijos y a cocinar. Utiliza sus dotes de artesano
+                                para crear nuevos juguetes o hacer pan.</p>
+                            <p>Le encanta viajar y es un apasionado de la cocina hecha con amor, los vinos y las
+                                cervezas artesanas.</p>
+                            <p>Amante del mar y el océano donde aprovecha para practicar surf y recargarse de
+                                energía.</p>
+
+                            <p>Su máxima: <em>"En la vida hay que saber montárselo bien"</em></p>
+
+                            <p>Película: The Matrix - the Wachowski Brothers<br>
+                                Libro: The Kingkiller Chronicle - Patrick Rothfuss<br>
+                                Canción: The Golden Path - The Chemical Brothers</p>
+                        </div>
+                        <ul class="list-inline team-social">
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
+                                   data-original-title="LinkedIn" href="http://linkedin.com/in/jordianguela"
+                                   onclick="socialNetwork('Jordi', 'LinkedIn')" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
+                                   data-original-title="Twitter" href="http://twitter.com/jordianguela"
+                                   onclick="socialNetwork('Jordi', 'Twitter')" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
+                                   data-original-title="Github" href="http://github.com/jordianguela"
+                                   onclick="socialNetwork('Jordi', 'GitHub')" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/end row-->
+        </div><!--/end container-->
+    </div>
+</div>
+
+    <div id="clientes" class="bg-color-light">
+    <div class="container content-sm no-padding-bottom">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Clientes</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    </div>
+
+        <!-- Portfolio Sorting Blocks -->
+        <div class="sorting-block">
+            <div class="content-xs">
+                <div class="sorting-nav sorting-nav-v1 text-center">
+                    <a class="filter btn-u btn-brd btn-brd-hover rounded"
+                       data-filter="category_training">Formación</a>
+                    <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_coaching">Acompañamiento</a>
+                    <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_development">Desarrollo</a>
+                </div>
+            </div>
+
+            <ul class="row sorting-grid">
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/ironhack.png" alt=""/>
+        <div class="mask">
+            <h2>Ironhack</h2>
+            <p>Formación jQuery en Barcelona and Madrid</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/hotelbeds.jpg" alt=""/>
+        <div class="mask">
+            <h2>Hotelbeds</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/logitravel.png" alt=""/>
+        <div class="mask">
+            <h2>Logitravel</h2>
+            <p>Formación en Working with legacy code + Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/ustglobal.jpg" alt=""/>
+        <div class="mask">
+            <h2>UST Global</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/idiada.jpg" alt=""/>
+        <div class="mask">
+            <h2>Idiada</h2>
+            <p>Formación en buenas prácticas de Front-end + Desarrollos Java Full-stack</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/schibsted.png" alt=""/>
+        <div class="mask">
+            <h2>Schibsted</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/habitissimo.png" alt=""/>
+        <div class="mask">
+            <h2>Habitissimo</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/ccma.jpg" alt=""/>
+        <div class="mask">
+            <h2>TV3</h2>
+            <p>Formación en TDD + Acompañamiento en PHP y cliclo de vida del desarrollo</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/generali.jpg" alt=""/>
+        <div class="mask">
+            <h2>Generali</h2>
+            <p>Desarrollo de aplicaciones basadas en procesos + Formación avanzada de integración de BonitaBPM</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/decathlon.png" alt=""/>
+        <div class="mask">
+            <h2>Decathlon</h2>
+            <p>Consultoría en historias de usuario y código legado</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/bankinter.jpg" alt=""/>
+        <div class="mask">
+            <h2>Bankinter</h2>
+            <p>Consultoría en buenas prácticas de desarrollo y cíclo de vida del desarrollo de software.</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training category_coaching category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/talentclue.png" alt=""/>
+        <div class="mask">
+            <h2>TalentClue</h2>
+            <p>Formación en TDD, BDD y Front-end + Acompañamiento en buenas práctica de desarrollo + Desarrollo en Angular y PHP</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/globalo2.jpg" alt=""/>
+        <div class="mask">
+            <h2>Global O2</h2>
+            <p>Due diligence técnica y asesoramiento tecnológico.</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/meta4.png" alt=""/>
+        <div class="mask">
+            <h2>Meta 4</h2>
+            <p>Consultoría en TDD.</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/coches.com.png" alt=""/>
+        <div class="mask">
+            <h2>Coches.com</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_training" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/oesia.png" alt=""/>
+        <div class="mask">
+            <h2>Oesia</h2>
+            <p>Formación en TDD</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/bonitasoft.png" alt=""/>
+        <div class="mask">
+            <h2>Bonitasoft</h2>
+            <p>Formador oficial + Desarrollo de conectores para integrar con múltiples servicios y plugins maven</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/avanzaentucarrera.gif" alt=""/>
+        <div class="mask">
+            <h2>Avanza en tu carrera</h2>
+            <p>Arquitectura y desarrollo en PHP.</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_coaching category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/canoe.png" alt=""/>
+        <div class="mask">
+            <h2>Canoe</h2>
+            <p>Acompañamiento de stack tecnológico + Integraciones de back-end con dropbox y frontend en Angular</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/lahuella.png" alt=""/>
+        <div class="mask">
+            <h2>La huella</h2>
+            <p>Desarrollo en React y Javascript.</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/deutschetelekom.jpg" alt=""/>
+        <div class="mask">
+            <h2>Deutche Telekom</h2>
+            <p>Desarrollo front-end en Angular</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/inditex.png" alt=""/>
+        <div class="mask">
+            <h2>Inditex</h2>
+            <p>Arquitectura y desarrollo en PHP</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/lobster.jpg" alt=""/>
+        <div class="mask">
+            <h2>Lobster</h2>
+            <p>Arquitectura y desarrollo front-end en React y Flux</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/irchispano.jpg" alt=""/>
+        <div class="mask">
+            <h2>IRC Hispano</h2>
+            <p>Desarrollo front-end en Angular e Ionic</p>
+        </div>
+    </div>
+</li>
+                <li class="col-md-3 col-xs-6 mix category_development" data-cat="1">
+    <div class="view view-tenth">
+        <img class="img-responsive" src="/img/clients/wouzee.jpg" alt=""/>
+        <div class="mask">
+            <h2>Wouzee</h2>
+            <p>Arquitectura y desarrollo en PHP</p>
+        </div>
+    </div>
+</li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <!-- End Portfolio Sorting Blocks -->
+    </div>
+</div>
 
     <div id="colaboradores">
-        <div class="container content-sm">
-            <div class="headline-center-v2 headline-center-v2-dark">
-                <h2>Colaboradores</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            </div>
-            <div class="text-center">
-                <img src="/img/codesai.jpeg">
-            </div>
+    <div class="container content-sm">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Colaboradores</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    </div>
+        <div class="text-center">
+            <img src="/img/codesai.jpeg">
         </div>
     </div>
-
+</div>
     <div id="contacto" class="bg-color-light">
-        <div class="container content">
-            <div class="headline-center-v2 headline-center-v2-dark">
-                <h2>Contacto</h2>
-                <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
-            </div>
-            <div class="row margin-bottom-30">
-                <div class="col-md-9 mb-margin-bottom-30">
-                    <div id="formulario-contacto">
-                        <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un
-                            momento para hablar.</p><br/>
-                        <form action="#" method="post" id="formulario-contacto-form" class="sky-form contact-style">
-                            <fieldset class="no-padding">
-                                <label for="name">Nombre <span class="color-red">*</span></label>
-                                <div class="row sky-space-20">
-                                    <div class="col-md-7 col-md-offset-0">
-                                        <div>
-                                            <input type="text" name="name" id="name" class="form-control" required>
-                                        </div>
+    <div class="container content">
+        <div class="headline-center-v2 headline-center-v2-dark margin-bottom-20">
+    <h2>Contacto</h2>
+    <span class="bordered-icon"><img src="/img/favicons/favicon-16x16.png"></span>
+    </div>
+
+        <div class="row margin-bottom-30">
+            <div class="col-md-9 mb-margin-bottom-30">
+                <div id="formulario-contacto">
+                    <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un
+                        momento para hablar.</p><br/>
+                    <form action="#" method="post" id="formulario-contacto-form" class="sky-form contact-style">
+                        <fieldset class="no-padding">
+                            <label for="name">Nombre <span class="color-red">*</span></label>
+                            <div class="row sky-space-20">
+                                <div class="col-md-7 col-md-offset-0">
+                                    <div>
+                                        <input type="text" name="name" id="name" class="form-control" required>
                                     </div>
                                 </div>
+                            </div>
 
-                                <label for="email">Email <span class="color-red">*</span></label>
-                                <div class="row sky-space-20">
-                                    <div class="col-md-7 col-md-offset-0">
-                                        <div>
-                                            <input type="email" name="email" id="email" class="form-control" required>
-                                        </div>
+                            <label for="email">Email <span class="color-red">*</span></label>
+                            <div class="row sky-space-20">
+                                <div class="col-md-7 col-md-offset-0">
+                                    <div>
+                                        <input type="email" name="email" id="email" class="form-control" required>
                                     </div>
                                 </div>
+                            </div>
 
-                                <input type="hidden" name="action" id="contact-action" class="form-control"
-                                       value="Formulario de contacto">
+                            <input type="hidden" name="action" id="contact-action" class="form-control"
+                                   value="Formulario de contacto">
 
-                                <label for="message">Mensaje <span class="color-red">*</span></label>
-                                <div class="row sky-space-20">
-                                    <div class="col-md-11 col-md-offset-0">
-                                        <div>
+                            <label for="message">Mensaje <span class="color-red">*</span></label>
+                            <div class="row sky-space-20">
+                                <div class="col-md-11 col-md-offset-0">
+                                    <div>
                                             <textarea rows="8" name="message" id="message" class="form-control"
                                                       required></textarea>
-                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div>
-                                <br/>
-                                <p>
-                                    <button type="submit" class="btn-u">Manda el mensaje</button>
-                                </p>
-                            </fieldset>
-
-                            <div class="message">
-                                <i class="rounded-x fa fa-check"></i>
-                                <p>Your message was successfully sent!</p>
                             </div>
-                        </form>
-                    </div>
-                    <div id="gracias-contacto" class="row" style="display: none">
-                        <div id="testimonials-3" class="slide testimonials testimonials-v1 testimonials-bg-dark">
-                            <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
-                                <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
-                                    Te contestaremos lo antes posible.</p>
-                                <div class="testimonial-info">
-                                    <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
-                                    <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
-                                    <span class="testimonial-author">
+
+                            <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div>
+                            <br/>
+                            <p>
+                                <button type="submit" class="btn-u">Manda el mensaje</button>
+                            </p>
+                        </fieldset>
+
+                        <div class="message">
+                            <i class="rounded-x fa fa-check"></i>
+                            <p>Your message was successfully sent!</p>
+                        </div>
+                    </form>
+                </div>
+                <div id="gracias-contacto" class="row" style="display: none">
+                    <div id="testimonials-3" class="slide testimonials testimonials-v1 testimonials-bg-dark">
+                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+                            <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
+                                Te contestaremos lo antes posible.</p>
+                            <div class="testimonial-info">
+                                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
+                                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
+                                <span class="testimonial-author">
 												Jordi y Luis
 											</span>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="error-contacto" class="row" style="display: none">
-                        <div class="slide testimonials testimonials-v1 testimonials-bg-dark">
-                            <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
-                                <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
-                                    Por favor mándanos el mensaje a
-                                    <a data-name="info" data-domain="codium" data-tld="team" href="#"
-                                       class="cryptedmail"
-                                       onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
-                                </p>
-                                <div class="testimonial-info">
-                                    <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
-                                    <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
-                                    <span class="testimonial-author">
+                </div>
+                <div id="error-contacto" class="row" style="display: none">
+                    <div class="slide testimonials testimonials-v1 testimonials-bg-dark">
+                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+                            <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
+                                Por favor mándanos el mensaje a
+                                <a data-name="info" data-domain="codium" data-tld="team" href="#"
+                                   class="cryptedmail"
+                                   onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+                            </p>
+                            <div class="testimonial-info">
+                                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
+                                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
+                                <span class="testimonial-author">
 												Jordi y Luis
 											</span>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!--/col-md-9-->
+                </div>
+            </div><!--/col-md-9-->
 
-                <div class="col-md-3">
-                    <!-- Contacts -->
-                    <div class="headline"><h2>Datos de contacto</h2></div>
-                    <ul class="list-unstyled who margin-bottom-30">
-                        <li><a href="#"><i class="fa fa-home"></i>Madrid y Barcelona</a></li>
-                        <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail"
-                               onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i
-                                class="fa fa-envelope"></i></a></li>
-                        <li><a href="https://twitter.com/codiumteam"><i class="fa fa-twitter"></i>@CodiumTeam</a></li>
-                    </ul>
-                </div><!--/col-md-3-->
-            </div><!--/row-->
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-        </div><!--/container-->
-    </div>
+            <div class="col-md-3">
+                <!-- Contacts -->
+                <div class="headline"><h2>Datos de contacto</h2></div>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><a href="#"><i class="fa fa-home"></i>Madrid y Barcelona</a></li>
+                    <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail"
+                           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i
+                                    class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/codiumteam"><i class="fa fa-twitter"></i>@CodiumTeam</a></li>
+                </ul>
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div><!--/container-->
+</div>
+
 </div>
 
 <!-- JS Global Compulsory -->
@@ -1164,7 +1147,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
