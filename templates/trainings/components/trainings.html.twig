@@ -1,0 +1,22 @@
+<div id="trainings" class="bg-color-light">
+    <div class="container content-sm">
+        {{ include('components/block_header.html.twig', { name: title }) }}
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+                <table id="next-trainings" class="responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Localidad</th>
+                        <th>Fechas</th>
+                        <th>Descripción</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% block nextTrainings %}{% endblock %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
