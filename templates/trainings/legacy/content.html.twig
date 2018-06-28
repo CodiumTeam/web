@@ -1,0 +1,85 @@
+{% extends "trainings/components/content.html.twig" %}
+
+{% set day1 = [{
+    titles: ['Día 1', 'Mañana'],
+    blocks: [
+        {
+            title: 'Introduction to legacy code',
+            content: [
+                'How easy is to generate legacy code',
+                'What practices we sacrifice under pressure',
+                'Benefits of testing',
+            ]
+        }, {
+            title: 'Finding problems in legacy code',
+            content: [
+                'Bad smells',
+                'Automated refactorings',
+                'Test harness',
+            ]
+        }
+
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'Changing software in a hurry',
+            content: [
+                'Sprout method/class',
+                'Wrap method/class',
+            ]
+        }, {
+            title: 'Decoupling our code',
+            content: [
+                'Definitions of coupling / decoupling',
+                'Injecting a collaborator',
+                'Define a contract following DIP',
+                'Adapter / wrapper pattern',
+            ]
+        }
+    ]
+}] %}
+{% set day2 = [{
+    titles: ['Día 2', 'Mañana'],
+    blocks: [
+        {
+            title: 'Changing our software safely',
+            content: [
+                'Importance of testing',
+                'Test coverage / Mutant testing',
+                'Characterization testing',
+                'Golden master',
+            ]
+        },
+        {
+            title: 'Dependency-Breaking Techniques',
+            content: [
+                'Extract and override',
+                'Extract interface',
+                'Parametrize constructor',
+                'Introduce static setter',
+            ]
+        }
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'Defining a migration strategy',
+            content: [
+                'Refactoring vs Rewriting',
+                'Strangle application',
+                'Bubble context with Anticorruption Layer (ACL)',
+                'Autonomous bubble with ACL synchronization',
+            ]
+        },
+        {
+            title: 'Other tools and techniques',
+            content: [
+                'Consumer-Driven Contract',
+                'Microservices',
+            ]
+        }
+    ]
+}] %}
