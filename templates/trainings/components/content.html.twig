@@ -1,0 +1,9 @@
+<div id="training-content-timeline">
+    <div class="container content-sm">
+        {{ include('components/block_header.html.twig', { name: 'Contenido del curso' }) }}
+        <div class="row">
+            {{ include('trainings/components/content_day.html.twig', { content: day1 }) }}
+            {{ include('trainings/components/content_day.html.twig', { content: day2 }) }}
+        </div>
+    </div>
+</div>

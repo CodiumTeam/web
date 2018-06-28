@@ -1,93 +1,71 @@
-<div id="training-content-timeline">
-    <div class="container content-sm">
-        {{ include('components/block_header.html.twig', { name: 'Contenido del curso' }) }}
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="timeline-v2">
-                    <li class="equal-height-columns">
-                        <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                            <span>Día 1</span>
-                            <span>Mañana</span>
-                        </div>
-                        <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                        <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
-                            <h2>Introducción a TDD</h2>
-                            <ul>
-                                <li>Beneficios de Test-Driven Development</li>
-                                <li>Ciclo de desarrollo: Red, green, refactor</li>
-                                <li>Tipos de tests y costes asociados</li>
-                                <li>Mantras o reglas de TDD y las pruebas unitarias</li>
-                                <li>Kata (o ejercicio) introductoria</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="equal-height-columns">
-                        <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                            <span>Tarde</span>
-                        </div>
-                        <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                        <div class="cbp_tmlabel equal-height-column" style="height: 233px;">
-                            <h2>Testing en Legacy code</h2>
-                            <p></p>
-                            <ul>
-                                <li>El arte del Refactoring</li>
-                                <li>Bad smells o problemas en el código</li>
-                                <li>Algunos refactorings para mejorar el código</li>
-                                <li>Arnés de test</li>
-                                <li>Kata refactoring</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <ul class="timeline-v2">
-                    <li class="equal-height-columns">
-                        <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                            <span>Día 2</span>
-                            <span>Mañana</span>
-                        </div>
-                        <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                        <div class="cbp_tmlabel equal-height-column" style="height: 161px;">
-                            <h2>eXtreme Programming</h2>
-                            <p></p>
-                            <ul>
-                                <li>Valores, Principios y Prácticas de XP</li>
-                                <li>Kata</li>
-                            </ul>
-                            <h2>Tests dobles</h2>
-                            <p></p>
-                            <ul>
-                                <li>Tipos de dobles</li>
-                                <li>Cómo y cuándo usarlos</li>
-                                <li>Kata tests dobles</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="equal-height-columns">
-                        <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                            <span>Tarde</span>
-                        </div>
-                        <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                        <div class="cbp_tmlabel equal-height-column" style="height: 161px;">
-                            <h2>TDD Outside-in</h2>
-                            <p></p>
-                            <ul>
-                                <li>Test-Driven Development outside-in</li>
-                                <li>Estilo clásico vs mockist</li>
-                                <li>Kata</li>
-                            </ul>
-                            <h2>Cierre</h2>
-                            <p></p>
-                            <ul>
-                                <li>Resumen de lo aprendido</li>
-                                <li>Libros recomendados</li>
-                                <li>Consejos para seguir aprendiendo</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+{% extends "trainings/components/content.html.twig" %}
+
+{% set day1 = [{
+    titles: ['Día 1', 'Mañana'],
+    blocks: [
+        {
+            title: 'Introducción a TDD',
+            content: [
+                'Beneficios de Test-Driven Development',
+                'Ciclo de desarrollo: Red, green, refactor',
+                'Tipos de tests y costes asociados',
+                'Mantras o reglas de TDD y las pruebas unitarias',
+                'Kata (o ejercicio) introductoria',
+            ]
+        }
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'Testing en Legacy code',
+            content: [
+                'El arte del Refactoring',
+                'Bad smells o problemas en el código',
+                'Algunos refactorings para mejorar el código',
+                'Arnés de test',
+                'Kata refactoring',
+            ]
+        }
+    ]
+}] %}
+{% set day2 = [{
+    titles: ['Día 2', 'Mañana'],
+    blocks: [
+        {
+            title: 'eXtreme Programming',
+            content: [
+            'Valores, Principios y Prácticas de XP',
+            'Kata',
+        ]
+        },
+        {
+            title: 'Tests dobles',
+            content: [
+                'Tipos de dobles',
+                'Cómo y cuándo usarlos',
+                'Kata tests dobles',
+        ]
+        }
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'TDD Outside-in',
+            content: [
+                'Test-Driven Development outside-in',
+                'Estilo clásico vs mockist',
+                'Kata'
+            ]
+        },
+        {
+            title: 'Cierre',
+            content: [
+                'Resumen de lo aprendido',
+                'Libros recomendados',
+                'Consejos para seguir aprendiendo',
+            ]
+        }
+    ]
+}] %}
