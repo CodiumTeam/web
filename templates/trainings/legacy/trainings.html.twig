@@ -1,0 +1,11 @@
+{% extends "trainings/components/trainings.html.twig" %}
+
+{% set title = "Próximos cursos de Legacy code" %}
+
+{% block nextTrainings %}
+    {{ include('trainings/tdd/components/passed_training.html.twig', {
+        location: 'Logitravel',
+        dates: '25 y 26 de junio',
+        link: '#'
+    }) }}
+{% endblock %}
