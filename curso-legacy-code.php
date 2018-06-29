@@ -8,4 +8,4 @@ $twig = new Twig_Environment($loader, [
 
 $data = $twig->render('legacy.html.twig');
 echo $data;
-file_put_contents('curso-legacy.html', $data);
+file_put_contents('curso-legacy-code.html', $data);
