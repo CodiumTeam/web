@@ -257,3 +257,11 @@
         padding-bottom: 10px;
     }
 }
+
+#training-content-timeline .timeline-v2 h2:nth-of-type(1) {
+    margin-top: 0;
+}
+
+#training-content-timeline .timeline-v2 h2 {
+    margin-top: 10px;
+}
