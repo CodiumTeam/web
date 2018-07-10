@@ -217,6 +217,18 @@
     }
 }
 
+@media (max-width: 991px) {
+    #testimonials {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #testimonials {
+        max-width: 500px;
+    }
+}
+
 /*
     Max width before this PARTICULAR table gets nasty
     This query will take effect for any screen smaller than 760px
