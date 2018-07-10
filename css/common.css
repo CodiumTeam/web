@@ -13,7 +13,7 @@ body,
     background: rgba(0, 0, 0, 0.8);
 }
 
-#navbar-home:before {
+.menu-container ul li:first-child a:before {
     content: "";
 }
 
@@ -139,6 +139,6 @@ body,
 }
 @media (max-width: 1200px) {
     body, .one-page-header .navbar-nav > li > a {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
