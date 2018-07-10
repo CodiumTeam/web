@@ -144,8 +144,8 @@
 }
 
 #next-trainings {
-    font-size: 18px;
-    margin-left: auto;
+    font-size:    18px;
+    margin-left:  auto;
     margin-right: auto;
 }
 
@@ -164,34 +164,42 @@
 }
 
 #testimonials {
-    position: absolute;
-    bottom: 240px;
+    position:  absolute;
+    bottom:    240px;
+    left:      40px;
+    max-width: 600px;
 }
 
 #testimonials .testimonials-info {
     opacity: 0.9;
+    padding: 16px;
 }
 
 #testimonials p {
-    color: #555;
+    color:      #555;
     font-style: italic;
 }
 
+#testimonials strong,
+#testimonials span {
+    display: inline;
+}
+
 #testimonials p:before {
-    color: #bbb;
-    font-size: 50px;
-    content: "\201C";
-    position: absolute;
-    margin: -20px 0 0 -25px;
+    color:       #bbb;
+    font-size:   50px;
+    content:     "\201C";
+    position:    absolute;
+    margin:      -20px 0 0 -25px;
     font-family: Georgia, serif;
 }
 
 #testimonials p:after {
-    color: #bbb;
-    font-size: 50px;
-    content: "\201D";
-    position: absolute;
-    margin: -20px 0 0 0;
+    color:       #bbb;
+    font-size:   50px;
+    content:     "\201D";
+    position:    absolute;
+    margin:      -20px 0 0 0;
     font-family: Georgia, serif;
 }
 
