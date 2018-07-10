@@ -163,6 +163,38 @@
     border: none;
 }
 
+#testimonials {
+    position: absolute;
+    bottom: 240px;
+}
+
+#testimonials .testimonials-info {
+    opacity: 0.9;
+}
+
+#testimonials p {
+    color: #555;
+    font-style: italic;
+}
+
+#testimonials p:before {
+    color: #bbb;
+    font-size: 50px;
+    content: "\201C";
+    position: absolute;
+    margin: -20px 0 0 -25px;
+    font-family: Georgia, serif;
+}
+
+#testimonials p:after {
+    color: #bbb;
+    font-size: 50px;
+    content: "\201D";
+    position: absolute;
+    margin: -20px 0 0 0;
+    font-family: Georgia, serif;
+}
+
 /* Extra small devices */
 @media (max-width: 767px) {
     .headline-center-v2 p {
