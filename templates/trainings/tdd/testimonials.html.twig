@@ -4,6 +4,12 @@
     name: 'Alice Williams',
     role: 'Web Developer en My Company'
 } %}
+{% set testimonial2 = {
+    profileImage: '/img/testimonials/img3.jpg',
+    quote: 'Donec quis lorem sit amet nibh tempor porttitor non eu justo. Fusce iaculis scelerisque nibh at rhoncus.',
+    name: 'Luis Williams',
+    role: 'Web Developer en My Company'
+} %}
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonial: testimonial }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [testimonial, testimonial2] }) }}
 </div>
