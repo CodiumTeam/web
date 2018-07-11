@@ -1,29 +1,14 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            {{ include('trainings/components/testimonial.html.twig', {
-                profileImage: '/img/testimonials/img3.jpg',
-                quote: 'Donec quis lorem sit amet nibh tempor porttitor non eu justo. Fusce iaculis scelerisque nibh at rhoncus.',
-                name: 'Alice Williams',
-                role: 'Web Developer en My Company'
-            }) }}
+            {{ include('trainings/components/testimonial.html.twig', testimonial) }}
         </div>
         <div class="item">
-            {{ include('trainings/components/testimonial.html.twig', {
-                profileImage: '/img/testimonials/img3.jpg',
-                quote: 'Donec quis lorem sit amet nibh tempor porttitor non eu justo. Fusce iaculis scelerisque nibh at rhoncus.',
-                name: 'Alice Williams',
-                role: 'Web Developer en My Company'
-            }) }}
+            {{ include('trainings/components/testimonial.html.twig', testimonial) }}
         </div>
         <div class="item">
-            {{ include('trainings/components/testimonial.html.twig', {
-                profileImage: '/img/testimonials/img3.jpg',
-                quote: 'Donec quis lorem sit amet nibh tempor porttitor non eu justo. Fusce iaculis scelerisque nibh at rhoncus.',
-                name: 'Alice Williams',
-                role: 'Web Developer en My Company'
-            }) }}
+            {{ include('trainings/components/testimonial.html.twig', testimonial) }}
         </div>
     </div>
 </div>
