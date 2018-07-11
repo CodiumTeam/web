@@ -172,7 +172,7 @@
 
 #testimonials .testimonials-info {
     opacity: 0.9;
-    padding: 16px;
+    padding: 16px 20px;
 }
 
 #testimonials p {
@@ -202,6 +202,27 @@
     margin:      -20px 0 0 0;
     font-family: Georgia, serif;
 }
+
+#testimonials .carousel-control {
+    width: 10%;
+}
+
+#testimonials .carousel-control .icon-next,
+#testimonials .carousel-control .icon-prev {
+    margin-top: -20px;
+    font-size:  40px;
+}
+
+#testimonials .carousel-control .icon-next {
+    right:        50%;
+    margin-right: -30px;
+}
+
+#testimonials .carousel-control .icon-prev {
+    left:        50%;
+    margin-left: -30px;
+}
+
 
 /* Extra small devices */
 @media (max-width: 767px) {
