@@ -2,6 +2,6 @@
     <img class="rounded-x" src="{{ profileImage }}" alt="">
     <div class="testimonials-desc">
         <p>{{ quote }}</p>
-        <span><strong>{{ name }}</strong>, {{ role }}</span>
+        <span><strong>{{ name }}</strong>{% if role|length > 0 %}, {% endif %}{{ role }}</span>
     </div>
 </div>
