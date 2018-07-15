@@ -173,6 +173,7 @@
 #testimonials .testimonials-info {
     opacity: 0.9;
     padding: 16px 20px;
+    height:  182px; 
 }
 
 #testimonials p {
@@ -222,7 +223,6 @@
     left:        50%;
     margin-left: -30px;
 }
-
 
 /* Extra small devices */
 @media (max-width: 767px) {
