@@ -144,6 +144,10 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
+#oldTrainings .container {
+    padding-top: 0px;
+}
+
 #next-trainings {
     font-size: 18px;
     margin-left: auto;

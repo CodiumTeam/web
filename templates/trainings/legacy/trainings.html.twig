@@ -1,12 +1,8 @@
-{% extends "trainings/components/trainings.html.twig" %}
+{% extends "trainings/components/no_trainings.html.twig" %}
+{% set id = "trainings" %}
 
 {% set title = "Próximos cursos de Legacy code" %}
 
 {% block nextTrainings %}
-    {{ include('trainings/components/passed_training.html.twig', {
-        company: 'Logitravel',
-        location: 'Mallorca',
-        dates: '25 y 26 de junio de 2018',
-        link: 'https://twitter.com/codiumteam/status/1012589423425474560'
-    }) }}
+
 {% endblock %}
