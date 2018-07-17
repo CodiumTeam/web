@@ -176,8 +176,12 @@
 
 #testimonials .testimonials-info {
     opacity: 0.9;
-    padding: 16px 20px;
+    padding: 16px 30px 16px 20px;
     height:  182px;
+}
+
+#testimonials .testimonials-info img {
+    margin-top: 35px;
 }
 
 #testimonials p {
@@ -214,18 +218,18 @@
 
 #testimonials .carousel-control .icon-next,
 #testimonials .carousel-control .icon-prev {
-    margin-top: -20px;
+    margin-top: -25px;
     font-size:  40px;
 }
 
 #testimonials .carousel-control .icon-next {
     right:        50%;
-    margin-right: -30px;
+    margin-right: -34px;
 }
 
 #testimonials .carousel-control .icon-prev {
     left:        50%;
-    margin-left: -30px;
+    margin-left: -34px;
 }
 
 /* Extra small devices */
