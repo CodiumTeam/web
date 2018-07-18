@@ -1,11 +1,9 @@
+{% set urls = { 'TDD': '/curso-tdd.html', 'Legacy code': '/curso-legacy-code.html' } %}
+
 <td data-header="Curso" nowrap>
-{% if training == 'TDD' and currentPage != 'TDD'%}
-    <a href="/curso-tdd.html"><span>TDD</span></a>
-{% elseif training == 'TDD' and currentPage == 'TDD'%}
-    <span>TDD</span>
-{% elseif training == 'Legacy code' and currentPage != 'Legacy code'%}
-    <a href="/curso-legacy-code.html"><span>Legacy code</span></a>
-{% elseif training == 'Legacy code' and currentPage == 'Legacy code'%}
-    <span>Legacy code</span>
+{% if training != currentPage %}
+    <a href="{{ urls[training] }}"><span>{{ training }}</span></a>
+{% else %}
+    <span>{{ training }}</span>
 {% endif %}
 </td>
