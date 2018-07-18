@@ -1,5 +1,5 @@
 <tr>
-    <td data-header="Curso" nowrap><span>{{ training }}</span></td>
+    {{ include('trainings/components/scheduled_trainings/name.html.twig', { training: training }) }}
     <td data-header="Empresa" nowrap><span class="training-location">{{ company }}</span></td>
     <td data-header="Localidad" nowrap><span class="training-location">{{ location }}</span></td>
     <td data-header="Fechas" nowrap><strong>{{ dates }}</strong></td>
