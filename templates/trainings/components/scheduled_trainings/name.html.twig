@@ -2,8 +2,8 @@
 
 <td data-header="Curso" nowrap>
 {% if training != currentPage %}
-    <a href="{{ urls[training] }}"><span>{{ training }}</span></a>
+    <a href="{{ urls[training] }}"><strong><span>{{ training }}</span></strong></a>
 {% else %}
-    <span>{{ training }}</span>
+    <span><strong>{{ training }}</strong></span>
 {% endif %}
 </td>
