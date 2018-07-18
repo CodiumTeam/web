@@ -168,6 +168,10 @@
     border: none;
 }
 
+#next-trainings button {
+    width: 130px;
+}
+
 /* Extra small devices */
 @media (max-width: 767px) {
     .headline-center-v2 p {

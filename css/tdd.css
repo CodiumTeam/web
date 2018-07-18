@@ -167,6 +167,10 @@
     border: none;
 }
 
+#next-trainings button {
+    width: 130px;
+}
+
 #testimonials {
     position:  absolute;
     bottom:    240px;
