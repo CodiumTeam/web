@@ -1,23 +1,23 @@
-{% extends "trainings/components/trainings.html.twig" %}
+{% extends "trainings/components/scheduled_trainings/scheduled_trainings.html.twig" %}
 {% set id = "trainings" %}
 
 {% set title = "Próximos cursos Codium" %}
 
 {% block nextTrainings %}
-    {{ include('trainings/components/in_house_training.html.twig', {
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
         training: 'TDD',
         company: 'Glovo',
         location: 'Barcelona',
         dates: '7 y 8 de agosto de 2018'
     }) }}
-    {{ include('trainings/components/open_training.html.twig', {
+    {{ include('trainings/components/scheduled_trainings/open_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Mallorca',
         dates: '18 y 19 de septiembre de 2018',
         link: 'https://www.eventbrite.es/e/entradas-curso-test-driven-development-tdd-en-mallorca-18-y-19-de-septiembre-47580176589'
     }) }}
-    {{ include('trainings/components/in_house_training.html.twig', {
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
         training: 'TDD',
         company: '3ipunt',
         location: 'Barcelona',
