@@ -1,6 +1,6 @@
 <tr>
     {{ include('trainings/components/scheduled_trainings/name.html.twig', { training: training }) }}
-    <td data-header="Empresa" nowrap><span class="training-location">Abierto</span></td>
+    <td data-header="Empresa" nowrap><span class="training-location" title="Puede asisitir quién quiera">Abierto</span></td>
     <td data-header="Localidad" nowrap><span class="training-location">{{ location }}</span></td>
     <td data-header="Fechas" nowrap><strong>{{ dates }}</strong></td>
     <td data-header="Descripción"><a href="{{ link }}" target="_blank"><button class="btn-u btn-lg btn-u-red" type="button"><i class="fa fa-shopping-cart"></i> Comprar</button></a></td>
