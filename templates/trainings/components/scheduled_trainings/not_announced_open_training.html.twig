@@ -3,5 +3,7 @@
     <td data-header="Empresa" nowrap><span class="training-location" title="Puede asisitir quién quiera">Abierto</span></td>
     <td data-header="Localidad" nowrap><span class="training-location">{{ location }}</span></td>
     <td data-header="Fechas" nowrap><strong>{{ dates }}</strong></td>
-    <td data-header="Descripción"><button class="btn-u btn-lg btn-u-blue" type="button">Infórmate</button></td>
+    {% set moreInfoUrl = { 'TDD': '/curso-tdd.html', 'Legacy code': '/curso-legacy-code.html' } %}
+    {% set link = (training == currentPage) ? '#landing' : moreInfoUrl[training] %}
+    <td data-header="Descripción"><a href="{{ link }}"><button class="btn-u btn-lg btn-u-blue" type="button">Infórmate</button></a></td>
 </tr>
