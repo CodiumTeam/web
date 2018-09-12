@@ -23,16 +23,16 @@
         location: 'Madrid',
         dates: '17 y 18 de octubre de 2018'
     }) }}
-    {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
-        training: 'TDD',
-        company: 'Abierto',
-        location: 'Madrid',
-        dates: 'Octubre de 2018'
-    }) }}
     {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
         training: 'Legacy code',
         company: 'Roiback',
         location: 'Mallorca',
         dates: '29 y 30 de octubre de 2018'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
+        training: currentPage,
+        company: 'Abierto',
+        location: 'Infórmate',
+        dates: '2018'
     }) }}
 {% endblock %}
