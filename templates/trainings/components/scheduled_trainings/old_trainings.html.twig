@@ -6,6 +6,13 @@
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
+        company: 'Abierto',
+        location: 'Mallorca',
+        dates: '18 y 19 de septiembre de 2018',
+        link: 'https://twitter.com/codiumteam/status/1043039201615273985'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
         company: 'Glovo',
         location: 'Barcelona',
         dates: '7 y 8 de agosto de 2018',
