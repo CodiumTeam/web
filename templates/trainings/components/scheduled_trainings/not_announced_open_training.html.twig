@@ -1,6 +1,6 @@
 <tr>
     {{ include('trainings/components/scheduled_trainings/name.html.twig', { training: training }) }}
-    <td data-header="Empresa" nowrap><span class="training-location" title="Puede asisitir quién quiera">Abierto</span></td>
+    <td data-header="Empresa" nowrap><span class="training-location" title="Puede asisitir quién quiera">{{ company ?? 'Abierto' }}</span></td>
     <td data-header="Localidad" nowrap><span class="training-location">{{ location }}</span></td>
     <td data-header="Fechas" nowrap><strong>{{ dates }}</strong></td>
     {% set moreInfoUrl = { 'TDD': '/curso-tdd.html', 'Legacy code': '/curso-legacy-code.html' } %}
