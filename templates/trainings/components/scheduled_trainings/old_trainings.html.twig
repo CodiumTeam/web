@@ -6,6 +6,13 @@
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
+        company: 'Yapiko',
+        location: 'Madrid',
+        dates: '17 y 18 de octubre de 2018',
+        link: 'https://twitter.com/codiumteam/status/1053193533224558592'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
         company: '3ipunt',
         location: 'Barcelona',
         dates: '1 y 2 de octubre de 2018',
