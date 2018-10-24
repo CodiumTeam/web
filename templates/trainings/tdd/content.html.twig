@@ -6,10 +6,12 @@
         {
             title: 'Introducción a TDD',
             content: [
-                'Beneficios de Test-Driven Development',
-                'Ciclo de desarrollo: Red, green, refactor',
+                'Porqué hacer TDD',
                 'Tipos de tests y costes asociados',
-                'Mantras o reglas de TDD y las pruebas unitarias',
+                'Ciclo de desarrollo: Red, green, refactor',
+                'Reglas de TDD y las pruebas unitarias',
+                'Estructura y convenciones de los tests',
+                'Beneficios de Test-Driven Development',
                 'Kata (o ejercicio) introductoria',
             ]
         }
@@ -21,32 +23,45 @@
             title: 'Testing en Legacy code',
             content: [
                 'El arte del Refactoring',
-                'Bad smells o problemas en el código',
-                'Algunos refactorings para mejorar el código',
                 'Arnés de test',
-                'Kata refactoring',
+                'Cobertura de tests',
+                'Mutant testing',
+                'Kata legacy',
             ]
-        }
+        },
+        {
+            title: 'Contexto de TDD',
+            content: [
+                'Agile Manifesto',
+                'Software Craftsmanship Manifesto',
+                'eXtreme Programming (XP)',
+                'Kata tests smells',
+            ]
+        },
     ]
 }] %}
 {% set day2 = [{
     titles: ['Día 2', 'Mañana'],
     blocks: [
         {
-            title: 'eXtreme Programming',
-            content: [
-            'Valores, Principios y Prácticas de XP',
-            'Kata',
-        ]
-        },
-        {
             title: 'Tests dobles',
             content: [
-                'Tipos de dobles',
+                'Tipos de dobles: Mocks, spy, stubs, fakes y dummys',
                 'Cómo y cuándo usarlos',
                 'Kata tests dobles',
-        ]
-        }
+            ]
+        },
+        {
+            title: 'Trucos para hacer TDD',
+            content: [
+                'Testing con base de datos',
+                'Cómo hacer más robustos los tests',
+                'Estrategias para acelerar la ejecución',
+                'Testing en el front-end',
+                'Cómo desacoplar la lógica de negocios de la presentación',
+                'Kata programación de historias de usuario',
+            ]
+        },
     ]
 }, {
     titles: ['Tarde'],
@@ -55,7 +70,7 @@
             title: 'TDD Outside-in',
             content: [
                 'Test-Driven Development outside-in',
-                'Estilo clásico vs mockist',
+                'Cómo desarrollamos en Codium',
                 'Kata'
             ]
         },
