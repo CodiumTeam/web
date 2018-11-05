@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
+        company: 'Roiback',
+        location: 'Mallorca',
+        dates: '29 y 30 de octubre de 2018',
+        link: 'https://twitter.com/codiumteam/status/1059373929834393601'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Yapiko',
         location: 'Madrid',
