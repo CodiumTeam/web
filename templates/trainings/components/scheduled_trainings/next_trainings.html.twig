@@ -10,6 +10,12 @@
         link: 'https://www.eventbrite.es/e/entradas-curso-test-driven-development-tdd-en-barcelona-26-y-27-de-noviembre-51745534286',
         dates: '26 y 27 de noviembre de 2018'
     }) }}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'TDD',
+        location: 'Barcelona',
+        company: 'Editorial Vicens Vives',
+        dates: '19 y 20 de diciembre de 2018'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'Legacy code',
         company: 'Abierto / Tu empresa',
