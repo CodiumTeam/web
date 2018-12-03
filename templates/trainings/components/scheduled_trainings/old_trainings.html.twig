@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Abierto',
+        location: 'Barcelona',
+        dates: '26 y 27 de noviembre de 2018',
+        link: 'https://twitter.com/codiumteam/status/1069527248124952576'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Roiback',
         location: 'Mallorca',
