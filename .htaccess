@@ -1,2 +1,2 @@
 DirectoryIndex index.html index.php
-ProxyPass /blog CodiumTeam.github.io
+ProxyPass /blog https://codiumteam.github.io
