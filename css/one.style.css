@@ -327,7 +327,7 @@ a:hover {
   color: #fff !important;
 }
 .one-page-header.top-nav-collapse .navbar-nav a.dropdown-toggle {
-  color: #777 !important;
+  color: #777;
 }
 .one-page-header .dropdown-menu .active > a,
 .one-page-header .dropdown-menu li > a:hover {

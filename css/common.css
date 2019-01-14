@@ -1,6 +1,7 @@
 body,
 .one-page-header .navbar-nav > li > a,
 .pricing-table-v4 .pricing-v4-content li,
+.one-page-header .dropdown-menu > li > a,
 .btn-u {
     font-size: 16px;
 }
@@ -25,7 +26,8 @@ body,
 .one-page-header .dropdown-menu > li,
 .one-page-header.top-nav-collapse .navbar-nav > li > a,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:before,
-.one-page-header.top-nav-collapse .dropdown-menu > li > a {
+.one-page-header.top-nav-collapse .dropdown-menu > li > a,
+.one-page-header.top-nav-collapse li > a.dropdown-toggle {
     color:          #eee;
     text-transform: uppercase;
 }
