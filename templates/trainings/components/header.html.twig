@@ -18,7 +18,7 @@
             <div class="menu-container">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll">
-                        <a href="#value" title="Los beneficios del curso">El valor del curso</a>
+                        <a href="#value" title="Los beneficios del curso">Beneficios</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#methodology" title="Nuestra forma de enseñar">Metodología</a>
@@ -32,6 +32,14 @@
                     <li class="page-scroll">
                         <a href="#faq" title="Preguntas frecuentes">FAQs</a>
                     </li>
+                    <li class="page-scroll">
+                        {% if (currentPage == 'TDD') %}
+                            <a href="/curso-legacy-code.html" title="Curso Working with Legacy Code"><span class="fa fa-graduation-cap"></span> Legacy Code</a>
+                        {% else %}
+                            <a href="/curso-tdd.html" title="Curso de TDD"><span class="fa fa-graduation-cap"></span> TDD</a>
+                        {% endif %}
+                    </li>
+
                     <li class="page-scroll">
                         <a id="navbar-home" href="/" title="Conoce a Codium">Empresa</a>
                     </li>

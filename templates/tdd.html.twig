@@ -46,7 +46,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="header-fixed header-fixed-space">
 <div class="wrapper">
 
-    {{ include('trainings/components/header.html.twig') }}
+    {{ include('trainings/components/header.html.twig', { currentPage: 'TDD'}) }}
     {{ include('trainings/tdd/landing.html.twig') }}
     {{ include('trainings/tdd/value.html.twig') }}
     {{ include('trainings/components/methodology.html.twig') }}
