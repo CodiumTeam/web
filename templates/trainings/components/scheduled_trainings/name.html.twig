@@ -1,7 +1,7 @@
 {% set urls = { 'TDD': '/curso-tdd.html', 'Legacy code': '/curso-legacy-code.html' } %}
 
 <td data-header="Curso" nowrap>
-{% if training != currentPage %}
+{% if training != currentPage and training in urls|keys %}
     <a href="{{ urls[training] }}"><strong><span>{{ training }}</span></strong></a>
 {% else %}
     <span><strong>{{ training }}</strong></span>
