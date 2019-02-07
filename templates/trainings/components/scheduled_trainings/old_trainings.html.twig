@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
+        location: 'Barcelona',
+        company: 'Esblada',
+        dates: '4 y 5 de febrero de 2019',
+        link: 'https://twitter.com/codiumteam/status/1093486066559082496'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         location: 'Barcelona',
         company: 'Editorial Vicens Vives',
