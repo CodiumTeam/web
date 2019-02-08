@@ -22,6 +22,12 @@
         company: 'Avoris',
         dates: '18 y 19 de marzo de 2019'
     }) }}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'A medida',
+        location: 'San Sebastián',
+        company: 'Vicomtech',
+        dates: '1, 2, 3 y 4 de abril de 2019'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'Legacy code',
         company: 'Abierto / Tu empresa',
