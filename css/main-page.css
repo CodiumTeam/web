@@ -1,6 +1,7 @@
 .one-page-header .navbar-nav > li > a {
     padding: 17px 10px 13px;
 }
+
 .color-corp {
     color: #0aa0f4;
 }
@@ -266,7 +267,7 @@ p.about-us-description {
     }
 
     #slogan.container {
-        font-size:     24px;
+        font-size: 24px;
     }
 
     #slogan.container .row {
@@ -322,9 +323,33 @@ p.about-us-description {
 
 #mvpImg {
     padding-right: 30px;
-    margin-top: 60px;
+    margin-top:    60px;
 }
 
 #desarrollo .list-unstyled li {
     margin-left: 30px;
 }
+
+/* Mailchimp overrides + styles */
+#mc_embed_signup {
+    background: #fff;
+    clear:      left;
+    font:       14px Helvetica, Arial, sans-serif;
+}
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display:      inline;
+    width:        auto;
+    margin-right: 10px;
+}
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+#mc-embedded-subscribe-form .mc_fieldset {
+    border:         none;
+    min-height:     0px;
+    padding-bottom: 0px;
+}
+/* END Mailchimp styles */
