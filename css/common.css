@@ -144,3 +144,9 @@ body,
         font-size: 13px;
     }
 }
+
+#colaboradores img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 20px;
+}
