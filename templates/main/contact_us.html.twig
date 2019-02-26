@@ -1,109 +1,103 @@
 <div id="contacto" class="bg-color-light">
-    <div class="container content">
-        {{ include('components/block_header.html.twig', { name: 'Contacto' }) }}
+  <div class="container content">
+    {{ include('components/block_header.html.twig', { name: 'Contacto' }) }}
 
-        <div class="row margin-bottom-30">
-            <div class="col-md-9 mb-margin-bottom-30">
-                <div id="formulario-contacto">
-                    <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un
-                        momento para hablar.</p><br/>
-                    <form action="#" method="post" id="formulario-contacto-form" class="sky-form contact-style">
-                        <fieldset class="no-padding">
-                            <label for="name">Nombre <span class="color-red">*</span></label>
-                            <div class="row sky-space-20">
-                                <div class="col-md-7 col-md-offset-0">
-                                    <div>
-                                        <input type="text" name="name" id="name" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <label for="email">Email <span class="color-red">*</span></label>
-                            <div class="row sky-space-20">
-                                <div class="col-md-7 col-md-offset-0">
-                                    <div>
-                                        <input type="email" name="email" id="email" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <input type="hidden" name="action" id="contact-action" class="form-control"
-                                   value="Formulario de contacto">
-
-                            <label for="message">Mensaje <span class="color-red">*</span></label>
-                            <div class="row sky-space-20">
-                                <div class="col-md-11 col-md-offset-0">
-                                    <div>
-                                            <textarea rows="8" name="message" id="message" class="form-control"
-                                                      required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div>
-                            <br/>
-                            <p>
-                                <button type="submit" class="btn-u">Manda el mensaje</button>
-                            </p>
-                        </fieldset>
-
-                        <div class="message">
-                            <i class="rounded-x fa fa-check"></i>
-                            <p>Your message was successfully sent!</p>
-                        </div>
-                    </form>
+    <div class="row margin-bottom-30">
+      <div class="col-md-9 mb-margin-bottom-30">
+        <div id="formulario-contacto">
+          <p>La mejor forma de conocernos es hablando con nosotros. Rellena este formulario y busquemos un momento para hablar.</p><br/>
+          <form action="#" method="post" id="formulario-contacto-form" class="sky-form contact-style">
+            <fieldset class="no-padding">
+              <label for="name">Nombre <span class="color-red">*</span></label>
+              <div class="row sky-space-20">
+                <div class="col-md-7 col-md-offset-0">
+                  <div>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                  </div>
                 </div>
-                <div id="gracias-contacto" class="row" style="display: none">
-                    <div id="testimonials-3" class="slide testimonials testimonials-v1 testimonials-bg-dark">
-                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
-                            <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
-                                Te contestaremos lo antes posible.</p>
-                            <div class="testimonial-info">
-                                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
-                                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
-                                <span class="testimonial-author">
-												Jordi y Luis
-											</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="error-contacto" class="row" style="display: none">
-                    <div class="slide testimonials testimonials-v1 testimonials-bg-dark">
-                        <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
-                            <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
-                                Por favor mándanos el mensaje a
-                                <a data-name="info" data-domain="codium" data-tld="team" href="#"
-                                   class="cryptedmail"
-                                   onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
-                            </p>
-                            <div class="testimonial-info">
-                                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
-                                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
-                                <span class="testimonial-author">
-												Jordi y Luis
-											</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/col-md-9-->
+              </div>
 
-            <div class="col-md-3">
-                <!-- Contacts -->
-                <div class="headline"><h2>Datos de contacto</h2></div>
-                <ul class="list-unstyled who margin-bottom-30">
-                    <li><a href="#"><i class="fa fa-home"></i>Madrid y Barcelona</a></li>
-                    <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail"
-                           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i
-                                    class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://twitter.com/codiumteam"><i class="fa fa-twitter"></i>@CodiumTeam</a></li>
-                </ul>
-            </div><!--/col-md-3-->
-        </div><!--/row-->
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-    </div><!--/container-->
+              <label for="email">Email <span class="color-red">*</span></label>
+              <div class="row sky-space-20">
+                <div class="col-md-7 col-md-offset-0">
+                  <div>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <input type="hidden" name="action" id="contact-action" class="form-control"
+                     value="Formulario de contacto">
+
+              <label for="message">Mensaje <span class="color-red">*</span></label>
+              <div class="row sky-space-20">
+                <div class="col-md-11 col-md-offset-0">
+                  <div>
+                    <textarea rows="8" name="message" id="message" class="form-control" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="g-recaptcha" data-sitekey="6LcIGCsUAAAAAJKAmAWFdgMEWMYNrL8QAjlh-pZ8"></div>
+              <br/>
+              <p>
+                <button type="submit" class="btn-u">Manda el mensaje</button>
+              </p>
+            </fieldset>
+
+            <div class="message">
+              <i class="rounded-x fa fa-check"></i>
+              <p>Your message was successfully sent!</p>
+            </div>
+          </form>
+        </div>
+        <div id="gracias-contacto" class="row" style="display: none">
+          <div id="testimonials-3" class="slide testimonials testimonials-v1 testimonials-bg-dark">
+            <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+              <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
+                Te contestaremos lo antes posible.</p>
+              <div class="testimonial-info">
+                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
+                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
+                <span class="testimonial-author">Jordi y Luis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="error-contacto" class="row" style="display: none">
+          <div class="slide testimonials testimonials-v1 testimonials-bg-dark">
+            <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
+              <p class="rounded-2x alert">Ha habido un problema con el envío de email.<br>
+                Por favor mándanos el mensaje a
+                <a data-name="info" data-domain="codium" data-tld="team" href="#"
+                   class="cryptedmail"
+                   onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+              </p>
+              <div class="testimonial-info">
+                <img class="rounded-2x" src="/img/about-us/jordi.jpeg" alt="">
+                <img class="rounded-2x" src="/img/about-us/luis.jpg" alt="">
+                <span class="testimonial-author">Jordi y Luis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--/col-md-9-->
+
+      <div class="col-md-3">
+        <!-- Contacts -->
+        <div class="headline"><h2>Datos de contacto</h2></div>
+        <ul class="list-unstyled who margin-bottom-30">
+          <li><a href="#"><i class="fa fa-home"></i>Madrid y Barcelona</a></li>
+          <li><a data-name="info" data-domain="codium" data-tld="team" href="#" class="cryptedmail"
+                 onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i
+                      class="fa fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com/codiumteam"><i class="fa fa-twitter"></i>@CodiumTeam</a></li>
+        </ul>
+      </div><!--/col-md-3-->
+    </div><!--/row-->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div><!--/container-->
 </div>
