@@ -5,7 +5,7 @@ function validateRecaptcha($recaptcha)
     $client = new \GuzzleHttp\Client();
     $response = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
         'form_params' => [
-            'secret'   => '6LcIGCsUAAAAAGpVhL28cuEsHVqRipF8r7XmPQOz',
+            'secret'   => '6LfCAJQUAAAAAD0lMw7YoL7WKm31YMrJBYii5Y1R',
             'response' => $recaptcha
         ]
     ]);

@@ -22,22 +22,30 @@ function setContactAction(actionMessage) {
     trackEvent('contact_us', 'show_form', actionMessage);
 }
 
-$('#formulario-contacto-form').submit(function (e) {
+var sendContactForm = function (e) {
+    e.preventDefault();
+    if (!grecaptcha.getResponse()){
+        grecaptcha.execute();
+        return;
+    }
     var url = '/php/contact.php';
     $.post(url, $('#formulario-contacto-form').serialize())
-        .done(function () {
-            trackEvent('contact_us', 'sent', $('#contact-action').val());
+    .done(function () {
+        trackEvent('contact_us', 'sent', $('#contact-action').val());
 
-            $('#error-contacto').fadeOut();
-            $('#formulario-contacto').fadeOut().promise().done(function () {
-                $('#gracias-contacto').fadeIn();
-            });
-        })
-        .fail(function () {
-            trackEvent('contact_us', 'failed');
-
-            $('#error-contacto').fadeIn();
-            $("html, body").animate({scrollTop: $(document).height()}, 1000);
+        $('#error-contacto').fadeOut();
+        $('#formulario-contacto').fadeOut().promise().done(function () {
+            $('#gracias-contacto').fadeIn();
         });
-    e.preventDefault();
-});
+    })
+    .fail(function () {
+        trackEvent('contact_us', 'failed');
+
+        $('#error-contacto').fadeIn();
+        $("html, body").animate({scrollTop: $(document).height()}, 1000);
+    });
+};
+function captchaCompleted() {
+    $('#formulario-contacto-form').submit();
+}
+$('#formulario-contacto-form').submit(sendContactForm);
