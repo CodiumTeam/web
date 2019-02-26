@@ -1,0 +1,18 @@
+h1, h2, h3 {
+    margin-top:    30px;
+    margin-bottom: 15px;
+}
+
+.logo-codium {
+    margin-bottom: 30px;
+}
+
+.logo-codium img {
+    margin: 0 auto;
+}
+
+.bg-color-darker h1,
+.bg-color-darker h2,
+.bg-color-darker h3 {
+    color: #fff;
+}
