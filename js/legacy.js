@@ -1,5 +1,10 @@
 var form = $('#tdd-contact-form');
-form.submit(function (e) {
+function tddContantForm (e) {
+    e.preventDefault();
+    if (!grecaptcha.getResponse()){
+        grecaptcha.execute();
+        return;
+    }
     var url = '/php/contact-legacy-code.php';
     $.post(url, form.serialize())
         .done(function () {
@@ -15,7 +20,12 @@ form.submit(function (e) {
             // $("html, body").animate({scrollTop: $(document).height()}, 1000);
         });
     e.preventDefault();
-});
+}
+
+function trainingCaptchaCompleted() {
+    $('#tdd-contact-form').submit();
+}
+form.submit(tddContantForm);
 
 function fixLandingResponsiveness() {
     var browserWidth = $(window).width();
