@@ -6,6 +6,13 @@
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
+        location: 'Mallorca',
+        company: 'Avoris',
+        dates: '18 y 19 de marzo de 2019',
+        link: 'https://twitter.com/codiumteam/status/1109014605416878081'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
         location: 'Jaén',
         company: 'Dapda',
         dates: '4 y 5 de marzo de 2019',
