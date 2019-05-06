@@ -4,6 +4,12 @@
 {% set title = "Próximos cursos Codium" %}
 
 {% block nextTrainings %}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'TDD',
+        company: 'Hotelbeds',
+        location: 'Mallorca',
+        dates: '25 y 26 de junio de 2019'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'Legacy code',
         company: 'Abierto / Tu empresa',
