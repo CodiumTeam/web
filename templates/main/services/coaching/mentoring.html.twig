@@ -12,6 +12,10 @@
     "Nos integramos en el equipo y mejoramos la motivación",
 ] %}
 
+{% block headline %}
+    {{ include('main/components/image.html.twig', { image: image, description: "Mentorización" }) }}
+{% endblock %}
+
 {% block link %}
     {{ include('main/components/service_contact_us_button.html.twig', { actionName: 'Mentorización'}) }}
 {% endblock %}

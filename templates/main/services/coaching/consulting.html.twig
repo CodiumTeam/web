@@ -11,6 +11,11 @@
     "Identificar problemas estructurales desapercibidos",
 ] %}
 
+
+{% block headline %}
+    {{ include('main/components/image.html.twig', { image: image, description: "Consultoría" }) }}
+{% endblock %}
+
 {% block link %}
     {{ include('main/components/service_contact_us_button.html.twig', { actionName: 'Consultoría'}) }}
 {% endblock %}

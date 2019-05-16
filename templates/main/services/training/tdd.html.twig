@@ -1,6 +1,5 @@
 {% extends "main/services/service.html.twig" %}
 
-{% set videoUrl = "https://www.youtube.com/embed/30KJpxfRQbE" %}
 {% set image = "/img/trainings/tdd_flow.gif" %}
 {% set title = "Curso TDD" %}
 {% set summary = "Aprende a trabajar con un método que te permite simplificar el desarrollo y asegurar la calidad." %}
@@ -10,6 +9,10 @@
     "Estrategias para testear código legado",
     "Aprende buenas prácticas e identifica problemas en los tests",
 ] %}
+
+{% block headline %}
+    {{ include('main/components/video.html.twig', { videoUrl: "https://www.youtube.com/embed/30KJpxfRQbE" }) }}
+{% endblock %}
 
 {% block link %}
     <div class="bottom-contact-btn">

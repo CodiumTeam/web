@@ -1,6 +1,5 @@
 {% extends "main/services/service.html.twig" %}
 
-{% set videoUrl = "https://www.youtube.com/embed/A8ywnEWeqcA" %}
 {% set image = "/img/legacy-small.jpg" %}
 {% set title = "Curso Working with Legacy Code" %}
 {% set summary = "Desacopla tu código para reducir los costes de desarrollo y mantimiento." %}
@@ -10,6 +9,11 @@
     "Aprende a cambiar el software con seguridad y añadiendo tests",
     "Estrategias para transformar tu monolito",
 ] %}
+
+{% block headline %}
+    {{ include('main/components/video.html.twig', { videoUrl: "https://www.youtube.com/embed/A8ywnEWeqcA" }) }}
+{% endblock %}
+
 
 {% block link %}
     <div class="bottom-contact-btn">

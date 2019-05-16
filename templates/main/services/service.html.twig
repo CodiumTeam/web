@@ -1,7 +1,6 @@
 <div class="tag-box tag-box-v1 box-shadow shadow-effect-2 jl-tag-box">
-    {{ include('main/components/video.html.twig', { videoUrl: videoUrl }) }}
-    {#<img class="img-responsive center-block margin-bottom-30" src="{{ image }}"#}
-         {#alt="">#}
+    {% block headline %}
+    {% endblock %}
     <h3 class="text-center">{{ title }}</h3>
     <p>{{ summary }}</p>
     <br>
