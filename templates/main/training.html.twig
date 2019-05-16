@@ -8,6 +8,8 @@
                 aprendido.</p>'
         }) }}
 
+        {{ include('main/components/video.html.twig', { videoUrl: 'https://www.youtube.com/embed/2QPU8bPMnHI' }) }}
+
         <div class="row margin-bottom-30 equal-height margin-top-60">
             <div class="col-md-6 md-margin-bottom-50">
                 {{ include('main/services/training/legacy.html.twig') }}
@@ -15,6 +17,6 @@
             <div class="col-md-6 md-margin-bottom-50">
                 {{ include('main/services/training/tdd.html.twig') }}
             </div>
-        </div><!--/end row-->
+        </div>
     </div>
 </div>
