@@ -2,6 +2,10 @@
     <div class="container content-sm">
         {{ include('components/block_header.html.twig', { name: 'Introducción' }) }}
 
-        {{ include('main/components/video.html.twig', { videoUrl: 'https://www.youtube.com/embed/I5QFzjIBwPY' }) }}
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                {{ include('main/components/video.html.twig', { videoUrl: 'https://www.youtube.com/embed/I5QFzjIBwPY' }) }}
+            </div>
+        </div>
     </div>
 </div>
