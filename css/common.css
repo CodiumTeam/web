@@ -210,6 +210,10 @@ body,
     border-radius:         15px;
 }
 
+#contact-form .radio {
+    color: #FFFFFF;
+}
+
 #contact-form .icon-prepend {
     padding-right: 3px;
 }
@@ -389,6 +393,10 @@ body,
 #testimonials .carousel-control .icon-prev {
     left:        50%;
     margin-left: -34px;
+}
+
+#training-type-row {
+    margin-left: 35px;
 }
 
 /* Extra small devices */
