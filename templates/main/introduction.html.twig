@@ -1,11 +1,1 @@
-<div id="introduction" class="bg-color-light">
-    <div class="container content-sm">
-        {{ include('components/block_header.html.twig', { name: 'Introducción' }) }}
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                {{ include('main/components/video.html.twig', { videoId: 'I5QFzjIBwPY' }) }}
-            </div>
-        </div>
-    </div>
-</div>
+{{ include('components/introduction.html.twig', { name: 'Presentación', videoId: 'I5QFzjIBwPY' }) }}
