@@ -28,7 +28,16 @@ function sendEmail($params)
     $name = $params['name'] ?? 'Name not specified';
     $subject = $params['subject'] ?? 'Subject not specified';
     $message = $params['message'] ?? '';
-    $body = "$message\n\nNombre: $name.\nEmail $emailAddress";
+    $trainingType = $params['trainingType'] ?? '';
+    $numEmployees = $params['numEmployees'] ?? '';
+    $location = $params['location'] ?? '';
+    $body = "$message\n
+        Nombre: $name
+        Email: $emailAddress
+        Tipo curso: $trainingType
+        Empleados: $numEmployees
+        Localidad: $location
+    ";
 
     $email = (new Swift_Message($subject))
         ->setFrom(['luisrovirosa@gmail.com' => $name])
