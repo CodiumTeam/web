@@ -1,4 +1,4 @@
-var form = $('#tdd-contact-form');
+var form = $('#contact-form');
 function tddContantForm (e) {
     e.preventDefault();
     if (!grecaptcha.getResponse()){
@@ -21,7 +21,7 @@ function tddContantForm (e) {
     });
 }
 function trainingCaptchaCompleted() {
-    $('#tdd-contact-form').submit();
+    $('#contact-form').submit();
 }
 form.submit(tddContantForm);
 

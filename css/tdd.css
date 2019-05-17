@@ -41,14 +41,14 @@
     padding:    24px;
 }
 
-#tdd-contact-form input,
-#tdd-contact-form button {
+#contact-form input,
+#contact-form button {
     -webkit-border-radius: 15px;
     -moz-border-radius:    15px;
     border-radius:         15px;
 }
 
-#tdd-contact-form .icon-prepend {
+#contact-form .icon-prepend {
     padding-right: 3px;
 }
 
