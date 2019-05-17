@@ -33,7 +33,7 @@ body,
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
-    color:          #eee;
+    color: #eee;
 }
 
 .one-page-header.top-nav-collapse .navbar-nav > li > a:hover,
@@ -119,10 +119,10 @@ body,
 
 @font-face {
     font-family: 'goudytrajan-bold-pro';
-    src: url('../fonts/goudytrajan-bold-pro-webfont.woff2') format('woff2'),
+    src:         url('../fonts/goudytrajan-bold-pro-webfont.woff2') format('woff2'),
                  url('../fonts/goudytrajan-bold-pro-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style:  normal;
 }
 
 .navbar li a {
@@ -136,9 +136,10 @@ body,
 
 @media (max-width: 768px) {
     .headline-center-v2 h2 {
-        font-size:   30px;
+        font-size: 30px;
     }
 }
+
 @media (max-width: 1200px) {
     body, .one-page-header .navbar-nav > li > a {
         font-size: 13px;
@@ -146,13 +147,13 @@ body,
 }
 
 #colaboradores img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width:    200px;
+    max-height:   200px;
     margin-right: 20px;
 }
 
 .bordered-icon img {
-    width: 16px;
+    width:  16px;
     height: 16px;
 }
 
