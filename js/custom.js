@@ -49,3 +49,31 @@ function captchaCompleted() {
     $('#formulario-contacto-form').submit();
 }
 $('#formulario-contacto-form').submit(sendContactForm);
+
+$('input[name=trainingType]').change(function(e) {
+    showEmployeesOrLocation($(e.target));
+});
+
+$.ready(function() {
+    showEmployeesOrLocation($('input[name=trainingType]'));
+});
+
+function showEmployeesOrLocation(element) {
+    if (element.val() == 'in-company') {
+        showFormInput($('#numEmployees'));
+        hideFormInput($('#location'));
+    } else {
+        hideFormInput($('#numEmployees'));
+        showFormInput($('#location'));
+    }
+}
+
+function showFormInput(element) {
+    element.closest('.col-md-12').show();
+    element.prop('required', true);
+}
+
+function hideFormInput(element) {
+    element.closest('.col-md-12').hide();
+    element.prop('required', false);
+}
