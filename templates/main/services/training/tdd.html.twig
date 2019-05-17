@@ -1,7 +1,7 @@
 {% extends "main/services/service.html.twig" %}
 
 {% set image = "/img/trainings/tdd_flow.gif" %}
-{% set title = "Curso TDD" %}
+{% set title = "Curso de TDD" %}
 {% set summary = "Aprende a trabajar con un método que te permite simplificar el desarrollo y asegurar la calidad." %}
 {% set sellingPoints = [
     "Aprende el ciclo de desarrollo de TDD",
@@ -11,7 +11,7 @@
 ] %}
 
 {% block headline %}
-    {{ include('main/components/video.html.twig', { videoId: "30KJpxfRQbE" }) }}
+    {{ include('main/components/image.html.twig', { image: image, description: "Curso de TDD" }) }}
 {% endblock %}
 
 {% block link %}
