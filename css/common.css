@@ -6,6 +6,11 @@ body,
     font-size: 16px;
 }
 
+.one-page-header .navbar-nav > li > a:before,
+#topcontrol:after {
+    font-family: "Font Awesome 5 Free";
+}
+
 .headline-center-v2 p {
     font-size: 18px;
 }
