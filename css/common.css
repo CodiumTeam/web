@@ -141,8 +141,14 @@ body,
 }
 
 @media (max-width: 1200px) {
-    body, .one-page-header .navbar-nav > li > a {
+    body {
         font-size: 13px;
+    }
+
+    .one-page-header .navbar-nav > li > a {
+        font-size:     13px;
+        padding-left:  10px;
+        padding-right: 10px;
     }
 }
 
