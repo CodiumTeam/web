@@ -54,7 +54,8 @@ $('input[name=trainingType]').change(function(e) {
     showEmployeesOrLocation($(e.target));
 });
 
-$.ready(function() {
+$(document).ready(function() {
+    console.log("Llega");
     showEmployeesOrLocation($('input[name=trainingType]'));
 });
 
