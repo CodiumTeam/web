@@ -16,14 +16,20 @@
         location: 'Barcelona',
         dates: '22 y 23 de julio'
     }) }}
-    {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
+    {{ include('trainings/components/scheduled_trainings/open_training.html.twig', {
         training: 'Legacy code',
+        location: 'Mallorca',
+        dates: '2 y 3 de octubre',
+        link: 'https://www.eventbrite.es/e/entradas-curso-working-with-legacy-code-de-codium-en-mallorca-2-y-3-de-octubre-63957773422'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
+        training: 'TDD',
         company: 'Abierto / Tu empresa',
         location: 'Barcelona, Madrid o Mallorca',
         dates: '2019'
     }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
-        training: 'TDD',
+        training: 'Legacy code',
         company: 'Abierto / Tu empresa',
         location: 'Barcelona, Madrid o Mallorca',
         dates: '2019'
