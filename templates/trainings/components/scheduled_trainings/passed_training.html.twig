@@ -3,5 +3,9 @@
     <td data-header="Empresa" nowrap><span class="training-location">{{ company }}</span></td>
     <td data-header="Localidad" nowrap><span class="training-location">{{ location }}</span></td>
     <td data-header="Fechas" nowrap><strong>{{ dates }}</strong></td>
-    <td data-header="Descripción"><a href="{{ link }}" target="_blank"><button class="btn-u btn-lg btn-u-blue" type="button"><i class="fa fa-camera"></i> Imágenes</button></a></td>
+    <td data-header="Descripción">
+    {% if link %}
+        <a href="{{ link }}" target="_blank"><button class="btn-u btn-lg btn-u-blue" type="button"><i class="fa fa-camera"></i> Imágenes</button></a>
+    {% endif %}
+    </td>
 </tr>

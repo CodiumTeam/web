@@ -6,6 +6,13 @@
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
+        company: 'Vicomtech',
+        location: 'San Sebastián',
+        dates: '10, 11, 12 y 13 de junio',
+        link: ''
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'A medida',
         location: 'San Sebastián',
         company: 'Vicomtech',
         dates: '1, 2, 3 y 4 de abril',
