@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Hotelbeds',
+        location: 'Mallorca',
+        dates: '25 y 26 de junio',
+        link: ''
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
         company: 'Vicomtech',
         location: 'San Sebastián',
