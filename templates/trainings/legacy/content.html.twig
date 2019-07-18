@@ -6,7 +6,8 @@
         {
             title: 'Cambiando el software con prisas',
             content: [
-                'Añadir funcionalidad sin aumentar la complejidad',
+                'Qué es el código legado y qué lo origina',
+                'Cómo añadir funcionalidad sin aumentar la complejidad',
                 'Sprout method / Sprout class',
                 'Wrap method / Wrap class',
             ]
@@ -14,11 +15,11 @@
         {
             title: 'Detectando y resolviendo problemas',
             content: [
-                'Qué es el código legado',
-                'Causas del legacy code',
-                'Bad smells y Clean Code',
-                'Beneficios del refactoring',
+                'Bad smells',
+                'Cómo definimos estándares de código',
+                'Cómo mejoramos la cultura del equipo',
                 'Técnicas para reducir la complejidad',
+                'Beneficios del refactoring',
             ]
         }
 
@@ -29,10 +30,10 @@
         {
             title: 'Desacoplando nuestro código',
             content: [
-                'Definición de acoplamiento',
-                'Cómo dividir responsabilidades',
-                'Cómo desacoplar',
-                'Interfaces e Inversión de dependencias',
+                'Acoplamiento y cohesión',
+                'Cómo desacoplarnos del framework',
+                'Cómo desacoplarnos de la base de datos y librerías',
+                'Interfaces e inversión de dependencias',
                 'El patrón Adapter',
             ]
         }
@@ -42,21 +43,21 @@
     titles: ['Día 2', 'Mañana'],
     blocks: [
         {
-            title: 'Cambiando el software con seguridad',
+            title: 'Escribiendo los primeros tests',
             content: [
                 'La importancia del testing',
-                'Cobertura de tests y Mutant testing',
+                'Qué es el arnés de tests y la cobertura',
+                'Tipos de tests',
                 'Tests de caracterización',
-                'Técnica Golden master',
             ]
         },
         {
             title: 'Testeando un código acoplado',
             content: [
-                'Extraer y sobreescribir',
-                'Extraer una interfaz',
-                'Parametrizar el constructor',
-                'Introducir un setter estático',
+                'Entender los problemas del código acoplado',
+                'Cómo testeamos código acoplado',
+                'Técnica de extract and override',
+                'Transformar tests de integración en unitarios',
             ]
         }
     ]
@@ -64,12 +65,19 @@
     titles: ['Tarde'],
     blocks: [
         {
-            title: 'Desacoplando y mejorando los tests',
+            title: 'Testando código complejo',
+            content: [
+                'Cómo probamos un código sin entenderlo',
+                'Técnica Golden Master',
+            ]
+        },
+        {
+            title: 'Testeando como un profesional',
             content: [
                 'Qué son y para que sirven los tests dobles',
                 'Cómo y cuándo usar los dobles de pruebas',
                 'Mocks, spies, stubs, fakes y dummies',
-                'Cómo funcionan internamente los dobles',
+                'Otras técnicas de testing',
             ]
         }
     ]
