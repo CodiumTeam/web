@@ -333,3 +333,7 @@ p.about-us-description {
 .who li i {
     font-size: 18px;
 }
+
+#formacion img {
+    max-height: 288px;
+}
