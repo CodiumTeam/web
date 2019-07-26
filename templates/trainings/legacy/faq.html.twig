@@ -5,12 +5,14 @@
         <div class="row">
             {{ include('components/block_faq.html.twig', {
                 question: '¿A quién va dirigido?',
-                answer: ['A empresas que añaden funcionalidad muy lentamente y/o que tienen muchas incidencias.',
+                answer: [
+                    'A equipos en los que el testing automático no es la práctica habitual.',
+                    'A empresas que añaden funcionalidad muy lentamente y/o que tienen muchas incidencias.',
                     'A programadores back-end, front-end o móvil que trabajen con código legado.']
             }) }}
             {{ include('components/block_faq.html.twig', {
                 question: '¿Cuál es el nivel del curso?',
-                answer: ['El nivel del curso es intermedio.',
+                answer: ['El nivel del curso es intermedio. Está dirigido a personas que programan profesionalmente.',
                         'Al ser un curso muy práctico y con mucho debate permite que nos adaptemos al nivel de los
                         asistentes.',
                         'Este curso lo aprovecharán menos aquellas personas con buenos conocimientos de orientación a objetos,
