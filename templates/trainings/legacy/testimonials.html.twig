@@ -1,0 +1,10 @@
+{% set francois = {
+    profileImage: '/img/testimonials/francois.png',
+    quote: 'Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy. Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!',
+    name: 'François Delaunay',
+    role: 'GE Renewable Energy'
+} %}
+
+<div id="testimonials" class="testimonials-v6">
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [francois] }) }}
+</div>
