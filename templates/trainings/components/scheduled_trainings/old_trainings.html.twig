@@ -6,6 +6,19 @@
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
+        location: 'Mallorca',
+        dates: '2 y 3 de octubre',
+        link: 'https://twitter.com/codiumteam/status/1181220656261799937'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Fundació Bit',
+        location: 'Mallorca',
+        dates: '30 de septiembre y 1 de octubre',
+        link: 'https://twitter.com/codiumteam/status/1181216297901871105'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
         company: 'General Electric y Nnergix',
         location: 'Barcelona',
         dates: '22 y 23 de julio',
