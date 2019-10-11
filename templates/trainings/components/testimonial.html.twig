@@ -4,7 +4,7 @@
         {% if (quote | length <= 110) %}
             <br>
         {% endif %}
-        <p>{{ quote }}</p>
+        <p>{{ quote | raw }}</p>
         <span><strong>{{ name }}</strong>{% if role|length > 0 %}, {% endif %}{{ role }}</span>
     </div>
 </div>
