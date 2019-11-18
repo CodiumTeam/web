@@ -4,12 +4,6 @@
 {% set title = "Próximos cursos Codium" %}
 
 {% block nextTrainings %}
-    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
-        training: 'Legacy code',
-        company: 'Helvetia',
-        location: 'Pamplona',
-        dates: '13 y 14 de noviembre'
-    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'TDD',
         company: 'Abierto / Tu empresa',
