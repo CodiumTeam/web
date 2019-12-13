@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Netex',
+        location: 'Coruña',
+        dates: '11 y 12 de diciembre',
+        link: ''
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Helvetia',
         location: 'Pamplona',
