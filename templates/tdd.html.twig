@@ -67,6 +67,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="/plugins/counter/waypoints.min.js"></script>
+<script type="text/javascript" src="/plugins/counter/jquery.counterup.min.js"></script>
 
 <!-- JS Page Level -->
 <script type="text/javascript" src="/js/one.app.js"></script>
@@ -81,6 +83,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     jQuery(document).ready(function() {
         fixLandingResponsiveness();
         App.init();
+        App.initCounter();
     });
 </script>
 
