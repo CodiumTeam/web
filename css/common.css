@@ -46,8 +46,17 @@ body,
     color: #fff !important;
 }
 
+.color-corp,
 .main-color1 {
     color: #0aa0f4;
+}
+
+i.counter-icon-big {
+    background-color: #0aa0f4;
+}
+
+i.counter-icon-big:after {
+    border: 1px solid #0aa0f4;
 }
 
 .btn-primary {
@@ -403,6 +412,12 @@ body,
 
 #training-type-row {
     margin-left: 35px;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
 }
 
 /* Extra small devices */
