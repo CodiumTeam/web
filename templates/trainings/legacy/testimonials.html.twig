@@ -4,6 +4,12 @@
     name: 'François Delaunay',
     role: 'GE Renewable Energy'
 } %}
+{% set oriolTorne = {
+    profileImage: '/img/testimonials/OriolTorne.png',
+    quote: 'El curso fue un punto de inflexión  para atrevernos a hacer las cosas de otra forma: con más seguridad y más calidad.<br />Un año después del curso, hemos notado una mejoría importante en el código y las metodologías que aplicamos.',
+    name: 'Oriol Torné',
+    role: 'Desarrollador en Esblada Medical'
+} %}
 {% set logedo = {
     profileImage: '/img/testimonials/logedo.jpg',
     quote: 'Una formación imprescindible para enfrentarte a ese gran monstruo que es el legacy code.<br /> Con formaciones así es imposible no apasionarse por nuestro trabajo.',
@@ -19,5 +25,5 @@
 } %}
 
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [francois, logedo, anonimo] }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [francois, oriolTorne, logedo, anonimo] }) }}
 </div>
