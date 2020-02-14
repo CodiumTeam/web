@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Datisa',
+        location: 'Madrid',
+        dates: '11, 12 y 13 de febrero',
+        link: ''
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Helvetia',
         location: 'Pamplona',
