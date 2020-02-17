@@ -16,6 +16,12 @@
         location: 'San Sebastián',
         dates: '25, 26, 27 y 28 de mayo'
     }) }}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'TDD',
+        company: 'General Electric y Nnergix',
+        location: 'Barcelona',
+        dates: 'verano'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'TDD',
         company: 'Abierto / Tu empresa',
