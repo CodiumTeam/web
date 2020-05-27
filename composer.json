@@ -15,11 +15,11 @@
         "files": ["php/mail.php"]
     },
     "require": {
-        "php": "^7.1",
+        "php": "^7.4",
         "swiftmailer/swiftmailer": "^6.0",
         "silex/silex": "~2.0",
         "guzzlehttp/guzzle": "~6.0",
-        "twig/twig": "^2.0"
+        "twig/twig": "^3.0"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^121.0"
