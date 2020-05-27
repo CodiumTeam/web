@@ -21,6 +21,7 @@
         "twig/twig": "^3.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-master",
         "heroku/heroku-buildpack-php": "^121.0"
     }
 }
