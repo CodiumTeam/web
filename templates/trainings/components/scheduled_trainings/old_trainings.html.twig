@@ -5,6 +5,12 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'A medida',
+        company: 'Vicomtech',
+        location: 'Remoto',
+        dates: '9, 10, 11 y 12 de junio'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'GSP',
         location: 'Girona',
