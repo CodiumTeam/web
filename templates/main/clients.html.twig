@@ -4,165 +4,66 @@
 
         <!-- Portfolio Sorting Blocks -->
         <div class="sorting-block">
-            <div class="content-xs">
-                <div class="sorting-nav sorting-nav-v1 text-center">
-                    <a class="filter btn-u btn-brd btn-brd-hover rounded"
-                       data-filter="category_training">Formación</a>
-                    <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_coaching">Acompañamiento</a>
-                    <a class="filter btn-u btn-brd btn-brd-hover rounded" data-filter="category_development">Desarrollo</a>
-                </div>
-            </div>
-
-            <ul class="row sorting-grid">
+            <ul class="row">
+                {{ include('main/components/client_image.html.twig', {
+                    name: "Habitissimo",
+                    description: "Formación y desarrollo de producto",
+                    image: "/img/clients/habitissimo.png",
+                }) }}
                 {{ include('main/components/client_image.html.twig', {
                     name: "Vicomtech",
                     description: "Formación personalizada",
                     image: "/img/clients/vicomtech.png",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Hotelbeds",
-                    description: "Formación en TDD + Formación en Working with Legacy Code",
-                    image: "/img/clients/hotelbeds.jpg",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "General Electric",
-                    description: "Formación en Working with legacy code + Acompañamiento",
-                    image: "/img/clients/ge.png",
-                    categories: "category_coaching category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Avoris",
-                    description: "Formación en TDD",
-                    image: "/img/clients/avoris.png",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Logitravel",
-                    description: "Formación en Working with legacy code + Formación en TDD",
-                    image: "/img/clients/logitravel.png",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Schibsted",
-                    description: "Formación en TDD",
-                    image: "/img/clients/schibsted.png",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Glovo",
-                    description: "Formación en TDD",
-                    image: "/img/clients/glovo.png",
-                    categories: "category_training"
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
                     name: "Roiback",
-                    description: "Formación en Working with Legacy Code + Acompañamiento",
+                    description: "Formación y Acompañamiento",
                     image: "/img/clients/roiback.png",
-                    categories: "category_training category_coaching"
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
-                    name: "Editorial Vicens Vives",
-                    description: "Formación en TDD",
-                    image: "/img/clients/vicensvives.jpg",
-                    categories: "category_training"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Decathlon",
-                    description: "Consultoría en historias de usuario y código legado",
-                    image: "/img/clients/decathlon.png",
-                    categories: "category_coaching"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Bankinter",
-                    description: "Consultoría en buenas prácticas de desarrollo y cíclo de vida del desarrollo de software.",
-                    image: "/img/clients/bankinter.jpg",
-                    categories: "category_coaching"
+                    name: "Hotelbeds",
+                    description: "Múltiples formaciones de TDD y Legacy Code",
+                    image: "/img/clients/hotelbeds.jpg",
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
                     name: "TalentClue",
-                    description: "Formación en TDD, BDD y Front-end + Acompañamiento en buenas práctica de desarrollo + Desarrollo en Angular y PHP",
+                    description: "Formación y desarrollo de producto",
                     image: "/img/clients/talentclue.png",
-                    categories: "category_training category_coaching category_development"
+                }) }}
+                {{ include('main/components/client_image.html.twig', {
+                    name: "Rideo",
+                    description: "Desarollo de producto",
+                    image: "/img/clients/rideo.png",
+                }) }}
+                {{ include('main/components/client_image.html.twig', {
+                    name: "General Electric",
+                    description: "Formación y Acompañamiento",
+                    image: "/img/clients/ge.png",
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
                     name: "Global O2",
                     description: "Due diligence técnica y asesoramiento tecnológico.",
                     image: "/img/clients/globalo2.jpg",
-                    categories: "category_coaching"
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
-                    name: "Meta 4",
-                    description: "Consultoría en TDD.",
-                    image: "/img/clients/meta4.png",
-                    categories: "category_coaching"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Idiada",
-                    description: "Formación en buenas prácticas de Front-end + Desarrollos Java Full-stack",
-                    image: "/img/clients/idiada.jpg",
-                    categories: "category_training category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Habitissimo",
+                    name: "Avoris",
                     description: "Formación en TDD",
-                    image: "/img/clients/habitissimo.png",
-                    categories: "category_training"
+                    image: "/img/clients/avoris.png",
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
-                    name: "Bonitasoft",
-                    description: "Formador oficial + Desarrollo de conectores para integrar con múltiples servicios y plugins maven",
-                    image: "/img/clients/bonitasoft.png",
-                    categories: "category_development"
+                    name: "Logitravel",
+                    description: "Formación en Working with legacy code + Formación en TDD",
+                    image: "/img/clients/logitravel.png",
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
-                    name: "Avanza en tu carrera",
-                    description: "Arquitectura y desarrollo en PHP.",
-                    image: "/img/clients/avanzaentucarrera.gif",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Canoe",
-                    description: "Acompañamiento de stack tecnológico + Integraciones de back-end con dropbox y frontend en Angular",
-                    image: "/img/clients/canoe.png",
-                    categories: "category_coaching category_development"
+                    name: "Editorial Vicens Vives",
+                    description: "Formación en TDD",
+                    image: "/img/clients/vicensvives.jpg",
                 }) }}
                 {{ include('main/components/client_image.html.twig', {
                     name: "La huella",
                     description: "Desarrollo en React y Javascript.",
                     image: "/img/clients/lahuella.png",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Deutche Telekom",
-                    description: "Desarrollo front-end en Angular",
-                    image: "/img/clients/deutschetelekom.jpg",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Inditex",
-                    description: "Arquitectura y desarrollo en PHP",
-                    image: "/img/clients/inditex.png",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Lobster",
-                    description: "Arquitectura y desarrollo front-end en React y Flux",
-                    image: "/img/clients/lobster.jpg",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "IRC Hispano",
-                    description: "Desarrollo front-end en Angular e Ionic",
-                    image: "/img/clients/irchispano.jpg",
-                    categories: "category_development"
-                }) }}
-                {{ include('main/components/client_image.html.twig', {
-                    name: "Wouzee",
-                    description: "Arquitectura y desarrollo en PHP",
-                    image: "/img/clients/wouzee.jpg",
-                    categories: "category_development"
                 }) }}
             </ul>
             <div class="clearfix"></div>
