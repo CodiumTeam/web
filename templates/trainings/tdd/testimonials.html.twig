@@ -1,9 +1,3 @@
-{% set isidro = {
-    profileImage: '/img/testimonials/islomar.jpg',
-    quote: 'Un curso MUY cuidado, eminentemente práctico y que profundiza en el porqué de las cosas. <br />Más que recomendable para quien quiera iniciarse seriamente en TDD.',
-    name: 'Isidro López',
-    role: ''
-} %}
 {% set helder = {
     profileImage: '/img/testimonials/HelderDOliveira.jpg',
     quote: 'Pragmático, directo, en la misma línea de la propia filosofía de TDD​.​ ​M​e ha ayudado a desarrollar de forma más segura y limpia, ​descubriendo a la vez otras formas de hacer TDD que desconocía y siempre guiado desde ejercicios muy potentes.',
@@ -18,5 +12,5 @@
 } %}
 
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [helder, joanMiralles, isidro] }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [helder, joanMiralles] }) }}
 </div>
