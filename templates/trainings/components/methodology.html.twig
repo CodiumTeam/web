@@ -17,29 +17,13 @@
 
 
         <div class="row equal-height margin-top-60">
-            <div class="col-md-4">
-                <div class="about-us-panel md-margin-bottom-50">
-                    <img alt="" src="/img/about-us/luis.jpg" class="rounded-x img-responsive">
-                    <h3>Luis Rovirosa</h3>
-                    <ul class="list-inline team-social">
-                        <li>
-                            <a data-placement="top" data-toggle="tooltip" class="li white tooltips" data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa" onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-placement="top" data-toggle="tooltip" class="tw white tooltips" data-original-title="Twitter" href="http://twitter.com/luisrovirosa" onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-placement="top" data-toggle="tooltip" class="gh white tooltips" data-original-title="Github" href="http://github.com/luisrovirosa" onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            {{ include('trainings/components/about_us_panel.html.twig', {
+                'name': 'Luis Rovirosa',
+                'image': '/img/about-us/luis.jpg',
+                'linkedIn' : 'http://linkedin.com/in/luisrovirosa/',
+                'twitter' : 'http://twitter.com/luisrovirosa',
+                'gitHub' : 'http://github.com/luisrovirosa',
+                }) }}
             <div class="col-md-4">
                 <div class="about-us-panel md-margin-bottom-50">
                     <img alt="" src="/img/about-us/jordi.jpeg" class="rounded-x img-responsive">
