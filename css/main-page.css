@@ -333,3 +333,7 @@ p.about-us-description {
 #formacion img {
     max-height: 288px;
 }
+
+.view-tenth:hover img {
+    opacity: 0.07;
+}
