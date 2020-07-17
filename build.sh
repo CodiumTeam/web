@@ -1,5 +1,6 @@
-!#/bin/bash
-php index.php
-php curso-tdd.php
-php curso-legacy-code.php
-php resources.php
+#!/bin/php
+
+php index.php > /dev/null
+php curso-tdd.php > /dev/null
+php curso-legacy-code.php > /dev/null
+php resources.php > /dev/null

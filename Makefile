@@ -21,5 +21,5 @@ up:
 
 build:
 	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
-	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) ./build.sh
+	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
 
