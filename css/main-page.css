@@ -39,17 +39,17 @@ p.about-us-description {
     color: rgb(192, 57, 43);
 }
 
-.pricing-table-v4 .pricing-coaching .pricing-v4-head,
-.pricing-table-v4 .pricing-coaching .btn-u {
+.pricing-table-v4 .pricing-continuous-learning .pricing-v4-head,
+.pricing-table-v4 .pricing-continuous-learning .btn-u {
     background: rgb(50, 76, 128);
 
 }
 
-.pricing-table-v4 .pricing-coaching {
+.pricing-table-v4 .pricing-continuous-learning {
     border: 1px solid rgba(50, 76, 128, 0.3);
 }
 
-.pricing-table-v4 .pricing-coaching .pricing-v4-content li {
+.pricing-table-v4 .pricing-continuous-learning .pricing-v4-content li {
     color: rgb(50, 76, 128);
 }
 
@@ -118,7 +118,7 @@ p.about-us-description {
         height: inherit;
     }
 
-    .pricing-coaching .pricing-v4-content li:first-child,
+    .pricing-continuous-learning .pricing-v4-content li:first-child,
     .pricing-development .pricing-v4-content li:first-child {
         line-height: inherit;
     }
