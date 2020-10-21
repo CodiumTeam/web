@@ -5,6 +5,13 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
+        company: 'Zooplus',
+        location: 'Remoto',
+        dates: '13, 14, 15 y 16 de octubre',
+        link: 'https://twitter.com/codiumteam/status/1318934820806905858'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
         company: 'Vicomtech',
         location: 'Remoto',
