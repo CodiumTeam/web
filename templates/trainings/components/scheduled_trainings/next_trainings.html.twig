@@ -10,6 +10,18 @@
         location: 'Remoto',
         dates: '23, 24, 25 y 26 de noviembre'
     }) }}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'TDD',
+        company: 'Meliá y Brújula',
+        location: 'Remoto',
+        dates: 'Mañanas de 14, 15, 16 y 17 de diciembre'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/in_house_training.html.twig', {
+        training: 'TDD',
+        company: 'Meliá y Brújula',
+        location: 'Remoto',
+        dates: 'Tardes de 14, 15, 16 y 17 de diciembre'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'TDD',
         company: 'Abierto / Tu empresa',
