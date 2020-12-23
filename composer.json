@@ -22,6 +22,6 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "heroku/heroku-buildpack-php": "^121.0"
+        "heroku/heroku-buildpack-php": "*"
     }
 }
