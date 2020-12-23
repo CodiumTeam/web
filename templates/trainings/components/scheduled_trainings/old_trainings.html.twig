@@ -4,6 +4,21 @@
 {% set id = "oldTrainings" %}
 
 {% block nextTrainings %}
+
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Meliá y Brújula',
+        location: 'Remoto',
+        dates: 'Mañanas de 14, 15, 16 y 17 de diciembre',
+        link: 'https://twitter.com/codiumteam/status/1341746652093288449'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Meliá y Brújula',
+        location: 'Remoto',
+        dates: 'Tardes de 14, 15, 16 y 17 de diciembre',
+        link: 'https://twitter.com/codiumteam/status/1341746652093288449'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'General Electric y Nnergix',
