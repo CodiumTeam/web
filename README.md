@@ -1,8 +1,15 @@
 # Launch the web
-php -S localhost:8000
+make up
 
 # Recreate all the webs
-./build.sh
+make build
 
 # Install dependencies
-composer install
+make build
+
+# Pages
+http://localhost:8000/index.php
+
+http://localhost:8000/curso-tdd.php
+
+http://localhost:8000/curso-legacy-code.php
