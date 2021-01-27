@@ -141,7 +141,7 @@ p.about-us-description {
 }
 
 .fullscreen-static-image1 {
-    background:              url("../img/bg/workspace.jpg") no-repeat center center fixed;
+    background:              url("../img/bg/workspace.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size:    cover;
     -o-background-size:      cover;
