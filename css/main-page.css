@@ -102,6 +102,16 @@ p.about-us-description {
     }
 }
 
+@media (min-width: 992px) {
+    #comunicacion a {
+        bottom: -20px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width: 1200px) {
     .pricing-table-v4 .pricing-v4-head {
         height: 300px;
@@ -120,8 +130,7 @@ p.about-us-description {
 
     .about-us-container {
         margin-bottom: 10px;
-    }
-    
+    }    
 }
 
 @media (max-width: 768px) {
