@@ -15,6 +15,7 @@
     color: #ffffff;
 }
 
+
 p.about-us-description {
     background: rgba(0, 0, 0, 0.5);
     padding:    20px 5px;
@@ -116,6 +117,11 @@ p.about-us-description {
     .pricing-table-v4 .pricing-v4-content li:nth-child(2) {
         height: 70px;
     }
+
+    .about-us-container {
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media (max-width: 768px) {
