@@ -39,6 +39,7 @@ p.about-us-description {
     color: rgb(192, 57, 43);
 }
 
+
 .pricing-table-v4 .pricing-continuous-learning .pricing-v4-head,
 .pricing-table-v4 .pricing-continuous-learning .btn-u {
     background: rgb(50, 76, 128);
@@ -111,6 +112,10 @@ p.about-us-description {
         height:  320px;
         padding: 30px 15px 0 15px;
     }
+    .pricing-table-v4 .pricing-v4-content li:first-of-type,
+    .pricing-table-v4 .pricing-v4-content li:nth-child(2) {
+        height: 70px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -121,6 +126,10 @@ p.about-us-description {
     .pricing-continuous-learning .pricing-v4-content li:first-child,
     .pricing-development .pricing-v4-content li:first-child {
         line-height: inherit;
+    }
+
+    .pricing-table-v4 .pricing-v4-content li {
+        height: auto;
     }
 }
 
