@@ -189,6 +189,10 @@ p.about-us-description {
     background: rgba(0, 0, 0, 0.4);
 }
 
+#slogan .row {
+    top: 50px;
+}
+
 #slogan.container {
     text-align: center;
     bottom:     400px;
