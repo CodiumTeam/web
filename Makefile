@@ -16,7 +16,7 @@ help:
 
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:7.4
-DOCKER_COMPOSER_IMAGE = composer:1.10
+DOCKER_COMPOSER_IMAGE = composer:1.10.16
 DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
 up:
