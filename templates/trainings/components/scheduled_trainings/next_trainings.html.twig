@@ -5,6 +5,12 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
+        training: 'Legacy code',
+        company: 'General Electric y Nnergix',
+        location: 'Remoto',
+        dates: '12, 13, 14 y 15 de abril'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/not_announced_open_training.html.twig', {
         training: 'TDD',
         company: 'Abierto / Tu empresa',
         location: 'Remoto / En tus oficinas',
