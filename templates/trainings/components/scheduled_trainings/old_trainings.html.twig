@@ -4,7 +4,13 @@
 {% set id = "oldTrainings" %}
 
 {% block nextTrainings %}
-
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'A medida',
+        company: 'Vicomtech',
+        location: 'Remoto',
+        dates: '1, 2, 3, 4, 8 y 9 de marzo',
+        link: 'https://twitter.com/codiumteam/status/1369293466954514433'
+    }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Meliá y Brújula',
