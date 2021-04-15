@@ -5,6 +5,14 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
+        company: 'General Electric y Nnergix',
+        location: 'Remoto',
+        dates: '12, 13, 14 y 15 de abril',
+        link: 'https://twitter.com/codiumteam/status/1382724078285549574'
+    }) }}
+
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
         company: 'Vicomtech',
         location: 'Remoto',
