@@ -5,6 +5,20 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Virtual Cave',
+        location: 'Remoto',
+        dates: '3, 4, 5 y 6 de mayo',
+        link: 'https://twitter.com/codiumteam/status/1392853664734359553'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Virtual Cave',
+        location: 'Remoto',
+        dates: '26, 27, 28 y 29 de abril',
+        link: 'https://twitter.com/codiumteam/status/1392853664734359553'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'General Electric y Nnergix',
         location: 'Remoto',
