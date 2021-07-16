@@ -5,6 +5,20 @@
 
 {% block nextTrainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Docker',
+        company: 'GE y Nnergix',
+        location: 'Remoto',
+        dates: 'julio',
+        link: 'https://twitter.com/codiumteam/status/1415977799303708675'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: '11 cursos de Docker',
+        company: 'Vicomtech',
+        location: 'Remoto',
+        dates: 'mayo y junio',
+        link: 'https://twitter.com/codiumteam/status/1412064249514496007'
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Virtual Cave',
         location: 'Remoto',
