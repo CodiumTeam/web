@@ -321,27 +321,27 @@ i.counter-icon-big:after {
     padding-top: 0px;
 }
 
-#next-trainings {
+#trainings-table {
     font-size:    18px;
     margin-left:  auto;
     margin-right: auto;
 }
 
-#next-trainings .training-location {
+#trainings-table .training-location {
     color:          #0aa0f4;
     text-transform: uppercase;
     font-weight:    bolder;
 }
 
-#next-trainings tbody tr {
+#trainings-table tbody tr {
     border-bottom: 2px solid #ddd;
 }
 
-#next-trainings tbody tr:last-of-type {
+#trainings-table tbody tr:last-of-type {
     border: none;
 }
 
-#next-trainings button {
+#trainings-table button {
     width: 130px;
 }
 
