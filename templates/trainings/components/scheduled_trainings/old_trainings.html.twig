@@ -3,41 +3,46 @@
 {% set title = "Cursos impartidos" %}
 {% set id = "trainings" %}
 
-{% block nextTrainings %}
+{% block trainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Docker',
         company: 'GE y Nnergix',
         location: 'Remoto',
         dates: 'julio',
-        link: 'https://twitter.com/codiumteam/status/1415977799303708675'
+        link: 'https://twitter.com/codiumteam/status/1415977799303708675',
+        visibleOnMobile: true
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: '11 cursos de Docker',
         company: 'Vicomtech',
         location: 'Remoto',
         dates: 'mayo y junio',
-        link: 'https://twitter.com/codiumteam/status/1412064249514496007'
+        link: 'https://twitter.com/codiumteam/status/1412064249514496007',
+        visibleOnMobile: true
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Virtual Cave',
         location: 'Remoto',
         dates: 'mayo',
-        link: 'https://twitter.com/codiumteam/status/1392853664734359553'
+        link: 'https://twitter.com/codiumteam/status/1392853664734359553',
+        visibleOnMobile: true
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Virtual Cave',
         location: 'Remoto',
         dates: 'abril',
-        link: 'https://twitter.com/codiumteam/status/1392853664734359553'
+        link: 'https://twitter.com/codiumteam/status/1392853664734359553',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'GE y Nnergix',
         location: 'Remoto',
         dates: 'abril',
-        link: 'https://twitter.com/codiumteam/status/1382724078285549574'
+        link: 'https://twitter.com/codiumteam/status/1382724078285549574',
+        visibleOnMobile: false
     }) }}
 
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
@@ -45,42 +50,48 @@
         company: 'Vicomtech',
         location: 'Remoto',
         dates: 'marzo',
-        link: 'https://twitter.com/codiumteam/status/1369293466954514433'
+        link: 'https://twitter.com/codiumteam/status/1369293466954514433',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Meliá y Brújula',
         location: 'Remoto',
         dates: 'diciembre de 2020',
-        link: 'https://twitter.com/codiumteam/status/1341746652093288449'
+        link: 'https://twitter.com/codiumteam/status/1341746652093288449',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Meliá y Brújula',
         location: 'Remoto',
         dates: 'diciembre de 2020',
-        link: 'https://twitter.com/codiumteam/status/1341746652093288449'
+        link: 'https://twitter.com/codiumteam/status/1341746652093288449',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'GE y Nnergix',
         location: 'Remoto',
         dates: 'noviembre de 2020',
-        link: 'https://twitter.com/codiumteam/status/1333801217500221440'
+        link: 'https://twitter.com/codiumteam/status/1333801217500221440',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Zooplus',
         location: 'Remoto',
         dates: 'octubre de 2020',
-        link: 'https://twitter.com/codiumteam/status/1325809755458244608'
+        link: 'https://twitter.com/codiumteam/status/1325809755458244608',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Zooplus',
         location: 'Remoto',
         dates: 'octubre de 2020',
-        link: 'https://twitter.com/codiumteam/status/1318934820806905858'
+        link: 'https://twitter.com/codiumteam/status/1318934820806905858',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
@@ -93,238 +104,271 @@
         company: 'GSP',
         location: 'Girona',
         dates: 'marzo de 2020',
-        link: 'https://twitter.com/codiumteam/status/1235849559256870915'
+        link: 'https://twitter.com/codiumteam/status/1235849559256870915',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Datisa',
         location: 'Madrid',
         dates: 'febrero de 2020',
-        link: 'https://twitter.com/codiumteam/status/1228283960284864514'
+        link: 'https://twitter.com/codiumteam/status/1228283960284864514',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Helvetia',
         location: 'Pamplona',
         dates: 'enero de 2020',
-        link: 'https://twitter.com/codiumteam/status/1221735527164121090'
+        link: 'https://twitter.com/codiumteam/status/1221735527164121090',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Netex',
         location: 'A Coruña',
         dates: 'diciembre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1214892342131527681'
+        link: 'https://twitter.com/codiumteam/status/1214892342131527681',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Helvetia',
         location: 'Pamplona',
         dates: 'noviembre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1196380939129171968'
+        link: 'https://twitter.com/codiumteam/status/1196380939129171968',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Netex',
         location: 'A Coruña',
         dates: 'octubre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1192744318387265537'
+        link: 'https://twitter.com/codiumteam/status/1192744318387265537',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Zitro Games',
         location: 'Barcelona',
         dates: 'octubre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1192376323379007488'
+        link: 'https://twitter.com/codiumteam/status/1192376323379007488',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Abierto',
         location: 'Mallorca',
         dates: 'octubre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1181220656261799937'
+        link: 'https://twitter.com/codiumteam/status/1181220656261799937',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Fundació Bit',
         location: 'Mallorca',
         dates: 'septiembre de 2019',
-        link: 'https://twitter.com/codiumteam/status/1181216297901871105'
+        link: 'https://twitter.com/codiumteam/status/1181216297901871105',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'GE y Nnergix',
         location: 'Barcelona',
         dates: 'julio de 2019',
-        link: 'https://twitter.com/codiumteam/status/1154670019374178305'
+        link: 'https://twitter.com/codiumteam/status/1154670019374178305',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'junio de 2019',
-        link: 'https://twitter.com/codiumteam/status/1151514038255390720'
+        link: 'https://twitter.com/codiumteam/status/1151514038255390720',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
         company: 'Vicomtech',
         location: 'San Sebastián',
         dates: 'junio de 2019',
-        link: 'https://twitter.com/codiumteam/status/1151510563719192577'
+        link: 'https://twitter.com/codiumteam/status/1151510563719192577',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'A medida',
         location: 'San Sebastián',
         company: 'Vicomtech',
         dates: 'abril de 2019',
-        link: 'https://twitter.com/codiumteam/status/1115606816354783233'
+        link: 'https://twitter.com/codiumteam/status/1115606816354783233',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         location: 'Mallorca',
         company: 'Avoris',
         dates: 'marzo de 2019',
-        link: 'https://twitter.com/codiumteam/status/1109014605416878081'
+        link: 'https://twitter.com/codiumteam/status/1109014605416878081',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         location: 'Jaén',
         company: 'Dapda',
         dates: 'marzo de 2019',
-        link: 'https://twitter.com/codiumteam/status/1105018271718346752'
+        link: 'https://twitter.com/codiumteam/status/1105018271718346752',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         location: 'Mallorca',
         company: 'Habitissimo',
         dates: 'febrero de 2019',
-        link: 'https://twitter.com/codiumteam/status/1100004221695324161'
+        link: 'https://twitter.com/codiumteam/status/1100004221695324161',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         location: 'Barcelona',
         company: 'Esblada',
         dates: 'febrero de 2019',
-        link: 'https://twitter.com/codiumteam/status/1093486066559082496'
+        link: 'https://twitter.com/codiumteam/status/1093486066559082496',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         location: 'Barcelona',
         company: 'Editorial Vicens Vives',
         dates: 'diciembre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1076060333041745920'
+        link: 'https://twitter.com/codiumteam/status/1076060333041745920',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Barcelona',
         dates: 'noviembre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1069527248124952576'
+        link: 'https://twitter.com/codiumteam/status/1069527248124952576',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Roiback',
         location: 'Mallorca',
         dates: 'octubre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1059373929834393601'
+        link: 'https://twitter.com/codiumteam/status/1059373929834393601',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Yapiko',
         location: 'Madrid',
         dates: 'octubre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1053193533224558592'
+        link: 'https://twitter.com/codiumteam/status/1053193533224558592',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: '3ipunt',
         location: 'Barcelona',
         dates: 'octubre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1047773553062543361'
+        link: 'https://twitter.com/codiumteam/status/1047773553062543361',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Mallorca',
         dates: 'septiembre de 2018',
-        link: 'https://twitter.com/codiumteam/status/1043039201615273985'
+        link: 'https://twitter.com/codiumteam/status/1043039201615273985',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Glovo',
         location: 'Barcelona',
         dates: 'agosto de 2018',
-        link: 'https://twitter.com/codiumteam/status/1027822575815204864'
+        link: 'https://twitter.com/codiumteam/status/1027822575815204864',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Logitravel',
         location: 'Mallorca',
         dates: 'junio de 2018',
-        link: 'https://twitter.com/codiumteam/status/1012589423425474560'
+        link: 'https://twitter.com/codiumteam/status/1012589423425474560',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Vigo',
         dates: 'junio de 2018',
-        link: 'https://twitter.com/codiumteam/status/1006872671454486528'
+        link: 'https://twitter.com/codiumteam/status/1006872671454486528',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'mayo de 2018',
-        link: 'https://twitter.com/codiumteam/status/1001755414403452928'
+        link: 'https://twitter.com/codiumteam/status/1001755414403452928',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'abril de 2018',
-        link: 'https://twitter.com/codiumteam/status/989049083187924992'
+        link: 'https://twitter.com/codiumteam/status/989049083187924992',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'abril de 2018',
-        link: 'https://twitter.com/codiumteam/status/989047672245014529'
+        link: 'https://twitter.com/codiumteam/status/989047672245014529',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'marzo de 2018',
-        link: 'https://twitter.com/codiumteam/status/973865688938008576'
+        link: 'https://twitter.com/codiumteam/status/973865688938008576',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Hotelbeds',
         location: 'Mallorca',
         dates: 'marzo de 2018',
-        link: 'https://twitter.com/codiumteam/status/973865688938008576'
+        link: 'https://twitter.com/codiumteam/status/973865688938008576',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Habitissimo',
         location: 'Mallorca',
         dates: 'febrero de 2018',
-        link: 'https://twitter.com/codiumteam/status/968415419055923200'
+        link: 'https://twitter.com/codiumteam/status/968415419055923200',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Mallorca',
         dates: 'febrero de 2018',
-        link: 'https://twitter.com/codiumteam/status/966399073745080320'
+        link: 'https://twitter.com/codiumteam/status/966399073745080320',
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'Abierto',
         location: 'Madrid',
         dates: 'diciembre de 2017',
-        link: 'https://twitter.com/codiumteam/status/941259927984713729'
+        link: 'https://twitter.com/codiumteam/status/941259927984713729',
+        visibleOnMobile: false
     }) }}
-
 {% endblock %}
