@@ -7,8 +7,7 @@ require_once 'vendor/autoload.php';
 
 $loader = new FilesystemLoader('templates');
 $twig = new Environment($loader, []);
-$detect = new Mobile_Detect;
 
-$data = preg_replace('/\s+/', ' ', $twig->render('tdd.html.twig', ['isMobile' => $detect->isMobile()]));
+$data = preg_replace('/\s+/', ' ', $twig->render('tdd.html.twig'));
 echo $data;
 file_put_contents('curso-tdd.html', $data);
