@@ -54,7 +54,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 -->
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="header-fixed header-fixed-space">
 <div class="wrapper">
-
     {{ include('main/header.html.twig') }}
     {{ include('main/landing_screen.html.twig') }}
     {{ include('main/introduction.html.twig') }}
@@ -70,6 +69,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 </div>
 
 <!-- JS Global Compulsory -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
 <script type="text/javascript" src="/plugins/jquery/jquery.min.js"> </script>
 <script type="text/javascript" src="/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -115,6 +115,5 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <script type="text/javascript" src="/plugins/html5shiv.js"></script>
 <script type="text/javascript" src="/plugins/placeholder-IE-fixes.js"></script>
 <![endif]-->
-
 </body>
 </html>

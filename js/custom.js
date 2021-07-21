@@ -77,3 +77,6 @@ function hideFormInput(element) {
     element.closest('.col-md-12').hide();
     element.prop('required', false);
 }
+
+// Load images when are going to be displayed
+new LazyLoad({});
