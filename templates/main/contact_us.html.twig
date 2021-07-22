@@ -61,11 +61,7 @@
             <div class="item col-lg-6 col-md-7 col-sm-7 col-xs-10">
               <p class="rounded-2x">Muchas gracias por ponerte en contacto con nosotros.<br>
                 Te contestaremos lo antes posible.</p>
-              <div class="testimonial-info">
-                <img src="/img/about-us/jordi.jpeg" class="rounded-2x lazy" alt="">
-                <img src="/img/about-us/luis.jpg" class="rounded-2x lazy" alt="">
-                <span class="testimonial-author">Jordi y Luis</span>
-              </div>
+              {{ include('components/jordi_and_luis_thanks.html.twig') }}
             </div>
           </div>
         </div>
@@ -78,11 +74,7 @@
                    class="cryptedmail"
                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
               </p>
-              <div class="testimonial-info">
-                <img src="/img/about-us/jordi.jpeg" class="rounded-2x lazy" alt="">
-                <img src="/img/about-us/luis.jpg" class="rounded-2x lazy" alt="">
-                <span class="testimonial-author">Jordi y Luis</span>
-              </div>
+              {{ include('components/jordi_and_luis_thanks.html.twig') }}
             </div>
           </div>
         </div>
