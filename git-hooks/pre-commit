@@ -2,4 +2,6 @@
 
 ./build.sh
 
+git diff --exit-code
+
 exit $?

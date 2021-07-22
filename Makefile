@@ -30,6 +30,7 @@ down:
 build:
 	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
 	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
+	git config --local core.hooksPath git-hooks/
 
 convert:
 	$(DOCKER_COMMAND) $(DOCKER_IMAGEMAGICK_IMAGE) $(FILE_PATH) -resize 245x155 -size 255x161 xc:white +swap -gravity center -composite $(FILE_PATH)
