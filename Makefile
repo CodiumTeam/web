@@ -19,18 +19,26 @@ DOCKER_PHP_IMAGE = php:7.4
 DOCKER_COMPOSER_IMAGE = composer:1.10.16
 DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
+.PHONY: up
 up:
 	$(DOCKER_COMMAND) --name codium_web -p 8000:8000 -d $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000
 	@echo "http://localhost:8000/index.php http://localhost:8000/curso-tdd.php http://localhost:8000/curso-legacy-code.php\n"
 	@echo "http://webcodium:8000/index.php http://webcodium:8000/curso-tdd.php http://webcodium:8000/curso-legacy-code.php\n"
 
+.PHONY: down
 down:
 	docker stop codium_web
 
+.PHONY: build
 build:
 	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
-	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
 	git config --local core.hooksPath git-hooks/
+	make just-build
 
+.PHONY: just-build
+just-build:
+	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
+
+.PHONY: convert
 convert:
 	$(DOCKER_COMMAND) $(DOCKER_IMAGEMAGICK_IMAGE) $(FILE_PATH) -resize 245x155 -size 255x161 xc:white +swap -gravity center -composite $(FILE_PATH)
