@@ -6,40 +6,40 @@
         {
             title: 'Módulo 1 - Conoce Docker',
             content: [
-                'Historia: de dónde se viene.',
-                'Qué problemas resuelve.',
-                'Por qué y cuándo usarlo: ventajas frente a las alternativas.',
-                'Arquitectura básica y tecnologías en las que se basa.',
-                'Demo: mis primeros commandos con Docker.',
+                'Historia: de dónde se viene',
+                'Qué problemas resuelve',
+                'Por qué y cuándo usarlo: ventajas frente a las alternativas',
+                'Arquitectura básica y tecnologías en las que se basa',
+                'Demo: mis primeros commandos con Docker',
                 'Ejercicios prácticos:',
-                ' - Validar entorno Docker y ejecutar mis primeros contendores.',
+                ' - Validar entorno Docker y ejecutar mis primeros contendores',
             ]
         },
         {
             title: 'Módulo 2 - Primeros pasos: uso de elementos básicos',
             content: [
-                'Demo: comandos básicos.',
-                'Cómo ejecutar contenedores.',
-                'Ver los logs.',
-                'Ver el estado de los contenedores.',
-                'Ejecutar comandos en los contenedores.',
-                'Formas de parar los contendores y sus diferencias.',
+                'Demo: comandos básicos',
+                'Cómo ejecutar contenedores',
+                'Ver los logs',
+                'Ver el estado de los contenedores',
+                'Ejecutar comandos en los contenedores',
+                'Formas de parar los contendores y sus diferencias',
                 'Ejercicios prácticos:',
-                ' - Practicar comandos básicos, ver logs y controlar el estado de los contenedores.',
+                ' - Practicar comandos básicos, ver logs y controlar el estado de los contenedores',
                 '',
-                'Demo: puertos, volumes y variables de entorno.',
+                'Demo: puertos, volumes y variables de entorno',
                 'Ejercicios prácticos:',
-                ' - Practicar el binding de volúmenes y puertos.',
-                ' - Definición y uso de variables de entorno de varias formas.',
+                ' - Practicar el binding de volúmenes y puertos',
+                ' - Definición y uso de variables de entorno de varias formas',
                 '',
-                'Demo: Docker Compose.',
-                'Docker-compose: utilidad, definición, uso y buenas prácticas.',
-                'Networking.',
+                'Demo: Docker Compose',
+                'Docker-compose: utilidad, definición, uso y buenas prácticas',
+                'Networking',
                 'Ejercicios prácticos:',
-                ' - Ejecutar docker-compose suministrado con flask.',
-                ' - Crear docker-compose de 0 para ejecutar wordpress + mysql.',
-                ' - Bonus: docker-compose con 1 servicio.',
-                ' - Bonus: wordpress sin docker-compose.',
+                ' - Ejecutar docker-compose suministrado con flask',
+                ' - Crear docker-compose de 0 para ejecutar wordpress + mysql',
+                ' - Bonus: docker-compose con 1 servicio',
+                ' - Bonus: wordpress sin docker-compose',
             ]
         }
     ]
@@ -47,36 +47,64 @@
     titles: ['Tarde'],
     blocks: [
         {
-            title: 'Beneficios de TDD',
+            title: 'Módulo 3 - Cómo construir y optimizar tu propia imagen',
             content: [
-                'Por qué hacer TDD',
-                'Economía de TDD',
-                'Kata',
-                '.',
+                'Teoría Dockerfile',
+                'ENTRYPOINT, CMD, USER, FROM, etc',
+                'Cómo “parametrizar”: .env, ENV, build args, etc',
+                'Ejercicios prácticos:',
+                ' - Crear Dockerfile para aplicación Python con flask',
+                ' - Añadir ENV, ARG, WORKDIR, EXPOSE',
+                ' - Crear otro Dockerfile con Angular CLI',
+                ' - Bonus: ENTRYPOINT vs CMD',
+                '',
+                'Qué son y como funcionan las capas de Docker',
+                'Técnica del Multi-stage build',
+                'Ejercicios prácticos:',
+                ' - Mejorar Dockerfile con flask para mejorar uso del caching',
+                ' - 3 Dockerfiles distintos que construyen una imagen de C++ + comparación del resultado final',
+                ' - Crear un Dockerfile usando multi-stage con Angular y nginx',
+                ' - Bonus: Ejecutar Karma tests durante construcción imagen Angular',
+                ' - Bonus: Ejecutar dos imágenes de PHP con y sin multistage y comparar con docker history',
+                'Buenas prácticas con las imágenes: caching, orden de los comandos, tamaño, granularidad, etc',
             ]
-        },
-        {
-            title: 'Contexto de TDD y Test smells',
-            content: [
-                'Agile Manifesto',
-                'Software Craftsmanship Manifesto',
-                'eXtreme Programming (XP)',
-                'Kata tests smells',
-            ]
-        },
+        }
     ]
 }] %}
 {% set day2 = [{
     titles: ['Día 2', 'Mañana'],
     blocks: [
         {
-            title: 'Dobles de pruebas',
+            title: 'Módulo 4 - Utilizar Docker en desarrollo',
             content: [
-                'Para qué sirven los tests dobles',
-                'Cómo y cuándo usarlos',
-                'Tipos de dobles: mock, spy, stub, fake y dummy',
-                'Cómo funcionan internamente',
-                'Kata historia de usuario',
+                'Teoría',
+                'Ejercicios prácticos:',
+                ' - XXX',
+                ' - YYY',
+            ]
+        },
+        {
+            title: 'Módulo 5 - Publicar imágenes y resolver problemas',
+            content: [
+                'Publicar y usar tus imágenes',
+                'Docker hub / GitLab registry',
+                'Docker login + push',
+                'Tags y alias',
+                'Ejercicios prácticos:',
+                ' - Publicar imagen en registro privado local',
+                ' - Bonus: Publicar imagen Docker Hub / Gitlab',
+                '',
+                'Troubleshooting: resolver problemas con Docker',
+                'Entrar al contenedor y ver los logs',
+                'Estadísticas',
+                'Monitorización',
+                'Limitación de recursos del sistema utilizados',
+                'Limpieza',
+                'Ejercicios prácticos:',
+                ' - Docker stats, logs, top',
+                ' - Ctop, lazydocker',
+                ' - docker prune',
+                ' - Bonus: Fix a failing Dockerfiles',
             ]
         }
     ]
@@ -84,19 +112,29 @@
     titles: ['Tarde'],
     blocks: [
         {
-            title: 'Consejos para hacer TDD',
+            title: 'Módulo 6 - Seguridad',
             content: [
-                'Testing en el front-end',
-                'Testing con base de datos',
-                'Builders de test',
+                'Security layers',
+                'How to create a secure image',
+                'Scan images',
+                'Root and non-root user',
+                'Ejercicios prácticos:',
+                ' - Escanear y arreglar imagen de python que contiene vulnerabilidades',
+                ' - Crear imagen Docker con USER creado por nosotros y usarlo',
             ]
         },
         {
-            title: 'TDD Outside-in',
+            title: 'Módulo 7 - CI y Pipelines',
             content: [
-                'Test-Driven Development outside-in',
-                'Cómo desarrollamos en Codium',
-                'Kata iterativa'
+                'Continuous Integration, Delivery and Deployment',
+                'CI/CD tools and frameworks',
+                'Docker and CI/CD'
+                'CI Docker questions'
+                'CI Approaches'
+                'CI Performance'
+                'Ejercicios prácticos:',
+                ' - Configurar un Pipeline entero con un herramienta de CI',
+                ' - Compilar la App, ejecutar tests, paralelizar tareas, gestión de errores, ...',
             ]
         }
     ]
