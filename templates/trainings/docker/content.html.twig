@@ -1,0 +1,103 @@
+{% extends "trainings/components/content.html.twig" %}
+
+{% set day1 = [{
+    titles: ['Día 1', 'Mañana'],
+    blocks: [
+        {
+            title: 'Módulo 1 - Conoce Docker',
+            content: [
+                'Historia: de dónde se viene.',
+                'Qué problemas resuelve.',
+                'Por qué y cuándo usarlo: ventajas frente a las alternativas.',
+                'Arquitectura básica y tecnologías en las que se basa.',
+                'Demo: mis primeros commandos con Docker.',
+                'Ejercicios prácticos:',
+                ' - Validar entorno Docker y ejecutar mis primeros contendores.',
+            ]
+        },
+        {
+            title: 'Módulo 2 - Primeros pasos: uso de elementos básicos',
+            content: [
+                'Demo: comandos básicos.',
+                'Cómo ejecutar contenedores.',
+                'Ver los logs.',
+                'Ver el estado de los contenedores.',
+                'Ejecutar comandos en los contenedores.',
+                'Formas de parar los contendores y sus diferencias.',
+                'Ejercicios prácticos:',
+                ' - Practicar comandos básicos, ver logs y controlar el estado de los contenedores.',
+                '',
+                'Demo: puertos, volumes y variables de entorno.',
+                'Ejercicios prácticos:',
+                ' - Practicar el binding de volúmenes y puertos.',
+                ' - Definición y uso de variables de entorno de varias formas.',
+                '',
+                'Demo: Docker Compose.',
+                'Docker-compose: utilidad, definición, uso y buenas prácticas.',
+                'Networking.',
+                'Ejercicios prácticos:',
+                ' - Ejecutar docker-compose suministrado con flask.',
+                ' - Crear docker-compose de 0 para ejecutar wordpress + mysql.',
+                ' - Bonus: docker-compose con 1 servicio.',
+                ' - Bonus: wordpress sin docker-compose.',
+            ]
+        }
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'Beneficios de TDD',
+            content: [
+                'Por qué hacer TDD',
+                'Economía de TDD',
+                'Kata',
+                '.',
+            ]
+        },
+        {
+            title: 'Contexto de TDD y Test smells',
+            content: [
+                'Agile Manifesto',
+                'Software Craftsmanship Manifesto',
+                'eXtreme Programming (XP)',
+                'Kata tests smells',
+            ]
+        },
+    ]
+}] %}
+{% set day2 = [{
+    titles: ['Día 2', 'Mañana'],
+    blocks: [
+        {
+            title: 'Dobles de pruebas',
+            content: [
+                'Para qué sirven los tests dobles',
+                'Cómo y cuándo usarlos',
+                'Tipos de dobles: mock, spy, stub, fake y dummy',
+                'Cómo funcionan internamente',
+                'Kata historia de usuario',
+            ]
+        }
+    ]
+}, {
+    titles: ['Tarde'],
+    blocks: [
+        {
+            title: 'Consejos para hacer TDD',
+            content: [
+                'Testing en el front-end',
+                'Testing con base de datos',
+                'Builders de test',
+            ]
+        },
+        {
+            title: 'TDD Outside-in',
+            content: [
+                'Test-Driven Development outside-in',
+                'Cómo desarrollamos en Codium',
+                'Kata iterativa'
+            ]
+        }
+    ]
+}] %}
