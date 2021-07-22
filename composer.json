@@ -15,9 +15,9 @@
         "files": ["php/mail.php"]
     },
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "swiftmailer/swiftmailer": "^6.0",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "7.3.0",
         "twig/twig": "^3.0"
     },
     "require-dev": {
