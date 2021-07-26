@@ -11,10 +11,13 @@
                 <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
                     {% for blockContent in block.blocks %}
                         <h2>{{ blockContent.title }}</h2>
-                        <p></p>
                         <ul>
                             {% for part in blockContent.content %}
-                                <li>{{ part }}</li>
+                                {% if (part | length > 0) %}
+                                    <li>{{ part }}</li>
+                                {% else %}
+                                    <br>
+                                {% endif %}
                             {% endfor %}
                         </ul>
                     {% endfor %}

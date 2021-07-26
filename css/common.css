@@ -270,6 +270,10 @@ i.counter-icon-big:after {
     padding-top: 10px;
 }
 
+.timeline-v2 > li .cbp_tmlabel h2:nth-child(n+2) {
+    padding-top: 20px;
+}
+
 .timeline-v2 > li .cbp_tmlabel h2 {
     text-transform: none;
 }
