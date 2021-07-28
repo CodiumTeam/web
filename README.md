@@ -15,6 +15,8 @@ http://localhost:8000/curso-tdd.php
 
 http://localhost:8000/curso-legacy-code.php
 
+http://localhost:8000/curso-docker.php
+
 # Configure PHPStorm + Symfony plugin
 To enable "Ctrl+click" and navigate on code like: ```{{ include('components/block_header.html.twig'...``` follow these steps:
 

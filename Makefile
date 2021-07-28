@@ -24,6 +24,7 @@ up:
 	$(DOCKER_COMMAND) --name codium_web -p 8000:8000 -d $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000
 	@echo "http://localhost:8000/index.php http://localhost:8000/curso-tdd.php http://localhost:8000/curso-legacy-code.php http://localhost:8000/curso-docker.php\n"
 	@echo "http://webcodium:8000/index.php http://webcodium:8000/curso-tdd.php http://webcodium:8000/curso-legacy-code.php http://webcodium:8000/curso-docker.php\n"
+	@echo "TIP: Use CTRL+Click to open a link in a browser\n"
 
 .PHONY: down
 down:
