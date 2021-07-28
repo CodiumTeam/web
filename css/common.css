@@ -73,7 +73,7 @@ i.counter-icon-big:after {
 
 .about-us-panel {
     height:     100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding:    30px;
     text-align: center;
 }
@@ -315,10 +315,6 @@ i.counter-icon-big:after {
 
 #gracias-contacto-tdd {
     display: none;
-}
-
-.about-us-panel {
-    background: rgba(0, 0, 0, 0.6);
 }
 
 #oldTrainings .container {
