@@ -77,9 +77,15 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 <script>
     jQuery(document).ready(function() {
-        fixLandingResponsiveness();
-        App.init();
-        App.initCounter();
+      window.Codium = {};
+      Codium.contactHTMLElement = $('#contact-form');
+      Codium.contactFormUrl = '/php/contact-docker.php';
+      Codium.contactFormTrackEvent = 'docker_training';
+      Codium.contactHTMLElement.submit(contactForm);
+
+      fixLandingResponsiveness();
+      App.init();
+      App.initCounter();
     });
 </script>
 
