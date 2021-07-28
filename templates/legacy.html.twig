@@ -38,8 +38,6 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/legacy.css">
 
-    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
-
 </head>
 <!--
 The #page-top ID is part of the scrolling feature.
@@ -76,12 +74,19 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 <script type="text/javascript" src="/js/custom.js"></script>
 <script type="text/javascript" src="/js/legacy.js"></script>
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
 
 <script>
     jQuery(document).ready(function() {
-        fixLandingResponsiveness();
-        App.init();
-        App.initCounter();
+      window.Codium = {};
+      Codium.contactHTMLElement = $('#contact-form');
+      Codium.contactFormUrl = '/php/contact-legacy-code.php';
+      Codium.contactFormTrackEvent = 'legacy_training';
+      Codium.contactHTMLElement.submit(contactForm);
+
+      fixLandingResponsiveness();
+      App.init();
+      App.initCounter();
     });
 </script>
 

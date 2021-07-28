@@ -1,14 +1,12 @@
-var form = $('#contact-form');
-function tddContantForm (e) {
+function contactForm(e) {
     e.preventDefault();
     if (!grecaptcha.getResponse()){
         grecaptcha.execute();
         return;
     }
-    var url = '/php/contact-tdd.php';
-    $.post(url, form.serialize())
+    $.post(Codium.contactFormUrl, Codium.contactHTMLElement.serialize())
     .done(function () {
-        trackEvent('tdd_training', 'sent');
+        trackEvent(Codium.contactFormTrackEvent, 'sent');
 
         // $('#error-contacto').fadeOut();
         $('#tdd-contact').fadeOut().promise().done(function () {
@@ -20,10 +18,10 @@ function tddContantForm (e) {
         // $("html, body").animate({scrollTop: $(document).height()}, 1000);
     });
 }
+
 function trainingCaptchaCompleted() {
-    $('#contact-form').submit();
+    Codium.contactHTMLElement.submit();
 }
-form.submit(tddContantForm);
 
 function fixLandingResponsiveness() {
     var browserWidth = $(window).width();

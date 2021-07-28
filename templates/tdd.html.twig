@@ -75,15 +75,19 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 <script type="text/javascript" src="/js/custom.js"></script>
 <script type="text/javascript" src="/js/tdd.js"></script>
-
-
 <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
 
 <script>
     jQuery(document).ready(function() {
-        fixLandingResponsiveness();
-        App.init();
-        App.initCounter();
+      window.Codium = {};
+      Codium.contactHTMLElement = $('#contact-form');
+      Codium.contactFormUrl = '/php/contact-tdd.php';
+      Codium.contactFormTrackEvent = 'tdd_training';
+      Codium.contactHTMLElement.submit(contactForm);
+
+      fixLandingResponsiveness();
+      App.init();
+      App.initCounter();
     });
 </script>
 

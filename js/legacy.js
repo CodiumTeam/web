@@ -1,31 +1,27 @@
-var form = $('#contact-form');
-function tddContantForm (e) {
+function contactForm(e) {
     e.preventDefault();
     if (!grecaptcha.getResponse()){
         grecaptcha.execute();
         return;
     }
-    var url = '/php/contact-legacy-code.php';
-    $.post(url, form.serialize())
-        .done(function () {
-        trackEvent('legacy_training', 'sent');
+    $.post(Codium.contactFormUrl, Codium.contactHTMLElement.serialize())
+    .done(function () {
+        trackEvent(Codium.contactFormTrackEvent, 'sent');
 
         // $('#error-contacto').fadeOut();
-            $('#tdd-contact').fadeOut().promise().done(function () {
-                $('#gracias-contacto-tdd').fadeIn();
-            });
-        })
-        .fail(function () {
-            // $('#error-contacto').fadeIn();
-            // $("html, body").animate({scrollTop: $(document).height()}, 1000);
+        $('#tdd-contact').fadeOut().promise().done(function () {
+            $('#gracias-contacto-tdd').fadeIn();
         });
-    e.preventDefault();
+    })
+    .fail(function () {
+        // $('#error-contacto').fadeIn();
+        // $("html, body").animate({scrollTop: $(document).height()}, 1000);
+    });
 }
 
 function trainingCaptchaCompleted() {
-    $('#contact-form').submit();
+    Codium.contactHTMLElement.submit();
 }
-form.submit(tddContantForm);
 
 function fixLandingResponsiveness() {
     var browserWidth = $(window).width();
