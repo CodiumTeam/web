@@ -32,17 +32,30 @@
                     <li class="page-scroll">
                         <a href="#faq" title="Preguntas frecuentes">FAQs</a>
                     </li>
-                    <li class="page-scroll">
-                        {% if (currentPage == 'TDD') %}
-                            <a href="/curso-legacy-code.html" title="Curso Working with Legacy Code"><span class="fa fa-graduation-cap"></span> Legacy Code</a>
-                        {% else %}
+                    {% if (currentPage == 'TDD') %}
+                        <li class="page-scroll">
+                            <a href="/curso-legacy-code.html" title="Curso Working with Legacy Code"><span class="fa fa-graduation-cap"></span> Legacy</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="/curso-docker.html" title="Curso de Docker"><span class="fa fa-graduation-cap"></span> Docker</a>
+                        </li>
+                    {% endif %}
+                    {% if (currentPage == 'Legacy code') %}
+                        <li class="page-scroll">
                             <a href="/curso-tdd.html" title="Curso de TDD"><span class="fa fa-graduation-cap"></span> TDD</a>
-                        {% endif %}
-                    </li>
-
-                    <li class="page-scroll">
-                        <a id="navbar-home" href="/" title="Conoce a Codium">Empresa</a>
-                    </li>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="/curso-docker.html" title="Curso de Docker"><span class="fa fa-graduation-cap"></span> Docker</a>
+                        </li>
+                    {% endif %}
+                    {% if (currentPage == 'Docker') %}
+                        <li class="page-scroll">
+                            <a href="/curso-legacy-code.html" title="Curso Working with Legacy Code"><span class="fa fa-graduation-cap"></span> Legacy Code</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="/curso-tdd.html" title="Curso de TDD"><span class="fa fa-graduation-cap"></span> TDD</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
