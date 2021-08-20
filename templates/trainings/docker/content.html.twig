@@ -6,40 +6,19 @@
         {
             title: 'Módulo 1 - Historia y arquitectura de Docker',
             content: [
-                '¿Por qué usar Docker?',
-                'Historia: de dónde se viene',
-                'Qué problemas resuelve',
-                'Arquitectura básica y tecnologías en las que se basa',
-                'Demo: mis primeros commandos con Docker',
-                'Ejercicios prácticos:',
-                ' ▶️️ Validar entorno Docker y ejecutar mis primeros contendores',
+                '¿Por qué es Docker algo tan popular?',
+                '¿Qué problemas resuelve?',
+                'Anatomía de Docker',
+                'Conceptos básicos: contenedores e imágenes',
             ]
         },
         {
             title: 'Módulo 2 - Comandos básicos y docker-compose',
             content: [
-                'Demo: comandos básicos',
-                'Cómo ejecutar contenedores',
-                'Ver los logs',
-                'Ver el estado de los contenedores',
-                'Ejecutar comandos en los contenedores',
-                'Formas de parar los contendores y sus diferencias',
-                'Ejercicios prácticos:',
-                ' ▶️ Practicar comandos básicos, ver logs y controlar el estado de los contenedores',
-                ' ▶️ Interiorizar que los contenedores son efímeros',
-                '',
-                'Demo: puertos, volumes y variables de entorno',
-                'Ejercicios prácticos:',
-                ' ▶️ Practicar el binding de volúmenes y puertos',
-                ' ▶️ Definición y uso de variables de entorno de varias formas',
-                '',
-                'Demo: Docker Compose',
-                'Docker-compose: utilidad, definición, uso y buenas prácticas',
-                'Ejercicios prácticos:',
-                ' ▶️ Ejecutar docker-compose suministrado con un stack Python',
-                ' ▶️ Crear docker-compose de 0 para ejecutar Wordpress con Mysql',
-                ' ▶️ Bonus: docker-compose con 1 servicio',
-                ' ▶️ Bonus: Wordpress sin docker-compose',
+                'Comandos básicos para trabajar con contendedores',
+                'Usar puertos, volúmenes y variables de entorno',
+                'Cuándo usar docker-compose',
+                'Sintaxis de un fichero YAML de docker-compose',
             ]
         }
     ]
@@ -47,28 +26,14 @@
     titles: ['Tarde'],
     blocks: [
         {
-            title: 'Módulo 3 - Cómo construir y optimizar tu propia imagen',
+            title: 'Módulo 3 - Construyendo imágenes',
             content: [
-                'Teoría Dockerfile',
-                'FROM, RUN, COPY, ENTRYPOINT, CMD, WORKDIR, USER, etc',
-                'Cómo “parametrizar”: .env, ENV, build args, etc',
-                'Ejercicios prácticos:',
-                ' ▶️ Crear Dockerfile para aplicación Python con flask',
-                ' ▶️ Añadir ENV, ARG, WORKDIR, EXPOSE',
-                ' ▶️ Crear otro Dockerfile con Angular CLI',
-                ' ▶️ Bonus: ENTRYPOINT vs CMD',
-                '',
-                'Qué son y como funcionan las capas de Docker',
-                'Cómo funciona la cache de las capas',
+                'Entender y escribir ficheros DOCKERFILE',
+                'Optimizar la construcción de imágenes',
+                'Qué son las capas del sistema de ficheros y su impacto en el caching',
                 'Técnica del Multistage build',
-                'Usos del Buildkit y sus ventajas',
-                'Buenas prácticas creando imágenes: caching, orden de los comandos, tamaño, granularidad, etc',
-                'Ejercicios prácticos:',
-                ' ▶️ Mejorar un Dockerfile para que haga un uso eficiente del caching',
-                ' ▶️ Comparar la eficiencia de 3 Dockerfiles distintos que construyen una imagen de C++',
-                ' ▶️ Dockerizar un stack de Angular y nginx usando la técnica de multistage build',
-                ' ▶️ Bonus: Ejecutar Karma tests durante construcción de la imagen Angular',
-                ' ▶️ Bonus: Comparar la eficiencia de construir dos imágenes de PHP con y sin multistage',
+                'Cómo y por qué usar Buildkit',
+                'Buenas prácticas creando imágenes',
             ]
         }
     ]
@@ -77,36 +42,20 @@
     titles: ['Día 2', 'Mañana'],
     blocks: [
         {
-            title: 'Módulo 4 - Utilizar Docker en desarrollo',
+            title: 'Módulo 4 - Usando Docker en el entorno de desarrollo',
             content: [
-                '3 formas diferentes de usar Docker para mejorar la experiencia del desarrollo',
-                'Ejercicios prácticos:',
-                ' ▶️ Cómo ejectuar una aplicación de Angular con hot reload habilitado',
-                ' ▶️ Creación de un nuevo servicio para que ejecute los tests de Angular',
-                ' ▶️ Bonus: usar la extensión de VS Code Remote Containers',
+                'Técnicas para incorporar Docker en el entorno de desarrollo local',
+                'Cómo mejorar la experiencia de desarrollo en proyectos existentes',
+                'Ventajas de VS Code Remote Containers',
             ]
         },
         {
             title: 'Módulo 5 - Publicar imágenes y resolver problemas del día a día',
             content: [
-                'Publicar y usar tus imágenes',
-                'Docker hub / GitLab registry',
-                'Docker login + push',
-                'Tags y alias',
-                'Ejercicios prácticos:',
-                ' ▶️ Publicar imagen en un registro privado local',
-                ' ▶️ Bonus: Publicar imagen Docker Hub / Gitlab',
-                '',
-                'Troubleshooting: resolver problemas con Docker',
-                'Entrar al contenedor y ver los logs',
-                'Estadísticas',
-                'Monitorización',
+                'Usar registros públicos y privados',
+                'Convenios para etiquetar imágenes',
                 'Limpieza de recursos del sistema utilizados',
-                'Ejercicios prácticos:',
-                ' ▶️ Usando herramientas de Docker: stats, logs, top',
-                ' ▶️ Usando herramientas externas: ctop, lazydocker',
-                ' ▶️ docker prune',
-                ' ▶️ Bonus: fix failing Dockerfiles',
+                'Cómo resolver problemas habituales',
             ]
         }
     ]
@@ -118,25 +67,16 @@
             content: [
                 'Diferentes capas de seguridad cuando usamos Docker',
                 'Cómo crear una imagen segura',
-                'Detectar vulnerabilidades con el escaneo de imágenes',
-                'Problemas de usar el usaurio root',
-                'Ejercicios prácticos:',
-                ' ▶️ Escanear y arreglar imagen de python que contiene vulnerabilidades',
-                ' ▶️ Crear imagen Docker con un usuraio creado por nosotros y usarlo',
+                'Detectar vulnerabilidades',
+                'Por qué evitar el uso del usuario root',
             ]
         },
         {
-            title: 'Módulo 7 - Continuous Integration y Pipelines',
+            title: 'Módulo 7 - Docker en la Integración Continua',
             content: [
-                'Continuous Integration, Delivery and Deployment',
-                'CI/CD tools and frameworks',
-                'El rol de Docker en los procesos de CI/CD',
-                'Questiones que deberemos resolver al usar Docker en CI',
-                'Formas de usar Docker en CI',
+                'Aspectos básicos de una herramienta de Integración Continua (CI)',
+                'El rol de Docker en los procesos de CI',
                 'Técnicas para mejorar el rendimiento de Docker en CI',
-                'Ejercicios prácticos con todo lo aprendido en el curso:',
-                ' ▶️ Configurar un Pipeline entero con un herramienta de CI',
-                ' ▶️ Compilar la App, ejecutar tests, paralelizar tareas, uso de variables de entorno, gestión de errores y ¡mucho más!',
             ]
         }
     ]
