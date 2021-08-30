@@ -10,7 +10,13 @@
     name: 'Joan Miralles',
     role: 'Software Architect en Brújula Tecnologías de la Información'
 } %}
+{% set ilya = {
+    profileImage: '/img/testimonials/ilya.png',
+    quote: 'El curso ha sido un buen punto de inflexión para empezar a usar TDD en mi día a día y profundizar en todo lo aprendido. Las katas guiadas por el equipo de Codium le dan muchísimo valor al curso y están muy bien escogidas para remarcar los fallos que se suelen cometer al empezar con TDD.',
+    name: 'Ilya Kabushko',
+    role: 'Software developer en Travel Compositor'
+} %}
 
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [helder, joanMiralles] }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [helder, joanMiralles, ilya] }) }}
 </div>
