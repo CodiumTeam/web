@@ -3,6 +3,10 @@
 {% set title = "Curso de Test-Driven Development" %}
 {% set slogan = "Revoluciona tu forma de desarrollar" %}
 
+{% block training_summary %}
+    {{ include('trainings/components/training_summary.html.twig') }}
+{% endblock %}
+
 {% block testimonials %}
     {{ include('trainings/tdd/testimonials.html.twig') }}
 {% endblock %}
