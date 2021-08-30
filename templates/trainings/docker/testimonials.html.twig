@@ -1,0 +1,22 @@
+{% set garazi = {
+    profileImage: '/img/testimonials/garazi.png',
+    quote: 'Me ha gustado mucho el formato de curso que habéis diseñado y cómo lo impartis. Me parece acertado que el curso se divida en una parte práctica y otra teórica. Para una persona que no ha visto nunca nada de Docker o que no tenga los conceptos claros viene muy bien.',
+    name: 'Garazi Alfaro',
+    role: 'Ayudante de Investigación en Vicomtech'
+} %}
+{% set marco = {
+    profileImage: '/img/testimonials/marco.png',
+    quote: 'No tenía ninguna experiencia con Docker y el curso me ha servido mucho para entender qué es, cómo funciona y aprender a utilizarlo de una manera clara y concisa.',
+    name: 'Marco Ojero',
+    role: 'Investigador en Vicomtech'
+} %}
+{% set manex = {
+    profileImage: '/img/testimonials/manex.png',
+    quote: 'El curso de Docker me ha servido para refrescar y asentar tanto conceptos básicos como avanzados sobre el uso de Docker. Al ser una formación hands-on he podido integrar estos nuevos conocimientos en mi día a día sin problemas.',
+    name: 'Manex Serras',
+    role: 'Investigador en Vicomtech'
+} %}
+
+<div id="testimonials" class="testimonials-v6">
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [garazi, marco, manex] }) }}
+</div>
