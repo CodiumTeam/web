@@ -1,5 +1,5 @@
 #!/bin/php
-
+set -e
 php index.php > /dev/null
 php curso-tdd.php > /dev/null
 php curso-legacy-code.php > /dev/null
