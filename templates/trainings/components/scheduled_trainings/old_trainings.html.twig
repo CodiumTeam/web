@@ -5,6 +5,14 @@
 
 {% block trainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Docker',
+        company: 'Ikerlan',
+        location: 'Remoto',
+        dates: 'septiembre',
+        link: 'https://twitter.com/codiumteam/status/1445391862034993169',
+        visibleOnMobile: true
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
         company: 'TravelCompositor',
         location: 'Remoto',
@@ -26,7 +34,7 @@
         location: 'Remoto',
         dates: 'mayo y junio',
         link: 'https://twitter.com/codiumteam/status/1412064249514496007',
-        visibleOnMobile: true
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'TDD',
