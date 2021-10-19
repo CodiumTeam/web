@@ -16,7 +16,13 @@
     name: 'Manex Serras',
     role: 'Investigador en Vicomtech'
 } %}
+{% set oscarSalgado = {
+    profileImage: '/img/testimonials/oscarSalgado.jpeg',
+    quote: 'Un curso bien organizado que ha servido para reforzar y ampliar nuestros conocimientos básicos de Docker para poder sacarle un mayor rendimiento en nuestro día a día.',
+    name: 'Salgado Oscar',
+    role: 'Senior Researcher en Ikerlan'
+} %}
 
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [garazi, marco, manex] }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [garazi, marco, manex, oscarSalgado] }) }}
 </div>
