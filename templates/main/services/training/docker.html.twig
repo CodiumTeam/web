@@ -1,0 +1,22 @@
+{% extends "main/services/service.html.twig" %}
+
+{% set image = "/img/docker/docker-service-small.jpg" %}
+{% set title = "Curso de Docker" %}
+{% set summary = "Aprende a tratar tu infraestructura como código gracias a Docker." %}
+{% set sellingPoints = [
+    "Elimina el famoso 'en mi máquina funciona'",
+    "Que todo tu equipo pueda construir y mantener las imágenes",
+    "Aprende a crear imágenes Seguras",
+    "Mejora tus procesos de Integración Continua",
+] %}
+
+{% block headline %}
+    {{ include('main/components/image.html.twig', { image: image, description: "Docker" }) }}
+{% endblock %}
+
+
+{% block link %}
+    <div class="bottom-contact-btn">
+        <a href="/curso-docker.html" class="btn-u bottom-contact-btn-link">Más información</a>
+    </div>
+{% endblock %}
