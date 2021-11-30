@@ -5,6 +5,14 @@
 
 {% block trainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'TDD',
+        company: 'Zooplus',
+        location: 'Remoto',
+        dates: 'noviembre',
+        link: 'https://twitter.com/codiumteam/status/1465702015577645069',
+        visibleOnMobile: true
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
         company: 'Taiger',
         location: 'Remoto',
@@ -26,7 +34,7 @@
         location: 'Remoto',
         dates: 'agosto',
         link: 'https://twitter.com/codiumteam/status/1426112635486052352',
-        visibleOnMobile: true
+        visibleOnMobile: false
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Docker',
