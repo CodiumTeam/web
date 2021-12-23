@@ -79,7 +79,11 @@ function hideFormInput(element) {
 }
 
 // Load images when are going to be displayed
-new LazyLoad({});
+let lazyLoad = new LazyLoad({});
+jQuery(document).ready(function() {
+    setTimeout(lazyLoad.loadAll(),100);
+});
+
 
 function contactForm(e) {
     e.preventDefault();
