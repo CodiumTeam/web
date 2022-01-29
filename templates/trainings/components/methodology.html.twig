@@ -17,10 +17,9 @@
 
 
         <div class="row equal-height margin-top-60">
-            {{ include('/components/team/luis.html.twig') }}
-            {{ include('/components/team/jordi.html.twig') }}
-            {{ include('/components/team/hugo.html.twig') }}
-
+            {% for teacher in teachers %}
+                {{ include('/components/team/'~ teacher ~'.html.twig') }}
+            {% endfor %}
         </div>
     </div>
 </div>

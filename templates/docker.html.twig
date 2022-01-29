@@ -48,7 +48,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     {{ include('trainings/components/header.html.twig', { currentPage: 'Docker'}) }}
     {{ include('trainings/docker/landing.html.twig') }}
     {{ include('trainings/docker/why.html.twig') }}
-    {{ include('trainings/components/methodology.html.twig') }}
+    {{ include('trainings/components/methodology.html.twig', { teachers: ['raul', 'hugo', 'jordi', 'luis', ], columnSize: 'col-md-6'}) }}
     {{ include('trainings/docker/content.html.twig') }}
     {{ include('trainings/components/counters.html.twig') }}
     {{ include('trainings/components/scheduled_trainings/old_trainings.html.twig', { currentPage: 'Docker'}) }}
