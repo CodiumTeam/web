@@ -26,123 +26,48 @@
             </div>
 
             <div class="row text-center">
-                <div class="col-md-3 about-us-container">
-                    <div class="about-us-panel md-margin-bottom-50">
-                        <img alt="" data-src="/img/about-us/luis.jpg" class="rounded-x img-responsive lazy">
-                        <h3>Luis Rovirosa Mairlot</h3>
-
-                        <ul class="list-inline team-social">
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                   data-original-title="LinkedIn" href="http://linkedin.com/in/luisrovirosa/"
-                                   onclick="socialNetwork('Luis', 'LinkedIn')" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                   data-original-title="Twitter" href="http://twitter.com/luisrovirosa"
-                                   onclick="socialNetwork('Luis', 'Twitter')" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                   data-original-title="Github" href="http://github.com/luisrovirosa"
-                                   onclick="socialNetwork('Luis', 'GitHub')" target="_blank">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 about-us-container">
-                    <div class="about-us-panel md-margin-bottom-50">
-                        <img alt="" data-src="/img/about-us/jordi.jpeg" class="rounded-x img-responsive lazy">
-                        <h3>Jordi Anguela</h3>
-                        <ul class="list-inline team-social">
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                   data-original-title="LinkedIn" href="http://linkedin.com/in/jordianguela/"
-                                   onclick="socialNetwork('Jordi', 'LinkedIn')" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                   data-original-title="Twitter" href="http://twitter.com/jordianguela"
-                                   onclick="socialNetwork('Jordi', 'Twitter')" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                   data-original-title="Github" href="http://github.com/jordianguela"
-                                   onclick="socialNetwork('Jordi', 'GitHub')" target="_blank">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 about-us-container">
-                    <div class="about-us-panel md-margin-bottom-50">
-                        <img alt="" data-src="/img/about-us/hugo.jpeg" class="rounded-x img-responsive lazy">
-                        <h3>Hugo Chinchilla</h3>
-                        <ul class="list-inline team-social">
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                   data-original-title="LinkedIn" href="http://linkedin.com/in/hugo-chinchilla-carbonell/"
-                                   onclick="socialNetwork('Hugo', 'LinkedIn')" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                   data-original-title="Twitter" href="http://twitter.com/hchinchilla_"
-                                   onclick="socialNetwork('Hugo', 'Twitter')" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                   data-original-title="Github" href="http://github.com/hugochinchilla"
-                                   onclick="socialNetwork('Hugo', 'GitHub')" target="_blank">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 about-us-container">
-                    <div class="about-us-panel md-margin-bottom-50">
-                        <img alt="" data-src="/img/about-us/concha.jpg" class="rounded-x img-responsive lazy">
-                        <h3>Concha Asensio</h3>
-                        <ul class="list-inline team-social">
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="li white tooltips"
-                                   data-original-title="LinkedIn" href="http://linkedin.com/in/conchaasensio/"
-                                   onclick="socialNetwork('Concha', 'LinkedIn')" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="tw white tooltips"
-                                   data-original-title="Twitter" href="http://twitter.com/conchaasensio"
-                                   onclick="socialNetwork('Concha', 'Twitter')" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" data-toggle="tooltip" class="gh white tooltips"
-                                   data-original-title="Github" href="http://github.com/conchaasensio"
-                                   onclick="socialNetwork('Concha', 'GitHub')" target="_blank">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Luis Rovirosa',
+                    'image': '/img/about-us/luis.jpg',
+                    'linkedIn' : 'http://linkedin.com/in/luisrovirosa/',
+                    'twitter' : 'http://twitter.com/luisrovirosa',
+                    'gitHub' : 'http://github.com/luisrovirosa',
+                }) }}
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Jordi Anguela',
+                    'image': '/img/about-us/jordi.jpeg',
+                    'linkedIn' : 'http://linkedin.com/in/jordianguela/',
+                    'twitter' : 'http://twitter.com/jordianguela',
+                    'gitHub' : 'http://github.com/jordianguela',
+                }) }}
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Raúl Jiménez',
+                    'image': '/img/about-us/raul.jpeg',
+                    'linkedIn' : 'https://www.linkedin.com/in/rauljmz/',
+                    'twitter' : 'https://twitter.com/rauljmz',
+                    'gitHub' : 'https://github.com/rauljmz',
+                }) }}
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Concha Asensio',
+                    'image': '/img/about-us/concha.jpg',
+                    'linkedIn' : 'http://linkedin.com/in/conchaasensio/',
+                    'twitter' : 'http://twitter.com/conchaasensio',
+                    'gitHub' : 'http://github.com/conchaasensio',
+                }) }}
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Hugo Chinchilla',
+                    'image': '/img/about-us/hugo.jpeg',
+                    'linkedIn' : 'http://linkedin.com/in/hugo-chinchilla-carbonell/',
+                    'twitter' : 'http://twitter.com/hchinchilla_',
+                    'gitHub' : 'http://github.com/hugochinchilla',
+                }) }}
+                {{ include('trainings/components/about_us_panel.html.twig', {
+                    'name': 'Jose Cabrera',
+                    'image': '/img/about-us/jose.png',
+                    'linkedIn' : 'https://www.linkedin.com/in/11joselu/',
+                    'twitter' : 'https://twitter.com/11joselu',
+                    'gitHub' : 'https://github.com/11joselu',
+                }) }}
             </div>
         </div><!--/end container-->
     </div>
