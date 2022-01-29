@@ -43,29 +43,29 @@ p.about-us-description {
 
 .pricing-table-v4 .pricing-continuous-learning .pricing-v4-head,
 .pricing-table-v4 .pricing-continuous-learning .btn-u {
-    background: rgb(50, 76, 128);
+    background: rgb(85, 85, 85);
 
 }
 
 .pricing-table-v4 .pricing-continuous-learning {
-    border: 1px solid rgba(50, 76, 128, 0.3);
+    border: 1px solid rgba(85, 85, 85, 0.3);
 }
 
 .pricing-table-v4 .pricing-continuous-learning .pricing-v4-content li {
-    color: rgb(50, 76, 128);
+    color: rgb(85, 85, 85);
 }
 
 .pricing-table-v4 .pricing-development .pricing-v4-head,
 .pricing-table-v4 .pricing-development .btn-u {
-    background: rgba(85, 85, 85, 1);
+    background: rgba(50, 76, 128, 1);
 }
 
 .pricing-table-v4 .pricing-development {
-    border: 1px solid rgba(85, 85, 85, 0.3);
+    border: 1px solid rgba(50, 76, 128, 0.3);
 }
 
 .pricing-table-v4 .pricing-development .pricing-v4-content li {
-    color: rgba(85, 85, 85, 1);
+    color: rgba(50, 76, 128, 1);
 }
 
 .pricing-table-v4 .pricing-v4-head {
