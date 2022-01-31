@@ -23,7 +23,15 @@
     name: 'Anónimo',
     role: ''
 } %}
+{% set albertoDeLaCruz = {
+    profileImage: '/img/testimonials/alberto-de-la-cruz.jpg',
+    quote: '¡Salimos con las pilas cargadas!. Trabajar con Legacy no es fácil pero gracias a este curso ahora el equipo comparte herramientas, vocabulario y otra perspectiva de cara a enfrentarse a él. Estamos encantados.',
+    name: 'Alberto de la Cruz Grijalvo',
+    role: 'Allroad en Alea Soluciones'
+} %}
 
 <div id="testimonials" class="testimonials-v6">
-    {{ include('trainings/components/testimonial_carousel.html.twig', { testimonials: [francois, oriolTorne, logedo, anonimo] }) }}
+    {{ include('trainings/components/testimonial_carousel.html.twig', {
+        testimonials: [albertoDeLaCruz, francois, oriolTorne, logedo, anonimo]
+    }) }}
 </div>
