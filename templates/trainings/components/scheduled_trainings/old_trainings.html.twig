@@ -6,6 +6,14 @@
 {% block trainings %}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
+        company: 'Taiger',
+        location: 'Remoto',
+        dates: 'enero',
+        link: 'https://twitter.com/codiumteam/status/1488799355452764160',
+        visibleOnMobile: true
+    }) }}
+    {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
+        training: 'Legacy code',
         company: 'Alea Soluciones',
         location: 'Remoto',
         dates: 'enero',
@@ -26,7 +34,6 @@
         location: 'Remoto',
         dates: 'noviembre de 2021',
         link: 'https://twitter.com/codiumteam/status/1465702015577645069',
-        visibleOnMobile: true
     }) }}
     {{ include('trainings/components/scheduled_trainings/passed_training.html.twig', {
         training: 'Legacy code',
