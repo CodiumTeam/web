@@ -367,7 +367,8 @@ p.about-us-description {
 }
 
 @media (min-width: 1800px) {
-    #sobre-nosotros .container.about-us {
+    #sobre-nosotros .container.about-us,
+    #cursos .container.trainings {
         width: 1770px;
     }
 }
