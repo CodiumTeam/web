@@ -30,8 +30,15 @@
     role: 'Allroad en Alea Soluciones'
 } %}
 
+{% set joseIgnacioDominguez = {
+    profileImage: '/img/testimonials/joseIgnacioDominguez.jpg',
+    quote: 'Ha sido una oportunidad magnífica para aprender, trabajar como un equipo multidisciplinar, compartir y validar ideas. Es muy práctico y se favorecen las conversaciones sobre distintas soluciones a un mismo problema. ¡Salimos con ganas de mejorar nuestro código!',
+    name: 'Jose Ignacio Domínguez',
+    role: 'Staff Software Engineer en Clarity AI'
+} %}
+
 <div id="testimonials" class="testimonials-v6">
     {{ include('trainings/components/testimonial_carousel.html.twig', {
-        testimonials: [albertoDeLaCruz, francois, oriolTorne, logedo, anonimo]
+        testimonials: [logedo, joseIgnacioDominguez, oriolTorne, albertoDeLaCruz, francois, anonimo]
     }) }}
 </div>
