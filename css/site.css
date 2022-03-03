@@ -67,14 +67,20 @@ body {
 .header {
     background-color: var(--darkest-grey);
     box-sizing: border-box;
+
+}
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .header__image {
-    width: 172px;
+    width: 125px;
     height: 28.66px;
     padding-left: 24px;
 }
@@ -94,4 +100,5 @@ body {
     margin-right: 15px;
 
 }
+
 
