@@ -60,3 +60,34 @@
     border-color: var(--primary-brand-color);
 }
 
+/* Web styles */
+
+.header {
+    background-color: var(--darkest-grey);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__image {
+    width: 172px;
+    height: 28.66px;
+}
+
+.navbar {
+    color: var(--white);
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__item{
+    margin-right: 15px;
+
+}
+
