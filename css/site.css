@@ -31,3 +31,26 @@
     font-weight: bold;
 }
 
+.button {
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button--primary {
+    color: var(--white);
+    background-color: var(--primary-brand-color);
+}
+
+.button--primary:hover {
+    background-color: var(--primary-brand-hover-dark-color);
+}
+
+.button--primary:disabled {
+    background-color: var(--secondary-brand-color);
+}
+
