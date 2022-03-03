@@ -22,5 +22,12 @@
     font-weight: bold;
 }
 
-
+.small-title {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.438em;
+    color: var(--darkest-grey);
+    line-height: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+}
 
