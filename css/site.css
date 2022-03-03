@@ -33,7 +33,7 @@
 
 .button {
     outline: none;
-    border: none;
+    border: 1px solid transparent;
     white-space: nowrap;
     line-height: 1.5;
     padding: 15px 40px;
@@ -52,5 +52,11 @@
 
 .button--primary:disabled {
     background-color: var(--secondary-brand-color);
+}
+
+.button--outline {
+    color: var(--primary-brand-color);
+    background-color: transparent;
+    border-color: var(--primary-brand-color);
 }
 
