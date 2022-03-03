@@ -13,8 +13,11 @@
     --light-lila: #F5F8FF;
 }
 
-.title {
+body {
     font-family: "Open Sans", Arial, sans-serif;
+}
+
+.title {
     font-size: 2.5em;
     color: var(--darkest-grey);
     line-height: 2.94em;
@@ -23,7 +26,6 @@
 }
 
 .small-title {
-    font-family: "Open Sans", Arial, sans-serif;
     font-size: 1.438em;
     color: var(--darkest-grey);
     line-height: 1.25em;
