@@ -1,0 +1,26 @@
+/* Colors */
+
+:root {
+    --primary-brand-color: #2FADE2;
+    --primary-brand-hover-dark-color: #0E9EDC;
+    --secondary-brand-color: #D3EFFF;
+    --darkest-grey: #0A073A;
+    --light-grey: #F3F6FA;
+    --lightest-grey: #FAFCFE;
+    --white: #fff;
+    --dark-grey: #737373;
+    --darkest-hover-grey: #0F0B58;
+    --light-lila: #F5F8FF;
+}
+
+.title {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 2.5em;
+    color: var(--darkest-grey);
+    line-height: 2.94em;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+

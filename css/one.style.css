@@ -9,6 +9,7 @@
 /*Import Global Compulsory CSS Files*/
 @import url(app.css);
 @import url(blocks.css);
+@import url(site.css);
 
 body {
   width: 100%;
