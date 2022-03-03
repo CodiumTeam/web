@@ -85,6 +85,10 @@ body {
     padding-left: 24px;
 }
 
+.header__icon {
+    display: none;
+}
+
 .navbar {
     color: var(--white);
 }
@@ -99,6 +103,38 @@ body {
 .navbar__item{
     margin-right: 15px;
 
+}
+
+@media all and (max-width: 768px) {
+    .header__wrapper {
+        position: relative;
+        padding: 1em 0;
+    }
+
+    .header__icon {
+        color: var(--white);
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 24px;
+    }
+    .navbar {
+        position: absolute;
+        width: 100%;
+        background-color: var(--darkest-grey);
+        top: 60px;
+    }
+    .navbar__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__item {
+        margin-bottom: 16px;
+    }
+
+    .navbar__item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
