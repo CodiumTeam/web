@@ -68,11 +68,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header__image {
     width: 172px;
     height: 28.66px;
+    padding-left: 24px;
 }
 
 .navbar {
