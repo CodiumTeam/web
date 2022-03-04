@@ -602,6 +602,7 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 2.94em;
+  margin: 0;
 }
 
 .small-title {
@@ -610,6 +611,7 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 1.25em;
+  margin: 0;
 }
 
 /*# sourceMappingURL=site.css.map */
