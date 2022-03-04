@@ -20,13 +20,7 @@ RESOURCES
   --text-normal: 1em;
 }
 
-<<<<<<< HEAD
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-}
-=======
 /* Fonts */
->>>>>>> ab973c6 (Improve site.css)
 
 .title {
   font-size: 2.5em;
