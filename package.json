@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Codium Web app",
+  "main": "index.js",
+  "scripts": {
+    "css": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodiumTeam/web.git"
+  },
+  "keywords": [],
+  "author": "Codium Team <info@codium.team>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodiumTeam/web/issues"
+  },
+  "homepage": "https://github.com/CodiumTeam/web#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
