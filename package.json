@@ -4,7 +4,8 @@
   "description": "Codium Web app",
   "main": "index.js",
   "scripts": {
-    "css": "sass sass/site.scss css/site.css"
+    "css": "sass sass/site.scss css/site.css",
+    "css:watch": "npm run css -- --watch"
   },
   "repository": {
     "type": "git",

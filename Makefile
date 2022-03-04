@@ -16,6 +16,7 @@ help:
 
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
+DOCKER_NODE_IMAGE = node:14.5.0-alpine
 DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
@@ -33,13 +34,18 @@ down:
 .PHONY: build
 build:
 	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
 	git config --local core.hooksPath git-hooks/
 	make just-build
 
 .PHONY: just-build
 just-build:
 	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run css
 
 .PHONY: convert
 convert:
 	$(DOCKER_COMMAND) $(DOCKER_IMAGEMAGICK_IMAGE) $(FILE_PATH) -resize 245x155 -size 255x161 xc:white +swap -gravity center -composite $(FILE_PATH)
+
+css-watch:
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run css:watch

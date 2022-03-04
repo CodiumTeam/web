@@ -7,6 +7,9 @@ make build
 # Install dependencies
 make build
 
+# Watch CSS
+make css-watch
+
 # Pages
 
 http://localhost:8000/index.php
