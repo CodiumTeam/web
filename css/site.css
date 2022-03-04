@@ -417,49 +417,6 @@ body {
     display: block;
   }
 }
-.title {
-  color: #0a073a;
-  font-size: 2.5em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 2.94em;
-}
-
-.small-title {
-  color: #0a073a;
-  font-size: 1.438em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1.25em;
-}
-
-.button {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  line-height: 1.5;
-  outline: none;
-  padding: 15px 40px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.button--primary {
-  color: #ffffff;
-  background-color: #2fade2;
-}
-.button--primary:hover {
-  background-color: #0e9edc;
-}
-.button--primary:disabled {
-  background-color: #d3efff;
-}
-
-.button--outline {
-  background-color: transparent;
-  border-color: #2fade2;
-  color: #2fade2;
-}
-
 .card {
   background: #ffffff;
   border-radius: 5px;
@@ -571,6 +528,49 @@ body {
     margin-top: 0;
   }
 }
+.title {
+  color: #0a073a;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.94em;
+}
+
+.small-title {
+  color: #0a073a;
+  font-size: 1.438em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.25em;
+}
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  line-height: 1.5;
+  outline: none;
+  padding: 15px 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: #2fade2;
+}
+.button--primary:hover {
+  background-color: #0e9edc;
+}
+.button--primary:disabled {
+  background-color: #d3efff;
+}
+
+.button--outline {
+  background-color: transparent;
+  border-color: #2fade2;
+  color: #2fade2;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
