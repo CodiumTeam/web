@@ -337,10 +337,86 @@ template {
   display: none;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+.header {
+  background-color: #0a073a;
+}
+.header__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.header__image {
+  height: 28.66px;
+  padding-left: 24px;
+  width: 125px;
+}
+.header__icon {
+  display: none;
+}
+
+.navbar {
+  color: #ffffff;
+}
+
+.navbar__list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-right: 15px;
+}
+
+@media all and (max-width: 768px) {
+  .header__wrapper {
+    padding: 11px 0;
+    position: relative;
+  }
+
+  .header__icon {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .navbar {
+    background-color: #0a073a;
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+
+  .navbar__list {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar__item {
+    margin-bottom: 16px;
+  }
+  .navbar__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .is-visible {
+    display: block;
+  }
+}
 .title {
   color: #0a073a;
   font-size: 2.5em;
@@ -493,82 +569,6 @@ body {
   }
   .card--large .card__footer {
     margin-top: 0;
-  }
-}
-.header {
-  background-color: #0a073a;
-  box-sizing: border-box;
-}
-
-.header__wrapper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  max-width: 1280px;
-  width: 100%;
-}
-
-.header__image {
-  height: 28.66px;
-  padding-left: 24px;
-  width: 125px;
-}
-
-.header__icon {
-  display: none;
-}
-
-.navbar {
-  color: #ffffff;
-}
-
-.navbar__list {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.navbar__item {
-  margin-right: 15px;
-}
-
-@media all and (max-width: 768px) {
-  .header__wrapper {
-    padding: 11px 0;
-    position: relative;
-  }
-
-  .header__icon {
-    color: #ffffff;
-    display: inline-block;
-    font-size: 24px;
-    margin-right: 15px;
-  }
-
-  .navbar {
-    background-color: #0a073a;
-    display: none;
-    position: absolute;
-    top: 50px;
-    width: 100%;
-  }
-
-  .navbar__list {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .navbar__item {
-    margin-bottom: 16px;
-  }
-  .navbar__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .is-visible {
-    display: block;
   }
 }
 .hero {
