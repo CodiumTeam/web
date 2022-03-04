@@ -1,26 +1,9 @@
-:root {
-  --border-radius: 5px;
-  --dark-grey: #737373;
-  --darkest-grey: #0a073a;
-  --darkest-hover-grey: #0f0b58;
-  --light-grey: #f3f6fa;
-  --light-lila: #f5f8ff;
-  --lightest-grey: #fafcfe;
-  --primary-brand-color: #2fade2;
-  --primary-brand-hover-dark-color: #0e9edc;
-  --secondary-brand-color: #d3efff;
-  --text-2-xl: 2.5em;
-  --text-normal: 1em;
-  --text-xl-normal: 1.438em;
-  --white: #ffffff;
-}
-
 body {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
 .title {
-  color: var(--darkest-grey);
+  color: #0a073a;
   font-size: 2.5em;
   font-style: normal;
   font-weight: bold;
@@ -28,7 +11,7 @@ body {
 }
 
 .small-title {
-  color: var(--darkest-grey);
+  color: #0a073a;
   font-size: 1.438em;
   font-style: normal;
   font-weight: bold;
@@ -46,20 +29,20 @@ body {
 }
 
 .button--primary {
-  color: var(--white);
-  background-color: var(--primary-brand-color);
+  color: #ffffff;
+  background-color: #2fade2;
 }
 .button--primary:hover {
-  background-color: var(--primary-brand-hover-dark-color);
+  background-color: #0e9edc;
 }
 .button--primary:disabled {
-  background-color: var(--secondary-brand-color);
+  background-color: #d3efff;
 }
 
 .button--outline {
   background-color: transparent;
-  border-color: var(--primary-brand-color);
-  color: var(--primary-brand-color);
+  border-color: #2fade2;
+  color: #2fade2;
 }
 
 .card {
@@ -70,21 +53,21 @@ body {
 }
 
 .card__header {
-  color: var(--primary-brand-color);
+  color: #2fade2;
   font-size: 32px;
   margin-bottom: 8px;
   text-align: center;
 }
 
 .card__title {
-  color: var(--darkest-grey);
+  color: #0a073a;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .card__text {
-  color: var(--dark-grey);
+  color: #737373;
   font-size: 16px;
   margin-bottom: 8px;
 }
@@ -99,7 +82,7 @@ body {
   margin-bottom: 16px;
 }
 .card--large .card__title {
-  font-size: var(--text-xl-normal);
+  font-size: 1.438em;
   margin-bottom: 16px;
 }
 .card--large .card__text {
@@ -107,8 +90,8 @@ body {
 }
 
 .card--personal .card__title {
-  color: var(--primary-brand-color);
-  font-size: var(--text-xl-normal);
+  color: #2fade2;
+  font-size: 1.438em;
 }
 
 .card__footer {
@@ -128,17 +111,17 @@ body {
   font-size: 24px;
 }
 .card__icon i {
-  color: var(--primary-brand-color);
+  color: #2fade2;
 }
 .card__icon i:hover {
-  color: var(--primary-brand-hover-dark-color);
+  color: #0e9edc;
 }
 .card__icon:hover {
   cursor: pointer;
 }
 
 .card__professional {
-  color: var(--primary-brand-hover-dark-color);
+  color: #0e9edc;
   font-size: 14px;
   font-weight: bold;
 }
@@ -174,7 +157,7 @@ body {
   }
 }
 .header {
-  background-color: var(--darkest-grey);
+  background-color: #0a073a;
   box-sizing: border-box;
 }
 
@@ -198,7 +181,7 @@ body {
 }
 
 .navbar {
-  color: var(--white);
+  color: #ffffff;
 }
 
 .navbar__list {
@@ -219,14 +202,14 @@ body {
   }
 
   .header__icon {
-    color: var(--white);
+    color: #ffffff;
     display: inline-block;
     font-size: 24px;
     margin-right: 15px;
   }
 
   .navbar {
-    background-color: var(--darkest-grey);
+    background-color: #0a073a;
     display: none;
     position: absolute;
     top: 50px;
@@ -260,7 +243,7 @@ body {
   background: linear-gradient(260.14deg, #2A3367 2.4%, #0A073A 100%);
 }
 .hero__title {
-  color: var(--white);
+  color: #ffffff;
   font-size: 2.5em;
   line-height: 1.94em;
   font-style: normal;
@@ -269,7 +252,7 @@ body {
 }
 .hero__subtitle {
   font-size: 1.438em;
-  color: var(--white);
+  color: #ffffff;
   line-height: 1.25em;
   font-style: normal;
   font-weight: bold;
