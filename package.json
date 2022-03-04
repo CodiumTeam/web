@@ -4,7 +4,7 @@
   "description": "Codium Web app",
   "main": "index.js",
   "scripts": {
-    "css": ""
+    "css": "sass sass/site.scss css/site.css"
   },
   "repository": {
     "type": "git",
