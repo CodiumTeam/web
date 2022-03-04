@@ -485,6 +485,117 @@ body {
   color: #2fade2;
 }
 
+.card {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.card__header {
+  color: #2fade2;
+  font-size: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card__title {
+  color: #0a073a;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  color: #737373;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card__image {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.card--large .card__header {
+  font-size: 72px;
+  margin-bottom: 16px;
+}
+.card--large .card__title {
+  font-size: 1.438em;
+  margin-bottom: 16px;
+}
+.card--large .card__text {
+  margin-bottom: 16px;
+}
+
+.card--personal .card__title {
+  color: #2fade2;
+  font-size: 1.438em;
+}
+
+.card__footer {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.card__icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card__icon {
+  margin-right: 8px;
+  font-size: 24px;
+}
+.card__icon i {
+  color: #2fade2;
+}
+.card__icon i:hover {
+  color: #0e9edc;
+}
+.card__icon:hover {
+  cursor: pointer;
+}
+
+.card__professional {
+  color: #0e9edc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    padding: 32px;
+  }
+
+  .card__header {
+    margin-bottom: 20px;
+  }
+
+  .card__title {
+    margin-bottom: 20px;
+  }
+
+  .card__text {
+    margin-bottom: 20px;
+  }
+
+  .card--large .card__header {
+    margin-bottom: 30px;
+  }
+  .card--large .card__title {
+    margin-bottom: 30px;
+  }
+  .card--large .card__text {
+    margin-bottom: 30px;
+  }
+  .card--large .card__footer {
+    margin-top: 0;
+  }
+}
 .title {
   color: #0a073a;
   font-size: 2.5em;
