@@ -1,3 +1,7 @@
+/*******
+RESOURCES
+********/
+
 /* Colors */
 :root {
   --primary-brand-color: #2FADE2;
@@ -16,9 +20,13 @@
   --text-normal: 1em;
 }
 
+<<<<<<< HEAD
 body {
   font-family: "Open Sans", Arial, sans-serif;
 }
+=======
+/* Fonts */
+>>>>>>> ab973c6 (Improve site.css)
 
 .title {
   font-size: 2.5em;
@@ -35,6 +43,8 @@ body {
   font-style: normal;
   font-weight: bold;
 }
+
+/* Buttons */
 
 .button {
   outline: none;
@@ -168,6 +178,16 @@ body {
   }
 }
 /* Web styles */
+/************
+SITE STYLES
+*************/
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* Header */
+
 .header {
   background-color: var(--darkest-grey);
   box-sizing: border-box;
