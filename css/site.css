@@ -598,6 +598,14 @@ body {
 }
 .values {
   background-color: #f3f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.values button {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 .section__wrapper {
@@ -631,7 +639,6 @@ body {
 
   .card {
     grid-column: span 3;
-    background-color: white;
   }
 }
 .title {

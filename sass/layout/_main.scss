@@ -2,7 +2,18 @@
 
 .values {
   background-color: $light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  button {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    }
 }
+
 
 .section__wrapper {
   margin-left: auto;
@@ -28,12 +39,12 @@
   margin-top: 2rem;
 }
 
+
 @media all and (max-width: 768px) {
   .section__wrapper {
     width: 100%;
   }
   .card {
     grid-column: span 3;
-    background-color: white;
   }
 }
