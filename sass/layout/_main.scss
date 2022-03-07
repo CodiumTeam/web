@@ -1,5 +1,25 @@
 @import "../card";
 
+.values {
+  background-color: $light-grey;
+}
+
+.section__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 75%;
+}
+
+.title {
+  text-align: center;
+}
+
+.values p {
+  text-align: center;
+  color: $dark-grey;
+}
+
 .cards__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -9,7 +29,11 @@
 }
 
 @media all and (max-width: 768px) {
+  .section__wrapper {
+    width: 100%;
+  }
   .card {
     grid-column: span 3;
+    background-color: white;
   }
 }
