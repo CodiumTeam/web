@@ -1,86 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Codium</title>
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/course.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Codium</title>
-  <link rel="stylesheet" href="/css/site.css" />
-  <link rel="stylesheet" href="/css/course.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <img
+          src="/img/resources/codium-brand-rectangle-white.svg"
+          alt="Logo de Codium"
+          class="header__image"
+        />
+        <i class="fa-solid fa-bars header__icon" id="js-menu-button"></i>
+        <nav class="navbar" id="js-menu">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a>Beneficos</a>
+            </li>
+            <li class="navbar__item">
+              <a>Contenido</a>
+            </li>
+            <li class="navbar__item">
+              <a>Metodología</a>
+            </li>
+            <li class="navbar__item">
+              <a>Faqs</a>
+            </li>
+            <li class="navbar__item">
+              <a>TDD</a>
+            </li>
+            <li class="navbar__item">
+              <a>Docker</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <h2 class="hero__title">Working with Legacy code</h2>
+      <span class="hero__subtitle">Recupera el control de tu producto</span>
+    </section>
 
-<body>
-  <header class="header">
-    <div class="header__wrapper">
-      <img src="/img/resources/codium-brand-rectangle-white.svg" alt="Logo de Codium" class="header__image" />
-      <i class="fa-solid fa-bars header__icon" id="js-menu-button"></i>
-      <nav class="navbar" id="js-menu">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a>Beneficos</a>
-          </li>
-          <li class="navbar__item">
-            <a>Contenido</a>
-          </li>
-          <li class="navbar__item">
-            <a>Metodología</a>
-          </li>
-          <li class="navbar__item">
-            <a>Faqs</a>
-          </li>
-          <li class="navbar__item">
-            <a>TDD</a>
-          </li>
-          <li class="navbar__item">
-            <a>Docker</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <h2 class="hero__title">Working with Legacy code</h2>
-    <span class="hero__subtitle">Recupera el control de tu producto</span>
-  </section>
+    <section class="bg-white">
+      <div class="resume-wrapper container">
+        <div class="resume">
+          <p class="resume__title">Duración</p>
+          <p class="resume__text">16 horas (2 días)</p>
+        </div>
+        <div class="resume">
+          <p class="resume__title">Lenguaje</p>
+          <p class="resume__text">Java, PHP, C#, Python, JS, C++, ...</p>
+        </div>
+        <div class="resume">
+          <p class="resume__title">Nº de plazas</p>
+          <p class="resume__text">Entre 6 y 18 participantes</p>
+        </div>
+        <div class="resume">
+          <p class="resume__title">Formato</p>
+          <p class="resume__text">Curso eminentemente práctico</p>
+        </div>
+        <div class="resume">
+          <p class="resume__title">Ubicacón</p>
+          <p class="resume__text">En remoto o en tus oficinas</p>
+        </div>
+        <div class="resume">
+          <p class="resume__title">Precio</p>
+          <p class="resume__text">Consultar. Bonificable por FUNDAE</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="bg-white">
-    <div class="resume-wrapper section__wrapper">
-      <div class="resume">
-        <p class="resume__title">Duración</p>
-        <p class="resume__text">16 horas (2 días)</p>
-      </div>
-      <div class="resume">
-        <p class="resume__title">Lenguaje</p>
-        <p class="resume__text">Java, PHP, C#, Python, JS, C++, ...</p>
-      </div>
-      <div class="resume">
-        <p class="resume__title">Nº de plazas</p>
-        <p class="resume__text">Entre 6 y 18 participantes</p>
-      </div>
-      <div class="resume">
-        <p class="resume__title">Formato</p>
-        <p class="resume__text">Curso eminentemente práctico</p>
-      </div>
-      <div class="resume">
-        <p class="resume__title">Ubicacón</p>
-        <p class="resume__text">En remoto o en tus oficinas</p>
-      </div>
-      <div class="resume">
-        <p class="resume__title">Precio</p>
-        <p class="resume__text">Consultar. Bonificable por FUNDAE</p>
-      </div>
-    </div>
-  </section>
+    <section class="block block--grey">
+      <div class="container">
+        <h2 class="text-center">addsasad</h2>
+        <p class="text-center">
+          Conoce qué han dicho los alumnos sobre éste curso
+        </p>
 
-  <section>
-    <div class="block block--grey">
-      <h1>addsasad</h1>
-    </div>
-  </section>
+        <h2>Carousel</h2>
 
-  <script src="/js/site.js"></script>
-</body>
+        <div class="text-center">
+          <button class="button button--primary">Contactar</button>
+        </div>
+      </div>
+    </section>
 
+    <section class="block block--white">
+      <div class="container">
+        <h2 class="text-center">El valor del TDD</h2>
+        <p class="text-center">
+          El simple hecho de pensar y escribir un test antes que el código de
+          producción representa un cambio de paradigma en el desarrollo de
+          software y un salto de calidad inimaginable en tu código.
+        </p>
+
+        <article>
+          <div>
+            <img src="/img/tdd/fast-cheap-good.png" />
+          </div>
+
+          <div>
+            <h3>Ayuda a reducir los costes de desarrollo</h3>
+            <ul>
+              <li>
+                Implementando sólo lo imprescindible para los requisitos
+                actuales (diseño incremental)
+              </li>
+              <li>Evitando complejidades innecesarias</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Ayuda a reducir los costes de mantenimiento</h3>
+            <ul>
+              <li>Al reducir el testeo manual de la aplicación</li>
+              <li>Minimizando las incidencias en producción</li>
+              <li>Gracias a soluciones más simples</li>
+              <li>
+                Al poder cambiar fácilmente decisiones que ya no son válidas
+              </li>
+              <li>Al tener una documentación ejecutable</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Transforma al desarrollador</h3>
+            <ul>
+              <li>
+                Aumentando la seguridad de los desarrolladores al introducir
+                cambios en el código
+              </li>
+              <li>Mejorando la moral y motivación del equipo</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="text-center">
+          <button class="button button--primary">Contactar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block--lila">
+      <div class="container">
+        <h2 class="text-center">Contenido del curso</h2>
+        <p class="text-center">
+          El simple hecho de pensar y escribir un test antes que el código de
+          producción representa un cambio de paradigma en el desarrollo de
+          software y un salto de calidad inimaginable en tu código.
+        </p>
+
+        <article>
+          <p class="small-title">Día 1</p>
+          <p>Mañana</p>
+          <div>
+            <p class="small-title">Introducción a Test-Driven Development</p>
+            <ul>
+              <li>Tipos de tests y costes asociados</li>
+              <li>Ciclo de desarrollo: red, green, refactor</li>
+              <li>Reglas de TDD y las pruebas unitarias</li>
+              <li>Estructura y convenciones de los tests</li>
+              <li>Arnés y cobertura de test</li>
+              <li>Kata (o ejercicio) introductoria</li>
+            </ul>
+          </div>
+
+          <p>Tarde</p>
+          <div>
+            <p class="small-title">Beneficios de TDD</p>
+            <ul>
+              <li>Por qué hacer TDD</li>
+              <li>Economía de TDD</li>
+              <li>Kata</li>
+            </ul>
+
+            <p class="small-title">Contexto de TDD y Test smells</p>
+            <ul>
+              <li>Agile Manifesto</li>
+              <li>Software Craftsmanship Manifesto</li>
+              <li>eXtreme Programming (XP)</li>
+              <li>Kata tests smells</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <p class="small-title">Día 2</p>
+          <p>Mañana</p>
+          <div>
+            <p class="small-title">Dobles de pruebas</p>
+            <ul>
+              <li>Para qué sirven los tests dobles</li>
+              <li>Cómo y cuándo usarlos</li>
+              <li>Tipos de dobles: mock, spy, stub, fake y dummy</li>
+              <li>Cómo funcionan internamente</li>
+              <li>Kata historia de usuario</li>
+            </ul>
+          </div>
+
+          <p>Tarde</p>
+          <div>
+            <p class="small-title">Consejos para hacer TDD</p>
+            <ul>
+              <li>Testing en el front-end</li>
+              <li>Testing con base de datos</li>
+              <li>Builders de test</li>
+            </ul>
+
+            <p class="small-title">TDD Outside-in</p>
+            <ul>
+              <li>Test-Driven Development outside-in</li>
+              <li>Cómo desarrollamos en Codium</li>
+              <li>Kata iterativa</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="text-center">
+          <button class="button button--primary">Contactar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block--white">
+      <div class="container">
+        <h2 class="text-center">Metodología</h2>
+
+        <p>
+          Hoy en día cualquiera puede leer un libro o ver un vídeo, pero lo
+          realmente difícil es poner en práctica lo aprendido. Por eso, en
+          nuestro curso, queremos que los alumnos pasen la mayor parte del
+          tiempo programando y no escuchando teoría.
+        </p>
+        <p>
+          En busca de la calidad y satisfacción de todos los asistentes, creemos
+          que es indispensable ser dos profesores senior. Esto nos permite tener
+          la disponibilidad suficiente para ayudar de forma personalizada
+          mientras los alumnos programan.
+        </p>
+        <p>
+          Perseguimos maximizar el aprendizaje. Para ello creamos un ambiente
+          dinámico (Flow) gracias a trabajar en parejas, ejercicios cortos,
+          resolver las dudas rápido, la discusión de forma conjunta de las
+          diferentes soluciones y un trato muy cercano.
+        </p>
+        <p>
+          Por nuestra experiencia como profesores, desarrolladores y
+          emprendedores, comprendemos las problemáticas del desarrollo de
+          software. Haber impartido más de 60 cursos a más de 800 alumnos nos
+          permite conocer las necesidades de los alumnos y cuidar cada detalle
+          de la formación.
+        </p>
+        <p>
+          Todo lo anterior garantiza nuestro objetivo de que quedes satisfecho,
+          adquieras las habilidades necesarias para transformar tu forma de
+          desarrollar y empieces a escribir código sostenible.
+        </p>
+
+        <div>
+          <div class="card card--personal">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/img/about-us/jordi.jpeg"
+                  alt="Jordi Anguele profile"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+
+            <p class="card__title">Jordi Anguela</p>
+
+            <p class="card__text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+
+            <div class="card__footer">
+              <p class="card__professional">Back-end Developer</p>
+              <ul class="card__icons">
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card card--personal">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/img/about-us/jordi.jpeg"
+                  alt="Jordi Anguele profile"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+
+            <p class="card__title">Jordi Anguela</p>
+
+            <p class="card__text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+
+            <div class="card__footer">
+              <p class="card__professional">Back-end Developer</p>
+              <ul class="card__icons">
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card card--personal">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/img/about-us/jordi.jpeg"
+                  alt="Jordi Anguele profile"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+
+            <p class="card__title">Jordi Anguela</p>
+
+            <p class="card__text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+
+            <div class="card__footer">
+              <p class="card__professional">Back-end Developer</p>
+              <ul class="card__icons">
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card card--personal">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/img/about-us/jordi.jpeg"
+                  alt="Jordi Anguele profile"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+
+            <p class="card__title">Jordi Anguela</p>
+
+            <p class="card__text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+
+            <div class="card__footer">
+              <p class="card__professional">Back-end Developer</p>
+              <ul class="card__icons">
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="card__icon">
+                  <a><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="button button--primary">Contactar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <div>
+          <h2>Resumen en números</h2>
+          <p>
+            Slate helps you see how many more days you need to work to reach
+            your financial goal for the month and year.
+          </p>
+        </div>
+
+        <div>
+          <div class="circle circle--lila">
+            <p>60</p>
+            <p>Formaciones impartidas</p>
+          </div>
+
+          <div class="circle circle--green">
+            <p>822</p>
+            <p>Profesionales formados</p>
+          </div>
+
+          <div class="circle circle--lila">
+            <p>46</p>
+            <p>Empresas que han confiado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+
+        <div>
+          <div class="question">
+            <p>01.</p>
+            <p>¿A qiuén va dirigido?</p>
+
+            <p>A equipos que hacen tests y quieren dar un salto de calidad.</p>
+
+            <p>
+              A empresas que quieren tomarse en serio la calidad y seguir
+              añadiendo funcionalidad a buena velocidad.
+            </p>
+
+            <p>
+              A programadores familiarizados con el testing y buenas prácticas
+              de desarrollo.
+            </p>
+
+            <p>
+              El curso se centra en cómo testear la lógica de negocio,
+              independientemente de dónde se encuentre, ya sea el back-end,
+              front-end o móvil. Las personas de QA también pueden beneficiarse
+              del curso, entendiendo el proceso de desarrollo y ayudando a
+              escribir mejores pruebas.
+            </p>
+          </div>
+
+          <div class="question">
+            <p>02.</p>
+            <p>¿Cuál es el nivel del curso?</p>
+
+            <p>
+              El nivel del curso es avanzado. Está dirigido a personas que
+              escriben tests con frecuencia.
+            </p>
+
+            <p>
+              Es un curso introductorio a Test-Driven Development. El curso es
+              intenso y cubrimos desde las partes más básicas, como las pruebas
+              unitarias, a temas más complejos, como los diferentes tipos de
+              dobles de pruebas y problemas habituales cuando escribimos tests.
+            </p>
+
+            <p>
+              Al ser un curso muy práctico y con mucho debate, permite que nos
+              adaptemos al nivel de los asistentes. Si ya conoces algo de TDD,
+              durante el curso profundizarás en tus conocimientos y aprenderás
+              estrategias más avanzadas.
+            </p>
+
+            <p>
+              Este no es un curso diseñado para personas que aplican Test-Driven
+              Development en su día a día, escribiendo sistemáticamente las
+              pruebas unitarias antes de escribir el código.
+            </p>
+          </div>
+
+          <div class="question">
+            <p>03.</p>
+            <p>¿Se puede bonificar el curso por FUNDAE?</p>
+
+            <p>Sí, el curso se puede bonificar a través de FUNDAE.</p>
+
+            <p>Actualmente se puede bonificar hasta casi un 50%.</p>
+
+            <p>
+              Nosotros facilitamos todos los datos para su presentación online,
+              pero no la tramitamos.
+            </p>
+          </div>
+
+          <div class="question">
+            <p>04.</p>
+            <p>¿Por qué debería asistir todo el equipo?</p>
+
+            <p>
+              Juntar a todo el equipo, además de generar team building, permite
+              que trabajen juntas personas que habitualmente no lo hacen.
+            </p>
+
+            <p>
+              Durante el transcurso de los días, fomentamos el diálogo y los
+              debates entre el equipo, que permiten alinear su visión.
+            </p>
+
+            <p>Nada mejor que dos días formación para motivar al equipo.</p>
+          </div>
+
+          <div class="question">
+            <p>05.</p>
+            <p>¿Cómo se desarrolla el curso?</p>
+
+            <p>El curso se compone de <a>varios bloques</a> de dos horas.</p>
+
+            <p>
+              Le sigue un ejercicio que se realiza en parejas donde se pone en
+              práctica lo visto en la parte teórica mientras los formadores van
+              dando feedback a los asistentes constantemente.
+            </p>
+
+            <p>
+              El bloque termina con un debate de grupo, donde los participantes
+              comparten lo aprendido y tenemos discusiones todos juntos
+            </p>
+          </div>
+
+          <div class="question">
+            <p>06.</p>
+            <p>¿Puedo apuntarme yo solo?</p>
+
+            <p>El curso está diseñado para impartirse en empresas.</p>
+
+            <p>
+              También ofrecemos cursos en abierto donde cualquiera puede
+              apuntarse.
+            </p>
+
+            <p>
+              <a>Inscríbete</a> y te informaremos de los próximos cursos cerca
+              de ti.
+            </p>
+          </div>
+
+          <div class="question">
+            <p>07.</p>
+            <p>¿Qué material necesito?</p>
+
+            <p>
+              Tan sólo es necesario traer un ordenador con las herramientas de
+              desarrollo que cada uno utiliza instaladas. Lo ideal es realizar
+              el curso en las mismas máquinas que el equipo utiliza en su día a
+              día y Docker.
+            </p>
+
+            <p>
+              La sala debe contar con proyector o una pantalla grande y una
+              pizarra donde escribir.
+            </p>
+
+            <p>
+              El curso se realiza por parejas que van cambiando cada dos horas.
+              La configuración ideal es tener un ordenador con dos pantallas,
+              dos teclados y dos ratones por cada dos personas.
+            </p>
+          </div>
+
+          <div class="question">
+            <p>08.</p>
+            <p>Y después del curso, ¿qué?</p>
+
+            <p>
+              Los ejercicios realizados en el curso son específicos para
+              aprender un concepto cada vez. Durante nuestro día a día nos
+              enfrentamos a problemas mucho más complejos y con un código en mal
+              estado.
+            </p>
+
+            <p>
+              Por ello, después del curso, ofrecemos acompañamiento para
+              ayudarte en la implantación de Test-Driven Development en tu
+              proyecto.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="button button--primary">Contactar</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/site.js"></script>
+  </body>
 </html>
