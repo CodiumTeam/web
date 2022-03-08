@@ -343,6 +343,7 @@ template {
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
+  background-color: #F6F8FB;
 }
 
 .header {
@@ -635,6 +636,9 @@ body {
   gap: 1rem;
   margin-top: 2rem;
 }
+.cards__grid--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
 
 @media all and (max-width: 768px) {
   .section__wrapper {
@@ -656,6 +660,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .title {

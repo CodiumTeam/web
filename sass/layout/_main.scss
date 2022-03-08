@@ -38,6 +38,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+
+  &--6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 
@@ -72,3 +76,6 @@
 //     grid-column: span 3;
 //   }
 // }
+.text-bold {
+  font-weight: bold;
+}

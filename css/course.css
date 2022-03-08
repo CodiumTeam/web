@@ -1,0 +1,36 @@
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.resume__title {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+}
+.resume__text {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .resume-wrapper {
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .resume-wrapper .resume__title {
+    margin: 1rem 0 0;
+  }
+  .resume-wrapper .resume__text {
+    margin-bottom: 1em;
+  }
+}
+
+/*# sourceMappingURL=course.css.map */
