@@ -610,13 +610,13 @@ body {
   width: 90%;
 }
 
-.cards__grid {
+.section__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 2rem;
 }
-.cards__grid--6 {
+.section__grid--6 {
   grid-template-columns: repeat(6, 1fr);
 }
 
@@ -628,6 +628,26 @@ body {
 
   .card {
     grid-column: span 3;
+  }
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .title {
+  text-align: center;
+}
+.services button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .services .title {
+    font-size: 1.438em;
+    line-height: 1.25em;
   }
 }
 .values {
@@ -667,13 +687,6 @@ body {
 .team button {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.team__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
 }
 
 @media all and (max-width: 768px) {

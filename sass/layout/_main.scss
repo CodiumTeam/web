@@ -9,7 +9,7 @@
   width: 90%;
 }
 
-.cards__grid {
+.section__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -27,6 +27,30 @@
   }
   .card {
     grid-column: span 3;
+  }
+}
+
+//SECTION SERVICES
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .services .title {
+    font-size: 1.438em;
+    line-height: 1.25em;
   }
 }
 
@@ -75,13 +99,6 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-}
-
-.team__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
 }
 
 @media all and (max-width: 768px) {
