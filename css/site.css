@@ -460,36 +460,6 @@ body {
     line-height: 19px;
   }
 }
-.button {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  line-height: 1.5;
-  outline: none;
-  padding: 10px 40px;
-  text-align: center;
-  white-space: nowrap;
-}
-.button:hover {
-  cursor: pointer;
-}
-
-.button--primary {
-  color: #ffffff;
-  background-color: #2fade2;
-}
-.button--primary:hover {
-  background-color: #0e9edc;
-}
-.button--primary:disabled {
-  background-color: #d3efff;
-}
-
-.button--outline {
-  background-color: transparent;
-  border-color: #2fade2;
-  color: #2fade2;
-}
-
 .card {
   background: #ffffff;
   border-radius: 5px;
@@ -697,6 +667,58 @@ body {
 }
 .text-bold {
   font-weight: bold;
+}
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  line-height: 1.5;
+  outline: none;
+  padding: 10px 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: #2fade2;
+}
+.button--primary:hover {
+  background-color: #0e9edc;
+}
+.button--primary:disabled {
+  background-color: #d3efff;
+}
+
+.button--outline {
+  background-color: transparent;
+  border-color: #2fade2;
+  color: #2fade2;
+}
+
+.block {
+  padding: 3rem 25px;
+}
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5,
+.block h6 {
+  line-height: 1.2;
+  margin: 0;
+}
+.block--white {
+  background: #fff;
+}
+.block--lila {
+  background: #f5f8ff;
+}
+.block--grey {
+  background: #fafcfe;
 }
 
 .title {
