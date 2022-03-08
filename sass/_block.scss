@@ -1,0 +1,24 @@
+.block {
+  padding: 3rem 25px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  &--white {
+    background: #fff;
+  }
+
+  &--lila {
+    background: $light-lila;
+  }
+
+  &--grey {
+    background: $lightest-grey;
+  }
+}
