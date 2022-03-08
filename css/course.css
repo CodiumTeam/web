@@ -7,6 +7,7 @@
 .block h4,
 .block h5,
 .block h6 {
+  line-height: 1.2;
   margin: 0;
 }
 .block--white {
@@ -29,6 +30,10 @@
   text-align: center;
 }
 
+.text-dark-grey {
+  color: #737373;
+}
+
 .bg-white {
   background-color: #fff;
 }
@@ -45,6 +50,22 @@
   margin-bottom: 0.5em;
 }
 
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.question-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 2rem;
+}
+
+.question {
+  padding: 16px;
+}
+
 @media (min-width: 768px) {
   .resume-wrapper {
     gap: 1rem;
@@ -56,11 +77,16 @@
   .resume-wrapper .resume__text {
     margin-bottom: 1em;
   }
-}
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+
+  .question-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+
+  .question {
+    padding: 0 32px 0 0;
+  }
 }
 
 /*# sourceMappingURL=course.css.map */
