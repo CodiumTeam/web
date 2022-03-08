@@ -1,3 +1,24 @@
+.block {
+  padding: 3rem 25px;
+}
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5,
+.block h6 {
+  margin: 0;
+}
+.block--white {
+  background: #fff;
+}
+.block--lila {
+  background: #f5f8ff;
+}
+.block--grey {
+  background: #fafcfe;
+}
+
 .resume-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
