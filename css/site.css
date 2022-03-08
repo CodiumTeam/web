@@ -467,6 +467,9 @@ body {
   text-align: center;
   white-space: nowrap;
 }
+.button:hover {
+  cursor: pointer;
+}
 
 .button--primary {
   color: #ffffff;
@@ -513,8 +516,11 @@ body {
 }
 
 .card__image {
-  border-radius: 50%;
+  max-width: 210px;
+}
+.card__image--rounded {
   max-width: 150px;
+  border-radius: 50%;
 }
 
 .card--large .card__header {
@@ -529,6 +535,9 @@ body {
   margin-bottom: 16px;
 }
 
+.card--personal {
+  background-color: #f5f8ff;
+}
 .card--personal .card__title {
   color: #2fade2;
   font-size: 1.438em;
@@ -576,10 +585,6 @@ body {
   }
 
   .card__title {
-    margin-bottom: 20px;
-  }
-
-  .card__text {
     margin-bottom: 20px;
   }
 
@@ -668,6 +673,10 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 1.25em;
+  margin: 0;
+}
+
+.m-0 {
   margin: 0;
 }
 

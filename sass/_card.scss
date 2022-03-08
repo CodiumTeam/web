@@ -27,8 +27,12 @@
 }
 
 .card__image {
-  border-radius: 50%;
-  max-width: 150px;
+  max-width: 210px;
+
+  &--rounded {
+    max-width: 150px;
+    border-radius: 50%;
+  }
 }
 
 .card--large {
@@ -48,6 +52,7 @@
 }
 
 .card--personal {
+  background-color: $light-lila;
   .card__title {
     color: $primary-brand-color;
     font-size: $text-xl-normal;
@@ -99,10 +104,6 @@
   }
 
   .card__title {
-    margin-bottom: 20px;
-  }
-
-  .card__text {
     margin-bottom: 20px;
   }
 
