@@ -1,5 +1,7 @@
 @import "../card";
 
+//SECTIONS
+//SECTION VALUES
 .values {
   background-color: $light-grey;
   display: flex;
@@ -34,7 +36,6 @@
 .cards__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 10rem;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -48,3 +49,20 @@
     grid-column: span 3;
   }
 }
+
+//SECTION TEAM
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+// @media all and (max-width: 768px) {
+//   .team .section__wrapper {
+//     width: 100%;
+//   }
+//   .team__grid .card {
+//     grid-column: span 3;
+//   }
+// }
