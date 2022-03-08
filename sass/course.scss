@@ -1,10 +1,9 @@
-@import 'core/variables', 'block';
+@import 'core/variables', 'block', 'course/circle';
 
 .resume-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-
 }
 
 .text-center {
@@ -34,11 +33,10 @@
   }
 }
 
-
 .container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .question-wrapper {
@@ -51,6 +49,40 @@
   padding: 16px;
 }
 
+.sumary-numbers {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 48px;
+
+  &__item {
+    flex: 0 0 100%;
+
+    &--circles {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 4rem;
+    }
+  }
+}
+
+.sumary-numbers__item {
+  .circle {
+    &:nth-child(2) {
+      position: absolute;
+      bottom: -30px;
+      left: -60px;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      bottom: -30px;
+      right: -60px;
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .resume-wrapper {
@@ -75,5 +107,40 @@
 
   .question {
     padding: 0 32px 0 0;
+  }
+
+  .sumary-numbers {
+    flex-direction: row;
+
+    &__item {
+      &:last-child {
+        flex: 0 1 60%;
+      }
+
+      &:first-child {
+        margin-right: 1.5em;
+        flex: 0 1 40%;
+      }
+
+      &--circles {
+        padding-left: 4em;
+        justify-content: flex-end;
+        flex-direction: row;
+      }
+
+      & .circle {
+        &:nth-child(2) {
+          position: relative;
+          top: -5rem;
+          left: -3rem;
+        }
+
+        &:nth-child(3) {
+          position: relative;
+          top: 3em;
+          left: -8rem;
+        }
+      }
+    }
   }
 }

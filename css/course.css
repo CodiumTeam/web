@@ -20,6 +20,78 @@
   background: #fafcfe;
 }
 
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #F6F8FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  border: 3px solid #fafcfe;
+  margin: 0;
+}
+.circle__text {
+  padding-top: 1em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle__number {
+  line-height: 0.5;
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+.circle--large {
+  width: 150px;
+  height: 150px;
+}
+.circle--large .circle__text {
+  padding-top: 1.438em;
+}
+.circle--large .circle__number {
+  font-size: 1.438em;
+}
+.circle--lila {
+  background-color: #eaecff;
+  color: #6a67f4;
+}
+.circle--green {
+  background-color: #dff3f8;
+  color: #3593b0;
+}
+.circle--blue {
+  background-color: #e1eeff;
+  color: #3a85de;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+  .circle--large {
+    width: 250px;
+    height: 250px;
+  }
+  .circle--large .circle__text {
+    padding-top: 2.5em;
+  }
+  .circle--large .circle__number {
+    font-size: 2.5em;
+  }
+  .circle__text {
+    padding-top: 1.438em;
+  }
+  .circle__number {
+    font-size: 1.438em;
+  }
+}
 .resume-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,6 +138,34 @@
   padding: 16px;
 }
 
+.sumary-numbers {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 48px;
+}
+.sumary-numbers__item {
+  flex: 0 0 100%;
+}
+.sumary-numbers__item--circles {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.sumary-numbers__item .circle:nth-child(2) {
+  position: absolute;
+  bottom: -30px;
+  left: -60px;
+}
+.sumary-numbers__item .circle:nth-child(3) {
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+}
+
 @media (min-width: 768px) {
   .resume-wrapper {
     gap: 1rem;
@@ -86,6 +186,32 @@
 
   .question {
     padding: 0 32px 0 0;
+  }
+
+  .sumary-numbers {
+    flex-direction: row;
+  }
+  .sumary-numbers__item:last-child {
+    flex: 0 1 60%;
+  }
+  .sumary-numbers__item:first-child {
+    margin-right: 1.5em;
+    flex: 0 1 40%;
+  }
+  .sumary-numbers__item--circles {
+    padding-left: 4em;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .sumary-numbers__item .circle:nth-child(2) {
+    position: relative;
+    top: -5rem;
+    left: -3rem;
+  }
+  .sumary-numbers__item .circle:nth-child(3) {
+    position: relative;
+    top: 3em;
+    left: -8rem;
   }
 }
 
