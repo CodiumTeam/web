@@ -634,10 +634,16 @@ body {
 @media all and (max-width: 768px) {
   .section__wrapper {
     width: 100%;
+    padding: 1rem;
   }
 
   .card {
     grid-column: span 3;
+  }
+
+  .values .title {
+    font-size: 1.438em;
+    line-height: 1.25em;
   }
 }
 .team__grid {
