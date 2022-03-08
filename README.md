@@ -7,8 +7,8 @@ make build
 # Install dependencies
 make build
 
-# Watch CSS
-make css-watch
+# Start server
+make start
 
 # Pages
 

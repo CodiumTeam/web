@@ -47,5 +47,6 @@ just-build:
 convert:
 	$(DOCKER_COMMAND) $(DOCKER_IMAGEMAGICK_IMAGE) $(FILE_PATH) -resize 245x155 -size 255x161 xc:white +swap -gravity center -composite $(FILE_PATH)
 
-css-watch:
-	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run css:watch
+start:
+	$(DOCKER_COMMAND) --name codium_web_new -p 3000:3000 -d $(DOCKER_NODE_IMAGE) npm run start
+	@echo "http://localhost:3000/home.html"

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "css": "sass sass/site.scss:css/site.css sass/resources.scss:css/resources.css",
-    "css:watch": "npm run css -- --watch"
+    "css:watch": "npm run css -- --watch --stop-on-error",
+    "server": "lite-server -c bs-config.js",
+    "start": "concurrently -n css,server \"npm run css:watch\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/CodiumTeam/web#readme",
   "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
     "sass": "^1.49.9"
   }
 }
