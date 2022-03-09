@@ -1,5 +1,8 @@
 .header {
   background-color: $darkest-grey;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 
   &__wrapper {
     align-items: center;
@@ -33,6 +36,11 @@
 
 .navbar__item {
   margin-right: 15px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 @media all and (max-width: 768px) {

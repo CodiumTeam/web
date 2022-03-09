@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="js-header">
       <div class="container">
         <div class="header__wrapper">
           <a href="/">
@@ -42,16 +42,16 @@
           <nav class="navbar" id="js-menu">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a>Beneficos</a>
+                <a href="#value">Beneficios</a>
               </li>
               <li class="navbar__item">
-                <a>Contenido</a>
+                <a href="#training-content-timeline">Contenido</a>
               </li>
               <li class="navbar__item">
-                <a>Metodología</a>
+                <a href="#methodology">Metodología</a>
               </li>
               <li class="navbar__item">
-                <a>Faqs</a>
+                <a href="#faqs">Faqs</a>
               </li>
               <li class="navbar__item">
                 <a>TDD</a>
@@ -66,11 +66,76 @@
     </header>
 
     <div class="hero-wrapper">
-      <div class="container">
-        <section class="hero block">
+      <div class="container course-hero">
+        <section class="hero">
           <h2 class="hero__title">Working with Legacy code</h2>
           <p class="hero__subtitle">Recupera el control de tu producto</p>
+
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/A8ywnEWeqcA?rel=0&controls=2&modestbranding=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            class="course-video"
+          >
+          </iframe>
+          <p class="course-video-mobile">
+            <a
+              href="https://www.youtube.com/embed/A8ywnEWeqcA?rel=0&controls=2&modestbranding=1"
+            >
+              Ver vídeo de presentación
+            </a>
+          </p>
         </section>
+
+        <form class="form form--white" id="contactForm">
+          <h3 class="form__title">Te informamos sin compromiso</h3>
+          <div>
+            <label for="name"
+              >Nombre<span class="required-asterik">*</span></label
+            >
+            <input type="text" id="name" required />
+          </div>
+          <div>
+            <label for="email"
+              >Email<span class="required-asterik">*</span></label
+            >
+            <input type="email" id="email" />
+          </div>
+          <div>
+            <label for="numProgrammers">
+              Nº de programadores <span class="required-asterik">*</span>
+            </label>
+            <input type="number" min="0" required id="numProgrammers" />
+          </div>
+          <div class="myradio">
+            <input
+              type="radio"
+              name="myRadio"
+              id="one"
+              class="myradio__input"
+              checked
+            />
+            <label for="one" class="myradio__label">Para mi empresa</label>
+          </div>
+          <div class="myradio">
+            <input
+              type="radio"
+              name="myRadio"
+              id="two"
+              class="myradio__input"
+            />
+            <label for="two" class="myradio__label">Para mí</label>
+          </div>
+          <div class="text-center">
+            <button class="button button--primary submit-button">
+              Pedir información
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -228,14 +293,14 @@
           </div>
 
           <div class="button__wrapper">
-            <button class="button button--primary">Contactar</button>
+            <a class="button button--primary" href="#contactForm">Contactar</a>
           </div>
         </div>
       </section>
 
       <section class="block block--white">
         <div class="container">
-          <h2 class="text-center title">El valor del TDD</h2>
+          <h2 class="text-center title" id="value">El valor del curso</h2>
           <p class="text-center text-dark-grey">
             El simple hecho de pensar y escribir un test antes que el código de
             producción representa un cambio de paradigma en el desarrollo de
@@ -301,14 +366,16 @@
           </article>
 
           <div class="button__wrapper">
-            <button class="button button--primary">Contactar</button>
+            <a class="button button--primary" href="#contactForm">Contactar</a>
           </div>
         </div>
       </section>
 
       <section class="block block--lila">
         <div class="container">
-          <h2 class="text-center title">Contenido del curso</h2>
+          <h2 class="text-center title" id="training-content-timeline">
+            Contenido del curso
+          </h2>
           <p class="text-center text-dark-grey">
             El simple hecho de pensar y escribir un test antes que el código de
             producción representa un cambio de paradigma en el desarrollo de
@@ -426,14 +493,14 @@
           </div>
 
           <div class="button__wrapper">
-            <button class="button button--primary">Contactar</button>
+            <a class="button button--primary" href="#contactForm">Contactar</a>
           </div>
         </div>
       </section>
 
       <section class="block block--white">
         <div class="container">
-          <h2 class="text-center title">Metodología</h2>
+          <h2 class="text-center title" id="methodology">Metodología</h2>
 
           <div class="course__metodology">
             <p class="text-dark-grey">
@@ -631,7 +698,7 @@
             </div>
           </div>
           <div class="button__wrapper">
-            <button class="button button--primary">Contactar</button>
+            <a class="button button--primary" href="#contactForm">Contactar</a>
           </div>
         </div>
       </section>
@@ -673,7 +740,7 @@
 
       <section class="block block--white">
         <div class="container">
-          <h2 class="text-center title">Preguntas frecuentes</h2>
+          <h2 class="text-center title" id="faqs">Preguntas frecuentes</h2>
 
           <div class="question-wrapper">
             <div class="question">
@@ -860,7 +927,7 @@
           </div>
 
           <div class="button__wrapper">
-            <button class="button button--primary">Contactar</button>
+            <a class="button button--primary" href="#contactForm">Contactar</a>
           </div>
         </div>
       </section>

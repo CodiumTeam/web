@@ -1,5 +1,6 @@
 .hero-wrapper {
   background: linear-gradient(260.14deg, #2a3367 2.4%, #0a073a 100%);
+  padding-top: 5rem;
 }
 
 .hero {
@@ -28,6 +29,12 @@
     line-height: 1.25em;
     font-style: normal;
     margin-bottom: 90px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .hero-wrapper {
+    padding-top: 2rem;
   }
 }
 

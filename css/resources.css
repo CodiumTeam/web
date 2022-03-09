@@ -337,7 +337,9 @@ template {
   display: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -347,8 +349,15 @@ body {
   color: #0a073a;
 }
 
+a {
+  color: #2fade2;
+}
+
 .header {
   background-color: #0a073a;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 .header__wrapper {
   align-items: center;
@@ -379,6 +388,10 @@ body {
 
 .navbar__item {
   margin-right: 15px;
+}
+.navbar__item a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media all and (max-width: 768px) {
@@ -426,6 +439,8 @@ body {
   padding: 10px 40px;
   text-align: center;
   white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
 }
 .button:hover {
   cursor: pointer;

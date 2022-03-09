@@ -1,6 +1,6 @@
 @import 'core/variables', 'core/container', 'block', 'course/circle',
   'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel',
-  'layout/footer';
+  'layout/footer', 'core/inputs';
 
 .resume-wrapper {
   display: grid;
@@ -145,4 +145,49 @@
 .course__metodology {
   max-width: 1200px;
   margin: 2rem auto 0 auto;
+}
+
+.course-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .hero__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    flex: 0 0 60%;
+  }
+}
+
+.course-video {
+  display: none;
+  width: 480px;
+  height: 270px;
+  margin-top: 1rem;
+}
+
+.course-video-mobile {
+  margin: 0;
+
+  a {
+    color: #fff;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-hero {
+    flex-direction: row;
+  }
+
+  .course-video {
+    display: block;
+  }
+
+  .course-video-mobile {
+    display: none;
+  }
 }
