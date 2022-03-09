@@ -111,7 +111,7 @@
 }
 
 .calendar {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -124,6 +124,9 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-direction: column;
+}
+.course-calendar:last-child {
+  margin-top: 2rem;
 }
 .course-calendar__day {
   min-width: 90px;
@@ -162,6 +165,28 @@
     border-radius: 50%;
     right: -10px;
     background-color: #d3efff;
+  }
+}
+.tdd-value {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 3rem;
+}
+.tdd-value__item:first-child {
+  flex: 0 1 40%;
+}
+.tdd-value__item:last-child {
+  margin-bottom: 4rem;
+}
+.tdd-value__image {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tdd-value {
+    flex-direction: row;
+    margin-top: 3rem;
   }
 }
 .resume-wrapper {
@@ -262,6 +287,7 @@
 
   .sumary-numbers {
     flex-direction: row;
+    overflow-x: hidden;
   }
   .sumary-numbers__item:last-child {
     flex: 0 1 60%;
@@ -272,18 +298,18 @@
   }
   .sumary-numbers__item--circles {
     padding-left: 4em;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
   }
   .sumary-numbers__item .circle:nth-child(2) {
     position: relative;
-    top: -5rem;
+    top: -3rem;
     left: -3rem;
   }
   .sumary-numbers__item .circle:nth-child(3) {
     position: relative;
-    top: 3em;
-    left: -8rem;
+    top: 5em;
+    right: 10rem;
   }
 }
 

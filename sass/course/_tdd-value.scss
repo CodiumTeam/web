@@ -1,0 +1,27 @@
+.tdd-value {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 3rem;
+
+  &__item {
+    &:first-child {
+      flex: 0 1 40%;
+    }
+
+    &:last-child {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .tdd-value {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+}

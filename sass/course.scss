@@ -1,5 +1,5 @@
 @import 'core/variables', 'block', 'course/circle', 'course/team',
-  'course/calendar';
+  'course/calendar', 'course/tdd-value';
 
 .resume-wrapper {
   display: grid;
@@ -112,6 +112,7 @@
 
   .sumary-numbers {
     flex-direction: row;
+    overflow-x: hidden;
 
     &__item {
       &:last-child {
@@ -125,21 +126,21 @@
 
       &--circles {
         padding-left: 4em;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: row;
       }
 
       & .circle {
         &:nth-child(2) {
           position: relative;
-          top: -5rem;
+          top: -3rem;
           left: -3rem;
         }
 
         &:nth-child(3) {
           position: relative;
-          top: 3em;
-          left: -8rem;
+          top: 5em;
+          right: 10rem;
         }
       }
     }
