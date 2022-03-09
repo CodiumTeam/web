@@ -356,6 +356,7 @@ label {
   position: relative;
   transition: all 0.5s;
   color: #fff;
+  margin-top: 1.5em;
 }
 .myradio__label::before, .myradio__label::after {
   content: "";
