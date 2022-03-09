@@ -59,7 +59,6 @@ document
       ev.preventDefault();
       addErrorToInput($name);
       $name.focus();
-      return false;
     } else {
       clearErrorMessageFromInput($name);
     }
@@ -68,8 +67,6 @@ document
       ev.preventDefault();
       addErrorToInput($email);
       $email.focus();
-
-      return false;
     } else {
       clearErrorMessageFromInput($email);
     }
@@ -79,8 +76,6 @@ document
         ev.preventDefault();
         addErrorToInput($numProgrammers);
         $numProgrammers.focus();
-
-        return false;
       } else {
         clearErrorMessageFromInput($radio);
       }
@@ -89,18 +84,17 @@ document
         addErrorToInput($locality);
         ev.preventDefault();
         $locality.focus();
-
-        return false;
       } else {
         clearErrorMessageFromInput($locality);
       }
     }
-
-    return true;
   });
 
 function addErrorToInput($input) {
   $input.classList.add('has-error');
+
+  if ($input.nextElementSibling) return;
+
   const el = document.createElement('span');
   el.innerHTML = '<span class="error-message">Campo requerido</span>';
   insertAfter($input, el);
