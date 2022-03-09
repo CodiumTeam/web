@@ -465,6 +465,7 @@ body {
   border-radius: 5px;
   padding: 16px 32px;
   text-align: center;
+  white-space: normal;
 }
 
 .card__header {
@@ -485,6 +486,9 @@ body {
   color: #737373;
   font-size: 16px;
   margin-bottom: 8px;
+}
+.card__text--left {
+  text-align: left;
 }
 
 .card__image {
@@ -513,6 +517,25 @@ body {
 .card--personal .card__title {
   color: #2fade2;
   font-size: 1.438em;
+}
+
+.card.card--opinion {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+.card.card--opinion .card__header {
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card.card--opinion .card__header .card__image {
+  max-width: 100px;
+}
+.card.card--opinion .card__text {
+  margin: 0;
 }
 
 .card__footer {
@@ -571,6 +594,10 @@ body {
   }
   .card--large .card__footer {
     margin-top: 0;
+  }
+
+  .card.card--opinion {
+    flex-direction: row;
   }
 }
 .section__wrapper {

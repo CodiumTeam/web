@@ -1,0 +1,63 @@
+$carousel-padding: 2.5rem;
+.carousel {
+  padding: 0 $carousel-padding;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.glide {
+  margin-top: 2rem;
+}
+
+.glide .glide__arrow {
+  color: $dark-grey;
+  cursor: pointer;
+  font-size: $text-xl-normal;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  top: 32%;
+
+  &:hover {
+    color: darken($dark-grey, 10%);
+  }
+
+  &--left {
+    left: $carousel-padding * -1;
+  }
+
+  &--right {
+    right: $carousel-padding * -1;
+  }
+}
+
+.glide .glide__bullets {
+  position: relative;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.glide .glide__bullet {
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  box-shadow: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: darken(#c4c4c4, 10%);
+    border: none;
+  }
+
+  &--active {
+    background-color: $primary-brand-color;
+    &:hover,
+    &:focus {
+      background-color: $primary-brand-hover-dark-color;
+    }
+  }
+}

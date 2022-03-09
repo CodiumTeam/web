@@ -189,6 +189,62 @@
     margin-top: 3rem;
   }
 }
+.carousel {
+  padding: 0 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.glide {
+  margin-top: 2rem;
+}
+
+.glide .glide__arrow {
+  color: #737373;
+  cursor: pointer;
+  font-size: 1.438em;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  top: 32%;
+}
+.glide .glide__arrow:hover {
+  color: #5a5a5a;
+}
+.glide .glide__arrow--left {
+  left: -2.5rem;
+}
+.glide .glide__arrow--right {
+  right: -2.5rem;
+}
+
+.glide .glide__bullets {
+  position: relative;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.glide .glide__bullet {
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  box-shadow: none;
+  border: none;
+}
+.glide .glide__bullet:hover, .glide .glide__bullet:focus {
+  background: #ababab;
+  border: none;
+}
+.glide .glide__bullet--active {
+  background-color: #2fade2;
+}
+.glide .glide__bullet--active:hover, .glide .glide__bullet--active:focus {
+  background-color: #0e9edc;
+}
+
 .resume-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -1,9 +1,9 @@
-
 .card {
   background: $white;
   border-radius: 5px;
   padding: 16px 32px;
   text-align: center;
+  white-space: normal;
 }
 
 .card__header {
@@ -24,6 +24,10 @@
   color: $dark-grey;
   font-size: 16px;
   margin-bottom: 8px;
+
+  &--left {
+    text-align: left;
+  }
 }
 
 .card__image {
@@ -56,6 +60,28 @@
   .card__title {
     color: $primary-brand-color;
     font-size: $text-xl-normal;
+  }
+}
+
+.card.card--opinion {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+
+  .card__header {
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .card__image {
+      max-width: 100px;
+    }
+  }
+
+  .card__text {
+    margin: 0;
   }
 }
 
@@ -123,5 +149,9 @@
     .card__footer {
       margin-top: 0;
     }
+  }
+
+  .card.card--opinion {
+    flex-direction: row;
   }
 }
