@@ -22,20 +22,6 @@ function showCorrectInputDependingOnSelectedRadio(event) {
 
   document.getElementById('js-locality').classList.toggle('hidden');
   document.getElementById('js-numProgrammers').classList.toggle('hidden');
-
-  if (isForBusiness(value)) {
-    const $numProgrammers = document.getElementById('numProgrammers');
-
-    if (!hasValue($numProgrammers)) {
-      $numProgrammers.focus();
-    }
-  } else {
-    const $localityInput = document.getElementById('locality');
-
-    if (!hasValue($localityInput)) {
-      $localityInput.focus();
-    }
-  }
 }
 
 function isForBusiness(value) {
