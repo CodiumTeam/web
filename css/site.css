@@ -677,15 +677,6 @@ body {
   font-weight: bold;
 }
 
-.button__wrapper {
-  margin-top: 1rem;
-}
-@media (min-width: 768px) {
-  .button__wrapper {
-    margin-top: 3rem;
-  }
-}
-
 .button {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -736,6 +727,16 @@ body {
 }
 .block--grey {
   background: #fafcfe;
+}
+
+.button__wrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .button__wrapper {
+    margin-top: 3rem;
+  }
 }
 
 .title {
