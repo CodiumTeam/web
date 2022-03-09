@@ -416,6 +416,7 @@ label {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
+  padding: 0 0.5em;
 }
 
 .text-center {
@@ -542,6 +543,7 @@ label {
 }
 .course-hero .hero__subtitle {
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 .course-hero .hero {
   flex: 0 0 60%;
