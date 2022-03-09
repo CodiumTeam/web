@@ -1,5 +1,5 @@
-@import 'core/variables', 'block', 'course/circle', 'course/team',
-  'course/calendar', 'course/tdd-value', 'course/carousel';
+@import 'core/variables', 'core/container', 'block', 'course/circle',
+  'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel';
 
 .resume-wrapper {
   display: grid;
@@ -32,12 +32,6 @@
     color: $dark-grey;
     margin-bottom: 0.5em;
   }
-}
-
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .question-wrapper {

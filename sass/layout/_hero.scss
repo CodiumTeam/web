@@ -1,3 +1,7 @@
+.hero-wrapper {
+  background: linear-gradient(260.14deg, #2a3367 2.4%, #0a073a 100%);
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,6 @@
   max-height: 568px;
   height: 100vh;
   padding: 0 24px;
-  background: linear-gradient(260.14deg, #2A3367 2.4%, #0A073A 100%);
 
   &__title {
     color: $white;
@@ -26,7 +29,6 @@
     font-style: normal;
     margin-bottom: 90px;
   }
-
 }
 
 @media all and (max-width: 768px) {

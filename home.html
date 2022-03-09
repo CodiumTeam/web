@@ -1,312 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Codium</title>
     <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-</head>
-<body>
-<header class="header">
-    <div class="header__wrapper">
-        <img src="/img/resources/codium-brand-rectangle-white.svg" alt="Logo de Codium" class="header__image"/>
-        <i class="fa-solid fa-bars header__icon" id="js-menu-button"></i>
-        <nav class="navbar" id="js-menu">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <img
+            src="/img/resources/codium-brand-rectangle-white.svg"
+            alt="Logo de Codium"
+            class="header__image"
+          />
+          <i class="fa-solid fa-bars header__icon" id="js-menu-button"></i>
+          <nav class="navbar" id="js-menu">
             <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a>Valores</a>
-                </li>
-                <li class="navbar__item">
-                    <a>Desarrollo</a>
-                </li>
-                <li class="navbar__item">
-                    <a>Cursos</a>
-                </li>
-                <li class="navbar__item">
-                    <a>Formación continua</a>
-                </li>
-                <li class="navbar__item">
-                    <a>Equipo</a>
-                </li>
-                <li class="navbar__item">
-                    <a>Contacto</a>
-                </li>
+              <li class="navbar__item">
+                <a>Valores</a>
+              </li>
+              <li class="navbar__item">
+                <a>Desarrollo</a>
+              </li>
+              <li class="navbar__item">
+                <a>Cursos</a>
+              </li>
+              <li class="navbar__item">
+                <a>Formación continua</a>
+              </li>
+              <li class="navbar__item">
+                <a>Equipo</a>
+              </li>
+              <li class="navbar__item">
+                <a>Contacto</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="hero-wrapper">
+      <div class="container">
+        <section class="hero block">
+          <h2 class="hero__title">
+            Formamos a equipos de programación y desarrollamos software de
+            calidad.
+          </h2>
+          <p class="hero__subtitle">
+            Especialización en Clean code, TDD y Legacy code.
+          </p>
+          <button class="button button--primary" type="button">
+            Descubre nuestros servicios
+          </button>
+        </section>
+      </div>
     </div>
-</header>
-<section class="hero">
-    <h2 class="hero__title">Formamos a equipos de programación y desarrollamos software de calidad.</h2>
-    <span class="hero__subtitle">Especialización en Clean code, TDD y Legacy code.</span>
-    <button class="button button--primary" type="button">Descubre nuestros servicios</button>
-</section>
-<main class="main">
-    <section class="services">
-        <div class="section__wrapper">
-            <h2 class="title">Qué ofrecemos</h2>
-            <div class="section__grid">
-                <article class="card card--large">
-                    <div class="card__header">
-                        <img src="/img/illustrations/development-team.svg" alt="Development team illustration" class="card__image">
-                    </div>
-                    <p class="card__title">Desarrollo</p>
-                    <p class="card__text">Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.</p>
-                    <div class="card__footer">
-                        <button class="button button--outline">Más información</button>
-                    </div>
-                </article>
-                <article class="card card--large">
-                    <div class="card__header">
-                        <img src="/img/illustrations/classroom-learning.svg" alt="Classroom illustration" class="card__image">
-                    </div>
-                    <p class="card__title">Cursos</p>
-                    <p class="card__text">Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.</p>
-                    <div class="card__footer">
-                        <button class="button button--outline">Más información</button>
-                    </div>
-                </article>
-                <article class="card card--large">
-                    <div class="card__header">
-                        <img src="/img/illustrations/virtual-education.svg" alt="Virtual education illustration" class="card__image">
-                    </div>
-                    <p class="card__title">Formación continua</p>
-                    <p class="card__text">Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.</p>
-                    <div class="card__footer">
-                        <button class="button button--outline">Más información</button>
-                    </div>
-                </article>
-            </div>
+    <main class="main">
+      <section class="services block block--white">
+        <div class="container">
+          <h2 class="title">Qué ofrecemos</h2>
+          <div class="section__grid">
+            <article class="card card--large">
+              <div class="card__header">
+                <img
+                  src="/img/illustrations/development-team.svg"
+                  alt="Development team illustration"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Desarrollo</p>
+              <p class="card__text">
+                Tu equipo de programación de alto rendimiento integrados en tu
+                empresa u outsourcing. Entregamos el máximo valor en cada
+                iteración.
+              </p>
+              <div class="card__footer">
+                <button class="button button--outline">Más información</button>
+              </div>
+            </article>
+            <article class="card card--large">
+              <div class="card__header">
+                <img
+                  src="/img/illustrations/classroom-learning.svg"
+                  alt="Classroom illustration"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Cursos</p>
+              <p class="card__text">
+                Quieres aprender una nueva habilidad y generar un punto de
+                inflexión en tu equipo. Enseñamos con cursos prácticos.
+              </p>
+              <div class="card__footer">
+                <button class="button button--outline">Más información</button>
+              </div>
+            </article>
+            <article class="card card--large">
+              <div class="card__header">
+                <img
+                  src="/img/illustrations/virtual-education.svg"
+                  alt="Virtual education illustration"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Formación continua</p>
+              <p class="card__text">
+                Quieres que tu equipo se mantenga en forma a nivel tecnológico.
+                Sesiones periódicas para desarrollar diferentes áreas.
+              </p>
+              <div class="card__footer">
+                <button class="button button--outline">Más información</button>
+              </div>
+            </article>
+          </div>
         </div>
-        <button class="button button--primary" type="button">Contactar</button>
-    </section>
-    <section class="values">
-        <div class="section__wrapper">
-            <h2 class="title">Valores y metodología</h2>
-            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam debitis laborum ut alias expedita, neque vitae tempore, atque consequuntur itaque amet dolorem sint distinctio id obcaecati.</p>
-            <div class="section__grid">
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-droplet"></i>
-                    </div>
-                    <p class="card__title">Simplicidad</p>
-                    <p class="card__text">Lo bueno, si es simple, dos veces bueno.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    <p class="card__title">Respeto</p>
-                    <p class="card__text">Creemos que el respeto a los demás y a uno mismo es la base de todo.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-sliders"></i>
-                    </div>
-                    <p class="card__title">Pragmatismo</p>
-                    <p class="card__text">Huimos de los dogmas buscando el equilibrio entre el coste y el beneficio.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-grip-vertical"></i>
-                    </div>
-                    <p class="card__title">Metodología lean</p>
-                    <p class="card__text">Reducimos el desperdicio con ciclos cortos que minimizan el riesgo.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-wrench"></i>
-                    </div>
-                    <p class="card__title">eXtreme Programming</p>
-                    <p class="card__text">Practicamos TDD, Pair programming, refactoring, integración continua...</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-hammer"></i>
-                    </div>
-                    <p class="card__title">Software crafters</p>
-                    <p class="card__text">Mejoramos nuestras habilidades y compartimos lo aprendido.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <p class="card__title">Análisis en profundidad</p>
-                    <p class="card__text">Buscamos el origen de los problemas para ofrecer la mejor solución.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </div>
-                    <p class="card__title">Visión de negocio</p>
-                    <p class="card__text">Hemos creado startups y entendemos las necesidades de negocio.</p>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <p class="card__title">Visión de desarrollador</p>
-                    <p class="card__text">Como programadores, comprendemos las implicaciones técnicas del producto.</p>
-                </article>
-            </div>
+        <div class="button__wrapper">
+          <button class="button button--primary" type="button">
+            Contactar
+          </button>
         </div>
-        <button class="button button--primary" type="button">Contactar</button>
-    </section>
-    <section class="team">
-        <div class="section__wrapper">
-            <h2 class="title">Conoce al equipo</h2>
-            <div class="section__grid">
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/luis.jpg" alt="Luis Rovirosa profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Luis Rovirosa</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/jordi.jpeg" alt="Jordi Anguela profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Jordi Anguela</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/raul.jpeg" alt="Raúl Jiménez profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Raúl Jimémez</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/concha.jpg" alt="Concha Asensio profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Concha Asensio</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/hugo.jpeg" alt="Hugo Chinchilla profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Hugo Chinchilla</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card card--personal">
-                    <div class="card__header">
-                        <div class="card__image-wrapper">
-                            <img src="/img/about-us/jose.png" alt="Jose Cabrera profile" class="card__image card__image--rounded" />
-                        </div>
-                    </div>
-                    <p class="card__title">Jose Cabrera</p>
-                    <p class="card__text">Slate helps you see how
-                        many more days you need
-                        to work to reach your financial
-                        goal for the month and year.
-                    </p>
-                    <div class="card__footer">
-                        <p class="card__professional">Back-end Developer</p>
-                        <ul class="card__icons">
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="card__icon">
-                                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+      </section>
+      <section class="values block block--grey">
+        <div class="container">
+          <h2 class="title">Valores y metodología</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            debitis laborum ut alias expedita, neque vitae tempore, atque
+            consequuntur itaque amet dolorem sint distinctio id obcaecati.
+          </p>
+          <div class="section__grid">
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <p class="card__title">Simplicidad</p>
+              <p class="card__text">Lo bueno, si es simple, dos veces bueno.</p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <p class="card__title">Respeto</p>
+              <p class="card__text">
+                Creemos que el respeto a los demás y a uno mismo es la base de
+                todo.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <p class="card__title">Pragmatismo</p>
+              <p class="card__text">
+                Huimos de los dogmas buscando el equilibrio entre el coste y el
+                beneficio.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-grip-vertical"></i>
+              </div>
+              <p class="card__title">Metodología lean</p>
+              <p class="card__text">
+                Reducimos el desperdicio con ciclos cortos que minimizan el
+                riesgo.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <p class="card__title">eXtreme Programming</p>
+              <p class="card__text">
+                Practicamos TDD, Pair programming, refactoring, integración
+                continua...
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-hammer"></i>
+              </div>
+              <p class="card__title">Software crafters</p>
+              <p class="card__text">
+                Mejoramos nuestras habilidades y compartimos lo aprendido.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <p class="card__title">Análisis en profundidad</p>
+              <p class="card__text">
+                Buscamos el origen de los problemas para ofrecer la mejor
+                solución.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <p class="card__title">Visión de negocio</p>
+              <p class="card__text">
+                Hemos creado startups y entendemos las necesidades de negocio.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <p class="card__title">Visión de desarrollador</p>
+              <p class="card__text">
+                Como programadores, comprendemos las implicaciones técnicas del
+                producto.
+              </p>
+            </article>
+          </div>
         </div>
-        <button class="button button--primary" type="button">Contactar</button>
-    </section>
-</main>
-<script src="/js/site.js"></script>
-</body>
+        <div class="button__wrapper">
+          <button class="button button--primary" type="button">
+            Contactar
+          </button>
+        </div>
+      </section>
+      <section class="team block block--white">
+        <div class="section__wrapper container">
+          <h2 class="title">Conoce al equipo</h2>
+          <div class="section__grid">
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/luis.jpg"
+                    alt="Luis Rovirosa profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Luis Rovirosa</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/jordi.jpeg"
+                    alt="Jordi Anguela profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Jordi Anguela</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/raul.jpeg"
+                    alt="Raúl Jiménez profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Raúl Jimémez</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/concha.jpg"
+                    alt="Concha Asensio profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Concha Asensio</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/hugo.jpeg"
+                    alt="Hugo Chinchilla profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Hugo Chinchilla</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/jose.png"
+                    alt="Jose Cabrera profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Jose Cabrera</p>
+              <p class="card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="card__footer">
+                <p class="card__professional">Back-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="card__icon">
+                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="button__wrapper">
+          <button class="button button--primary" type="button">
+            Contactar
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="/js/site.js"></script>
+  </body>
 </html>

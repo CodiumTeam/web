@@ -40,18 +40,6 @@
   .title {
     text-align: center;
   }
-
-  button {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .services .title {
-    font-size: 1.438em;
-    line-height: 1.25em;
-  }
 }
 
 //SECTION VALUES
@@ -69,18 +57,6 @@
   p {
     text-align: center;
     color: $dark-grey;
-  }
-
-  button {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .values .title {
-    font-size: 1.438em;
-    line-height: 1.25em;
   }
 }
 
@@ -101,13 +77,14 @@
   }
 }
 
-@media all and (max-width: 768px) {
-  .team .title {
-    font-size: 1.438em;
-    line-height: 1.25em;
-  }
-}
-
 .text-bold {
   font-weight: bold;
+}
+
+.button__wrapper {
+  margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    margin-top: 3rem;
+  }
 }
