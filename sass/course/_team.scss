@@ -1,0 +1,20 @@
+.course__team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem auto;
+
+  .card.card--personal {
+    flex: 0 0 50%;
+    margin: 1rem;
+    max-width: 280px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

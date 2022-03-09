@@ -1,4 +1,5 @@
-@import 'core/variables', 'block', 'course/circle';
+@import 'core/variables', 'block', 'course/circle', 'course/team',
+  'course/calendar';
 
 .resume-wrapper {
   display: grid;
@@ -42,7 +43,7 @@
 .question-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .question {
