@@ -97,19 +97,37 @@
             <label for="name"
               >Nombre<span class="required-asterik">*</span></label
             >
-            <input type="text" id="name" required />
+            <input type="text" id="name" required placeholder="Codium" />
           </div>
           <div>
             <label for="email"
               >Email<span class="required-asterik">*</span></label
             >
-            <input type="email" id="email" />
+            <input type="email" id="email" placeholder="me@test.com" />
           </div>
-          <div>
+          <div id="js-numProgrammers">
             <label for="numProgrammers">
               Nº de programadores <span class="required-asterik">*</span>
             </label>
-            <input type="number" min="0" required id="numProgrammers" />
+            <input
+              type="number"
+              min="0"
+              required
+              id="numProgrammers"
+              placeholder="1"
+            />
+          </div>
+          <div id="js-locality" class="hidden">
+            <label for="locality">
+              Localidad dónde vives<span class="required-asterik">*</span>
+            </label>
+            <input
+              type="text"
+              min="0"
+              required
+              id="locality"
+              placeholder="Madrid"
+            />
           </div>
           <div class="myradio">
             <input
@@ -118,6 +136,7 @@
               id="one"
               class="myradio__input"
               checked
+              value="business"
             />
             <label for="one" class="myradio__label">Para mi empresa</label>
           </div>
@@ -127,6 +146,7 @@
               name="myRadio"
               id="two"
               class="myradio__input"
+              value="user"
             />
             <label for="two" class="myradio__label">Para mí</label>
           </div>
