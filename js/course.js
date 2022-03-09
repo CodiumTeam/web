@@ -55,40 +55,44 @@ document
     const $locality = document.getElementById('locality');
     const $numProgrammers = document.getElementById('numProgrammers');
 
-    if (!hasValue($name)) {
-      ev.preventDefault();
-      addErrorToInput($name);
-      $name.focus();
-    } else {
-      clearErrorMessageFromInput($name);
-    }
+    const hasValidName = validateInput($name);
+    const hasValidEmail = validateInput($email);
+    const hasValidForWhoInput = isForBusiness($radio.value)
+      ? validateInput($numProgrammers)
+      : validateInput($locality);
 
-    if (!hasValue($email)) {
+    if (!hasValidName || !hasValidEmail || !hasValidForWhoInput) {
       ev.preventDefault();
-      addErrorToInput($email);
-      $email.focus();
-    } else {
-      clearErrorMessageFromInput($email);
-    }
 
-    if (isForBusiness($radio.value)) {
-      if (!hasValue($numProgrammers)) {
-        ev.preventDefault();
-        addErrorToInput($numProgrammers);
-        $numProgrammers.focus();
-      } else {
-        clearErrorMessageFromInput($radio);
+      if (!hasValidName) {
+        $name.focus();
+        return;
       }
-    } else {
-      if (!hasValue($locality)) {
-        addErrorToInput($locality);
-        ev.preventDefault();
-        $locality.focus();
-      } else {
-        clearErrorMessageFromInput($locality);
+
+      if (!hasValidEmail) {
+        $email.focus();
+        return;
+      }
+
+      if (!hasValidForWhoInput) {
+        isForBusiness($radio.value)
+          ? $numProgrammers.focus()
+          : $locality.focus();
       }
     }
   });
+
+function validateInput($input) {
+  if (!hasValue($input)) {
+    addErrorToInput($input);
+
+    return false;
+  }
+
+  clearErrorMessageFromInput($input);
+
+  return true;
+}
 
 function addErrorToInput($input) {
   $input.classList.add('has-error');
