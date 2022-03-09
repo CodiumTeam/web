@@ -502,6 +502,9 @@ a {
   border-radius: 50%;
 }
 
+.card--large {
+  box-shadow: rgba(16, 24, 40, 0.3) 0px 0.5px 2px;
+}
 .card--large .card__header {
   font-size: 72px;
   margin-bottom: 16px;
