@@ -1,20 +1,12 @@
 @import 'core/variables', 'core/container', 'block', 'course/circle',
   'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel',
-  'layout/footer', 'core/inputs';
+  'layout/footer', 'core/inputs', 'core/utilities';
 
 .resume-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   padding: 0 0.5em;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-dark-grey {
-  color: $dark-grey;
 }
 
 .bg-white {

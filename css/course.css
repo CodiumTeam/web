@@ -441,19 +441,19 @@ label {
   color: #ff6d6d;
 }
 
-.resume-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  padding: 0 0.5em;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-dark-grey {
   color: #737373;
+}
+
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0 0.5em;
 }
 
 .bg-white {
