@@ -1,5 +1,6 @@
 /* RADIO BUTTON STLYING BEGINS */
 $theme-color: $primary-brand-color;
+$error-input: #ff6d6d;
 
 input[type='text'],
 input[type='email'],
@@ -21,6 +22,11 @@ textarea {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
     border-color: $primary-brand-color;
+  }
+
+  &.has-error {
+    border-color: $error-input;
+    box-shadow: 0 0 0 0.2rem rgba(255, 18, 18, 0.25);
   }
 }
 
@@ -102,7 +108,7 @@ label {
 }
 
 .required-asterik {
-  color: #ff6d6d;
+  color: $error-input;
 }
 
 .form {
@@ -136,4 +142,8 @@ label {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #d6d6d6;
+}
+
+.error-message {
+  color: $error-input;
 }

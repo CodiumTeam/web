@@ -23,7 +23,7 @@ function showCorrectInputDependingOnSelectedRadio(event) {
   document.getElementById('js-locality').classList.toggle('hidden');
   document.getElementById('js-numProgrammers').classList.toggle('hidden');
 
-  if (value === 'business') {
+  if (isForBusiness(value)) {
     const $numProgrammers = document.getElementById('numProgrammers');
 
     if (!hasValue($numProgrammers)) {
@@ -38,6 +38,79 @@ function showCorrectInputDependingOnSelectedRadio(event) {
   }
 }
 
+function isForBusiness(value) {
+  return value === 'business';
+}
+
 function hasValue(inputElement) {
   return inputElement.value.length > 0;
+}
+
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (ev) {
+    const $name = document.getElementById('name');
+    const $email = document.getElementById('email');
+    const $radio = document.querySelector('input[name="myRadio"]:checked');
+    const $locality = document.getElementById('locality');
+    const $numProgrammers = document.getElementById('numProgrammers');
+
+    if (!hasValue($name)) {
+      ev.preventDefault();
+      addErrorToInput($name);
+      $name.focus();
+      return false;
+    } else {
+      clearErrorMessageFromInput($name);
+    }
+
+    if (!hasValue($email)) {
+      ev.preventDefault();
+      addErrorToInput($email);
+      $email.focus();
+
+      return false;
+    } else {
+      clearErrorMessageFromInput($email);
+    }
+
+    if (isForBusiness($radio.value)) {
+      if (!hasValue($numProgrammers)) {
+        ev.preventDefault();
+        addErrorToInput($numProgrammers);
+        $numProgrammers.focus();
+
+        return false;
+      } else {
+        clearErrorMessageFromInput($radio);
+      }
+    } else {
+      if (!hasValue($locality)) {
+        addErrorToInput($locality);
+        ev.preventDefault();
+        $locality.focus();
+
+        return false;
+      } else {
+        clearErrorMessageFromInput($locality);
+      }
+    }
+
+    return true;
+  });
+
+function addErrorToInput($input) {
+  $input.classList.add('has-error');
+  const el = document.createElement('span');
+  el.innerHTML = '<span class="error-message">Campo requerido</span>';
+  insertAfter($input, el);
+}
+
+function insertAfter(referenceNode, newNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function clearErrorMessageFromInput($input) {
+  $input.classList.remove('has-error');
+  $input.nextElementSibling && $input.nextElementSibling.remove();
 }

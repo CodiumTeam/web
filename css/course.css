@@ -328,6 +328,13 @@ textarea:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   border-color: #2fade2;
 }
+input[type=text].has-error,
+input[type=email].has-error,
+input[type=number].has-error,
+textarea.has-error {
+  border-color: #ff6d6d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 18, 18, 0.25);
+}
 
 label {
   display: block;
@@ -427,6 +434,10 @@ label {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #d6d6d6;
+}
+
+.error-message {
+  color: #ff6d6d;
 }
 
 .resume-wrapper {
