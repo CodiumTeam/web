@@ -11,6 +11,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const yOffset = document.getElementById('js-header').offsetHeight;
     const blockPadding = 32;
     const element = document.querySelector(this.getAttribute('href'));
+
+    if (!element) return;
+
     const y =
       element.getBoundingClientRect().top +
       window.pageYOffset -
