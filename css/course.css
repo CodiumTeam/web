@@ -368,5 +368,9 @@
     right: 10rem;
   }
 }
+.course__metodology {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
 
 /*# sourceMappingURL=course.css.map */
