@@ -1,0 +1,50 @@
+.footer {
+  &-wrapper {
+    background-color: $darkest-grey;
+  }
+
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+
+  &__image {
+    max-width: 100px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  &__item {
+    margin-right: 0.2rem;
+    a {
+      color: white;
+      text-decoration: none;
+
+      .fa-inverse {
+        color: $darkest-grey;
+      }
+    }
+
+    &--blog {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    flex-direction: column;
+    &__list {
+      margin-top: 1rem;
+    }
+  }
+}
