@@ -257,6 +257,10 @@
   background-color: #0e9edc;
 }
 
+.glide .glide__slide {
+  height: auto;
+}
+
 .footer {
   padding: 1rem 1rem;
   display: flex;

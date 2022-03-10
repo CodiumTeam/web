@@ -605,6 +605,7 @@ a {
 
   .card.card--opinion {
     flex-direction: row;
+    height: 100%;
   }
 }
 .resources-page {
