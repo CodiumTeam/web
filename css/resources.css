@@ -386,12 +386,13 @@ a {
   list-style: none;
 }
 
-.navbar__item {
-  margin-right: 15px;
+.navbar__item--dropdown {
+  margin-right: 1rem;
 }
 .navbar__item a {
   color: #fff;
   text-decoration: none;
+  padding: 1rem;
 }
 
 @media all and (max-width: 768px) {

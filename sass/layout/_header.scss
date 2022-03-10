@@ -35,11 +35,14 @@
 }
 
 .navbar__item {
-  margin-right: 15px;
+  &--dropdown {
+    margin-right: 1rem;
+  }
 
   a {
     color: #fff;
     text-decoration: none;
+    padding: 1rem;
   }
 }
 

@@ -24,3 +24,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     menu.classList.remove('is-visible');
   });
 });
+
+let dropdown = document.querySelector('.dropdown');
+dropdown &&
+  dropdown.addEventListener('click', function () {
+    dropdown.classList.toggle('active');
+  });
