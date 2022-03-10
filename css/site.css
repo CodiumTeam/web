@@ -527,7 +527,8 @@ a {
   }
 
   .hero__image {
-    max-width: 300px;
+    margin-top: 2rem;
+    max-width: 350px;
   }
 }
 @media all and (max-width: 768px) {

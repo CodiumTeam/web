@@ -578,32 +578,9 @@ label {
   flex: 0 0 60%;
 }
 
-.course-video {
-  display: none;
-  width: 480px;
-  height: 270px;
-  margin-top: 1rem;
-}
-
-.course-video-mobile {
-  margin: 0;
-}
-.course-video-mobile a {
-  color: #fff;
-  font-size: 13px;
-}
-
 @media (min-width: 768px) {
   .course-hero {
     flex-direction: row;
-  }
-
-  .course-video {
-    display: block;
-  }
-
-  .course-video-mobile {
-    display: none;
   }
 }
 .hidden {
