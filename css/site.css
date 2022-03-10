@@ -396,6 +396,7 @@ a {
   margin-right: 1rem;
 }
 .navbar__item a {
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
   padding: 1rem;
@@ -885,20 +886,30 @@ a {
 }
 .title {
   color: #0a073a;
-  font-size: 2.5em;
+  font-size: 2em;
   font-style: normal;
   font-weight: bold;
   line-height: 2.94em;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.5em;
+  }
+}
 
 .small-title {
   color: #0a073a;
-  font-size: 1.438em;
+  font-size: 1.138em;
   font-style: normal;
   font-weight: bold;
   line-height: 1.25em;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .small-title {
+    font-size: 1.438em;
+  }
 }
 
 .m-0 {

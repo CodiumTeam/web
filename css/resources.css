@@ -390,6 +390,7 @@ a {
   margin-right: 1rem;
 }
 .navbar__item a {
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
   padding: 1rem;
