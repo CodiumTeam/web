@@ -136,7 +136,7 @@
 
 .course-calendar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   flex-direction: column;
 }
@@ -144,7 +144,7 @@
   margin-top: 2rem;
 }
 .course-calendar__day {
-  min-width: 90px;
+  min-width: 80px;
   position: relative;
 }
 .course-calendar__day-item {

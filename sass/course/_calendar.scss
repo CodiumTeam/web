@@ -8,7 +8,7 @@
 
 .course-calendar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   flex-direction: column;
 
@@ -17,7 +17,7 @@
   }
 
   &__day {
-    min-width: 90px;
+    min-width: 80px;
     position: relative;
 
     &-item {
