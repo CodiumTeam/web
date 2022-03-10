@@ -8,7 +8,7 @@ menuButton.addEventListener('click', controlMobileMenu);
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    const yOffset = 0;
+    const yOffset = document.getElementById('js-header').offsetHeight;
     const blockPadding = 32;
     const element = document.querySelector(this.getAttribute('href'));
 
