@@ -516,10 +516,17 @@ a {
   margin-bottom: 90px;
   margin-top: 0;
 }
+.hero__image {
+  max-width: 100px;
+}
 
 @media all and (min-width: 768px) {
   .hero-wrapper {
     padding-top: 2rem;
+  }
+
+  .hero__image {
+    max-width: 300px;
   }
 }
 @media all and (max-width: 768px) {

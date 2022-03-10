@@ -32,11 +32,21 @@
     margin-bottom: 90px;
     margin-top: 0;
   }
+
+  &__image {
+    max-width: 100px;
+  }
 }
 
 @media all and (min-width: 768px) {
   .hero-wrapper {
     padding-top: 2rem;
+  }
+
+  .hero {
+    &__image {
+      max-width: 300px;
+    }
   }
 }
 
