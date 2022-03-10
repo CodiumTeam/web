@@ -1,8 +1,4 @@
 .footer {
-  &-wrapper {
-    background-color: $darkest-grey;
-  }
-
   padding: 1rem 1rem;
   display: flex;
   flex-direction: row;
@@ -23,16 +19,17 @@
     margin: 0;
     padding: 0;
     margin-left: auto;
+    list-style: none;
   }
 
   &__item {
     margin-right: 0.2rem;
     a {
-      color: white;
+      color: $darkest-grey;
       text-decoration: none;
 
       .fa-inverse {
-        color: $darkest-grey;
+        color: $lightest-grey;
       }
     }
 

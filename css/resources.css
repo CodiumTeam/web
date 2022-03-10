@@ -355,7 +355,7 @@ a {
 }
 
 .header {
-  background-color: #0a073a;
+  background-color: #fafcfe;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -372,7 +372,7 @@ a {
   padding-left: 24px;
   width: 170px;
 }
-.header__icon {
+.header .header__icon {
   display: none;
 }
 
@@ -392,7 +392,7 @@ a {
 }
 .navbar__item a {
   cursor: pointer;
-  color: #fff;
+  color: #0a073a;
   text-decoration: none;
   padding: 1rem;
 }
@@ -403,15 +403,15 @@ a {
     position: relative;
   }
 
-  .header__icon {
-    color: #ffffff;
+  .header .header__icon {
+    color: #0a073a;
     display: inline-block;
     font-size: 24px;
     margin-right: 15px;
   }
 
   .navbar {
-    background-color: #0a073a;
+    background-color: #f6f9fd;
     display: none;
     position: absolute;
     top: 50px;

@@ -361,7 +361,7 @@ a {
 }
 
 .header {
-  background-color: #0a073a;
+  background-color: #fafcfe;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -378,7 +378,7 @@ a {
   padding-left: 24px;
   width: 170px;
 }
-.header__icon {
+.header .header__icon {
   display: none;
 }
 
@@ -398,7 +398,7 @@ a {
 }
 .navbar__item a {
   cursor: pointer;
-  color: #fff;
+  color: #0a073a;
   text-decoration: none;
   padding: 1rem;
 }
@@ -409,15 +409,15 @@ a {
     position: relative;
   }
 
-  .header__icon {
-    color: #ffffff;
+  .header .header__icon {
+    color: #0a073a;
     display: inline-block;
     font-size: 24px;
     margin-right: 15px;
   }
 
   .navbar {
-    background-color: #0a073a;
+    background-color: #f6f9fd;
     display: none;
     position: absolute;
     top: 50px;
@@ -449,9 +449,6 @@ a {
   align-content: center;
   align-items: center;
 }
-.footer-wrapper {
-  background-color: #0a073a;
-}
 .footer__image {
   max-width: 100px;
 }
@@ -463,16 +460,17 @@ a {
   margin: 0;
   padding: 0;
   margin-left: auto;
+  list-style: none;
 }
 .footer__item {
   margin-right: 0.2rem;
 }
 .footer__item a {
-  color: white;
+  color: #0a073a;
   text-decoration: none;
 }
 .footer__item a .fa-inverse {
-  color: #0a073a;
+  color: #fafcfe;
 }
 .footer__item--blog {
   margin-right: 0.5rem;
@@ -487,7 +485,7 @@ a {
 }
 
 .hero-wrapper {
-  background: linear-gradient(260.14deg, #2a3367 2.4%, #0a073a 100%);
+  background: #fafcfe;
   padding-top: 5rem;
 }
 
@@ -502,7 +500,7 @@ a {
   padding: 0 24px;
 }
 .hero__title {
-  color: #ffffff;
+  color: #0a073a;
   font-size: 2.5em;
   line-height: 47px;
   font-style: normal;
@@ -513,7 +511,7 @@ a {
 .hero__subtitle {
   text-align: center;
   font-size: 1.438em;
-  color: #fafcfe;
+  color: #0a073a;
   line-height: 1.25em;
   font-style: normal;
   margin-bottom: 90px;
@@ -844,12 +842,12 @@ a {
 .dropdown::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 8px;
   left: 4.6rem;
   z-index: 1000;
   width: 8px;
   height: 8px;
-  border: 2px solid #333;
+  border: 2px solid #0a073a;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   transform: rotate(135deg);
@@ -859,12 +857,12 @@ a {
 
 .dropdown.active::before {
   transform: rotate(-45deg);
-  top: 7px;
+  top: 5px;
 }
 
 .dropdown .options {
   width: 100%;
-  background: #0a073a;
+  background: #fafcfe;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
@@ -884,7 +882,6 @@ a {
 }
 
 .dropdown .options li:hover {
-  background: #2fade2;
   color: #fff;
 }
 

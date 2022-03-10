@@ -1,5 +1,5 @@
 .hero-wrapper {
-  background: linear-gradient(260.14deg, #2a3367 2.4%, #0a073a 100%);
+  background: $lightest-grey;
   padding-top: 5rem;
 }
 
@@ -14,7 +14,7 @@
   padding: 0 24px;
 
   &__title {
-    color: $white;
+    color: $darkest-grey;
     font-size: 2.5em;
     line-height: 47px;
     font-style: normal;
@@ -26,7 +26,7 @@
   &__subtitle {
     text-align: center;
     font-size: 1.438em;
-    color: $lightest-grey;
+    color: $darkest-grey;
     line-height: 1.25em;
     font-style: normal;
     margin-bottom: 90px;

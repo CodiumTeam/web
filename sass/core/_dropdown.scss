@@ -5,12 +5,12 @@
 .dropdown::before {
   content: '';
   position: absolute;
-  top: 3px;
+  top: 8px;
   left: 4.6rem;
   z-index: 1000;
   width: 8px;
   height: 8px;
-  border: 2px solid #333;
+  border: 2px solid $darkest-grey;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   transform: rotate(135deg);
@@ -20,12 +20,12 @@
 
 .dropdown.active::before {
   transform: rotate(-45deg);
-  top: 7px;
+  top: 5px;
 }
 
 .dropdown .options {
   width: 100%;
-  background: $darkest-grey;
+  background: $lightest-grey;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
@@ -45,7 +45,6 @@
 }
 
 .dropdown .options li:hover {
-  background: $primary-brand-color;
   color: #fff;
 }
 

@@ -270,9 +270,6 @@
   align-content: center;
   align-items: center;
 }
-.footer-wrapper {
-  background-color: #0a073a;
-}
 .footer__image {
   max-width: 100px;
 }
@@ -284,16 +281,17 @@
   margin: 0;
   padding: 0;
   margin-left: auto;
+  list-style: none;
 }
 .footer__item {
   margin-right: 0.2rem;
 }
 .footer__item a {
-  color: white;
+  color: #0a073a;
   text-decoration: none;
 }
 .footer__item a .fa-inverse {
-  color: #0a073a;
+  color: #fafcfe;
 }
 .footer__item--blog {
   margin-right: 0.5rem;
@@ -359,7 +357,6 @@ label {
   cursor: pointer;
   position: relative;
   transition: all 0.5s;
-  color: #fff;
   margin-top: 1.5em;
 }
 .myradio__label::before, .myradio__label::after {
