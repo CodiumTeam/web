@@ -473,6 +473,13 @@ a {
   text-align: center;
   white-space: normal;
 }
+.card__name, .card__profession {
+  margin: 0;
+}
+.card__profession {
+  font-size: 14px;
+  color: #737373;
+}
 
 .card__header {
   color: #2fade2;
