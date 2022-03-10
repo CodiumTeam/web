@@ -25,8 +25,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-let dropdown = document.querySelector('.dropdown');
+const dropdown = document.querySelector('.dropdown');
 dropdown &&
   dropdown.addEventListener('click', function () {
     dropdown.classList.toggle('active');
   });
+
+document.addEventListener('click', function (event) {
+  const clickedElement = event.target;
+  const dropdowns = document.querySelectorAll('.dropdown');
+  if (clickedElement.closest('.navbar__item') === null) {
+    for (const dropdown of dropdowns) {
+      dropdown.classList.remove('active');
+    }
+  }
+});
