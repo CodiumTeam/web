@@ -44,5 +44,5 @@ function sendEmail($params)
         ->setTo(['luis@codium.team' => 'Luis Rovirosa', 'jordi@codium.team' => 'Jordi Anguela'])
         ->setBody($body);
 
-    $mailer->send($email);
+    // $mailer->send($email);
 }

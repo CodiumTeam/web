@@ -10,14 +10,6 @@ var glide = new Glide('.glide', {
   gap: 20,
 });
 
-glide.mount();
-
-document
-  .querySelectorAll('input[type=radio][name="myRadio"]')
-  .forEach(function (radio) {
-    radio.addEventListener('change', showCorrectInputDependingOnSelectedRadio);
-  });
-
 function showCorrectInputDependingOnSelectedRadio(event) {
   const { value } = event.target;
 
@@ -33,41 +25,40 @@ function hasValue(inputElement) {
   return inputElement.value.length > 0;
 }
 
-document
-  .getElementById('contactForm')
-  .addEventListener('submit', function (ev) {
-    const $name = document.getElementById('name');
-    const $email = document.getElementById('email');
-    const $radio = document.querySelector('input[name="myRadio"]:checked');
-    const $locality = document.getElementById('locality');
-    const $numProgrammers = document.getElementById('numProgrammers');
+function validateForm(ev) {
+  const $name = document.getElementById('name');
+  const $email = document.getElementById('email');
+  const $radio = document.querySelector('input[name="myRadio"]:checked');
+  const $locality = document.getElementById('locality');
+  const $numProgrammers = document.getElementById('numProgrammers');
 
-    const hasValidName = validateInput($name);
-    const hasValidEmail = validateInput($email);
-    const hasValidForWhoInput = isForBusiness($radio.value)
-      ? validateInput($numProgrammers)
-      : validateInput($locality);
+  const hasValidName = validateInput($name);
+  const hasValidEmail = validateInput($email);
+  const hasValidForWhoInput = isForBusiness($radio.value)
+    ? validateInput($numProgrammers)
+    : validateInput($locality);
 
-    if (!hasValidName || !hasValidEmail || !hasValidForWhoInput) {
-      ev.preventDefault();
+  if (!hasValidName || !hasValidEmail || !hasValidForWhoInput) {
+    ev.preventDefault();
 
-      if (!hasValidName) {
-        $name.focus();
-        return;
-      }
-
-      if (!hasValidEmail) {
-        $email.focus();
-        return;
-      }
-
-      if (!hasValidForWhoInput) {
-        isForBusiness($radio.value)
-          ? $numProgrammers.focus()
-          : $locality.focus();
-      }
+    if (!hasValidName) {
+      $name.focus();
+      return false;
     }
-  });
+
+    if (!hasValidEmail) {
+      $email.focus();
+      return false;
+    }
+
+    if (!hasValidForWhoInput) {
+      isForBusiness($radio.value) ? $numProgrammers.focus() : $locality.focus();
+      return false;
+    }
+  }
+
+  return true;
+}
 
 function validateInput($input) {
   if (!hasValue($input)) {
@@ -98,4 +89,53 @@ function insertAfter(referenceNode, newNode) {
 function clearErrorMessageFromInput($input) {
   $input.classList.remove('has-error');
   $input.nextElementSibling && $input.nextElementSibling.remove();
+}
+
+glide.mount();
+
+document
+  .querySelectorAll('input[type=radio][name="myRadio"]')
+  .forEach(function (radio) {
+    radio.addEventListener('change', showCorrectInputDependingOnSelectedRadio);
+  });
+
+document.getElementById('contactForm').addEventListener('submit', function () {
+  event.preventDefault();
+
+  const isValid = validateForm(event);
+
+  if (!isValid) return;
+
+  if (!grecaptcha.getResponse()) {
+    grecaptcha.execute();
+    return;
+  }
+});
+
+// This is called via data-callback
+function captchaCompleted() {
+  const $form = document.getElementById('contactForm');
+  const formData = new FormData($form);
+  const url = $form.getAttribute('action');
+
+  formData.append('trainingType', $form.getAttribute('data-training-type'));
+
+  document.getElementById('js-submit').disabled = true;
+
+  fetch(url, {
+    method: 'POST',
+    body: formData,
+  })
+    .then(function (response) {
+      if (response.ok) {
+        document.getElementById('js-submit').disabled = false;
+        document.getElementById('js-show-success').classList.remove('hidden');
+        $form.remove();
+      } else {
+        document.getElementById('js-submit').disabled = false;
+      }
+    })
+    .catch((error) => {
+      document.getElementById('js-submit').disabled = false;
+    });
 }

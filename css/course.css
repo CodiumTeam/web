@@ -596,4 +596,10 @@ label {
   margin: 0 0.8rem;
 }
 
+.success-check {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  color: #5ab45e;
+}
+
 /*# sourceMappingURL=course.css.map */
