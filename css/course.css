@@ -270,6 +270,9 @@
   align-content: center;
   align-items: center;
 }
+.footer-wrapper {
+  background-color: #1a1919;
+}
 .footer__image {
   max-width: 100px;
 }
@@ -287,11 +290,11 @@
   margin-right: 0.2rem;
 }
 .footer__item a {
-  color: #1a1919;
+  color: #fff;
   text-decoration: none;
 }
 .footer__item a .fa-inverse {
-  color: #fafcfe;
+  color: #1a1919;
 }
 .footer__item--blog {
   margin-right: 0.5rem;
@@ -410,6 +413,8 @@ label {
 
 .form {
   padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .form--white .form__title {
   color: #fff;

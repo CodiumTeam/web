@@ -926,12 +926,85 @@
           </div>
         </div>
       </section>
+      <section class="block block--lila">
+        <div class="container">
+          <section>
+            <h2 class="title text-center">Me gustaría saber más...</h2>
+            <p class="text-center">
+              La mejor forma de obtener más información es hablando con
+              nosotros. Rellena este formulario o envía un email al
+              <strong>info@codium.team</strong> y busquemos un momento para
+              hablar.
+            </p>
+          </section>
+          <form class="form" id="contactForm">
+            <div>
+              <label for="name"
+                >Nombre<span class="required-asterik">*</span></label
+              >
+              <input type="text" id="name" placeholder="Codium" />
+            </div>
+
+            <div>
+              <label for="email"
+                >Email<span class="required-asterik">*</span></label
+              >
+              <input type="email" id="email" placeholder="me@test.com" />
+            </div>
+
+            <div id="js-numProgrammers">
+              <label for="numProgrammers">
+                Nº de programadores <span class="required-asterik">*</span>
+              </label>
+              <input
+                type="number"
+                min="0"
+                id="numProgrammers"
+                placeholder="1"
+              />
+            </div>
+            <div id="js-locality" class="hidden">
+              <label for="locality">
+                Localidad dónde vives<span class="required-asterik">*</span>
+              </label>
+              <input type="text" min="0" id="locality" placeholder="Madrid" />
+            </div>
+
+            <div class="myradio">
+              <input
+                type="radio"
+                name="myRadio"
+                id="one"
+                class="myradio__input"
+                checked
+                value="business"
+              />
+              <label for="one" class="myradio__label">Para mi empresa</label>
+            </div>
+            <div class="myradio">
+              <input
+                type="radio"
+                name="myRadio"
+                id="two"
+                class="myradio__input"
+                value="user"
+              />
+              <label for="two" class="myradio__label">Para mí</label>
+            </div>
+            <div class="text-center">
+              <button class="button button--primary submit-button">
+                Pedir información
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <div class="footer-wrapper">
       <footer class="container footer">
         <a href="/">
           <img
-            src="/img/resources/codium-brand-rectangle-black.svg"
+            src="/img/resources/codium-brand-rectangle-white.svg"
             alt="Logo de Codium"
             class="footer__image"
           />

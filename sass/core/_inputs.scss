@@ -113,6 +113,9 @@ label {
 
 .form {
   padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+
   &--white {
     .form__title {
       color: #fff;
