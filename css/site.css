@@ -517,11 +517,27 @@ a {
   color: #1a1919;
   line-height: 1.25em;
   font-style: normal;
-  margin-bottom: 90px;
   margin-top: 0;
 }
 .hero__image {
   max-width: 250px;
+}
+.hero--home {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+.hero--home .hero__title-wrapper {
+  width: 100%;
+  order: 2;
+}
+.hero__home-image {
+  width: 100%;
+  text-align: center;
+  order: 1;
 }
 
 @media all and (min-width: 768px) {
@@ -529,6 +545,9 @@ a {
     padding-top: 2rem;
   }
 
+  .hero__subtitle {
+    margin-bottom: 5rem;
+  }
   .hero__image {
     margin-top: 2rem;
     max-width: 350px;
@@ -536,10 +555,22 @@ a {
   .hero__image--huge {
     max-width: 450px;
   }
+  .hero--home {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero--home .hero__title-wrapper {
+    flex: 0 0 50%;
+    order: 1;
+  }
+  .hero__home-image {
+    order: 2;
+    display: block;
+  }
 }
 @media all and (max-width: 768px) {
   .hero {
-    max-height: 400px;
+    max-height: 500px;
   }
   .hero__title {
     font-size: 1.438em;
@@ -548,6 +579,11 @@ a {
   .hero__subtitle {
     font-size: 1em;
     line-height: 19px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .hero__home-image img {
+    max-width: 380px;
   }
 }
 .card {
@@ -589,7 +625,8 @@ a {
 }
 
 .card__image {
-  max-width: 210px;
+  max-width: 200px;
+  width: 100%;
 }
 .card__image--rounded {
   max-width: 150px;
@@ -756,6 +793,11 @@ a {
 .values p {
   text-align: center;
   color: #737373;
+}
+
+.section__max {
+  max-width: 1000px;
+  margin: 2.5rem auto 1rem auto;
 }
 
 .team {

@@ -505,7 +505,8 @@ a {
 }
 
 .card__image {
-  max-width: 210px;
+  max-width: 200px;
+  width: 100%;
 }
 .card__image--rounded {
   max-width: 150px;
