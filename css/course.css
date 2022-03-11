@@ -193,6 +193,7 @@
 }
 .tdd-value__image {
   max-width: 100%;
+  margin: 0 0 2rem 0;
 }
 
 @media (min-width: 768px) {
