@@ -5,7 +5,7 @@
 .dropdown::before {
   content: '';
   position: absolute;
-  top: 8px;
+  top: 3px;
   left: 4.6rem;
   z-index: 1000;
   width: 8px;
@@ -13,14 +13,14 @@
   border: 2px solid $darkest-grey;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
-  transform: rotate(135deg);
+  transform: rotate(-45deg);
   transition: 0.5s;
   pointer-events: none;
 }
 
 .dropdown.active::before {
-  transform: rotate(-45deg);
-  top: 5px;
+  transform: rotate(135deg);
+  top: 7px;
 }
 
 .dropdown .options {

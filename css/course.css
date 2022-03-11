@@ -40,7 +40,7 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-color: #F6F8FB;
+  background-color: #f6f8fb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,7 +287,7 @@
   margin-right: 0.2rem;
 }
 .footer__item a {
-  color: #0a073a;
+  color: #1a1919;
   text-decoration: none;
 }
 .footer__item a .fa-inverse {
@@ -376,7 +376,7 @@ label {
   transition: all 0.5s;
 }
 .myradio__label::after {
-  background-color: #0a073a;
+  background-color: #1a1919;
   top: 6px;
   left: 12px;
   transition: all 0.15s;
@@ -391,7 +391,7 @@ label {
   border: 2px solid #2fade2;
 }
 .myradio__input:checked ~ .myradio__label::before {
-  background-color: #0a073a;
+  background-color: #1a1919;
   border: 2px solid #2fade2;
 }
 .myradio__input:checked ~ .myradio__label::after {
@@ -450,17 +450,6 @@ label {
   color: #737373;
 }
 
-.resume-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  padding: 0 0.5em;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
 .resume__title {
   font-weight: bold;
   font-size: 14px;
@@ -512,17 +501,6 @@ label {
 }
 
 @media (min-width: 768px) {
-  .resume-wrapper {
-    gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .resume-wrapper .resume__title {
-    margin: 1rem 0 0;
-  }
-  .resume-wrapper .resume__text {
-    margin-bottom: 1em;
-  }
-
   .question-wrapper {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 4rem;
@@ -585,6 +563,31 @@ label {
 }
 .hidden {
   display: none;
+}
+
+.course__information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+.course__information-wrapper {
+  margin: 2rem 0;
+}
+.course__information i {
+  color: #2fade2;
+  font-size: 1.5rem;
+  min-width: 35px;
+}
+.course__information-text {
+  margin: 0 0.8rem;
+}
+.course__information-desc {
+  font-size: 14px;
+  color: #737373;
+  margin: 0 0.8rem;
 }
 
 /*# sourceMappingURL=course.css.map */
