@@ -701,6 +701,11 @@ a {
     height: 100%;
   }
 }
+.card.card--success {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
 .section__wrapper {
   margin-left: auto;
   margin-right: auto;

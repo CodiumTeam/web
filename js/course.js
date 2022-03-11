@@ -128,9 +128,18 @@ function captchaCompleted() {
   })
     .then(function (response) {
       if (response.ok) {
-        document.getElementById('js-submit').disabled = false;
-        document.getElementById('js-show-success').classList.remove('hidden');
         $form.remove();
+
+        const $successBlock = document.getElementById('js-show-success');
+        $successBlock.classList.remove('hidden');
+
+        const yOffset = document.getElementById('js-header').offsetHeight;
+        const y =
+          $successBlock.getBoundingClientRect().top +
+          window.pageYOffset -
+          yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
         document.getElementById('js-submit').disabled = false;
       }
