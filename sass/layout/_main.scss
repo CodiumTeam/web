@@ -92,7 +92,7 @@
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 10rem;
+    // grid-auto-rows: 10rem;
     gap: 1rem;
   }
 
@@ -119,7 +119,7 @@
       &__grid {
         margin-top: 2rem;
         display: grid;
-        grid-auto-rows: 10rem;
+        // grid-auto-rows: 10rem;
         gap: 1rem;
       }
       img {
