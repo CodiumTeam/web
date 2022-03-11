@@ -47,6 +47,10 @@
     &__image {
       margin-top: 2rem;
       max-width: 350px;
+
+      &--huge {
+        max-width: 450px;
+      }
     }
   }
 }
