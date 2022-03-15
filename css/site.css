@@ -879,22 +879,28 @@ a {
 .contact--right {
   max-width: 600px;
 }
+.contact__form--container {
+  width: 70%;
+}
 .contact__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+.contact__form--name, .contact__form--mail, .contact__form--message {
+  margin-bottom: 0.5rem;
+}
 .contact__form #name,
 .contact__form #mail {
-  width: 70%;
+  width: 100%;
   margin-bottom: 2rem;
 }
 .contact__form textarea {
-  width: 70%;
+  width: 100%;
 }
 .contact__form .button {
-  align-self: flex-start;
+  align-self: flex-end;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
