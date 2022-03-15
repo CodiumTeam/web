@@ -146,6 +146,12 @@
   .title {
     text-align: center;
   }
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contact {
@@ -197,5 +203,24 @@
   .required::after {
     content: '*';
     color: red;
+  }
+
+  @media all and (max-width: 768px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__form--container {
+        width: 100%;
+      }
+
+      &__form {
+        .button {
+          align-self: center;
+        }
+      }
+    }
   }
 }

@@ -868,6 +868,13 @@ a {
 .contact .section__wrapper .title {
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  .contact .section__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .contact--left {
   display: flex;
@@ -907,6 +914,20 @@ a {
 .contact .required::after {
   content: "*";
   color: red;
+}
+@media all and (max-width: 768px) {
+  .contact .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact__form--container {
+    width: 100%;
+  }
+  .contact .contact__form .button {
+    align-self: center;
+  }
 }
 
 .button {
