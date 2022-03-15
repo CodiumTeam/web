@@ -183,4 +183,9 @@
       margin-bottom: 1rem;
     }
   }
+
+  .required::after {
+    content: '*';
+    color: red;
+  }
 }
