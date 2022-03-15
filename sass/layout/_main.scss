@@ -136,3 +136,51 @@
     }
   }
 }
+
+//SECTION CONTACT
+.contact .section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    text-align: center;
+  }
+}
+
+.contact {
+  &--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  &--right {
+    max-width: 600px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    #name,
+    #mail {
+      width: 70%;
+      margin-bottom: 2rem;
+    }
+
+    textarea {
+      width: 70%;
+    }
+
+    .button {
+      align-self: flex-start;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

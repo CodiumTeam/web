@@ -860,6 +860,45 @@ a {
   }
 }
 
+.contact .section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .section__wrapper .title {
+  text-align: center;
+}
+
+.contact--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+.contact--right {
+  max-width: 600px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact__form #name,
+.contact__form #mail {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.contact__form textarea {
+  width: 70%;
+}
+.contact__form .button {
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .button {
   border: 1px solid transparent;
   border-radius: 5px;
