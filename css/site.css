@@ -842,7 +842,7 @@ a {
   text-align: center;
 }
 .clients img {
-  height: 70%;
+  max-height: 70%;
   max-width: 80%;
 }
 @media all and (max-width: 768px) {
