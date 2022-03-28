@@ -40,6 +40,14 @@ document.addEventListener('click', function (event) {
   }
 });
 
+const trackEvents = document.querySelectorAll('[data-trackevent]');
+trackEvents.forEach((element) => {
+  element.addEventListener('click', (event) => {
+    const events = (event.currentTarget.dataset.trackevent || '').split('.');
+    trackEvent(events[0], events[1], events[2]);
+  });
+});
+
 function validateInput($input) {
   if (!hasValue($input)) {
     addErrorToInput($input);
@@ -74,4 +82,8 @@ function insertAfter(referenceNode, newNode) {
 function clearErrorMessageFromInput($input) {
   $input.classList.remove('has-error');
   $input.nextElementSibling && $input.nextElementSibling.remove();
+}
+
+function trackEvent(category, action, label) {
+  ga && ga('send', 'event', category, action, label);
 }
