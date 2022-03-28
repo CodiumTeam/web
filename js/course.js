@@ -21,10 +21,6 @@ function isForBusiness(value) {
   return value === 'business';
 }
 
-function hasValue(inputElement) {
-  return inputElement.value.length > 0;
-}
-
 function validateForm(ev) {
   const $name = document.getElementById('name');
   const $email = document.getElementById('email');
@@ -58,37 +54,6 @@ function validateForm(ev) {
   }
 
   return true;
-}
-
-function validateInput($input) {
-  if (!hasValue($input)) {
-    addErrorToInput($input);
-
-    return false;
-  }
-
-  clearErrorMessageFromInput($input);
-
-  return true;
-}
-
-function addErrorToInput($input) {
-  $input.classList.add('has-error');
-
-  if ($input.nextElementSibling) return;
-
-  const el = document.createElement('span');
-  el.innerHTML = '<span class="error-message">Campo requerido</span>';
-  insertAfter($input, el);
-}
-
-function insertAfter(referenceNode, newNode) {
-  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-}
-
-function clearErrorMessageFromInput($input) {
-  $input.classList.remove('has-error');
-  $input.nextElementSibling && $input.nextElementSibling.remove();
 }
 
 glide.mount();

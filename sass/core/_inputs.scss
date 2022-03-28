@@ -26,7 +26,7 @@ textarea {
 
   &.has-error {
     border-color: $error-input;
-    box-shadow: 0 0 0 0.2rem rgba(255, 18, 18, 0.25);
+    box-shadow: none;
   }
 }
 
@@ -149,4 +149,7 @@ label {
 
 .error-message {
   color: $error-input;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 2px;
 }

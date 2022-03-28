@@ -1057,7 +1057,7 @@ input[type=email].has-error,
 input[type=number].has-error,
 textarea.has-error {
   border-color: #ff6d6d;
-  box-shadow: 0 0 0 0.2rem rgba(255, 18, 18, 0.25);
+  box-shadow: none;
 }
 
 label {
@@ -1164,6 +1164,9 @@ label {
 
 .error-message {
   color: #ff6d6d;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 2px;
 }
 
 .title {

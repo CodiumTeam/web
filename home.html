@@ -545,24 +545,29 @@
               class="contact__form form"
               id="contactForm"
             >
-              <label for="name" class="contact__form--name required">
-                Nombre
-              </label>
-              <input type="text" id="name" name="name" required />
-              <label for="mail" class="contact__form--mail required">
-                Email
-              </label>
-              <input type="email" id="mail" name="mail" required />
-              <label for="message" class="contact__form--message required">
-                Mensaje
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                required
-              ></textarea>
+              <div>
+                <label for="name" class="contact__form--name required">
+                  Nombre
+                </label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div>
+                <label for="mail" class="contact__form--mail required">
+                  Email
+                </label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div>
+                <label for="message" class="contact__form--message required">
+                  Mensaje
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
               <div class="text-center">
                 <button class="button button--primary" id="js-submit">
                   Enviar mensaje
