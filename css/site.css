@@ -825,7 +825,7 @@ a {
   align-items: center;
 }
 .clients__grid {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -843,7 +843,7 @@ a {
 }
 .clients img {
   max-height: 70%;
-  max-width: 80%;
+  max-width: 60%;
 }
 @media all and (max-width: 768px) {
   .clients .clients__grid {
