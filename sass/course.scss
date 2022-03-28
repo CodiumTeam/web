@@ -136,10 +136,6 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 .course__information {
   &-wrapper {
     margin: 2rem 0;
@@ -167,10 +163,4 @@
     color: $dark-grey;
     margin: 0 0.8rem;
   }
-}
-
-.success-check {
-  font-size: $text-2-xl;
-  margin-bottom: 1rem;
-  color: #5ab45e;
 }

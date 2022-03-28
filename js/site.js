@@ -1,42 +1,53 @@
-const menuButton = document.getElementById('js-menu-button');
-const menu = document.getElementById('js-menu');
+const $contactForm = document.getElementById('contactForm');
 
-const controlMobileMenu = () => menu.classList.toggle('is-visible');
+$contactForm.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-menuButton.addEventListener('click', controlMobileMenu);
+  const isValid = true;
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const yOffset = document.getElementById('js-header').offsetHeight;
-    const blockPadding = 32;
-    const element = document.querySelector(this.getAttribute('href'));
+  if (!isValid) return;
 
-    if (!element) return;
-
-    const y =
-      element.getBoundingClientRect().top +
-      window.pageYOffset -
-      (yOffset + blockPadding);
-
-    window.scrollTo({ top: y, behavior: 'smooth' });
-
-    menu.classList.remove('is-visible');
-  });
-});
-
-const dropdown = document.querySelector('.dropdown');
-dropdown &&
-  dropdown.addEventListener('click', function () {
-    dropdown.classList.toggle('active');
-  });
-
-document.addEventListener('click', function (event) {
-  const clickedElement = event.target;
-  const dropdowns = document.querySelectorAll('.dropdown');
-  if (clickedElement.closest('.navbar__item') === null) {
-    for (const dropdown of dropdowns) {
-      dropdown.classList.remove('active');
-    }
+  if (!grecaptcha.getResponse()) {
+    grecaptcha.execute();
+    return;
   }
 });
+
+// This is called via data-callback
+function captchaCompleted() {
+  debugger;
+
+  const $form = document.getElementById('contactForm');
+  const formData = new FormData($form);
+  const url = $form.getAttribute('action');
+
+  document.getElementById('js-submit').disabled = true;
+
+  fetch(url, {
+    method: 'POST',
+    body: formData,
+  })
+    .then(function (response) {
+      if (response.ok) {
+        $form.remove();
+
+        const $successBlock = document.getElementById('js-show-success');
+        $successBlock.classList.remove('hidden');
+
+        const yOffset = document.getElementById('js-header').offsetHeight;
+        const y =
+          $successBlock.getBoundingClientRect().top +
+          window.pageYOffset -
+          yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        console.log(response);
+        document.getElementById('js-submit').disabled = false;
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      document.getElementById('js-submit').disabled = false;
+    });
+}

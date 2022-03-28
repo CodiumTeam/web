@@ -531,6 +531,13 @@
               hablar.
             </p>
           </div>
+          <div class="card card--success hidden" id="js-show-success">
+            <div class="success-check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Muchas gracias por ponerte en contacto con nosotros.</h2>
+            <p>Te contestaremos lo antes posible.</p>
+          </div>
           <div class="contact--right">
             <form
               action="/php/contact.php"
@@ -556,8 +563,8 @@
                 rows="10"
                 required
               ></textarea>
-              <div class="text-right">
-                <button class="button button--primary" type="submit">
+              <div class="text-center">
+                <button class="button button--primary" id="js-submit">
                   Enviar mensaje
                 </button>
               </div>
@@ -568,6 +575,12 @@
                 <a href="https://policies.google.com/terms">Terms of Service</a>
                 apply.
               </p>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
+                data-callback="captchaCompleted"
+                data-size="invisible"
+              ></div>
             </form>
           </div>
         </div>
@@ -621,6 +634,7 @@
         </ul>
       </footer>
     </div>
+    <script src="/js/common-site.js"></script>
     <script src="/js/site.js"></script>
   </body>
 </html>

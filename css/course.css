@@ -460,6 +460,16 @@ label {
   text-align: right;
 }
 
+.success-check {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  color: #5ab45e;
+}
+
+.hidden {
+  display: none;
+}
+
 .resume__title {
   font-weight: bold;
   font-size: 14px;
@@ -571,10 +581,6 @@ label {
     flex-direction: row;
   }
 }
-.hidden {
-  display: none;
-}
-
 .course__information {
   display: flex;
   flex-direction: row;
@@ -598,12 +604,6 @@ label {
   font-size: 14px;
   color: #737373;
   margin: 0 0.8rem;
-}
-
-.success-check {
-  font-size: 2.5em;
-  margin-bottom: 1rem;
-  color: #5ab45e;
 }
 
 /*# sourceMappingURL=course.css.map */

@@ -962,6 +962,16 @@ a {
   text-align: right;
 }
 
+.success-check {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  color: #5ab45e;
+}
+
+.hidden {
+  display: none;
+}
+
 .dropdown {
   position: relative;
 }
