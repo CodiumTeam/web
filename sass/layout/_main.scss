@@ -155,44 +155,7 @@
 }
 
 .contact {
-  &--left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-  }
-
-  &--right {
-    max-width: 600px;
-  }
-
-  &__form--container {
-    width: 70%;
-  }
-
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    &--name,
-    &--mail,
-    &--message {
-      margin-bottom: 0.5rem;
-    }
-
-    #name,
-    #mail {
-      width: 100%;
-      margin-bottom: 2rem;
-    }
-
-    textarea {
-      width: 100%;
-    }
-
     .button {
       align-self: flex-end;
       margin-top: 2rem;
@@ -203,24 +166,5 @@
   .required::after {
     content: '*';
     color: red;
-  }
-
-  @media all and (max-width: 768px) {
-    .contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      &__form--container {
-        width: 100%;
-      }
-
-      &__form {
-        .button {
-          align-self: center;
-        }
-      }
-    }
   }
 }

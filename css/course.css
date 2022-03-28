@@ -456,6 +456,10 @@ label {
   color: #737373;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .resume__title {
   font-weight: bold;
   font-size: 14px;

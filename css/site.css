@@ -876,36 +876,6 @@ a {
   }
 }
 
-.contact--left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-}
-.contact--right {
-  max-width: 600px;
-}
-.contact__form--container {
-  width: 70%;
-}
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.contact__form--name, .contact__form--mail, .contact__form--message {
-  margin-bottom: 0.5rem;
-}
-.contact__form #name,
-.contact__form #mail {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.contact__form textarea {
-  width: 100%;
-}
 .contact__form .button {
   align-self: flex-end;
   margin-top: 2rem;
@@ -914,20 +884,6 @@ a {
 .contact .required::after {
   content: "*";
   color: red;
-}
-@media all and (max-width: 768px) {
-  .contact .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact .contact__form--container {
-    width: 100%;
-  }
-  .contact .contact__form .button {
-    align-self: center;
-  }
 }
 
 .button {
@@ -1002,6 +958,10 @@ a {
   color: #737373;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .dropdown {
   position: relative;
 }
@@ -1057,6 +1017,145 @@ a {
     position: absolute;
   }
 }
+/* RADIO BUTTON STLYING BEGINS */
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #181818;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #2fade2;
+}
+input[type=text].has-error,
+input[type=email].has-error,
+input[type=number].has-error,
+textarea.has-error {
+  border-color: #ff6d6d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 18, 18, 0.25);
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.myradio {
+  display: inline-block;
+}
+.myradio__input {
+  opacity: 0;
+  position: absolute;
+}
+.myradio__label {
+  border-radius: 50%;
+  padding: 8px 15px 3px 35px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  margin-top: 1.5em;
+}
+.myradio__label::before, .myradio__label::after {
+  content: "";
+  border-radius: 9999px;
+  width: 16px;
+  height: 16px;
+  margin: 3px 0;
+  position: absolute;
+  z-index: 1;
+}
+.myradio__label::before {
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
+  top: 4px;
+  left: 10px;
+  transition: all 0.5s;
+}
+.myradio__label::after {
+  background-color: #1a1919;
+  top: 6px;
+  left: 12px;
+  transition: all 0.15s;
+  transition-timing-function: ease-out;
+  width: 12px;
+  height: 12px;
+}
+.myradio__label:hover {
+  background-color: rgba(47, 173, 226, 0.1);
+}
+.myradio__label:hover::before {
+  border: 2px solid #2fade2;
+}
+.myradio__input:checked ~ .myradio__label::before {
+  background-color: #1a1919;
+  border: 2px solid #2fade2;
+}
+.myradio__input:checked ~ .myradio__label::after {
+  background-color: #2fade2;
+  top: 7px;
+  left: 13px;
+  transition: all 0.15s;
+  transition-timing-function: ease-out;
+  width: 10px;
+  height: 10px;
+}
+
+.required-asterik {
+  color: #ff6d6d;
+}
+
+.form {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form--white .form__title {
+  color: #fff;
+}
+.form--white label {
+  color: #fff;
+}
+.form .submit-button {
+  margin: 1rem 0;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d6d6d6;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #d6d6d6;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #d6d6d6;
+}
+
+.error-message {
+  color: #ff6d6d;
+}
+
 .title {
   color: #1a1919;
   font-size: 2em;
