@@ -5,6 +5,11 @@ const controlMobileMenu = () => menu.classList.toggle('is-visible');
 
 menuButton.addEventListener('click', controlMobileMenu);
 
+const dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function () {
+  dropdown.classList.toggle('active');
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();

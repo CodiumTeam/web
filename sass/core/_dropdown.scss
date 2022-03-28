@@ -1,5 +1,6 @@
 .dropdown {
   position: relative;
+  user-select: none;
 }
 
 .dropdown::before {
@@ -50,6 +51,8 @@
 
 @media (min-width: 768px) {
   .dropdown .options {
+    user-select: none;
     position: absolute;
+    right: -15px;
   }
 }

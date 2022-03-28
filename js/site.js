@@ -1,8 +1,3 @@
-const dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function () {
-  dropdown.classList.toggle('active');
-});
-
 const $contactForm = document.getElementById('contactForm');
 
 $contactForm.addEventListener('submit', function (event) {

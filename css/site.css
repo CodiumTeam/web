@@ -974,6 +974,7 @@ a {
 
 .dropdown {
   position: relative;
+  user-select: none;
 }
 
 .dropdown::before {
@@ -1024,7 +1025,9 @@ a {
 
 @media (min-width: 768px) {
   .dropdown .options {
+    user-select: none;
     position: absolute;
+    right: -15px;
   }
 }
 /* RADIO BUTTON STLYING BEGINS */
