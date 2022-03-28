@@ -58,6 +58,7 @@ function captchaCompleted() {
   })
     .then(function (response) {
       if (response.ok) {
+        trackEvent('contact_us', 'sent', 'home');
         $form.remove();
 
         const $successBlock = document.getElementById('js-show-success');
@@ -71,12 +72,12 @@ function captchaCompleted() {
 
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
-        console.log(response);
+        trackEvent('contact_us', 'failed', 'home');
         document.getElementById('js-submit').disabled = false;
       }
     })
     .catch((error) => {
-      console.log(error);
+      trackEvent('contact_us', 'failed', 'home');
       document.getElementById('js-submit').disabled = false;
     });
 }

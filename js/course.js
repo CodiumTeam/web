@@ -93,6 +93,7 @@ function captchaCompleted() {
   })
     .then(function (response) {
       if (response.ok) {
+        trackEvent('contact_us', 'sent', trainingType);
         $form.remove();
 
         const $successBlock = document.getElementById('js-show-success');
@@ -106,10 +107,12 @@ function captchaCompleted() {
 
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
+        trackEvent('contact_us', 'failed', trainingType);
         document.getElementById('js-submit').disabled = false;
       }
     })
     .catch((error) => {
+      trackEvent('contact_us', 'failed', trainingType);
       document.getElementById('js-submit').disabled = false;
     });
 }
