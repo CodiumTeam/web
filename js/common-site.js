@@ -25,12 +25,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const dropdown = document.querySelector('.dropdown');
-dropdown &&
-  dropdown.addEventListener('click', function () {
-    dropdown.classList.toggle('active');
-  });
-
 document.addEventListener('click', function (event) {
   const clickedElement = event.target;
   const dropdowns = document.querySelectorAll('.dropdown');
