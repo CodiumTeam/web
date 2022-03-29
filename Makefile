@@ -40,7 +40,7 @@ build:
 
 .PHONY: just-build
 just-build:
-	$(DOCKER_COMMAND) $(DOCKER_PHP_IMAGE) sh build.sh
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) sh build.sh
 
 .PHONY: convert
 convert:
