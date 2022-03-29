@@ -27,7 +27,6 @@
 .dropdown .options {
   width: 100%;
   background: $lightest-grey;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
   display: none;
@@ -54,5 +53,6 @@
     user-select: none;
     position: absolute;
     right: -15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   }
 }
