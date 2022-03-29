@@ -1,19 +1,21 @@
 import { defineConfig } from 'vite';
 import nunjucks from 'vite-plugin-nunjucks';
-import fs from 'fs';
 import { resolve } from 'path';
 
-const ROOT = resolve(__dirname);
-const pages = fs.readdirSync(resolve(ROOT, 'pages'));
+const ROOT = resolve(__dirname, 'src');
 
-const inputs = {};
-
-pages.forEach((page) => {
-  inputs[page] = resolve(ROOT, 'pages', page);
-});
+const inputs = {
+  docker: resolve(ROOT, 'docker', 'docker.html'),
+  tdd: resolve(ROOT, 'tdd', 'index.html'),
+  'working-with-legacy-code': resolve(
+    ROOT,
+    'working-with-legacy-code',
+    'index.html'
+  ),
+};
 
 export default defineConfig({
-  plugins: [nunjucks()],
+  root: ROOT,
   build: {
     rollupOptions: {
       input: inputs,

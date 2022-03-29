@@ -1,4 +1,7 @@
-var glide = new Glide('.glide', {
+import '../sass/site.scss';
+import '../sass/course.scss';
+
+const glide = new Glide('.glide', {
   type: 'carousel',
   perView: 2,
   focusAt: 'center',

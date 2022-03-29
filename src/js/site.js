@@ -1,3 +1,7 @@
+import './common-site';
+
+import '../sass/site.scss';
+
 const $contactForm = document.getElementById('contactForm');
 
 $contactForm.addEventListener('submit', function (event) {

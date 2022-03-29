@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Acaba de una vez con los problemas: de infraestructura, del despliegue de tu aplicación o el conocido 'funciona en mi máquina'. Curso práctico, divertido y intenso. En tus oficinas o en remoto."
+      content="Aprende a escribir código simple, robusto y moldeable que emerge a partir de los tests. Curso práctico, divertido y intenso. En tus oficinas o en remoto."
     />
     <meta
       name="keywords"
-      content="Curso,Formación,Training,Docker,docker-compose,dockerizar,imagen,Infraestructura,Buildkit,Desarrollo,Devops,Escalabilidad,Seguridad,CI,Pipeline,CD,CI/CD,Crafter,Craftsmanship,Práctico,Divertido"
+      content="Curso,Formación,Training,TDD,Test-Driven development,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido"
     />
-    <title>Curso Docker - Codium</title>
-    <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="/css/course.css" />
+    <title>Curso de TDD - Test Driven Development - Codium</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -93,9 +91,7 @@
                 <div class="dropdown">
                   <a>Cursos</a>
                   <ul class="options">
-                    <li>
-                      <a href="/working-with-legacy-code.html">Legacy</a>
-                    </li>
+                    <li><a href="/working-with-legacy-code.html">Legacy</a></li>
                     <li><a href="/tdd.html">TDD</a></li>
                     <li><a href="/docker.html">Docker</a></li>
                   </ul>
@@ -110,14 +106,14 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <section class="hero">
-          <h2 class="hero__title">Curso de Docker</h2>
-          <p class="hero__subtitle">Infraestructura como código al poder</p>
+          <h2 class="hero__title">Curso de Test-Driven Development</h2>
+          <p class="hero__subtitle">Revoluciona tu forma de desarrollar</p>
 
           <div>
             <img
-              src="/img/moby-logo.svg"
-              alt="Docker Moby logo"
-              class="hero__image"
+              src="/img/tdd-logo.svg"
+              alt="TDD logo"
+              class="hero__image hero__image--huge"
             />
           </div>
         </section>
@@ -138,7 +134,9 @@
             </div>
             <div class="course__information">
               <i class="fa-solid fa-code"></i>
-              <p class="course__information-text">Docker</p>
+              <p class="course__information-text">
+                Java, Python, PHP, Js, C#, C++, ...
+              </p>
             </div>
             <div class="course__information">
               <i class="fa-solid fa-language"></i>
@@ -184,12 +182,12 @@
               </div>
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                  <li>
+                  <li class="glide__slide">
                     <div class="card card--opinion">
                       <div class="card__header">
                         <div class="card__image-wrapper">
                           <img
-                            src="/img/testimonials/garazi.png"
+                            src="/img/testimonials/HelderDOliveira.jpg"
                             alt="Avatar"
                             class="card__image card__image--rounded"
                           />
@@ -197,15 +195,38 @@
                       </div>
                       <div class="card__text card__text--left">
                         <p>
-                          Me ha gustado mucho el formato de curso que habéis
-                          diseñado y cómo lo impartis. Me parece acertado que el
-                          curso se divida en una parte práctica y otra teórica.
-                          Para una persona que no ha visto nunca nada de Docker
-                          o que no tenga los conceptos claros viene muy bien.
+                          Pragmático, directo, en la misma línea de la propia
+                          filosofía de TDD​.​ ​M​e ha ayudado a desarrollar de
+                          forma más segura y limpia, ​descubriendo a la vez
+                          otras formas de hacer TDD que desconocía y siempre
+                          guiado desde ejercicios muy potentes.
                         </p>
-                        <p class="text-bold card__name">Garazi Alfaro</p>
+                        <p class="text-bold card__name">Helder De Oliveira</p>
+                        <p class="card__profession">Software Craftsman</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="card card--opinion">
+                      <div class="card__header">
+                        <div class="card__image-wrapper">
+                          <img
+                            src="/img/testimonials/JoanMiralles.jpg"
+                            alt="Avatar"
+                            class="card__image card__image--rounded"
+                          />
+                        </div>
+                      </div>
+                      <div class="card__text card__text--left">
+                        <p>
+                          Aunque conocía TDD a nivel teórico, después de
+                          realizar este curso, ha sido cuándo he entendido cómo
+                          llevarlo a mi día a día.
+                        </p>
+                        <p class="text-bold card__name">Joan Miralles</p>
                         <p class="card__profession">
-                          Ayudante de Investigación en Vicomtech
+                          Software Architect en Brújula Tecnologías de la
+                          Información
                         </p>
                       </div>
                     </div>
@@ -215,7 +236,7 @@
                       <div class="card__header">
                         <div class="card__image-wrapper">
                           <img
-                            src="/img/testimonials/marco.png"
+                            src="/img/testimonials/ilya.png"
                             alt="Avatar"
                             class="card__image card__image--rounded"
                           />
@@ -223,64 +244,16 @@
                       </div>
                       <div class="card__text card__text--left">
                         <p>
-                          No tenía ninguna experiencia con Docker y el curso me
-                          ha servido mucho para entender qué es, cómo funciona y
-                          aprender a utilizarlo de una manera clara y concisa.
+                          El curso ha sido un buen punto de inflexión para
+                          empezar a usar TDD en mi día a día y profundizar en
+                          todo lo aprendido. Las katas guiadas por el equipo de
+                          Codium le dan muchísimo valor al curso y están muy
+                          bien escogidas para remarcar los fallos que se suelen
+                          cometer al empezar con TDD.
                         </p>
-                        <p class="text-bold card__name">Marco Ojero</p>
+                        <p class="text-bold card__name">Ilya Kabushko</p>
                         <p class="card__profession">
-                          Investigador en Vicomtech
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/img/testimonials/manex.png"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          El curso de Docker me ha servido para refrescar y
-                          asentar tanto conceptos básicos como avanzados sobre
-                          el uso de Docker. Al ser una formación hands-on he
-                          podido integrar estos nuevos conocimientos en mi día a
-                          día sin problemas.
-                        </p>
-                        <p class="text-bold card__name">Manex Serras</p>
-                        <p class="card__profession">
-                          Investigador en Vicomtech
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="img/testimonials/oscarSalgado.jpeg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Un curso bien organizado que ha servido para reforzar
-                          y ampliar nuestros conocimientos básicos de Docker
-                          para poder sacarle un mayor rendimiento en nuestro día
-                          a día.
-                        </p>
-                        <p class="text-bold card__name">Salgado Oscar</p>
-                        <p class="card__profession">
-                          Senior Researcher en Ikerlan
+                          Software developer en Travel Compositor
                         </p>
                       </div>
                     </div>
@@ -300,7 +273,6 @@
                 <span class="glide__bullet" data-glide-dir="=0"></span>
                 <span class="glide__bullet" data-glide-dir="=1"></span>
                 <span class="glide__bullet" data-glide-dir="=2"></span>
-                <span class="glide__bullet" data-glide-dir="=3"></span>
               </div>
             </div>
           </div>
@@ -309,66 +281,62 @@
 
       <section class="block block--white">
         <div class="container">
-          <h2 class="text-center title" id="value">¿Por qué Docker?</h2>
+          <h2 class="text-center title" id="value">El valor de TDD</h2>
           <p class="text-center text-dark-grey">
-            Docker soluciona algunos de los problemas de infraestructura más
-            comunes, casi permitiéndonos eliminar el famoso "en mi máquina
-            funciona".
-          </p>
-          <p class="text-center text-dark-grey">
-            ¿Cómo? Homogeneizando los entornos.
-          </p>
-          <p class="text-center text-dark-grey">
-            ¿Pero cómo? Tratando la infraestructura como código, automatizando
-            procesos y encapsulando aplicaciones junto con todas sus
-            dependencias.
+            El simple hecho de pensar y escribir un test antes que el código de
+            producción, representa un cambio de paradigma en el desarrollo de
+            software y un salto de calidad inimaginable en tu código.
           </p>
 
           <article class="tdd-value">
             <div class="text-center tdd-value__item">
-              <img
-                src="/img/docker-explained-1.png"
-                alt="Docker explained"
-                class="tdd-value__image"
-              />
+              <img src="/img/fast-cheap-good.svg" class="tdd-value__image" />
             </div>
 
             <aside class="tdd-value__item">
               <div>
-                <h3>Problemas comunes que Docker nos ayuda a resolver:</h3>
+                <h3>Ayuda a reducir los costes de desarrollo</h3>
                 <ul class="course-calendar__items">
                   <li class="text-dark-grey">
-                    Los desarrolladores tienen máquinas distintas con sistemas
-                    operativos diversos.
+                    Implementando sólo lo imprescindible para los requisitos
+                    actuales (diseño incremental)
                   </li>
                   <li class="text-dark-grey">
-                    Diferentes versiones del software en entornos locales, test
-                    y producción, dificultando la reproducción de ciertos
-                    problemas por culpa de que los entornos son distintos.
+                    Evitando complejidades innecesarias
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Ayuda a reducir los costes de mantenimiento</h3>
+                <ul class="course-calendar__items">
+                  <li class="text-dark-grey">
+                    Al reducir el testeo manual de la aplicación
                   </li>
                   <li class="text-dark-grey">
-                    Diferentes versiones instaladas de librerías y paquetes.
+                    Minimizando las incidencias en producción
                   </li>
                   <li class="text-dark-grey">
-                    A medida que el tiempo pasa el conocimiento sobre el
-                    software se va perdiendo, provocando fácilmente que la
-                    instalación del software sea compleja y manual.
+                    Gracias a soluciones más simples
                   </li>
                   <li class="text-dark-grey">
-                    Diferentes configuraciones entre desarrolladores.
+                    Al poder cambiar fácilmente decisiones que ya no son válidas
                   </li>
                   <li class="text-dark-grey">
-                    Sobrecostes por infrautilización de los recursos de los
-                    servidores o de las máquinas virtuales.
+                    Al tener una documentación ejecutable
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Transforma al desarrollador</h3>
+                <ul class="course-calendar__items">
+                  <li class="text-dark-grey">
+                    Aumentando la seguridad de los desarrolladores al introducir
+                    cambios en el código
                   </li>
                   <li class="text-dark-grey">
-                    Despliegues manuales: un miembro del equipo debe conectarse
-                    a un servidor y configurar o subir a mano un
-                    binario/artefacto, etc.
-                  </li>
-                  <li class="text-dark-grey">
-                    Sysadmins tardan tiempo en desplegar, es complicado hacer
-                    cambios en la infraestructura o simplemente escalar.
+                    Mejorando la moral y motivación del equipo
                   </li>
                 </ul>
               </div>
@@ -391,10 +359,6 @@
           <h2 class="text-center title" id="training-content-timeline">
             Contenido del curso
           </h2>
-          <p class="text-center text-dark-grey">
-            Conocerás la filosofía del trabajo en Docker y cómo aplicar las
-            buenas prácticas
-          </p>
 
           <div class="calendar">
             <div>
@@ -404,30 +368,25 @@
                   <p class="text-dark-grey course-calendar__day-item">Mañana</p>
                 </div>
                 <div class="course-calendar__list">
-                  <p class="small-title">Historia y arquitectura de Docker</p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      ¿Por qué es Docker algo tan popular?
-                    </li>
-                    <li class="text-dark-grey">¿Qué problemas resuelve?</li>
-                    <li class="text-dark-grey">Anatomía de Docker</li>
-                    <li class="text-dark-grey">
-                      Conceptos básicos: contenedores e imágenes
-                    </li>
-                  </ul>
-                  <p class="small-title course-calendar__title">
-                    Comandos básicos y docker-compose
+                  <p class="small-title">
+                    Introducción a Test-Driven Development
                   </p>
                   <ul class="course-calendar__items">
                     <li class="text-dark-grey">
-                      Comandos básicos para trabajar con contendedores
+                      Tipos de tests y costes asociados
                     </li>
                     <li class="text-dark-grey">
-                      Usar puertos, volúmenes y variables de entorno
+                      Ciclo de desarrollo: red, green, refactor
                     </li>
-                    <li class="text-dark-grey">Cuándo usar docker-compose</li>
                     <li class="text-dark-grey">
-                      Sintaxis de un fichero YAML de docker-compose
+                      Reglas de TDD y las pruebas unitarias
+                    </li>
+                    <li class="text-dark-grey">
+                      Estructura y convenciones de los tests
+                    </li>
+                    <li class="text-dark-grey">Arnés y cobertura de test</li>
+                    <li class="text-dark-grey">
+                      Kata (o ejercicio) introductoria
                     </li>
                   </ul>
                 </div>
@@ -438,27 +397,22 @@
                 </div>
                 <div class="course-calendar__list">
                   <p class="small-title course-calendar__title">
-                    Construyendo imágenes
+                    Beneficios de TDD
                   </p>
                   <ul class="course-calendar__items">
+                    <li class="text-dark-grey">Por qué hacer TDD</li>
+                    <li class="text-dark-grey">Economía de TDD</li>
+                    <li class="text-dark-grey">Kata</li>
+                  </ul>
+
+                  <p class="small-title">Contexto de TDD y Test smells</p>
+                  <ul class="course-calendar__items">
+                    <li class="text-dark-grey">Agile Manifesto</li>
                     <li class="text-dark-grey">
-                      Entender y escribir ficheros DOCKERFILE
+                      Software Craftsmanship Manifesto
                     </li>
-                    <li class="text-dark-grey">
-                      Optimizar la construcción de imágenes
-                    </li>
-                    <li class="text-dark-grey">
-                      Qué son las capas del sistema de ficheros y su impacto en
-                      el caching
-                    </li>
-                    <li class="text-dark-grey">Técnica del Multistage build</li>
-                    <li class="text-dark-grey">Cómo y por qué usar Buildkit</li>
-                    <li class="text-dark-grey">
-                      Buenas prácticas creando imágenes
-                    </li>
-                    <li class="text-dark-grey">
-                      Particularidades de Docker en Windows y WSL 2
-                    </li>
+                    <li class="text-dark-grey">eXtreme Programming (XP)</li>
+                    <li class="text-dark-grey">Kata tests smells</li>
                   </ul>
                 </div>
               </article>
@@ -471,39 +425,17 @@
                   <p class="text-dark-grey course-calendar__day-item">Mañana</p>
                 </div>
                 <div class="course-calendar__list">
-                  <p class="small-title">
-                    Usando Docker en el entorno de desarrollo
-                  </p>
+                  <p class="small-title">Dobles de pruebas</p>
                   <ul class="course-calendar__items">
                     <li class="text-dark-grey">
-                      Técnicas para incorporar Docker en el entorno de
-                      desarrollo local
+                      Para qué sirven los tests dobles
                     </li>
+                    <li class="text-dark-grey">Cómo y cuándo usarlos</li>
                     <li class="text-dark-grey">
-                      Cómo mejorar la experiencia de desarrollo en proyectos
-                      existentes
+                      Tipos de dobles: mock, spy, stub, fake y dummy
                     </li>
-                    <li class="text-dark-grey">
-                      Ventajas de VS Code Remote Containers
-                    </li>
-                    <li class="text-dark-grey">Tests de caracterización</li>
-                  </ul>
-                  <p class="small-title course-calendar__title">
-                    Publicar imágenes y resolver problemas del día a día
-                  </p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      Usar registros públicos y privados
-                    </li>
-                    <li class="text-dark-grey">
-                      Convenios para etiquetar imágenes
-                    </li>
-                    <li class="text-dark-grey">
-                      Limpieza de recursos del sistema utilizados
-                    </li>
-                    <li class="text-dark-grey">
-                      Cómo resolver problemas habituales
-                    </li>
+                    <li class="text-dark-grey">Cómo funcionan internamente</li>
+                    <li class="text-dark-grey">Kata historia de usuario</li>
                   </ul>
                 </div>
               </article>
@@ -513,31 +445,22 @@
                   <p class="text-dark-grey course-calendar__day-item">Tarde</p>
                 </div>
                 <div class="course-calendar__list">
-                  <p class="small-title course-calendar__title">Seguridad</p>
+                  <p class="small-title course-calendar__title">
+                    Consejos para hacer TDD
+                  </p>
                   <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      Diferentes capas de seguridad cuando usamos Docker
-                    </li>
-                    <li class="text-dark-grey">Cómo crear una imagen segura</li>
-                    <li class="text-dark-grey">Detectar vulnerabilidades</li>
-
-                    <li class="text-dark-grey">
-                      Por qué evitar el uso del usuario root
-                    </li>
+                    <li class="text-dark-grey">Testing en el front-end</li>
+                    <li class="text-dark-grey">Testing con base de datos</li>
+                    <li class="text-dark-grey">Builders de test</li>
                   </ul>
 
-                  <p class="small-title">Docker en la Integración Continua</p>
+                  <p class="small-title">TDD Outside-in</p>
                   <ul class="course-calendar__items">
                     <li class="text-dark-grey">
-                      Aspectos básicos de una herramienta de Integración
-                      Continua (CI)
+                      Test-Driven Development outside-in
                     </li>
-                    <li class="text-dark-grey">
-                      El rol de Docker en los procesos de CI
-                    </li>
-                    <li class="text-dark-grey">
-                      Técnicas para mejorar el rendimiento de Docker en CI
-                    </li>
+                    <li class="text-dark-grey">Cómo desarrollamos en Codium</li>
+                    <li class="text-dark-grey">Kata iterativa</li>
                   </ul>
                 </div>
               </article>
@@ -549,8 +472,9 @@
               class="button button--primary"
               href="#contactForm"
               data-trackevent="contact_us.show_form.course_index"
-              >Contactar</a
             >
+              Contactar
+            </a>
           </div>
         </div>
       </section>
@@ -597,76 +521,6 @@
               <div class="card__header">
                 <div class="card__image-wrapper">
                   <img
-                    src="/img/about-us/raul.jpeg"
-                    alt="Raúl Jiménez profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-
-              <p class="card__title">Raúl Jiménez</p>
-
-              <div class="card__footer">
-                <p class="card__professional">Full-stack</p>
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a href="https://twitter.com/rauljmz"
-                      ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a href="https://www.linkedin.com/in/rauljmz/"
-                      ><i class="fa-brands fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a href="https://github.com/rauljmz"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/img/about-us/hugo.jpeg"
-                    alt="Hugo Chinchilla profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-
-              <p class="card__title">Hugo Chinchilla</p>
-
-              <div class="card__footer">
-                <p class="card__professional">Full-stack Developer</p>
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a href="https://twitter.com/hchinchilla_"
-                      ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a href="http://linkedin.com/in/hugo-chinchilla-carbonell/"
-                      ><i class="fa-brands fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a href="http://github.com/hugochinchilla"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
                     src="/img/about-us/luis.jpg"
                     alt="Luis Rovirosa Mairlot profile"
                     class="card__image card__image--rounded"
@@ -675,7 +529,6 @@
               </div>
 
               <p class="card__title">Luis Rovirosa</p>
-
               <div class="card__footer">
                 <p class="card__professional">Back-end Developer</p>
                 <ul class="card__icons">
@@ -697,7 +550,6 @@
                 </ul>
               </div>
             </div>
-
             <div class="card card--personal">
               <div class="card__header">
                 <div class="card__image-wrapper">
@@ -708,9 +560,7 @@
                   />
                 </div>
               </div>
-
               <p class="card__title">Jordi Anguela</p>
-
               <div class="card__footer">
                 <p class="card__professional">Front-end Developer</p>
                 <ul class="card__icons">
@@ -732,6 +582,71 @@
                 </ul>
               </div>
             </div>
+
+            <div class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/hugo.jpeg"
+                    alt="Hugo Chinchilla profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Hugo Chinchilla</p>
+              <div class="card__footer">
+                <p class="card__professional">Full-stack Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a href="https://twitter.com/hchinchilla_"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="card__icon">
+                    <a href="http://linkedin.com/in/hugo-chinchilla-carbonell/"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li class="card__icon">
+                    <a href="http://github.com/hugochinchilla"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card card--personal">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/img/about-us/jose.png"
+                    alt="Jose Cabrera profile"
+                    class="card__image card__image--rounded"
+                  />
+                </div>
+              </div>
+              <p class="card__title">Jose Cabrera</p>
+              <div class="card__footer">
+                <p class="card__professional">Front-end Developer</p>
+                <ul class="card__icons">
+                  <li class="card__icon">
+                    <a href="https://twitter.com/11joselu"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="card__icon">
+                    <a href="https://www.linkedin.com/in/11joselu/"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li class="card__icon">
+                    <a href="https://github.com/11joselu"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="button__wrapper">
             <a
@@ -744,13 +659,11 @@
           </div>
         </div>
       </section>
-
       <section class="block">
         <div class="container sumary-numbers">
           <div class="sumary-numbers__item">
             <h2 class="title text-center">Resumen en números</h2>
           </div>
-
           <div class="sumary-numbers__item sumary-numbers__item--circles">
             <div class="circle circle--large circle--lila">
               <div class="circle__text">
@@ -758,14 +671,12 @@
                 <p class="circle__number-info">Formaciones impartidas</p>
               </div>
             </div>
-
             <div class="circle circle--green">
               <div class="circle__text">
                 <p class="circle__number">822</p>
                 <p class="circle__number-info">Profesionales formados</p>
               </div>
             </div>
-
             <div class="circle circle--blue">
               <div class="circle__text">
                 <p class="circle__number">46</p>
@@ -775,32 +686,31 @@
           </div>
         </div>
       </section>
-
       <section class="block block--white">
         <div class="container">
           <h2 class="text-center title" id="faqs">Preguntas frecuentes</h2>
-
           <div class="question-wrapper">
             <div class="question">
               <p class="small-title">¿A quién va dirigido?</p>
-
               <p class="text-dark-grey">
-                A todas aquellas empresas que quieran Dockerizar su servicios.
+                A equipos que hacen tests y quieren dar un salto de calidad.
+              </p>
+              <p class="text-dark-grey">
+                A empresas que quieren tomarse en serio la calidad y seguir
+                añadiendo funcionalidad a buena velocidad.
               </p>
 
               <p class="text-dark-grey">
-                A aquellas empresas que quieran dar un salto de calidad en cómo
-                gestionan su infraestructura.
+                A programadores familiarizados con el testing y buenas prácticas
+                de desarrollo.
               </p>
 
               <p class="text-dark-grey">
-                A aquellos equipos que cada vez que despliegan en producción es
-                un dolor para ellos y sus clientes.
-              </p>
-              <p class="text-dark-grey">
-                A esos equipos que cada vez que incorporan un nuevo compañero
-                éste tarda varios días en poder configurar todos los servicios
-                de la empresa en su máquina.
+                El curso se centra en cómo testear la lógica de negocio,
+                independientemente de dónde se encuentre, ya sea el back-end,
+                front-end o móvil. Las personas de QA también pueden
+                beneficiarse del curso, entendiendo el proceso de desarrollo y
+                ayudando a escribir mejores pruebas.
               </p>
             </div>
 
@@ -808,14 +718,30 @@
               <p class="small-title">¿Cuál es el nivel del curso?</p>
 
               <p class="text-dark-grey">
-                El curso está pensado para todos los niveles de Docker: desde
-                los principiantes hasta los que usan Docker habitualmente.
+                El nivel del curso es avanzado. Está dirigido a personas que
+                escriben tests con frecuencia.
               </p>
 
               <p class="text-dark-grey">
-                El curso es muy intenso y práctico. Ha sido diseñado para que
-                sea fácil de seguir por los asistentes, con muchas
-                demostraciones y ejemplos de código.
+                Es un curso introductorio a Test-Driven Development. El curso es
+                intenso y cubrimos desde las partes más básicas, como las
+                pruebas unitarias, a temas más complejos, como los diferentes
+                tipos de dobles de pruebas y problemas habituales cuando
+                escribimos tests.
+              </p>
+
+              <p class="text-dark-grey">
+                Al ser un curso muy práctico y con mucho debate, permite que nos
+                adaptemos al nivel de los asistentes. Si ya conoces algo de TDD,
+                durante el curso profundizarás en tus conocimientos y aprenderás
+                estrategias más avanzadas.
+              </p>
+
+              <p class="text-dark-grey">
+                Este no es un curso diseñado para personas que aplican
+                Test-Driven Development en su día a día, escribiendo
+                sistemáticamente las pruebas unitarias antes de escribir el
+                código.
               </p>
             </div>
 
@@ -869,18 +795,15 @@
               </p>
 
               <p class="text-dark-grey">
-                Cada bloque empieza con una breve introducción teórica.
-              </p>
-
-              <p class="text-dark-grey">
                 Le sigue un ejercicio que se realiza en parejas donde se pone en
                 práctica lo visto en la parte teórica mientras los formadores
                 van dando feedback a los asistentes constantemente.
               </p>
+
               <p class="text-dark-grey">
                 El bloque termina con un debate de grupo, donde los
                 participantes comparten lo aprendido y tenemos discusiones todos
-                juntos.
+                juntos
               </p>
             </div>
 
@@ -936,8 +859,8 @@
 
               <p class="text-dark-grey">
                 Por ello, después del curso, ofrecemos acompañamiento para
-                ayudarte Dockerizar tu servicios y automatizar tus procesos en
-                un servidor de Integración Continua.
+                ayudarte en la implantación de Test-Driven Development en tu
+                proyecto.
               </p>
             </div>
           </div>
@@ -974,8 +897,8 @@
             class="form"
             id="contactForm"
             method="post"
-            action="/php//contact-docker.php"
-            data-training-type="docker_training"
+            action="/php/contact-tdd.php"
+            data-training-type="tdd_training"
           >
             <div>
               <label for="name"
@@ -1130,6 +1053,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="/js/common-site.js"></script>
-    <script src="/js/course.js"></script>
+    <script type="module" src="/js/course.js"></script>
   </body>
 </html>
