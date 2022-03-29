@@ -96,7 +96,8 @@ window.captchaCompleted = () => {
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
 
-  formData.append('trainingType', $form.getAttribute('data-training-type'));
+  const trainingType = $form.getAttribute('data-training-type');
+  formData.append('trainingType', trainingType);
 
   document.getElementById('js-submit').disabled = true;
 
