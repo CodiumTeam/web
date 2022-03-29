@@ -21,7 +21,6 @@
   "homepage": "https://github.com/CodiumTeam/web#readme",
   "devDependencies": {
     "sass": "^1.49.9",
-    "vite": "^2.8.6",
-    "vite-plugin-nunjucks": "^0.1.10"
+    "vite": "^2.8.6"
   }
 }
