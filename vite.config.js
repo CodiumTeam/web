@@ -5,7 +5,7 @@ import { resolve } from 'path';
 const ROOT = resolve(__dirname, 'src');
 
 const inputs = {
-  docker: resolve(ROOT, 'docker', 'docker.html'),
+  docker: resolve(ROOT, 'docker', 'index.html'),
   tdd: resolve(ROOT, 'tdd', 'index.html'),
   'working-with-legacy-code': resolve(
     ROOT,
