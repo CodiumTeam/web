@@ -12,6 +12,7 @@ const inputs = {
     'working-with-legacy-code',
     'index.html'
   ),
+  resource: resolve(ROOT, 'resource', 'index.html'),
 };
 
 export default defineConfig({
