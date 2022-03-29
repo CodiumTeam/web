@@ -1,30 +1,34 @@
-import './common-site';
+import * as events from './trackEvents';
+import * as formValidation from './fromValidation';
+import { listenDropdown } from './dropdown';
 
 import '../sass/site.scss';
 
-const $contactForm = document.getElementById('contactForm');
+listenDropdown();
+events.initTrackEvents();
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
 
-$contactForm.addEventListener('submit', function (event) {
-  event.preventDefault();
+    const isValid = validateForm(event);
 
-  const isValid = validateForm(event);
+    if (!isValid) return;
 
-  if (!isValid) return;
-
-  if (!grecaptcha.getResponse()) {
-    grecaptcha.execute();
-    return;
-  }
-});
+    if (!grecaptcha.getResponse()) {
+      grecaptcha.execute();
+      return;
+    }
+  });
 
 function validateForm(ev) {
   const $name = document.getElementById('name');
   const $email = document.getElementById('email');
   const $message = document.getElementById('message');
 
-  const hasValidName = validateInput($name);
-  const hasValidEmail = validateInput($email);
-  const hasValidMessage = validateInput($message);
+  const hasValidName = formValidation.validateInput($name);
+  const hasValidEmail = formValidation.validateInput($email);
+  const hasValidMessage = formValidation.validateInput($message);
 
   if (!hasValidName || !hasValidEmail || !hasValidMessage) {
     ev.preventDefault();
@@ -49,7 +53,7 @@ function validateForm(ev) {
 }
 
 // This is called via data-callback
-function captchaCompleted() {
+window.captchaCompleted = () => {
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
@@ -62,7 +66,7 @@ function captchaCompleted() {
   })
     .then(function (response) {
       if (response.ok) {
-        trackEvent('contact_us', 'sent', 'home');
+        events.trackEvent('contact_us', 'sent', 'home');
         $form.remove();
 
         const $successBlock = document.getElementById('js-show-success');
@@ -76,12 +80,12 @@ function captchaCompleted() {
 
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
-        trackEvent('contact_us', 'failed', 'home');
+        events.trackEvent('contact_us', 'failed', 'home');
         document.getElementById('js-submit').disabled = false;
       }
     })
     .catch((error) => {
-      trackEvent('contact_us', 'failed', 'home');
+      events.trackEvent('contact_us', 'failed', 'home');
       document.getElementById('js-submit').disabled = false;
     });
-}
+};

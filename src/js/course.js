@@ -1,17 +1,48 @@
+import * as events from './trackEvents';
+import * as formValidation from './fromValidation';
+import { listenDropdown } from './dropdown';
+
 import '../sass/site.scss';
 import '../sass/course.scss';
 
-const glide = new Glide('.glide', {
-  type: 'carousel',
-  perView: 2,
-  focusAt: 'center',
-  breakpoints: {
-    600: {
-      perView: 1,
+listenDropdown();
+events.initTrackEvents();
+mounCarousel();
+
+document
+  .querySelectorAll('input[type=radio][name="myRadio"]')
+  .forEach(function (radio) {
+    radio.addEventListener('change', showCorrectInputDependingOnSelectedRadio);
+  });
+
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const isValid = validateForm(event);
+
+    if (!isValid) return;
+
+    if (!grecaptcha.getResponse()) {
+      grecaptcha.execute();
+      return;
+    }
+  });
+
+function mounCarousel() {
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 2,
+    focusAt: 'center',
+    breakpoints: {
+      600: {
+        perView: 1,
+      },
     },
-  },
-  gap: 20,
-});
+    gap: 20,
+  }).mount();
+}
 
 function showCorrectInputDependingOnSelectedRadio(event) {
   const { value } = event.target;
@@ -31,11 +62,11 @@ function validateForm(ev) {
   const $locality = document.getElementById('locality');
   const $numProgrammers = document.getElementById('numProgrammers');
 
-  const hasValidName = validateInput($name);
-  const hasValidEmail = validateInput($email);
+  const hasValidName = formValidation.validateInput($name);
+  const hasValidEmail = formValidation.validateInput($email);
   const hasValidForWhoInput = isForBusiness($radio.value)
-    ? validateInput($numProgrammers)
-    : validateInput($locality);
+    ? formValidation.validateInput($numProgrammers)
+    : formValidation.validateInput($locality);
 
   if (!hasValidName || !hasValidEmail || !hasValidForWhoInput) {
     ev.preventDefault();
@@ -59,29 +90,8 @@ function validateForm(ev) {
   return true;
 }
 
-glide.mount();
-
-document
-  .querySelectorAll('input[type=radio][name="myRadio"]')
-  .forEach(function (radio) {
-    radio.addEventListener('change', showCorrectInputDependingOnSelectedRadio);
-  });
-
-document.getElementById('contactForm').addEventListener('submit', function () {
-  event.preventDefault();
-
-  const isValid = validateForm(event);
-
-  if (!isValid) return;
-
-  if (!grecaptcha.getResponse()) {
-    grecaptcha.execute();
-    return;
-  }
-});
-
 // This is called via data-callback
-function captchaCompleted() {
+window.captchaCompleted = () => {
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
@@ -96,7 +106,7 @@ function captchaCompleted() {
   })
     .then(function (response) {
       if (response.ok) {
-        trackEvent('contact_us', 'sent', trainingType);
+        events.trackEvent('contact_us', 'sent', trainingType);
         $form.remove();
 
         const $successBlock = document.getElementById('js-show-success');
@@ -110,12 +120,12 @@ function captchaCompleted() {
 
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
-        trackEvent('contact_us', 'failed', trainingType);
+        events.trackEvent('contact_us', 'failed', trainingType);
         document.getElementById('js-submit').disabled = false;
       }
     })
     .catch((error) => {
-      trackEvent('contact_us', 'failed', trainingType);
+      events.trackEvent('contact_us', 'failed', trainingType);
       document.getElementById('js-submit').disabled = false;
     });
-}
+};
