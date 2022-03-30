@@ -16,7 +16,7 @@ help:
 
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
-DOCKER_NODE_IMAGE = node:14.5.0-alpine
+DOCKER_NODE_IMAGE = node:16-alpine
 DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
@@ -44,7 +44,7 @@ just-build:
 
 .PHONY: lint
 lint:
-		$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) -v src:/app/src sh lint.sh
+		$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) sh lint.sh
 
 start:
 	$(DOCKER_COMMAND) --name codium_web_new -p 3000:3000 -d $(DOCKER_NODE_IMAGE) npm run start
