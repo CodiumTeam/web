@@ -16,7 +16,7 @@ help:
 
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
-DOCKER_NODE_IMAGE = node:16-alpine
+DOCKER_NODE_IMAGE = node:16
 DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
