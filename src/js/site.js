@@ -1,6 +1,7 @@
 import * as events from './trackEvents';
 import * as formValidation from './fromValidation';
 import { listenDropdown } from './dropdown';
+import { reveal } from './reveal';
 
 import '../sass/site.scss';
 
@@ -20,6 +21,8 @@ document
       return;
     }
   });
+
+window.addEventListener('scroll', reveal);
 
 function validateForm(ev) {
   const $name = document.getElementById('name');
