@@ -5,6 +5,24 @@
   text-align: center;
   white-space: normal;
 
+  &__list {
+    list-style: none;
+    text-align: left;
+    padding-left: 1rem;
+    min-height: 150px;
+
+    li {
+      margin: 0.7rem 0;
+      &:before {
+        content: '\f0da';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        margin-right: 0.5rem;
+        color: $darkest-grey;
+      }
+    }
+  }
+
   &__name,
   &__profession {
     margin: 0;
@@ -107,6 +125,12 @@
 .card__footer {
   margin-top: 16px;
   text-align: center;
+
+  .card__view-info {
+    margin-top: 1rem;
+    display: inline-block;
+    color: $dark-grey;
+  }
 }
 
 .card__icons {
