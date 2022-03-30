@@ -42,9 +42,9 @@ build:
 just-build:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) sh build.sh
 
-.PHONY: convert
-convert:
-	$(DOCKER_COMMAND) $(DOCKER_IMAGEMAGICK_IMAGE) $(FILE_PATH) -resize 245x155 -size 255x161 xc:white +swap -gravity center -composite $(FILE_PATH)
+.PHONY: lint
+lint:
+		$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) -v src:/app/src sh lint.sh
 
 start:
 	$(DOCKER_COMMAND) --name codium_web_new -p 3000:3000 -d $(DOCKER_NODE_IMAGE) npm run start
