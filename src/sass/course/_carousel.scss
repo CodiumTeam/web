@@ -76,6 +76,7 @@ $carousel-padding: 2.5rem;
   }
 
   .glide__arrow {
-    top: 25%;
+    top: 50%;
+    transform: translateY(-100%);
   }
 }
