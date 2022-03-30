@@ -47,9 +47,4 @@ lint:
 		$(DOCKER_COMMAND) -v ${HOME}/.gitconfig:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh lint.sh
 
 start:
-	$(DOCKER_COMMAND) --name codium_web_new -p 3000:3000 -d $(DOCKER_NODE_IMAGE) npm run start
-	@echo "http://localhost:3000/"
-	@echo "http://localhost:3000/tdd/"
-	@echo "http://localhost:3000/docker/"
-	@echo "http://localhost:3000/working-with-legacy-code/"
-	@echo "http://localhost:3000/resource/"
+	$(DOCKER_COMMAND) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
