@@ -39,12 +39,16 @@
 }
 
 .dropdown .options li {
-  padding: 12px 20px;
   cursor: pointer;
+
+  a {
+    display: block;
+    padding: 12px 20px;
+  }
 }
 
 .dropdown .options li:hover {
-  color: #fff;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
