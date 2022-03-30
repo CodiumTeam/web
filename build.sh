@@ -1,4 +1,4 @@
 #!/bin/node
 set -e
 
-npm run --silent build
+npm run build --no-update-notifier
