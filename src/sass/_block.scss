@@ -22,6 +22,10 @@
   &--grey {
     background: $lightest-grey;
   }
+
+  &--small {
+    padding: 1.5rem 5px 2rem 5px;
+  }
 }
 
 .button__wrapper {
