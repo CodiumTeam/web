@@ -9,14 +9,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-height: 568px;
-  height: 100vh;
-  padding: 0 24px;
+  padding: 5rem 24px 2rem 24px;
 
   &__title {
     color: $darkest-grey;
     font-size: 2.5em;
-    line-height: 47px;
+    line-height: 50px;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -72,10 +70,6 @@
     &__image {
       margin-top: 2rem;
       max-width: 350px;
-
-      &--huge {
-        max-width: 450px;
-      }
     }
 
     &--home {

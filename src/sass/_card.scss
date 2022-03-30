@@ -55,16 +55,21 @@
 
   .card__header {
     font-size: 72px;
-    margin-bottom: 16px;
+    height: 200px;
   }
 
   .card__title {
     font-size: $text-xl-normal;
     margin-bottom: 16px;
+    margin-top: 0;
   }
 
   .card__text {
     margin-bottom: 16px;
+  }
+
+  .card__image {
+    min-height: 180px;
   }
 }
 
@@ -148,10 +153,6 @@
   }
 
   .card--large {
-    .card__header {
-      margin-bottom: 30px;
-    }
-
     .card__title {
       margin-bottom: 30px;
     }
