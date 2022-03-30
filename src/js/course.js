@@ -52,8 +52,8 @@ function mountClientsCarousel() {
     type: 'carousel',
     autoplay: 2500,
     startAt: 0,
-    gap: 20,
-    perView: 5,
+    gap: 10,
+    perView: 6,
     breakpoints: {
       700: {
         perView: 3,
