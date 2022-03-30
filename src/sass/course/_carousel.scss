@@ -65,3 +65,17 @@ $carousel-padding: 2.5rem;
 .glide .glide__slide {
   height: auto;
 }
+
+.slides {
+  align-items: center;
+}
+
+#clients {
+  .glide__slide {
+    text-align: center;
+  }
+
+  .glide__arrow {
+    top: 25%;
+  }
+}

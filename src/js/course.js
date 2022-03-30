@@ -8,6 +8,7 @@ import '../sass/course.scss';
 listenDropdown();
 events.initTrackEvents();
 mountOpinionCarousel();
+mountClientsCarousel();
 
 document
   .querySelectorAll('input[type=radio][name="myRadio"]')
@@ -33,6 +34,8 @@ document
 function mountOpinionCarousel() {
   new Glide('#opinion', {
     type: 'carousel',
+    autoplay: 2500,
+    startAt: 0,
     perView: 2,
     focusAt: 'center',
     breakpoints: {
@@ -41,6 +44,30 @@ function mountOpinionCarousel() {
       },
     },
     gap: 20,
+  }).mount();
+}
+
+function mountClientsCarousel() {
+  new Glide('#clients', {
+    type: 'carousel',
+    autoplay: 2500,
+    startAt: 0,
+    gap: 20,
+    perView: 5,
+    breakpoints: {
+      700: {
+        perView: 3,
+      },
+      450: {
+        perView: 2,
+      },
+      350: {
+        perView: 1,
+      },
+      800: {
+        perView: 4,
+      },
+    },
   }).mount();
 }
 
