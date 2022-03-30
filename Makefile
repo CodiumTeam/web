@@ -44,7 +44,7 @@ just-build:
 
 .PHONY: lint
 lint:
-		$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) sh lint.sh
+		$(DOCKER_COMMAND) -v ${HOME}/.gitconfig:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh lint.sh
 
 start:
 	$(DOCKER_COMMAND) --name codium_web_new -p 3000:3000 -d $(DOCKER_NODE_IMAGE) npm run start
