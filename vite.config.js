@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import copy from 'rollup-plugin-copy';
 
 const ROOT = resolve(__dirname, 'src');
 const DIST = resolve(__dirname);
@@ -14,6 +15,16 @@ const inputs = {
 
 export default defineConfig({
   root: ROOT,
+  plugins: [
+    copy({
+      targets: [
+        {
+          src: resolve(ROOT, 'fonts'),
+          dest: resolve(DIST, 'assets'),
+        },
+      ],
+    }),
+  ],
   build: {
     outDir: DIST,
     emptyOutDir: false,
