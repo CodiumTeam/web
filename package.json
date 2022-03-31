@@ -28,5 +28,8 @@
     "prettier": "^2.6.1",
     "sass": "^1.49.9",
     "vite": "^2.8.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
   }
 }
