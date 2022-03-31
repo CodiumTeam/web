@@ -48,6 +48,10 @@ function mountOpinionCarousel() {
 }
 
 function mountClientsCarousel() {
+  const clients = document.querySelector('#clients');
+
+  if (!clients) return;
+
   new Glide('#clients', {
     type: 'carousel',
     autoplay: false,
