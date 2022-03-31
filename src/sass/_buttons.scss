@@ -32,4 +32,9 @@
   background-color: transparent;
   border-color: $primary-brand-color;
   color: $primary-brand-color;
+
+  &:hover {
+    color: darken($primary-brand-color, 10%);
+    border-color: darken($primary-brand-color, 10%);
+  }
 }

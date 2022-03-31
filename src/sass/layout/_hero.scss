@@ -11,6 +11,11 @@
   width: 100%;
   padding: 0 24px 2rem 24px;
 
+  svg {
+    max-width: 600px;
+    max-height: 480px;
+  }
+
   &__title {
     color: $darkest-grey;
     font-size: 2.5em;
@@ -63,7 +68,7 @@
   }
 
   .hero {
-    padding: 5rem 24px 3rem 24px;
+    padding: 2.5rem 24px 0.5rem 24px;
     &__subtitle {
       margin-bottom: 5rem;
     }
@@ -97,6 +102,11 @@
 
 @media all and (max-width: 768px) {
   .hero {
+    svg {
+      max-width: 300px;
+      max-height: 200px;
+    }
+
     &__title {
       font-size: $text-xl-normal;
       line-height: 30px;
@@ -111,12 +121,23 @@
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .hero {
+    svg {
+      max-width: 400px;
+    }
     &__home {
       &-image {
         img {
           max-width: 380px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1220px) {
+  .hero {
+    svg {
+      max-width: 500px;
     }
   }
 }
