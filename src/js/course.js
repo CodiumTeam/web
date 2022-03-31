@@ -1,7 +1,14 @@
+import Glide, {
+  Controls,
+  Breakpoints,
+} from '@glidejs/glide/dist/glide.modular.esm';
+
 import * as events from './trackEvents';
 import * as formValidation from './fromValidation';
 import { listenDropdown } from './dropdown';
 
+import '@glidejs/glide/dist/css/glide.core.min.css';
+import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../sass/site.scss';
 import '../sass/course.scss';
 
@@ -44,7 +51,7 @@ function mountOpinionCarousel() {
       },
     },
     gap: 20,
-  }).mount();
+  }).mount({ Controls, Breakpoints });
 }
 
 function mountClientsCarousel() {
@@ -72,7 +79,7 @@ function mountClientsCarousel() {
         perView: 4,
       },
     },
-  }).mount();
+  }).mount({ Controls, Breakpoints });
 }
 
 function showCorrectInputDependingOnSelectedRadio(event) {
