@@ -1,13 +1,14 @@
 .button {
   border: 1px solid transparent;
   border-radius: 5px;
-  line-height: 1.5;
+  line-height: 1.25rem;
   outline: none;
-  padding: 10px 40px;
+  padding: 12px 24px;
   text-align: center;
   white-space: nowrap;
   display: inline-block;
   text-decoration: none;
+  font-size: 1rem;
 
   &:hover {
     cursor: pointer;

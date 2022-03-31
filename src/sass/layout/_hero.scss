@@ -1,5 +1,5 @@
 .hero-wrapper {
-  background: $lightest-grey;
+  background-color: $lightest-grey;
   padding-top: 5rem;
 }
 
@@ -86,6 +86,9 @@
       &-image {
         order: 2;
         display: block;
+        img {
+          max-width: 450px;
+        }
       }
     }
   }

@@ -50,7 +50,7 @@ function mountOpinionCarousel() {
 function mountClientsCarousel() {
   new Glide('#clients', {
     type: 'carousel',
-    autoplay: 2500,
+    autoplay: false,
     startAt: 0,
     gap: 10,
     perView: 6,
