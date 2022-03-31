@@ -41,7 +41,7 @@ document
 function mountOpinionCarousel() {
   new Glide('#opinion', {
     type: 'carousel',
-    autoplay: 2500,
+    autoplay: 5000,
     startAt: 0,
     perView: 2,
     focusAt: 'center',
