@@ -27,12 +27,12 @@
   }
 
   &__item {
-    margin-right: 0.2rem;
+    margin: 0 0.3rem;
     a {
       color: #fff;
       text-decoration: none;
 
-      .fa-inverse {
+      .icon {
         color: $darkest-grey;
       }
     }

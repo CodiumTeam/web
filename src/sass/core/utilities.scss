@@ -1,4 +1,4 @@
-@import '@fortawesome/fontawesome-free/css/all.css';
+@import './icomoon/style';
 
 .text-center {
   text-align: center;
@@ -20,4 +20,20 @@
 
 .hidden {
   display: none;
+}
+
+.fa-stack {
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  width: 2em;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+
+  .icon {
+    font-size: 1rem;
+  }
 }
