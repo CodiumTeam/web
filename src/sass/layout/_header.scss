@@ -41,7 +41,8 @@
     margin-right: 1rem;
   }
 
-  a {
+  a,
+  span {
     cursor: pointer;
     color: $darkest-grey;
     text-decoration: none;
