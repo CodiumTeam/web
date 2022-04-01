@@ -78,6 +78,9 @@ function mountClientsCarousel() {
       800: {
         perView: 4,
       },
+      910: {
+        perView: 4,
+      },
     },
   }).mount({ Controls, Breakpoints });
 }
