@@ -39,3 +39,72 @@
     color: $dark-grey;
   }
 }
+
+.fade-in-right-to-left {
+  display: block;
+  transform: translateX(0);
+  animation: fadeInRightToLeft 2.3s 0s;
+  animation-fill-mode: both;
+}
+
+.svg-circle {
+  display: block;
+  transform: translateY(0);
+  animation: fadeInTopToBottom 2s 0s;
+  animation-fill-mode: both;
+
+  &--sos {
+    animation: fadeInBottomToTop 2.5s 0s;
+    animation-fill-mode: both;
+  }
+}
+
+.fade-in {
+  display: block;
+  animation: fadeIn 1s 0s;
+  opacity: 1;
+  animation-fill-mode: both;
+
+  &--late {
+    animation: fadeIn 3s 0s;
+  }
+}
+
+@keyframes fadeInRightToLeft {
+  0% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeInTopToBottom {
+  0% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeInBottomToTop {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
