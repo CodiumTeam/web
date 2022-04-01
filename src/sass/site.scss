@@ -66,6 +66,7 @@
   animation-fill-mode: both;
 
   &--late {
+    opacity: 1;
     animation: fadeIn 3s 0s;
   }
 }
@@ -93,7 +94,7 @@
 @keyframes fadeInBottomToTop {
   0% {
     transform: translateY(5%);
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     transform: translateX(0%);
