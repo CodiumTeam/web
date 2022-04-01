@@ -80,4 +80,8 @@ $carousel-padding: 2.8rem;
     top: 50%;
     transform: translateY(-100%);
   }
+
+  .client__item {
+    min-width: 120px;
+  }
 }
