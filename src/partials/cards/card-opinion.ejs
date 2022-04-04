@@ -1,0 +1,20 @@
+<div class="card card--opinion">
+  <div class="card__header">
+    <div class="card__image-wrapper">
+      <img
+        src="<%= avatar  %>"
+        alt="<%= name  %> avatar"
+        class="card__image card__image--rounded"
+      />
+    </div>
+  </div>
+  <div class="card__text card__text--left">
+    <p>
+      <%- opinion  %>
+    </p>
+    <p class="text-bold card__name"><%= name  %></p>
+    <% if (locals.profession) { %>
+      <p class="card__profession"><%= profession  %></p>
+    <% } %>
+  </div>
+</div>
