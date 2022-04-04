@@ -26,1141 +26,1187 @@
 
   <body>
     <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        'script',
-        'https://www.google-analytics.com/analytics.js',
-        'ga'
-      );
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    'script',
+    'https://www.google-analytics.com/analytics.js',
+    'ga'
+  );
 
-      ga('create', 'UA-101845458-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-101845458-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
     <header class="header" id="js-header">
-      <div class="container">
-        <div class="header__wrapper">
-          <a href="/">
-            <img
-              src="/assets/codium-brand-rectangle-black.35efee3c.svg"
-              alt="Logo de Codium"
-              class="header__image"
-            />
-          </a>
-          <i class="icon icon-menu header__icon" id="js-menu-button"></i>
-          <nav class="navbar" id="js-menu">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="/">Inicio</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#value">Beneficios</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#training-content-timeline">Contenido</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#methodology">Metodología</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#faqs">FAQs</a>
-              </li>
-              <li class="navbar__item navbar__item--dropdown">
-                <div class="dropdown">
-                  <span>Cursos</span>
-                  <ul class="options">
-                    <li>
-                      <a href="/curso-legacy-code.html">Legacy</a>
-                    </li>
-                    <li><a href="/curso-tdd.html">TDD</a></li>
-                    <li><a href="/curso-docker.html">Docker</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="navbar__item">
-                <a href="#contactForm">Contactar</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/">
+        <img
+          src="/assets/codium-brand-rectangle-black.35efee3c.svg"
+          alt="Logo de Codium"
+          class="header__image"
+        />
+      </a>
+      <i class="icon icon-menu header__icon" id="js-menu-button"></i>
+<nav class="navbar" id="js-menu">
+  <ul class="navbar__list">
+    
+    <li class="navbar__item">
+      <a href="/">Inicio</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#value">Beneficios</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#training-content-timeline">Contenido</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#methodology">Metodología</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#faqs">FAQs</a>
+    </li>
+    
+
+    <li class="navbar__item navbar__item--dropdown">
+      <div class="dropdown">
+  <span>Cursos</span>
+  <ul class="options">
+    <li>
+      <a href="/curso-legacy-code.html">Legacy</a>
+    </li>
+    <li><a href="/curso-tdd.html">TDD</a></li>
+    <li><a href="/curso-docker.html">Docker</a></li>
+  </ul>
+</div>
+
+    </li>
+
+    <li class="navbar__item">
+      <a href="#contactForm">Contactar</a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+</header>
+
 
     <div class="hero-wrapper">
-      <div class="container course-hero">
-        <section class="hero">
-          <h2 class="hero__title">Curso de Test-Driven Development</h2>
-          <p class="hero__subtitle">Revoluciona tu forma de desarrollar</p>
+  <div class="container course-hero">
+    <section class="hero">
+      <h2 class="hero__title">Curso de Test-Driven Development</h2>
+      <p class="hero__subtitle">Revoluciona tu forma de desarrollar</p>
 
+      <div>
+        <img
+          src="/assets/tdd-logo.f7becdbd.svg"
+          alt="TDD logo"
+          class="hero__image hero__image--huge"
+        />
+      </div>
+    </section>
+
+    <div class="card course__information-wrapper">
+      <h2 class="subtitle">Información</h2>
+      <div class="card__content">
+        <div class="course__information">
+          <i class="icon icon-hourglass"></i>
           <div>
-            <img
-              src="/assets/tdd-logo.f7becdbd.svg"
-              alt="TDD logo"
-              class="hero__image hero__image--huge"
-            />
+            <p class="course__information-text">16 horas</p>
+            <p class="course__information-desc">(2 días o 4 medios días)</p>
           </div>
-        </section>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-location"></i>
+          <p class="course__information-text">Remoto o presencial</p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-embed2"></i>
+          <p class="course__information-text">
+            Java, Python, PHP, Js, C#, C++, ...
+          </p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-language"></i>
+          <p class="course__information-text">También en inglés</p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-coin-euro"></i>
+          <div>
+            <p class="course__information-text">
+              A partir de 650 € + IVA por persona.
+            </p>
+            <p class="course__information-desc">Bonificable por FUNDAE</p>
+          </div>
+        </div>
+        <div class="button__wrapper">
+          <a
+            href="#contactForm"
+            class="button button--primary"
+            data-trackevent="contact_us.show_form.course_info-summary"
+          >
+            Contactar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="card course__information-wrapper">
-          <h2 class="subtitle">Información</h2>
-          <div class="card__content">
-            <div class="course__information">
-              <i class="icon icon-hourglass"></i>
-              <div>
-                <p class="course__information-text">16 horas</p>
-                <p class="course__information-desc">(2 días o 4 medios días)</p>
+
+    <main>
+
+      <section class="block block--white block--small">
+  <div class="container client">
+    <div class="carousel">
+      <div class="glide" id="clients">
+        <div class="glide__arrows">
+          <p
+            class="glide__arrow glide__arrow--left js-clients-arrow"
+            data-glide-dir="<"
+          >
+            <i class="icon icon-circle-left"></i>
+          </p>
+        </div>
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides slides">
+            <li class="glide__slide">
+              <div class="client__item client__item--roiback">
+                <img src="/assets/roiback.cdd9c716.png" alt="Roiback logo" />
               </div>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-location"></i>
-              <p class="course__information-text">Remoto o presencial</p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-embed2"></i>
-              <p class="course__information-text">
-                Java, Python, PHP, Js, C#, C++, ...
-              </p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-language"></i>
-              <p class="course__information-text">También en inglés</p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-coin-euro"></i>
-              <div>
-                <p class="course__information-text">
-                  A partir de 650 € + IVA por persona.
-                </p>
-                <p class="course__information-desc">Bonificable por FUNDAE</p>
+            </li>
+
+            <li class="glide__slide">
+              <div class="client__item client__item--ge">
+                <img
+                  src="/assets/generalelectric.6056b066.png"
+                  alt="General electric logo"
+                />
               </div>
-            </div>
-            <div class="button__wrapper">
-              <a
-                href="#contactForm"
-                class="button button--primary"
-                data-trackevent="contact_us.show_form.course_info-summary"
-              >
-                Contactar
-              </a>
-            </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="client__item client__item client__item--glovo">
+                <img src="/assets/glovo.141a8fa6.png" alt="Glovo logo" />
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="client__item client__item client__item--glovo">
+                <img src="/assets/avoris.40f09183.png" alt="Avoris logo" />
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="client__item client__item client__item--glovo">
+                <img src="/assets/melia.916fac5b.png" alt="Meliá logo" />
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="client__item">
+                <img
+                  src="/assets/hotelbeds.c7fff21d.png"
+                  alt="Hotelbeds logo"
+                />
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="client__item">
+                <img src="/assets/zooplus.f0bc4836.svg" alt="Zooplus logo" />
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="client__item">
+                <img
+                  src="/assets/habitissimo.ce7e1ead.png"
+                  alt="Habitissimo logo"
+                />
+              </div>
+            </li>
+          </ul>
+          <div class="glide__arrows">
+            <p
+              class="glide__arrow glide__arrow--right js-clients-arrow"
+              data-glide-dir=">"
+            >
+              <i class="icon icon-circle-right"></i>
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <main>
-      <section class="block block--white block--small">
-        <div class="container client">
-          <div class="carousel">
-            <div class="glide" id="clients">
-              <div class="glide__arrows">
-                <p
-                  class="glide__arrow glide__arrow--left js-clients-arrow"
-                  data-glide-dir="<"
-                >
-                  <i class="icon icon-circle-left"></i>
-                </p>
-              </div>
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides slides">
-                  <li class="glide__slide">
-                    <div class="client__item client__item--roiback">
-                      <img src="/assets/roiback.cdd9c716.png" alt="Roiback logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item client__item--ge">
-                      <img
-                        src="/assets/generalelectric.6056b066.png"
-                        alt="General electric logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item client__item client__item--glovo">
-                      <img src="/assets/glovo.141a8fa6.png" alt="Glovo logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item client__item client__item--glovo">
-                      <img src="/assets/avoris.40f09183.png" alt="Avoris logo" />
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="client__item client__item client__item--glovo">
-                      <img src="/assets/melia.916fac5b.png" alt="Meliá logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/hotelbeds.c7fff21d.png"
-                        alt="Hotelbeds logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img src="/assets/zooplus.f0bc4836.svg" alt="Zooplus logo" />
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/habitissimo.ce7e1ead.png"
-                        alt="Habitissimo logo"
-                      />
-                    </div>
-                  </li>
-                </ul>
-                <div class="glide__arrows">
-                  <p
-                    class="glide__arrow glide__arrow--right js-clients-arrow"
-                    data-glide-dir=">"
-                  >
-                    <i class="icon icon-circle-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block block--white">
-        <div class="container">
-          <h2 class="text-center title">Testimonios</h2>
-          <p class="text-center">
-            Conoce qué han dicho los alumnos sobre éste curso
-          </p>
-
-          <div class="carousel">
-            <div class="glide" id="opinion">
-              <div class="glide__arrows">
-                <p
-                  class="glide__arrow glide__arrow--left js-opinion-arrow"
-                  data-glide-dir="<"
-                >
-                  <i class="icon icon-circle-left"></i>
-                </p>
-              </div>
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/HelderDOliveira.bfd3e336.jpg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Pragmático, directo, en la misma línea de la propia
-                          filosofía de TDD​.​ ​M​e ha ayudado a desarrollar de
-                          forma más segura y limpia, ​descubriendo a la vez
-                          otras formas de hacer TDD que desconocía y siempre
-                          guiado desde ejercicios muy potentes.
-                        </p>
-                        <p class="text-bold card__name">Helder De Oliveira</p>
-                        <p class="card__profession">Software Craftsman</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/JoanMiralles.4ad8e6ff.jpg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Aunque conocía TDD a nivel teórico, después de
-                          realizar este curso, ha sido cuándo he entendido cómo
-                          llevarlo a mi día a día.
-                        </p>
-                        <p class="text-bold card__name">Joan Miralles</p>
-                        <p class="card__profession">
-                          Software Architect en Brújula Tecnologías de la
-                          Información
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/ilya.030db6fe.png"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          El curso ha sido un buen punto de inflexión para
-                          empezar a usar TDD en mi día a día y profundizar en
-                          todo lo aprendido. Las katas guiadas por el equipo de
-                          Codium le dan muchísimo valor al curso y están muy
-                          bien escogidas para remarcar los fallos que se suelen
-                          cometer al empezar con TDD.
-                        </p>
-                        <p class="text-bold card__name">Ilya Kabushko</p>
-                        <p class="card__profession">
-                          Software developer en Travel Compositor
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="glide__arrows">
-                  <p
-                    class="glide__arrow glide__arrow--right js-opinion-arrow"
-                    data-glide-dir=">"
-                  >
-                    <i class="icon icon-circle-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="glide__bullets" data-glide-el="controls[nav]">
-                <span class="glide__bullet" data-glide-dir="=0"></span>
-                <span class="glide__bullet" data-glide-dir="=1"></span>
-                <span class="glide__bullet" data-glide-dir="=2"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="block block--white">
-        <div class="container">
-          <h2 class="text-center title" id="value">El valor de TDD</h2>
-          <p class="text-center text-dark-grey">
-            El simple hecho de pensar y escribir un test antes que el código de
-            producción, representa un cambio de paradigma en el desarrollo de
-            software y un salto de calidad inimaginable en tu código.
-          </p>
+  <div class="container">
+    <h2 class="text-center title">Testimonios</h2>
+    <p class="text-center">
+      Conoce qué han dicho los alumnos sobre éste curso
+    </p>
 
-          <article class="tdd-value">
-            <div class="text-center tdd-value__item">
-              <img
-                src="/assets/fast-cheap-good-v2.ee8d0966.svg"
-                class="tdd-value__image"
-                alt="El valor del curso explicado con bueno-bonito-barato"
-              />
-            </div>
-
-            <aside class="tdd-value__item">
-              <div>
-                <h3>Ayuda a reducir los costes de desarrollo</h3>
-                <ul class="course-calendar__items">
-                  <li class="text-dark-grey">
-                    Implementando sólo lo imprescindible para los requisitos
-                    actuales (diseño incremental)
-                  </li>
-                  <li class="text-dark-grey">
-                    Evitando complejidades innecesarias
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3>Ayuda a reducir los costes de mantenimiento</h3>
-                <ul class="course-calendar__items">
-                  <li class="text-dark-grey">
-                    Al reducir el testeo manual de la aplicación
-                  </li>
-                  <li class="text-dark-grey">
-                    Minimizando las incidencias en producción
-                  </li>
-                  <li class="text-dark-grey">
-                    Gracias a soluciones más simples
-                  </li>
-                  <li class="text-dark-grey">
-                    Al poder cambiar fácilmente decisiones que ya no son válidas
-                  </li>
-                  <li class="text-dark-grey">
-                    Al tener una documentación ejecutable
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3>Transforma al desarrollador</h3>
-                <ul class="course-calendar__items">
-                  <li class="text-dark-grey">
-                    Aumentando la seguridad de los desarrolladores al introducir
-                    cambios en el código
-                  </li>
-                  <li class="text-dark-grey">
-                    Mejorando la moral y motivación del equipo
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </article>
-
-          <div class="button__wrapper">
-            <a
-              class="button button--primary"
-              href="#contactForm"
-              data-trackevent="contact_us.show_form.course_value"
-              >Contactar</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="block block--lila">
-        <div class="container">
-          <h2 class="text-center title" id="training-content-timeline">
-            Contenido del curso
-          </h2>
-
-          <div class="calendar">
-            <div>
-              <article class="course-calendar">
-                <div class="course-calendar__day">
-                  <p class="small-title">Día 1</p>
-                  <p class="text-dark-grey course-calendar__day-item">Mañana</p>
-                </div>
-                <div class="course-calendar__list">
-                  <p class="small-title">
-                    Introducción a Test-Driven Development
-                  </p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      Tipos de tests y costes asociados
-                    </li>
-                    <li class="text-dark-grey">
-                      Ciclo de desarrollo: red, green, refactor
-                    </li>
-                    <li class="text-dark-grey">
-                      Reglas de TDD y las pruebas unitarias
-                    </li>
-                    <li class="text-dark-grey">
-                      Estructura y convenciones de los tests
-                    </li>
-                    <li class="text-dark-grey">Arnés y cobertura de test</li>
-                    <li class="text-dark-grey">
-                      Kata (o ejercicio) introductoria
-                    </li>
-                  </ul>
-                </div>
-              </article>
-              <article class="course-calendar">
-                <div class="course-calendar__day">
-                  <p class="text-dark-grey course-calendar__day-item">Tarde</p>
-                </div>
-                <div class="course-calendar__list">
-                  <p class="small-title course-calendar__title">
-                    Beneficios de TDD
-                  </p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">Por qué hacer TDD</li>
-                    <li class="text-dark-grey">Economía de TDD</li>
-                    <li class="text-dark-grey">Kata</li>
-                  </ul>
-
-                  <p class="small-title">Contexto de TDD y Test smells</p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">Agile Manifesto</li>
-                    <li class="text-dark-grey">
-                      Software Craftsmanship Manifesto
-                    </li>
-                    <li class="text-dark-grey">eXtreme Programming (XP)</li>
-                    <li class="text-dark-grey">Kata tests smells</li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-
-            <div>
-              <article class="course-calendar">
-                <div class="course-calendar__day">
-                  <p class="small-title">Día 2</p>
-                  <p class="text-dark-grey course-calendar__day-item">Mañana</p>
-                </div>
-                <div class="course-calendar__list">
-                  <p class="small-title">Dobles de pruebas</p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      Para qué sirven los tests dobles
-                    </li>
-                    <li class="text-dark-grey">Cómo y cuándo usarlos</li>
-                    <li class="text-dark-grey">
-                      Tipos de dobles: mock, spy, stub, fake y dummy
-                    </li>
-                    <li class="text-dark-grey">Cómo funcionan internamente</li>
-                    <li class="text-dark-grey">Kata historia de usuario</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article class="course-calendar">
-                <div class="course-calendar__day">
-                  <p class="text-dark-grey course-calendar__day-item">Tarde</p>
-                </div>
-                <div class="course-calendar__list">
-                  <p class="small-title course-calendar__title">
-                    Consejos para hacer TDD
-                  </p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">Testing en el front-end</li>
-                    <li class="text-dark-grey">Testing con base de datos</li>
-                    <li class="text-dark-grey">Builders de test</li>
-                  </ul>
-
-                  <p class="small-title">TDD Outside-in</p>
-                  <ul class="course-calendar__items">
-                    <li class="text-dark-grey">
-                      Test-Driven Development outside-in
-                    </li>
-                    <li class="text-dark-grey">Cómo desarrollamos en Codium</li>
-                    <li class="text-dark-grey">Kata iterativa</li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="button__wrapper">
-            <a
-              class="button button--primary"
-              href="#contactForm"
-              data-trackevent="contact_us.show_form.course_index"
-            >
-              Contactar
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="block block--white">
-        <div class="container">
-          <h2 class="text-center title" id="methodology">Metodología</h2>
-
-          <div class="course__metodology">
-            <p class="text-dark-grey">
-              Hoy en día cualquiera puede leer un libro o ver un vídeo, pero lo
-              realmente difícil es poner en práctica lo aprendido. Por eso, en
-              nuestro curso, queremos que los alumnos pasen la mayor parte del
-              tiempo programando y no escuchando teoría.
-            </p>
-            <p class="text-dark-grey">
-              En busca de la calidad y satisfacción de todos los asistentes,
-              creemos que es indispensable ser dos profesores senior. Esto nos
-              permite tener la disponibilidad suficiente para ayudar de forma
-              personalizada mientras los alumnos programan.
-            </p>
-            <p class="text-dark-grey">
-              Perseguimos maximizar el aprendizaje. Para ello creamos un
-              ambiente dinámico (Flow) gracias a trabajar en parejas, ejercicios
-              cortos, resolver las dudas rápido, la discusión de forma conjunta
-              de las diferentes soluciones y un trato muy cercano.
-            </p>
-            <p class="text-dark-grey">
-              Por nuestra experiencia como profesores, desarrolladores y
-              emprendedores, comprendemos las problemáticas del desarrollo de
-              software. Haber impartido más de 60 cursos a más de 800 alumnos
-              nos permite conocer las necesidades de los alumnos y cuidar cada
-              detalle de la formación.
-            </p>
-            <p class="text-dark-grey">
-              Todo lo anterior garantiza nuestro objetivo de que quedes
-              satisfecho, adquieras las habilidades necesarias para transformar
-              tu forma de desarrollar y empieces a escribir código sostenible.
-            </p>
-          </div>
-
-          <div class="course__team">
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/assets/luis.26dd530f.jpg"
-                    alt="Luis Rovirosa Mairlot profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-
-              <p class="card__title">Luis Rovirosa</p>
-              <p class="card__professional">Back-end Developer</p>
-              <div class="card__footer">
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a
-                      aria-label="Twitter link"
-                      href="https://twitter.com/luisrovirosa"
-                      ><i class="icon icon-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Linkedin link"
-                      href="https://linkedin.com/in/luisrovirosa/"
-                      ><i class="icon icon-linkedin2"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Github link"
-                      href="https://github.com/luisrovirosa"
-                      ><i class="icon icon-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/assets/jordi.d1e63494.jpeg"
-                    alt="Jordi Anguela profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-              <p class="card__title">Jordi Anguela</p>
-              <p class="card__professional">Front-end Developer</p>
-              <div class="card__footer">
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a
-                      aria-label="Twitter link"
-                      href="http://twitter.com/jordianguela"
-                      ><i class="icon icon-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Linkedin link"
-                      href="https://linkedin.com/in/jordianguela/"
-                      ><i class="icon icon-linkedin2"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Github link"
-                      href="https://github.com/jordianguela"
-                      ><i class="icon icon-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/assets/hugo.f5a51d74.jpeg"
-                    alt="Hugo Chinchilla profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-              <p class="card__title">Hugo Chinchilla</p>
-              <p class="card__professional">Full-stack Developer</p>
-              <div class="card__footer">
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a
-                      aria-label="Twitter link"
-                      href="https://twitter.com/hchinchilla_"
-                      ><i class="icon icon-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Linkedin link"
-                      href="https://linkedin.com/in/hugo-chinchilla-carbonell/"
-                      ><i class="icon icon-linkedin2"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Github link"
-                      href="https://github.com/hugochinchilla"
-                      ><i class="icon icon-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/assets/jose.1c0c6677.png"
-                    alt="Jose Cabrera profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-              <p class="card__title">Jose Cabrera</p>
-              <p class="card__professional">Front-end Developer</p>
-              <div class="card__footer">
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a
-                      aria-label="Twitter link"
-                      href="https://twitter.com/11joselu"
-                      ><i class="icon icon-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Linkedin link"
-                      href="https://www.linkedin.com/in/11joselu/"
-                      ><i class="icon icon-linkedin2"></i
-                    ></a>
-                  </li>
-                  <li class="card__icon">
-                    <a
-                      aria-label="Github link"
-                      href="https://github.com/11joselu"
-                      ><i class="icon icon-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="button__wrapper">
-            <a
-              class="button button--primary"
-              href="#contactForm"
-              data-trackevent="contact_us.show_form.team"
-            >
-              Contactar
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="block">
-        <div class="container sumary-numbers">
-          <div class="sumary-numbers__item">
-            <h2 class="title text-center">Resumen en números</h2>
-          </div>
-          <div class="sumary-numbers__item sumary-numbers__item--circles">
-            <div class="circle circle--large circle--lila">
-              <div class="circle__text">
-                <p class="circle__number">60</p>
-                <p class="circle__number-info">Formaciones impartidas</p>
-              </div>
-            </div>
-            <div class="circle circle--green">
-              <div class="circle__text">
-                <p class="circle__number">822</p>
-                <p class="circle__number-info">Profesionales formados</p>
-              </div>
-            </div>
-            <div class="circle circle--blue">
-              <div class="circle__text">
-                <p class="circle__number">46</p>
-                <p class="circle__number-info">Empresas que han confiado</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block block--white">
-        <div class="container">
-          <h2 class="text-center title" id="faqs">Preguntas frecuentes</h2>
-          <div class="question-wrapper">
-            <div class="question">
-              <p class="small-title">¿A quién va dirigido?</p>
-              <p class="text-dark-grey">
-                A equipos que hacen tests y quieren dar un salto de calidad.
-              </p>
-              <p class="text-dark-grey">
-                A empresas que quieren tomarse en serio la calidad y seguir
-                añadiendo funcionalidad a buena velocidad.
-              </p>
-
-              <p class="text-dark-grey">
-                A programadores familiarizados con el testing y buenas prácticas
-                de desarrollo.
-              </p>
-
-              <p class="text-dark-grey">
-                El curso se centra en cómo testear la lógica de negocio,
-                independientemente de dónde se encuentre, ya sea el back-end,
-                front-end o móvil. Las personas de QA también pueden
-                beneficiarse del curso, entendiendo el proceso de desarrollo y
-                ayudando a escribir mejores pruebas.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">¿Cuál es el nivel del curso?</p>
-
-              <p class="text-dark-grey">
-                El nivel del curso es avanzado. Está dirigido a personas que
-                escriben tests con frecuencia.
-              </p>
-
-              <p class="text-dark-grey">
-                Es un curso introductorio a Test-Driven Development. El curso es
-                intenso y cubrimos desde las partes más básicas, como las
-                pruebas unitarias, a temas más complejos, como los diferentes
-                tipos de dobles de pruebas y problemas habituales cuando
-                escribimos tests.
-              </p>
-
-              <p class="text-dark-grey">
-                Al ser un curso muy práctico y con mucho debate, permite que nos
-                adaptemos al nivel de los asistentes. Si ya conoces algo de TDD,
-                durante el curso profundizarás en tus conocimientos y aprenderás
-                estrategias más avanzadas.
-              </p>
-
-              <p class="text-dark-grey">
-                Este no es un curso diseñado para personas que aplican
-                Test-Driven Development en su día a día, escribiendo
-                sistemáticamente las pruebas unitarias antes de escribir el
-                código.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">
-                ¿Se puede bonificar el curso por FUNDAE?
-              </p>
-
-              <p class="text-dark-grey">
-                Sí, el curso se puede bonificar a través de FUNDAE.
-              </p>
-
-              <p class="text-dark-grey">
-                Actualmente se puede bonificar hasta casi un 50%.
-              </p>
-
-              <p class="text-dark-grey">
-                Nosotros facilitamos todos los datos para su presentación
-                online, pero no la tramitamos.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">
-                ¿Por qué debería asistir todo el equipo?
-              </p>
-
-              <p class="text-dark-grey">
-                Juntar a todo el equipo, además de generar team building,
-                permite que trabajen juntas personas que habitualmente no lo
-                hacen.
-              </p>
-
-              <p class="text-dark-grey">
-                Durante el transcurso de los días, fomentamos el diálogo y los
-                debates entre el equipo, que permiten alinear su visión.
-              </p>
-
-              <p class="text-dark-grey">
-                Nada mejor que dos días formación para motivar al equipo.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">¿Cómo se desarrolla el curso?</p>
-
-              <p class="text-dark-grey">
-                El curso se compone de
-                <a href="#training-content-timeline">varios bloques</a> de dos
-                horas.
-              </p>
-
-              <p class="text-dark-grey">
-                Le sigue un ejercicio que se realiza en parejas donde se pone en
-                práctica lo visto en la parte teórica mientras los formadores
-                van dando feedback a los asistentes constantemente.
-              </p>
-
-              <p class="text-dark-grey">
-                El bloque termina con un debate de grupo, donde los
-                participantes comparten lo aprendido y tenemos discusiones todos
-                juntos
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">¿Puedo apuntarme yo solo?</p>
-
-              <p class="text-dark-grey">
-                El curso está diseñado para impartirse en empresas.
-              </p>
-
-              <p class="text-dark-grey">
-                También ofrecemos cursos en abierto donde cualquiera puede
-                apuntarse.
-              </p>
-
-              <p class="text-dark-grey">
-                <a href="#contactForm">Inscríbete</a> y te informaremos de los
-                próximos cursos cerca de ti.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">¿Qué material necesito?</p>
-
-              <p class="text-dark-grey">
-                Tan sólo es necesario traer un ordenador con las herramientas de
-                desarrollo que cada uno utiliza instaladas. Lo ideal es realizar
-                el curso en las mismas máquinas que el equipo utiliza en su día
-                a día y Docker.
-              </p>
-
-              <p class="text-dark-grey">
-                La sala debe contar con proyector o una pantalla grande y una
-                pizarra donde escribir.
-              </p>
-
-              <p class="text-dark-grey">
-                El curso se realiza por parejas que van cambiando cada dos
-                horas. La configuración ideal es tener un ordenador con dos
-                pantallas, dos teclados y dos ratones por cada dos personas.
-              </p>
-            </div>
-
-            <div class="question">
-              <p class="small-title">Y después del curso, ¿qué?</p>
-
-              <p class="text-dark-grey">
-                Los ejercicios realizados en el curso son específicos para
-                aprender un concepto cada vez. Durante nuestro día a día nos
-                enfrentamos a problemas mucho más complejos y con un código en
-                mal estado.
-              </p>
-
-              <p class="text-dark-grey">
-                Por ello, después del curso, ofrecemos acompañamiento para
-                ayudarte en la implantación de Test-Driven Development en tu
-                proyecto.
-              </p>
-            </div>
-          </div>
-
-          <div class="button__wrapper">
-            <a
-              class="button button--primary"
-              href="#contactForm"
-              data-trackevent="contact_us.show_form.qa"
-              >Contactar</a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="block block--lila">
-        <div class="container">
-          <section>
-            <h2 class="title text-center">Me gustaría saber más...</h2>
-            <p class="text-center">
-              La mejor forma de obtener más información es hablando con
-              nosotros. Rellena este formulario o envía un email al
-              <strong>info@codium.team</strong> y busquemos un momento para
-              hablar.
-            </p>
-          </section>
-          <div class="card card--success hidden" id="js-show-success">
-            <div class="success-check">
-              <i class="icon icon-check-circle"></i>
-            </div>
-            <h2>Muchas gracias por ponerte en contacto con nosotros.</h2>
-            <p>Te contestaremos lo antes posible.</p>
-          </div>
-          <form
-            class="form"
-            id="contactForm"
-            method="post"
-            action="/php/contact-tdd.php"
-            data-training-type="tdd_training"
+    <div class="carousel">
+      <div class="glide" id="opinion">
+        <div class="glide__arrows">
+          <p
+            class="glide__arrow glide__arrow--left js-opinion-arrow"
+            data-glide-dir="<"
           >
-            <div>
-              <label for="name"
-                >Nombre<span class="required-asterik">*</span></label
-              >
-              <input type="text" id="name" placeholder="Codium" name="name" />
-            </div>
-
-            <div>
-              <label for="email"
-                >Email<span class="required-asterik">*</span></label
-              >
-              <input
-                type="email"
-                id="email"
-                placeholder="me@test.com"
-                name="email"
-              />
-            </div>
-
-            <div id="js-numProgrammers">
-              <label for="numProgrammers">
-                Nº de programadores<span class="required-asterik">*</span>
-              </label>
-              <input
-                type="number"
-                min="0"
-                id="numProgrammers"
-                placeholder="1"
-                name="numEmployees"
-              />
-            </div>
-            <div id="js-locality" class="hidden">
-              <label for="locality">
-                Localidad dónde vives<span class="required-asterik">*</span>
-              </label>
-              <input
-                type="text"
-                min="0"
-                id="locality"
-                placeholder="Madrid"
-                name="location"
-              />
-            </div>
-
-            <div class="myradio">
-              <input
-                type="radio"
-                name="myRadio"
-                id="one"
-                class="myradio__input"
-                checked
-                value="business"
-              />
-              <label for="one" class="myradio__label">Para mi empresa</label>
-            </div>
-            <div class="myradio">
-              <input
-                type="radio"
-                name="myRadio"
-                id="two"
-                class="myradio__input"
-                value="user"
-              />
-              <label for="two" class="myradio__label">Para mí</label>
-            </div>
-
-            <div class="text-center">
-              <button
-                class="button button--primary submit-button"
-                id="js-submit"
-              >
-                Pedir información
-              </button>
-            </div>
-
-            <p class="g-recaptcha-text">
-              This site is protected by reCAPTCHA and the Google
-              <a href="https://policies.google.com/privacy">Privacy Policy</a>
-              and
-              <a href="https://policies.google.com/terms">Terms of Service</a>
-              apply.
-            </p>
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
-              data-callback="captchaCompleted"
-              data-size="invisible"
-            ></div>
-          </form>
+            <i class="icon icon-circle-left"></i>
+          </p>
         </div>
-      </section>
-    </main>
-    <div class="footer-wrapper">
-      <footer class="container footer">
-        <a href="/">
-          <img
-            src="/assets/codium-brand-rectangle-white.e345836b.svg"
-            alt="Logo de Codium"
-            class="footer__image"
-          />
-        </a>
-        <ul class="footer__list">
-          <li class="footer__item footer__item--blog">
-            <a href="https://blog.codium.team/">Blog</a>
-          </li>
-          <li class="footer__item">
-            <a aria-label="Twitter link" href="https://twitter.com/codiumteam">
-              <span class="fa-stack">
-                <i class="icon icon-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a aria-label="Github link" href="https://github.com/CodiumTeam/">
-              <span class="fa-stack">
-                <i class="icon icon-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a
-              aria-label="Codium linkedin profile"
-              href="https://es.linkedin.com/company/codiumteam"
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="card card--opinion">
+                <div class="card__header">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="/assets/HelderDOliveira.bfd3e336.jpg"
+                      alt="Avatar"
+                      class="card__image card__image--rounded"
+                    />
+                  </div>
+                </div>
+                <div class="card__text card__text--left">
+                  <p>
+                    Pragmático, directo, en la misma línea de la propia
+                    filosofía de TDD​.​ ​M​e ha ayudado a desarrollar de
+                    forma más segura y limpia, ​descubriendo a la vez
+                    otras formas de hacer TDD que desconocía y siempre
+                    guiado desde ejercicios muy potentes.
+                  </p>
+                  <p class="text-bold card__name">Helder De Oliveira</p>
+                  <p class="card__profession">Software Craftsman</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card card--opinion">
+                <div class="card__header">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="/assets/JoanMiralles.4ad8e6ff.jpg"
+                      alt="Avatar"
+                      class="card__image card__image--rounded"
+                    />
+                  </div>
+                </div>
+                <div class="card__text card__text--left">
+                  <p>
+                    Aunque conocía TDD a nivel teórico, después de
+                    realizar este curso, ha sido cuándo he entendido cómo
+                    llevarlo a mi día a día.
+                  </p>
+                  <p class="text-bold card__name">Joan Miralles</p>
+                  <p class="card__profession">
+                    Software Architect en Brújula Tecnologías de la
+                    Información
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card card--opinion">
+                <div class="card__header">
+                  <div class="card__image-wrapper">
+                    <img
+                      src="/assets/ilya.030db6fe.png"
+                      alt="Avatar"
+                      class="card__image card__image--rounded"
+                    />
+                  </div>
+                </div>
+                <div class="card__text card__text--left">
+                  <p>
+                    El curso ha sido un buen punto de inflexión para
+                    empezar a usar TDD en mi día a día y profundizar en
+                    todo lo aprendido. Las katas guiadas por el equipo de
+                    Codium le dan muchísimo valor al curso y están muy
+                    bien escogidas para remarcar los fallos que se suelen
+                    cometer al empezar con TDD.
+                  </p>
+                  <p class="text-bold card__name">Ilya Kabushko</p>
+                  <p class="card__profession">
+                    Software developer en Travel Compositor
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="glide__arrows">
+            <p
+              class="glide__arrow glide__arrow--right js-opinion-arrow"
+              data-glide-dir=">"
             >
-              <span class="fa-stack">
-                <i class="icon icon-linkedin2 fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a
-              aria-label="Codium youtube channel link"
-              href="https://www.youtube.com/channel/UC_G24eVjh5ZBownNfIh2lxw"
-            >
-              <span class="fa-stack">
-                <i class="icon icon-youtube"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </footer>
+              <i class="icon icon-circle-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <span class="glide__bullet" data-glide-dir="=0"></span>
+          <span class="glide__bullet" data-glide-dir="=1"></span>
+          <span class="glide__bullet" data-glide-dir="=2"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="block block--white">
+  <div class="container">
+    <h2 class="text-center title" id="value">El valor de TDD</h2>
+    <p class="text-center text-dark-grey">
+      El simple hecho de pensar y escribir un test antes que el código de
+      producción, representa un cambio de paradigma en el desarrollo de
+      software y un salto de calidad inimaginable en tu código.
+    </p>
+
+    <article class="tdd-value">
+      <div class="text-center tdd-value__item">
+        <img
+          src="/assets/fast-cheap-good-v2.ee8d0966.svg"
+          class="tdd-value__image"
+          alt="El valor del curso explicado con bueno-bonito-barato"
+        />
+      </div>
+
+      <aside class="tdd-value__item">
+        <div>
+          <h3>Ayuda a reducir los costes de desarrollo</h3>
+          <ul class="course-calendar__items">
+            <li class="text-dark-grey">
+              Implementando sólo lo imprescindible para los requisitos
+              actuales (diseño incremental)
+            </li>
+            <li class="text-dark-grey">
+              Evitando complejidades innecesarias
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Ayuda a reducir los costes de mantenimiento</h3>
+          <ul class="course-calendar__items">
+            <li class="text-dark-grey">
+              Al reducir el testeo manual de la aplicación
+            </li>
+            <li class="text-dark-grey">
+              Minimizando las incidencias en producción
+            </li>
+            <li class="text-dark-grey">
+              Gracias a soluciones más simples
+            </li>
+            <li class="text-dark-grey">
+              Al poder cambiar fácilmente decisiones que ya no son válidas
+            </li>
+            <li class="text-dark-grey">
+              Al tener una documentación ejecutable
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Transforma al desarrollador</h3>
+          <ul class="course-calendar__items">
+            <li class="text-dark-grey">
+              Aumentando la seguridad de los desarrolladores al introducir
+              cambios en el código
+            </li>
+            <li class="text-dark-grey">
+              Mejorando la moral y motivación del equipo
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </article>
+
+    <div class="button__wrapper">
+      <a
+        class="button button--primary"
+        href="#contactForm"
+        data-trackevent="contact_us.show_form.course_value"
+        >Contactar</a
+      >
+    </div>
+  </div>
+</section>
+
+
+      <section class="block block--lila">
+  <div class="container">
+    <h2 class="text-center title" id="training-content-timeline">
+      Contenido del curso
+    </h2>
+
+    <div class="calendar">
+      <div>
+        <article class="course-calendar">
+          <div class="course-calendar__day">
+            <p class="small-title">Día 1</p>
+            <p class="text-dark-grey course-calendar__day-item">Mañana</p>
+          </div>
+          <div class="course-calendar__list">
+            <p class="small-title">
+              Introducción a Test-Driven Development
+            </p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">
+                Tipos de tests y costes asociados
+              </li>
+              <li class="text-dark-grey">
+                Ciclo de desarrollo: red, green, refactor
+              </li>
+              <li class="text-dark-grey">
+                Reglas de TDD y las pruebas unitarias
+              </li>
+              <li class="text-dark-grey">
+                Estructura y convenciones de los tests
+              </li>
+              <li class="text-dark-grey">Arnés y cobertura de test</li>
+              <li class="text-dark-grey">
+                Kata (o ejercicio) introductoria
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="course-calendar">
+          <div class="course-calendar__day">
+            <p class="text-dark-grey course-calendar__day-item">Tarde</p>
+          </div>
+          <div class="course-calendar__list">
+            <p class="small-title course-calendar__title">
+              Beneficios de TDD
+            </p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">Por qué hacer TDD</li>
+              <li class="text-dark-grey">Economía de TDD</li>
+              <li class="text-dark-grey">Kata</li>
+            </ul>
+
+            <p class="small-title">Contexto de TDD y Test smells</p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">Agile Manifesto</li>
+              <li class="text-dark-grey">
+                Software Craftsmanship Manifesto
+              </li>
+              <li class="text-dark-grey">eXtreme Programming (XP)</li>
+              <li class="text-dark-grey">Kata tests smells</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <article class="course-calendar">
+          <div class="course-calendar__day">
+            <p class="small-title">Día 2</p>
+            <p class="text-dark-grey course-calendar__day-item">Mañana</p>
+          </div>
+          <div class="course-calendar__list">
+            <p class="small-title">Dobles de pruebas</p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">
+                Para qué sirven los tests dobles
+              </li>
+              <li class="text-dark-grey">Cómo y cuándo usarlos</li>
+              <li class="text-dark-grey">
+                Tipos de dobles: mock, spy, stub, fake y dummy
+              </li>
+              <li class="text-dark-grey">Cómo funcionan internamente</li>
+              <li class="text-dark-grey">Kata historia de usuario</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="course-calendar">
+          <div class="course-calendar__day">
+            <p class="text-dark-grey course-calendar__day-item">Tarde</p>
+          </div>
+          <div class="course-calendar__list">
+            <p class="small-title course-calendar__title">
+              Consejos para hacer TDD
+            </p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">Testing en el front-end</li>
+              <li class="text-dark-grey">Testing con base de datos</li>
+              <li class="text-dark-grey">Builders de test</li>
+            </ul>
+
+            <p class="small-title">TDD Outside-in</p>
+            <ul class="course-calendar__items">
+              <li class="text-dark-grey">
+                Test-Driven Development outside-in
+              </li>
+              <li class="text-dark-grey">Cómo desarrollamos en Codium</li>
+              <li class="text-dark-grey">Kata iterativa</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
 
+    <div class="button__wrapper">
+      <a
+        class="button button--primary"
+        href="#contactForm"
+        data-trackevent="contact_us.show_form.course_index"
+      >
+        Contactar
+      </a>
+    </div>
+  </div>
+</section>
+
+
+      <section class="block block--white">
+  <div class="container">
+  <h2 class="text-center title" id="methodology">Metodología</h2>
+
+  <div class="course__metodology">
+    <p class="text-dark-grey">
+      Hoy en día cualquiera puede leer un libro o ver un vídeo, pero lo
+      realmente difícil es poner en práctica lo aprendido. Por eso, en
+      nuestro curso, queremos que los alumnos pasen la mayor parte del
+      tiempo programando y no escuchando teoría.
+    </p>
+    <p class="text-dark-grey">
+      En busca de la calidad y satisfacción de todos los asistentes,
+      creemos que es indispensable ser dos profesores senior. Esto nos
+      permite tener la disponibilidad suficiente para ayudar de forma
+      personalizada mientras los alumnos programan.
+    </p>
+    <p class="text-dark-grey">
+      Perseguimos maximizar el aprendizaje. Para ello creamos un
+      ambiente dinámico (Flow) gracias a trabajar en parejas, ejercicios
+      cortos, resolver las dudas rápido, la discusión de forma conjunta
+      de las diferentes soluciones y un trato muy cercano.
+    </p>
+    <p class="text-dark-grey">
+      Por nuestra experiencia como profesores, desarrolladores y
+      emprendedores, comprendemos las problemáticas del desarrollo de
+      software. Haber impartido más de 60 cursos a más de 800 alumnos
+      nos permite conocer las necesidades de los alumnos y cuidar cada
+      detalle de la formación.
+    </p>
+    <p class="text-dark-grey">
+      Todo lo anterior garantiza nuestro objetivo de que quedes
+      satisfecho, adquieras las habilidades necesarias para transformar
+      tu forma de desarrollar y empieces a escribir código sostenible.
+    </p>
+  </div>
+
+  <div class="course__team">
+    <div class="card card--personal">
+      <div class="card__header">
+        <div class="card__image-wrapper">
+          <img
+            src="/assets/luis.26dd530f.jpg"
+            alt="Luis Rovirosa Mairlot profile"
+            class="card__image card__image--rounded"
+          />
+        </div>
+      </div>
+
+      <p class="card__title">Luis Rovirosa</p>
+      <p class="card__professional">Back-end Developer</p>
+
+      <div class="card__footer">
+        <ul class="card__icons">
+          <li class="card__icon">
+            <a
+              aria-label="Twitter link"
+              href="https://twitter.com/luisrovirosa"
+              ><i class="icon icon-twitter"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Linkedin link"
+              href="https://linkedin.com/in/luisrovirosa/"
+              ><i class="icon icon-linkedin2"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Github link"
+              href="https://github.com/luisrovirosa"
+              ><i class="icon icon-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card--personal">
+      <div class="card__header">
+        <div class="card__image-wrapper">
+          <img
+            src="/assets/jordi.d1e63494.jpeg"
+            alt="Jordi Anguela profile"
+            class="card__image card__image--rounded"
+          />
+        </div>
+      </div>
+
+      <p class="card__title">Jordi Anguela</p>
+      <p class="card__professional">Front-end Developer</p>
+
+      <div class="card__footer">
+        <ul class="card__icons">
+          <li class="card__icon">
+            <a
+              aria-label="Twitter link"
+              href="http://twitter.com/jordianguela"
+              ><i class="icon icon-twitter"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Linkedin link"
+              href="https://linkedin.com/in/jordianguela/"
+              ><i class="icon icon-linkedin2"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Github link"
+              href="https://github.com/jordianguela"
+              ><i class="icon icon-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card--personal">
+      <div class="card__header">
+        <div class="card__image-wrapper">
+          <img
+            src="/assets/hugo.f5a51d74.jpeg"
+            alt="Hugo Chinchilla profile"
+            class="card__image card__image--rounded"
+          />
+        </div>
+      </div>
+
+      <p class="card__title">Hugo Chinchilla</p>
+      <p class="card__professional">Full-stack Developer</p>
+
+      <div class="card__footer">
+        <ul class="card__icons">
+          <li class="card__icon">
+            <a
+              aria-label="Twitter link"
+              href="https://twitter.com/hchinchilla_"
+              ><i class="icon icon-twitter"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Linkedin link"
+              href="https://linkedin.com/in/hugo-chinchilla-carbonell/"
+              ><i class="icon icon-linkedin2"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Github link"
+              href="https://github.com/hugochinchilla"
+              ><i class="icon icon-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card--personal">
+      <div class="card__header">
+        <div class="card__image-wrapper">
+          <img
+            src="/assets/jose.1c0c6677.png"
+            alt="Jose Cabrera profile"
+            class="card__image card__image--rounded"
+          />
+        </div>
+      </div>
+
+      <p class="card__title">Jose Cabrera</p>
+      <p class="card__professional">Front-end Developer</p>
+
+      <div class="card__footer">
+        <ul class="card__icons">
+          <li class="card__icon">
+            <a
+              aria-label="Twitter link"
+              href="https://twitter.com/11joselu"
+              ><i class="icon icon-twitter"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Linkedin link"
+              href="https://www.linkedin.com/in/11joselu/"
+              ><i class="icon icon-linkedin2"></i
+            ></a>
+          </li>
+          <li class="card__icon">
+            <a
+              aria-label="Github link"
+              href="https://github.com/11joselu"
+              ><i class="icon icon-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="button__wrapper">
+    <a
+      class="button button--primary"
+      href="#contactForm"
+      data-trackevent="contact_us.show_form.team"
+    >
+      Contactar
+    </a>
+  </div>
+</div>
+
+</section>
+
+
+      <section class="block">
+  <div class="container sumary-numbers">
+    <div class="sumary-numbers__item">
+      <h2 class="title text-center">Resumen en números</h2>
+    </div>
+
+    <div class="sumary-numbers__item sumary-numbers__item--circles">
+      <div class="circle circle--large circle--lila">
+        <div class="circle__text">
+          <p class="circle__number">60</p>
+          <p class="circle__number-info">Formaciones impartidas</p>
+        </div>
+      </div>
+
+      <div class="circle circle--green">
+        <div class="circle__text">
+          <p class="circle__number">822</p>
+          <p class="circle__number-info">Profesionales formados</p>
+        </div>
+      </div>
+
+      <div class="circle circle--blue">
+        <div class="circle__text">
+          <p class="circle__number">46</p>
+          <p class="circle__number-info">Empresas que han confiado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="block block--white">
+  <div class="container">
+    <h2 class="text-center title" id="faqs">Preguntas frecuentes</h2>
+    <div class="question-wrapper">
+      <div class="question">
+        <p class="small-title">¿A quién va dirigido?</p>
+        <p class="text-dark-grey">
+          A equipos que hacen tests y quieren dar un salto de calidad.
+        </p>
+        <p class="text-dark-grey">
+          A empresas que quieren tomarse en serio la calidad y seguir
+          añadiendo funcionalidad a buena velocidad.
+        </p>
+
+        <p class="text-dark-grey">
+          A programadores familiarizados con el testing y buenas prácticas
+          de desarrollo.
+        </p>
+
+        <p class="text-dark-grey">
+          El curso se centra en cómo testear la lógica de negocio,
+          independientemente de dónde se encuentre, ya sea el back-end,
+          front-end o móvil. Las personas de QA también pueden
+          beneficiarse del curso, entendiendo el proceso de desarrollo y
+          ayudando a escribir mejores pruebas.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">¿Cuál es el nivel del curso?</p>
+
+        <p class="text-dark-grey">
+          El nivel del curso es avanzado. Está dirigido a personas que
+          escriben tests con frecuencia.
+        </p>
+
+        <p class="text-dark-grey">
+          Es un curso introductorio a Test-Driven Development. El curso es
+          intenso y cubrimos desde las partes más básicas, como las
+          pruebas unitarias, a temas más complejos, como los diferentes
+          tipos de dobles de pruebas y problemas habituales cuando
+          escribimos tests.
+        </p>
+
+        <p class="text-dark-grey">
+          Al ser un curso muy práctico y con mucho debate, permite que nos
+          adaptemos al nivel de los asistentes. Si ya conoces algo de TDD,
+          durante el curso profundizarás en tus conocimientos y aprenderás
+          estrategias más avanzadas.
+        </p>
+
+        <p class="text-dark-grey">
+          Este no es un curso diseñado para personas que aplican
+          Test-Driven Development en su día a día, escribiendo
+          sistemáticamente las pruebas unitarias antes de escribir el
+          código.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">
+          ¿Se puede bonificar el curso por FUNDAE?
+        </p>
+
+        <p class="text-dark-grey">
+          Sí, el curso se puede bonificar a través de FUNDAE.
+        </p>
+
+        <p class="text-dark-grey">
+          Actualmente se puede bonificar hasta casi un 50%.
+        </p>
+
+        <p class="text-dark-grey">
+          Nosotros facilitamos todos los datos para su presentación
+          online, pero no la tramitamos.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">
+          ¿Por qué debería asistir todo el equipo?
+        </p>
+
+        <p class="text-dark-grey">
+          Juntar a todo el equipo, además de generar team building,
+          permite que trabajen juntas personas que habitualmente no lo
+          hacen.
+        </p>
+
+        <p class="text-dark-grey">
+          Durante el transcurso de los días, fomentamos el diálogo y los
+          debates entre el equipo, que permiten alinear su visión.
+        </p>
+
+        <p class="text-dark-grey">
+          Nada mejor que dos días formación para motivar al equipo.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">¿Cómo se desarrolla el curso?</p>
+
+        <p class="text-dark-grey">
+          El curso se compone de
+          <a href="#training-content-timeline">varios bloques</a> de dos
+          horas.
+        </p>
+
+        <p class="text-dark-grey">
+          Le sigue un ejercicio que se realiza en parejas donde se pone en
+          práctica lo visto en la parte teórica mientras los formadores
+          van dando feedback a los asistentes constantemente.
+        </p>
+
+        <p class="text-dark-grey">
+          El bloque termina con un debate de grupo, donde los
+          participantes comparten lo aprendido y tenemos discusiones todos
+          juntos
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">¿Puedo apuntarme yo solo?</p>
+
+        <p class="text-dark-grey">
+          El curso está diseñado para impartirse en empresas.
+        </p>
+
+        <p class="text-dark-grey">
+          También ofrecemos cursos en abierto donde cualquiera puede
+          apuntarse.
+        </p>
+
+        <p class="text-dark-grey">
+          <a href="#contactForm">Inscríbete</a> y te informaremos de los
+          próximos cursos cerca de ti.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">¿Qué material necesito?</p>
+
+        <p class="text-dark-grey">
+          Tan sólo es necesario traer un ordenador con las herramientas de
+          desarrollo que cada uno utiliza instaladas. Lo ideal es realizar
+          el curso en las mismas máquinas que el equipo utiliza en su día
+          a día y Docker.
+        </p>
+
+        <p class="text-dark-grey">
+          La sala debe contar con proyector o una pantalla grande y una
+          pizarra donde escribir.
+        </p>
+
+        <p class="text-dark-grey">
+          El curso se realiza por parejas que van cambiando cada dos
+          horas. La configuración ideal es tener un ordenador con dos
+          pantallas, dos teclados y dos ratones por cada dos personas.
+        </p>
+      </div>
+
+      <div class="question">
+        <p class="small-title">Y después del curso, ¿qué?</p>
+
+        <p class="text-dark-grey">
+          Los ejercicios realizados en el curso son específicos para
+          aprender un concepto cada vez. Durante nuestro día a día nos
+          enfrentamos a problemas mucho más complejos y con un código en
+          mal estado.
+        </p>
+
+        <p class="text-dark-grey">
+          Por ello, después del curso, ofrecemos acompañamiento para
+          ayudarte en la implantación de Test-Driven Development en tu
+          proyecto.
+        </p>
+      </div>
+    </div>
+
+    <div class="button__wrapper">
+      <a
+        class="button button--primary"
+        href="#contactForm"
+        data-trackevent="contact_us.show_form.qa"
+        >Contactar</a
+      >
+    </div>
+  </div>
+</section>
+
+
+      <section class="block block--lila">
+  <div class="container">
+    <section>
+      <h2 class="title text-center">Me gustaría saber más...</h2>
+      <p class="text-center">
+        La mejor forma de obtener más información es hablando con
+        nosotros. Rellena este formulario o envía un email al
+        <strong>info@codium.team</strong> y busquemos un momento para
+        hablar.
+      </p>
+    </section>
+
+    <div class="card card--success hidden" id="js-show-success">
+  <div class="success-check">
+    <i class="icon icon-check-circle"></i>
+  </div>
+  <h2>Muchas gracias por ponerte en contacto con nosotros.</h2>
+  <p>Te contestaremos lo antes posible.</p>
+</div>
+
+
+    <form
+      class="form"
+      id="contactForm"
+      method="post"
+      action="/php/contact-legacy-code.php"
+      data-training-type="legacy_training"
+    >
+      <div>
+        <label for="name"
+          >Nombre<span class="required-asterik">*</span></label
+        >
+        <input type="text" id="name" placeholder="Codium" name="name" />
+      </div>
+
+      <div>
+        <label for="email"
+          >Email<span class="required-asterik">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          placeholder="me@test.com"
+          name="email"
+        />
+      </div>
+
+      <div id="js-numProgrammers">
+        <label for="numProgrammers">
+          Nº de programadores<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="number"
+          min="0"
+          id="numProgrammers"
+          placeholder="1"
+          name="numEmployees"
+        />
+      </div>
+      <div id="js-locality" class="hidden">
+        <label for="locality">
+          Localidad dónde vives<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="text"
+          min="0"
+          id="locality"
+          placeholder="Madrid"
+          name="location"
+        />
+      </div>
+
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="one"
+          class="myradio__input"
+          checked
+          value="business"
+        />
+        <label for="one" class="myradio__label">Para mi empresa</label>
+      </div>
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="two"
+          class="myradio__input"
+          value="user"
+        />
+        <label for="two" class="myradio__label">Para mí</label>
+      </div>
+
+      <div class="text-center">
+        <button
+          class="button button--primary submit-button"
+          id="js-submit"
+        >
+          Pedir información
+        </button>
+      </div>
+
+      <p class="g-recaptcha-text">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        and
+        <a href="https://policies.google.com/terms">Terms of Service</a>
+        apply.
+      </p>
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
+        data-callback="captchaCompleted"
+        data-size="invisible"
+      ></div>
+    </form>
+  </div>
+</section>
+
+    </main>
+
+    <div class="footer-wrapper">
+  <footer class="container footer">
+    <a href="/">
+      <img
+        src="/assets/codium-brand-rectangle-white.e345836b.svg"
+        alt="Logo de Codium"
+        class="footer__image"
+      />
+    </a>
+    <ul class="footer__list">
+      <li class="footer__item footer__item--blog">
+        <a href="https://blog.codium.team/">Blog</a>
+      </li>
+      <li class="footer__item">
+        <a aria-label="Twitter link" href="https://twitter.com/codiumteam">
+          <span class="fa-stack">
+            <i class="icon icon-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a aria-label="Github link" href="https://github.com/CodiumTeam/">
+          <span class="fa-stack">
+            <i class="icon icon-github fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a
+          aria-label="Codium linkedin profile"
+          href="https://es.linkedin.com/company/codiumteam"
+        >
+          <span class="fa-stack">
+            <i class="icon icon-linkedin2 fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a
+          aria-label="Codium youtube channel link"
+          href="https://www.youtube.com/channel/UC_G24eVjh5ZBownNfIh2lxw"
+        >
+          <span class="fa-stack">
+            <i class="icon icon-youtube"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+
+
     <script
-      src="https://polyfill.io/v3/polyfill.min.js?features=fetch"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      defer
-      type="text/javascript"
-      src="https://www.google.com/recaptcha/api.js"
-    ></script>
-    
+  src="https://polyfill.io/v3/polyfill.min.js?features=fetch"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  defer
+  type="text/javascript"
+  src="https://www.google.com/recaptcha/api.js"
+></script>
+
+
   </body>
 </html>
