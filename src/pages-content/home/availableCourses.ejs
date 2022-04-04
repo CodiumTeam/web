@@ -1,0 +1,45 @@
+<section class="services block block--white">
+  <div class="container">
+    <h2 class="title" id="courses-list">Cursos disponibles</h2>
+    <div class="section__grid">
+      <%- include('../../partials/cards/card-large-course', {
+        title: 'Working with Legacy Code',
+        description: 'Desacopla y testea para reducir los costes de desarrollo y mantimiento.',
+        imageUrl: '/img/legacy-code.svg',
+        btnUrl: '/curso-legacy-code.html',
+        list: [
+          'Identifica los problemas en el código',
+          'Aprende a desacoplar las dependencias',
+          'Añade tests para cambiar el software con seguridad',
+          'Estrategias para transformar tu monolito'
+        ]
+      }) %>
+
+      <%- include('../../partials/cards/card-large-course', {
+        title: 'Test-driven development',
+        description: 'Desarrolla con pasos seguros, con calidad y de forma simple.',
+        imageUrl: '/img/tdd-logo.svg',
+        btnUrl: '/curso-tdd.html',
+        list: [
+          'Aprende el ciclo de desarrollo de TDD',
+          'Utiliza dobles de pruebas para aislar las diferentes capas',
+          'Estrategias para testear código legado',
+          'Aprende buenas prácticas e identifica problemas en los tests'
+        ]
+      }) %>
+
+      <%- include('../../partials/cards/card-large-course', {
+        title: 'Docker',
+        description: 'Aprende a tratar tu infraestructura como código gracias a Docker.',
+        imageUrl: '/img/moby-logo.svg',
+        btnUrl: '/curso-docker.html',
+        list: [
+          'Elimina el famoso \'en mi máquina funciona\'',
+          'Que todo tu equipo pueda construir y mantener las imágenes',
+          'Aprende a crear imágenes Seguras',
+          'Mejora tus procesos de Integración Continua'
+        ]
+      }) %>
+    </div>
+  </div>
+</section>

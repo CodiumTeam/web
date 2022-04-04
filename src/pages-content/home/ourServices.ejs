@@ -1,0 +1,28 @@
+<section class="services block block--white">
+  <div class="container">
+    <h2 class="title" id="our-services">Qué ofrecemos</h2>
+    <div class="section__grid">
+      <%- include('../../partials/cards/card-large', {
+        title: 'Desarrollo',
+        description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
+        imageUrl: '/img/illustrations/development-team.svg',
+        btnUrl: '#contactForm'
+      }) %>
+
+      <%- include('../../partials/cards/card-large', {
+        title: 'Cursos',
+        description: 'Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.',
+        imageUrl: 'img/illustrations/classroom-learning.svg',
+        btnUrl: '#courses-list'
+      }) %>
+
+      <%- include('../../partials/cards/card-large', {
+        title: 'Formación continua',
+        description: 'Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.',
+        imageUrl: '/img/illustrations/virtual-education.svg',
+        btnUrl: '#contactForm'
+      }) %>
+
+    </div>
+  </div>
+</section>
