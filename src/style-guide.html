@@ -29,8 +29,19 @@
       menu: []
     }) %>
 
+
     <main class="main">
-        <%- include('pages-content/resources/legacy-v1-web-content.ejs')  %>
+        <%- include('pages-content/style-guide/text.ejs')  %>
+
+        <%- include('pages-content/style-guide/buttons.ejs')  %>
+
+        <%- include('pages-content/style-guide/cards.ejs')  %>
+
+
+        <%- include('pages-content/style-guide/blocks.ejs')  %>
+
+        <%- include('pages-content/style-guide/carousel.ejs')  %>
+
     </main>
     <script>
       (function (i, s, o, g, r, a, m) {
@@ -71,6 +82,6 @@
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    <script type="module" src="/js/resources.js"></script>
+    <script type="module" src="/js/style-guide.js"></script>
   </body>
 </html>

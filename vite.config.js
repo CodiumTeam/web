@@ -12,6 +12,7 @@ const inputs = {
   'curso-tdd.html': resolve(ROOT, 'curso-tdd.html'),
   'curso-legacy-code.html': resolve(ROOT, 'curso-legacy-code.html'),
   resource: resolve(ROOT, 'resources.html'),
+  'style-guide': resolve(ROOT, 'style-guide.html'),
 };
 
 export default defineConfig({

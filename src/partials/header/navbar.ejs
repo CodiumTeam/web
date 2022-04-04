@@ -11,8 +11,10 @@
       <%- include('dropdown') %>
     </li>
 
-    <li class="navbar__item">
-      <a href="#contactForm">Contactar</a>
-    </li>
+    <% if (menu.length) { %>
+      <li class="navbar__item">
+        <a href="#contactForm">Contactar</a>
+      </li>
+    <% } %>
   </ul>
 </nav>

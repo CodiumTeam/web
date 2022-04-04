@@ -6,7 +6,7 @@ import Glide, {
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 
-import '../sass/resource.scss';
+import '../sass/style-guide.scss';
 
 listenDropdown();
 mountOpinionCarousel();

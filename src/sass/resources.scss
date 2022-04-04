@@ -1,0 +1,28 @@
+@import 'core/container', 'core/variables', 'core/normalize', 'layout/header',
+  'layout/footer', 'block', 'core/utilities', 'core/dropdown', 'core/inputs';
+
+.main {
+  padding-top: 3.5rem;
+}
+
+.block h2,
+h3,
+h4 {
+  margin: 1.5rem 0 0.5rem 0 !important;
+}
+
+.legacy {
+  img {
+    max-width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  .col-md-4 {
+    flex: 0 0 25%;
+    margin-bottom: 1.5rem;
+  }
+}

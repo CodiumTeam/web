@@ -25,6 +25,9 @@ up:
 	$(DOCKER_COMMAND) --name codium_web -p 8000:8000 -d $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000
 	@echo "http://localhost:8000/index.html http://localhost:8000/curso-tdd.html http://localhost:8000/curso-legacy-code.html http://localhost:8000/curso-docker.html\n"
 	@echo "TIP: Use CTRL+Click to open a link in a browser\n"
+	@echo "To view the style guide\n"
+	@echo "http://localhost:8000/styule-guide.html"
+
 
 .PHONY: down
 down:
