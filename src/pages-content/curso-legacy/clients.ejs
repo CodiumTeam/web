@@ -1,43 +1,44 @@
+ <% var clients = [
+  {
+    image: './img/clients/helvetia.png',
+    name: 'Helvetia logo'
+  },
+  {
+    image: './img/clients/hotelbeds.png',
+    name: 'Hotelbeds logo',
+  },
+  {
+    image: './img/clients/clarity.svg',
+    name: 'Clarity logo'
+  },
+  {
+    image: './img/clients/vicomtech.svg',
+    name: 'Vicomtech logo'
+  },
+  {
+    image: './img/clients/logitravel.png',
+    name: 'Logitravel logo'
+  },
+  {
+    image: './img/clients/roiback.png',
+    name: 'Roiback logo'
+  },
+  {
+    image: './img/clients/zooplus.svg',
+    name: 'Zooplus logo'
+  },
+  {
+    image: './img/clients/taiger.png',
+    name: 'Taiger logo'
+  },
+  {
+    image: './img/clients/habitissimo.png',
+    name: 'Habitissimo logo'
+  },
+] %>
+
 <section class="block block--white block--small">
   <div class="container">
-    <% var clients = [
-      {
-        image: './img/clients/helvetia.png',
-        name: 'Helvetia logo'
-      },
-      {
-        image: './img/clients/hotelbeds.png',
-        name: 'Hotelbeds logo',
-      },
-      {
-        image: './img/clients/clarity.svg',
-        name: 'Clarity logo'
-      },
-      {
-        image: './img/clients/vicomtech.svg',
-        name: 'Vicomtech logo'
-      },
-      {
-        image: './img/clients/logitravel.png',
-        name: 'Logitravel logo'
-      },
-      {
-        image: './img/clients/roiback.png',
-        name: 'Roiback logo'
-      },
-      {
-        image: './img/clients/zooplus.svg',
-        name: 'Zooplus logo'
-      },
-      {
-        image: './img/clients/taiger.png',
-        name: 'Taiger logo'
-      },
-      {
-        image: './img/clients/habitissimo.png',
-        name: 'Habitissimo logo'
-      },
-    ] %>
     <%- include('../../partials/carousel/clients', { clients: clients })  %>
   </div>
 </section>

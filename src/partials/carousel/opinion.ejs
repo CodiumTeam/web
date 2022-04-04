@@ -12,69 +12,11 @@
 
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/francois.png',
-            opinion: 'Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy. <br />Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!',
-            name: 'François Delaunay',
-            profession: 'GE Renewable Energy',
-          })  %>
-        </li>
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/OriolTorne.png',
-            opinion: `El curso fue un punto de inflexión para atrevernos a
-                hacer las cosas de otra forma: con más seguridad y más
-                calidad.<br />Un año después del curso, hemos notado
-                una mejoría importante en el código y las metodologías
-                que aplicamos.`,
-            name: 'Oriol Torné',
-            profession: 'Dev en Esblada Medical',
-          })  %>
-        </li>
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/logedo.jpg',
-            opinion: `Una formación imprescindible para enfrentarte a ese
-                gran monstruo que es el legacy code.<br />
-                Con formaciones así es imposible no apasionarse por
-                nuestro trabajo.`,
-            name: 'Juan Carlos Logedo',
-            profession: 'Sr. Dev en Hotelbeds',
-          })  %>
-        </li>
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/anonimo.jpg',
-            opinion: `Contratamos a Codium porque queríamos sus pegatinas,
-                ¡y al final descubrimos que el curso era muy bueno!`,
-            name: 'Anónimo',
-          })  %>
-        </li>
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/alberto-de-la-cruz.jpg',
-            opinion: `¡Salimos con las pilas cargadas!. Trabajar con Legacy
-                no es fácil pero gracias a este curso ahora el equipo
-                comparte herramientas, vocabulario y otra perspectiva
-                de cara a enfrentarse a él. Estamos encantados.`,
-            name: 'Alberto de la Cruz Grijalvo',
-            profession: 'Allroad en Alea Soluciones',
-          })  %>
-        </li>
-        <li class="glide__slide">
-          <%- include('../../partials/cards/card-opinion', {
-            avatar: './img/testimonials/joseIgnacioDominguez.jpg',
-            opinion: `  Ha sido una oportunidad magnífica para aprender,
-                  trabajar como un equipo multidisciplinar, compartir
-                  y validar ideas. Es muy práctico y se favorecen las
-                  conversaciones sobre distintas soluciones a un mismo
-                  problema. ¡Salimos con ganas de mejorar nuestro
-                  código!`,
-            name: 'Jose Ignacio Domínguez',
-            profession: 'Staff Software Engineer en Clarity AI',
-          })  %>
-        </li>
+        <% opinions.forEach(function(opinion){ %>
+          <li class="glide__slide">
+            <%- include('../../partials/cards/card-opinion', {...opinion })  %>
+            </li>
+        <% }); %>
       </ul>
     </div>
 
@@ -88,12 +30,9 @@
     </div>
 
     <div class="glide__bullets" data-glide-el="controls[nav]">
-      <span class="glide__bullet" data-glide-dir="=0"></span>
-      <span class="glide__bullet" data-glide-dir="=1"></span>
-      <span class="glide__bullet" data-glide-dir="=2"></span>
-      <span class="glide__bullet" data-glide-dir="=3"></span>
-      <span class="glide__bullet" data-glide-dir="=4"></span>
-      <span class="glide__bullet" data-glide-dir="=5"></span>
+      <% opinions.forEach(function(opinion, index){ %>
+        <span class="glide__bullet" data-glide-dir="=<%= index %>"></span>
+      <% }); %>
     </div>
   </div>
 </div>
