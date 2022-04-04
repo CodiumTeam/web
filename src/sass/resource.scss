@@ -3,11 +3,13 @@
   'core/utilities', 'core/dropdown', 'core/inputs', 'title', 'course/carousel';
 
 .main {
-  padding-top: 5rem;
+  padding-top: 3.5rem;
+}
 
-  .section {
-    margin: 1rem 0;
-  }
+.block h2,
+h3,
+h4 {
+  margin: 1.5rem 0 0.5rem 0 !important;
 }
 
 .legacy {
@@ -20,4 +22,14 @@ code {
   font-size: 1rem;
   color: #e83e8c;
   word-break: break-word;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  .col-md-4 {
+    flex: 0 0 25%;
+    margin-bottom: 1.5rem;
+  }
 }

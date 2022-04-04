@@ -1,0 +1,67 @@
+<section class="section block block--grey">
+
+  <div class="container">
+
+  <h2>Cards</h2>
+
+  <div>
+     <h3>Iconized</h3>
+
+      <%- include('../../partials/cards/card', {
+          icon: 'icon-droplet',
+          title: 'Simplificdad',
+          description: 'Lo bueno, si es simple, dos veces bueno.'
+      }) %>
+  </div>
+  <div class="section ">
+
+    <h3>Large</h3>
+
+    <%- include('../../partials/cards/card-large', {
+        title: 'Desarrollo',
+        description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
+        imageUrl: '/img/illustrations/development-team.svg',
+        btnUrl: '#contact'
+    }) %>
+  </div>
+
+  <div>
+    <h4>Course large card</h4>
+      <%- include('../../partials/cards/card-large-course', {
+        title: 'Test-driven development',
+        description: 'Desarrolla con pasos seguros, con calidad y de forma simple.',
+        imageUrl: '/img/tdd-logo.svg',
+        btnUrl: '/curso-tdd.html',
+        list: [
+          'Aprende el ciclo de desarrollo de TDD',
+          'Utiliza dobles de pruebas para aislar las diferentes capas',
+          'Estrategias para testear código legado',
+          'Aprende buenas prácticas e identifica problemas en los tests'
+        ]
+      }) %>
+  </div>
+
+  <div>
+    <h3>Personal Card</h3>
+    <%- include('../../partials/cards/card-team', {
+        name: 'Jordi Anguela',
+        position: 'Front-end Developer',
+        imageUrl: '/img/about-us/jordi.jpeg',
+        twitterUrl: 'http://twitter.com/jordianguela',
+        linkedinUrl: 'https://linkedin.com/in/jordianguela/',
+        githubUrl: 'https://github.com/jordianguela'
+    }) %>
+  </div>
+
+  <div>
+      <h3>Opinion Card</h3>
+        <%- include('../../partials/cards/card-opinion', {
+          avatar: '/img/about-us/luis.jpg',
+          opinion: 'Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy. <br />Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!',
+          name: 'Luis Rovirosa',
+          profession: 'Back-end developer',
+        })  %>
+      </div>
+
+  </div>
+</section>
