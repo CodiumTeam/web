@@ -1,0 +1,13 @@
+@import 'core/container', 'core/variables', 'core/normalize', 'layout/header',
+  'layout/footer', 'layout/hero', 'layout/main', 'buttons', 'block',
+  'core/utilities', 'core/dropdown', 'core/inputs', 'title';
+
+.main {
+  padding-top: 5rem;
+}
+
+.legacy {
+  img {
+    max-width: 100%;
+  }
+}

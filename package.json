@@ -26,11 +26,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.1",
+    "prettier": "^2.6.2",
     "rollup-plugin-copy": "^3.4.0",
-    "sass": "^1.49.9",
-    "vite": "^2.8.6",
-    "vite-plugin-ejs-engine": "^1.0.2"
+    "sass": "^1.49.11",
+    "vite": "^2.9.1",
+    "vite-plugin-ejs-engine": "^1.0.4"
   },
   "dependencies": {
     "@glidejs/glide": "^3.5.2"

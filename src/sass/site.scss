@@ -1,36 +1,6 @@
 @import 'core/container', 'core/variables', 'core/normalize', 'layout/header',
   'layout/footer', 'layout/hero', 'layout/main', 'buttons', 'block',
-  'core/utilities', 'core/dropdown', 'core/inputs';
-
-.title {
-  color: $darkest-grey;
-  font-size: 2em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 2.94em;
-  margin: 0;
-
-  @media screen and (min-width: 768px) {
-    font-size: $text-2-xl;
-  }
-}
-
-.small-title {
-  color: $darkest-grey;
-  font-size: 1.138em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1.25em;
-  margin: 0;
-
-  @media screen and (min-width: 768px) {
-    font-size: $text-xl-normal;
-  }
-}
-
-.m-0 {
-  margin: 0;
-}
+  'core/utilities', 'core/dropdown', 'core/inputs', 'title';
 
 .g-recaptcha {
   visibility: hidden;
