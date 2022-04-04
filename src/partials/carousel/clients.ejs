@@ -14,7 +14,7 @@
       <ul class="glide__slides slides">
         <% clients.forEach(function(client){ %>
           <li class="glide__slide slide">
-             <div class="client__item">
+             <div class="client__item <%= client.customClass %>">
                <img
                  class="glide__slide-image"
                  src="<%= client.image %>"
