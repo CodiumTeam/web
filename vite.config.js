@@ -11,7 +11,7 @@ const inputs = {
   'curso-docker.html': resolve(ROOT, 'curso-docker.html'),
   'curso-tdd.html': resolve(ROOT, 'curso-tdd.html'),
   'curso-legacy-code.html': resolve(ROOT, 'curso-legacy-code.html'),
-  resource: resolve(ROOT, 'resource.html'),
+  resource: resolve(ROOT, 'resources.html'),
 };
 
 export default defineConfig({
