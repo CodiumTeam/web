@@ -1,0 +1,112 @@
+<section class="block block--lila">
+  <div class="container">
+    <section>
+      <h2 class="title text-center">Me gustaría saber más...</h2>
+      <p class="text-center">
+        La mejor forma de obtener más información es hablando con
+        nosotros. Rellena este formulario o envía un email al
+        <strong>info@codium.team</strong> y busquemos un momento para
+        hablar.
+      </p>
+    </section>
+
+    <%- include('../../partials/formSentSuccessfully') %>
+
+    <form
+      class="form"
+      id="contactForm"
+      method="post"
+      action="/php/contact-legacy-code.php"
+      data-training-type="legacy_training"
+    >
+      <div>
+        <label for="name"
+          >Nombre<span class="required-asterik">*</span></label
+        >
+        <input type="text" id="name" placeholder="Codium" name="name" />
+      </div>
+
+      <div>
+        <label for="email"
+          >Email<span class="required-asterik">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          placeholder="me@test.com"
+          name="email"
+        />
+      </div>
+
+      <div id="js-numProgrammers">
+        <label for="numProgrammers">
+          Nº de programadores<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="number"
+          min="0"
+          id="numProgrammers"
+          placeholder="1"
+          name="numEmployees"
+        />
+      </div>
+      <div id="js-locality" class="hidden">
+        <label for="locality">
+          Localidad dónde vives<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="text"
+          min="0"
+          id="locality"
+          placeholder="Madrid"
+          name="location"
+        />
+      </div>
+
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="one"
+          class="myradio__input"
+          checked
+          value="business"
+        />
+        <label for="one" class="myradio__label">Para mi empresa</label>
+      </div>
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="two"
+          class="myradio__input"
+          value="user"
+        />
+        <label for="two" class="myradio__label">Para mí</label>
+      </div>
+
+      <div class="text-center">
+        <button
+          class="button button--primary submit-button"
+          id="js-submit"
+        >
+          Pedir información
+        </button>
+      </div>
+
+      <p class="g-recaptcha-text">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        and
+        <a href="https://policies.google.com/terms">Terms of Service</a>
+        apply.
+      </p>
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
+        data-callback="captchaCompleted"
+        data-size="invisible"
+      ></div>
+    </form>
+  </div>
+</section>

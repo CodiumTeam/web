@@ -26,235 +26,252 @@
 
   <body>
     <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        'script',
-        'https://www.google-analytics.com/analytics.js',
-        'ga'
-      );
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    'script',
+    'https://www.google-analytics.com/analytics.js',
+    'ga'
+  );
 
-      ga('create', 'UA-101845458-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-101845458-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
     <header class="header" id="js-header">
-      <div class="container">
-        <div class="header__wrapper">
-          <a href="/">
-            <img
-              src="/assets/codium-brand-rectangle-black.35efee3c.svg"
-              alt="Logo de Codium"
-              class="header__image"
-            />
-          </a>
-          <i class="icon icon-menu header__icon" id="js-menu-button"></i>
-          <nav class="navbar" id="js-menu">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="/">Inicio</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#value">Beneficios</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#training-content-timeline">Contenido</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#methodology">Metodología</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#faqs">FAQs</a>
-              </li>
-              <li class="navbar__item navbar__item--dropdown">
-                <div class="dropdown">
-                  <span>Cursos</span>
-                  <ul class="options">
-                    <li>
-                      <a href="/curso-legacy-code.html">Legacy</a>
-                    </li>
-                    <li><a href="/curso-tdd.html">TDD</a></li>
-                    <li><a href="/curso-docker.html">Docker</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="navbar__item">
-                <a href="#contactForm">Contactar</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/">
+        <img
+          src="/assets/codium-brand-rectangle-black.35efee3c.svg"
+          alt="Logo de Codium"
+          class="header__image"
+        />
+      </a>
+      <i class="icon icon-menu header__icon" id="js-menu-button"></i>
+<nav class="navbar" id="js-menu">
+  <ul class="navbar__list">
+    
+    <li class="navbar__item">
+      <a href="/">Inicio</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#value">Beneficios</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#training-content-timeline">Contenido</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#methodology">Metodología</a>
+    </li>
+    
+    <li class="navbar__item">
+      <a href="#faqs">FAQs</a>
+    </li>
+    
+
+    <li class="navbar__item navbar__item--dropdown">
+      <div class="dropdown">
+  <span>Cursos</span>
+  <ul class="options">
+    <li>
+      <a href="/curso-legacy-code.html">Legacy</a>
+    </li>
+    <li><a href="/curso-tdd.html">TDD</a></li>
+    <li><a href="/curso-docker.html">Docker</a></li>
+  </ul>
+</div>
+
+    </li>
+
+    <li class="navbar__item">
+      <a href="#contactForm">Contactar</a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+</header>
+
 
     <div class="hero-wrapper">
-      <div class="container course-hero">
-        <section class="hero">
-          <h2 class="hero__title">Working with Legacy code</h2>
-          <p class="hero__subtitle">Recupera el control de tu producto</p>
-          <div>
-            <img
-              src="/assets/legacy-code.3c1d1242.svg"
-              alt="Legacy code logo"
-              class="hero__image"
-            />
-          </div>
-        </section>
+  <div class="container course-hero">
+    <section class="hero">
+      <h2 class="hero__title">Working with Legacy code</h2>
+      <p class="hero__subtitle">Recupera el control de tu producto</p>
+      <div>
+        <img
+          src="/assets/legacy-code.3c1d1242.svg"
+          alt="Legacy code logo"
+          class="hero__image"
+        />
+      </div>
+    </section>
 
-        <div class="card course__information-wrapper">
-          <h2 class="subtitle">Información</h2>
-          <div class="card__content">
-            <div class="course__information">
-              <i class="icon icon-hourglass"></i>
-              <div>
-                <p class="course__information-text">16 horas</p>
-                <p class="course__information-desc">(2 días o 4 medios días)</p>
-              </div>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-location"></i>
-              <p class="course__information-text">Remoto o presencial</p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-embed2"></i>
-              <p class="course__information-text">
-                Java, Python, PHP, Js, C#, C++, ...
-              </p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-language"></i>
-              <p class="course__information-text">También en inglés</p>
-            </div>
-            <div class="course__information">
-              <i class="icon icon-coin-euro"></i>
-              <div>
-                <p class="course__information-text">
-                  A partir de 650 € + IVA por persona.
-                </p>
-                <p class="course__information-desc">Bonificable por FUNDAE</p>
-              </div>
-            </div>
-            <div class="button__wrapper">
-              <a
-                href="#contactForm"
-                class="button button--primary"
-                data-trackevent="contact_us.show_form.course_info-summary"
-              >
-                Contactar
-              </a>
-            </div>
+    <div class="card course__information-wrapper">
+      <h2 class="subtitle">Información</h2>
+      <div class="card__content">
+        <div class="course__information">
+          <i class="icon icon-hourglass"></i>
+          <div>
+            <p class="course__information-text">16 horas</p>
+            <p class="course__information-desc">(2 días o 4 medios días)</p>
           </div>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-location"></i>
+          <p class="course__information-text">Remoto o presencial</p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-embed2"></i>
+          <p class="course__information-text">
+            Java, Python, PHP, Js, C#, C++, ...
+          </p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-language"></i>
+          <p class="course__information-text">También en inglés</p>
+        </div>
+        <div class="course__information">
+          <i class="icon icon-coin-euro"></i>
+          <div>
+            <p class="course__information-text">
+              A partir de 650 € + IVA por persona.
+            </p>
+            <p class="course__information-desc">Bonificable por FUNDAE</p>
+          </div>
+        </div>
+        <div class="button__wrapper">
+          <a
+            href="#contactForm"
+            class="button button--primary"
+            data-trackevent="contact_us.show_form.course_info-summary"
+          >
+            Contactar
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
 
     <main>
+
       <section class="block block--white block--small">
         <div class="container">
           <div class="carousel">
-            <div class="glide" id="clients">
-              <div class="glide__arrows">
-                <p
-                  class="glide__arrow glide__arrow--left js-clients-arrow"
-                  data-glide-dir="<"
-                >
-                  <i class="icon icon-circle-left"></i>
-                </p>
-              </div>
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides slides">
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/helvetia.745b21a7.png"
-                        alt="Helvetia logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/hotelbeds.c7fff21d.png"
-                        alt="Hotelbeds logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img src="/assets/clarity.810d46fd.svg" alt="Clarity logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/vicomtech.9497de25.svg"
-                        alt="Vicomtech logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/logitravel.15122708.png"
-                        alt="Logitravel logo"
-                      />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item client__item--roiback">
-                      <img src="/assets/roiback.cdd9c716.png" alt="Roiback logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img src="/assets/zooplus.f0bc4836.svg" alt="Zooplus logo" />
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="client__item client__item--taiger">
-                      <img src="/assets/taiger.5bf6b900.png" alt="Taiger logo" />
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="client__item">
-                      <img
-                        src="/assets/habitissimo.ce7e1ead.png"
-                        alt="Habitissimo logo"
-                      />
-                    </div>
-                  </li>
-                </ul>
-                <div class="glide__arrows">
-                  <p
-                    class="glide__arrow glide__arrow--right js-clients-arrow"
-                    data-glide-dir=">"
-                  >
-                    <i class="icon icon-circle-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
+  <div class="glide" id="clients">
+    <div class="glide__arrows">
+      <p
+        class="glide__arrow glide__arrow--left js-clients-arrow"
+        data-glide-dir="<"
+      >
+        <i class="icon icon-circle-left"></i>
+      </p>
+    </div>
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides slides">
+        <li class="glide__slide">
+          <div class="client__item">
+            <img
+              src="/assets/helvetia.745b21a7.png"
+              alt="Helvetia logo"
+            />
           </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img
+              src="/assets/hotelbeds.c7fff21d.png"
+              alt="Hotelbeds logo"
+            />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img src="/assets/clarity.810d46fd.svg" alt="Clarity logo" />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img
+              src="/assets/vicomtech.9497de25.svg"
+              alt="Vicomtech logo"
+            />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img
+              src="/assets/logitravel.15122708.png"
+              alt="Logitravel logo"
+            />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item client__item--roiback">
+            <img src="/assets/roiback.cdd9c716.png" alt="Roiback logo" />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img src="/assets/zooplus.f0bc4836.svg" alt="Zooplus logo" />
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="client__item client__item--taiger">
+            <img src="/assets/taiger.5bf6b900.png" alt="Taiger logo" />
+          </div>
+        </li>
+
+        <li class="glide__slide">
+          <div class="client__item">
+            <img
+              src="/assets/habitissimo.ce7e1ead.png"
+              alt="Habitissimo logo"
+            />
+          </div>
+        </li>
+      </ul>
+      <div class="glide__arrows">
+        <p
+          class="glide__arrow glide__arrow--right js-clients-arrow"
+          data-glide-dir=">"
+        >
+          <i class="icon icon-circle-right"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
+
       <section class="block block--white">
         <div class="container">
           <h2 class="text-center title">Testimonios</h2>
@@ -263,186 +280,187 @@
           </p>
 
           <div class="carousel">
-            <div class="glide" id="opinion">
-              <div class="glide__arrows">
-                <p
-                  class="glide__arrow glide__arrow--left js-opinion-arrow"
-                  data-glide-dir="<"
-                >
-                  <i class="icon icon-circle-left"></i>
-                </p>
+  <div class="glide" id="opinion">
+    <div class="glide__arrows">
+      <p
+        class="glide__arrow glide__arrow--left js-opinion-arrow"
+        data-glide-dir="<"
+      >
+        <i class="icon icon-circle-left"></i>
+      </p>
+    </div>
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/francois.60bce20e.png"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
               </div>
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/francois.60bce20e.png"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Un curso práctico basado en una filosofía sólida. El
-                          equipo salió con más ganas de trabajar sobre un
-                          legacy. <br />Al día siguiente empezamos ya a mejorar
-                          nuestras prácticas. ¡Exitazo!
-                        </p>
-                        <p class="text-bold card__name">François Delaunay</p>
-                        <p class="card__profession">GE Renewable Energy</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/OriolTorne.7aa585b0.png"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          El curso fue un punto de inflexión para atrevernos a
-                          hacer las cosas de otra forma: con más seguridad y más
-                          calidad.<br />Un año después del curso, hemos notado
-                          una mejoría importante en el código y las metodologías
-                          que aplicamos.
-                        </p>
-                        <p class="text-bold card__name">Oriol Torné</p>
-                        <p class="card__profession">Dev en Esblada Medical</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/logedo.d5c40bad.jpg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Una formación imprescindible para enfrentarte a ese
-                          gran monstruo que es el legacy code.<br />
-                          Con formaciones así es imposible no apasionarse por
-                          nuestro trabajo.
-                        </p>
-                        <p class="text-bold card__name">Juan Carlos Logedo</p>
-                        <p class="card__profession">Sr. Dev en Hotelbeds</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/anonimo.9a6566c2.jpg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          Contratamos a Codium porque queríamos sus pegatinas,
-                          ¡y al final descubrimos que el curso era muy bueno!
-                        </p>
-                        <p class="text-bold card__name">Anónimo</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="card card--opinion">
-                      <div class="card__header">
-                        <div class="card__image-wrapper">
-                          <img
-                            src="/assets/alberto-de-la-cruz.1064e0ff.jpg"
-                            alt="Avatar"
-                            class="card__image card__image--rounded"
-                          />
-                        </div>
-                      </div>
-                      <div class="card__text card__text--left">
-                        <p>
-                          ¡Salimos con las pilas cargadas!. Trabajar con Legacy
-                          no es fácil pero gracias a este curso ahora el equipo
-                          comparte herramientas, vocabulario y otra perspectiva
-                          de cara a enfrentarse a él. Estamos encantados.
-                        </p>
-                        <p class="text-bold card__name">
-                          Alberto de la Cruz Grijalvo
-                        </p>
-                        <p class="card__profession">
-                          Allroad en Alea Soluciones
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div>
-                      <div class="card card--opinion">
-                        <div class="card__header">
-                          <div class="card__image-wrapper">
-                            <img
-                              src="/assets/joseIgnacioDominguez.3736ffdb.jpg"
-                              alt="Avatar"
-                              class="card__image card__image--rounded"
-                            />
-                          </div>
-                        </div>
-                        <div class="card__text card__text--left">
-                          <p>
-                            Ha sido una oportunidad magnífica para aprender,
-                            trabajar como un equipo multidisciplinar, compartir
-                            y validar ideas. Es muy práctico y se favorecen las
-                            conversaciones sobre distintas soluciones a un mismo
-                            problema. ¡Salimos con ganas de mejorar nuestro
-                            código!
-                          </p>
-                          <p class="text-bold card__name">
-                            Jose Ignacio Domínguez
-                          </p>
-                          <p class="card__profession">
-                            Staff Software Engineer en Clarity AI
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="glide__arrows">
-                  <p
-                    class="glide__arrow glide__arrow--right js-opinion-arrow"
-                    data-glide-dir=">"
-                  >
-                    <i class="icon icon-circle-right"></i>
-                  </p>
+            </div>
+            <div class="card__text card__text--left">
+              <p>
+                Un curso práctico basado en una filosofía sólida. El
+                equipo salió con más ganas de trabajar sobre un
+                legacy. <br />Al día siguiente empezamos ya a mejorar
+                nuestras prácticas. ¡Exitazo!
+              </p>
+              <p class="text-bold card__name">François Delaunay</p>
+              <p class="card__profession">GE Renewable Energy</p>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/OriolTorne.7aa585b0.png"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+            <div class="card__text card__text--left">
+              <p>
+                El curso fue un punto de inflexión para atrevernos a
+                hacer las cosas de otra forma: con más seguridad y más
+                calidad.<br />Un año después del curso, hemos notado
+                una mejoría importante en el código y las metodologías
+                que aplicamos.
+              </p>
+              <p class="text-bold card__name">Oriol Torné</p>
+              <p class="card__profession">Dev en Esblada Medical</p>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/logedo.d5c40bad.jpg"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+            <div class="card__text card__text--left">
+              <p>
+                Una formación imprescindible para enfrentarte a ese
+                gran monstruo que es el legacy code.<br />
+                Con formaciones así es imposible no apasionarse por
+                nuestro trabajo.
+              </p>
+              <p class="text-bold card__name">Juan Carlos Logedo</p>
+              <p class="card__profession">Sr. Dev en Hotelbeds</p>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/anonimo.9a6566c2.jpg"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+            <div class="card__text card__text--left">
+              <p>
+                Contratamos a Codium porque queríamos sus pegatinas,
+                ¡y al final descubrimos que el curso era muy bueno!
+              </p>
+              <p class="text-bold card__name">Anónimo</p>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/alberto-de-la-cruz.1064e0ff.jpg"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
+              </div>
+            </div>
+            <div class="card__text card__text--left">
+              <p>
+                ¡Salimos con las pilas cargadas!. Trabajar con Legacy
+                no es fácil pero gracias a este curso ahora el equipo
+                comparte herramientas, vocabulario y otra perspectiva
+                de cara a enfrentarse a él. Estamos encantados.
+              </p>
+              <p class="text-bold card__name">
+                Alberto de la Cruz Grijalvo
+              </p>
+              <p class="card__profession">
+                Allroad en Alea Soluciones
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div>
+            <div class="card card--opinion">
+              <div class="card__header">
+                <div class="card__image-wrapper">
+                  <img
+                    src="/assets/joseIgnacioDominguez.3736ffdb.jpg"
+                    alt="Avatar"
+                    class="card__image card__image--rounded"
+                  />
                 </div>
               </div>
-
-              <div class="glide__bullets" data-glide-el="controls[nav]">
-                <span class="glide__bullet" data-glide-dir="=0"></span>
-                <span class="glide__bullet" data-glide-dir="=1"></span>
-                <span class="glide__bullet" data-glide-dir="=2"></span>
-                <span class="glide__bullet" data-glide-dir="=3"></span>
-                <span class="glide__bullet" data-glide-dir="=4"></span>
-                <span class="glide__bullet" data-glide-dir="=5"></span>
+              <div class="card__text card__text--left">
+                <p>
+                  Ha sido una oportunidad magnífica para aprender,
+                  trabajar como un equipo multidisciplinar, compartir
+                  y validar ideas. Es muy práctico y se favorecen las
+                  conversaciones sobre distintas soluciones a un mismo
+                  problema. ¡Salimos con ganas de mejorar nuestro
+                  código!
+                </p>
+                <p class="text-bold card__name">
+                  Jose Ignacio Domínguez
+                </p>
+                <p class="card__profession">
+                  Staff Software Engineer en Clarity AI
+                </p>
               </div>
             </div>
           </div>
+        </li>
+      </ul>
+      <div class="glide__arrows">
+        <p
+          class="glide__arrow glide__arrow--right js-opinion-arrow"
+          data-glide-dir=">"
+        >
+          <i class="icon icon-circle-right"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <span class="glide__bullet" data-glide-dir="=0"></span>
+      <span class="glide__bullet" data-glide-dir="=1"></span>
+      <span class="glide__bullet" data-glide-dir="=2"></span>
+      <span class="glide__bullet" data-glide-dir="=3"></span>
+      <span class="glide__bullet" data-glide-dir="=4"></span>
+      <span class="glide__bullet" data-glide-dir="=5"></span>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -1098,122 +1116,128 @@
           </div>
         </div>
       </section>
+
       <section class="block block--lila">
-        <div class="container">
-          <section>
-            <h2 class="title text-center">Me gustaría saber más...</h2>
-            <p class="text-center">
-              La mejor forma de obtener más información es hablando con
-              nosotros. Rellena este formulario o envía un email al
-              <strong>info@codium.team</strong> y busquemos un momento para
-              hablar.
-            </p>
-          </section>
-          <div class="card card--success hidden" id="js-show-success">
-            <div class="success-check">
-              <i class="icon icon-check-circle"></i>
-            </div>
-            <h2>Muchas gracias por ponerte en contacto con nosotros.</h2>
-            <p>Te contestaremos lo antes posible.</p>
-          </div>
-          <form
-            class="form"
-            id="contactForm"
-            method="post"
-            action="/php/contact-legacy-code.php"
-            data-training-type="legacy_training"
-          >
-            <div>
-              <label for="name"
-                >Nombre<span class="required-asterik">*</span></label
-              >
-              <input type="text" id="name" placeholder="Codium" name="name" />
-            </div>
+  <div class="container">
+    <section>
+      <h2 class="title text-center">Me gustaría saber más...</h2>
+      <p class="text-center">
+        La mejor forma de obtener más información es hablando con
+        nosotros. Rellena este formulario o envía un email al
+        <strong>info@codium.team</strong> y busquemos un momento para
+        hablar.
+      </p>
+    </section>
 
-            <div>
-              <label for="email"
-                >Email<span class="required-asterik">*</span></label
-              >
-              <input
-                type="email"
-                id="email"
-                placeholder="me@test.com"
-                name="email"
-              />
-            </div>
+    <div class="card card--success hidden" id="js-show-success">
+  <div class="success-check">
+    <i class="icon icon-check-circle"></i>
+  </div>
+  <h2>Muchas gracias por ponerte en contacto con nosotros.</h2>
+  <p>Te contestaremos lo antes posible.</p>
+</div>
 
-            <div id="js-numProgrammers">
-              <label for="numProgrammers">
-                Nº de programadores<span class="required-asterik">*</span>
-              </label>
-              <input
-                type="number"
-                min="0"
-                id="numProgrammers"
-                placeholder="1"
-                name="numEmployees"
-              />
-            </div>
-            <div id="js-locality" class="hidden">
-              <label for="locality">
-                Localidad dónde vives<span class="required-asterik">*</span>
-              </label>
-              <input
-                type="text"
-                min="0"
-                id="locality"
-                placeholder="Madrid"
-                name="location"
-              />
-            </div>
 
-            <div class="myradio">
-              <input
-                type="radio"
-                name="myRadio"
-                id="one"
-                class="myradio__input"
-                checked
-                value="business"
-              />
-              <label for="one" class="myradio__label">Para mi empresa</label>
-            </div>
-            <div class="myradio">
-              <input
-                type="radio"
-                name="myRadio"
-                id="two"
-                class="myradio__input"
-                value="user"
-              />
-              <label for="two" class="myradio__label">Para mí</label>
-            </div>
+    <form
+      class="form"
+      id="contactForm"
+      method="post"
+      action="/php/contact-legacy-code.php"
+      data-training-type="legacy_training"
+    >
+      <div>
+        <label for="name"
+          >Nombre<span class="required-asterik">*</span></label
+        >
+        <input type="text" id="name" placeholder="Codium" name="name" />
+      </div>
 
-            <div class="text-center">
-              <button
-                class="button button--primary submit-button"
-                id="js-submit"
-              >
-                Pedir información
-              </button>
-            </div>
+      <div>
+        <label for="email"
+          >Email<span class="required-asterik">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          placeholder="me@test.com"
+          name="email"
+        />
+      </div>
 
-            <p class="g-recaptcha-text">
-              This site is protected by reCAPTCHA and the Google
-              <a href="https://policies.google.com/privacy">Privacy Policy</a>
-              and
-              <a href="https://policies.google.com/terms">Terms of Service</a>
-              apply.
-            </p>
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
-              data-callback="captchaCompleted"
-              data-size="invisible"
-            ></div>
-          </form>
-        </div>
-      </section>
+      <div id="js-numProgrammers">
+        <label for="numProgrammers">
+          Nº de programadores<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="number"
+          min="0"
+          id="numProgrammers"
+          placeholder="1"
+          name="numEmployees"
+        />
+      </div>
+      <div id="js-locality" class="hidden">
+        <label for="locality">
+          Localidad dónde vives<span class="required-asterik">*</span>
+        </label>
+        <input
+          type="text"
+          min="0"
+          id="locality"
+          placeholder="Madrid"
+          name="location"
+        />
+      </div>
+
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="one"
+          class="myradio__input"
+          checked
+          value="business"
+        />
+        <label for="one" class="myradio__label">Para mi empresa</label>
+      </div>
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="two"
+          class="myradio__input"
+          value="user"
+        />
+        <label for="two" class="myradio__label">Para mí</label>
+      </div>
+
+      <div class="text-center">
+        <button
+          class="button button--primary submit-button"
+          id="js-submit"
+        >
+          Pedir información
+        </button>
+      </div>
+
+      <p class="g-recaptcha-text">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        and
+        <a href="https://policies.google.com/terms">Terms of Service</a>
+        apply.
+      </p>
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
+        data-callback="captchaCompleted"
+        data-size="invisible"
+      ></div>
+    </form>
+  </div>
+</section>
+
+
     </main>
     <div class="footer-wrapper">
       <footer class="container footer">
