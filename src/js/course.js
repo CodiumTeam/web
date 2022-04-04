@@ -28,10 +28,9 @@ document
   .addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const isValid = validateForm(event);
+    const isValid = validateForm();
 
     if (!isValid) {
-      event.preventDefault();
       return;
     }
 
@@ -115,7 +114,7 @@ function isForBusiness(value) {
   return value === 'business';
 }
 
-function validateForm(ev) {
+function validateForm() {
   const $name = document.getElementById('name');
   const $email = document.getElementById('email');
   const $radio = document.querySelector('input[name="myRadio"]:checked');

@@ -11,7 +11,7 @@ document
   .addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const isValid = validateForm(event);
+    const isValid = validateForm();
 
     if (!isValid) return;
 
