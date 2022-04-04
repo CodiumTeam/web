@@ -293,46 +293,21 @@
               imageUrl: '/img/illustrations/development-team.svg',
               btnUrl: '#contact'
             }) %>
-            <article class="card card--large">
-              <div class="card__header">
-                <img
-                  loading="lazy"
-                  src="/img/illustrations/classroom-learning.svg"
-                  alt="Classroom illustration"
-                  class="card__image"
-                />
-              </div>
-              <p class="card__title">Cursos</p>
-              <p class="card__text">
-                Quieres aprender una nueva habilidad y generar un punto de
-                inflexión en tu equipo. Enseñamos con cursos prácticos.
-              </p>
-              <div class="card__footer">
-                <a href="#courses-list" class="button button--outline">
-                  ¿Quieres saber más?
-                </a>
-              </div>
-            </article>
-            <article class="card card--large">
-              <div class="card__header">
-                <img
-                  loading="lazy"
-                  src="/img/illustrations/virtual-education.svg"
-                  alt="Virtual education illustration"
-                  class="card__image"
-                />
-              </div>
-              <p class="card__title">Formación continua</p>
-              <p class="card__text">
-                Quieres que tu equipo se mantenga en forma a nivel tecnológico.
-                Sesiones periódicas para desarrollar diferentes áreas.
-              </p>
-              <div class="card__footer">
-                <a href="#contact" class="button button--outline">
-                  ¿Quieres saber más?
-                </a>
-              </div>
-            </article>
+
+            <%- include('partials/cards/card-large', {
+              title: 'Cursos',
+              description: 'Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.',
+              imageUrl: 'img/illustrations/classroom-learning.svg',
+              btnUrl: '#courses-list'
+            }) %>
+
+             <%- include('partials/cards/card-large', {
+              title: 'Formación continua',
+              description: 'Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.',
+              imageUrl: '/img/illustrations/virtual-education.svg',
+              btnUrl: '#contact'
+            }) %>
+
           </div>
         </div>
       </section>
