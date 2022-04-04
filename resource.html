@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" crossorigin src="/assets/resource.36b08e4c.js"></script>
     <link rel="modulepreload" href="/assets/dropdown.9ce06d1d.js">
-    <link rel="stylesheet" href="/assets/resource.bbd41766.css">
+    <link rel="stylesheet" href="/assets/resource.93caef8d.css">
   </head>
   <body id="body">
     <header class="header" id="js-header">
@@ -75,296 +75,308 @@
 
     <main class="main">
       <div class="container">
-        <div class="container resources-page">
-          <h1>Tipos de texto</h1>
-          <div><p class="title">Texto para títulos</p></div>
-          <div><p class="small-title">Texto para títulos pequeños</p></div>
+        <section class="section">
+          <h1 class="title">Tipos de texto</h1>
+          <p class="title">Texto para títulos <code>.title</code></p>
+          <p class="small-title">
+            Texto para títulos pequeños <code>.small-title</code>
+          </p>
+          <p>
+            Luis Rovirosa es desarrollador de aplicaciones web y formador desde
+            hace más de 10 años. Trabaja habitualmente con startups y grandes
+            empresas ayudando a transformar sus equipos de programación. En su
+            día a día dedica buena parte de su tiempo al desarrollo y también
+            ayuda a las empresas a simplificar y priorizar sus productos.
+          </p>
+        </section>
+        <section class="section">
           <h1>Botones</h1>
           <div>
             <button type="button" class="button button--primary">Botón</button>
+            <p><code>.button .button--primary</code></p>
+          </div>
+          <div>
             <button type="button" class="button button--primary" disabled>
               Botón
             </button>
-            <button type="button" class="button button--outline">Botón</button>
+            <p><code>disabled</code></p>
           </div>
           <div>
-            <h2>Cards</h2>
-            <h3>Normal</h3>
-            <div class="card">
-              <div class="card__header"><i class="fa fa-eye"></i></div>
-              <p class="card__title">The quick fox over the lazy dog</p>
-              <p class="card__text">the quick fox jumps over the lazy dog</p>
+            <button type="button" class="button button--outline">Botón</button>
+            <p><code>button button--outline</code></p>
+          </div>
+        </section>
+        <section class="section">
+          <h2>Cards</h2>
+          <h3>Normal</h3>
+          <div class="card">
+            <div class="card__header"><i class="fa fa-eye"></i></div>
+            <p class="card__title">The quick fox over the lazy dog</p>
+            <p class="card__text">the quick fox jumps over the lazy dog</p>
+          </div>
+          <h3>Large</h3>
+          <div class="card card--large">
+            <div class="card__header">
+              <img
+                src="/assets/classroom-learning.87322ad1.svg"
+                alt="Class room learning"
+                class="card__image"
+              />
             </div>
-            <h3>Large</h3>
-            <div class="card card--large">
-              <div class="card__header">
+            <p class="card__title">The quick fox over the lazy dog</p>
+            <p class="card__text">the quick fox jumps over the lazy dog</p>
+            <div class="card__footer">
+              <button class="button button--outline">Más información</button>
+            </div>
+          </div>
+          <h3>Personal Card</h3>
+          <div class="card card--personal">
+            <div class="card__header">
+              <div class="card__image-wrapper">
                 <img
-                  src="/assets/classroom-learning.87322ad1.svg"
-                  alt="Class room learning"
-                  class="card__image"
+                  src="/assets/jordi.d1e63494.jpeg"
+                  alt="Jordi Anguele profile"
+                  class="card__image card__image--rounded"
                 />
               </div>
-              <p class="card__title">The quick fox over the lazy dog</p>
-              <p class="card__text">the quick fox jumps over the lazy dog</p>
-              <div class="card__footer">
-                <button class="button button--outline">Más información</button>
+            </div>
+            <p class="card__title">Jordi Anguela</p>
+            <p class="card__text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <div class="card__footer">
+              <p class="card__professional">Back-end Developer</p>
+              <ul class="card__icons">
+                <li class="card__icon">
+                  <a><i class="icon icon-twitter"></i></a>
+                </li>
+                <li class="card__icon">
+                  <a><i class="icon icon-linkedin2"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3>Opinion Card</h3>
+          <div class="card card--opinion">
+            <div class="card__header">
+              <div class="card__image-wrapper">
+                <img
+                  src="/assets/luis.26dd530f.jpg"
+                  alt="Avatar"
+                  class="card__image card__image--rounded"
+                />
               </div>
             </div>
-            <h3>Personal Card</h3>
-            <div class="card card--personal">
-              <div class="card__header">
-                <div class="card__image-wrapper">
-                  <img
-                    src="/assets/jordi.d1e63494.jpeg"
-                    alt="Jordi Anguele profile"
-                    class="card__image card__image--rounded"
-                  />
-                </div>
-              </div>
-              <p class="card__title">Jordi Anguela</p>
-              <p class="card__text">
-                Slate helps you see how many more days you need to work to reach
-                your financial goal for the month and year.
+            <div class="card__text card__text--left">
+              <p>
+                ¡Salimos con las pilas cargadas!. Trabajar con Legacy no es
+                fácil pero gracias a este curso ahora el equipo comparte
+                herramientas, vocabulario y otra perspectiva de cara a
+                enfrentarse a él. Estamos encantados.
               </p>
-              <div class="card__footer">
-                <p class="card__professional">Back-end Developer</p>
-                <ul class="card__icons">
-                  <li class="card__icon">
-                    <a><i class="icon icon-twitter"></i></a>
-                  </li>
-                  <li class="card__icon">
-                    <a><i class="icon icon-linkedin2"></i></a>
-                  </li>
-                </ul>
-              </div>
+              <p class="card__name text-bold">Luis Rovirosa</p>
+              <p class="card__profession">Back-end developer</p>
             </div>
-            <h3>Opinion Card</h3>
-            <div class="card card--opinion">
-              <div class="card__header">
-                <div class="card__image-wrapper">
+          </div>
+        </section>
+        <section class="section">
+          <h2>Blocks</h2>
+          <div class="block block--white"><h2>White block</h2></div>
+          <div class="block block--grey"><h2>Grey block</h2></div>
+          <div class="block block--lila"><h2>Lila block</h2></div>
+        </section>
+        <section class="legacy">
+          <h1>Logos de Codium</h1>
+          <div>
+            <h2>Logo con fondo transparente para fondo claro</h2>
+            <div class="row bg-color-light text-center">
+              <div class="col-md-4 logo-codium">
+                <h3>Codium formato rectangular</h3>
+                <a href="/img/resources/codium-brand-rectangle-black.svg">
                   <img
-                    src="/assets/luis.26dd530f.jpg"
-                    alt="Avatar"
-                    class="card__image card__image--rounded"
+                    src="/assets/codium-brand-rectangle-black.35efee3c.svg"
+                    class="img-responsive"
+                    alt="Brand black"
                   />
-                </div>
+                </a>
               </div>
-              <div class="card__text card__text--left">
-                <p>
-                  ¡Salimos con las pilas cargadas!. Trabajar con Legacy no es
-                  fácil pero gracias a este curso ahora el equipo comparte
-                  herramientas, vocabulario y otra perspectiva de cara a
-                  enfrentarse a él. Estamos encantados.
-                </p>
-                <p class="card__name text-bold">Luis Rovirosa</p>
-                <p class="card__profession">Back-end developer</p>
+              <div class="col-md-4 logo-codium">
+                <h3>Codium formato cuadrado</h3>
+                <a href="/img/resources/codium-all-square-black.svg">
+                  <img
+                    src="/assets/codium-all-square-black.8d4f378f.svg"
+                    class="img-responsive"
+                    alt="Icon + brand black"
+                  />
+                </a>
+              </div>
+              <div class="col-md-4 logo-codium">
+                <h3>Icono Codium</h3>
+                <a href="/img/resources/codium-icon-black.svg">
+                  <img
+                    src="/assets/codium-icon-black.088429f7.svg"
+                    class="img-responsive"
+                  />
+                </a>
               </div>
             </div>
           </div>
           <div>
-            <h2>Blocks</h2>
-            <div class="block block--white"><h2>White block</h2></div>
-            <div class="block block--grey"><h2>Grey block</h2></div>
-            <div class="block block--lila"><h2>Lila block</h2></div>
+            <h2>Logo con fondo transparente para fondo oscuro</h2>
+            <div class="row bg-color-darker text-center">
+              <div class="col-md-4 logo-codium">
+                <h3>Codium formato rectangular</h3>
+                <a href="/img/resources/codium-brand-rectangle-white.svg">
+                  <img
+                    src="/assets/codium-brand-rectangle-white.e345836b.svg"
+                    class="img-responsive"
+                  />
+                </a>
+              </div>
+              <div class="col-md-4 logo-codium">
+                <h3>Codium formato cuadrado</h3>
+                <a href="/img/resources/codium-all-square-white.svg">
+                  <img
+                    src="/assets/codium-all-square-white.7dbaa0a9.svg"
+                    class="img-responsive"
+                  />
+                </a>
+              </div>
+              <div class="col-md-4 logo-codium">
+                <h3>Icono Codium</h3>
+                <a href="/img/resources/codium-icon-white.svg">
+                  <img
+                    src="/assets/codium-icon-white.ae3c70a5.svg"
+                    class="img-responsive"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
-          <section class="legacy">
-            <h1>Logos de Codium</h1>
-            <div>
-              <h2>Logo con fondo transparente para fondo claro</h2>
-              <div class="row bg-color-light text-center">
-                <div class="col-md-4 logo-codium">
-                  <h3>Codium formato rectangular</h3>
-                  <a href="/img/resources/codium-brand-rectangle-black.svg">
-                    <img
-                      src="/assets/codium-brand-rectangle-black.35efee3c.svg"
-                      class="img-responsive"
-                      alt="Brand black"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-4 logo-codium">
-                  <h3>Codium formato cuadrado</h3>
-                  <a href="/img/resources/codium-all-square-black.svg">
-                    <img
-                      src="/assets/codium-all-square-black.8d4f378f.svg"
-                      class="img-responsive"
-                      alt="Icon + brand black"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-4 logo-codium">
-                  <h3>Icono Codium</h3>
-                  <a href="/img/resources/codium-icon-black.svg">
-                    <img
-                      src="/assets/codium-icon-black.088429f7.svg"
-                      class="img-responsive"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2>Logo con fondo transparente para fondo oscuro</h2>
-              <div class="row bg-color-darker text-center">
-                <div class="col-md-4 logo-codium">
-                  <h3>Codium formato rectangular</h3>
-                  <a href="/img/resources/codium-brand-rectangle-white.svg">
-                    <img
-                      src="/assets/codium-brand-rectangle-white.e345836b.svg"
-                      class="img-responsive"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-4 logo-codium">
-                  <h3>Codium formato cuadrado</h3>
-                  <a href="/img/resources/codium-all-square-white.svg">
-                    <img
-                      src="/assets/codium-all-square-white.7dbaa0a9.svg"
-                      class="img-responsive"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-4 logo-codium">
-                  <h3>Icono Codium</h3>
-                  <a href="/img/resources/codium-icon-white.svg">
-                    <img
-                      src="/assets/codium-icon-white.ae3c70a5.svg"
-                      class="img-responsive"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h1>Descripción corta de Codium</h1>
-            En Codium formamos y acompañamos a equipos de programación.
-            Especializados en Clean code, TDD y Legacy code.
-            <h1>Descripción conjunta de Luis y Jordi</h1>
-            <h1>Fotos de Codium</h1>
-            <div class="row">
-              <div class="col-md-4">
-                <a
-                  href="https://pbs.twimg.com/media/DQ3KEJKW4AAvjrx.jpg"
-                  target="_blank"
-                >
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="https://pbs.twimg.com/media/DQ3KEJKW4AAvjrx.jpg"
-                  />
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  href="/img/resources/luis_and_jordi_scbcn2017.jpg"
-                  target="_blank"
-                >
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="/assets/luis_and_jordi_scbcn2017.1bc70f68.jpg"
-                  />
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a
-                  href="/img/resources/luis_and_jordi_scpamplona2018.jpg"
-                  target="_blank"
-                >
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="/assets/luis_and_jordi_scpamplona2018.12d25730.jpg"
-                  />
-                </a>
-              </div>
-            </div>
-            <h1>Descripción de Luis</h1>
-            <p>
-              Luis Rovirosa es desarrollador de aplicaciones web y formador
-              desde hace más de 10 años. Trabaja habitualmente con startups y
-              grandes empresas ayudando a transformar sus equipos de
-              programación. En su día a día dedica buena parte de su tiempo al
-              desarrollo y también ayuda a las empresas a simplificar y
-              priorizar sus productos.
-            </p>
-            <p>
-              En 2017 montó Codium, una empresa especializada en formación y
-              acompañamiento de empresas de desarrollo donde imparte formaciones
-              de TDD, Clean Code, Patrones de diseño y de cómo trabajar con
-              Legacy code.
-            </p>
-            <p>
-              Twitter:
+          <h1>Descripción corta de Codium</h1>
+          En Codium formamos y acompañamos a equipos de programación.
+          Especializados en Clean code, TDD y Legacy code.
+          <h1>Descripción conjunta de Luis y Jordi</h1>
+          <h1>Fotos de Codium</h1>
+          <div class="row">
+            <div class="col-md-4">
               <a
-                aria-label="Twitter link"
-                href="https://twitter.com/luisrovirosa"
-                >https://twitter.com/luisrovirosa</a
-              ><br />
-              LinkedIn:
-              <a
-                aria-label="Linkedin link"
-                href="https://www.linkedin.com/in/luisrovirosa"
-                >https://www.linkedin.com/in/luisrovirosa</a
+                href="https://pbs.twimg.com/media/DQ3KEJKW4AAvjrx.jpg"
+                target="_blank"
               >
-            </p>
-            <h1>Fotos de Luis</h1>
-            <div class="row">
-              <div class="col-md-4">
-                <a href="img/resources/luis_cas2018.jpg" target="_blank">
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="/assets/luis_cas2018.2f2072f3.jpg"
-                  />
-                </a>
-              </div>
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="https://pbs.twimg.com/media/DQ3KEJKW4AAvjrx.jpg"
+                />
+              </a>
             </div>
-            <h1>Descripción de Jordi</h1>
-            <p>
-              Jordi Anguela es desarrollador de aplicaciones web y formador
-              desde hace más de 10 años. Trabaja habitualmente con startups y
-              grandes empresas ayudando a transformar sus equipos de
-              programación. En su día a día dedica buena parte de su tiempo al
-              desarrollo y también ayuda a las empresas a simplificar y
-              priorizar sus productos.
-            </p>
-            <p>
-              En 2017 montó Codium, una empresa especializada en formación y
-              acompañamiento de empresas de desarrollo donde imparte formaciones
-              de TDD, Clean Code, Patrones de diseño y de cómo trabajar con
-              Legacy code.
-            </p>
-            <p>
-              Twitter:
+            <div class="col-md-4">
               <a
-                aria-label="Twitter link"
-                href="https://twitter.com/jordianguela"
-                >https://twitter.com/jordianguela</a
-              ><br />
-              LinkedIn:
-              <a
-                aria-label="Linkedin link"
-                href="https://www.linkedin.com/in/jordianguela"
-                >https://www.linkedin.com/in/jordianguela</a
+                href="/img/resources/luis_and_jordi_scbcn2017.jpg"
+                target="_blank"
               >
-            </p>
-            <h1>Fotos de Jordi</h1>
-            <div class="row">
-              <div class="col-md-4">
-                <a href="/img/resources/jordi2.png" target="_blank">
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="/assets/jordi2.86bb4dc5.png"
-                  />
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="/img/resources/jordi1.jpeg" target="_blank">
-                  <img
-                    class="big-img thumbnail img-responsive"
-                    src="/assets/jordi1.f2ad54da.jpeg"
-                  />
-                </a>
-              </div>
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="/assets/luis_and_jordi_scbcn2017.1bc70f68.jpg"
+                />
+              </a>
             </div>
-          </section>
-        </div>
+            <div class="col-md-4">
+              <a
+                href="/img/resources/luis_and_jordi_scpamplona2018.jpg"
+                target="_blank"
+              >
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="/assets/luis_and_jordi_scpamplona2018.12d25730.jpg"
+                />
+              </a>
+            </div>
+          </div>
+          <h1>Descripción de Luis</h1>
+          <p>
+            Luis Rovirosa es desarrollador de aplicaciones web y formador desde
+            hace más de 10 años. Trabaja habitualmente con startups y grandes
+            empresas ayudando a transformar sus equipos de programación. En su
+            día a día dedica buena parte de su tiempo al desarrollo y también
+            ayuda a las empresas a simplificar y priorizar sus productos.
+          </p>
+          <p>
+            En 2017 montó Codium, una empresa especializada en formación y
+            acompañamiento de empresas de desarrollo donde imparte formaciones
+            de TDD, Clean Code, Patrones de diseño y de cómo trabajar con Legacy
+            code.
+          </p>
+          <p>
+            Twitter:
+            <a aria-label="Twitter link" href="https://twitter.com/luisrovirosa"
+              >https://twitter.com/luisrovirosa</a
+            ><br />
+            LinkedIn:
+            <a
+              aria-label="Linkedin link"
+              href="https://www.linkedin.com/in/luisrovirosa"
+              >https://www.linkedin.com/in/luisrovirosa</a
+            >
+          </p>
+          <h1>Fotos de Luis</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="img/resources/luis_cas2018.jpg" target="_blank">
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="/assets/luis_cas2018.2f2072f3.jpg"
+                />
+              </a>
+            </div>
+          </div>
+          <h1>Descripción de Jordi</h1>
+          <p>
+            Jordi Anguela es desarrollador de aplicaciones web y formador desde
+            hace más de 10 años. Trabaja habitualmente con startups y grandes
+            empresas ayudando a transformar sus equipos de programación. En su
+            día a día dedica buena parte de su tiempo al desarrollo y también
+            ayuda a las empresas a simplificar y priorizar sus productos.
+          </p>
+          <p>
+            En 2017 montó Codium, una empresa especializada en formación y
+            acompañamiento de empresas de desarrollo donde imparte formaciones
+            de TDD, Clean Code, Patrones de diseño y de cómo trabajar con Legacy
+            code.
+          </p>
+          <p>
+            Twitter:
+            <a aria-label="Twitter link" href="https://twitter.com/jordianguela"
+              >https://twitter.com/jordianguela</a
+            ><br />
+            LinkedIn:
+            <a
+              aria-label="Linkedin link"
+              href="https://www.linkedin.com/in/jordianguela"
+              >https://www.linkedin.com/in/jordianguela</a
+            >
+          </p>
+          <h1>Fotos de Jordi</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="/img/resources/jordi2.png" target="_blank">
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="/assets/jordi2.86bb4dc5.png"
+                />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="/img/resources/jordi1.jpeg" target="_blank">
+                <img
+                  class="big-img thumbnail img-responsive"
+                  src="/assets/jordi1.f2ad54da.jpeg"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <script>

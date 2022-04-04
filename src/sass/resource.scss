@@ -4,10 +4,20 @@
 
 .main {
   padding-top: 5rem;
+
+  .section {
+    margin: 1rem 0;
+  }
 }
 
 .legacy {
   img {
     max-width: 100%;
   }
+}
+
+code {
+  font-size: 1rem;
+  color: #e83e8c;
+  word-break: break-word;
 }
