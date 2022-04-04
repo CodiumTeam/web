@@ -1,24 +1,18 @@
 <i class="icon icon-menu header__icon" id="js-menu-button"></i>
 <nav class="navbar" id="js-menu">
   <ul class="navbar__list">
+    <% menu.forEach(function(item){ %>
     <li class="navbar__item">
-      <a href="#our-services">Servicios</a>
+      <a href="<%= item.url %>"><%= item.title %></a>
     </li>
-
-    <li class="navbar__item">
-      <a href="#values">Valores</a>
-    </li>
-
-    <li class="navbar__item">
-      <a href="#team">Equipo</a>
-    </li>
+    <% }); %>
 
     <li class="navbar__item navbar__item--dropdown">
       <%- include('dropdown') %>
     </li>
 
     <li class="navbar__item">
-      <a href="#contact">Contactar</a>
+      <a href="#contactForm">Contactar</a>
     </li>
   </ul>
 </nav>

@@ -44,7 +44,22 @@
       ga('send', 'pageview');
     </script>
 
-    <%- include('partials/header/header', {}) %>
+    <%- include('partials/header/header', {
+      menu: [
+        {
+          title: 'Servicios',
+          url: '#our-services',
+        },
+        {
+          title: 'Valores',
+          url: '#values',
+        },
+        {
+          title: 'Equipo',
+          url: '#team',
+        },
+      ]
+    }) %>
 
     <div class="hero-wrapper">
       <div class="container">
@@ -249,7 +264,7 @@
               title: 'Desarrollo',
               description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
               imageUrl: '/img/illustrations/development-team.svg',
-              btnUrl: '#contact'
+              btnUrl: '#contactForm'
             }) %>
 
             <%- include('partials/cards/card-large', {
@@ -263,7 +278,7 @@
               title: 'Formación continua',
               description: 'Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.',
               imageUrl: '/img/illustrations/virtual-education.svg',
-              btnUrl: '#contact'
+              btnUrl: '#contactForm'
             }) %>
 
           </div>
@@ -555,7 +570,7 @@
       <section class="contact block block--lila">
         <div class="container revel">
           <div>
-            <h2 class="title text-center" id="contact">Contacto</h2>
+            <h2 class="title text-center" id="contactForm">Contacto</h2>
             <p class="text-center">
               La mejor forma de conocernos es hablando con nosotros. Rellena
               este formulario o envía un mail a
@@ -575,7 +590,6 @@
               action="/php/contact.php"
               method="post"
               class="contact__form form"
-              id="contactForm"
             >
               <div>
                 <label for="name" class="contact__form--name required">
