@@ -30,7 +30,10 @@ document
 
     const isValid = validateForm(event);
 
-    if (!isValid) return;
+    if (!isValid) {
+      event.preventDefault();
+      return;
+    }
 
     if (!grecaptcha.getResponse()) {
       grecaptcha.execute();
@@ -126,8 +129,6 @@ function validateForm(ev) {
     : formValidation.validateInput($locality);
 
   if (!hasValidName || !hasValidEmail || !hasValidForWhoInput) {
-    ev.preventDefault();
-
     if (!hasValidName) {
       $name.focus();
       return false;
@@ -149,6 +150,13 @@ function validateForm(ev) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
+  const isValid = validateForm(event);
+
+  if (!isValid) {
+    grecaptcha.reset();
+    return;
+  }
+
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const url = $form.getAttribute('action');

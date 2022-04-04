@@ -21,7 +21,7 @@ document
     }
   });
 
-function validateForm(ev) {
+function validateForm() {
   const $name = document.getElementById('name');
   const $email = document.getElementById('email');
   const $message = document.getElementById('message');
@@ -31,8 +31,6 @@ function validateForm(ev) {
   const hasValidMessage = formValidation.validateInput($message);
 
   if (!hasValidName || !hasValidEmail || !hasValidMessage) {
-    ev.preventDefault();
-
     if (!hasValidName) {
       $name.focus();
       return false;
@@ -54,6 +52,13 @@ function validateForm(ev) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
+  const isValid = validateForm();
+
+  if (!isValid) {
+    grecaptcha.reset();
+    return;
+  }
+
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
