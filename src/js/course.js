@@ -39,7 +39,7 @@ document
   });
 
 function mountOpinionCarousel() {
-  new Glide('#opinion', {
+  const glide = new Glide('#opinion', {
     type: 'carousel',
     autoplay: 5000,
     startAt: 0,
@@ -51,7 +51,18 @@ function mountOpinionCarousel() {
       },
     },
     gap: 20,
-  }).mount({ Controls, Breakpoints });
+  });
+
+  glide.mount({ Controls, Breakpoints });
+
+  // This is a fix for https://github.com/glidejs/glide/issues/417
+  const glideArrows = document.querySelectorAll('.js-opinion-arrow');
+
+  glideArrows.forEach(function (glideArrow) {
+    glideArrow.addEventListener('click', function () {
+      glide.go(glideArrow.dataset.glideDir);
+    });
+  });
 }
 
 function mountClientsCarousel() {
@@ -70,9 +81,6 @@ function mountClientsCarousel() {
         perView: 3,
       },
       450: {
-        perView: 2,
-      },
-      350: {
         perView: 1,
       },
       800: {
