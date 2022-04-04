@@ -157,10 +157,84 @@
         </section>
         <section class="section">
           <h2>Blocks</h2>
-          <div class="block block--white"><h2>White block</h2></div>
-          <div class="block block--grey"><h2>Grey block</h2></div>
-          <div class="block block--lila"><h2>Lila block</h2></div>
+          <div class="block block--white"><h2>White block <code>block--white</code></h2></div>
+          <div class="block block--grey"><h2>Grey block <code>block--grey</code></h2></div>
+          <div class="block block--lila"><h2>Lila block <code>block--lila</code></h2></div>
         </section>
+
+         <section class="section">
+          <h2>Carousel</h2>
+          <h3>Opinion</h3>
+          <% var opinionAboutThisCourse = [
+            {
+              avatar: './img/testimonials/francois.png',
+              opinion: `Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy.
+                  <br />Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!
+              `,
+              name: 'François Delaunay',
+              profession: 'GE Renewable Energy',
+            },
+            {
+              avatar: './img/testimonials/OriolTorne.png',
+              opinion: `El curso fue un punto de inflexión para atrevernos a
+                  hacer las cosas de otra forma: con más seguridad y más
+                  calidad.<br />Un año después del curso, hemos notado
+                  una mejoría importante en el código y las metodologías
+                  que aplicamos.`,
+              name: 'Oriol Torné',
+              profession: 'Dev en Esblada Medical',
+            },
+          ] %>
+
+            <%- include('partials/carousel/opinion', {
+              opinions: opinionAboutThisCourse
+            })  %>
+
+            <h3>Clients</h3>
+            <% var clients = [
+              {
+                image: './img/clients/roiback.png',
+                name: 'Roiback',
+                customClass: 'client__item--roiback'
+              },
+              {
+                image: './img/clients/generalelectric.png',
+                name: 'General electric',
+                customClass: 'client__item--ge',
+              },
+              {
+                image: './img/clients/glovo.png',
+                name: 'Glovo',
+                customClass: 'client__item--glovo',
+              },
+              {
+                image: './img/clients/avoris.png',
+                name: 'Avoris',
+                customClass: 'client__item--glovo',
+              },
+              {
+                image: './img/clients/melia.png',
+                name: 'Meliá',
+                customClass: 'client__item--glovo',
+              },
+              {
+                image: './img/clients/hotelbeds.png',
+                name: 'Hotelbeds',
+              },
+              {
+                image: './img/clients/zooplus.svg',
+                name: 'Zooplus'
+              },
+              {
+                image: './img/clients/habitissimo.png',
+                name: 'Habitissimo'
+              }
+            ] %>
+
+            <%- include('partials/carousel/clients', { clients })  %>
+
+        </section>
+
         <section class="legacy">
           <h1>Logos de Codium</h1>
           <div>
