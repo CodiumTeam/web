@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import copy from 'rollup-plugin-copy';
+import ejs from 'vite-plugin-ejs-engine';
 
 const ROOT = resolve(__dirname, 'src');
 const DIST = resolve(__dirname);
@@ -16,6 +17,7 @@ const inputs = {
 export default defineConfig({
   root: ROOT,
   plugins: [
+    ejs(),
     copy({
       targets: [
         {

@@ -29,7 +29,8 @@
     "prettier": "^2.6.1",
     "rollup-plugin-copy": "^3.4.0",
     "sass": "^1.49.9",
-    "vite": "^2.8.6"
+    "vite": "^2.8.6",
+    "vite-plugin-ejs-engine": "^1.0.2"
   },
   "dependencies": {
     "@glidejs/glide": "^3.5.2"
