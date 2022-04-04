@@ -55,8 +55,12 @@ function mountOpinionCarousel() {
 
   glide.mount({ Controls, Breakpoints });
 
-  // This is a fix for https://github.com/glidejs/glide/issues/417
-  const glideArrows = document.querySelectorAll('.js-opinion-arrow');
+  addClientEventForArrows('.js-opinion-arrow', glide);
+}
+
+// This is a fix for https://github.com/glidejs/glide/issues/417
+function addClientEventForArrows(arrowClass, glide) {
+  const glideArrows = document.querySelectorAll(arrowClass);
 
   glideArrows.forEach(function (glideArrow) {
     glideArrow.addEventListener('click', function () {
@@ -70,27 +74,31 @@ function mountClientsCarousel() {
 
   if (!clients) return;
 
-  new Glide('#clients', {
+  const glide = new Glide('#clients', {
     type: 'carousel',
     autoplay: false,
     startAt: 0,
     gap: 10,
-    perView: 6,
+    perView: 5,
     breakpoints: {
-      700: {
-        perView: 3,
-      },
       450: {
         perView: 1,
       },
-      800: {
-        perView: 4,
+      600: {
+        perView: 2,
       },
-      910: {
+      900: {
+        perView: 3,
+      },
+      980: {
         perView: 4,
       },
     },
-  }).mount({ Controls, Breakpoints });
+  });
+
+  glide.mount({ Controls, Breakpoints });
+
+  addClientEventForArrows('.js-clients-arrow', glide);
 }
 
 function showCorrectInputDependingOnSelectedRadio(event) {
