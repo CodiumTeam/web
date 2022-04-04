@@ -2,17 +2,16 @@
   <div class="card__header">
     <img
       loading="lazy"
-      src="/img/illustrations/development-team.svg"
+      src="<%= imageUrl %>"
       alt="Development team illustration"
       class="card__image"
     />
   </div>
-  <p class="card__title">Desarrollo</p>
-  <p class="card__text">
-    Tu equipo de programación de alto rendimiento integrados en tu empresa u
-    outsourcing. Entregamos el máximo valor en cada iteración.
-  </p>
+  <p class="card__title"><%= title %></p>
+  <p class="card__text"><%= description %></p>
   <div class="card__footer">
-    <a href="#contact" class="button button--outline"> ¿Quieres saber más? </a>
+    <a href="<%= btnUrl %>" class="button button--outline">
+      ¿Quieres saber más?
+    </a>
   </div>
 </article>

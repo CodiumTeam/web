@@ -112,7 +112,12 @@
             <p class="card__text">the quick fox jumps over the lazy dog</p>
           </div>
           <h3>Large</h3>
-          <%- include('partials/cards/card-large') %>
+          <%- include('partials/cards/card-large', {
+              title: 'Desarrollo',
+              description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
+              imageUrl: '/img/illustrations/development-team.svg',
+              btnUrl: '#contact'
+          }) %>
           <h3>Personal Card</h3>
           <div class="card card--personal">
             <div class="card__header">

@@ -287,7 +287,12 @@
         <div class="container">
           <h2 class="title" id="our-services">Qué ofrecemos</h2>
           <div class="section__grid">
-            <%- include('partials/cards/card-large') %>
+            <%- include('partials/cards/card-large', {
+              title: 'Desarrollo',
+              description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
+              imageUrl: '/img/illustrations/development-team.svg',
+              btnUrl: '#contact'
+            }) %>
             <article class="card card--large">
               <div class="card__header">
                 <img
