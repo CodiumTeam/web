@@ -150,7 +150,7 @@ function validateForm(ev) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
-  const isValid = validateForm(event);
+  const isValid = validateForm();
 
   if (!isValid) {
     grecaptcha.reset();
