@@ -121,6 +121,22 @@
               imageUrl: '/img/illustrations/development-team.svg',
               btnUrl: '#contact'
           }) %>
+
+          <p>Course large card</p>
+
+           <%- include('partials/cards/card-large-course', {
+              title: 'Test-driven development',
+              description: 'Desarrolla con pasos seguros, con calidad y de forma simple.',
+              imageUrl: '/img/tdd-logo.svg',
+              btnUrl: '/curso-tdd.html',
+              list: [
+                'Aprende el ciclo de desarrollo de TDD',
+                'Utiliza dobles de pruebas para aislar las diferentes capas',
+                'Estrategias para testear código legado',
+                'Aprende buenas prácticas e identifica problemas en los tests'
+              ]
+            }) %>
+
           <h3>Personal Card</h3>
           <div class="card card--personal">
             <div class="card__header">

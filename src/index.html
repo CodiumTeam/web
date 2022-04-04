@@ -377,101 +377,49 @@
           </a>
         </div>
       </section>
+
       <section class="services block block--white">
         <div class="container">
           <h2 class="title" id="courses-list">Cursos disponibles</h2>
           <div class="section__grid">
-            <article class="card card--large">
-              <div class="card__header">
-                <img
-                  loading="lazy"
-                  src="/img/legacy-code.svg"
-                  alt="Development team illustration"
-                  class="card__image"
-                />
-              </div>
-              <p class="card__title">Working with Legacy Code</p>
-              <p class="card__text">
-                Desacopla y testea para reducir los costes de desarrollo y
-                mantimiento.
-              </p>
-              <div class="card__footer">
-                <ul class="card__list">
-                  <li>Identifica los problemas en el código</li>
-                  <li>Aprende a desacoplar las dependencias</li>
-                  <li>Añade tests para cambiar el software con seguridad</li>
-                  <li>Estrategias para transformar tu monolito</li>
-                </ul>
-                <div>
-                  <a
-                    href="/curso-legacy-code.html"
-                    class="button button--outline"
-                  >
-                    Más información
-                  </a>
-                </div>
-              </div>
-            </article>
+            <%- include('partials/cards/card-large-course', {
+              title: 'Working with Legacy Code',
+              description: 'Desacopla y testea para reducir los costes de desarrollo y mantimiento.',
+              imageUrl: '/img/legacy-code.svg',
+              btnUrl: '/curso-legacy-code.html',
+              list: [
+                'Identifica los problemas en el código',
+                'Aprende a desacoplar las dependencias',
+                'Añade tests para cambiar el software con seguridad',
+                'Estrategias para transformar tu monolito'
+              ]
+            }) %>
 
-            <article class="card card--large">
-              <div class="card__header">
-                <img
-                  loading="lazy"
-                  src="/img/tdd-logo.svg"
-                  alt="Classroom illustration"
-                  class="card__image"
-                />
-              </div>
-              <p class="card__title">Test-driven development</p>
-              <p class="card__text">
-                Desarrolla con pasos seguros, con calidad y de forma simple.
-              </p>
-              <div class="card__footer">
-                <ul class="card__list">
-                  <li>Aprende el ciclo de desarrollo de TDD</li>
-                  <!-- prettier-ignore -->
-                  <li>Utiliza dobles de pruebas para aislar las diferentes capas</li>
-                  <li>Estrategias para testear código legado</li>
-                  <!-- prettier-ignore -->
-                  <li>Aprende buenas prácticas e identifica problemas en los tests</li>
-                </ul>
-                <div>
-                  <a href="/curso-tdd.html" class="button button--outline">
-                    Más información
-                  </a>
-                </div>
-              </div>
-            </article>
+            <%- include('partials/cards/card-large-course', {
+              title: 'Test-driven development',
+              description: 'Desarrolla con pasos seguros, con calidad y de forma simple.',
+              imageUrl: '/img/tdd-logo.svg',
+              btnUrl: '/curso-tdd.html',
+              list: [
+                'Aprende el ciclo de desarrollo de TDD',
+                'Utiliza dobles de pruebas para aislar las diferentes capas',
+                'Estrategias para testear código legado',
+                'Aprende buenas prácticas e identifica problemas en los tests'
+              ]
+            }) %>
 
-            <article class="card card--large">
-              <div class="card__header">
-                <img
-                  loading="lazy"
-                  src="/img/moby-logo.svg"
-                  alt="Virtual education illustration"
-                  class="card__image"
-                />
-              </div>
-              <p class="card__title">Docker</p>
-              <p class="card__text">
-                Aprende a tratar tu infraestructura como código gracias a
-                Docker.
-              </p>
-              <div class="card__footer">
-                <ul class="card__list">
-                  <li>Elimina el famoso 'en mi máquina funciona'</li>
-                  <!-- prettier-ignore -->
-                  <li>Que todo tu equipo pueda construir y mantener las imágenes</li>
-                  <li>Aprende a crear imágenes Seguras</li>
-                  <li>Mejora tus procesos de Integración Continua</li>
-                </ul>
-                <div>
-                  <a href="/curso-docker.html" class="button button--outline">
-                    Más información
-                  </a>
-                </div>
-              </div>
-            </article>
+            <%- include('partials/cards/card-large-course', {
+              title: 'Docker',
+              description: 'Aprende a tratar tu infraestructura como código gracias a Docker.',
+              imageUrl: '/img/moby-logo.svg',
+              btnUrl: '/curso-docker.html',
+              list: [
+                'Elimina el famoso \'en mi máquina funciona\'',
+                'Que todo tu equipo pueda construir y mantener las imágenes',
+                'Aprende a crear imágenes Seguras',
+                'Mejora tus procesos de Integración Continua'
+              ]
+            }) %>
           </div>
         </div>
       </section>
