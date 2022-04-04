@@ -301,7 +301,7 @@
               btnUrl: '#courses-list'
             }) %>
 
-             <%- include('partials/cards/card-large', {
+            <%- include('partials/cards/card-large', {
               title: 'Formación continua',
               description: 'Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.',
               imageUrl: '/img/illustrations/virtual-education.svg',
@@ -315,91 +315,60 @@
         <div class="container">
           <h2 class="title" id="values">Valores y metodología</h2>
           <div class="section__grid section__max">
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-droplet"></i>
-              </div>
-              <p class="card__title">Simplicidad</p>
-              <p class="card__text">Lo bueno, si es simple, dos veces bueno.</p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-bubbles2"></i>
-              </div>
-              <p class="card__title">Respeto</p>
-              <p class="card__text">
-                Creemos que el respeto a los demás y a uno mismo es la base de
-                todo.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-equalizer"></i>
-              </div>
-              <p class="card__title">Pragmatismo</p>
-              <p class="card__text">
-                Huimos de los dogmas buscando el equilibrio entre el coste y el
-                beneficio.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-spinner4"></i>
-              </div>
-              <p class="card__title">Metodología lean</p>
-              <p class="card__text">
-                Reducimos el desperdicio con ciclos cortos que minimizan el
-                riesgo.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-hammer"></i>
-              </div>
-              <p class="card__title">eXtreme Programming</p>
-              <p class="card__text">
-                Practicamos TDD, Pair programming, refactoring, integración
-                continua...
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-heart"></i>
-              </div>
-              <p class="card__title">Software crafters</p>
-              <p class="card__text">
-                Mejoramos nuestras habilidades y compartimos lo aprendido.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-zoom-in"></i>
-              </div>
-              <p class="card__title">Análisis en profundidad</p>
-              <p class="card__text">
-                Buscamos el origen de los problemas para ofrecer la mejor
-                solución.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-briefcase"></i>
-              </div>
-              <p class="card__title">Visión de negocio</p>
-              <p class="card__text">
-                Hemos creado startups y entendemos las necesidades de negocio.
-              </p>
-            </article>
-            <article class="card">
-              <div class="card__header">
-                <i class="icon icon-embed2"></i>
-              </div>
-              <p class="card__title">Visión de desarrollador</p>
-              <p class="card__text">
-                Como programadores, comprendemos las implicaciones técnicas del
-                producto.
-              </p>
-            </article>
+            <%- include('partials/cards/card', {
+              icon: 'icon-droplet',
+              title: 'Simplificdad',
+              description: 'Lo bueno, si es simple, dos veces bueno.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-bubbles2',
+              title: 'Respeto',
+              description: 'Creemos que el respeto a los demás y a uno mismo es la base de todo.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-equalizer',
+              title: 'Pragmatismo',
+              description: 'Huimos de los dogmas buscando el equilibrio entre el coste y el beneficio.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-spinner4',
+              title: 'Metodología lean',
+              description: 'Reducimos el desperdicio con ciclos cortos que minimizan el riesgo.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-hammer',
+              title: 'eXtreme Programming',
+              description: 'Practicamos TDD, Pair programming, refactoring, integración continua...'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-heart',
+              title: 'Software crafters',
+              description: 'Mejoramos nuestras habilidades y compartimos lo aprendido.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-zoom-in',
+              title: 'Análisis en profundidad',
+              description: 'Buscamos el origen de los problemas para ofrecer la mejor solución.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-briefcase',
+              title: 'Visión de negocio',
+              description: 'Hemos creado startups y entendemos las necesidades de negocio.'
+            }) %>
+
+            <%- include('partials/cards/card', {
+              icon: 'icon-embed2',
+              title: 'Visión de desarrollador',
+              description: 'Como programadores, comprendemos las implicaciones técnicas del producto.'
+            }) %>
+
           </div>
         </div>
         <div class="button__wrapper">

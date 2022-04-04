@@ -106,12 +106,15 @@
         <section class="section">
           <h2>Cards</h2>
           <h3>Normal</h3>
-          <div class="card">
-            <div class="card__header"><i class="fa fa-eye"></i></div>
-            <p class="card__title">The quick fox over the lazy dog</p>
-            <p class="card__text">the quick fox jumps over the lazy dog</p>
-          </div>
+
+          <%- include('partials/cards/card', {
+              icon: 'icon-droplet',
+              title: 'Simplificdad',
+              description: 'Lo bueno, si es simple, dos veces bueno.'
+          }) %>
+
           <h3>Large</h3>
+
           <%- include('partials/cards/card-large', {
               title: 'Desarrollo',
               description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
