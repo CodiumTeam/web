@@ -1,1 +1,3 @@
 DirectoryIndex index.html index.php
+
+redirectMatch 301 img/codium-black-200x46.png src/img/codium-black-200x46.png
