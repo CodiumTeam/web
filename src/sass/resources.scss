@@ -17,13 +17,13 @@ h4 {
   }
 }
 
-.flex {
+.flex,
+.row {
   display: flex;
-  justify-content: space-between;
 
   .col-md-4 {
     flex: 0 0 25%;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 1.5rem 0 0;
   }
 }
 
