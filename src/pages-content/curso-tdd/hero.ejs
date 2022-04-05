@@ -13,49 +13,13 @@
       </div>
     </section>
 
-    <div class="card course__information-wrapper">
-      <h2 class="subtitle">Información</h2>
-      <div class="card__content">
-        <div class="course__information">
-          <i class="icon icon-hourglass"></i>
-          <div>
-            <p class="course__information-text">16 horas</p>
-            <p class="course__information-desc">(2 días o 4 medios días)</p>
-          </div>
-        </div>
-        <div class="course__information">
-          <i class="icon icon-location"></i>
-          <p class="course__information-text">Remoto o presencial</p>
-        </div>
-        <div class="course__information">
-          <i class="icon icon-embed2"></i>
-          <p class="course__information-text">
-            Java, Python, PHP, Js, C#, C++, ...
-          </p>
-        </div>
-        <div class="course__information">
-          <i class="icon icon-language"></i>
-          <p class="course__information-text">También en inglés</p>
-        </div>
-        <div class="course__information">
-          <i class="icon icon-coin-euro"></i>
-          <div>
-            <p class="course__information-text">
-              A partir de 650 € + IVA por persona.
-            </p>
-            <p class="course__information-desc">Bonificable por FUNDAE</p>
-          </div>
-        </div>
-        <div class="button__wrapper">
-          <a
-            href="#contactForm"
-            class="button button--primary"
-            data-trackevent="contact_us.show_form.course_info-summary"
-          >
-            Contactar
-          </a>
-        </div>
-      </div>
-    </div>
+    <%- include('../curso-common/course-card-information', {
+      hours: '16 horas',
+      hoursDesc: '(2 días o 4 medios días)',
+      fromWhere: 'Remoto o presencial',
+      languages: 'Java, Python, PHP, Js, C#, C++, ...',
+      availableInLanguages: 'También en inglés',
+      price: 'A partir de 650 € + IVA por persona.'
+    }) %>
   </div>
 </div>
