@@ -83,7 +83,10 @@
 
       <%- include('pages-content/curso-tdd/qa') %>
 
-      <%- include('pages-content/curso-common/form') %>
+      <%- include('pages-content/curso-common/form', {
+        action: '/php/contact-tdd.php',
+        type: 'tdd_training'
+      }) %>
     </main>
 
     <%- include('partials/footer') %>
