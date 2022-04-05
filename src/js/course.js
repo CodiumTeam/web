@@ -2,6 +2,7 @@ import Glide, {
   Controls,
   Breakpoints,
 } from '@glidejs/glide/dist/glide.modular.esm';
+import { isInView } from 'isinview';
 
 import * as events from './common/trackEvents';
 import * as formValidation from './common/fromValidation';
@@ -18,6 +19,36 @@ mountOpinionCarousel();
 mountClientsCarousel();
 listenForRadioChangeInForm();
 handleFormSubmit();
+animateSummaryNumbers();
+
+function animateSummaryNumbers() {
+  document.querySelectorAll('.circle-number-js').forEach(function (circle) {
+    console.log(circle.innerHTML);
+    isInView(
+      circle,
+      (target) => {
+        const circleNumber = Number(target.innerText);
+        animateValue(circle, 0, circleNumber, 1500);
+      },
+      { once: true }
+    );
+  });
+
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  }
+}
 
 function mountOpinionCarousel() {
   const glide = new Glide('#opinion', {
