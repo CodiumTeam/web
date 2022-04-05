@@ -47,7 +47,24 @@
       ]
     }) %>
 
-    <%- include('pages-content/curso-legacy/hero') %>
+    <div class="hero-wrapper">
+      <div class="container course-hero">
+        <%- include('pages-content/curso-common/hero-block', {
+          title: 'Working with Legacy code',
+          subtitle: 'Recupera el control de tu producto',
+          image: './img/legacy-code.svg'
+        }) %>
+
+      <%- include('pages-content/curso-common/course-card-information', {
+        hours: '16 horas',
+        hoursDesc: '(2 días o 4 medios días)',
+        fromWhere: 'Remoto o presencial',
+        languages: 'Java, Python, PHP, Js, C#, C++, ...',
+        availableInLanguages: 'También en inglés',
+        price: 'A partir de 650 € + IVA por persona.'
+      }) %>
+      </div>
+    </div>
 
     <main>
 

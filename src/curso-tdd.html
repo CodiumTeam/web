@@ -47,7 +47,25 @@
       ]
     }) %>
 
-    <%- include('pages-content/curso-tdd/hero') %>
+    <div class="hero-wrapper">
+      <div class="container course-hero">
+        <%- include('pages-content/curso-common/hero-block', {
+          title: 'Curso de Test-Driven Development',
+          subtitle: 'Revoluciona tu forma de desarrollar',
+          image: './img/tdd-logo.svg'
+        }) %>
+
+        <%- include('pages-content/curso-common/course-card-information', {
+          hours: '16 horas',
+          hoursDesc: '(2 días o 4 medios días)',
+          fromWhere: 'Remoto o presencial',
+          languages: 'Java, Python, PHP, Js, C#, C++, ...',
+          availableInLanguages: 'También en inglés',
+          price: 'A partir de 650 € + IVA por persona.'
+        }) %>
+      </div>
+    </div>
+
 
     <main>
 
