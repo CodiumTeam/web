@@ -16,29 +16,8 @@ listenDropdown();
 events.initTrackEvents();
 mountOpinionCarousel();
 mountClientsCarousel();
-
-document
-  .querySelectorAll('input[type=radio][name="myRadio"]')
-  .forEach(function (radio) {
-    radio.addEventListener('change', showCorrectInputDependingOnSelectedRadio);
-  });
-
-document
-  .getElementById('contactForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const isValid = validateForm();
-
-    if (!isValid) {
-      return;
-    }
-
-    if (!grecaptcha.getResponse()) {
-      grecaptcha.execute();
-      return;
-    }
-  });
+listenForRadioChangeInForm();
+handleFormSubmit();
 
 function mountOpinionCarousel() {
   const glide = new Glide('#opinion', {
@@ -60,22 +39,7 @@ function mountOpinionCarousel() {
   addClientEventForArrows('.js-opinion-arrow', glide);
 }
 
-// This is a fix for https://github.com/glidejs/glide/issues/417
-function addClientEventForArrows(arrowClass, glide) {
-  const glideArrows = document.querySelectorAll(arrowClass);
-
-  glideArrows.forEach(function (glideArrow) {
-    glideArrow.addEventListener('click', function () {
-      glide.go(glideArrow.dataset.glideDir);
-    });
-  });
-}
-
 function mountClientsCarousel() {
-  const clients = document.querySelector('#clients');
-
-  if (!clients) return;
-
   const glide = new Glide('#clients', {
     type: 'carousel',
     autoplay: false,
@@ -103,15 +67,52 @@ function mountClientsCarousel() {
   addClientEventForArrows('.js-clients-arrow', glide);
 }
 
-function showCorrectInputDependingOnSelectedRadio(event) {
-  const { value } = event.target;
+// This is a fix for https://github.com/glidejs/glide/issues/417
+function addClientEventForArrows(arrowClass, glide) {
+  const glideArrows = document.querySelectorAll(arrowClass);
 
-  document.getElementById('js-locality').classList.toggle('hidden');
-  document.getElementById('js-numProgrammers').classList.toggle('hidden');
+  glideArrows.forEach(function (glideArrow) {
+    glideArrow.addEventListener('click', function () {
+      glide.go(glideArrow.dataset.glideDir);
+    });
+  });
 }
 
-function isForBusiness(value) {
-  return value === 'business';
+function listenForRadioChangeInForm() {
+  document
+    .querySelectorAll('input[type=radio][name="myRadio"]')
+    .forEach(function (radio) {
+      radio.addEventListener(
+        'change',
+        showCorrectInputDependingOnSelectedRadio
+      );
+    });
+
+  function showCorrectInputDependingOnSelectedRadio(event) {
+    const { value } = event.target;
+
+    document.getElementById('js-locality').classList.toggle('hidden');
+    document.getElementById('js-numProgrammers').classList.toggle('hidden');
+  }
+}
+
+function handleFormSubmit() {
+  document
+    .getElementById('contactForm')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const isValid = validateForm();
+
+      if (!isValid) {
+        return;
+      }
+
+      if (!grecaptcha.getResponse()) {
+        grecaptcha.execute();
+        return;
+      }
+    });
 }
 
 function validateForm() {
@@ -145,6 +146,10 @@ function validateForm() {
   }
 
   return true;
+}
+
+function isForBusiness(value) {
+  return value === 'business';
 }
 
 // This is called via data-callback

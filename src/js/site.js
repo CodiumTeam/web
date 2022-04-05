@@ -6,20 +6,7 @@ import '../sass/site.scss';
 
 listenDropdown();
 events.initTrackEvents();
-document
-  .getElementById('contactForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const isValid = validateForm();
-
-    if (!isValid) return;
-
-    if (!grecaptcha.getResponse()) {
-      grecaptcha.execute();
-      return;
-    }
-  });
+handleFormSubmit();
 
 function validateForm() {
   const $name = document.getElementById('name');
@@ -48,6 +35,23 @@ function validateForm() {
   }
 
   return true;
+}
+
+function handleFormSubmit() {
+  document
+    .getElementById('contactForm')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const isValid = validateForm();
+
+      if (!isValid) return;
+
+      if (!grecaptcha.getResponse()) {
+        grecaptcha.execute();
+        return;
+      }
+    });
 }
 
 // This is called via data-callback
