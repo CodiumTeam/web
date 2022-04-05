@@ -1,16 +1,10 @@
 <div class="hero-wrapper">
   <div class="container course-hero">
-    <section class="hero">
-      <h2 class="hero__title">Working with Legacy code</h2>
-      <p class="hero__subtitle">Recupera el control de tu producto</p>
-      <div>
-        <img
-          src="/img/legacy-code.svg"
-          alt="Legacy code logo"
-          class="hero__image"
-        />
-      </div>
-    </section>
+    <%- include('../curso-common/hero-block', {
+      title: 'Working with Legacy code',
+      subtitle: 'Recupera el control de tu producto',
+      image: './img/legacy-code.svg'
+    }) %>
 
    <%- include('../curso-common/course-card-information', {
      hours: '16 horas',

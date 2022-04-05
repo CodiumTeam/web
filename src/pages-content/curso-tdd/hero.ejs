@@ -1,17 +1,10 @@
 <div class="hero-wrapper">
   <div class="container course-hero">
-    <section class="hero">
-      <h2 class="hero__title">Curso de Test-Driven Development</h2>
-      <p class="hero__subtitle">Revoluciona tu forma de desarrollar</p>
-
-      <div>
-        <img
-          src="/img/tdd-logo.svg"
-          alt="TDD logo"
-          class="hero__image hero__image--huge"
-        />
-      </div>
-    </section>
+    <%- include('../curso-common/hero-block', {
+      title: 'Curso de Test-Driven Development',
+      subtitle: 'Revoluciona tu forma de desarrollar',
+      image: './img/tdd-logo.svg'
+    }) %>
 
     <%- include('../curso-common/course-card-information', {
       hours: '16 horas',
