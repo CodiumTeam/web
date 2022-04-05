@@ -1,0 +1,42 @@
+ <% var clients = [
+   {
+    image: './img/clients/logo-ikerlan-brta.svg',
+    name: 'Ikerlan logo'
+  },
+  {
+    image: './img/clients/generalelectric.png',
+    name: 'General electric',
+    customClass: 'client__item--ge',
+  },
+  {
+    image: './img/clients/roiback.png',
+    name: 'Roiback logo',
+    customClass: 'client__item--roiback'
+  },
+  {
+    image: './img/clients/vicomtech.svg',
+    name: 'Vicomtech logo'
+  },
+  {
+    image: './img/clients/helvetia.png',
+    name: 'Helvetia logo'
+  },
+  {
+    image: './img/clients/hotelbeds.png',
+    name: 'Hotelbeds logo',
+  },
+  {
+    image: './img/clients/clarity.svg',
+    name: 'Clarity logo'
+  },
+  {
+    image: './img/clients/zooplus.svg',
+    name: 'Zooplus logo'
+  },
+] %>
+
+<section class="block block--white block--small">
+  <div class="container">
+    <%- include('../../partials/carousel/clients', { clients: clients })  %>
+  </div>
+</section>
