@@ -1,6 +1,6 @@
-import * as events from './trackEvents';
-import * as formValidation from './fromValidation';
-import { listenDropdown } from './dropdown';
+import * as events from './common/trackEvents';
+import * as formValidation from './common/fromValidation';
+import { listenDropdown } from './common/dropdown';
 
 import '../sass/site.scss';
 

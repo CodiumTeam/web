@@ -1,4 +1,4 @@
-import { listenDropdown } from './dropdown';
+import { listenDropdown } from './common/dropdown';
 import Glide, {
   Controls,
   Breakpoints,

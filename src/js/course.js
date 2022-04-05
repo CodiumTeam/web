@@ -3,9 +3,9 @@ import Glide, {
   Breakpoints,
 } from '@glidejs/glide/dist/glide.modular.esm';
 
-import * as events from './trackEvents';
-import * as formValidation from './fromValidation';
-import { listenDropdown } from './dropdown';
+import * as events from './common/trackEvents';
+import * as formValidation from './common/fromValidation';
+import { listenDropdown } from './common/dropdown';
 
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
