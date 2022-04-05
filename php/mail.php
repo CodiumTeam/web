@@ -41,7 +41,7 @@ function sendEmail($params)
 
     $email = (new Swift_Message($subject))
         ->setFrom(['luisrovirosa@gmail.com' => $name])
-        ->setTo(['jose@codium.team' => 'Luis Rovirosa', ])
+        ->setTo(['luis@codium.team' => 'Luis Rovirosa', 'jordi@codium.team' => 'Jordi Anguela'])
         ->setBody($body);
 
     $mailer->send($email);
