@@ -23,7 +23,6 @@ animateSummaryNumbers();
 
 function animateSummaryNumbers() {
   document.querySelectorAll('.circle-number-js').forEach(function (circle) {
-    console.log(circle.innerHTML);
     isInView(
       circle,
       (target) => {
