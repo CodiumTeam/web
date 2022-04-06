@@ -65,11 +65,10 @@ window.captchaCompleted = () => {
 
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
-  const url = $form.getAttribute('action');
 
   document.getElementById('js-submit').disabled = true;
 
-  fetch(url, {
+  fetch('/php/contact.php', {
     method: 'POST',
     body: formData,
   })
