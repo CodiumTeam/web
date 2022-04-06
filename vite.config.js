@@ -25,6 +25,10 @@ export default defineConfig({
           src: resolve(ROOT, 'fonts'),
           dest: resolve(DIST, 'assets'),
         },
+        {
+          src: resolve(ROOT, 'img', 'codium*.*'),
+          dest: resolve(DIST, 'img'),
+        },
       ],
     }),
   ],
