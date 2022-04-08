@@ -23,5 +23,8 @@
     "require-dev": {
         "roave/security-advisories": "dev-master",
         "heroku/heroku-buildpack-php": "*"
+    },
+    "config": {
+        "vendor-dir": "dist/vendor"
     }
 }
