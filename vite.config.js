@@ -4,7 +4,7 @@ import copy from 'rollup-plugin-copy';
 import ejs from 'vite-plugin-ejs-engine';
 
 const ROOT = resolve(__dirname, 'src');
-const DIST = resolve(__dirname);
+const DIST = resolve(__dirname, 'dist');
 
 const inputs = {
   main: resolve(ROOT, 'index.html'),
@@ -29,12 +29,19 @@ export default defineConfig({
           src: resolve(ROOT, 'img', 'codium*.*'),
           dest: resolve(DIST, 'img'),
         },
+        {
+          src: resolve(__dirname, 'php'),
+          dest: resolve(DIST),
+        },
+        {
+          src: resolve(ROOT, '.htaccess'),
+          dest: resolve(DIST),
+        },
       ],
     }),
   ],
   build: {
     outDir: DIST,
-    emptyOutDir: false,
     rollupOptions: {
       input: inputs,
     },

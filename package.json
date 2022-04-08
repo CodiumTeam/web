@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "Codium Web app",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "vite --host 0.0.0.0",
     "prebuild": "rm -rf assets/",
     "build": "NODE_ENV=production vite build",
     "preview": "vite preview",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "heroku-prebuild": "npm ci && npm run build",
+    "heroku-cleanup": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",
