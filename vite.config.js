@@ -37,6 +37,10 @@ export default defineConfig({
           src: resolve(ROOT, '.htaccess'),
           dest: resolve(DIST),
         },
+        {
+          src: resolve(ROOT, 'vendor'),
+          dest: resolve(DIST, 'vendor'),
+        },
       ],
     }),
   ],
