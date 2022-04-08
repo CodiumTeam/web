@@ -3,7 +3,7 @@ define HELP
 Valid commands are:
     - up: Start the server
     - down: Stop the server
-    - build: Install the dependencies and run the build
+    - install: Install the dependencies
     - FILE_PATH=<path> convert: Adjust the customer logo to the required format
 
  Please execute "make <command>". Example make servers-restart
@@ -33,16 +33,11 @@ up:
 down:
 	docker stop codium_web
 
-.PHONY: build
-build:
+.PHONY: install
+install:
 	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
 	git config --local core.hooksPath git-hooks/
-	make just-build
-
-.PHONY: just-build
-just-build:
-	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) sh build.sh
 
 .PHONY: lint
 lint:

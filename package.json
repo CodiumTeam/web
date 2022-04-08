@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "vite --host 0.0.0.0",
-    "prebuild": "rm -rf assets/",
     "build": "NODE_ENV=production vite build",
     "preview": "vite preview",
     "lint-staged": "lint-staged",

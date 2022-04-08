@@ -1,11 +1,8 @@
 # Launch the web
 make up
 
-# Build the web
-make build
-
 # Install dependencies
-make build
+make install
 
 # Dev Start front-end server
 make start
