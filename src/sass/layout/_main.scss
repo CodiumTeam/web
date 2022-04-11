@@ -156,7 +156,8 @@
       }
 
       &__item {
-        min-height: 60px;
+        min-height: 80px;
+        max-height: 80px;
       }
     }
     .clients .section__wrapper {
