@@ -36,6 +36,20 @@
 
         <%- include('partials/summary-by-numbers') %>
 
+        <div class="block block--grey form-result">
+          <div class="container">
+            <h3>Form status</h3>
+
+            <%- include('partials/form-sent-successfully.ejs', {
+              isHidden: false
+            }) %>
+
+            <%- include('partials/form-error.ejs', {
+               isHidden: false
+            }) %>
+          </div>
+        </div>
+
     </main>
     <script>
       (function (i, s, o, g, r, a, m) {
