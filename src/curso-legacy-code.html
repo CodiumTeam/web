@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <meta
-      name="description"
-      content="Aprende dos pilares imprescindibles: a desacoplar tu código y a testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto."
-    />
+    <%- include('partials/metatags', {
+        title: 'Curso de Código Legado - Codium',
+        description: 'Aprende dos pilares imprescindibles: a desacoplar tu código y a testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
+    }) %>
     <meta
       name="keywords"
       content="Curso,Formación,Training,Legacy Code,Código Legado,Clean Code,Tests,Refactoring,Code smells,Best practices,Buenas prácticas,Práctico,Divertido"
     />
-    <title>Curso de Código Legado - Codium</title>
   </head>
 
   <body>

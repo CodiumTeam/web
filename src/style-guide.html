@@ -4,24 +4,15 @@
 <html lang="es">
   <!--<![endif]-->
   <head>
-    <title>Codium - Resultados, Calidad y Mejora</title>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <title>Codium: Formación y desarrollo de producto</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Codium Team S.L." />
+    <%- include('partials/metatags', {
+        title: 'Codium - Resultados, Calidad y Mejora',
+        description: 'Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.',
+    }) %>
+
     <meta
-      name="description"
-      content="Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño."
+      name="keywords"
+      content="Curso,Formación,Training,Docker,docker-compose,dockerizar,imagen,Infraestructura,Buildkit,Desarrollo,Devops,Escalabilidad,Seguridad,CI,Pipeline,CD,CI/CD,Crafter,Craftsmanship,Práctico,Divertido"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body id="body">
   <%- include('partials/analytics') %>
