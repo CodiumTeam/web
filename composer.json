@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "files": ["public/php/mail.php"]
+        "files": ["public/php/mail-template.php", "public/php/mail.php"]
     },
     "require": {
         "php": "^8.0",
