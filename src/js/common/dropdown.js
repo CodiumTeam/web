@@ -1,3 +1,5 @@
+import { scrollToElement } from './scrollToElement';
+
 export function listenDropdown() {
   const menuButton = document.getElementById('js-menu-button');
   const menu = document.getElementById('js-menu');
@@ -14,19 +16,11 @@ export function listenDropdown() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const yOffset = document.getElementById('js-header').offsetHeight;
-      const blockPadding = 32;
       const element = document.querySelector(this.getAttribute('href'));
 
       if (!element) return;
 
-      const y =
-        element.getBoundingClientRect().top +
-        window.pageYOffset -
-        (yOffset + blockPadding);
-
-      window.scrollTo({ top: y, behavior: 'smooth' });
-
+      scrollToElement(element);
       menu.classList.remove('is-visible');
     });
   });

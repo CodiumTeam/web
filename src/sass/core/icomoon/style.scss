@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?6p1b0m')
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wnyeme')
       format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?6p1b0m')
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wnyeme')
       format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?6p1b0m##{$icomoon-font-family}')
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wnyeme##{$icomoon-font-family}')
       format('svg');
   font-weight: normal;
   font-style: normal;
@@ -136,5 +136,10 @@
 .icon-hourglass {
   &:before {
     content: $icon-hourglass;
+  }
+}
+.icon-warning {
+  &:before {
+    content: $icon-warning;
   }
 }

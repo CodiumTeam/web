@@ -37,3 +37,32 @@
     font-size: 1rem;
   }
 }
+
+.alert {
+  max-width: 500px;
+  background-color: #fff5f5;
+  color: #ff5d40;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #ff5d40;
+
+  p {
+    margin: 0;
+  }
+
+  &--error {
+    background-color: #fff5f5;
+  }
+
+  &__content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      margin-right: 1rem;
+      font-size: $text-xl-normal * 1.2;
+    }
+  }
+}

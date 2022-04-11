@@ -12,6 +12,7 @@ import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../sass/site.scss';
 import '../sass/course.scss';
+import { scrollToElement } from './common/scrollToElement';
 
 listenDropdown();
 events.initTrackEvents();
@@ -118,9 +119,7 @@ function listenForRadioChangeInForm() {
       );
     });
 
-  function showCorrectInputDependingOnSelectedRadio(event) {
-    const { value } = event.target;
-
+  function showCorrectInputDependingOnSelectedRadio() {
     document.getElementById('js-locality').classList.toggle('hidden');
     document.getElementById('js-numProgrammers').classList.toggle('hidden');
   }
@@ -194,6 +193,7 @@ window.captchaCompleted = () => {
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
+  const $errorBlock = document.getElementById('js-show-error');
 
   const trainingType = $form.getAttribute('data-training-type');
   formData.append('trainingType', trainingType);
@@ -205,9 +205,12 @@ window.captchaCompleted = () => {
     body: formData,
   })
     .then(function (response) {
+      grecaptcha.reset();
+
       if (response.ok) {
         events.trackEvent('contact_us', 'sent', trainingType);
         $form.remove();
+        $errorBlock.remove();
 
         const $successBlock = document.getElementById('js-show-success');
         $successBlock.classList.remove('hidden');
@@ -220,11 +223,16 @@ window.captchaCompleted = () => {
 
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
+        $errorBlock.classList.remove('hidden');
+        scrollToElement($errorBlock);
         events.trackEvent('contact_us', 'failed', trainingType);
         document.getElementById('js-submit').disabled = false;
       }
     })
-    .catch((error) => {
+    .catch(() => {
+      grecaptcha.reset();
+      $errorBlock.classList.remove('hidden');
+      scrollToElement($errorBlock);
       events.trackEvent('contact_us', 'failed', trainingType);
       document.getElementById('js-submit').disabled = false;
     });

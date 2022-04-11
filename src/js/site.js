@@ -1,6 +1,7 @@
 import * as events from './common/trackEvents';
 import * as formValidation from './common/fromValidation';
 import { listenDropdown } from './common/dropdown';
+import { scrollToElement } from './common/scrollToElement';
 
 import '../sass/site.scss';
 
@@ -65,6 +66,7 @@ window.captchaCompleted = () => {
 
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
+  const $errorBlock = document.getElementById('js-show-error');
 
   document.getElementById('js-submit').disabled = true;
 
@@ -73,6 +75,7 @@ window.captchaCompleted = () => {
     body: formData,
   })
     .then(function (response) {
+      grecaptcha.reset();
       if (response.ok) {
         events.trackEvent('contact_us', 'sent', 'home');
         $form.remove();
@@ -86,13 +89,19 @@ window.captchaCompleted = () => {
           window.pageYOffset -
           yOffset;
 
+        $errorBlock.remove();
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
+        $errorBlock.classList.remove('hidden');
+        scrollToElement($errorBlock);
         events.trackEvent('contact_us', 'failed', 'home');
         document.getElementById('js-submit').disabled = false;
       }
     })
-    .catch((error) => {
+    .catch(() => {
+      grecaptcha.reset();
+      $errorBlock.classList.remove('hidden');
+      scrollToElement($errorBlock);
       events.trackEvent('contact_us', 'failed', 'home');
       document.getElementById('js-submit').disabled = false;
     });
