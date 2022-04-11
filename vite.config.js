@@ -1,45 +1,23 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import copy from 'rollup-plugin-copy';
 import ejs from 'vite-plugin-ejs-engine';
 
-const ROOT = resolve(__dirname, 'src');
+const SRC = resolve(__dirname, 'src');
 const DIST = resolve(__dirname, 'dist');
 
 const inputs = {
-  main: resolve(ROOT, 'index.html'),
-  'curso-docker.html': resolve(ROOT, 'curso-docker.html'),
-  'curso-tdd.html': resolve(ROOT, 'curso-tdd.html'),
-  'curso-legacy-code.html': resolve(ROOT, 'curso-legacy-code.html'),
-  resource: resolve(ROOT, 'resources.html'),
-  'style-guide': resolve(ROOT, 'style-guide.html'),
+  main: resolve(SRC, 'index.html'),
+  'curso-docker.html': resolve(SRC, 'curso-docker.html'),
+  'curso-tdd.html': resolve(SRC, 'curso-tdd.html'),
+  'curso-legacy-code.html': resolve(SRC, 'curso-legacy-code.html'),
+  resource: resolve(SRC, 'resources.html'),
+  'style-guide': resolve(SRC, 'style-guide.html'),
 };
 
 export default defineConfig({
-  root: ROOT,
-  plugins: [
-    ejs(),
-    copy({
-      targets: [
-        {
-          src: resolve(ROOT, 'fonts'),
-          dest: resolve(DIST, 'assets'),
-        },
-        {
-          src: resolve(ROOT, 'img', 'codium*.*'),
-          dest: resolve(DIST, 'img'),
-        },
-        {
-          src: resolve(__dirname, 'php'),
-          dest: resolve(DIST),
-        },
-        {
-          src: resolve(ROOT, '.htaccess'),
-          dest: resolve(DIST),
-        },
-      ],
-    }),
-  ],
+  publicDir: resolve(__dirname, 'public'),
+  root: SRC,
+  plugins: [ejs()],
   build: {
     outDir: DIST,
     emptyOutDir: false,
