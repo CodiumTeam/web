@@ -29,7 +29,7 @@ function sendEmail($params)
 
     $email = (new Swift_Message($subject))
         ->setFrom(['luisrovirosa@gmail.com' => $name])
-        ->setTo(['luis@codium.team' => 'Luis Rovirosa', 'jordi@codium.team' => 'Jordi Anguela'])
+        ->setTo(['jose@codium.team' => 'Luis Rovirosa'])
         ->setBody(createEmailTemplate($params), 'text/html');
 
     $mailer->send($email);
