@@ -14,9 +14,7 @@ export HELP
 help:
 	@printf "$$HELP"
 
-DOCKER_COMMAND = docker run --rm -u $(shell id -u)
-DOCKER_COMMAND_DEV = $(DOCKER_COMMAND) -v ${PWD}:/code -w /code
-DOCKER_COMMAND_PROD = $(DOCKER_COMMAND) -v ${PWD}/dist:/code -w /code
+DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
 DOCKER_NODE_IMAGE = node:16
 DOCKER_COMPOSER_IMAGE = composer:2.1
@@ -24,7 +22,7 @@ DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
 
 .PHONY: up
 up: build
-	$(DOCKER_COMMAND_PROD) --name codium_web -p 8000:8000 -d  $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000
+	$(DOCKER_COMMAND) --name codium_web -p 8000:8000 -d  $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000 -t dist/
 	@echo "\n"
 	@echo "http://localhost:8000/index.html http://localhost:8000/curso-tdd.html http://localhost:8000/curso-legacy-code.html http://localhost:8000/curso-docker.html\n"
 	@echo "TIP: Use CTRL+Click to open a link in a browser\n"
@@ -38,16 +36,16 @@ down:
 
 .PHONY: install
 install:
-	$(DOCKER_COMMAND_DEV) $(DOCKER_COMPOSER_IMAGE) composer install
-	$(DOCKER_COMMAND_DEV) $(DOCKER_NODE_IMAGE) npm install
+	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
 	git config --local core.hooksPath git-hooks/
 
 .PHONY: lint
 lint:
-		$(DOCKER_COMMAND_DEV) -v ${HOME}/.gitconfig:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh lint.sh
+		$(DOCKER_COMMAND) -v ${HOME}/.gitconfig:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh lint.sh
 
 start:
-	$(DOCKER_COMMAND_DEV) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
+	$(DOCKER_COMMAND) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
 
 build:
-	$(DOCKER_COMMAND_DEV) $(DOCKER_NODE_IMAGE) npm run build
+	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
