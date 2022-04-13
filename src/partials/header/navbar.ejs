@@ -2,19 +2,24 @@
 <nav class="navbar" id="js-menu">
   <ul class="navbar__list">
     <% menu.forEach(function(item){ %>
-    <li class="navbar__item">
-      <a href="<%= item.url %>"><%= item.title %></a>
-    </li>
-    <% }); %>
+      <li class="navbar__item <%= item.children ? 'dropdown' : ''  %> ">
+        <% if (item.url) { %>
+          <a href="<%= item.url %>"><%= item.title %></a>
+        <% } else { %>
+          <span><%= item.title %></span>
+        <% } %>
 
-    <li class="navbar__item navbar__item--dropdown">
-      <%- include('dropdown') %>
-    </li>
+        <% if (item.children) { %>
+          <ul class="options">
+            <% item.children.forEach(function(item){ %>
+                <li class="navbar__item">
+                  <a href="<%= item.url %>"><%= item.title %></a>
+                </li>
+              <% }); %>
+          </ul>
+        <% } %>
 
-    <% if (menu.length) { %>
-      <li class="navbar__item">
-        <a href="#contactForm">Contactar</a>
       </li>
-    <% } %>
+    <% }); %>
   </ul>
 </nav>
