@@ -1,6 +1,17 @@
 .dropdown {
   position: relative;
   user-select: none;
+
+  &:hover {
+    .options {
+      display: block;
+    }
+
+    &::before {
+      transform: rotate(135deg);
+      top: 7px;
+    }
+  }
 }
 
 .dropdown::before {

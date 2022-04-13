@@ -16,6 +16,11 @@ export function listenDropdown() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+
+      if (anchor.parentNode.classList.contains('dropdown') && isMobile()) {
+        return;
+      }
+
       const element = document.querySelector(this.getAttribute('href'));
 
       if (!element) return;
@@ -34,4 +39,10 @@ export function listenDropdown() {
       }
     }
   });
+
+  function isMobile() {
+    const MIN_SIZE_TO_SHOW_MOBILE_MENU_ICON = 768;
+
+    return window.screen.availWidth < MIN_SIZE_TO_SHOW_MOBILE_MENU_ICON;
+  }
 }
