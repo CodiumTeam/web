@@ -1,16 +1,18 @@
+<% var default_description = "Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño." %>
+<% var host = process.env.BASE_DOMAIN || "http://localhost:3000" %>
+<% var default_og_image = host + "/img/codium-og-preview.png" %>
+
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.codium.team/">
-<meta property="og:title" content="Codium Team">
-<meta property="og:description"
-  content="Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.">
-<meta property="og:image" content="http://www.codium.team/img/codium-metatags-v2.png">
+<meta property="og:site_name" content="Codium">
+<meta property="og:title" content="<%= locals.og_title || title || "Codium Team" %>">
+<meta property="og:description" content="<%= locals.og_description || description || default_description %>">
+<meta property="og:image" content="<%= locals.og_image || default_og_image %>">
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://www.codium.team/">
-<meta property="twitter:title" content="Codium Team">
-<meta property="twitter:description"
-  content="Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.">
-<meta property="twitter:image" content="http://www.codium.team/img/codium-metatags-v2.png">
+<meta property="twitter:title" content="<%= locals.og_title || title || "Codium Team" %>">
+<meta property="twitter:description" content="<%= locals.og_description || description || default_description %>">
+<meta property="twitter:image" content="<%= locals.og_image || default_og_image %>">
 
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
