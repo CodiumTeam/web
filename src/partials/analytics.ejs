@@ -19,6 +19,9 @@
     'ga'
   );
 
-  ga('create', 'UA-101845458-1', 'auto');
-  ga('send', 'pageview');
+  if (location.hostname !== "localhost") {
+    ga('create', 'UA-101845458-1', 'auto');
+    ga('send', 'pageview');
+  }
+
 </script>
