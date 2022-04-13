@@ -15,6 +15,9 @@ const inputs = {
 };
 
 export default defineConfig({
+  css: {
+    devSourcemap: true,
+  },
   publicDir: resolve(__dirname, 'public'),
   root: SRC,
   plugins: [ejs()],
