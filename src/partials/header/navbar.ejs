@@ -12,7 +12,7 @@
         <% if (item.children) { %>
           <ul class="options">
             <% item.children.forEach(function(item){ %>
-                <li class="navbar__item">
+                <li>
                   <a href="<%= item.url %>"><%= item.title %></a>
                 </li>
               <% }); %>
