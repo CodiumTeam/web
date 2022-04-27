@@ -165,3 +165,26 @@
     margin: 0 0.8rem;
   }
 }
+
+.bootcamp {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    flex: 0 0 100%;
+    margin: 0.5rem 0;
+  }
+
+  @media screen and(min-width: 788px) {
+    margin-top: 64px;
+
+    .card {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.bootcamp-sumary {
+  max-width: 60rem;
+  margin: 1rem auto 0;
+}

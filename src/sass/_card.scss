@@ -24,6 +24,41 @@
     font-size: 14px;
     color: #737373;
   }
+
+  &.card--bootcamp {
+    display: flex;
+    text-align: left;
+    padding: 16px;
+
+    .card__image {
+      min-width: 200px;
+      text-align: center;
+      img {
+        max-width: 200px;
+      }
+    }
+
+    .card__title {
+      font-size: $text-xl-normal;
+    }
+
+    .card__list {
+      margin-top: 0;
+      margin-bottom: 0;
+      min-height: auto;
+
+      li {
+        margin: 8px 0;
+      }
+    }
+
+    &--small {
+      .card__list {
+        list-style: none;
+        padding: 0;
+      }
+    }
+  }
 }
 
 .card__header {

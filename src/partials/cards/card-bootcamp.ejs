@@ -1,0 +1,14 @@
+<article class="card card--bootcamp <%= locals.isSmall ? 'card--bootcamp--small' : '' %>">
+  <div class="card__image">
+   <img src="<%= image %>" alt="<%= title %>">
+  </div>
+
+  <div>
+     <p class="card__title"><%= title %></p>
+     <ul class="card__list">
+       <% list.forEach((item) => { %>
+         <li><%= item %></li>
+       <% }); %>
+     </ul>
+  </div>
+</article>

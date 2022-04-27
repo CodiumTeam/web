@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
+    <% var og_image = host + "/img/og-docker.png" %>
+
+    <%- include('partials/metatags', {
+        title: 'Curso Docker - Codium',
+        description: 'Acaba de una vez con los problemas: de infraestructura, del despliegue de tu aplicación o el conocido \'funciona en mi máquina\'. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
+        og_title: 'Curso de Docker',
+        og_description: 'Acaba con los problemas de infraestructura, despliegue y el conocido \'funciona en mi máquina\'. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
+        og_image,
+    }) %>
+
+    <meta
+      name="keywords"
+      content="Curso,Formación,Training,Docker,docker-compose,dockerizar,imagen,Infraestructura,Buildkit,Desarrollo,Devops,Escalabilidad,Seguridad,CI,Pipeline,CD,CI/CD,Crafter,Craftsmanship,Práctico,Divertido"
+    />
+  </head>
+
+  <body>
+    <%- include('partials/analytics') %>
+
+    <%- include('partials/header/header', {
+      menu: [
+        {
+          title: 'Beneficios',
+          url: '#value',
+        },
+        {
+          title: 'Contenido',
+          url: '#training-content-timeline',
+        },
+        {
+          title: 'Metodología',
+          url: '#methodology',
+        },
+        {
+          title: 'FAQs',
+          url: '#faqs',
+        },
+        {
+          title: 'Contactar',
+          url: '#contact',
+        },
+        {
+          title: 'Otros cursos',
+          children: [
+            {
+              title: 'Legacy',
+              url: '/curso-legacy-code.html',
+            },
+            {
+              title: 'TDD',
+              url: '/curso-tdd.html',
+            },
+          ]
+        },
+      ]
+    }) %>
+
+    <div class="hero-wrapper">
+      <div class="container course-hero">
+        <div style="padding: 30px;">
+        </div>
+        <section class="hero">
+          <p>Bootcamp</p>
+          <h2 class="hero__title">Preparamos a tu equipo para afrontar los proyectos software más exigentes y desafiantes</h2>
+          <p class="hero__subtitle">Da el siguiente paso para impulsar la carrera de tus desarrolladores</p>
+        </section>
+      </div>
+    </div>
+
+
+    <main>
+      <section class="block block--lila" id="value">
+        <div class="container">
+          <h3 class="text-center">¿Cuánto dura el programa?</h3>
+          <h2 class="text-center title text-primary">3 meses</h2>
+          <p class="text-center text-dark-grey bootcamp-sumary">
+            Tendrán 3 meses de preparación intensiva a través de una formación teórica y práctica de la mano de profesionales de amplia experiencia en las diferentes temáticas. La formación pone foco en transmitir una buena mentalidad, conocer las herramientas para ser productivo, escribir código mantenible y bien testeado y como ser un buen desarrollador de producto.
+          </p>
+          <div class="button__wrapper">
+            <a
+              class="button button--primary"
+              href="#contactForm"
+              data-trackevent="contact_us.show_form.course_value"
+              >Contactar</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="block block--white">
+        <article class="container">
+          <h2 class="text-center title">Descubre cómo trabajaremos para impulsar a tus desarrolladores </h2>
+          <p class="text-center text-dark-grey">
+           El temario está organizado en temáticas
+          </p>
+
+          <div class="bootcamp">
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Mentalidad',
+              list: [
+                'eXtreme Programming',
+                'Agile',
+                'Lean',
+                'Artesanía de software'
+              ],
+              image: './img/illustrations/bootcamp/lean.png'
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Herramientas',
+              list: [
+                'Conocer las herramientas que te hacen productivo.',
+                'Conocer las herramientas que te permiten automatizar procesos repetitivos.'
+              ],
+              image: './img/illustrations/bootcamp/tools.png'
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Calidad de código',
+              list: [
+                'Escribir código fácil de entender y mantener.',
+                'Aplicar patrones de diseño.',
+                'Cómo crear una buena arquitectura'
+              ],
+              image: './img/illustrations/bootcamp/code-quality.png'
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Testing',
+              list: [
+                'Escribir buenos tests de diferentes tipos.',
+                'Comprender las propiedades, beneficios de crear tests.',
+                'Entender los costes de cada tipo de test.'
+              ],
+              image: './img/illustrations/bootcamp/testing.png'
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Producto',
+              list: [
+                'Entender que lo más importante es el valor aportado.',
+                'Centrarnos en el problema a resolver, cómo impacta en el usuario, cómo aportar valor antes y cómo simplificar producto.',
+              ],
+              image: './img/illustrations/bootcamp/product-win.png'
+            }) %>
+
+          </div>
+        </article>
+      </section>
+
+       <section class="block block--white">
+        <article class="container">
+          <h4 class="text-center title">Agrupados en...</h4>
+          <div class="bootcamp">
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Katas',
+              list: [
+                'Practicamos con ejercicios aislados con el objetivo de destilar la esencia de las prácticas y conceptos.'
+              ],
+              image: './img/illustrations/bootcamp/katas.png',
+              isSmall: true
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Greenfield',
+              list: [
+                'Desarrollamos un proyecto simple aplicando TDD, patrones de diseño y automatizando la infraestructura.',
+              ],
+              image: './img/illustrations/bootcamp/greenfield.png',
+              isSmall: true
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Legacy',
+              list: [
+                'Partiendo de un proyecto legacy, testearlo, mejorar su diseño refactorizándolo teniendo siempre los tests en verde.'
+              ],
+              image: './img/illustrations/bootcamp/legacy.png',
+              isSmall: true
+            }) %>
+
+            <%- include('partials/cards/card-bootcamp', {
+              title: 'Proyecto final',
+              list: [
+                'Trabajamos lo más parecido a lo que será su día a día cuando se incorpore a un equipo.'
+              ],
+              image: './img/illustrations/bootcamp/course.png',
+              isSmall: true
+            }) %>
+          </div>
+        </article>
+      </section>
+
+      <%- include('pages-content/home/teams') %>
+
+
+      <%- include('pages-content/curso-common/form', {
+        action: '/php/contact-docker.php',
+        type: 'docker_training'
+      }) %>
+
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <%- include('pages-content/curso-common/scripts') %>
+  </body>
+</html>
