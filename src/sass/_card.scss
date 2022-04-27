@@ -60,11 +60,13 @@
       }
     }
 
-    @media screen and (max-width: 368px) {
+    @media screen and (max-width: 390px) {
       flex-direction: column;
+      text-align: center;
       .card__image {
         max-width: 100px;
         min-width: 100px;
+        margin: 0 auto;
       }
     }
   }

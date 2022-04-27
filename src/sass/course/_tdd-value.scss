@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 400px;
     margin: 0 0 2rem 0;
-    max-height: 400px;
+    max-height: 300px;
   }
 }
 
@@ -23,5 +23,9 @@
   .tdd-value {
     flex-direction: row;
     margin-top: 3rem;
+
+    &__image {
+      max-height: 400px;
+    }
   }
 }
