@@ -1,0 +1,22 @@
+@import 'core/variables', 'core/container', 'block', 'course/circle',
+  'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel',
+  'layout/footer', 'core/inputs', 'core/utilities', '_bootcamp-page',
+  'course/hero';
+
+.bootcamp {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    flex: 0 0 100%;
+    margin: 0.5rem 0;
+  }
+
+  @media screen and(min-width: 788px) {
+    margin-top: 64px;
+
+    .card {
+      flex: 0 0 50%;
+    }
+  }
+}

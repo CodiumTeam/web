@@ -9,11 +9,11 @@
       </p>
     </div>
 
-    <%- include('../../partials/form-sent-successfully') %>
-    <%- include('../../partials/form-error') %>
+    <%- include('form-sent-successfully') %>
+    <%- include('form-error') %>
 
     <div>
-      <form action="#" method="post" class="contact__form form" id="contactForm">
+      <form action="#" method="post" class="contact__form form" id="contactForm" data-training-type="<%= locals.type %>">
         <div>
           <label for="name" class="contact__form--name required"> Nombre </label>
           <input type="text" id="name" name="name" />

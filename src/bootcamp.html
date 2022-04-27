@@ -223,15 +223,24 @@
       <%- include('pages-content/home/teams') %>
 
 
-      <%- include('pages-content/curso-common/form', {
-        action: '/php/contact-bootcamp.php',
-        type: 'bootcamp_training',
-      }) %>
+     <%- include('partials/contact-form', {
+       type: 'bootcamp_training',
+     }) %>
 
     </main>
 
     <%- include('partials/footer') %>
 
-    <%- include('pages-content/curso-common/scripts') %>
+    <script
+      defer
+      type="text/javascript"
+      src="https://www.google.com/recaptcha/api.js"
+    ></script>
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=fetch"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./js/bootcamp.js"></script>
   </body>
 </html>

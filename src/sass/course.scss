@@ -1,21 +1,8 @@
 @import 'core/variables', 'core/container', 'block', 'course/circle',
   'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel',
-  'layout/footer', 'core/inputs', 'core/utilities', '_bootcamp-page';
+  'layout/footer', 'core/inputs', 'core/utilities', 'course/hero';
 
-.resume {
-  &__title {
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0;
-  }
 
-  &__text {
-    margin-top: 0.5rem;
-    font-size: 14px;
-    color: $dark-grey;
-    margin-bottom: 0.5em;
-  }
-}
 
 .question-wrapper {
   display: grid;
@@ -106,80 +93,6 @@
           right: 10rem;
         }
       }
-    }
-  }
-}
-
-.course__metodology {
-  max-width: 1200px;
-  margin: 2rem auto 0 auto;
-}
-
-.course-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  .hero__subtitle {
-    margin-bottom: 1rem;
-  }
-
-  .hero {
-    flex: 0 0 60%;
-  }
-}
-
-@media (min-width: 768px) {
-  .course-hero {
-    flex-direction: row;
-  }
-}
-
-.course__information {
-  &-wrapper {
-    margin: 2rem 0;
-  }
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 1.5rem 0;
-  text-align: left;
-
-  i {
-    color: $primary-brand-color;
-    font-size: 1.7rem;
-    min-width: 35px;
-    text-align: center;
-  }
-
-  &-text {
-    margin: 0 0.8rem;
-  }
-
-  &-desc {
-    font-size: 14px;
-    color: $dark-grey;
-    margin: 0 0.8rem;
-  }
-}
-
-.bootcamp {
-  display: flex;
-  flex-wrap: wrap;
-
-  .card {
-    flex: 0 0 100%;
-    margin: 0.5rem 0;
-  }
-
-  @media screen and(min-width: 788px) {
-    margin-top: 64px;
-
-    .card {
-      flex: 0 0 50%;
     }
   }
 }

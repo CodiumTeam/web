@@ -66,6 +66,9 @@ window.captchaCompleted = () => {
 
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
+  const trainingType = $form.getAttribute('data-training-type');
+  formData.append('trainingType', trainingType);
+
   const $errorBlock = document.getElementById('js-show-error');
 
   document.getElementById('js-submit').disabled = true;

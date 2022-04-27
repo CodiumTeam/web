@@ -7,5 +7,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 validateRecaptcha($_POST['g-recaptcha-response']);
 $params = $_POST;
-$params['subject'] = 'Web contact triggered by ' . $params['action']  . ' ' . date("Y-m-d H:i:s");
+$params['subject'] = getSubject($params);
 sendEmail($params);
+
+
+function getSubject($params) {
+    $from = 'Web';
+    $trainingType = $params['trainingType'] ?? '';
+
+    if ($trainingType) {
+        $from = 'Bootcamp';
+    }
+
+    return $from . ' contact triggered by ' . $params['action']  . ' ' . date("Y-m-d H:i:s");
+}
