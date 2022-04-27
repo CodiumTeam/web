@@ -24,35 +24,39 @@
     <%- include('partials/header/header', {
       menu: [
         {
-          title: 'Beneficios',
-          url: '#value',
+          title: 'Duración',
+          url: '#duration',
         },
         {
           title: 'Contenido',
-          url: '#training-content-timeline',
+          url: '#content',
         },
         {
           title: 'Metodología',
           url: '#methodology',
         },
         {
-          title: 'FAQs',
-          url: '#faqs',
+          title: 'Equipo',
+          url: '#team',
         },
         {
           title: 'Contactar',
           url: '#contact',
         },
         {
-          title: 'Otros cursos',
+          title: 'Servicios',
           children: [
             {
-              title: 'Legacy',
+              title: 'Curso de Legacy',
               url: '/curso-legacy-code.html',
             },
             {
-              title: 'TDD',
+              title: 'Curso de TDD',
               url: '/curso-tdd.html',
+            },
+            {
+              title: 'Curso de Docker',
+              url: '/curso-docker.html',
             },
           ]
         },
@@ -119,7 +123,7 @@
 
 
     <main>
-      <section class="block block--lila" id="value">
+      <section class="block block--lila" id="duration">
         <div class="container">
           <h3 class="text-center">¿Cuánto dura el programa?</h3>
           <h2 class="text-center title text-primary">3 meses</h2>
@@ -137,7 +141,7 @@
         </div>
       </section>
 
-      <section class="block block--white">
+      <section class="block block--white" id="content">
         <article class="container">
           <h2 class="text-center title bootcamp-sumary">Descubre cómo trabajaremos para impulsar a tus desarrolladores </h2>
           <p class="text-center text-dark-grey">
@@ -198,7 +202,7 @@
         </article>
       </section>
 
-       <section class="block block--white">
+       <section class="block block--white" id="methodology">
         <article class="container">
           <h4 class="text-center title">Agrupados en...</h4>
           <div class="bootcamp">
