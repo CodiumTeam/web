@@ -7,7 +7,7 @@
     }) %>
   </head>
 
-  <body class="home-page">
+  <body>
     <%- include('partials/analytics') %>
 
     <%- include('partials/header/header', {
@@ -15,6 +15,24 @@
         {
           title: 'Servicios',
           url: '#our-services',
+          children: [
+            {
+              title: 'Curso de Legacy',
+              url: '/curso-legacy-code.html',
+            },
+            {
+              title: 'Curso de TDD',
+              url: '/curso-tdd.html',
+            },
+            {
+              title: 'Curso de Docker',
+              url: '/curso-docker.html',
+            },
+            {
+              title: 'Bootcamp',
+              url: '/bootcamp.html',
+            }
+          ]
         },
         {
           title: 'Valores',
@@ -23,20 +41,6 @@
         {
           title: 'Cursos',
           url: '#courses-list',
-          children: [
-            {
-              title: 'Legacy',
-              url: '/curso-legacy-code.html',
-            },
-            {
-              title: 'TDD',
-              url: '/curso-tdd.html',
-            },
-            {
-              title: 'Docker',
-              url: '/curso-docker.html',
-            }
-          ]
         },
         {
           title: 'Equipo',
