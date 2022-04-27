@@ -80,3 +80,10 @@
   }
 }
 
+.home-page {
+  .dropdown {
+    &::before {
+      left: 4.5rem;
+    }
+  }
+}
