@@ -1,6 +1,6 @@
 @import 'core/variables', 'core/container', 'block', 'course/circle',
   'course/team', 'course/calendar', 'course/tdd-value', 'course/carousel',
-  'layout/footer', 'core/inputs', 'core/utilities';
+  'layout/footer', 'core/inputs', 'core/utilities', '_bootcamp-page';
 
 .resume {
   &__title {
@@ -182,9 +182,4 @@
       flex: 0 0 50%;
     }
   }
-}
-
-.bootcamp-sumary {
-  max-width: 60rem;
-  margin: 1rem auto 0;
 }

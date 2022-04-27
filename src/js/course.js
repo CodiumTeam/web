@@ -51,6 +51,7 @@ function animateSummaryNumbers() {
 }
 
 function mountOpinionCarousel() {
+  if (document.getElementById('opinion') === null) return;
   const glide = new Glide('#opinion', {
     type: 'carousel',
     autoplay: 5000,
@@ -71,6 +72,7 @@ function mountOpinionCarousel() {
 }
 
 function mountClientsCarousel() {
+  if (document.getElementById('clients') === null) return;
   const glide = new Glide('#clients', {
     type: 'carousel',
     autoplay: false,

@@ -12,6 +12,7 @@ function createEmailTemplate($params) {
         'legacy_training' => 'Curso de Legacy',
         'tdd_training' => 'Curso de TDD',
         'docker_training' => 'Curso de Docker',
+        'bootcamp_training' => 'Programa de aceleración',
     ];
 
     $trainingTypeMessage = $trainings[$trainingType] ?? 'vosotros';

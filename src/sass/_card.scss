@@ -29,6 +29,7 @@
     display: flex;
     text-align: left;
     padding: 16px;
+    flex-direction: row;
 
     .card__image {
       min-width: 200px;
@@ -56,6 +57,14 @@
       .card__list {
         list-style: none;
         padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 368px) {
+      flex-direction: column;
+      .card__image {
+        max-width: 100px;
+        min-width: 100px;
       }
     }
   }
