@@ -1,54 +1,6 @@
 .bootcamp-page {
-  .course-hero {
-    justify-content: center;
-  }
-
-  .hero-wrapper {
-    padding-bottom: 64px;
-  }
-
-  .hero {
-    padding-top: 16px;
-  }
-
-  .hero__title {
-    margin-top: 0;
-  }
-
   .bootcamp-sumary {
     max-width: 60rem;
     margin: 1rem auto 0;
-  }
-
-  .hero__bootcamp {
-    margin-right: 24px;
-    svg {
-      max-height: 300px;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .hero {
-      padding-bottom: 64px;
-    }
-
-    .hero__bootcamp {
-      padding-top: 48px;
-
-      svg {
-        max-height: 500px;
-        max-width: 400px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .hero__bootcamp {
-      padding-top: 48px;
-
-      svg {
-        max-width: 300px;
-      }
-    }
   }
 }

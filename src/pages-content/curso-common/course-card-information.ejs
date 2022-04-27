@@ -22,15 +22,17 @@
        <i class="icon icon-language"></i>
        <p class="course__information-text"><%= availableInLanguages  %> </p>
      </div>
-     <div class="course__information">
-       <i class="icon icon-coin-euro"></i>
-       <div>
-         <p class="course__information-text">
-           <%= price  %>
-         </p>
-         <p class="course__information-desc">Bonificable por FUNDAE</p>
-       </div>
-     </div>
+     <% if (locals.price) { %>
+      <div class="course__information">
+        <i class="icon icon-coin-euro"></i>
+        <div>
+          <p class="course__information-text">
+            <%= price  %>
+          </p>
+          <p class="course__information-desc">Bonificable por FUNDAE</p>
+        </div>
+      </div>
+    <% } %>
      <div class="button__wrapper">
        <a href="#contactForm" class="button button--primary" data-trackevent="contact_us.show_form.course_info-summary">
          Contactar
