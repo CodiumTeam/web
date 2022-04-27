@@ -6,13 +6,16 @@
 
   &__item {
     &:first-child {
-      flex: 0 1 40%;
+      flex: 0 0 40%;
+      margin-right: 1rem;
     }
   }
 
   &__image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     margin: 0 0 2rem 0;
+    max-height: 400px;
   }
 }
 
