@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
+    <% var og_image = host + "/img/og-bootcamp.png" %>
+
     <%- include('partials/metatags', {
         title: 'Programa de aceleración - Codium',
         description: 'Programa de aceleración para desarrolladores',
         og_title: 'Programa de aceleración',
         og_description: 'Pone foco en transmitir una buena mentalidad, conocer las herramientas para ser productivo, escribir código mantenible y bien testeado y como ser un buen desarrollador de producto.',
+        og_image,
     }) %>
 
     <meta
