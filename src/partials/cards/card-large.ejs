@@ -13,7 +13,7 @@
   <p class="card__text"><%= description %></p>
   <div class="card__footer">
     <a href="<%= btnUrl %>" class="button button--outline">
-      Más información
+      <%= locals.btnText || "Más información" %>
     </a>
   </div>
 </article>
