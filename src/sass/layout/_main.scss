@@ -23,9 +23,6 @@
     @media screen and (min-width: 1200px) {
       grid-template-columns: repeat(4, 1fr);
 
-      .card__text {
-        min-height: 110px;
-      }
     }
   }
 }
