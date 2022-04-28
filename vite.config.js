@@ -13,6 +13,7 @@ const inputs = {
   resource: resolve(SRC, 'resources.html'),
   'style-guide': resolve(SRC, 'style-guide.html'),
   'accelerate-program': resolve(SRC, 'programa-de-aceleracion.html'),
+  development: resolve(SRC, 'desarrollo.html'),
 };
 
 export default defineConfig({

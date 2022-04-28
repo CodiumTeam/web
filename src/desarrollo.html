@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
+
+    <%- include('partials/metatags', {
+        title: 'Desarollo - Codium',
+        description: 'Ponemos el foco en crear software que dure, sea fácil de cambiar, barato de mantener y aspiramos a que no tenga defectos.',
+        og_title: 'Desarollo',
+        og_description: 'Ponemos el foco en crear software que dure, sea fácil de cambiar, barato de mantener y aspiramos a que no tenga defectos.',
+    }) %>
+
+    <meta
+      name="keywords"
+      content="Curso,Formación,Training,TDD,Legacy Code,Calidad de código,Programación,Desarrollo,Producto,Lean,Agile,Software"
+    />
+  </head>
+
+  <body class="bootcamp-page">
+    <%- include('partials/analytics') %>
+
+    <%- include('partials/header/header', {
+      menu: [
+        {
+          title: 'Servicios',
+          children: [
+            {
+              title: 'Curso de Legacy',
+              url: '/curso-legacy-code.html',
+            },
+            {
+              title: 'Curso de TDD',
+              url: '/curso-tdd.html',
+            },
+            {
+              title: 'Curso de Docker',
+              url: '/curso-docker.html',
+            },
+            {
+              title: 'Programa de aceleración',
+              url: '/programa-de-aceleracion.html',
+            },
+          ]
+        },
+      ]
+    }) %>
+
+    <div class="hero-wrapper">
+      <div class="container course-hero">
+        <%- include('pages-content/curso-common/hero-block', {
+          title: `Desarrollo`,
+          subtitle: 'Entregamos el máximo valor en cada iteración.',
+          image: './img/illustrations/development-team.svg'
+        }) %>
+
+        <%- include('pages-content/curso-common/course-card-information', {
+          hours: '3 meses a 1 año',
+          hoursDesc: '',
+          fromWhere: 'Remoto',
+          languages: 'Js, Java, Python o PHP',
+          availableInLanguages: 'También en inglés',
+        }) %>
+      </div>
+    </div>
+
+    <main>
+      <section class="block block--white" id="benefits">
+        <%- include('pages-content/bootcamp/benefits')  %>
+      </section>
+
+      <section class="block block--white" id="content">
+        <%- include('pages-content/bootcamp/content')  %>
+      </section>
+
+      <section class="block block--white" id="methodology">
+        <%- include('pages-content/bootcamp/methodoly')  %>
+      </section>
+
+      <section class="team block block--grey"  id="team">
+        <%- include('pages-content/common/teams') %>
+      </section>
+
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/bootcamp/faqs') %>
+      </section>
+
+      <section class="contact block block--lila" id="contact">
+        <%- include('partials/contact-form') %>
+      </section>
+
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://www.google.com/recaptcha/api.js"
+    ></script>
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=fetch"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./js/development.js"></script>
+  </body>
+</html>
