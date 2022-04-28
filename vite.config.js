@@ -12,7 +12,7 @@ const inputs = {
   'curso-legacy-code.html': resolve(SRC, 'curso-legacy-code.html'),
   resource: resolve(SRC, 'resources.html'),
   'style-guide': resolve(SRC, 'style-guide.html'),
-  bootcamp: resolve(SRC, 'bootcamp.html'),
+  'accelerate-program': resolve(SRC, 'programa-de-aceleracion.html'),
 };
 
 export default defineConfig({
