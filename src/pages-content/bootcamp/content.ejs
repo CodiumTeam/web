@@ -1,68 +1,68 @@
-<section class="block block--white" id="content">
-  <article class="container">
-    <h2 class="text-center title bootcamp-sumary">Contenido del curso</h2>
-    <p class="text-center text-dark-grey">
-      El temario está organizado en temáticas
-    </p>
 
-    <div class="bootcamp">
-      <%- include('../../partials/cards/card-bootcamp', {
-        title: 'Mentalidad',
-        list: [
-          'eXtreme Programming',
-          'Agile',
-          'Lean',
-          'Artesanía de software'
-        ],
-        image: './img/illustrations/bootcamp/lean.png'
-      }) %>
+<article class="container">
+  <h2 class="text-center title bootcamp-sumary">Contenido del curso</h2>
+  <p class="text-center text-dark-grey">
+    El temario está organizado en temáticas
+  </p>
 
-      <%- include('../../partials/cards/card-bootcamp', {
-        title: 'Herramientas',
-        list: [
-          'Conocer las herramientas que te hacen productivo.',
-          'Conocer las herramientas que te permiten automatizar procesos repetitivos.'
-        ],
-        image: './img/illustrations/bootcamp/tools.png'
-      }) %>
+  <div class="bootcamp">
+    <%- include('../../partials/cards/card-bootcamp', {
+      title: 'Mentalidad',
+      list: [
+        'eXtreme Programming',
+        'Agile',
+        'Lean',
+        'Artesanía de software'
+      ],
+      image: './img/illustrations/bootcamp/lean.png'
+    }) %>
 
-      <%- include('../../partials/cards/card-bootcamp', {
-        title: 'Calidad de código',
-        list: [
-          'Escribir código fácil de entender y mantener.',
-          'Aplicar patrones de diseño.',
-          'Cómo crear una buena arquitectura'
-        ],
-        image: './img/illustrations/bootcamp/code-quality.png'
-      }) %>
+    <%- include('../../partials/cards/card-bootcamp', {
+      title: 'Herramientas',
+      list: [
+        'Conocer las herramientas que te hacen productivo.',
+        'Conocer las herramientas que te permiten automatizar procesos repetitivos.'
+      ],
+      image: './img/illustrations/bootcamp/tools.png'
+    }) %>
 
-      <%- include('../../partials/cards/card-bootcamp', {
-        title: 'Testing',
-        list: [
-          'Escribir buenos tests de diferentes tipos.',
-          'Comprender las propiedades, beneficios de crear tests.',
-          'Entender los costes de cada tipo de test.'
-        ],
-        image: './img/illustrations/bootcamp/testing.png'
-      }) %>
+    <%- include('../../partials/cards/card-bootcamp', {
+      title: 'Calidad de código',
+      list: [
+        'Escribir código fácil de entender y mantener.',
+        'Aplicar patrones de diseño.',
+        'Cómo crear una buena arquitectura'
+      ],
+      image: './img/illustrations/bootcamp/code-quality.png'
+    }) %>
 
-      <%- include('../../partials/cards/card-bootcamp', {
-        title: 'Producto',
-        list: [
-          'Entender que lo más importante es el valor aportado.',
-          'Centrarnos en el problema a resolver, cómo impacta en el usuario, cómo aportar valor antes y cómo simplificar producto.',
-        ],
-        image: './img/illustrations/bootcamp/product-win.png'
-      }) %>
+    <%- include('../../partials/cards/card-bootcamp', {
+      title: 'Testing',
+      list: [
+        'Escribir buenos tests de diferentes tipos.',
+        'Comprender las propiedades, beneficios de crear tests.',
+        'Entender los costes de cada tipo de test.'
+      ],
+      image: './img/illustrations/bootcamp/testing.png'
+    }) %>
 
-    </div>
-  </article>
-  <div class="button__wrapper">
-    <a
-            class="button button--primary"
-            href="#contactForm"
-            data-trackevent="contact_us.show_form.course_value"
-    >¡Me interesa!</a
-    >
+    <%- include('../../partials/cards/card-bootcamp', {
+      title: 'Producto',
+      list: [
+        'Entender que lo más importante es el valor aportado.',
+        'Centrarnos en el problema a resolver, cómo impacta en el usuario, cómo aportar valor antes y cómo simplificar producto.',
+      ],
+      image: './img/illustrations/bootcamp/product-win.png'
+    }) %>
+
   </div>
-</section>
+</article>
+<div class="button__wrapper">
+  <a
+          class="button button--primary"
+          href="#contactForm"
+          data-trackevent="contact_us.show_form.course_value"
+  >¡Me interesa!</a
+  >
+</div>
+

@@ -90,19 +90,29 @@
     </div>
 
     <main>
-      <%- include('pages-content/bootcamp/value')  %>
+      <section class="block block--lila" id="value">
+        <%- include('pages-content/bootcamp/value')  %>
+      </section>
 
-      <%- include('pages-content/bootcamp/content')  %>
+      <section class="block block--white" id="content">
+        <%- include('pages-content/bootcamp/content')  %>
+      </section>
 
-      <%- include('pages-content/bootcamp/methodoly')  %>
+      <section class="block block--white" id="methodology">
+        <%- include('pages-content/bootcamp/methodoly')  %>
+      </section>
 
-      <%- include('pages-content/home/teams') %>
+      <section class="team block block--grey"  id="team">
+        <%- include('pages-content/home/teams') %>
+      </section>
 
-      <%- include('pages-content/bootcamp/qa') %>
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/bootcamp/qa') %>
+      </section>
 
-      <%- include('partials/contact-form', {
-        type: 'bootcamp_training',
-      }) %>
+      <section class="contact block block--lila" id="contact">
+        <%- include('partials/contact-form') %>
+      </section>
 
     </main>
 
