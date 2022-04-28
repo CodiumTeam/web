@@ -1,69 +1,68 @@
-<section class="values block block--grey" id="values">
-  <div class="container">
-    <h2 class="title">Valores y metodología</h2>
-    <div class="section__grid section__max">
-      <% var values = [
-        {
-          icon: 'icon-droplet',
-          title: 'Simplicidad',
-          description: 'Lo bueno, si es simple, dos veces bueno.'
-        },
-        {
-          icon: 'icon-bubbles2',
-          title: 'Respeto',
-          description: 'Creemos que el respeto a los demás y a uno mismo es la base de todo.'
-        },
-        {
-          icon: 'icon-equalizer',
-          title: 'Pragmatismo',
-          description: 'Huimos de los dogmas buscando el equilibrio entre el coste y el beneficio.'
-        },
-        {
-          icon: 'icon-spinner4',
-          title: 'Metodología lean',
-          description: 'Reducimos el desperdicio con ciclos cortos que minimizan el riesgo.'
-        },
-        {
-          icon: 'icon-hammer',
-          title: 'eXtreme Programming',
-          description: 'Practicamos TDD, Pair programming, refactoring, integración continua...'
-        },
-        {
-          icon: 'icon-heart',
-          title: 'Software crafters',
-          description: 'Mejoramos nuestras habilidades y compartimos lo aprendido.'
-        },
-        {
-          icon: 'icon-zoom-in',
-          title: 'Análisis en profundidad',
-          description: 'Buscamos el origen de los problemas para ofrecer la mejor solución.'
-        },
-        {
-          icon: 'icon-briefcase',
-          title: 'Visión de negocio',
-          description: 'Hemos creado startups y entendemos las necesidades de negocio.'
-        },
-        {
-          icon: 'icon-embed2',
-          title: 'Visión de desarrollador',
-          description: 'Como programadores, comprendemos las implicaciones técnicas del producto.'
-        }
-      ]; %>
 
-        <% values.forEach(function(value){ %>
-          <%- include('../../partials/cards/card', {
-                icon: value.icon,
-                title: value.title,
-                description: value.description
-              }) %>
-          <% });
-        %>
+<div class="container">
+  <h2 class="title">Valores y metodología</h2>
+  <div class="section__grid section__max">
+    <% var values = [
+      {
+        icon: 'icon-droplet',
+        title: 'Simplicidad',
+        description: 'Lo bueno, si es simple, dos veces bueno.'
+      },
+      {
+        icon: 'icon-bubbles2',
+        title: 'Respeto',
+        description: 'Creemos que el respeto a los demás y a uno mismo es la base de todo.'
+      },
+      {
+        icon: 'icon-equalizer',
+        title: 'Pragmatismo',
+        description: 'Huimos de los dogmas buscando el equilibrio entre el coste y el beneficio.'
+      },
+      {
+        icon: 'icon-spinner4',
+        title: 'Metodología lean',
+        description: 'Reducimos el desperdicio con ciclos cortos que minimizan el riesgo.'
+      },
+      {
+        icon: 'icon-hammer',
+        title: 'eXtreme Programming',
+        description: 'Practicamos TDD, Pair programming, refactoring, integración continua...'
+      },
+      {
+        icon: 'icon-heart',
+        title: 'Software crafters',
+        description: 'Mejoramos nuestras habilidades y compartimos lo aprendido.'
+      },
+      {
+        icon: 'icon-zoom-in',
+        title: 'Análisis en profundidad',
+        description: 'Buscamos el origen de los problemas para ofrecer la mejor solución.'
+      },
+      {
+        icon: 'icon-briefcase',
+        title: 'Visión de negocio',
+        description: 'Hemos creado startups y entendemos las necesidades de negocio.'
+      },
+      {
+        icon: 'icon-embed2',
+        title: 'Visión de desarrollador',
+        description: 'Como programadores, comprendemos las implicaciones técnicas del producto.'
+      }
+    ]; %>
 
-    </div>
+      <% values.forEach(function(value){ %>
+        <%- include('../../partials/cards/card', {
+              icon: value.icon,
+              title: value.title,
+              description: value.description
+            }) %>
+        <% });
+      %>
+
   </div>
-  <div class="button__wrapper">
-    <a href="#contactForm" class="button button--primary" type="button">
-      Contactar
-    </a>
-  </div>
-</section>
+</div>
+<div class="button__wrapper">
+  <a href="#contactForm" class="button button--primary" type="button">
+    Contactar
+  </a>
+</div>
