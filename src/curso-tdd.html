@@ -85,27 +85,36 @@
       </div>
     </div>
 
-
     <main>
 
       <%- include('pages-content/curso-tdd/carousel-clients') %>
 
       <%- include('pages-content/curso-tdd/carousel-opinion') %>
 
-      <%- include('pages-content/curso-tdd/value') %>
+      <section class="block block--white" id="value">
+        <%- include('pages-content/curso-tdd/value') %>
+      </section>
 
-      <%- include('pages-content/curso-tdd/content') %>
+      <section class="block block--lila" id="training-content-timeline">
+        <%- include('pages-content/curso-tdd/content') %>
+      </section>
 
-      <%- include('pages-content/curso-tdd/methodology') %>
+      <section class="block block--white" id="methodology">
+        <%- include('pages-content/curso-tdd/methodology') %>
+      </section>
 
       <%- include('partials/summary-by-numbers') %>
 
-      <%- include('pages-content/curso-tdd/qa') %>
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/curso-tdd/qa') %>
+      </section>
 
-      <%- include('pages-content/curso-common/form', {
-        action: '/php/contact-tdd.php',
-        type: 'tdd_training'
-      }) %>
+      <section class="block block--lila" id="contact">
+        <%- include('pages-content/curso-common/form', {
+          action: '/php/contact-tdd.php',
+          type: 'tdd_training'
+        }) %>
+      </section>
     </main>
 
     <%- include('partials/footer') %>
