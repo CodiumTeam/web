@@ -47,6 +47,7 @@
       margin-top: 0;
       margin-bottom: 0;
       min-height: auto;
+      text-align: left;
 
       li {
         margin: 8px 0;
@@ -57,15 +58,17 @@
       .card__list {
         list-style: none;
         padding: 0;
+
+        @media screen and (max-width: 450px) {
+          text-align: center;
+        }
       }
     }
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 450px) {
       flex-direction: column;
       text-align: center;
       .card__image {
-        max-width: 100px;
-        min-width: 100px;
         margin: 0 auto;
       }
     }
