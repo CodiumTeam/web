@@ -171,18 +171,26 @@
         </div>
       </section>
 
-      <%- include('pages-content/curso-docker/content')  %>
+      <section class="block block--lila" id="training-content-timeline">
+        <%- include('pages-content/curso-docker/content')  %>
+      </section>
 
-      <%- include('pages-content/curso-docker/methodology')  %>
+      <section class="block block--white"  id="methodology">
+        <%- include('pages-content/curso-docker/methodology')  %>
+      </section>
 
       <%- include('partials/summary-by-numbers')  %>
 
-      <%- include('pages-content/curso-docker/qa')  %>
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/curso-docker/qa')  %>
+      </section>
 
-      <%- include('pages-content/curso-common/form', {
-        action: '/php/contact-docker.php',
-        type: 'docker_training'
-      }) %>
+      <section class="block block--lila" id="contact">
+        <%- include('pages-content/curso-common/form', {
+          action: '/php/contact-docker.php',
+          type: 'docker_training'
+        }) %>
+      </section>
 
     </main>
 
