@@ -87,24 +87,36 @@
 
     <main>
 
-      <%- include('pages-content/curso-legacy/carousel-clients')  %>
+      <section class="block block--white block--small">
+        <%- include('pages-content/curso-legacy/carousel-clients')  %>
+      </section>
 
       <%- include('pages-content/curso-legacy/carousel-opinion')  %>
 
-      <%- include('pages-content/curso-legacy/value')  %>
+      <section class="block block--white" id="value">
+        <%- include('pages-content/curso-legacy/value')  %>
+      </section>
 
-      <%- include('pages-content/curso-legacy/content')  %>
+      <section class="block block--lila" id="training-content-timeline">
+        <%- include('pages-content/curso-legacy/content')  %>
+      </section>
 
-      <%- include('pages-content/curso-legacy/methodology')  %>
+      <section class="block block--white" id="methodology">
+        <%- include('pages-content/curso-legacy/methodology')  %>
+      </section>
 
       <%- include('partials/summary-by-numbers')  %>
 
-      <%- include('pages-content/curso-legacy/qa')  %>
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/curso-legacy/qa')  %>
+      </section>
 
-      <%- include('pages-content/curso-common/form', {
-        action: '/php/contact-legacy-code.php',
-        type: 'legacy_training'
-      }) %>
+      <section class="block block--lila" id="contact">
+        <%- include('pages-content/curso-common/form', {
+          action: '/php/contact-legacy-code.php',
+          type: 'legacy_training'
+        }) %>
+      </section>
 
     </main>
 
