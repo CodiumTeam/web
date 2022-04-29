@@ -44,19 +44,6 @@ describe('User navigation in Development page', () => {
       });
 
       it('Should be able to see service list in a dropdown', () => {
-        cy.get('#js-menu .navbar__item.dropdown').click();
-        cy.get('.dropdown .options li').should('have.length', 5);
-
-        cy.get('.dropdown .options li a').each((service, index) => {
-          const menuItem = serviceList[index];
-          cy.wrap(service).should('contain', menuItem.title);
-          cy.wrap(service)
-            .should('have.attr', 'href')
-            .should('eq', menuItem.url);
-        });
-      });
-
-      it('Should be able to see service list in a dropdown', () => {
         cy.validateServiceListInDropdown();
       });
     });

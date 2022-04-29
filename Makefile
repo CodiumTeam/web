@@ -5,6 +5,7 @@ Valid commands are:
     - down: Stop the server
     - install: Install the dependencies
     - FILE_PATH=<path> convert: Adjust the customer logo to the required format
+		- test: Run cypress tests. Server should be running at http://localhost:3000
 
  Please execute "make <command>". Example make servers-restart
 
@@ -49,3 +50,10 @@ start:
 
 build:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
+
+test:
+	$(DOCKER_COMMAND) --ipc=host \
+		--add-host host.docker.internal:host-gateway \
+		--entrypoint cypress \
+		cypress/included:6.2.1 run \
+		--config baseUrl=http://host.docker.internal:3000
