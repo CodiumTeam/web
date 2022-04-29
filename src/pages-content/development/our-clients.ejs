@@ -1,0 +1,38 @@
+<div class="container">
+  <h2 class="title text--summary">Empresas que ya han confiado en nosotros para desarrollar su producto</h2>
+    <% var clients = [
+      {
+        image: './img/clients/rideo.png',
+        name: 'Rideo logo',
+        customClass: 'client__item--roiback'
+      },
+      {
+        image: './img/clients/clarity.svg',
+        name: 'Clarity logo'
+      },
+      {
+        image: './img/clients/habitissimo.png',
+        name: 'Habitissimo logo'
+      },
+      {
+        image: './img/clients/talentclue.png',
+        name: 'Talent Clue',
+        customClass: 'client__item--roiback'
+      },
+      {
+        image: './img/clients/bubly.svg',
+        name: 'Bubly logo',
+        customClass: 'client__item--roiback'
+      },
+      {
+        image: './img/clients/globalo2.png',
+        name: 'GlobalO2 logo',
+        customClass: 'client__item--roiback'
+      },
+    ] %>
+
+    <section class="block block--white block--small">
+      <%- include('../../partials/carousel/clients', { clients: clients })  %>
+    </section>
+
+</div>

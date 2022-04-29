@@ -2,14 +2,6 @@
   'layout/footer', 'layout/hero', 'layout/main', 'buttons', 'block',
   'core/utilities', 'core/dropdown', 'core/inputs', 'title';
 
-.g-recaptcha {
-  visibility: hidden;
-  &-text {
-    font-size: 12px;
-    color: $dark-grey;
-  }
-}
-
 .fade-in-right-to-left {
   display: block;
   transform: translateX(0);
