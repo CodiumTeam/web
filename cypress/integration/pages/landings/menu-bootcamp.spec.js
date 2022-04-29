@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
-describe('User navigation', () => {
-  const devices = ['desktop', 'iphone-6'];
+import { isMobile } from '../../isMobile';
 
+const devices = ['desktop', 'iphone-6'];
+
+describe('User navigation', () => {
   devices.forEach((device) => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
@@ -55,7 +57,3 @@ describe('User navigation', () => {
     });
   });
 });
-
-function isMobile(device) {
-  return device !== 'desktop';
-}
