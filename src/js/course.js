@@ -10,7 +10,6 @@ import { listenDropdown } from './common/dropdown';
 
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
-import '../sass/site.scss';
 import '../sass/course.scss';
 import { scrollToElement } from './common/scrollToElement';
 
