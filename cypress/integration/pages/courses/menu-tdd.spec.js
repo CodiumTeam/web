@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('User navigation', () => {
-  describe('From navebar in desktop', () => {
+  describe('From navbar in desktop', () => {
     beforeEach(() => {
       cy.visit('/curso-tdd.html');
     });
@@ -37,7 +37,7 @@ describe('User navigation', () => {
     });
   });
 
-  describe('From navebar in desktop', () => {
+  describe('From navbar in desktop', () => {
     beforeEach(() => {
       cy.viewport('iphone-6');
       cy.visit('/curso-tdd.html');
