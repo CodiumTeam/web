@@ -11,7 +11,9 @@
     "build": "NODE_ENV=production vite build",
     "preview": "vite preview",
     "lint-staged": "lint-staged",
-    "heroku-cleanup": "rm -rf node_modules"
+    "heroku-cleanup": "rm -rf node_modules",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/CodiumTeam/web#readme",
   "devDependencies": {
+    "cypress": "^9.6.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
