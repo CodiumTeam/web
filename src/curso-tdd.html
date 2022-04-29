@@ -20,7 +20,7 @@
   <body>
     <%- include('partials/analytics') %>
 
-    <%- include('partials/header/header', {
+    <%- include('partials/header/landing-navbar', {
       menu: [
         {
           title: 'Beneficios',
@@ -41,27 +41,6 @@
         {
           title: 'Contactar',
           url: '#contact',
-        },
-        {
-          title: 'Servicios',
-          children: [
-            {
-              title: 'Curso de Legacy',
-              url: '/curso-legacy-code.html',
-            },
-            {
-              title: 'Curso de TDD',
-              url: '/curso-tdd.html',
-            },
-            {
-              title: 'Curso de Docker',
-              url: '/curso-docker.html',
-            },
-            {
-              title: 'Programa de aceleración',
-              url: '/programa-de-aceleracion.html',
-            }
-          ]
         },
       ]
     }) %>
