@@ -9,7 +9,7 @@ describe('User navigation', () => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
-          cy.viewport('iphone-6');
+          cy.viewport(device);
         }
 
         cy.visit('/programa-de-aceleracion.html');

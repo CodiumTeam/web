@@ -9,7 +9,7 @@ describe('User navigation', () => {
     describe(`From navbar in ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
-          cy.viewport('iphone-6');
+          cy.viewport(device);
         }
 
         cy.visit('/curso-tdd.html');
