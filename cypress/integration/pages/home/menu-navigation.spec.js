@@ -4,7 +4,7 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation', () => {
+describe('User navigation in home page', () => {
   devices.forEach((device) => {
     describe(`From navbar in ${device}`, () => {
       beforeEach(() => {

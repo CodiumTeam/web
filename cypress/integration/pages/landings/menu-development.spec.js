@@ -4,7 +4,7 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation', () => {
+describe('User navigation in Development page', () => {
   devices.forEach((device) => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
@@ -41,6 +41,23 @@ describe('User navigation', () => {
         cy.get('.navbar__item').eq(3).should('contain', 'Contactar');
         cy.get('.navbar__item').eq(3).click();
         cy.isInViewport('#contact');
+      });
+
+      it('Should be able to see service list in a dropdown', () => {
+        cy.get('#js-menu .navbar__item.dropdown').click();
+        cy.get('.dropdown .options li').should('have.length', 5);
+
+        cy.get('.dropdown .options li a').each((service, index) => {
+          const menuItem = serviceList[index];
+          cy.wrap(service).should('contain', menuItem.title);
+          cy.wrap(service)
+            .should('have.attr', 'href')
+            .should('eq', menuItem.url);
+        });
+      });
+
+      it('Should be able to see service list in a dropdown', () => {
+        cy.validateServiceListInDropdown();
       });
     });
   });

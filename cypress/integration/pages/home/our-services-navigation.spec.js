@@ -4,9 +4,9 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation', () => {
+describe('User navigation via our services block in home page', () => {
   devices.forEach((device) => {
-    describe(`Our services block navigation in ${device}`, () => {
+    describe(`Emulating: ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
           cy.viewport(device);

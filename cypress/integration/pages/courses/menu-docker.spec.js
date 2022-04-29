@@ -3,7 +3,7 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation', () => {
+describe('User navigation Docker page', () => {
   devices.forEach((device) => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
@@ -46,6 +46,9 @@ describe('User navigation', () => {
         cy.get('.navbar__item').eq(4).should('contain', 'Contactar');
         cy.get('.navbar__item').eq(4).click();
         cy.isInViewport('#contact');
+      });
+      it('Should be able to see service list in a dropdown', () => {
+        cy.validateServiceListInDropdown();
       });
     });
   });
