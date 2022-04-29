@@ -1,67 +1,48 @@
 /// <reference types="cypress" />
 
+import { isMobile } from '../../isMobile';
+
+const devices = ['desktop', 'iphone-6'];
+
 describe('User navigation', () => {
-  describe('From navbar in desktop', () => {
-    beforeEach(() => {
-      cy.visit('/');
-    });
+  devices.forEach((device) => {
+    describe(`From navbar in ${device}`, () => {
+      beforeEach(() => {
+        if (isMobile(device)) {
+          cy.viewport('iphone-6');
+        }
 
-    it('Should navigate to the services block in home page', () => {
-      cy.get('.navbar__item').first().click();
-      cy.isInViewport('#our-services');
-    });
+        cy.visit('/');
 
-    it('Should navigate to the values and methodoly block in home page', () => {
-      cy.get('.navbar__item').eq(1).click();
-      cy.isInViewport('#values-and-methodology');
-    });
+        if (isMobile(device)) {
+          cy.get('#js-menu-button').click();
+        }
+      });
 
-    it('Should navigate to the courses block in home page', () => {
-      cy.get('.navbar__item').eq(2).click();
-      cy.isInViewport('#courses-list');
-    });
+      it('Should navigate to the services block in home page', () => {
+        cy.get('.navbar__item').first().click();
+        cy.isInViewport('#our-services');
+      });
 
-    it('Should navigate to the team block in home page', () => {
-      cy.get('.navbar__item').eq(3).click();
-      cy.isInViewport('#team');
-    });
+      it('Should navigate to the values and methodoly block in home page', () => {
+        cy.get('.navbar__item').eq(1).click();
+        cy.isInViewport('#values-and-methodology');
+      });
 
-    it('Should navigate to the team block in home page', () => {
-      cy.get('.navbar__item').eq(4).click();
-      cy.isInViewport('#contact');
-    });
-  });
+      it('Should navigate to the courses block in home page', () => {
+        cy.get('.navbar__item').eq(2).click();
+        cy.isInViewport('#courses-list');
+      });
 
-  describe('From navbar in desktop', () => {
-    beforeEach(() => {
-      cy.viewport('iphone-6');
-      cy.visit('/');
-      cy.get('#js-menu-button').click();
-    });
+      it('Should navigate to the team block in home page', () => {
+        cy.get('.navbar__item').eq(3).click();
+        cy.isInViewport('#team');
+      });
 
-    it('Should navigate to the services block in home page', () => {
-      cy.get('.navbar__item').first().click();
-      cy.isInViewport('#our-services');
-    });
-
-    it('Should navigate to the values and methodoly block in home page', () => {
-      cy.get('.navbar__item').eq(1).click();
-      cy.isInViewport('#values-and-methodology');
-    });
-
-    it('Should navigate to the courses block in home page', () => {
-      cy.get('.navbar__item').eq(2).click();
-      cy.isInViewport('#courses-list');
-    });
-
-    it('Should navigate to the team block in home page', () => {
-      cy.get('.navbar__item').eq(3).click();
-      cy.isInViewport('#team');
-    });
-
-    it('Should navigate to the team block in home page', () => {
-      cy.get('.navbar__item').eq(4).click();
-      cy.isInViewport('#contact');
+      it('Should navigate to the team block in home page', () => {
+        cy.get('.navbar__item').eq(4).click();
+        cy.isInViewport('#contact');
+      });
     });
   });
 });
