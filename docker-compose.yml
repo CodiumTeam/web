@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      target: builder
+    volumes:
+      - .:/code
+    ports:
+      - 3000:3000
+    command: ["npm", "run", "start"]

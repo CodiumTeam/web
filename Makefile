@@ -1,33 +1,38 @@
 # cat -e -t -v Makefile
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
-DOCKER_NODE_IMAGE = node:16
-DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:host-gateway --entrypoint cypress cypress/included:6.2.1 run \
 
 .PHONY: default
 default: start
 
 .PHONY: install
 install:
-	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
+	docker compose run web npm install
 	git config --local core.hooksPath git-hooks/
 
 .PHONY: lint
 lint:
-	./scripts/dump-git-config.sh /tmp/docker-git-cfg
-	$(DOCKER_COMMAND) -v /tmp/docker-git-cfg:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh scripts/lint.sh
+	docker compose run -T web sh scripts/lint.sh
 
+.PHONY: start
 start:
-	$(DOCKER_COMMAND) -it --name codium_web -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
+	docker compose up
 
-build:
-	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
+.PHONY: get-cypress-version
+get-cypress-version:
+	$(eval CYPRESS_VERSION=$(shell docker compose run web npm list cypress --depth=0 -p -l | cut -d'@' -f2))
 
-test:
-	$(DOCKER_CYPRESS) --config baseUrl=http://host.docker.internal:3000
-
-test-email:
+.PHONY: test
+test: get-cypress-version
 	$(DOCKER_COMMAND) --ipc=host \
 		--add-host host.docker.internal:host-gateway \
 		--entrypoint cypress \
-		cypress/included:6.2.1 run \
+		cypress/included:$(CYPRESS_VERSION) run \
+		--config baseUrl=http://host.docker.internal:3000
+
+.PHONY: test-email
+test-email: get-cypress-version
+	$(DOCKER_COMMAND) --ipc=host \
+		--add-host host.docker.internal:host-gateway \
+		--entrypoint cypress \
+		cypress/included:$(CYPRESS_VERSION) run \
 		--config baseUrl=http://host.docker.internal:3000
