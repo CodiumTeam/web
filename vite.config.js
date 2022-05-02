@@ -22,6 +22,7 @@ export default defineConfig({
   },
   publicDir: resolve(__dirname, 'public'),
   root: SRC,
+  envDir: __dirname,
   plugins: [ejs()],
   build: {
     outDir: DIST,
