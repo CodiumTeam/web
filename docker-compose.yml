@@ -4,8 +4,9 @@ services:
     build:
       dockerfile: frontend.dockerfile
     volumes:
-      - .:/code
-      - /code/node_modules
+      - ./src:/code/src
+      - ./fonts:/code/fonts
+      - ./public:/code/public
     ports:
       - 3000:3000
 
