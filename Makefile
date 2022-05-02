@@ -19,7 +19,7 @@ DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
 DOCKER_NODE_IMAGE = node:16
 DOCKER_COMPOSER_IMAGE = composer:2.1
-DOCKER_IMAGEMAGICK_IMAGE = dpokidov/imagemagick:7.0.10-9
+DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:host-gateway --entrypoint cypress cypress/included:6.2.1 run \
 
 .PHONY: up
 up: build
@@ -52,6 +52,9 @@ build:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
 
 test:
+	$(DOCKER_CYPRESS) --config baseUrl=http://host.docker.internal:3000
+
+test-email:
 	$(DOCKER_COMMAND) --ipc=host \
 		--add-host host.docker.internal:host-gateway \
 		--entrypoint cypress \

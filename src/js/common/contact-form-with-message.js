@@ -1,5 +1,6 @@
 import * as formValidation from './fromValidation';
 import { scrollToElement } from './scrollToElement';
+import * as events from './trackEvents';
 
 handleFormSubmit();
 

@@ -10,6 +10,7 @@ export const serviceList = [
 ];
 
 Cypress.Commands.add('isInViewport', (selector) => {
+  // eslint-disable-next-line cypress/no-assigning-return-values
   const yOffset = cy.$$('#js-header').outerHeight();
 
   const y = cy.$$(selector).offset().top - yOffset;
