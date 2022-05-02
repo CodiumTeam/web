@@ -3,13 +3,11 @@ services:
   frontend-dev:
     build:
       dockerfile: frontend.dockerfile
-    working_dir: /code
     volumes:
       - .:/code
       - /code/node_modules
     ports:
       - 3000:3000
-    command: ["npm", "run", "start"]
 
   backend-dev:
     build:
