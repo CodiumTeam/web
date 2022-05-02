@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend-dev:
+    build:
+      dockerfile: frontend.dockerfile
+    working_dir: /code
+    volumes:
+      - .:/code
+    ports:
+      - 3000:3000
+    command: ["npm", "run", "start"]
+
+  backend-dev:
+    build:
+      dockerfile: backend.dockerfile
+    volumes:
+      - ./public:/code/dist
+      - /code/dist/vendor
+    ports:
+      - 8000:8000
+    command: ["php", "-S", "0.0.0.0:8000", "-t", "public/"]
