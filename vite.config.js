@@ -14,6 +14,7 @@ const inputs = {
   'style-guide': resolve(SRC, 'style-guide.html'),
   'accelerate-program': resolve(SRC, 'programa-de-aceleracion.html'),
   development: resolve(SRC, 'desarrollo.html'),
+  404: resolve(SRC, '404.html'),
 };
 
 export default defineConfig({
