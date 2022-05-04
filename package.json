@@ -39,7 +39,7 @@
     "vite-plugin-ejs-engine": "^1.0.4"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.5.2",
+    "@glidejs/glide": "https://github.com/11joselu/glide.git",
     "isinview": "^2.2.1"
   }
 }
