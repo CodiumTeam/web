@@ -1,0 +1,79 @@
+.button {
+  &:hover {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+.card--small {
+  &:hover {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.card--personal {
+  &:hover {
+    animation: wobble-hor-bottom 0.8s both;
+  }
+}

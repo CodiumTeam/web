@@ -13,7 +13,8 @@
     "lint": "eslint **/*.js",
     "heroku-cleanup": "rm -rf node_modules",
     "cypress:run": "cypress run",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
