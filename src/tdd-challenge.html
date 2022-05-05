@@ -22,13 +22,21 @@
     }) %>
 
   <main class="block block--white editor-wrapper">
-    <div class="tabs" role="tabs">
+    <div class="tabs" role="tabs" id="tdd">
       <div class="tab" role="tab">
         <%- include('challenges/curso-tdd/welcome') %>
       </div>
 
-       <div class="tab" role="tab">
-        <%- include('challenges/curso-tdd/questions') %>
+       <div class="tab hidden" role="tab">
+        <%- include('challenges/curso-tdd/questions/what-is-tdd') %>
+      </div>
+
+      <div class="tab hidden" role="tab">
+        <%- include('challenges/curso-tdd/questions/tdd-cicle') %>
+      </div>
+
+       <div class="button__wrapper">
+        <button class="button button--primary" data-action="next">Continuar</button>
       </div>
     </div>
      <div id="editor"></div>

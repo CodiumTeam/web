@@ -1,6 +1,8 @@
 import { listenDropdown } from '../common/dropdown';
 import sdk from '@stackblitz/sdk';
 import './challenge.scss';
+import { tabs } from './tabs';
+import { options } from './options';
 
 listenDropdown();
 
@@ -19,3 +21,7 @@ sdk
   .catch((err) => {
     console.log(err);
   });
+
+tabs('tdd');
+options('whatIsTdd');
+options('tddCycle');

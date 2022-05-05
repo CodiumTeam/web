@@ -23,7 +23,7 @@ main {
 .options {
   margin: 0 auto;
   margin-top: 32px;
-  max-width: 500px;
+  max-width: 900px;
 
   &__option {
     border: none;
@@ -36,15 +36,45 @@ main {
     justify-content: flex-start;
     align-items: center;
     margin-top: 6px;
+    border: 1px solid transparent;
 
     &:hover {
       background-color: hsl(225deg, 25%, 95%);
       cursor: pointer;
     }
+
+    &--wrong {
+      background-color: #ffcbc1;
+      border-color: #da523a;
+      color: #da523a;
+      &:hover {
+        background-color: #ffcbc1;
+        border-color: #da523a;
+      }
+
+      .options__number {
+        border-color: #da523a;
+      }
+    }
+
+    &--correct {
+      background-color: #d6ffc8;
+      border-color: #498029;
+      color: #498029;
+      &:hover {
+        background-color: #d6ffc8;
+        border-color: #498029;
+      }
+
+      .options__number {
+        border-color: #498029;
+      }
+    }
   }
 
   &__number {
     width: 32px;
+    min-width: 32px;
     height: 32px;
     display: grid;
     place-content: center;
