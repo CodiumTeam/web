@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "https://github.com/11joselu/glide.git",
+    "@stackblitz/sdk": "^1.6.0",
     "isinview": "^2.2.1"
   }
 }

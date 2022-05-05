@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex">
+  <%- include('partials/metatags', {
+        title: 'Codium: TDD Challenge',
+        description: 'Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.',
+    }) %>
+</head>
+
+<body class="home-page">
+  <%- include('partials/analytics') %>
+
+  <%- include('partials/header/landing-navbar', {
+      menu: [
+        {
+          title: 'Home',
+          url: '/',
+        },
+      ]
+    }) %>
+
+  <main class="block block--white editor-wrapper">
+    <div class="tabs" role="tabs">
+      <div class="tab" role="tab">
+        <%- include('challenges/curso-tdd/welcome') %>
+      </div>
+
+       <div class="tab" role="tab">
+        <%- include('challenges/curso-tdd/questions') %>
+      </div>
+    </div>
+     <div id="editor"></div>
+  </main>
+
+  <script type="module" src="./js/challenge/index.js"></script>
+</body>
+
+</html>

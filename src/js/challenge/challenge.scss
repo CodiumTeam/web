@@ -1,0 +1,55 @@
+@import '../../sass/core/variables', '../../sass/core/container',
+  '../../sass/block', '../../sass/title', '../../sass/layout/footer',
+  '../../sass/core/utilities', '../../sass/course/hero',
+  '../../sass/core/normalize', '../../sass/layout/header',
+  '../../sass/layout/hero', '../../sass/layout/main', '../../sass/buttons',
+  '../../sass/core/dropdown';
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+.editor-wrapper {
+  padding: 5rem;
+}
+
+#editor {
+  min-height: 100%;
+  border: none;
+}
+
+.options {
+  margin: 0 auto;
+  margin-top: 32px;
+  max-width: 500px;
+
+  &__option {
+    border: none;
+    overflow: none;
+    background-color: hsl(225deg, 25%, 92%);
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 6px;
+
+    &:hover {
+      background-color: hsl(225deg, 25%, 95%);
+      cursor: pointer;
+    }
+  }
+
+  &__number {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 1px solid hsl(225deg, 15%, 50%);
+    margin-right: 8px;
+  }
+}
