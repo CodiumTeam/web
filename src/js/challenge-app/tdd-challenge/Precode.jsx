@@ -6,7 +6,7 @@ function Precode() {
       <img src="./img/illustrations/bootcamp/katas.png" />
       <h2>¡Mucha suerte!</h2>
 
-      <div className="issues alert alert--info fade-in">
+      <div className="issues alert alert--info">
         <span className="icon icon-warning"></span>
         <h3>Recuerda</h3>
         <ul>

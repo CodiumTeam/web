@@ -1,7 +1,7 @@
 import React from 'react';
 import Options from '../components/Options';
 
-function TDDCycle() {
+function TDDCycle({ onSelect, userAnswer = null }) {
   const options = [
     {
       id: '1',
@@ -24,10 +24,12 @@ function TDDCycle() {
         ¿Cuál son los pasos para aplicar TDD?
       </h2>
       <Options
+        onSelect={onSelect}
         options={options}
         correctAnswerId={'1'}
         answerMessage={`El ciclo del tests empieza por crear un test en rojo (Red), añadir el código mínimo necesario para que pase (Green) y luego refactorizar el código existente
         (Refactor)`}
+        userAnswer={userAnswer}
       />
     </section>
   );

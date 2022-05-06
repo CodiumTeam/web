@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { listenDropdown } from '../common/dropdown';
 import './challenge.scss';
 import './challenge.scss';
@@ -13,16 +13,31 @@ import Congratulations from './tdd-challenge/Congratulations';
 listenDropdown();
 
 function TDD() {
+  const [answers, setAnswers] = useState({
+    whatIsTdd: null,
+    tddCycle: null,
+  });
+
   return (
     <Stepper>
       <Stepper.Step>
         <Welcome />
       </Stepper.Step>
       <Stepper.Step>
-        <WhatIsTDD />
+        <WhatIsTDD
+          onSelect={(id) => {
+            setAnswers({ ...answers, whatIsTdd: id });
+          }}
+          userAnswer={answers.whatIsTdd}
+        />
       </Stepper.Step>
       <Stepper.Step>
-        <TDDCycle />
+        <TDDCycle
+          onSelect={(id) => {
+            setAnswers({ ...answers, tddCycle: id });
+          }}
+          userAnswer={answers.tddCycle}
+        />
       </Stepper.Step>
       <Stepper.Step>
         <Precode />

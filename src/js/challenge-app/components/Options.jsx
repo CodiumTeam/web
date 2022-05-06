@@ -1,9 +1,24 @@
 import React from 'react';
 import AnswerAlert from './AnswerAlert';
 
-function Options({ options, correctAnswerId, onSelect, answerMessage }) {
-  const [selectedOption, setSelectedOption] = React.useState(null);
-  const [showMessage, setShowMessage] = React.useState(false);
+function Options({
+  options,
+  correctAnswerId,
+  onSelect,
+  answerMessage,
+  userAnswer,
+}) {
+  const [selectedOption, setSelectedOption] = React.useState(
+    userAnswer || null
+  );
+
+  let userStatus = false;
+
+  if (userAnswer) {
+    userStatus = userAnswer !== correctAnswerId;
+  }
+
+  const [showMessage, setShowMessage] = React.useState(userStatus);
 
   const handleSelect = (id) => {
     if (selectedOption !== null) return;
@@ -11,7 +26,7 @@ function Options({ options, correctAnswerId, onSelect, answerMessage }) {
     setShowMessage(id !== correctAnswerId);
 
     setSelectedOption(id);
-    // onSelect(id);
+    onSelect(id);
   };
 
   return (
