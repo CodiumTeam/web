@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import ejs from 'vite-plugin-ejs-engine';
+import react from '@vitejs/plugin-react';
 
 const SRC = resolve(__dirname, 'src');
 const DIST = resolve(__dirname, 'dist');
@@ -15,6 +16,7 @@ const inputs = {
   'accelerate-program': resolve(SRC, 'programa-de-aceleracion.html'),
   development: resolve(SRC, 'desarrollo.html'),
   404: resolve(SRC, '404.html'),
+  'tdd-challenge': resolve(SRC, 'tdd-challenge.html'),
 };
 
 export default defineConfig({
@@ -24,7 +26,7 @@ export default defineConfig({
   publicDir: resolve(__dirname, 'public'),
   root: SRC,
   envDir: __dirname,
-  plugins: [ejs()],
+  plugins: [ejs(), react()],
   build: {
     outDir: DIST,
     emptyOutDir: false,

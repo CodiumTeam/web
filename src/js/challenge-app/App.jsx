@@ -1,46 +1,24 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { listenDropdown } from '../common/dropdown';
 import './challenge.scss';
 import sdk from '@stackblitz/sdk';
 import './challenge.scss';
+import Stepper from './components/Stepper';
+import WhatIsTDD from './tdd-challenge/what-is-tdd';
 
 listenDropdown();
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <Stepper>
+        <Stepper.Step title="Step 1">
+          <WhatIsTDD />
+        </Stepper.Step>
+        <Stepper.Step title="Step 2">
+          <h1>Step 2</h1>
+        </Stepper.Step>
+      </Stepper>
     </div>
   );
 }

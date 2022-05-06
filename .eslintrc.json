@@ -1,4 +1,10 @@
 {
+  "parser": "@babel/eslint-parser",
+  "settings": {
+    "react": {
+        "version": "detect"
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true,
@@ -7,14 +13,19 @@
   },
   "parserOptions": {
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
   },
-  "extends": ["eslint:recommended", "prettier", "plugin:cypress/recommended"],
+  "extends": ["eslint:recommended", "prettier", "plugin:cypress/recommended", "plugin:react/recommended"],
   "globals": {
     "grecaptcha": true
   },
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/prop-types": "off"
   }
 }
