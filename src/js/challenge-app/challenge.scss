@@ -11,10 +11,6 @@ main {
   height: 100%;
 }
 
-.editor-wrapper {
-  padding: 5rem;
-}
-
 #editor {
   min-height: 100%;
   border: none;
@@ -120,4 +116,23 @@ ul {
 .course-card {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.editor-wrapper {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.solution-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ace8c9;
+  &:hover {
+    color: #383838;
+  }
+}
+
+iframe {
+  border: none;
 }
