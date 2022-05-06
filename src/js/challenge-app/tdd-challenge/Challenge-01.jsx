@@ -1,8 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import sdk from '@stackblitz/sdk';
 
 function Challenge01() {
-  const ref = useRef(null);
   const [error, setShowError] = useState(false);
 
   useEffect(() => {
@@ -16,13 +15,15 @@ function Challenge01() {
         theme: 'dark',
         hideNavigation: true,
       })
-      .catch((err) => {
+      .catch(() => {
         setShowError(true);
       });
+
+    return () => {};
   }, []);
 
   return (
-    <>
+    <div>
       <div id="code" className="code"></div>
       {error && (
         <div className="alert alert--error hidden" id="js-show-error">
@@ -38,7 +39,7 @@ function Challenge01() {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

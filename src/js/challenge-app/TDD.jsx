@@ -8,6 +8,7 @@ import Welcome from './tdd-challenge/welcome';
 import TDDCycle from './tdd-challenge/tdd-cicle';
 import Precode from './tdd-challenge/Precode';
 import Challenge01 from './tdd-challenge/Challenge-01';
+import Congratulations from './tdd-challenge/Congratulations';
 
 listenDropdown();
 
@@ -28,6 +29,9 @@ function TDD() {
       </Stepper.Step>
       <Stepper.Step>
         <Challenge01 />
+      </Stepper.Step>
+      <Stepper.Step>
+        <Congratulations />
       </Stepper.Step>
     </Stepper>
   );

@@ -4,12 +4,7 @@ function Welcome() {
   return (
     <div className="card">
       <div>
-        <img
-          src="/img/challenges/welcome_cats.svg"
-          width="300"
-          height="200"
-          alt="Welcome to codium"
-        />
+        <img src="/img/challenges/welcome.png" alt="Welcome to codium" />
       </div>
       <h2 className="text-center tab-header">
         ¡Bienvenide al challenge de TDD de Codium!
