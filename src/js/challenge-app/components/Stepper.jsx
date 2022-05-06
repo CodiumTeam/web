@@ -6,14 +6,18 @@ export default function Stepper({ children, isDisabled, onStepChange }) {
 
   const handleNext = () => {
     const step = currentStep + 1;
+    onStepChange(step, isLastStep());
     setCurrentStep(step);
-    onStepChange(step);
+  };
+
+  const isLastStep = () => {
+    return currentStep === children.length - 1;
   };
 
   const handlePrevious = () => {
     const step = currentStep - 1;
+    onStepChange(step, isLastStep());
     setCurrentStep(step);
-    onStepChange(step);
   };
 
   return (
@@ -33,7 +37,7 @@ export default function Stepper({ children, isDisabled, onStepChange }) {
           <button
             className="button button--primary"
             onClick={handleNext}
-            disabled={isDisabled || currentStep >= children.length - 1}
+            disabled={isDisabled}
           >
             Continuar
           </button>

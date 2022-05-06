@@ -139,13 +139,11 @@ iframe {
 
 .ReactModal__Content {
   position: absolute;
-  top: 140px;
-  left: 140px;
-  right: 140px;
-  background-color: #fff;
-  padding: 32px;
+  left: 50%;
+  top: 70px;
   overflow: auto;
-  bottom: 140px;
+  background-color: #fff;
+  transform: translate(-50%, 0px);
 }
 
 .ReactModal__Overlay {
@@ -183,7 +181,7 @@ iframe {
     margin-right: 32px;
   }
 
-  .kata-explanation {
-    max-width: 1200px;
+  img {
+    max-width: 500px;
   }
 }
