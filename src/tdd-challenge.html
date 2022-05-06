@@ -22,40 +22,6 @@
     }) %>
 
   <main class="block block--white editor-wrapper">
-    <div class="tabs" role="tabs" id="tdd">
-      <div class="tab" role="tab">
-        <%- include('challenges/curso-tdd/welcome') %>
-      </div>
-
-      <div class="tab hidden" role="tab">
-        <%- include('challenges/curso-tdd/questions/what-is-tdd') %>
-      </div>
-
-      <div class="tab hidden" role="tab">
-        <%- include('challenges/curso-tdd/questions/tdd-cicle') %>
-      </div>
-
-      <div class="tab hidden" role="tab">
-        <%- include('challenges/curso-tdd/explanation') %>
-      </div>
-
-      <div class="tab hidden" role="tab">
-        <div id="editor"></div>
-        <p>Posibles problemas con el editor.</p>
-        <ul>
-          <li>
-            <strong>No me carga el editor</strong>. Si estás en modo incógnito, no te funcionará debido a bloqueos que
-            realiza el navegador a ciertas APIs
-          </li>
-          <li><strong>No me ejecuta los tests</strong>. Prueba a realizar cambios en el código a ver si te ejecuta, sino
-            prueba a ejecutar en la terminal <code>npm run test</code></li>
-        </ul>
-      </div>
-
-      <div class="button__wrapper">
-        <button class="button button--primary" data-action="next">Continuar</button>
-      </div>
-    </div>
     <div id="root"></div>
   </main>
 
