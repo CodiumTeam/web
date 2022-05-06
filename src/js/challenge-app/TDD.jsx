@@ -20,11 +20,14 @@ function TDD() {
   const [isDisable, setIsDisable] = useState(false);
 
   const handleStepChange = (step) => {
-    if (step === 1 && answers.whatIsTdd === null) {
+    const whatIsTDDStep = 1;
+    const tddCycleStep = 2;
+
+    if (step === whatIsTDDStep && answers.whatIsTdd === null) {
       setIsDisable(true);
     }
 
-    if (step === 2 && answers.tddCycle === null) {
+    if (step === tddCycleStep && answers.tddCycle === null) {
       setIsDisable(true);
     }
   };
