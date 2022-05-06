@@ -45,10 +45,19 @@
 .alert {
   max-width: 500px;
   background-color: #fff5f5;
-  color: #ff5d40;
   margin: 0 auto;
   padding: 1rem;
   color: #ff5d40;
+
+  &--info {
+    color: #2b6ebf;
+    background-color: #ebf8ff;
+    text-align: center;
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
 
   p {
     margin: 0;

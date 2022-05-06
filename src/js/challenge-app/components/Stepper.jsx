@@ -40,7 +40,7 @@ export default function Stepper({ children }) {
 }
 
 function Step({ children }) {
-  return <div>{children}</div>;
+  return <>{children}</>;
 }
 
 Stepper.Step = Step;
