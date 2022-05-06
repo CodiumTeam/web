@@ -7,7 +7,7 @@ import WhatIsTDD from './tdd-challenge/what-is-tdd';
 import Welcome from './tdd-challenge/welcome';
 import TDDCycle from './tdd-challenge/tdd-cicle';
 import Precode from './tdd-challenge/Precode';
-import Challenge01 from './tdd-challenge/Challenge-01';
+import Challenge from './tdd-challenge/Challenge';
 import Congratulations from './tdd-challenge/Congratulations';
 
 listenDropdown();
@@ -65,7 +65,7 @@ function TDD() {
         <Precode />
       </Stepper.Step>
       <Stepper.Step>
-        <Challenge01 />
+        <Challenge />
       </Stepper.Step>
       <Stepper.Step>
         <Congratulations />

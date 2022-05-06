@@ -114,7 +114,7 @@ ul {
 }
 
 .course-card {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -135,4 +135,55 @@ ul {
 
 iframe {
   border: none;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  right: 140px;
+  background-color: #fff;
+  padding: 32px;
+  overflow: auto;
+  bottom: 140px;
+}
+
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 500ms ease-in-out;
+
+  &--after-open {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  &--before-close {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
+
+.btn-kata {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+
+  .wrapper {
+    margin-right: 32px;
+  }
+
+  .kata-explanation {
+    max-width: 1200px;
+  }
 }
