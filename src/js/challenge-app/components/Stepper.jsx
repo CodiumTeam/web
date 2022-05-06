@@ -1,15 +1,19 @@
 import React, { useState, Fragment } from 'react';
 import './stepper.scss';
 
-export default function Stepper({ children }) {
+export default function Stepper({ children, isDisabled, onStepChange }) {
   const [currentStep, setCurrentStep] = useState(0);
 
   const handleNext = () => {
-    setCurrentStep(currentStep + 1);
+    const step = currentStep + 1;
+    setCurrentStep(step);
+    onStepChange(step);
   };
 
   const handlePrevious = () => {
-    setCurrentStep(currentStep - 1);
+    const step = currentStep - 1;
+    setCurrentStep(step);
+    onStepChange(step);
   };
 
   return (
@@ -29,7 +33,7 @@ export default function Stepper({ children }) {
           <button
             className="button button--primary"
             onClick={handleNext}
-            disabled={currentStep >= children.length - 1}
+            disabled={isDisabled || currentStep >= children.length - 1}
           >
             Continuar
           </button>

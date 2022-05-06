@@ -17,25 +17,44 @@ function TDD() {
     whatIsTdd: null,
     tddCycle: null,
   });
+  const [isDisable, setIsDisable] = useState(false);
+
+  const handleStepChange = (step) => {
+    if (step === 1 && answers.whatIsTdd === null) {
+      setIsDisable(true);
+    }
+
+    if (step === 2 && answers.tddCycle === null) {
+      setIsDisable(true);
+    }
+  };
+
+  const handleWhatIsTddAnswer = (id) => {
+    setAnswers({ ...answers, whatIsTdd: id });
+    setIsDisable(false);
+  };
+
+  function handleTDDCicleAnswer() {
+    return (id) => {
+      setAnswers({ ...answers, tddCycle: id });
+      setIsDisable(false);
+    };
+  }
 
   return (
-    <Stepper>
+    <Stepper isDisabled={isDisable} onStepChange={handleStepChange}>
       <Stepper.Step>
         <Welcome />
       </Stepper.Step>
       <Stepper.Step>
         <WhatIsTDD
-          onSelect={(id) => {
-            setAnswers({ ...answers, whatIsTdd: id });
-          }}
+          onSelect={handleWhatIsTddAnswer}
           userAnswer={answers.whatIsTdd}
         />
       </Stepper.Step>
       <Stepper.Step>
         <TDDCycle
-          onSelect={(id) => {
-            setAnswers({ ...answers, tddCycle: id });
-          }}
+          onSelect={handleTDDCicleAnswer()}
           userAnswer={answers.tddCycle}
         />
       </Stepper.Step>
