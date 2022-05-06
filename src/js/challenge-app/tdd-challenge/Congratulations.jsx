@@ -1,11 +1,12 @@
 import React from 'react';
 import CourseCard from '../components/CourseCard';
+import Img from '../../../img/tdd-logo.svg';
 
 function Congratulations() {
   const tdd = {
     title: 'Test-driven development',
     description: 'Desarrolla con pasos seguros, con calidad y de forma simple.',
-    imageUrl: '/img/tdd-logo.svg',
+    imageUrl: Img,
     buttonUrl: '/curso-tdd.html',
     list: [
       'Aprende el ciclo de desarrollo de TDD',

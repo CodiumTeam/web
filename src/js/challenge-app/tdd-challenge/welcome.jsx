@@ -1,10 +1,11 @@
 import React from 'react';
+import Img from '../../../img/challenges/welcome.png';
 
 function Welcome() {
   return (
     <div className="card">
       <div>
-        <img src="/img/challenges/welcome.png" alt="Welcome to codium" />
+        <img src={Img} alt="Welcome to codium" />
       </div>
       <h2 className="text-center tab-header">
         ¡Bienvenide al challenge de TDD de Codium!

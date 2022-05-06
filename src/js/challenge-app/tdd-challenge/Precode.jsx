@@ -1,10 +1,10 @@
 import React from 'react';
+import Img from '../../../img/illustrations/bootcamp/katas.png';
 
 function Precode() {
   return (
     <section className="card">
-      <img src="./img/illustrations/bootcamp/katas.png" />
-      <h2>¡Mucha suerte!</h2>
+      <img src={Img} />
 
       <div className="issues alert alert--info">
         <span className="icon icon-warning"></span>
@@ -22,6 +22,8 @@ function Precode() {
           </li>
         </ul>
       </div>
+
+      <h2>¡Mucha suerte!</h2>
     </section>
   );
 }
