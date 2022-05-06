@@ -17,6 +17,10 @@ export function tabs(parentId) {
     goToStep(currentStep);
   }
 
+  function enableButton() {
+    nextButton.disabled = false;
+  }
+
   function goToStep(stepNumber) {
     currentStep = stepNumber;
 
@@ -37,4 +41,9 @@ export function tabs(parentId) {
   function hide(elem) {
     elem.classList.add('hidden');
   }
+
+  return {
+    goNext,
+    enableButton,
+  };
 }

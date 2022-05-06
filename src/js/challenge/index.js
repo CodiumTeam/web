@@ -22,6 +22,14 @@ sdk
     console.log(err);
   });
 
-tabs('tdd');
-options('whatIsTdd');
-options('tddCycle');
+function tddTabs() {
+  const tab = tabs('tdd');
+  options('whatIsTdd', () => {
+    tab.enableButton();
+  });
+  options('tddCycle', () => {
+    tab.enableButton();
+  });
+}
+
+tddTabs();

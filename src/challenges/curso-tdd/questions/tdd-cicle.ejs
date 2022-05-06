@@ -3,19 +3,27 @@
   <div class="options" id="tddCycle" data-answer="1">
     <button class="options__option">
       <span class="options__number">1</span>
-      <span>Crear un test en rojo (Red), añadir el código mínimo necesario para que pase (Green) y refactorizar (Refactor)</span>
+      <span>Crear un test en rojo (Red), añadir el código mínimo necesario para que pase (Green) y refactorizar
+        (Refactor)</span>
     </button>
     <button class="options__option">
       <span class="options__number">2</span>
-      <span>Crear un test en rojo (Red), modificar el código de producción para que pase (Refactor), eliminar el test (Green)</span>
+      <span>Crear un test en rojo (Red), modificar el código de producción para que pase (Refactor), eliminar el test
+        (Green)</span>
     </button>
     <button class="options__option">
       <span class="options__number">3</span>
-      <span>Modificar el código de producción que rompe un test (Red), modificar el tests para que pase (Refactor), hacer push de los cambios y que la pipeline se ponga verde (Green)</span>
+      <span>Modificar el código de producción que rompe un test (Red), modificar el tests para que pase (Refactor),
+        hacer push de los cambios y que la pipeline se ponga verde (Green)</span>
     </button>
     <button class="options__option">
       <span class="options__number">4</span>
       <span>Ninguna de las anteriores.</span>
     </button>
   </div>
+
+   <%- include('./answer-alert', {
+    text: `El ciclo del tests empieza por crear un test en rojo (Red), añadir el código mínimo necesario para que pase (Green) y luego refactorizar el código existente
+        (Refactor)`
+  }) %>
 </section>
