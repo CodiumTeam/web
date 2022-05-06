@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Introduction() {
+function Welcome() {
   return (
     <div className="card">
       <div>
@@ -22,4 +22,4 @@ function Introduction() {
   );
 }
 
-export default Introduction;
+export default Welcome;

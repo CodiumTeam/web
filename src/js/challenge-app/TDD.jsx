@@ -5,8 +5,9 @@ import sdk from '@stackblitz/sdk';
 import './challenge.scss';
 import Stepper from './components/Stepper';
 import WhatIsTDD from './tdd-challenge/what-is-tdd';
-import Introduction from './tdd-challenge/introduction';
+import Welcome from './tdd-challenge/welcome';
 import TDDCycle from './tdd-challenge/tdd-cicle';
+import Precode from './components/Precode';
 
 listenDropdown();
 
@@ -14,13 +15,16 @@ function TDD() {
   return (
     <Stepper>
       <Stepper.Step>
-        <Introduction />
+        <Welcome />
       </Stepper.Step>
       <Stepper.Step>
         <WhatIsTDD />
       </Stepper.Step>
       <Stepper.Step>
         <TDDCycle />
+      </Stepper.Step>
+      <Stepper.Step>
+        <Precode />
       </Stepper.Step>
     </Stepper>
   );
