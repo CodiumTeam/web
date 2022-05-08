@@ -3,12 +3,12 @@ import { listenDropdown } from '../common/dropdown';
 import './challenge.scss';
 import './challenge.scss';
 import Stepper from './components/Stepper';
-import WhatIsTDD from './tdd-challenge/what-is-tdd';
-import Welcome from './tdd-challenge/welcome';
-import TDDCycle from './tdd-challenge/tdd-cicle';
-import Precode from './tdd-challenge/PrecodeRememberSep';
-import Challenge from './tdd-challenge/Challenge';
-import Congratulations from './tdd-challenge/Congratulations';
+import WhatIsTDD from './tdd-challenge/03-WhatIsTdd';
+import Welcome from './tdd-challenge/01-Welcome';
+import TDDCycle from './tdd-challenge/02-TddCicle';
+import Precode from './tdd-challenge/04-PrecodeRememberSep';
+import Challenge from './tdd-challenge/05-Challenge';
+import Congratulations from './tdd-challenge/06-Congratulations';
 
 listenDropdown();
 
