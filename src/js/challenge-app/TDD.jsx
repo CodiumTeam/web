@@ -6,7 +6,7 @@ import Stepper from './components/Stepper';
 import WhatIsTDD from './tdd-challenge/what-is-tdd';
 import Welcome from './tdd-challenge/welcome';
 import TDDCycle from './tdd-challenge/tdd-cicle';
-import Precode from './tdd-challenge/Precode';
+import Precode from './tdd-challenge/PrecodeRememberSep';
 import Challenge from './tdd-challenge/Challenge';
 import Congratulations from './tdd-challenge/Congratulations';
 
