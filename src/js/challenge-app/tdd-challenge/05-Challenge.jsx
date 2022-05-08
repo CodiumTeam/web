@@ -1,6 +1,7 @@
 import React from 'react';
 import Editor from '../components/Editor';
 import Modal from 'react-modal';
+import { solution } from './solutions';
 
 import { ModalKata } from './HelpModalContent/ModalKata';
 
@@ -8,16 +9,34 @@ import { ModalKata } from './HelpModalContent/ModalKata';
 Modal.setAppElement('#page');
 
 function Challenge() {
+  const [vm, setVm] = React.useState(null);
+  const [numHelpUsed, setNumHelpUsed] = React.useState(0);
+  const handleSolutionClick = () => {
+    vm.applyFsDiff({
+      create: {
+        'tests/help.test.js': solution[numHelpUsed],
+      },
+    }).then(() => {
+      vm.editor.openFile('tests/help.test.js');
+    });
+
+    setNumHelpUsed(numHelpUsed + 1);
+  };
+
   return (
     <div className="editor-wrapper">
       <ModalKata />
       <Editor
         challengeId="tdd-challenge-1"
         onLoad={(vm) => {
-          console.log(vm);
+          setVm(vm);
         }}
       />
-      <button className="button solution-btn">Mostrar solución</button>
+      {vm && (
+        <button className="button solution-btn" onClick={handleSolutionClick}>
+          Ayúdame ({solution.length - numHelpUsed})
+        </button>
+      )}
     </div>
   );
 }
