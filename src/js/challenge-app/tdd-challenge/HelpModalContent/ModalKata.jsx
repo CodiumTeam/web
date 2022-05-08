@@ -28,13 +28,13 @@ export function ModalKata() {
         }}
       >
         <Stepper.Step>
-          <UserStory />
-        </Stepper.Step>
-        <Stepper.Step>
           <EditorTutorial />
         </Stepper.Step>
         <Stepper.Step>
           <HelpKata />
+        </Stepper.Step>
+        <Stepper.Step>
+          <UserStory />
         </Stepper.Step>
       </Stepper>
     </Modal>
