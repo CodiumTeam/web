@@ -1,8 +1,9 @@
+/* eslint-disable react/no-danger-with-children */
 import React from 'react';
 import Editor from '../components/Editor';
 import Modal from 'react-modal';
-import { solution } from './solutions';
-
+import { solutions } from './solutions';
+import { toast } from 'react-toastify';
 import { ModalKata } from './HelpModalContent/ModalKata';
 
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
@@ -12,15 +13,26 @@ function Challenge() {
   const [vm, setVm] = React.useState(null);
   const [numHelpUsed, setNumHelpUsed] = React.useState(0);
   const handleSolutionClick = () => {
-    vm.applyFsDiff({
-      create: {
-        'tests/help.test.js': solution[numHelpUsed],
-      },
-    }).then(() => {
-      vm.editor.openFile('tests/help.test.js');
+    const { explanation, code } = solutions[numHelpUsed];
+
+    updateEditorWithCode('help.test.js', code).then(() => {
+      toast.success(<Msg message={explanation} />);
     });
 
     setNumHelpUsed(numHelpUsed + 1);
+  };
+
+  const updateEditorWithCode = (fileName, code) => {
+    const filePath = `tests/${fileName}`;
+    return vm
+      .applyFsDiff({
+        create: {
+          [filePath]: code,
+        },
+      })
+      .then(() => {
+        return vm.editor.openFile(filePath);
+      });
   };
 
   return (
@@ -34,11 +46,18 @@ function Challenge() {
       />
       {vm && (
         <button className="button solution-btn" onClick={handleSolutionClick}>
-          Ayúdame ({solution.length - numHelpUsed})
+          {solutions.length - numHelpUsed == 0 ? 'Mostrar solución' : 'Ayúdame'}{' '}
         </button>
       )}
     </div>
   );
 }
+
+const Msg = ({ closeToast, message }) => (
+  <div>
+    <p dangerouslySetInnerHTML={{ __html: message }}>{}</p>
+    <button onClick={closeToast}>Continuar</button>
+  </div>
+);
 
 export default Challenge;
