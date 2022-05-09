@@ -16,7 +16,6 @@ export default function Stepper({
   };
 
   const isLastStep = () => {
-    console.log({ currentStep, le: children.length - 1 });
     return currentStep === children.length - 1;
   };
 
