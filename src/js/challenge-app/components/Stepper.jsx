@@ -11,7 +11,7 @@ export default function Stepper({
 
   const handleNext = () => {
     const step = currentStep + 1;
-    onStepChange(step, isLastStep());
+    onStepChange(step);
     setCurrentStep(step);
   };
 
@@ -21,7 +21,7 @@ export default function Stepper({
 
   const handlePrevious = () => {
     const step = currentStep - 1;
-    onStepChange(step, isLastStep());
+    onStepChange(step);
     setCurrentStep(step);
   };
 
