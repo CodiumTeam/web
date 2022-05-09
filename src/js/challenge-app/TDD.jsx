@@ -13,6 +13,7 @@ import Congratulations from './tdd-challenge/06-Congratulations';
 listenDropdown();
 
 function TDD() {
+  const [stepperBtnText, setStepperBtnText] = useState('Siguiente');
   const [answers, setAnswers] = useState({
     whatIsTdd: null,
     tddCycle: null,
@@ -30,6 +31,14 @@ function TDD() {
     if (step === tddCycleStep && answers.tddCycle === null) {
       setIsDisable(true);
     }
+
+    if (step === 4) {
+      setStepperBtnText('Finalizar');
+    }
+
+    if (step === 5) {
+      setIsDisable(true);
+    }
   };
 
   const handleWhatIsTddAnswer = (id) => {
@@ -45,7 +54,11 @@ function TDD() {
   }
 
   return (
-    <Stepper isDisabled={isDisable} onStepChange={handleStepChange}>
+    <Stepper
+      isDisabled={isDisable}
+      onStepChange={handleStepChange}
+      btnText={stepperBtnText}
+    >
       <Stepper.Step>
         <Welcome />
       </Stepper.Step>

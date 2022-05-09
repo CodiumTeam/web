@@ -5,7 +5,7 @@ export default function Stepper({
   children,
   isDisabled,
   onStepChange,
-  lastStepBtnText = 'Siguiente',
+  btnText = 'Siguiente',
 }) {
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -39,13 +39,15 @@ export default function Stepper({
               Atrás
             </button>
           )}
-          <button
-            className="button button--primary"
-            onClick={handleNext}
-            disabled={isDisabled}
-          >
-            {isLastStep() ? lastStepBtnText : 'Siguiente'}
-          </button>
+          {!isLastStep() ? (
+            <button
+              className="button button--primary"
+              onClick={handleNext}
+              disabled={isDisabled}
+            >
+              {btnText}
+            </button>
+          ) : null}
         </div>
       </div>
     </Fragment>
