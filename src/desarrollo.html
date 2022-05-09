@@ -79,7 +79,10 @@
 
 
       <section class="contact block block--lila" id="contact">
-        <%- include('partials/contact-form') %>
+        <%- include('partials/contact-form', {
+          type: 'development',
+          action: 'Desarrollo'
+        }) %>
       </section>
 
     </main>

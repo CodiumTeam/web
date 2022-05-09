@@ -12,12 +12,14 @@ sendEmail($params);
 
 
 function getSubject($params) {
-    $from = 'Web';
-    $trainingType = $params['trainingType'] ?? '';
+    $froms = [
+        'development'  => 'Development',
+        'bootcamp_training' => 'Bootcamp',
+    ];
 
-    if ($trainingType) {
-        $from = 'Bootcamp';
-    }
+    $trainingType = $params['trainingType'] ?? '';
+    $from = $trainingType ? $froms[$trainingType] : 'Web';
+
 
     return $from . ' contact triggered by ' . $params['action']  . ' ' . date("Y-m-d H:i:s");
 }

@@ -90,7 +90,10 @@
       </section>
 
       <section class="contact block block--lila" id="contact">
-        <%- include('partials/contact-form') %>
+        <%- include('partials/contact-form', {
+          type: 'bootcamp_training',
+          action: 'Programa de aceleración'
+        }) %>
       </section>
 
     </main>
