@@ -8,32 +8,31 @@ export function UserStory() {
         <img src={Img} />
       </div>
       <div className="kata-explanation">
-        <h2>Leap Years Kata</h2>
+        <h2>Año bisiesto Kata</h2>
 
-        <h4>User Story</h4>
+        <h4>Historia de usuario</h4>
         <p>
-          As a user, I want to know if a year is a leap year, So that I can plan
-          for an extra day on February 29th during those years.
+          Como usuario, quiero saber si un año es bisiesto o no, para poder
+          planificar un día extra el 29 de febrero durante esos años.
         </p>
 
-        <h4>Acceptance criteria</h4>
+        <h4>Criterios de aceptación</h4>
         <ul>
           <li>
-            All years divisible by 400 ARE leap years (so, for example, 2000 was
-            indeed a leap year),
+            Los años que no son divisibles entre 4 NO son bisiestos (p. ej.
+            2017, 2018, 2019).
           </li>
           <li>
-            All years divisible by 100 but not by 400 are NOT leap years (so,
-            for example, 1700, 1800, and 1900 were NOT leap years, NOR will 2100
-            be a leap year),
+            Los años divisibles por 4 SON bisiestos (p. ej., 2008, 2012, 2016),
           </li>
           <li>
-            All years divisible by 4 but not by 100 ARE leap years (e.g., 2008,
-            2012, 2016),
+            Los años divisibles por 100, a pesar de ser divisibles por 4, NO son
+            bisiestos (p. ej., 1700, 1800 y 1900 no son años bisiestos ni lo
+            será el 2100),
           </li>
           <li>
-            All years not divisible by 4 are NOT leap years (e.g. 2017, 2018,
-            2019).
+            Los años divisibles por 400, a pesar de ser divisibles por 100, SON
+            bisiestos (p. ej., 2000 fue año bisiesto),
           </li>
         </ul>
       </div>

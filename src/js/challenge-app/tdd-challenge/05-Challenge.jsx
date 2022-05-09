@@ -73,7 +73,7 @@ function Challenge() {
             ? 'Mostrar solución'
             : solutionUsed
             ? 'Mostrar solución'
-            : `Ayúdame (${help.length - numHelpUsed})`}
+            : `Ver ${numHelpUsed + 1} Interación`}
         </button>
       )}
     </div>

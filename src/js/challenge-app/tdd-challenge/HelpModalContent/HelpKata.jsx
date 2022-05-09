@@ -14,21 +14,22 @@ export function HelpKata() {
       <div className="kata-explanation">
         <h2>Necesito ayuda...</h2>
         <img src={ButtonHelpMe} />
-        <p>Dispones de un botón que te ayudará en tus primeros pasos.</p>
         <p>
-          Tienes hasta <strong>{help.length}</strong> soluciones para este
-          desafío.
+          Si no sabes por dónde empezar. El botón ver iteración te ayudará con
+          tus primeros pasos.
         </p>
         <p>
-          Una vez utilizado todas las ayudas. El botón de ayuda desaparecerá
+          Tienes hasta <strong>{help.length}</strong> iteraciones disponibles
+          para éste desafío.
         </p>
+        <p>Una vez visto todas las iteraciones. El botón desaparecerá</p>
 
         <h3>Resolución de la kata</h3>
         <img src={ButtonSolution} />
 
         <p>
-          Tras usar todas las ayudas disponibles. Aparecerá un nuevo botón que
-          te permitirá ver la solución de toda la kata
+          Tras ver todas las iteraciones disponibles. Aparecerá un nuevo botón
+          que te permitirá ver la solución de toda la kata.
         </p>
       </div>
     </div>
