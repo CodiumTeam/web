@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
-import Stepper from '../../components/Stepper';
+import Stepper from '../../components/Stepper/Stepper';
 import { UserStory } from './UserStory';
 import { EditorTutorial } from './EditorTutorial';
 import { HelpKata } from './HelpKata';
+import { useStepper } from '../../components/Stepper/useStepper';
 
 export function ModalKata() {
-  const [modalIsOpen, setIsOpen] = React.useState(true);
+  const [modalIsOpen, setIsOpen] = useState(true);
+  const [stepperNexBtnText, setStepperNexBtnText] = useState('Siguiente');
+  const { step, nextStep, prevStep } = useStepper();
 
   function closeModal() {
     setIsOpen(false);
+  }
+
+  function handleNextStep() {
+    const currStep = nextStep();
+    if (currStep <= 1) {
+      setStepperNexBtnText('Siguiente');
+    } else if (currStep === 2) {
+      setStepperNexBtnText('Cerrar');
+    } else {
+      closeModal();
+    }
   }
 
   return (
@@ -20,7 +34,17 @@ export function ModalKata() {
       className="Modal"
       overlayClassName="Overlay"
     >
-      <Stepper lastStepBtnText="Entendido">
+      <Stepper
+        step={step}
+        controls={
+          <Stepper.Controls
+            step={step}
+            onNextStepClick={handleNextStep}
+            onBackStepClick={prevStep}
+            nextButtonText={stepperNexBtnText}
+          />
+        }
+      >
         <Stepper.Step>
           <EditorTutorial />
         </Stepper.Step>
@@ -28,7 +52,7 @@ export function ModalKata() {
           <HelpKata />
         </Stepper.Step>
         <Stepper.Step>
-          <UserStory onClick={closeModal} />
+          <UserStory />
         </Stepper.Step>
       </Stepper>
     </Modal>

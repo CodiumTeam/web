@@ -22,7 +22,7 @@ function CourseCard({ title, description, list, imageUrl, buttonUrl }) {
           })}
         </ul>
         <div>
-          <a href={buttonUrl} className="button button--outline">
+          <a href={buttonUrl} className="button button--primary">
             Más información
           </a>
         </div>

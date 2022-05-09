@@ -3,11 +3,9 @@ import Img from '../../../img/illustrations/bootcamp/katas.png';
 
 function Precode() {
   return (
-    <section>
-      <img src={Img} />
-
+    <>
       <div className="issues alert alert--info">
-        <span className="icon icon-warning"></span>
+        <img src={Img} />
         <h3>Recuerda</h3>
         <ul>
           <li>
@@ -22,9 +20,8 @@ function Precode() {
           </li>
         </ul>
       </div>
-
-      <h2>¡Mucha suerte!</h2>
-    </section>
+      <h3>¡Mucha suerte!</h3>
+    </>
   );
 }
 
