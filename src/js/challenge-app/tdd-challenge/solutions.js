@@ -1,7 +1,7 @@
 export const solutions = [
   {
     explanation:
-      'Dentro de <strong>help.test.js</strong> hemos creado nuestro <strong>primer tests en rojo</strong>',
+      'Hemos creado un nuevo fichero <strong>help.test.js</strong> <strong>con un primer tests en rojo</strong>',
     code: `
     // Creating a failed test
     test('Should not be a leap year if year is not divisible by 4', () => {
@@ -15,7 +15,7 @@ export const solutions = [
   },
   {
     explanation:
-      'Añadimos el código minímo para que el <strong>test se ponga en verde</strong>',
+      'Hemos añadido el código más sencillo posible para que el <strong>test se ponga en verde</strong>',
     code: `
     test('Should not be a leap year if year is not divisible by 4', () => {
       expect(isLeapYear(1999)).toBe(false);
@@ -28,7 +28,7 @@ export const solutions = [
   `,
   },
   {
-    explanation: 'Añadimos un <strong>nuevo test en rojo</strong>',
+    explanation: 'Hemos añadido un <strong>nuevo test en rojo</strong>',
     code: `
     test('Should not be a leap year if year is not divisible by 4', () => {
       expect(isLeapYear(1999)).toBe(false);
@@ -53,11 +53,11 @@ export const solutions = [
     });
 
     test('Should be a leap year if year is divisible by 4', () => {
-      expect(isLeapYear(1996)).toBe(false);
+      expect(isLeapYear(1996)).toBe(true);
     });
 
     // Modified the code to pass the test
-    function isLeapYear() {
+    function isLeapYear(year) {
       return year % 4 === 0;
     }
   `,

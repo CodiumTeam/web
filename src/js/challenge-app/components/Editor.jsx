@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import sdk from '@stackblitz/sdk';
 
-function Editor({ challengeId, onLoad }) {
+function Editor({ challengeId, onLoad, openFile = ['README.md'] }) {
   const [error, setShowError] = useState(false);
   useEffect(() => {
     setShowError(true);
@@ -9,7 +9,7 @@ function Editor({ challengeId, onLoad }) {
     sdk
       .embedProjectId('code', challengeId, {
         forceEmbedLayout: true,
-        openFile: 'README.md',
+        openFile: openFile,
         view: 'editor',
         theme: 'dark',
         hideNavigation: true,

@@ -10,6 +10,7 @@ import { ModalKata } from './HelpModalContent/ModalKata';
 Modal.setAppElement('#page');
 
 function Challenge() {
+  const openFile = ['README.md', 'tests/leap.test.js'];
   const [vm, setVm] = React.useState(null);
   const [numHelpUsed, setNumHelpUsed] = React.useState(0);
   const handleSolutionClick = () => {
@@ -31,7 +32,7 @@ function Challenge() {
         },
       })
       .then(() => {
-        return vm.editor.openFile(filePath);
+        return vm.editor.openFile([...openFile, filePath]);
       });
   };
 
@@ -40,6 +41,7 @@ function Challenge() {
       <ModalKata />
       <Editor
         challengeId="tdd-challenge-1"
+        openFile={openFile}
         onLoad={(vm) => {
           setVm(vm);
         }}
@@ -53,10 +55,9 @@ function Challenge() {
   );
 }
 
-const Msg = ({ closeToast, message }) => (
+const Msg = ({ message }) => (
   <div>
     <p dangerouslySetInnerHTML={{ __html: message }}>{}</p>
-    <button onClick={closeToast}>Continuar</button>
   </div>
 );
 
