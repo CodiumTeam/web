@@ -20,14 +20,7 @@ export function ModalKata() {
       className="Modal"
       overlayClassName="Overlay"
     >
-      <Stepper
-        lastStepBtnText="Entendido"
-        onStepChange={(step, isLastStep) => {
-          if (isLastStep) {
-            closeModal();
-          }
-        }}
-      >
+      <Stepper lastStepBtnText="Entendido">
         <Stepper.Step>
           <EditorTutorial />
         </Stepper.Step>
@@ -35,7 +28,7 @@ export function ModalKata() {
           <HelpKata />
         </Stepper.Step>
         <Stepper.Step>
-          <UserStory />
+          <UserStory onClick={closeModal} />
         </Stepper.Step>
       </Stepper>
     </Modal>

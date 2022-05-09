@@ -4,7 +4,7 @@ import './stepper.scss';
 export default function Stepper({
   children,
   isDisabled,
-  onStepChange,
+  onStepChange = () => {},
   btnText = 'Siguiente',
 }) {
   const [currentStep, setCurrentStep] = useState(0);

@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from '../../../../img/challenges/dev.png';
 
-export function UserStory() {
+export function UserStory({ onClick }) {
   return (
     <div className="card modal text-left">
       <div className="wrapper">
@@ -35,6 +35,12 @@ export function UserStory() {
             bisiestos (p. ej., 2000 fue año bisiesto),
           </li>
         </ul>
+
+        <div className="text-right button__wrapper">
+          <button className="button button--primary" onClick={onClick}>
+            Entendido
+          </button>
+        </div>
       </div>
     </div>
   );

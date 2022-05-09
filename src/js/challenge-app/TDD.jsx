@@ -35,10 +35,6 @@ function TDD() {
     if (step === 4) {
       setStepperBtnText('Finalizar');
     }
-
-    if (step === 5) {
-      setIsDisable(true);
-    }
   };
 
   const handleWhatIsTddAnswer = (id) => {
