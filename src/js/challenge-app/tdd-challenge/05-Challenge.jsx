@@ -2,7 +2,7 @@
 import React from 'react';
 import Editor from '../components/Editor';
 import Modal from 'react-modal';
-import { solutions } from './solutions';
+import { help, solution } from './solutions';
 import { toast } from 'react-toastify';
 import { ModalKata } from './HelpModalContent/ModalKata';
 
@@ -13,10 +13,27 @@ function Challenge() {
   const openFile = ['README.md', 'tests/leap.test.js'];
   const [vm, setVm] = React.useState(null);
   const [numHelpUsed, setNumHelpUsed] = React.useState(0);
-  const handleSolutionClick = () => {
-    const { explanation, code } = solutions[numHelpUsed];
+  const [solutionUsed, setSolutionUsed] = React.useState(false);
 
-    updateEditorWithCode('help.test.js', code).then(() => {
+  const handleSolutionClick = () => {
+    if (solutionUsed) return;
+    const helpItem = help[numHelpUsed];
+    let explanation;
+    let code;
+
+    if (helpItem) {
+      explanation = helpItem.explanation;
+      code = helpItem.code;
+    } else {
+      setSolutionUsed(true);
+      explanation = solution.explanation;
+      code = solution.code;
+    }
+
+    updateEditorWithCode(
+      helpItem ? 'help.test.js' : 'solution.test.js',
+      code
+    ).then(() => {
       toast.success(<Msg message={explanation} />);
     });
 
@@ -47,8 +64,16 @@ function Challenge() {
         }}
       />
       {vm && (
-        <button className="button solution-btn" onClick={handleSolutionClick}>
-          {solutions.length - numHelpUsed == 0 ? 'Mostrar solución' : 'Ayúdame'}{' '}
+        <button
+          className="button solution-btn"
+          onClick={handleSolutionClick}
+          disabled={solutionUsed}
+        >
+          {help.length - numHelpUsed == 0
+            ? 'Mostrar solución'
+            : solutionUsed
+            ? 'Mostrar solución'
+            : `Ayúdame (${help.length - numHelpUsed})`}
         </button>
       )}
     </div>

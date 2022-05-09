@@ -1,7 +1,12 @@
 import React, { useState, Fragment } from 'react';
 import './stepper.scss';
 
-export default function Stepper({ children, isDisabled, onStepChange }) {
+export default function Stepper({
+  children,
+  isDisabled,
+  onStepChange,
+  lastStepBtnText = 'Siguiente',
+}) {
   const [currentStep, setCurrentStep] = useState(0);
 
   const handleNext = () => {
@@ -11,6 +16,7 @@ export default function Stepper({ children, isDisabled, onStepChange }) {
   };
 
   const isLastStep = () => {
+    console.log({ currentStep, le: children.length - 1 });
     return currentStep === children.length - 1;
   };
 
@@ -39,7 +45,7 @@ export default function Stepper({ children, isDisabled, onStepChange }) {
             onClick={handleNext}
             disabled={isDisabled}
           >
-            Continuar
+            {isLastStep() ? lastStepBtnText : 'Siguiente'}
           </button>
         </div>
       </div>

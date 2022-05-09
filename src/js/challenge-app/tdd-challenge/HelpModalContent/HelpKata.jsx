@@ -1,6 +1,9 @@
 import React from 'react';
 import HelpDev from '../../../../img/challenges/help-dev.png';
-import ButtonHelp from '../../../../img/challenges/button-1.png';
+import ButtonSolution from '../../../../img/challenges/solution.png';
+import ButtonHelpMe from '../../../../img/challenges/help-me.png';
+
+import { help } from '../solutions';
 
 export function HelpKata() {
   return (
@@ -10,23 +13,22 @@ export function HelpKata() {
       </div>
       <div className="kata-explanation">
         <h2>Necesito ayuda...</h2>
-        <img src={ButtonHelp} />
+        <img src={ButtonHelpMe} />
+        <p>Dispones de un botón que te ayudará en tus primeros pasos.</p>
         <p>
-          En tus primeros pasos con ésta kata te ayudará en tus primeros pasos.
+          Tienes hasta <strong>{help.length}</strong> soluciones para este
+          desafío.
         </p>
         <p>
-          Te ayudará a{' '}
-          <strong>
-            crear tus primeros tests y añadirá código de producción
-          </strong>{' '}
-          dentro de un <strong>fichero llamado solution.spec.js</strong>{' '}
-          ¡Utilizalo!
+          Una vez utilizado todas las ayudas. El botón de ayuda desaparecerá
         </p>
 
         <h3>Resolución de la kata</h3>
+        <img src={ButtonSolution} />
+
         <p>
-          Éste mismo botón te mostrará la solución de la kata después de haberte
-          ayudado con tus primero pasos
+          Tras usar todas las ayudas disponibles. Aparecerá un nuevo botón que
+          te permitirá ver la solución de toda la kata
         </p>
       </div>
     </div>

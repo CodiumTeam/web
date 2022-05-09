@@ -21,6 +21,7 @@ export function ModalKata() {
       overlayClassName="Overlay"
     >
       <Stepper
+        lastStepBtnText="Entendido"
         onStepChange={(step, isLastStep) => {
           if (isLastStep) {
             closeModal();

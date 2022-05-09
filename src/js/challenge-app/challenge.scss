@@ -131,6 +131,11 @@ ul {
   &:hover {
     color: #383838;
   }
+
+  &:disabled {
+    background-color: #e6e6e6;
+    color: rgba(0, 0, 0, 0.4);
+  }
 }
 
 iframe {
