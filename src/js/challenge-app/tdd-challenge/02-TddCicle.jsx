@@ -19,7 +19,7 @@ function TDDCycle({ onSelect, userAnswer = null }) {
   ];
 
   return (
-    <section className="card">
+    <section>
       <h2 className="text-center tab-header">
         ¿Cuál son los pasos para aplicar TDD?
       </h2>

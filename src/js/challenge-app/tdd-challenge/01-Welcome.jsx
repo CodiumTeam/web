@@ -3,7 +3,7 @@ import Img from '../../../img/challenges/welcome.png';
 
 function Welcome() {
   return (
-    <div className="card">
+    <div>
       <div>
         <img src={Img} alt="Welcome to codium" />
       </div>

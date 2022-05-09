@@ -144,11 +144,17 @@ iframe {
 
 .ReactModal__Content {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   top: 70px;
   overflow: auto;
   background-color: #fff;
-  transform: translate(-50%, 0px);
+
+  @media screen and(min-width: 768px) {
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, 0px);
+  }
 }
 
 .ReactModal__Overlay {
@@ -181,7 +187,11 @@ iframe {
 
 .modal {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+  }
 
   .wrapper {
     margin-right: 32px;
@@ -189,9 +199,16 @@ iframe {
 
   img {
     max-width: 500px;
+    width: 100%;
   }
 }
 
 .text-right {
   text-align: right;
+}
+
+code {
+  font-size: 1rem;
+  color: #e83e8c;
+  word-break: break-word;
 }

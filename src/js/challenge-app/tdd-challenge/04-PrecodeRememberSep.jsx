@@ -3,7 +3,7 @@ import Img from '../../../img/illustrations/bootcamp/katas.png';
 
 function Precode() {
   return (
-    <section className="card">
+    <section>
       <img src={Img} />
 
       <div className="issues alert alert--info">

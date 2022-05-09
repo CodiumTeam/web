@@ -9,7 +9,7 @@ function WhatIsTDD({ onSelect, userAnswer = null }) {
     { id: '4', text: 'Es un cuento para niños.' },
   ];
   return (
-    <section className="card">
+    <section>
       <h2 className="text-center tab-header">Tdd es...</h2>
       <Options
         onSelect={onSelect}
