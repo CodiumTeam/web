@@ -32,10 +32,7 @@ export default function Stepper({
 
         <div className="stepper__footer">
           {currentStep > 0 && (
-            <button
-              className="button button--secondary"
-              onClick={handlePrevious}
-            >
+            <button className="button button--outline" onClick={handlePrevious}>
               Atrás
             </button>
           )}
