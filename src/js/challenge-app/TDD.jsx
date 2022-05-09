@@ -34,6 +34,8 @@ function TDD() {
 
     if (step === 4) {
       setStepperBtnText('Finalizar');
+    } else {
+      setStepperBtnText('Siguiente');
     }
   };
 
