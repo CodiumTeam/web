@@ -28,7 +28,7 @@ export const help = [
   `,
   },
   {
-    explanation: 'Hemos añadido un <strong>nuevo test en rojo</strong>',
+    explanation: 'Añadimos un <strong>nuevo test en rojo</strong>',
     code: `
     test('Should not be a leap year if year is not divisible by 4', () => {
       expect(isLeapYear(1997)).toBe(false);
@@ -46,7 +46,7 @@ export const help = [
   },
   {
     explanation:
-      'Modificamos el código de producción para que se ponga<strong>el nuevo test en verde</strong>',
+      'Modificamos el código de producción para que se ponga <strong>el nuevo test en verde</strong>',
     code: `
     test('Should not be a leap year if year is not divisible by 4', () => {
       expect(isLeapYear(1997)).toBe(false);
