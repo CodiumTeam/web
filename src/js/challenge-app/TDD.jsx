@@ -11,8 +11,6 @@ import Congratulations from './tdd-challenge/06-Congratulations';
 import { useStepper } from './components/Stepper/useStepper';
 import WarningImg from '../../img/challenges/warning.png';
 
-import './challenge.scss';
-
 listenDropdown();
 
 function TDD() {
