@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Stepper from '../../components/Stepper/Stepper';
 import { UserStory } from './UserStory';
-import { EditorTutorial } from './EditorTutorial';
-import { HelpKata } from './HelpKata';
 import { useStepper } from '../../components/Stepper/useStepper';
+import EditorTutorial from '../../components/EditorTutorial';
+import HelpKata from '../../components/HelpKata';
 
 export function ModalKata() {
   const [modalIsOpen, setIsOpen] = useState(true);

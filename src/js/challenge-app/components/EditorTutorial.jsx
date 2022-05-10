@@ -1,8 +1,8 @@
 import React from 'react';
-import EditorImg from '../../../../img/challenges/editor-1.png';
-import EditorTerminal from '../../../../img/challenges/editor-2.png';
+import EditorImg from '../../../img/challenges/editor-1.png';
+import EditorTerminal from '../../../img/challenges/editor-2.png';
 
-export function EditorTutorial() {
+function EditorTutorial() {
   return (
     <section className="card modal text-left">
       <div className="wrapper">
@@ -36,3 +36,5 @@ export function EditorTutorial() {
     </section>
   );
 }
+
+export default EditorTutorial;

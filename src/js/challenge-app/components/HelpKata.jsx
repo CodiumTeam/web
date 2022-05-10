@@ -1,11 +1,11 @@
 import React from 'react';
-import HelpDev from '../../../../img/challenges/help-dev.png';
-import ButtonSolution from '../../../../img/challenges/solution.png';
-import ButtonHelpMe from '../../../../img/challenges/help-me.png';
+import HelpDev from '../../../img/challenges/help-dev.png';
+import ButtonSolution from '../../../img/challenges/solution.png';
+import ButtonHelpMe from '../../../img/challenges/help-me.png';
 
-import { help } from '../solutions';
+import { help } from '../legacy-challenge/solutions';
 
-export function HelpKata() {
+function HelpKata() {
   return (
     <div className="card modal text-left">
       <div className="wrapper">
@@ -35,3 +35,5 @@ export function HelpKata() {
     </div>
   );
 }
+
+export default HelpKata;
