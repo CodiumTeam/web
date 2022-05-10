@@ -12,7 +12,7 @@ export function HelpKata() {
         <img src={HelpDev} />
       </div>
       <div className="kata-explanation">
-        <h2>Necesito ayuda...</h2>
+        <h2>Estamos aquí para ayudarte</h2>
         <img src={ButtonHelpMe} />
         <p>
           Si no sabes por dónde empezar. El botón ver iteración te ayudará con
