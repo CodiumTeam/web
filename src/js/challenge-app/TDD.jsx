@@ -59,11 +59,9 @@ function TDD() {
     setIsDisable(false);
   }
 
-  function handleTDDCicleAnswer() {
-    return (id) => {
-      setAnswers({ ...answers, tddCycle: id });
-      setIsDisable(false);
-    };
+  function handleTDDCicleAnswer(id) {
+    setAnswers({ ...answers, tddCycle: id });
+    setIsDisable(false);
   }
 
   return (
@@ -94,7 +92,7 @@ function TDD() {
         </Stepper.Step>
         <Stepper.Step>
           <TDDCycle
-            onSelect={handleTDDCicleAnswer()}
+            onSelect={handleTDDCicleAnswer}
             userAnswer={answers.tddCycle}
           />
         </Stepper.Step>
