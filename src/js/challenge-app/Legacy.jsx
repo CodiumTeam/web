@@ -6,6 +6,7 @@ import Welcome from './legacy-challenge/01-Welcome';
 import WhatIsLegacy from './legacy-challenge/02-WhatIsLegacy';
 import LegacyChallenge from './legacy-challenge/03-Challenge';
 import Congratulations from './legacy-challenge/04-Congratulations';
+import ModalExistWarning from './components/ModalExistWarning';
 
 listenDropdown();
 
@@ -14,11 +15,21 @@ function Legacy() {
   const { step, nextStep, prevStep } = useStepper();
   const [stepperBtnText, setStepperBtnText] = useState('Siguiente');
   const [isDisable, setIsDisable] = useState(false);
+  const [showExitModal, setShowExitModal] = useState(false);
   const [answers, setAnswers] = useState({
     whatIsLegacy: null,
   });
 
   function handleNextStep() {
+    if (step === codeStep) {
+      setShowExitModal(true);
+      return;
+    }
+
+    goToNext();
+  }
+
+  function goToNext() {
     const whatIsLegacyStep = 1;
     const currStep = nextStep();
     setStepperBtnText('Siguiente');
@@ -77,6 +88,18 @@ function Legacy() {
           <Congratulations />
         </Stepper.Step>
       </Stepper>
+      {showExitModal && (
+        <ModalExistWarning
+          modalIsOpen={showExitModal}
+          onExit={() => {
+            setShowExitModal(false);
+            goToNext();
+          }}
+          onCancel={() => {
+            setShowExitModal(false);
+          }}
+        />
+      )}
     </>
   );
 }
