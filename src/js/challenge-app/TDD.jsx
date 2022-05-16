@@ -13,7 +13,11 @@ import { useChallenge } from './useChallenge';
 listenDropdown();
 
 function TDD() {
-  const codeStep = 4;
+  const steps = {
+    whatIsTdd: 1,
+    tddCycle: 2,
+    codeStep: 4,
+  };
   const [answers, setAnswers] = useState({
     whatIsTdd: null,
     tddCycle: null,
@@ -29,12 +33,12 @@ function TDD() {
     hideExitModal,
     updateRequiredSteps,
   } = useChallenge({
-    codeStep,
-    requiredSteps: [1, 2],
+    codeStep: steps.codeStep,
+    requiredSteps: [steps.whatIsTdd, steps.tddCycle],
   });
 
   function handleWhatIsTddAnswer(id) {
-    updateRequiredSteps([2]);
+    updateRequiredSteps([steps.tddCycle]);
     setAnswers({ ...answers, whatIsTdd: id });
   }
 
@@ -47,9 +51,8 @@ function TDD() {
     <>
       <Stepper
         step={step}
-        codeStep={4}
         controls={
-          step >= codeStep + 1 ? null : (
+          step >= steps.codeStep + 1 ? null : (
             <Stepper.Controls
               step={step}
               onNextStepClick={() => {
@@ -60,7 +63,7 @@ function TDD() {
               }}
               nextButtonText={stepperBtnText}
               nextButtonDisabled={isDisable}
-              hideBackButton={step === codeStep}
+              hideBackButton={step === steps.codeStep}
             />
           )
         }
