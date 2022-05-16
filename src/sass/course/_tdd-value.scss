@@ -3,6 +3,11 @@
   flex-direction: column;
   align-content: center;
   margin-top: 3rem;
+  align-items: center;
+
+  .tdd-value__title {
+    margin-top: 0;
+  }
 
   &__item {
     &:first-child {
