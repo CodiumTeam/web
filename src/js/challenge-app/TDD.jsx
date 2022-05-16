@@ -7,73 +7,57 @@ import TDDCycle from './tdd-challenge/03-TddCicle';
 import Precode from './tdd-challenge/04-PrecodeRememberSep';
 import Challenge from './tdd-challenge/05-Challenge';
 import Congratulations from './tdd-challenge/06-Congratulations';
-import { useStepper } from './components/Stepper/useStepper';
 import ModalExistWarning from './components/ModalExistWarning';
+import { useChallenge } from './useChallenge';
 
 listenDropdown();
 
 function TDD() {
   const codeStep = 4;
-  const { step, nextStep, prevStep } = useStepper();
-  const [stepperBtnText, setStepperBtnText] = useState('Siguiente');
   const [answers, setAnswers] = useState({
     whatIsTdd: null,
     tddCycle: null,
   });
-  const [isDisable, setIsDisable] = useState(false);
-  const [showExitModal, setShowExitModal] = useState(false);
 
-  function handleNextStep() {
-    if (step === codeStep) {
-      setShowExitModal(true);
-      return;
-    }
-
-    goToNext();
-  }
-
-  function goToNext() {
-    const currStep = nextStep();
-    const whatIsTDDStep = 1;
-    const tddCycleStep = 2;
-    setStepperBtnText('Siguiente');
-
-    if ([whatIsTDDStep, tddCycleStep].includes(currStep)) {
-      if (answers.tddCycle === null || answers.tddCycle === null) {
-        setIsDisable(true);
-      }
-    }
-
-    if (currStep === codeStep) {
-      setStepperBtnText('Finalizar');
-    }
-  }
-
-  function handleBackStep() {
-    setIsDisable(false);
-    prevStep();
-  }
+  const {
+    step,
+    handleNextStep,
+    handleBackStep,
+    stepperBtnText,
+    isDisable,
+    showExitModal,
+    hideExitModal,
+    updateRequiredSteps,
+  } = useChallenge({
+    codeStep,
+    requiredSteps: [1, 2],
+  });
 
   function handleWhatIsTddAnswer(id) {
+    updateRequiredSteps([2]);
     setAnswers({ ...answers, whatIsTdd: id });
-    setIsDisable(false);
   }
 
   function handleTDDCicleAnswer(id) {
+    updateRequiredSteps([]);
     setAnswers({ ...answers, tddCycle: id });
-    setIsDisable(false);
   }
 
   return (
     <>
       <Stepper
         step={step}
+        codeStep={4}
         controls={
           step >= codeStep + 1 ? null : (
             <Stepper.Controls
               step={step}
-              onNextStepClick={handleNextStep}
-              onBackStepClick={handleBackStep}
+              onNextStepClick={() => {
+                handleNextStep(false);
+              }}
+              onBackStepClick={() => {
+                handleBackStep(false);
+              }}
               nextButtonText={stepperBtnText}
               nextButtonDisabled={isDisable}
               hideBackButton={step === codeStep}
@@ -108,13 +92,12 @@ function TDD() {
       </Stepper>
       {showExitModal && (
         <ModalExistWarning
-          modalIsOpen={showExitModal}
           onExit={() => {
-            setShowExitModal(false);
-            goToNext();
+            hideExitModal();
+            handleNextStep(true);
           }}
           onCancel={() => {
-            setShowExitModal(false);
+            hideExitModal();
           }}
         />
       )}

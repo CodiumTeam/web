@@ -2,10 +2,10 @@ import React from 'react';
 import Modal from 'react-modal';
 import WarningImg from '../../../img/challenges/warning.png';
 
-function ModalExistWarning({ modalIsOpen, onExit, onCancel }) {
+function ModalExistWarning({ onExit, onCancel }) {
   return (
     <Modal
-      isOpen={modalIsOpen}
+      isOpen={true}
       className="Modal"
       overlayClassName="Overlay"
       onRequestClose={() => {}}
