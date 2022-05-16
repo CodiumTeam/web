@@ -12,7 +12,7 @@ function Welcome() {
       </h2>
       <p>
         Antes de empezar la prueba. Repasemos primero unos conceptos básicos de
-        Legacy code.
+        código legado.
       </p>
     </div>
   );
