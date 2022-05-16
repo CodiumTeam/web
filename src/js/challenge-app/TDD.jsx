@@ -47,12 +47,16 @@ function TDD() {
     setAnswers({ ...answers, tddCycle: id });
   }
 
+  function isInLastStep() {
+    return step >= steps.codeStep + 1;
+  }
+
   return (
     <>
       <Stepper
         step={step}
         controls={
-          step >= steps.codeStep + 1 ? null : (
+          isInLastStep() ? null : (
             <Stepper.Controls
               step={step}
               onNextStepClick={() => {
