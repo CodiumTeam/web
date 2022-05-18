@@ -23,16 +23,16 @@ export function UserStory() {
             2017, 2018, 2019).
           </li>
           <li>
-            Los años divisibles por 4 SON bisiestos (p. ej., 2008, 2012, 2016),
+            Los años divisibles por 4 SON bisiestos (p. ej., 2008, 2012, 2016).
           </li>
           <li>
             Los años divisibles por 100, a pesar de ser divisibles por 4, NO son
             bisiestos (p. ej., 1700, 1800 y 1900 no son años bisiestos ni lo
-            será el 2100),
+            será el 2100).
           </li>
           <li>
             Los años divisibles por 400, a pesar de ser divisibles por 100, SON
-            bisiestos (p. ej., 2000 fue año bisiesto),
+            bisiestos (p. ej., 2000 fue año bisiesto).
           </li>
         </ul>
       </div>

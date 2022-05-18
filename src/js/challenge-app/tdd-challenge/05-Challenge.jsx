@@ -57,7 +57,7 @@ function Challenge() {
     <div className="editor-wrapper">
       <ModalKata />
       <Editor
-        challengeId="tdd-challenge-1"
+        challengeId="tdd-challenge-1-7wvhct"
         openFile={openFile}
         onLoad={(vm) => {
           setVm(vm);
