@@ -1,25 +1,12 @@
 # cat -e -t -v Makefile
-define HELP
-Valid commands are:
-    - up: Start the server
-    - down: Stop the server
-    - install: Install the dependencies
-    - FILE_PATH=<path> convert: Adjust the customer logo to the required format
-		- test: Run cypress tests. Server should be running at http://localhost:3000
-
- Please execute "make <command>". Example make servers-restart
-
-endef
-
-export HELP
-help:
-	@printf "$$HELP"
-
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_PHP_IMAGE = php:8.0
 DOCKER_NODE_IMAGE = node:16
 DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:host-gateway --entrypoint cypress cypress/included:6.2.1 run \
+
+.PHONY: default
+default: start
 
 .PHONY: up
 up: build
