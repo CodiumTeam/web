@@ -7,6 +7,14 @@
   transform: translateX(0);
   animation: fadeInRightToLeft 2.3s 0s;
   animation-fill-mode: both;
+
+  &--second {
+    animation-delay: 0.5s;
+  }
+
+  &--third {
+    animation-delay: 0.7s;
+  }
 }
 
 .svg-circle {
