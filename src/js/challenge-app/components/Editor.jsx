@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import sdk from '@stackblitz/sdk';
 
+let isLoading = false;
+
 function Editor({ challengeId, onLoad, openFile = ['README.md'] }) {
   const [error, setShowError] = useState(false);
   useEffect(() => {
-    setShowError(true);
+    if (isLoading) return;
+
+    isLoading = true;
 
     sdk
       .embedProjectId('code', challengeId, {
@@ -15,9 +19,11 @@ function Editor({ challengeId, onLoad, openFile = ['README.md'] }) {
         hideNavigation: true,
       })
       .then((vm) => {
+        isLoading = false;
         onLoad(vm);
       })
       .catch(() => {
+        isLoading = false;
         setShowError(true);
       });
 
