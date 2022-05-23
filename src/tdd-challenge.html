@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <%- include('partials/analytics_head') %>
     <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
     <% var og_image = host + "/img/og-tdd.png" %>
 
@@ -19,6 +20,7 @@
 </head>
 
 <body class="home-page" id="page">
+  <%- include('partials/analytics_body') %>
   <%- include('partials/analytics') %>
 
   <%- include('partials/header/landing-navbar', {

@@ -4,6 +4,7 @@
 <html lang="es">
   <!--<![endif]-->
   <head>
+    <%- include('partials/analytics_head') %>
     <%- include('partials/metatags', {
         title: 'Codium - Resultados, Calidad y Mejora',
         description: 'Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.',
@@ -15,7 +16,8 @@
     />
   </head>
   <body id="body">
-  <%- include('partials/analytics') %>
+    <%- include('partials/analytics_body') %>
+    <%- include('partials/analytics') %>
 
     <%- include('partials/header/landing-navbar', {
       menu: []
