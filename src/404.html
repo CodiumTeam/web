@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <%- include('partials/analytics_head') %>
   <meta name="robots" content="noindex">
   <%- include('partials/metatags', {
         title: 'Codium: Not found',
@@ -10,8 +11,7 @@
 </head>
 
 <body class="home-page">
-  <%- include('partials/analytics') %>
-
+  <%- include('partials/analytics_body') %>
   <%- include('partials/header/landing-navbar', {
       menu: [
         {
