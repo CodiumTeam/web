@@ -11,3 +11,11 @@ export function initTrackEvents() {
 export function trackEvent(category, action, label) {
   window.ga && window.ga('send', 'event', category, action, label);
 }
+
+export function trackEventGTag(eventName, opts = {}) {
+  window.dataLayer &&
+    window.dataLayer.push({
+      event: eventName,
+      ...opts,
+    });
+}

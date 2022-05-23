@@ -209,6 +209,9 @@ window.captchaCompleted = () => {
       grecaptcha.reset();
 
       if (response.ok) {
+        events.trackEventGTag('generate_lead', {
+          trainingType,
+        });
         events.trackEvent('contact_us', 'sent', trainingType);
         $form.remove();
         $errorBlock.remove();
