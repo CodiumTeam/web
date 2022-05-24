@@ -7,6 +7,8 @@ function createEmailTemplate($params) {
     $trainingType = $params['trainingType'] ?? '';
     $numEmployees = $params['numEmployees'] ?? 'No specified';
     $location = $params['location'] ?? 'No specified';
+    $utm_source =  $params['utm_source'] ?? 'Unknown';
+    $utm_term =  $params['utm_term'] ?? 'Unknown';
 
     $trainings = [
         'legacy_training' => 'Curso de Legacy',
@@ -230,6 +232,39 @@ function createEmailTemplate($params) {
                                                         Empleados: <b>$numEmployees</b><br />
 
                                                         Localidad: <b>$location</b><br />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-size: 0px; word-break: break-word">
+                                                        <p
+                                                            style="
+                                                            border-top: solid 1px #e6ecf1;
+                                                            font-size: 1;
+                                                            margin: 0px auto;
+                                                            width: 100%;"></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        align="left"
+                                                        style="
+                                                        font-size: 0px;
+                                                        padding: 10px 25px;
+                                                        word-break: break-word;">
+                                                        <div
+                                                            style="
+                                                                font-family: -apple-system, system-ui, PingFang TC,
+                                                                Noto Sans TC, Helvetica, sans-serif;
+                                                                font-size: 15px;
+                                                                line-height: 200%;
+                                                                text-align: left;
+                                                                color: #8e9696;">
+                                                        <b>Analytics</b>
+                                                        <br />
+                                                        Source: <b>$utm_source</b><br />
+
+                                                        Searched terms: <b>$utm_term</b><br />
                                                         </div>
                                                     </td>
                                                 </tr>

@@ -184,6 +184,11 @@ function isForBusiness(value) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const utm_source = urlParams.get('utm_source') || '';
+  const utm_term = urlParams.get('utm_term') || '';
+
   const isValid = validateForm();
 
   if (!isValid) {
@@ -198,6 +203,8 @@ window.captchaCompleted = () => {
 
   const trainingType = $form.getAttribute('data-training-type');
   formData.append('trainingType', trainingType);
+  formData.append('utm_source', utm_source);
+  formData.append('utm_term', utm_term);
 
   document.getElementById('js-submit').disabled = true;
 
@@ -209,7 +216,7 @@ window.captchaCompleted = () => {
       grecaptcha.reset();
 
       if (response.ok) {
-        events.trackEventGTag('generate_lead', {
+        events.trackEventGTag('contact_us', {
           trainingType,
         });
         events.trackEvent('contact_us', 'sent', trainingType);
