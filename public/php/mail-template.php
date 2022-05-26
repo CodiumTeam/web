@@ -7,8 +7,8 @@ function createEmailTemplate($params) {
     $trainingType = $params['trainingType'] ?? '';
     $numEmployees = $params['numEmployees'] ?? 'No specified';
     $location = $params['location'] ?? 'No specified';
-    $utm_source =  $params['utm_source'] ?? 'Unknown';
-    $utm_term =  $params['utm_term'] ?? 'Unknown';
+    $utm_source =  $params['utm_source'] ?? 'No specified';
+    $utm_term =  $params['utm_term'] ?? 'No specified';
 
     $trainings = [
         'legacy_training' => 'Curso de Legacy',

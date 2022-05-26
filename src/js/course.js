@@ -186,7 +186,7 @@ function isForBusiness(value) {
 window.captchaCompleted = () => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const utm_source = urlParams.get('utm_source') || '';
+  const utm_source = urlParams.get('utm_source') || 'Direct';
   const utm_term = urlParams.get('utm_term') || '';
 
   const isValid = validateForm();
@@ -203,14 +203,8 @@ window.captchaCompleted = () => {
 
   const trainingType = $form.getAttribute('data-training-type');
   formData.append('trainingType', trainingType);
-
-  if (utm_source) {
-    formData.append('utm_source', utm_source);
-  }
-
-  if (utm_term) {
-    formData.append('utm_term', utm_term);
-  }
+  formData.append('utm_source', utm_source);
+  formData.append('utm_term', utm_term);
 
   document.getElementById('js-submit').disabled = true;
 

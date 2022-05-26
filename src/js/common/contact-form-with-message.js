@@ -59,14 +59,21 @@ window.captchaCompleted = () => {
     return;
   }
 
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const utm_source = urlParams.get('utm_source') || 'Direct';
+  const utm_term = urlParams.get('utm_term') || '';
   const $form = document.getElementById('contactForm');
   const formData = new FormData($form);
   const trainingType = $form.getAttribute('data-training-type');
-  formData.append('trainingType', trainingType);
-
   const $errorBlock = document.getElementById('js-show-error');
 
-  document.getElementById('js-submit').disabled = true;
+  formData.append('trainingType', trainingType);
+  formData.append('utm_source', utm_source);
+  formData.append('utm_term', utm_term);
+
+  const $sentButton = document.getElementById('js-submit');
+  $sentButton.disabled = true;
 
   fetch('/php/contact.php', {
     method: 'POST',
@@ -75,6 +82,9 @@ window.captchaCompleted = () => {
     .then(function (response) {
       grecaptcha.reset();
       if (response.ok) {
+        events.trackEventGTag('contact_us', {
+          trainingType,
+        });
         events.trackEvent('contact_us', 'sent', 'home');
         $form.remove();
 
@@ -93,7 +103,7 @@ window.captchaCompleted = () => {
         $errorBlock.classList.remove('hidden');
         scrollToElement($errorBlock);
         events.trackEvent('contact_us', 'failed', 'home');
-        document.getElementById('js-submit').disabled = false;
+        $sentButton.disabled = false;
       }
     })
     .catch(() => {
@@ -101,6 +111,6 @@ window.captchaCompleted = () => {
       $errorBlock.classList.remove('hidden');
       scrollToElement($errorBlock);
       events.trackEvent('contact_us', 'failed', 'home');
-      document.getElementById('js-submit').disabled = false;
+      $sentButton.disabled = false;
     });
 };
