@@ -71,6 +71,7 @@ window.captchaCompleted = () => {
   formData.append('trainingType', trainingType);
   formData.append('utm_source', utm_source);
   formData.append('utm_term', utm_term);
+  formData.append('referer', document.referrer);
 
   const $sentButton = document.getElementById('js-submit');
   $sentButton.disabled = true;

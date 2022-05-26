@@ -9,6 +9,7 @@ function createEmailTemplate($params) {
     $location = $params['location'] ?? 'No specified';
     $utm_source =  $params['utm_source'] ?? 'No specified';
     $utm_term =  $params['utm_term'] ?? 'No specified';
+    $referrer =  $params['referrer'] ?? 'No specified';
 
     $trainings = [
         'legacy_training' => 'Curso de Legacy',
@@ -265,6 +266,8 @@ function createEmailTemplate($params) {
                                                         Source: <b>$utm_source</b><br />
 
                                                         Searched terms: <b>$utm_term</b><br />
+
+                                                        Referrer: <b>$referrer</b><br />
                                                         </div>
                                                     </td>
                                                 </tr>

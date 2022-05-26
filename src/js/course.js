@@ -184,11 +184,6 @@ function isForBusiness(value) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const utm_source = urlParams.get('utm_source') || 'Direct';
-  const utm_term = urlParams.get('utm_term') || '';
-
   const isValid = validateForm();
 
   if (!isValid) {
@@ -200,13 +195,19 @@ window.captchaCompleted = () => {
   const formData = new FormData($form);
   const url = $form.getAttribute('action');
   const $errorBlock = document.getElementById('js-show-error');
-
+  const $sentButton = document.getElementById('js-submit');
   const trainingType = $form.getAttribute('data-training-type');
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const utm_source = urlParams.get('utm_source') || 'Direct';
+  const utm_term = urlParams.get('utm_term') || '';
+
   formData.append('trainingType', trainingType);
   formData.append('utm_source', utm_source);
   formData.append('utm_term', utm_term);
+  formData.append('referrer', document.referrer);
 
-  document.getElementById('js-submit').disabled = true;
+  $sentButton.disabled = true;
 
   fetch(url, {
     method: 'POST',
@@ -237,7 +238,7 @@ window.captchaCompleted = () => {
         $errorBlock.classList.remove('hidden');
         scrollToElement($errorBlock);
         events.trackEvent('contact_us', 'failed', trainingType);
-        document.getElementById('js-submit').disabled = false;
+        $sentButton.disabled = false;
       }
     })
     .catch(() => {
@@ -245,6 +246,6 @@ window.captchaCompleted = () => {
       $errorBlock.classList.remove('hidden');
       scrollToElement($errorBlock);
       events.trackEvent('contact_us', 'failed', trainingType);
-      document.getElementById('js-submit').disabled = false;
+      $sentButton.disabled = false;
     });
 };
