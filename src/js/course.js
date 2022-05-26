@@ -205,7 +205,7 @@ window.captchaCompleted = () => {
   formData.append('trainingType', trainingType);
   formData.append('utm_source', utm_source);
   formData.append('utm_term', utm_term);
-  formData.append('referrer', document.referrer);
+  formData.append('referrer', document.referrer || document.location.href);
 
   $sentButton.disabled = true;
 
