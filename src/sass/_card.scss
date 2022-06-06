@@ -238,3 +238,38 @@
   max-width: 500px;
   margin: 2rem auto;
 }
+
+.card.card--services {
+  $size-space: 16px;
+  max-width: 13.75rem; // 220px
+  min-width: 190px;
+  padding: $size-space;
+
+  .card__image {
+    min-height: 140px;
+    width: 100%;
+    margin-top: $size-space * -1;
+    margin-left: $size-space * -1;
+    max-width: none;
+    box-sizing: content-box;
+    padding-right: $size-space * 2;
+    margin-bottom: $size-space;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  .card__more-info {
+    margin: 0;
+    margin-top: $size-space;
+    color: $dark-grey;
+
+    &:hover {
+      color: darken($dark-grey, 5%);
+      cursor: pointer;
+    }
+  }
+}
