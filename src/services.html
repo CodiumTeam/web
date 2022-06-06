@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="index, follow">
+    <%- include('partials/analytics_head') %>
+    <%- include('partials/metatags', {
+        title: 'Codium: Formación y desarrollo de producto',
+        description: 'Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.',
+    }) %>
+    <link rel="canonical" href="https://www.codium.team/"/>
+  </head>
+
+  <body class="home-page">
+    <%- include('partials/analytics_body') %>
+
+    <%- include('partials/header/landing-navbar', {
+      menu: [
+        {
+          title: 'Talleres',
+          url: '#workshops',
+        },
+        {
+          title: 'Formaciones',
+          url: '#training',
+        },
+        {
+          title: 'Consultoría',
+          url: '#support',
+        },
+        {
+          title: 'FAQs',
+          url: '#faqs',
+        },
+        {
+          title: 'Contactar',
+          url: '#contact',
+        },
+      ]
+    }) %>
+
+
+    <main class="main">
+
+      <div class="block">
+        <div class="text-center hero--services">
+          <h1 class="title">Catálogo de los servicios de Codium</h1>
+          <p class="text--summary">Éste es el listado de servicios que tenemos empaquetados y listos para tu empresa y equipos de desarrollo</p>
+        </div>
+      </div>
+
+      <div class="block block--white" id="workshops">
+        <div class="text-center">
+          <h1 class="title">Talleres</h1>
+          <p class="text--summary">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
+        </div>
+      </div>
+
+     <div class="block block--lila" id="training">
+        <div class="text-center">
+          <h1 class="title">Formaciones específicas</h1>
+          <p class="text--summary">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
+        </div>
+      </div>
+
+      <div class="block block--grey" id="support">
+        <div class="text-center">
+          <h1 class="title">Consultoría técnica</h1>
+          <p class="text--summary">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
+        </div>
+      </div>
+
+      <section class="contact block block--lila" id="contact">
+        <%- include('partials/contact-form') %>
+      </section>
+
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://www.google.com/recaptcha/api.js"
+    ></script>
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=fetch"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./js/site.js"></script>
+  </body>
+</html>
