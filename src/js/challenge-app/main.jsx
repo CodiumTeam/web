@@ -4,7 +4,6 @@ import TDD from './TDD';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './challenge.scss';
-import Legacy from './Legacy';
 
 function mountApp() {
   const root = document.getElementById('root');
@@ -13,7 +12,7 @@ function mountApp() {
   const Challenge = ({ type }) => {
     if (type === 'tdd') return <TDD />;
 
-    return <Legacy />;
+    return null;
   };
 
   ReactDOM.createRoot(document.getElementById('root')).render(

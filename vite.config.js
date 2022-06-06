@@ -17,7 +17,6 @@ const inputs = {
   development: resolve(SRC, 'desarrollo.html'),
   404: resolve(SRC, '404.html'),
   'tdd-challenge': resolve(SRC, 'tdd-challenge.html'),
-  'legacy-challenge': resolve(SRC, 'legacy-challenge.html'),
 };
 
 export default defineConfig({

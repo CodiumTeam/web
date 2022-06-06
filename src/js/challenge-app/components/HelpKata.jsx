@@ -3,9 +3,7 @@ import HelpDev from '../../../img/challenges/help-dev.png';
 import ButtonSolution from '../../../img/challenges/solution.png';
 import ButtonHelpMe from '../../../img/challenges/help-me.png';
 
-import { help } from '../legacy-challenge/solutions';
-
-function HelpKata() {
+function HelpKata({ numSolutions }) {
   return (
     <div className="card modal text-left">
       <div className="wrapper">
@@ -19,7 +17,7 @@ function HelpKata() {
           tus primeros pasos.
         </p>
         <p>
-          Tienes hasta <strong>{help.length}</strong> iteraciones disponibles
+          Tienes hasta <strong>{numSolutions}</strong> iteraciones disponibles
           para éste desafío.
         </p>
         <p>Una vez visto todas las iteraciones. El botón desaparecerá</p>

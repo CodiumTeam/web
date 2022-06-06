@@ -5,6 +5,7 @@ import { UserStory } from './UserStory';
 import { useStepper } from '../../components/Stepper/useStepper';
 import EditorTutorial from '../../components/EditorTutorial';
 import HelpKata from '../../components/HelpKata';
+import { help } from '../solutions';
 
 export function ModalKata() {
   const [modalIsOpen, setIsOpen] = useState(true);
@@ -49,7 +50,7 @@ export function ModalKata() {
           <EditorTutorial />
         </Stepper.Step>
         <Stepper.Step>
-          <HelpKata />
+          <HelpKata numSolutions={help.length} />
         </Stepper.Step>
         <Stepper.Step>
           <UserStory />
