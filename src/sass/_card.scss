@@ -245,6 +245,12 @@
   min-width: 190px;
   padding: $size-space;
 
+  .card--services__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+  }
+
   .card__image {
     min-height: 140px;
     width: 100%;
@@ -266,10 +272,19 @@
     margin: 0;
     margin-top: $size-space;
     color: $dark-grey;
+    font-size: 0.85em;
 
     &:hover {
       color: darken($dark-grey, 5%);
       cursor: pointer;
     }
+  }
+}
+
+.card.card--services.card--open {
+  max-width: 100%;
+  .card--services__content {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
   }
 }

@@ -1,9 +1,39 @@
-<article class="card card--services">
+<article class="card card--services" data-type="card-services">
   <div class="card__image" style="background-image: url('https://via.placeholder.com/450');"></div>
 
-  <div>
+  <section>
      <p class="small-title text--left"><%= title %></p>
-     <p class="text--left card__more-info"><span>Más información</span></p>
-  </div>
+
+     <article data-type="card-services-description" class="card--services__content">
+       <p class="text-dark-grey text--left">
+         EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of shanty structures
+       </p>
+
+       <p class="text-dark-grey text--left">
+         EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of shanty structures
+       </p>
+
+       <ul>
+          <li class="text-dark-grey text--left">1. 16 horas</li>
+          <li class="text-dark-grey text--left">2. Remoto o presencial</li>
+          <li class="text-dark-grey text--left">1. Java, Python, PHP...</li>
+          <li class="text-dark-grey text--left">1. Tambien en inglés</li>
+       </ul>
+
+       <div class="button__wrapper">
+          <a
+            class="button button--primary"
+            href="#contactForm"
+            data-trackevent="contact_us.show_form.course_value"
+          >
+            ¡Me interesa!
+          </a>
+
+          <p class="text--left card__more-info" data-type="card-services-view-less"><span>Ver menos información</span></p>
+        </div>
+     </article>
+
+     <p class="text--left card__more-info" data-type="card-services-view-more"><span>Más información</span></p>
+  </section>
 
 </article>
