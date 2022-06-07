@@ -7,17 +7,10 @@ import './challenge.scss';
 
 function mountApp() {
   const root = document.getElementById('root');
-  const type = root.dataset.type;
 
-  const Challenge = ({ type }) => {
-    if (type === 'tdd') return <TDD />;
-
-    return null;
-  };
-
-  ReactDOM.createRoot(document.getElementById('root')).render(
+  ReactDOM.createRoot(root).render(
     <React.StrictMode>
-      <Challenge type={type} />
+      <TDD />
       <ToastContainer
         position="top-right"
         autoClose={5000}
