@@ -14,6 +14,13 @@
 
   <div>
     <form action="#" method="post" class="contact__form form" id="contactForm" data-training-type="<%= locals.type %>">
+      <% if(locals.enableServiceType){ %>
+        <div>
+          <label for="name" class="contact__form--name required"> Información sobre </label>
+          <input type="text" id="serviceName" name="serviceName" />
+        </div>
+      <% } %>
+
       <div>
         <label for="name" class="contact__form--name required"> Nombre </label>
         <input type="text" id="name" name="name" />

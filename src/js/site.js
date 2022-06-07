@@ -16,6 +16,13 @@ document.querySelectorAll('[data-type="card-services"]').forEach((card) => {
     '[data-type="card-services-view-less"]'
   );
   const cardTitle = card.querySelector('[data-type="card-services-title"]');
+  const iWantItBtn = card.querySelector('[data-role="button"]');
+
+  iWantItBtn.addEventListener('click', (ev) => {
+    const serviceType = ev.target.dataset.type;
+    const $serviceNameInput = document.querySelector('#serviceName');
+    $serviceNameInput.value = serviceType;
+  });
 
   viewMoreBtn.addEventListener('click', () => {
     card.classList.toggle('card--open');
