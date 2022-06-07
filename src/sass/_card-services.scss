@@ -1,10 +1,14 @@
 .card.card--services {
   $size-space: 16px;
-  max-width: 16.75rem; // 220px
   min-width: 190px;
   padding: $size-space;
   position: relative;
-  margin-left: 16px;
+  margin-top: 32px;
+
+  @media all and (min-width: 580px) {
+    max-width: 16.75rem; // 220px
+    margin-left: 16px;
+  }
 
   &:first-child {
     margin-left: 0;
