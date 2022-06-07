@@ -1,39 +1,64 @@
 <article class="card card--services" data-type="card-services">
   <div class="card__image" style="background-image: url('https://via.placeholder.com/450');"></div>
-
+  <span class="card__type">xxx</span>
   <section>
-     <p class="small-title text--left"><%= title %></p>
+    <p class="small-title text--left" data-type="card-services-title"><%= title %></p>
 
-     <article data-type="card-services-description" class="card--services__content">
-       <p class="text-dark-grey text--left">
-         EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of shanty structures
-       </p>
+    <article data-type="card-services-description" class="card--services__content">
+      <p class="text-dark-grey text--left">
+        EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of
+        one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of
+        shanty structures
+      </p>
 
-       <p class="text-dark-grey text--left">
-         EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of shanty structures
-       </p>
+      <p class="text-dark-grey text--left">
+        EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of
+        one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of
+        shanty structures
+      </p>
 
-       <ul>
-          <li class="text-dark-grey text--left">1. 16 horas</li>
-          <li class="text-dark-grey text--left">2. Remoto o presencial</li>
-          <li class="text-dark-grey text--left">1. Java, Python, PHP...</li>
-          <li class="text-dark-grey text--left">1. Tambien en inglés</li>
-       </ul>
-
-       <div class="button__wrapper">
-          <a
-            class="button button--primary"
-            href="#contactForm"
-            data-trackevent="contact_us.show_form.course_value"
-          >
-            ¡Me interesa!
-          </a>
-
-          <p class="text--left card__more-info" data-type="card-services-view-less"><span>Ver menos información</span></p>
+      <ul class="card__information-wrapper">
+        <li class="card__information">
+          <i class="icon icon-hourglass"></i>
+          <div>
+            <p class="card__information-text">16 horas </p>
+            <p class="card__information-desc">(2 días o 4 medios días) </p>
+          </div>
+        </li>
+        <li class="card__information">
+          <i class="icon icon-embed2"></i>
+          <p class="card__information-text">
+            Java, Python, Js, PHP, C#, C++, ...
+          </p>
+        </li>
+        <li class="card__information">
+          <i class="icon icon-location"></i>
+          <p class="card__information-text">Remoto o presencial </p>
+        </li>
+        <div class="card__information">
+          <i class="icon icon-language"></i>
+          <p class="card__information-text">También en inglés </p>
         </div>
-     </article>
 
-     <p class="text--left card__more-info" data-type="card-services-view-more"><span>Más información</span></p>
+        <li class="card__information">
+          <i class="icon icon-coin-euro"></i>
+          <div>
+            <p class="card__information-text">
+              A partir de 650 € + IVA por persona.
+            </p>
+            <p class="card__information-desc">Bonificable por FUNDAE</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="button__wrapper">
+        <a href="#contactForm" class="button button--primary"
+          data-trackevent="contact_us.show_form.course_info-summary">
+          ¡Me interesa!
+        </a>
+      </div>
+    </article>
+    <p class="text--left card__more-info" data-type="card-services-view-more"><span>Más información</span></p>
+    <p class="text--center card__more-info hidden" data-type="card-services-view-less"> <span>Ver menos información</span></p>
   </section>
-
 </article>
