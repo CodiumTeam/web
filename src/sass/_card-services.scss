@@ -47,6 +47,14 @@
     color: #fff;
     font-size: 0.85em;
     border-radius: 4px 0 0 4px;
+
+    &--Taller {
+      background-color: #57b894;
+    }
+
+    &--Consultoría {
+      background-color: #6c63ff;
+    }
   }
 
   .card__more-info {
