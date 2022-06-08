@@ -2,7 +2,10 @@
   <div class="card__image card__image" data-type="card-services-image"></div>
   <span class="card__type card__type--<%= serviceType %>"><%= serviceType %></span>
   <section>
-    <p class="small-title text--left" data-type="card-services-title"><%= title %></p>
+    <p class="small-title text--left" data-type="card-services-title">
+      <%= title %>
+      <span data-type="card-services-view-more" class="icon icon-arrow_drop_down"></span>
+    </p>
 
     <article data-type="card-services-description" class="card--services__content">
       <%- description %>
@@ -18,8 +21,6 @@
         <% } %>
       </ul>
 
-      <p class="text--center card__more-info hidden" data-type="card-services-view-less"> <span>Ver menos información</span></p>
-
       <div class="button__wrapper">
         <a href="#contactForm" class="button button--primary"
           data-role="button"
@@ -28,6 +29,5 @@
         </a>
       </div>
     </article>
-    <p class="text--left card__more-info" data-type="card-services-view-more">Más información <span class="icon icon-keyboard_arrow_right"></span></p>
   </section>
 </article>

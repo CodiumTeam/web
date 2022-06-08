@@ -44,9 +44,6 @@ document
     const viewMoreBtn = card.querySelector(
       '[data-type="card-services-view-more"]'
     );
-    const viewLessBtn = card.querySelector(
-      '[data-type="card-services-view-less"]'
-    );
     const iWantItBtn = card.querySelector('[data-role="button"]');
 
     iWantItBtn.addEventListener('click', (ev) => {
@@ -57,18 +54,8 @@ document
 
     viewMoreBtn.addEventListener('click', () => {
       card.classList.toggle('card--open');
-      viewMoreBtn.classList.add('hidden');
-      viewLessBtn.classList.remove('hidden');
+      viewMoreBtn.classList.toggle('icon-arrow_drop_down');
+      viewMoreBtn.classList.toggle('icon-arrow_drop_up');
       scrollToElement(card);
-    });
-
-    viewLessBtn.addEventListener('click', () => {
-      card.classList.toggle('card--open');
-      viewLessBtn.classList.add('hidden');
-
-      setTimeout(() => {
-        viewMoreBtn.classList.remove('hidden');
-        scrollToElement(card);
-      }, 0);
     });
   });
