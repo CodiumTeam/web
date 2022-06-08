@@ -4,6 +4,14 @@
   padding: $size-space;
   position: relative;
   margin-top: 32px;
+  transform: scale(1);
+  animation: all 0.3s ease-in-out;
+
+  &:hover {
+    .card__image {
+      filter: none;
+    }
+  }
 
   @media all and (min-width: 580px) {
     max-width: 16.75rem; // 220px
@@ -48,7 +56,7 @@
       position: absolute;
       pointer-events: none;
       opacity: 1;
-      background: rgba(62, 162, 253, 0.5);
+      background: rgba(62, 162, 253, 0.2);
     }
   }
 
@@ -119,6 +127,10 @@
   .card--services__content {
     max-height: 500px;
     transition: max-height 0.25s ease-in;
+  }
+
+  .card__image {
+    filter: none;
   }
 }
 
