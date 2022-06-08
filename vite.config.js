@@ -17,7 +17,7 @@ const inputs = {
   development: resolve(SRC, 'desarrollo.html'),
   404: resolve(SRC, '404.html'),
   'tdd-challenge': resolve(SRC, 'tdd-challenge.html'),
-  services: resolve(SRC, 'services.html'),
+  services: resolve(SRC, 'servicios.html'),
 };
 
 export default defineConfig({
