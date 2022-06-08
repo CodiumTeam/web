@@ -8,37 +8,14 @@
       <%- description %>
 
       <ul class="information-wrapper">
-        <li class="card__information">
-          <i class="icon icon-hourglass"></i>
-          <div>
-            <p class="card__information-text">16 horas </p>
-            <p class="card__information-desc">(2 días o 4 medios días) </p>
-          </div>
-        </li>
-        <li class="card__information">
-          <i class="icon icon-embed2"></i>
-          <p class="card__information-text">
-            Java, Python, Js, PHP, C#, C++, ...
-          </p>
-        </li>
-        <li class="card__information">
-          <i class="icon icon-location"></i>
-          <p class="card__information-text">Remoto o presencial </p>
-        </li>
-        <div class="card__information">
-          <i class="icon icon-language"></i>
-          <p class="card__information-text">También en inglés </p>
-        </div>
-
-        <li class="card__information">
-          <i class="icon icon-coin-euro"></i>
-          <div>
-            <p class="card__information-text">
-              A partir de 650 € + IVA por persona.
-            </p>
-            <p class="card__information-desc">Bonificable por FUNDAE</p>
-          </div>
-        </li>
+        <% for(var i=0; i < (locals.icons || []).length; i++) {%>
+          <li class="card__information text-dark-grey">
+            <i class="icon <%= locals.icons[i].icon %>"></i>
+            <div>
+              <p class="card__information-text"><%= locals.icons[i].text %></p>
+            </div>
+          </li>
+        <% } %>
       </ul>
 
       <div class="button__wrapper">
