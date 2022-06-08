@@ -1,21 +1,11 @@
 <article class="card card--services" data-type="card-services">
   <div class="card__image" style="background-image: url('https://via.placeholder.com/450');"></div>
-  <span class="card__type">xxx</span>
+  <span class="card__type"><%= serviceType %></span>
   <section>
     <p class="small-title text--left" data-type="card-services-title"><%= title %></p>
 
     <article data-type="card-services-description" class="card--services__content">
-      <p class="text-dark-grey text--left">
-        EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of
-        one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of
-        shanty structures
-      </p>
-
-      <p class="text-dark-grey text--left">
-        EPIC WIN is part of an on-going series of work by artist William Waterhouse, and is the result of a series of
-        one-to-one “play dates” with colleagues and friends. Low-fi, painted, MDF cut-outs form the building blocks of
-        shanty structures
-      </p>
+      <%- description %>
 
       <ul class="information-wrapper">
         <li class="card__information">
@@ -54,7 +44,7 @@
       <div class="button__wrapper">
         <a href="#contactForm" class="button button--primary"
           data-role="button"
-          data-type="taller-js">
+          data-type="<%= serviceType + ' ' +  title %>">
           ¡Me interesa!
         </a>
       </div>
