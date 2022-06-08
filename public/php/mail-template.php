@@ -10,6 +10,8 @@ function createEmailTemplate($params) {
     $utm_source =  $params['utm_source'] ?? 'No specified';
     $utm_term =  $params['utm_term'] ?? 'No specified';
     $referrer =  $params['referrer'] ?? 'No specified';
+    $serviceName = $params['serviceName'] ?? '';
+    $serviceText =  $serviceName ?  "Servicio: <b>$serviceName</b><br />" : '';
 
     $trainings = [
         'legacy_training' => 'Curso de Legacy',
@@ -18,8 +20,6 @@ function createEmailTemplate($params) {
         'bootcamp_training' => 'Programa de aceleración',
         'development' => 'Desarrollo',
     ];
-
-    $trainingTypeMessage = $trainings[$trainingType] ?? 'vosotros';
 
     $template = <<<EOS
         <style type="text/css">
@@ -187,11 +187,6 @@ function createEmailTemplate($params) {
                                                                 line-height: 160%;
                                                                 text-align: left;
                                                                 color: #353e3e;">
-                                                            <p>
-                                                                Mi nombre es <b>$name</b> y me pongo en
-                                                                contacto para saber más sobre
-                                                                <b>$trainingTypeMessage</b>
-                                                            </p>
                                                             <p style="color: #838383; padding: 10px 10px 0px 0px">Message:</p>
                                                             <p style="color: #838383; padding: 10px">
                                                                 <em>$message</em>
@@ -226,6 +221,8 @@ function createEmailTemplate($params) {
                                                                 color: #8e9696;">
                                                         <b>Datos</b>
                                                         <br />
+                                                        $serviceText
+
                                                         Nombre: <b>$name</b><br />
 
                                                         Email: <b>$emailAddress</b><br />
