@@ -9,10 +9,14 @@ export function initTrackEvents() {
 }
 
 export function trackEvent(category, action, label) {
+  if (location.hostname === 'localhost') return;
+
   window.ga && window.ga('send', 'event', category, action, label);
 }
 
 export function trackEventGTag(eventName, opts = {}) {
+  if (location.hostname === 'localhost') return;
+
   window.dataLayer &&
     window.dataLayer.push({
       event: eventName,
