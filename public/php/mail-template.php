@@ -19,6 +19,7 @@ function createEmailTemplate($params) {
         'docker_training' => 'Curso de Docker',
         'bootcamp_training' => 'Programa de aceleración',
         'development' => 'Desarrollo',
+        'refactoring_to_patterns_training' => 'Curso de Refactoring to patterns'
     ];
 
     $template = <<<EOS

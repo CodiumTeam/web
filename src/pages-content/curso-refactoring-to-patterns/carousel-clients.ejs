@@ -1,0 +1,45 @@
+<% var clients = [
+  {
+    image: './img/clients/roiback.png',
+    name: 'Roiback',
+    customClass: 'client__item--roiback'
+  },
+  {
+    image: './img/clients/generalelectric.png',
+    name: 'General electric',
+    customClass: 'client__item--ge',
+  },
+  {
+    image: './img/clients/glovo.png',
+    name: 'Glovo',
+    customClass: 'client__item--glovo',
+  },
+  {
+    image: './img/clients/avoris.png',
+    name: 'Avoris',
+    customClass: 'client__item--glovo',
+  },
+  {
+    image: './img/clients/melia.png',
+    name: 'Meliá',
+    customClass: 'client__item--glovo',
+  },
+  {
+    image: './img/clients/hotelbeds.png',
+    name: 'Hotelbeds',
+  },
+  {
+    image: './img/clients/zooplus.svg',
+    name: 'Zooplus'
+  },
+  {
+    image: './img/clients/habitissimo.png',
+    name: 'Habitissimo'
+  }
+] %>
+
+<section class="block block--white block--small">
+  <div class="container">
+    <%- include('../../partials/carousel/clients', { clients })  %>
+  </div>
+</section>

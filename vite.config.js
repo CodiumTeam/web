@@ -18,6 +18,10 @@ const inputs = {
   404: resolve(SRC, '404.html'),
   'tdd-challenge': resolve(SRC, 'tdd-challenge.html'),
   services: resolve(SRC, 'servicios.html'),
+  'curso-refactoring-to-patterns': resolve(
+    SRC,
+    'curso-refactoring-to-patterns.html'
+  ),
 };
 
 export default defineConfig({
