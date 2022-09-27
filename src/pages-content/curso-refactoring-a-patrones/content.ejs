@@ -11,30 +11,13 @@
           <p class="text-dark-grey course-calendar__day-item">Mañana</p>
         </div>
         <div class="course-calendar__list">
-          <p class="small-title">
-            Introducción
-          </p>
-          <ul class="course-calendar__items">
-            <li class="text-dark-grey">
-              ¿Qué es un refactor?
-            </li>
-            <li class="text-dark-grey">
-              ¿Qué son los patrones de diseño?
-            </li>
-          </ul>
-
           <p class="small-title">Reduciendo complejidad y duplicidad</p>
           <ul class="course-calendar__items">
-            <li class="text-dark-grey">
-              Reducir la complejidad con las Cláusulas de Guarda
-            </li>
-            <li class="text-dark-grey">Eliminar código duplicado con los Value Objects</li>
-            <li class="text-dark-grey">Incrementar la cohesión con los Value Objects</li>
-            <li class="text-dark-grey">Eliminar data clumps con Value Objects</li>
-            <li class="text-dark-grey">Encapsular la lógica de creación en un Factory method</li>
-            <li class="text-dark-grey">Simplificar la firma con DTO’s</li>
-            <li class="text-dark-grey">Reducir la duplicidad en los test con el shared setup method</li>
-            <li class="text-dark-grey">Reducir la duplicidad en los tests con el Test creation method</li>
+            <li class="text-dark-grey"><strong>Cláusulas de Guarda</strong>: Reducir la complejidad ciclomática.</li>
+            <li class="text-dark-grey"><strong>Value Objects</strong>: Eliminar código duplicado y aumentar la cohesión.</li>
+            <li class="text-dark-grey"><strong>Factory method</strong>: Simplificar la creación de objetos.</li>
+            <li class="text-dark-grey"><strong>DTO’s</strong>: Simplificar la firma de los métodos.</li>
+            <li class="text-dark-grey"><strong>Shared setup method</strong> y <strong>Test creation method</strong>: Reducir la duplicidad en los tests.</li>
           </ul>
 
         </div>
@@ -48,12 +31,16 @@
             Simplificar la creación de objetos
           </p>
           <ul class="course-calendar__items">
-            <li class="text-dark-grey">Que és un Builder y sus beneficios</li>
-            <li class="text-dark-grey">Simplificar la creación de objetos con Builders</li>
-            <li class="text-dark-grey">Reduzcir el ruido en los tests con los Test Builders</li>
-            <li class="text-dark-grey">Aumentar la cohesión con First Class Collection</li>
-            <li class="text-dark-grey">Eliminar comprobaciones de tipo null con los Null Object</li>
-            <li class="text-dark-grey">Extender el comportamiendo con Decoradores</li>
+            <li class="text-dark-grey"><strong>Builder</strong>: Construye un objeto por partes.</li>
+            <li class="text-dark-grey"><strong>Test Builders</strong>: Crea datos de prueba reduciendo el ruido.</li>
+          </ul>
+          <p class="small-title course-calendar__title">
+            Mejorar la cohesión
+          </p>
+          <ul class="course-calendar__items">
+            <li class="text-dark-grey"><strong>First Class Collection</strong>: Agrupa la lógica en conjuntos de datos.</li>
+            <li class="text-dark-grey"><strong>Null Object</strong>: Elimina comprobaciones <em>if not null</em>.</li>
+            <li class="text-dark-grey"><strong>Decoradores</strong>: Extiende el comportamiento manteniendo la compatibilidad.</li>
           </ul>
         </div>
       </article>
@@ -66,15 +53,11 @@
           <p class="text-dark-grey course-calendar__day-item">Mañana</p>
         </div>
         <div class="course-calendar__list">
-          <p class="small-title">Desacople</p>
+          <p class="small-title">Reducir el acoplamiento</p>
           <ul class="course-calendar__items">
-            <li class="text-dark-grey">
-              Desacoplar el código de la base de datos con los Repositorios
-            </li>
-            <li class="text-dark-grey">Desacoplar el código de los detalles de implementación con los Adapter</li>
-            <li class="text-dark-grey">
-              Reducir el acople con Chain of Responsability
-            </li>
+            <li class="text-dark-grey"><strong>Repositorio</strong>: Centraliza el acceso a datos.</li>
+            <li class="text-dark-grey"><strong>Adaptador</strong>: Desacopla la lógica de negocio de los detalles de implementación.</li>
+            <li class="text-dark-grey"><strong>Cadena de responsabilidad</strong>: Decide quién procesa una petición y/o procesa por partes una acción.</li>
           </ul>
         </div>
       </article>
@@ -84,12 +67,11 @@
           <p class="text-dark-grey course-calendar__day-item">Tarde</p>
         </div>
         <div class="course-calendar__list">
-          <p class="small-title course-calendar__title">
-            Desacoplar acciones principales con Observer
-          </p>
+          <p class="small-title">Reducir el acoplamiento y mejorar la cohesión</p>
           <ul class="course-calendar__items">
-            <li class="text-dark-grey">Reducir el acople con Publisher/Subscriber</li>
-            <li class="text-dark-grey">Functional Patterns: Introducción a Currying</li>
+            <li class="text-dark-grey"><strong>Observer</strong>: Extiende el comportamiento notificando a otros, que reaccionarán en consecuencia.</li>
+            <li class="text-dark-grey"><strong>Publisher/Subscriber</strong>: Evoluciona el observer, lanzando eventos que podrán ser procesados de forma asíncrona.</li>
+            <li class="text-dark-grey"><strong>Currying</strong>: Inyecta dependencias en programación funcional.</li>
           </ul>
         </div>
       </article>
