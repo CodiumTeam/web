@@ -35,6 +35,9 @@ lint:
 start:
 	$(DOCKER_COMMAND) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
 
+stop:
+	docker stop codium_web_new
+
 build:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
 
