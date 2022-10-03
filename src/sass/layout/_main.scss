@@ -47,15 +47,6 @@
   .title {
     text-align: center;
   }
-
-  @media screen and (min-width: 769px) and (max-width: 900px) {
-    .card__footer {
-      .button {
-        border: none;
-        padding: 0;
-      }
-    }
-  }
 }
 
 .trainings {
