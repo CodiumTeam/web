@@ -12,10 +12,6 @@
   justify-content: flex-start;
   flex-direction: column;
 
-  &:last-child {
-    margin-top: 2rem;
-  }
-
   &__day {
     min-width: 120px;
     position: relative;
