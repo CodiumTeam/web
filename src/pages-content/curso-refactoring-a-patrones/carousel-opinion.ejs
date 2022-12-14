@@ -1,0 +1,50 @@
+
+ <% var opinionAboutThisCourse = [
+  {
+    avatar: './img/testimonials/adrian-ferrera.jpg',
+    opinion: `Un curso esencial para todas las personas que valoran la calidad y mantenibilidad del código. Me ha dado la oportunidad de optimizar los procesos de desarrollo diario y ser más eficiente. Las conversaciones surgidas durante el mismo han sido sumamente enriquecedoras.`,
+    name: 'Adrián Ferrera González',
+    profession: 'Principal Development Consultant en Lean Mind',
+  },
+  {
+    avatar: './img/testimonials/maria_calzada.jpeg',
+    opinion: `En 4 días hemos aprendido y practicado más de 15 patrones muy útiles. <br/>
+    Me ha encantado la experiencia de aplicar cada patrón, manteniendo los tests en verde y utilizar la potencia del IDE. <br />
+    Pero sobretodo, me quedo con la sensación de haber evolucionado muchísimo`,
+    name: 'María Calzada',
+    profession: 'Software Engineering Manager en HolaLuz',
+  },
+  {
+    avatar: './img/testimonials/chema.jpg',
+    opinion: `Menudo workshop sobre refactoring más espectacular. Me lo he pasado genial. La atmósfera, la gente, el contenido y sobre todo el manejo del mismo. Lo recomiendo muy mucho!`,
+    name: 'Jose Maria Valera Reales',
+    profession: 'Tech Lead en Teufel Audio',
+  },
+  {
+    avatar: './img/testimonials/xavier_belloso.jpeg',
+    opinion: `Aporta una serie de herramientas que puedes aplicar desde el primer día
+siendo un curso muy dinámico en la participación. Gracias a Codium por el
+acompañamiento respetuoso para probar, implementar y discutir las soluciones.`,
+    name: 'Xavier Belloso Guillen',
+    profession: 'Software Engineer',
+  },
+  {
+    avatar: './img/testimonials/carlos_castillo.jpg',
+    opinion: `El curso es muy fácil de seguir, no sólo por el acompañamiento de los profesores sino porque empiezas con una base de código testada. Se trabaja en parejas rotativas, lo que genera un ambiente muy colaborativo. No sólo he aprendido a identificar los patrones para resolver los problemas comunes en el código sino un montón de trucos. Por eso, este curso me parece una buena inversión.`,
+    name: 'Carlos Castillo',
+    profession: 'Engineering Manager',
+  },
+] %>
+
+<section class="block block--white">
+  <div class="container">
+    <h2 class="text-center title">Testimonios</h2>
+    <p class="text-center">
+      Conoce qué han dicho los alumnos sobre éste curso
+    </p>
+
+    <%- include('../../partials/carousel/opinion', {
+      opinions: opinionAboutThisCourse
+    })  %>
+  </div>
+</section>
