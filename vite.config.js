@@ -22,6 +22,7 @@ const inputs = {
     SRC,
     'curso-refactoring-a-patrones.html'
   ),
+  'curso-testing-qa': resolve(SRC, 'curso-testing-qa.html'),
 };
 
 export default defineConfig({
