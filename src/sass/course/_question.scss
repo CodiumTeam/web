@@ -6,6 +6,39 @@
 
 .question {
   padding: 16px;
+
+  &--green {
+    background-color: #E5F0F0;
+  }
+
+  &--red {
+    background-color: #FFD7D6;
+  }
+}
+
+.question.question--block {
+  padding: 24px;
+  margin: 1rem 0;
+
+  h3 {
+    img {
+      max-width: 30px;
+      position: relative;
+      top: 8px;
+      margin-right: 4px;
+    }
+
+    padding-bottom: 16px;
+  }
+
+  h3 span {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $darkest-grey;
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -17,5 +50,9 @@
 
   .question {
     padding: 0 32px 0 0;
+  }
+
+  .question.question--block {
+    margin: 0;
   }
 }

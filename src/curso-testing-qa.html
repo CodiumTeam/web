@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="robots" content="index, follow">
+  <%- include('partials/analytics_head') %>
+  <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
+  <% var og_image = host + "/img/og-qa.png" %>
+
+  <%- include('partials/metatags', {
+    title: 'Quality assurance - Automatiza tus validaciones manuales - Codium Team',
+    description: 'Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.',
+    og_title: 'Curso de testing automático',
+    og_description: 'Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.',
+    og_image,
+  }) %>
+  <meta
+          name="keywords"
+          content="Curso,Formación,Training,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido"
+  />
+  <link rel="canonical" href="<%= host %>/curso-testing-qa.html"/>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Quality assurance - Automatiza tus validaciones manuales - Codium Team",
+      "headline": "Curso de Testing - QA - Testing manual a automático",
+      "description": "Aprende las técnicas de testing automáticos de software y sus conceptos más importantes",
+      "provider": {
+        "@type": "Organization",
+        "name": "Codium",
+        "sameAs": "https://www.codium.team/"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <%- include('partials/analytics_body') %>
+
+  <%- include('partials/header/landing-navbar', {
+    menu: [
+        {
+          title: 'Beneficios',
+          url: '#benefits',
+        },
+        {
+          title: 'Contenido',
+          url: '#training-content-timeline',
+        },
+        {
+          title: 'Metodología',
+          url: '#methodology',
+        },
+        {
+          title: 'FAQs',
+          url: '#faqs',
+        },
+        {
+          title: 'Contactar',
+          url: '#contact',
+        },
+      ]
+    }) %>
+
+  <div class="hero-wrapper">
+    <div class="container course-hero">
+      <%- include('pages-content/curso-common/hero-block', {
+        title: 'Quality assurance',
+        subtitle: 'Automatiza tus validaciones manuales',
+        image: './img/qa-quality.svg'
+      }) %>
+
+      <%- include('pages-content/curso-common/course-card-information', {
+        hours: '12 horas',
+        hoursDesc: '(1,5 días o 4 medios días)',
+        fromWhere: 'Presencial o Remoto',
+        languages: 'Java, JavaScript',
+        availableInLanguages: 'También en inglés',
+        price: '500 € + IVA por persona'
+      }) %>
+    </div>
+  </div>
+
+  <main>
+
+    <%- include('pages-content/curso-testing-qa/carousel-clients') %>
+
+    <section class="block block--white" id="benefits">
+      <%- include('pages-content/curso-testing-qa/benefits') %>
+    </section>
+
+    <section class="block block--lila" id="training-content-timeline">
+      <%- include('pages-content/curso-testing-qa/content') %>
+    </section>
+
+    <section class="block block--white" id="methodology">
+      <%- include('pages-content/curso-testing-qa/methodology') %>
+    </section>
+
+    <section class="block block--grey" id="isFor">
+      <%- include('pages-content/curso-testing-qa/is-for') %>
+    </section>
+
+    <section class="block block--white" id="faqs">
+      <%- include('pages-content/curso-testing-qa/faqs') %>
+    </section>
+
+    <section class="block block--lila" id="contact">
+      <%- include('pages-content/curso-common/form', {
+        action: '/php/contact-qa.php',
+        type: 'qa_training'
+      }) %>
+    </section>
+
+
+  </main>
+
+  <%- include('partials/footer') %>
+
+  <%- include('pages-content/curso-common/scripts') %>
+</body>
+</html>
