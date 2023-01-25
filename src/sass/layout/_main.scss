@@ -302,3 +302,39 @@ section {
     opacity: 0;
   }
 }
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 48px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  article {
+    margin: 0 1rem;
+    flex: 1;
+    width: 100%;
+
+    iframe {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      strong {
+        color: $primary-brand-color;
+      }
+    }
+  }
+}
+
+@media screen {
+
+}
