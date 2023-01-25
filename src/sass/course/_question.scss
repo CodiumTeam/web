@@ -46,7 +46,12 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 4rem;
     gap: 2rem;
+
+    &--block {
+      margin-top: 0;
+    }
   }
+
 
   .question {
     padding: 0 32px 0 0;
