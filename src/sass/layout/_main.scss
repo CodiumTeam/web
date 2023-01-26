@@ -320,6 +320,14 @@ section {
     flex: 1;
     width: 100%;
 
+    &:last-child {
+      margin-top: 3.5rem;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
     iframe {
       aspect-ratio: 16 / 9;
       width: 100%;
