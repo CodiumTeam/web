@@ -149,7 +149,7 @@ iframe {
   overflow: auto;
   background-color: #fff;
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     left: 50%;
     top: 70px;
     transform: translate(-50%, 0px);
@@ -188,7 +188,7 @@ iframe {
   display: flex;
   flex-direction: column;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 
