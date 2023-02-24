@@ -4,25 +4,20 @@ import ejs from 'vite-plugin-ejs-engine';
 import react from '@vitejs/plugin-react';
 
 const SRC = resolve(__dirname, 'src');
-const DIST = resolve(__dirname, 'dist');
-
 const inputs = {
-  main: resolve(SRC, 'index.html'),
-  'curso-docker.html': resolve(SRC, 'curso-docker.html'),
-  'curso-tdd.html': resolve(SRC, 'curso-tdd.html'),
-  'curso-legacy-code.html': resolve(SRC, 'curso-legacy-code.html'),
-  resource: resolve(SRC, 'resources.html'),
-  'style-guide': resolve(SRC, 'style-guide.html'),
-  'accelerate-program': resolve(SRC, 'programa-de-aceleracion.html'),
-  development: resolve(SRC, 'desarrollo.html'),
-  404: resolve(SRC, '404.html'),
-  'tdd-challenge': resolve(SRC, 'tdd-challenge.html'),
-  services: resolve(SRC, 'servicios.html'),
-  'curso-refactoring-a-patrones': resolve(
-    SRC,
-    'curso-refactoring-a-patrones.html'
-  ),
-  'curso-testing-qa': resolve(SRC, 'curso-testing-qa.html'),
+  main: pathFor('index.html'),
+  'curso-docker.html': pathFor('curso-docker.html'),
+  'curso-tdd.html': pathFor('curso-tdd.html'),
+  'curso-legacy-code.html': pathFor('curso-legacy-code.html'),
+  'curso-refactoring-a-patrones': pathFor('curso-refactoring-a-patrones.html'),
+  'curso-testing-qa': pathFor('curso-testing-qa.html'),
+  'accelerate-program': pathFor('programa-de-aceleracion.html'),
+  development: pathFor('desarrollo.html'),
+  services: pathFor('servicios.html'),
+  404: pathFor('404.html'),
+  'tdd-challenge': pathFor('tdd-challenge.html'),
+  resource: pathFor('resources.html'),
+  'style-guide': pathFor('style-guide.html'),
 };
 
 export default defineConfig({
@@ -34,10 +29,14 @@ export default defineConfig({
   envDir: __dirname,
   plugins: [ejs(), react()],
   build: {
-    outDir: DIST,
+    outDir: resolve(__dirname, 'dist'),
     emptyOutDir: false,
     rollupOptions: {
       input: inputs,
     },
   },
 });
+
+function pathFor(file) {
+  return resolve(SRC, file);
+}
