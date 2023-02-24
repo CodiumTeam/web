@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta name="robots" content="noindex">
     <%- include('partials/analytics_head') %>
     <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
     <% var og_image = host + "/img/og-tdd.png" %>
@@ -10,12 +12,6 @@
         og_title: 'Challenge TDD - Test Driven Development. Curso de TDD - Codium',
         og_description: 'Aprende a escribir código simple, robusto y moldeable a partir de los tests. Curso práctico, divertido e intenso. En tus oficinas o en remoto.',
         og_image,
-    }) %>
-<head>
-  <meta name="robots" content="noindex">
-  <%- include('partials/metatags', {
-        title: 'Codium: TDD Challenge',
-        description: 'Formamos a equipos de programación. Desarrollamos software de calidad. Estamos especializados en Clean code, TDD y patrones de diseño.',
     }) %>
 </head>
 
