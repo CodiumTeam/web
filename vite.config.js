@@ -1,24 +1,16 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { resolve, basename } from 'path';
 import ejs from 'vite-plugin-ejs-engine';
 import react from '@vitejs/plugin-react';
+import glob from 'glob';
 
 const SRC = resolve(__dirname, 'src');
-const inputs = {
-  main: pathFor('index.html'),
-  'curso-docker.html': pathFor('curso-docker.html'),
-  'curso-tdd.html': pathFor('curso-tdd.html'),
-  'curso-legacy-code.html': pathFor('curso-legacy-code.html'),
-  'curso-refactoring-a-patrones': pathFor('curso-refactoring-a-patrones.html'),
-  'curso-testing-qa': pathFor('curso-testing-qa.html'),
-  'accelerate-program': pathFor('programa-de-aceleracion.html'),
-  development: pathFor('desarrollo.html'),
-  services: pathFor('servicios.html'),
-  404: pathFor('404.html'),
-  'tdd-challenge': pathFor('tdd-challenge.html'),
-  resource: pathFor('resources.html'),
-  'style-guide': pathFor('style-guide.html'),
-};
+
+const htmlFiles = glob.sync(`${SRC}/*.html`);
+const inputs = htmlFiles.reduce((acc, file) => {
+  acc[basename(file)] = file;
+  return acc;
+}, {});
 
 export default defineConfig({
   css: {
@@ -36,7 +28,3 @@ export default defineConfig({
     },
   },
 });
-
-function pathFor(file) {
-  return resolve(SRC, file);
-}
