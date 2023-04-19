@@ -29,6 +29,12 @@ section {
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  &--trainings {
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -60,13 +66,6 @@ section {
   }
 
   @media screen and (min-width: 1200px) {
-    // Docker card
-    .card:nth-child(4) {
-      .card__title {
-        min-height: 52px;
-      }
-    }
-
     .card__text {
       min-height: 55px;
     }
