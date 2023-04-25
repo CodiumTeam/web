@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "7.19.1",
-    "@glidejs/glide": "https://github.com/11joselu/glide.git",
+    "@glidejs/glide": "3.6.0",
     "@stackblitz/sdk": "1.8.2",
     "isinview": "2.2.1",
     "react": "18.2.0",
