@@ -112,17 +112,24 @@ function addClientEventForArrows(arrowClass, glide) {
 
 function listenForRadioChangeInForm() {
   document
-    .querySelectorAll('input[type=radio][name="myRadio"]')
-    .forEach(function (radio) {
-      radio.addEventListener(
-        'change',
-        showCorrectInputDependingOnSelectedRadio
-      );
-    });
+    .getElementById('for-company')
+    .addEventListener('change', showForMyCompany);
+  document.getElementById('for-me').addEventListener('change', showForMe);
 
-  function showCorrectInputDependingOnSelectedRadio() {
-    document.getElementById('js-locality').classList.toggle('hidden');
-    document.getElementById('js-numProgrammers').classList.toggle('hidden');
+  function showForMyCompany() {
+    document.getElementById('js-locality').classList.add('hidden');
+    document.getElementById('js-numProgrammers').classList.remove('hidden');
+    document
+      .getElementById('email')
+      .setAttribute('placeholder', 'mi-email@empresa.com');
+  }
+
+  function showForMe() {
+    document.getElementById('js-locality').classList.remove('hidden');
+    document.getElementById('js-numProgrammers').classList.add('hidden');
+    document
+      .getElementById('email')
+      .setAttribute('placeholder', 'mi@email.com');
   }
 }
 
