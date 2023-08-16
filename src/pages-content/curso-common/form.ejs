@@ -19,8 +19,29 @@
     action="<%= action %> "
     data-training-type="<%= type %>"
   >
+   <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="for-company"
+          class="myradio__input"
+          checked
+          value="business"
+        />
+        <label for="for-company" class="myradio__label">Para mi empresa</label>
+      </div>
+      <div class="myradio">
+        <input
+          type="radio"
+          name="myRadio"
+          id="for-me"
+          class="myradio__input"
+          value="user"
+        />
+        <label for="for-me" class="myradio__label">Sólo para mí</label>
+      </div>
     <div>
-      <label for="name"
+      <label for="name" class="label-name"
         >Nombre<span class="required-asterisk">*</span></label
       >
       <input type="text" id="name" placeholder="Mi nombre" name="name" />
@@ -40,7 +61,7 @@
 
     <div id="js-numProgrammers">
       <label for="numProgrammers">
-        Nº de programadores<span class="required-asterisk">*</span>
+        Número de programadores<span class="required-asterisk">*</span>
       </label>
       <input
         type="number"
@@ -61,28 +82,6 @@
         placeholder="Madrid"
         name="location"
       />
-    </div>
-
-    <div class="myradio">
-      <input
-        type="radio"
-        name="myRadio"
-        id="for-company"
-        class="myradio__input"
-        checked
-        value="business"
-      />
-      <label for="for-company" class="myradio__label">Para mi empresa</label>
-    </div>
-    <div class="myradio">
-      <input
-        type="radio"
-        name="myRadio"
-        id="for-me"
-        class="myradio__input"
-        value="user"
-      />
-      <label for="for-me" class="myradio__label">Para mí</label>
     </div>
 
     <div class="text-center">
