@@ -122,6 +122,8 @@ function listenForRadioChangeInForm() {
     document
       .getElementById('email')
       .setAttribute('placeholder', 'mi-email@empresa.com');
+    document.getElementById('email-label').innerHTML =
+      'Email de empresa<span class="required-asterisk">*</span>';
   }
 
   function showForMe() {
@@ -130,6 +132,8 @@ function listenForRadioChangeInForm() {
     document
       .getElementById('email')
       .setAttribute('placeholder', 'mi@email.com');
+    document.getElementById('email-label').innerHTML =
+      'Email<span class="required-asterisk">*</span>';
   }
 }
 
