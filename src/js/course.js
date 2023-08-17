@@ -3,15 +3,14 @@ import Glide, {
   Breakpoints,
 } from '@glidejs/glide/dist/glide.modular.esm';
 import { isInView } from 'isinview';
-
 import * as events from './common/trackEvents';
 import * as formValidation from './common/fromValidation';
 import { listenDropdown } from './common/dropdown';
-
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
-import '../sass/course.scss';
 import { scrollToElement } from './common/scrollToElement';
+import '../sass/course.scss';
+import { sendEmail } from './email-sender';
 
 listenDropdown();
 events.initTrackEvents();
@@ -200,17 +199,15 @@ window.captchaCompleted = () => {
     return;
   }
 
-  const $form = document.getElementById('contactForm');
-  const formData = new FormData($form);
-  const url = $form.getAttribute('action');
-  const $errorBlock = document.getElementById('js-show-error');
-  const $sentButton = document.getElementById('js-submit');
-  const trainingType = $form.getAttribute('data-training-type');
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const utm_source = urlParams.get('utm_source') || 'Direct';
   const utm_term = urlParams.get('utm_term') || '';
-
+  const $form = document.getElementById('contactForm');
+  const formData = new FormData($form);
+  const $errorBlock = document.getElementById('js-show-error');
+  const $sentButton = document.getElementById('js-submit');
+  const trainingType = $form.getAttribute('data-training-type');
   formData.append('trainingType', trainingType);
   formData.append('utm_source', utm_source);
   formData.append('utm_term', utm_term);
@@ -218,14 +215,11 @@ window.captchaCompleted = () => {
 
   $sentButton.disabled = true;
 
-  fetch(url, {
-    method: 'POST',
-    body: formData,
-  })
+  sendEmail(Object.fromEntries(formData.entries()))
     .then(function (response) {
       grecaptcha.reset();
 
-      if (response.ok) {
+      if (response.status === 200) {
         events.trackEventGTag('contact_us', {
           trainingType,
         });
