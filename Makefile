@@ -1,6 +1,5 @@
 # cat -e -t -v Makefile
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
-DOCKER_PHP_IMAGE = php:8.0
 DOCKER_NODE_IMAGE = node:16
 DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:host-gateway --entrypoint cypress cypress/included:6.2.1 run \
@@ -10,7 +9,6 @@ default: start
 
 .PHONY: up
 up: build
-	$(DOCKER_COMMAND) --name codium_web -p 8000:8000 -d  $(DOCKER_PHP_IMAGE) php -S 0.0.0.0:8000 -t dist/
 	@echo "\n"
 	@echo "http://localhost:8000/index.html http://localhost:8000/curso-tdd.html http://localhost:8000/curso-legacy-code.html http://localhost:8000/curso-docker.html\n"
 	@echo "TIP: Use CTRL+Click to open a link in a browser\n"
