@@ -1,3 +1,5 @@
+import '@testing-library/cypress/add-commands';
+
 // Follow same order of web menu
 export const serviceList = [
   { title: 'Desarrollo', url: '/desarrollo.html' },
@@ -31,3 +33,46 @@ Cypress.Commands.add('validateServiceListInDropdown', () => {
     cy.wrap(service).should('have.attr', 'href').should('eq', menuItem.url);
   });
 });
+
+/**
+ * @typedef {"business" | "me"} CourseFor
+ */
+/**
+ * @memberof cy
+ * @method fillsCourseFormFor
+ * @param {CourseFor} type
+ * @param {Object} [values]
+ * @returns Chainable
+ */
+Cypress.Commands.add(
+  'fillsCourseFormFor',
+  (
+    type,
+    {
+      email = `cypress-${Date.now()}@codium.team`,
+      name = 'Cypress',
+      localization = 'Madrid',
+      numOfProgrammer = 10,
+    }
+  ) => {
+    const isBusiness = type === 'business';
+    let forLabel = isBusiness ? /Para mi empresa/ : /Sólo para mí/;
+    cy.findByTestId('contactForm').findByLabelText(forLabel).click();
+    cy.findByTestId('contactForm')
+      .findByLabelText(/Nombre/)
+      .type(name);
+    const emailFor = isBusiness ? /Email de empresa/ : /Email/;
+    cy.findByTestId('contactForm').findByLabelText(emailFor).type(email);
+    const moreInfo = isBusiness
+      ? /Número de programadores/
+      : /Localidad dónde vives/;
+    cy.findByTestId('contactForm')
+      .findByLabelText(moreInfo)
+      .type(isBusiness ? numOfProgrammer : localization);
+    cy.findByRole('button', { name: 'Pedir información' }).click();
+    cy.window().then((win) => {
+      // skip recaptcha
+      win.captchaCompleted();
+    });
+  }
+);

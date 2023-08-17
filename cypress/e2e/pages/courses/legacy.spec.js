@@ -4,7 +4,7 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation Legacy page', () => {
+describe('Legacy page', () => {
   devices.forEach((device) => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
@@ -51,6 +51,44 @@ describe('User navigation Legacy page', () => {
 
       it('Should be able to see service list in a dropdown', () => {
         cy.validateServiceListInDropdown();
+      });
+    });
+
+    describe.skip(`Production: Send emails with ${device}`, () => {
+      beforeEach(() => {
+        if (isMobile(device)) {
+          cy.viewport(device);
+        }
+
+        cy.visit('/curso-legacy-code.html');
+      });
+
+      it('Send emails for business', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsCourseFormFor('business', {
+          name: 'Test Cypress Docker ' + Date.now(),
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
+      });
+
+      it('Send emails for me', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsCourseFormFor('me', {
+          name: 'Test Cypress Docker ' + Date.now(),
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
       });
     });
   });
