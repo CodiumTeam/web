@@ -66,7 +66,7 @@ describe('QA page', () => {
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Test Cypress QA ' + Date.now(),
+          name: 'Cypress QA ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -80,7 +80,7 @@ describe('QA page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Test Cypress QA ' + Date.now(),
+          name: 'Cypress QA ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

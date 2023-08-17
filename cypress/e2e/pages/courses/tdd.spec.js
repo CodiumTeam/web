@@ -66,7 +66,7 @@ describe('DD page', () => {
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Test Cypress Docker ' + Date.now(),
+          name: 'Cypress TDD ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -80,7 +80,7 @@ describe('DD page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Test Cypress Docker ' + Date.now(),
+          name: 'Cypress TDD ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

@@ -76,3 +76,31 @@ Cypress.Commands.add(
     });
   }
 );
+
+/**
+ * @memberof cy
+ * @method fillsContactForm
+ * @param {Object} [values]
+ * @returns Chainable
+ */
+Cypress.Commands.add(
+  'fillsContactForm',
+  ({
+    name = 'Cypress',
+    email = `cypress-${Date.now()}@codium.team`,
+    message = 'This is a cypress message',
+  }) => {
+    cy.findByTestId('contactForm')
+      .findByLabelText(/Nombre/)
+      .type(name);
+    cy.findByTestId('contactForm').findByLabelText(/Email/).type(email);
+    cy.findByTestId('contactForm')
+      .findByLabelText(/Mensaje/)
+      .type(message);
+    cy.findByRole('button', { name: 'Enviar mensaje' }).click();
+    cy.window().then((win) => {
+      // skip recaptcha
+      win.captchaCompleted();
+    });
+  }
+);

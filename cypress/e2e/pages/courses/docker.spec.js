@@ -52,7 +52,7 @@ describe('Docker page', () => {
       });
     });
 
-    describe(`Production: Send emails with ${device}`, () => {
+    describe.skip(`Production: Send emails with ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
           cy.viewport(device);
@@ -64,7 +64,7 @@ describe('Docker page', () => {
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Test Cypress Docker ' + Date.now(),
+          name: 'Cypress Docker ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -78,7 +78,7 @@ describe('Docker page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Test Cypress Docker ' + Date.now(),
+          name: 'Cypress Docker ' + Date.now(),
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

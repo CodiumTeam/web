@@ -4,7 +4,7 @@ import { isMobile } from '../../isMobile';
 
 const devices = ['desktop', 'iphone-6'];
 
-describe('User navigation in home page', () => {
+describe('Home page', () => {
   devices.forEach((device) => {
     describe(`From navbar in ${device}`, () => {
       beforeEach(() => {
@@ -42,6 +42,30 @@ describe('User navigation in home page', () => {
       it('Should navigate to the team block in home page', () => {
         cy.get('.navbar__item').eq(4).click();
         cy.isInViewport('#contact');
+      });
+    });
+
+    describe.skip(`Production: Send emails with ${device}`, () => {
+      beforeEach(() => {
+        if (isMobile(device)) {
+          cy.viewport(device);
+        }
+
+        cy.visit('/programa-de-aceleracion.html');
+      });
+
+      it('Send contact email', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsContactForm({
+          name: 'Cypress Home ' + Date.now(),
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
       });
     });
   });
