@@ -2,10 +2,17 @@
   'core/utilities', 'course/hero', 'core/normalize', 'layout/header',
   'layout/hero', 'layout/main', 'buttons', 'core/dropdown';
 
-html,
-body,
-main {
+html {
   height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  padding-bottom: 24px !important;
+  min-height : calc(100vh - 4rem);
 }
 
 .block.block--white {
@@ -316,4 +323,8 @@ main {
 
 .urls {
   margin-top: 32px;
+}
+
+.footer-wrapper {
+  min-height: 4rem;
 }
