@@ -23,20 +23,29 @@
 
   <main class="block block--white">
     <div class="container-item">
-      <div class="container">
-        <h2 id="zend-text" class="fade-in">UNIT TESTING?
-          <span class="unit">AIN'T NOBODY GOT TIME FOR THAT</span>
-        </h2>
-      </div>
+      <ul class="container testing">
+          <li><span class="icon-test icon-test--executing"></span><span>Should return true if the server is up</span></li>
+          <li><span class="icon-test icon-test--executing"></span><span>Should return true if the user has internet connection</span></li>
+          <li><span class="icon-test  icon-test--executing test-error"></span><span>Should load searched page correctly</span></li>
+      </ul>
       <img src="./img/no_tests_404.png" alt="No tests found - 404" class="not-found"/>
+        <div class="urls">
+            <h3>¿No puedes encontrar lo que estabas buscando?</h3>
+            <ul class="pages">
+                <li><a href="/#our-services">Échale un vistazo a los servicios que ofrecemos</a></li>
+                <li><a href="/#courses-list">Revisa nuestros cursos</a></li>
+                <li><a href="/#team">Conoce al equipo</a></li>
+            </ul>
+        </div>
     </div>
 
     <div>
-  <div class="starsec"></div>
-  <div class="starthird"></div>
-  <div class="starfourth"></div>
-  <div class="starfifth"></div>
-</div>
+      <div class="starsec"></div>
+      <div class="starthird"></div>
+      <div class="starfourth"></div>
+      <div class="starfifth"></div>
+    </div>
+
   </main>
 
   <%- include('partials/footer') %>
