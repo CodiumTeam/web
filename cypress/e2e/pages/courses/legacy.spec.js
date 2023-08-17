@@ -66,7 +66,7 @@ describe('Legacy page', () => {
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Cypress Legacy ' + Date.now(),
+          name: `${device} Legacy`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -80,7 +80,7 @@ describe('Legacy page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Cypress Legacy ' + Date.now(),
+          name: `${device} Legacy`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

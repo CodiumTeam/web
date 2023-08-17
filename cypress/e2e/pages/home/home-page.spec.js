@@ -29,18 +29,25 @@ describe('Home page', () => {
         cy.isInViewport('#values-and-methodology');
       });
 
-      it('Should navigate to the courses block in home page', () => {
+      it('Should navigate to the development page', () => {
         cy.get('.navbar__item').eq(2).click();
+        cy.location().should((location) => {
+          expect(location.pathname).to.eq('/desarrollo.html');
+        });
+      });
+
+      it('Should navigate to the courses block in home page', () => {
+        cy.get('.navbar__item').eq(3).click();
         cy.isInViewport('#courses-list');
       });
 
       it('Should navigate to the team block in home page', () => {
-        cy.get('.navbar__item').eq(3).click();
+        cy.get('.navbar__item').eq(4).click();
         cy.isInViewport('#team');
       });
 
       it('Should navigate to the team block in home page', () => {
-        cy.get('.navbar__item').eq(4).click();
+        cy.get('.navbar__item').eq(5).click();
         cy.isInViewport('#contact');
       });
     });

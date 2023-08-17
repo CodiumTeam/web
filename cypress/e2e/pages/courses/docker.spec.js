@@ -64,7 +64,7 @@ describe('Docker page', () => {
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Cypress Docker ' + Date.now(),
+          name: `${device} Docker`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -78,7 +78,7 @@ describe('Docker page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Cypress Docker ' + Date.now(),
+          name: `${device} Docker`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

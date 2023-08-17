@@ -60,7 +60,7 @@ describe('User navigation in Development page', () => {
       it('Send contact email', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsContactForm({
-          name: 'Cypress Development ' + Date.now(),
+          name: `${device} Development`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

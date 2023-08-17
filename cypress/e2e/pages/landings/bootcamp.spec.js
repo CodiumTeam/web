@@ -72,7 +72,7 @@ describe('User navigation in Bootcamp page', () => {
       it('Send contact email', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsContactForm({
-          name: 'Cypress bootcamp ' + Date.now(),
+          name: `${device} Programa`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'

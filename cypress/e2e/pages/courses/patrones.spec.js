@@ -60,13 +60,13 @@ describe('Patrones page', () => {
           cy.viewport(device);
         }
 
-        cy.visit('/curso-legacy-code.html');
+        cy.visit('/curso-refactoring-a-patrones.html');
       });
 
       it('Send emails for business', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('business', {
-          name: 'Cypress Patrones ' + Date.now(),
+          name: `${device} Patrones`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
@@ -80,7 +80,7 @@ describe('Patrones page', () => {
       it('Send emails for me', () => {
         cy.findByTestId('contactBtn').click();
         cy.fillsCourseFormFor('me', {
-          name: 'Cypress Patrones ' + Date.now(),
+          name: `${device} Patrones`,
         });
         cy.findByText(
           'Muchas gracias por ponerte en contacto con nosotros.'
