@@ -52,7 +52,7 @@ describe('Docker page', () => {
       });
     });
 
-    describe.only(`Production: Send emails with ${device}`, () => {
+    describe.skip(`Production: Send emails with ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
           cy.viewport(device);
