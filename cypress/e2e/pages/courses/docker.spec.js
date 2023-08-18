@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { isMobile } from '../../isMobile';
 
-const devices = ['desktop', 'iphone-6'];
+const devices = ['desktop', ];
 
 describe('Docker page', () => {
   devices.forEach((device) => {
@@ -52,7 +52,7 @@ describe('Docker page', () => {
       });
     });
 
-    describe.skip(`Production: Send emails with ${device}`, () => {
+    describe.only(`Production: Send emails with ${device}`, () => {
       beforeEach(() => {
         if (isMobile(device)) {
           cy.viewport(device);

@@ -1,11 +1,11 @@
 import emailjs from '@emailjs/browser';
 
-emailjs.init('rEGcBmzzGHN0LeR4g');
+emailjs.init('eQPQDBk_OXEUnc08b');
 
 export function sendEmail(params) {
   return emailjs.send(
-    'service_cyrfonb',
-    'template_i5bb95p',
+    'service_20tumu9',
+    'template_v75pdd7',
     getCorrectParamsForEmail(params)
   );
 }
