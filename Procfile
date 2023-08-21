@@ -1,1 +1,1 @@
-web: bin/start-nginx-solo -C nginx_app.conf dist/
+web: bin/start-nginx-static -C nginx_app.conf dist/
