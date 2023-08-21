@@ -21,7 +21,28 @@ http {
 	gzip on;
 	gzip_comp_level 2;
 	gzip_min_length 512;
-	gzip_proxied any; # Heroku router sends Via header
+	gzip_proxied any;
+	gzip_vary on;
+    gzip_buffers 16 8k;
+    gzip_types  font/eot
+            font/otf
+            font/ttf
+            image/svg+xml
+            text/css
+            text/javascript
+            text/plain
+            text/xml
+            application/atom+xml
+            application/geo+json
+            application/javascript
+            application/x-javascript
+            application/json
+            application/ld+json
+            application/manifest+json
+            application/rdf+xml
+            application/rss+xml
+            application/xhtml+xml
+            application/xml;
 
 	server_tokens off;
 
@@ -56,28 +77,26 @@ http {
 
 			## Single-page app client-side routing: returns index.html if the requested path doesn't exist.
 			## When enabled, the client-side app must handle its own 404 errors.
-			# error_page 404 = /index.html;
+			error_page 404 = /404.html;
 		}
 
-		## Define specific behaviors for sub directories and other locations.
-		# location /assets {
-		# 	expires 7d;
-		# }
 
 		## Custom error pages
 		error_page 404 /404.html;
-		# error_page 500 /500.html;
-	}
 
-	## Canonical Host: redirect to a canonical hostname.
-	## Multiple server blocks may be used, one for each hostname to redirect from.
-	# server {
-	# 	server_name some-other-name.example.com;
-	# 	return 301 https://canonical-name.example.com$request_uri;
-	# }
-	# server {
-	# 	server_name yet-another-name.example.com;
-	# 	return 301 https://canonical-name.example.com$request_uri;
-	# }
-	# …
+		location ~* \.(?:css|js)$ {
+            try_files $uri =404;
+            expires 1y;
+            access_log off;
+            add_header Cache-Control "max-age=31536000, public";
+        }
+
+
+        # Media: images, icons, video, audio, HTC
+        location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+            expires 1M;
+            access_log off;
+            add_header Cache-Control "max-age=31536000, public";
+        }
+	}
 }
