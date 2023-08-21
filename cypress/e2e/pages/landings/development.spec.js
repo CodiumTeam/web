@@ -47,5 +47,29 @@ describe('User navigation in Development page', () => {
         cy.validateServiceListInDropdown();
       });
     });
+
+    describe.skip(`Production: Send emails with ${device}`, () => {
+      beforeEach(() => {
+        if (isMobile(device)) {
+          cy.viewport(device);
+        }
+
+        cy.visit('/desarrollo.html');
+      });
+
+      it('Send contact email', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsContactForm({
+          name: `${device} Development`,
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
+      });
+    });
   });
 });

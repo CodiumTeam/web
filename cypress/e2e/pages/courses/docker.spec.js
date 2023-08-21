@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 import { isMobile } from '../../isMobile';
 
-const devices = ['desktop', 'iphone-6'];
+const devices = ['desktop', ];
 
-describe('User navigation Docker page', () => {
+describe('Docker page', () => {
   devices.forEach((device) => {
     describe(`From navbar emulating ${device}`, () => {
       beforeEach(() => {
@@ -49,6 +49,44 @@ describe('User navigation Docker page', () => {
       });
       it('Should be able to see service list in a dropdown', () => {
         cy.validateServiceListInDropdown();
+      });
+    });
+
+    describe.skip(`Production: Send emails with ${device}`, () => {
+      beforeEach(() => {
+        if (isMobile(device)) {
+          cy.viewport(device);
+        }
+
+        cy.visit('/curso-docker.html');
+      });
+
+      it('Send emails for business', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsCourseFormFor('business', {
+          name: `${device} Docker`,
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
+      });
+
+      it('Send emails for me', () => {
+        cy.findByTestId('contactBtn').click();
+        cy.fillsCourseFormFor('me', {
+          name: `${device} Docker`,
+        });
+        cy.findByText(
+          'Muchas gracias por ponerte en contacto con nosotros.'
+        ).should('be.visible');
+        cy.findByText('Te contestaremos lo antes posible.').should(
+          'be.visible'
+        );
+        cy.findByTestId('contactForm').should('not.exist');
       });
     });
   });

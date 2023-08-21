@@ -1,1 +1,1 @@
-web: dist/vendor/bin/heroku-php-nginx -C nginx_app.conf dist/
+web: bin/start-nginx-solo -C nginx_app.conf dist/

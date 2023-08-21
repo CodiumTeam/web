@@ -1,6 +1,7 @@
 import * as formValidation from './fromValidation';
-import { scrollToElement } from './scrollToElement';
+import {scrollToElement} from './scrollToElement';
 import * as events from './trackEvents';
+import {sendEmail} from "../email-sender";
 
 handleFormSubmit();
 
@@ -67,7 +68,6 @@ window.captchaCompleted = () => {
   const formData = new FormData($form);
   const trainingType = $form.getAttribute('data-training-type');
   const $errorBlock = document.getElementById('js-show-error');
-
   formData.append('trainingType', trainingType);
   formData.append('utm_source', utm_source);
   formData.append('utm_term', utm_term);
@@ -76,13 +76,10 @@ window.captchaCompleted = () => {
   const $sentButton = document.getElementById('js-submit');
   $sentButton.disabled = true;
 
-  fetch('/php/contact.php', {
-    method: 'POST',
-    body: formData,
-  })
+  sendEmail(Object.fromEntries(formData.entries()))
     .then(function (response) {
       grecaptcha.reset();
-      if (response.ok) {
+      if (response.status === 200) {
         events.trackEventGTag('contact_us', {
           trainingType,
         });

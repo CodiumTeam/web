@@ -13,7 +13,7 @@
   <%- include('form-error') %>
 
   <div>
-    <form action="#" method="post" class="contact__form form" id="contactForm" data-training-type="<%= locals.type %>">
+    <form action="#" method="post" class="contact__form form" id="contactForm" data-testid="contactForm" data-training-type="<%= locals.type %>">
       <% if(locals.enableServiceType){ %>
         <div>
           <label for="name" class="contact__form--name required"> Información sobre </label>

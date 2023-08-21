@@ -29,6 +29,7 @@
   "homepage": "https://github.com/CodiumTeam/web#readme",
   "devDependencies": {
     "@babel/preset-react": "7.18.6",
+    "@testing-library/cypress": "^9.0.0",
     "@vitejs/plugin-react": "3.1.0",
     "cypress": "12.6.0",
     "eslint": "8.34.0",
@@ -45,6 +46,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "7.19.1",
+    "@emailjs/browser": "^3.11.0",
     "@glidejs/glide": "3.6.0",
     "@stackblitz/sdk": "1.8.2",
     "isinview": "2.2.1",
