@@ -192,8 +192,12 @@ function isForBusiness(value) {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
-  const isValid = validateForm();
+  const response = grecaptcha.getResponse();
+  if (response.length === 0) {
+    return;
+  }
 
+  const isValid = validateForm();
   if (!isValid) {
     grecaptcha.reset();
     return;

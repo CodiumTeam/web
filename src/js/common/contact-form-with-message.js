@@ -1,7 +1,7 @@
 import * as formValidation from './fromValidation';
-import {scrollToElement} from './scrollToElement';
+import { scrollToElement } from './scrollToElement';
 import * as events from './trackEvents';
-import {sendEmail} from "../email-sender";
+import { sendEmail } from '../email-sender';
 
 handleFormSubmit();
 
@@ -53,8 +53,12 @@ function handleFormSubmit() {
 
 // This is called via data-callback
 window.captchaCompleted = () => {
-  const isValid = validateForm();
+  const response = grecaptcha.getResponse();
+  if (response.length === 0) {
+    return;
+  }
 
+  const isValid = validateForm();
   if (!isValid) {
     grecaptcha.reset();
     return;
