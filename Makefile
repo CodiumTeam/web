@@ -26,7 +26,8 @@ install:
 
 .PHONY: lint
 lint:
-	$(DOCKER_COMMAND) -v ${HOME}/.gitconfig:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh lint.sh
+	./scripts/dump-git-config.sh /tmp/docker-git-cfg
+	$(DOCKER_COMMAND) -v /tmp/docker-git-cfg:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh scripts/lint.sh
 
 start:
 	$(DOCKER_COMMAND) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
