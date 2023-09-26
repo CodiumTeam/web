@@ -6,19 +6,6 @@ DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:ho
 .PHONY: default
 default: start
 
-.PHONY: up
-up: build
-	@echo "\n"
-	@echo "http://localhost:8000/index.html http://localhost:8000/curso-tdd.html http://localhost:8000/curso-legacy-code.html http://localhost:8000/curso-docker.html\n"
-	@echo "TIP: Use CTRL+Click to open a link in a browser\n"
-	@echo "To view the style guide\n"
-	@echo "http://localhost:8000/style-guide.html"
-
-
-.PHONY: down
-down:
-	docker stop codium_web
-
 .PHONY: install
 install:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
@@ -30,10 +17,7 @@ lint:
 	$(DOCKER_COMMAND) -v /tmp/docker-git-cfg:/home/node/.gitconfig:ro $(DOCKER_NODE_IMAGE) sh scripts/lint.sh
 
 start:
-	$(DOCKER_COMMAND) -it --name codium_web_new -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
-
-stop:
-	docker stop codium_web_new
+	$(DOCKER_COMMAND) -it --name codium_web -p 3000:3000 $(DOCKER_NODE_IMAGE) npm run start
 
 build:
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm run build
