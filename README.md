@@ -7,8 +7,6 @@ make install
 # Dev Start front-end server
 make start
 
-> If you need to run php server too, run make up
-
 # Pages
 
 http://localhost:8000/

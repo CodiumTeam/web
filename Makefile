@@ -1,7 +1,6 @@
 # cat -e -t -v Makefile
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 DOCKER_NODE_IMAGE = node:16
-DOCKER_COMPOSER_IMAGE = composer:2.1
 DOCKER_CYPRESS = $(DOCKER_COMMAND) --ipc=host --add-host host.docker.internal:host-gateway --entrypoint cypress cypress/included:6.2.1 run \
 
 .PHONY: default
@@ -22,7 +21,6 @@ down:
 
 .PHONY: install
 install:
-	$(DOCKER_COMMAND) $(DOCKER_COMPOSER_IMAGE) composer install
 	$(DOCKER_COMMAND) $(DOCKER_NODE_IMAGE) npm install
 	git config --local core.hooksPath git-hooks/
 
