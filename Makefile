@@ -17,6 +17,13 @@ lint:
 start:
 	docker compose up
 
+.PHONY: clean
+clean:
+	rm -rf dist/
+
+dist:
+	docker compose run -T web npm run build
+
 .PHONY: get-cypress-version
 get-cypress-version:
 	$(eval CYPRESS_VERSION=$(shell docker compose run web npm list cypress --depth=0 -p -l | cut -d'@' -f2))
