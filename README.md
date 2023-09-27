@@ -1,6 +1,3 @@
-# Launch the web
-make up
-
 # Install dependencies
 make install
 
