@@ -27,6 +27,7 @@ jobs:
         run: make clean dist
         env:
           BASE_DOMAIN: https://new.codium.team
+          GOOGLE_ANALYTICS_ID: GTM-MGNH279
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
