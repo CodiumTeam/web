@@ -11,14 +11,15 @@ import '@glidejs/glide/dist/css/glide.theme.min.css';
 import { scrollToElement } from './common/scrollToElement';
 import '../sass/course.scss';
 import { sendEmail } from './email-sender';
+import { configureFormWithRecaptcha } from './common/recaptcha-loader';
 
 listenDropdown();
 events.initTrackEvents();
 mountOpinionCarousel();
 mountClientsCarousel();
 listenForRadioChangeInForm();
-handleFormSubmit();
 animateSummaryNumbers();
+initContactForm();
 
 function animateSummaryNumbers() {
   document.querySelectorAll('.circle-number-js').forEach(function (circle) {
@@ -134,23 +135,9 @@ function listenForRadioChangeInForm() {
   }
 }
 
-function handleFormSubmit() {
-  document
-    .getElementById('contactForm')
-    .addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const isValid = validateForm();
-
-      if (!isValid) {
-        return;
-      }
-
-      if (!grecaptcha.getResponse()) {
-        grecaptcha.execute();
-        return;
-      }
-    });
+function initContactForm() {
+  const contactForm = document.getElementById('contactForm');
+  configureFormWithRecaptcha(contactForm, validateForm);
 }
 
 function validateForm() {
@@ -191,7 +178,7 @@ function isForBusiness(value) {
 }
 
 // This is called via data-callback
-window.captchaCompleted = () => {
+window.onContactFormSubmit = () => {
   const response = grecaptcha.getResponse();
   if (response.length === 0) {
     return;

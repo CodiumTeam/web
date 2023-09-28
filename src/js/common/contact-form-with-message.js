@@ -2,8 +2,7 @@ import * as formValidation from './fromValidation';
 import { scrollToElement } from './scrollToElement';
 import * as events from './trackEvents';
 import { sendEmail } from '../email-sender';
-
-handleFormSubmit();
+import { configureFormWithRecaptcha } from './recaptcha-loader';
 
 function validateForm() {
   const $name = document.getElementById('name');
@@ -34,25 +33,15 @@ function validateForm() {
   return true;
 }
 
-function handleFormSubmit() {
-  document
-    .getElementById('contactForm')
-    .addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const isValid = validateForm();
-
-      if (!isValid) return;
-
-      if (!grecaptcha.getResponse()) {
-        grecaptcha.execute();
-        return;
-      }
-    });
+function initContactForm() {
+  const contactForm = document.getElementById('contactForm');
+  configureFormWithRecaptcha(contactForm, validateForm);
 }
 
+initContactForm();
+
 // This is called via data-callback
-window.captchaCompleted = () => {
+window.onContactFormSubmit = () => {
   const response = grecaptcha.getResponse();
   if (response.length === 0) {
     return;

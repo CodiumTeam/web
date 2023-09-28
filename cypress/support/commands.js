@@ -84,7 +84,7 @@ Cypress.Commands.add(
     cy.findByRole('button', { name: 'Pedir información' }).click();
     cy.window().then((win) => {
       // skip recaptcha
-      win.captchaCompleted();
+      win.onContactFormSubmit();
     });
   }
 );
@@ -112,7 +112,7 @@ Cypress.Commands.add(
     cy.findByRole('button', { name: 'Enviar mensaje' }).click();
     cy.window().then((win) => {
       // skip recaptcha
-      win.captchaCompleted();
+      win.onContactFormSubmit();
     });
   }
 );
