@@ -4,6 +4,8 @@ services:
       target: builder
     volumes:
       - .:/code
+    environment:
+      CYPRESS_CACHE_FOLDER: .cache/cypress
     ports:
       - 3000:3000
     command: ["npm", "run", "start"]
