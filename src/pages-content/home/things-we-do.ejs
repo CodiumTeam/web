@@ -1,25 +1,34 @@
 <div class="container">
   <h2 class="title">Qué podemos hacer por ti</h2>
+
+  <p>Somos especialistas en entregar valor de manera rápida y continua con un ritmo sostenible.<br/>Estas son algunas de las maneras en las que hemos ayudado a nuestros clientes.</p>
+
   <div class="section__grid section__max">
     <% var values = [
-      {
-        description: 'Escribir los primeros tests de un proyecto'
-      },
-      {
-        description: 'Actualizar versiones del lenguaje y framework de un proyecto legacy'
-      },
-      {
-        description: 'Crear una pipeline automática de test y despliegue'
-      },
-      {
-        description: 'Implementar un cluster de kubernetes'
-      },
-      {
-        description: 'Arrancar un proyecto desde cero'
-      },
-      {
-        description: 'Migrar un proyecto a la nube'
-      },
+        {
+          title: "Programación",
+          description: "Desarrollar tu producto en outsourcing o junto a tu equipo",
+        },
+        {
+          title: "Legacy",
+          description: "Arreglar el código que aporta valor y hay miedo de cambiar, actualizar versiones del lenguaje y framework",
+        },
+        {
+          title: "Testing",
+          description: "Definir y ejecutar una estrategia de test",
+        },
+        {
+          title: "DevEx",
+          description: "Mejorar y acelerar la experiencia de desarrollo, mentalidad de simplificacion"
+        },
+        {
+          title: "Infrastructura y cloud",
+          description: "Dockerización y creación de una pipeline de test y despliegue en la nube con kubernetes",
+        },
+        {
+          title: "Data engineering",
+          description: "Ayudar a investigadores a transformar sus resultados en productos",
+        }
     ]; %>
 
       <% values.forEach(function(value){ %>
@@ -32,4 +41,19 @@
       %>
 
   </div>
+
+    <p>
+        <br/>
+        Esto son solo algunos ejemplos de las muchas formas en las que podemos ayudarte.<br/>
+        <br/>
+        Habla con nosotros para explicarnos tus retos y te ayudaremos a resolverlos.
+    </p>
+
 </div>
+
+<div class="button__wrapper">
+  <a href="#contactForm" class="button button--primary" type="button">
+    Contactar
+  </a>
+</div>
+
