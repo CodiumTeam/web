@@ -1,0 +1,35 @@
+<div class="container">
+  <h2 class="title">Qué podemos hacer por ti</h2>
+  <div class="section__grid section__max">
+    <% var values = [
+      {
+        description: 'Escribir los primeros tests de un proyecto'
+      },
+      {
+        description: 'Actualizar versiones del lenguaje y framework de un proyecto legacy'
+      },
+      {
+        description: 'Crear una pipeline automática de test y despliegue'
+      },
+      {
+        description: 'Implementar un cluster de kubernettes'
+      },
+      {
+        description: 'Arrancar un proyecto desde cero'
+      },
+      {
+        description: 'Migrar un proyecto a la nube'
+      },
+    ]; %>
+
+      <% values.forEach(function(value){ %>
+        <%- include('../../partials/cards/card', {
+              icon: value.icon,
+              title: value.title,
+              description: value.description
+            }) %>
+        <% });
+      %>
+
+  </div>
+</div>
