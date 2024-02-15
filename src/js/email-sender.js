@@ -12,9 +12,10 @@ export function sendEmail(params) {
 
 function getCorrectParamsForEmail(json) {
   const trainingType = json['trainingType'];
+  const emailAddress = json['email'] || 'Email not specified';
   return {
     ...json,
-    emailAddress: json['email'] || 'Email not specified',
+    emailAddress: emailAddress,
     name: json['name'] || 'Name not specified',
     message: json['message'] || 'No message specified',
     trainingType: trainingType || '',
@@ -27,11 +28,11 @@ function getCorrectParamsForEmail(json) {
     serviceText: json['serviceName']
       ? `Servicio: <b>${json['serviceName']}</b><br />`
       : '',
-    subject: getSubject(trainingType),
+    subject: getSubject(trainingType, emailAddress),
   };
 }
 
-function getSubject(trainingType) {
+function getSubject(trainingType, emailAddress) {
   const today = new Date().toLocaleString();
   const trainings = {
     legacy_training: 'Curso de Legacy',
@@ -43,7 +44,8 @@ function getSubject(trainingType) {
     qa_training: 'Curso de QA',
   };
 
-  return trainings[trainingType]
-    ? 'Lead: ' + trainings[trainingType] + ' ' + today.replace(/\//g, '-')
-    : 'Lead: Contacto a través de la web';
+  const subject = trainings[trainingType]
+    ? trainings[trainingType] + ' ' + today.replace(/\//g, '-')
+    : 'Contacto a través de la web';
+  return 'Lead: ' + subject + ' - ' + emailAddress;
 }
