@@ -44,6 +44,6 @@ function getSubject(trainingType) {
   };
 
   return trainings[trainingType]
-    ? trainings[trainingType] + ' ' + today.replace(/\//g, '-')
-    : 'Contacto a través de la web';
+    ? 'Lead: ' + trainings[trainingType] + ' ' + today.replace(/\//g, '-')
+    : 'Lead: Contacto a través de la web';
 }
