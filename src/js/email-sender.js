@@ -45,5 +45,5 @@ function getSubject(trainingType) {
 
   return trainings[trainingType]
     ? trainings[trainingType] + ' ' + today.replace(/\//g, '-')
-    : 'Subject not specified';
+    : 'Contacto a través de la web';
 }
