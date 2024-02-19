@@ -1,7 +1,7 @@
 
 <div class="container">
   <h2 class="title">Conoce al equipo</h2>
-  <div class="section__grid section__max">
+  <div class="section__grid section__grid--team section__max">
     <%- include('../../partials/cards/card-team', {
       name: 'Luis Rovirosa',
       position: 'Back-end Developer',
@@ -21,15 +21,6 @@
     }) %>
 
     <%- include('../../partials/cards/card-team', {
-      name: 'Raúl Jiménez',
-      position: 'Full-stack Developer',
-      imageUrl: '/img/about-us/raul.jpg',
-      twitterUrl: 'https://twitter.com/rauljmz',
-      linkedinUrl: 'https://www.linkedin.com/in/rauljmz/',
-      githubUrl: 'https://github.com/rauljmz'
-    }) %>
-
-    <%- include('../../partials/cards/card-team', {
       name: 'Hugo Chinchilla',
       position: 'Full-stack Developer',
       imageUrl: '/img/about-us/hugo.jpg',
@@ -45,6 +36,16 @@
       twitterUrl: 'https://twitter.com/11joselu',
       linkedinUrl: 'https://linkedin.com/in/11joselu/',
       githubUrl: 'https://github.com/11joselu'
+    }) %>
+
+
+    <%- include('../../partials/cards/card-team', {
+      name: 'Raúl Jiménez',
+      position: 'Full-stack Developer',
+      imageUrl: '/img/about-us/raul.jpg',
+      twitterUrl: 'https://twitter.com/rauljmz',
+      linkedinUrl: 'https://www.linkedin.com/in/rauljmz/',
+      githubUrl: 'https://github.com/rauljmz'
     }) %>
 
   </div>
