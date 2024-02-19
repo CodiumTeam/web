@@ -4,6 +4,7 @@ services:
       target: builder
     volumes:
       - .:/code
+      - /code/node_modules
     environment:
       CYPRESS_CACHE_FOLDER: .cache/cypress
     ports:
