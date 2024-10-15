@@ -2,7 +2,7 @@
 DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 
 .PHONY: default
-default: start
+default: up
 
 .PHONY: install
 install:
@@ -13,8 +13,8 @@ install:
 lint:
 	docker compose run -T web sh scripts/lint.sh
 
-.PHONY: start
-start:
+.PHONY: up
+up:
 	docker compose up
 
 .PHONY: clean
