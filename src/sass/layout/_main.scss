@@ -159,8 +159,8 @@ section {
     height: auto;
 
     &.clients {
-      &--ge {
-        max-width: 55px;
+      &--ge, &--iram {
+        max-width: 65px;
       }
 
     }
