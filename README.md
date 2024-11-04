@@ -2,7 +2,7 @@
 make install
 
 # Dev Start front-end server
-make start
+make up
 
 # Pages
 
