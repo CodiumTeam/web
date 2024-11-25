@@ -34,7 +34,6 @@ export const compileHtml = (html, ejsData = {}) => {
     return ejs.compile(toCompileHTML, {
       views: [SRC],
       async: false,
-      cache: false,
     })({
       ...ejsData,
     });
