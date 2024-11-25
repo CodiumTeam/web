@@ -2,6 +2,17 @@
   "La página que buscabas existe": "The user has internet connection",
   "Tienes conexión a internet": "The searched page exists",
   "El servidor está levantado y funcionando": "The server is up and running",
-  "Codium: Desarrollo de producto y formación": "",
-  "Desarrollamos software de calidad. Formamos a equipos de programación. Estamos especializados en TDD, código legacy y patrones de diseño.": ""
+  "Codium: Desarrollo de producto y formación": "Codium: Product development and training",
+  "Servicios": "Services",
+  "Valores": "Values",
+  "Desarrollo": "Development",
+  "Cursos": "Courses",
+  "Working with Legacy Code": "Working with Legacy Code",
+  "Test-Driven Development": "Test-Driven Development",
+  "Refactoring a Patrones": "Refactoring Patterns",
+  "Docker": "Docker",
+  "Quality Assurance": "Quality Assurance",
+  "Taller de Front-end <span class=\"badge bg-primary\">online</span>": "Front-end Workshop <span class=\"badge bg-primary\">online</span>",
+  "Equipo": "Team",
+  "Contactar": "Contact"
 }
