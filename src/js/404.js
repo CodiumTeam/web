@@ -4,7 +4,7 @@ import '../sass/404.scss';
 
 listenDropdown();
 
-document.querySelectorAll('.icon-test').forEach((item, index) => {
+document.querySelectorAll('.icon-test').forEach((item) => {
   const timeInMS = Math.floor(Math.random() * 6);
   setTimeout(() => {
     const element = item;

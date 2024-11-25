@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { isMobile } from '../../isMobile';
 
-const devices = ['desktop', ];
+const devices = ['desktop'];
 
 describe('Docker page', () => {
   devices.forEach((device) => {

@@ -7,13 +7,11 @@
     "node": ">18.x"
   },
   "scripts": {
-    "i18n:scan": "i18next-scanner --config i18next-scanner.config.js",
+    "i18n:extract": "node build/extract-i18n.mjs",
     "start": "node server.mjs",
     "build": "NODE_ENV=production vite build --mode=production",
-    "postbuild": "NODE_ENV=production npm run i18n:scan",
     "lint-staged": "lint-staged",
-    "lint": "eslint **/*.js",
-    "heroku-cleanup": "rm -rf node_modules",
+    "lint": "eslint **/*.{js,ts}",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "preview": "vite preview"

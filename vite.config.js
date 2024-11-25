@@ -1,8 +1,8 @@
 import { defineConfig, loadEnv } from 'vite';
-import { basename, resolve } from 'path';
+import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
-import glob from 'glob';
-import { compileHtml } from './build-utils.mjs';
+import { compileHtml, getHtmlFilesToProcess } from './build/utils.mjs';
+import i18n from 'i18n/i18n';
 
 const SRC = resolve(__dirname, 'src');
 
@@ -32,21 +32,15 @@ export default defineConfig(({ mode }) => {
   };
 });
 
-function getHtmlFilesToProcess() {
-  const htmlFiles = glob.sync(`${SRC}/*.html`);
-  return htmlFiles.reduce((acc, file) => {
-    acc[basename(file)] = file;
-    return acc;
-  }, {});
-}
-
 function parseTranslationTag() {
   return {
     name: 'transform-html',
     transformIndexHtml: {
       enforce: 'pre',
       transform(html) {
-        return compileHtml(html);
+        return compileHtml(html, {
+          ...i18n,
+        });
       },
     },
   };

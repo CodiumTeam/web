@@ -44,3 +44,6 @@ test-email: get-cypress-version
 		--entrypoint cypress \
 		cypress/included:$(CYPRESS_VERSION) run \
 		--config baseUrl=http://host.docker.internal:3000
+
+i18n-extract:
+	docker compose run -T -v /code/node_modules web npm run i18n:extract
