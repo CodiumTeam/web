@@ -7,7 +7,7 @@ import glob from 'glob';
 export const replaceTransWithSpan = (html) =>
   html.replace(
     /<Trans\b[^>]*>(.*?)<\/Trans>/gs, // Match <Trans>...</Trans> tags
-    (match, p1) => `<span data-t="${p1.trim()}">${p1.trim()}</span>` // Replace with <span data-t>
+    (match, p1) => `<%= t['${p1}'] %>`
   );
 
 const transformHtmlPlugin = () => ({
@@ -48,6 +48,9 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: inputs,
       },
+    },
+    server: {
+      middlewareMode: true,
     },
   };
 });
