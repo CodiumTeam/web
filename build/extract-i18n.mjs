@@ -2,38 +2,49 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compileHtml, getHtmlFilesToProcess } from './utils.mjs';
 import fs from 'node:fs';
-import {DEFAULT_LANG, i18n, languagesDir} from './i18n-utils.mjs';
+import { DEFAULT_LANG, i18n, languagesDir } from './i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const htmlFiles = getHtmlFilesToProcess();
 const defaultTranslations = {};
 
-for (const fileName in htmlFiles) {
-  const template = fs.readFileSync(
-    path.resolve(__dirname, 'src', htmlFiles[fileName]),
-    'utf-8'
-  );
-  compileHtml(
-    template,
-    {
+main();
+
+function main() {
+  for (const fileName in htmlFiles) {
+    const template = fs.readFileSync(
+      path.resolve(__dirname, 'src', htmlFiles[fileName]),
+      'utf-8'
+    );
+    compileHtml(template, {
       ...i18n,
-    },
-    (text) => {
-      defaultTranslations[text] = text;
+      __: keysExtractorDecorator(i18n.__),
+    });
+  }
+  saveInFile(`es.json`, defaultTranslations);
+
+  const languages = i18n.getLocales();
+  for (const language of languages) {
+    if (language !== DEFAULT_LANG) {
+      updateJsonForLanguage(language);
     }
-  );
+  }
 }
 
-saveInFile(`es.json`, defaultTranslations);
-const languages = i18n.getLocales();
+function keysExtractorDecorator(i18n__) {
+  return (text) => {
+    defaultTranslations[text] = text;
+    return i18n__;
+  };
+}
 
-for (const language of languages) {
-  if (language !== DEFAULT_LANG) {
-    const langFile = `${language}.json`;
-    const oldTranslations = readFile(langFile);
-    saveInFile(langFile, mergeLanguages(oldTranslations, defaultTranslations));
-  }
+function updateJsonForLanguage(language) {
+  const langFile = `${language}.json`;
+  const oldTranslations = readFile(langFile);
+  saveInFile(
+    langFile,
+    mergeLanguages(oldTranslations, defaultTranslations)
+  );
 }
 
 function saveInFile(inFile, translations) {

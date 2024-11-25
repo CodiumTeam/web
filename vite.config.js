@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
   process.env = {
     ...loadEnv(mode, process.cwd(), ''),
     ...process.env,
+    VITE_APP_LANG: process.env.locale || DEFAULT_LANG,
   };
 
   const isProduction = mode === 'production';

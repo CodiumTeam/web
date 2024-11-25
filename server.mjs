@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import { compileHtml } from './build/utils.mjs';
-import {availableLanguages, DEFAULT_LANG, i18n} from './build/i18n-utils.mjs';
+import { availableLanguages, DEFAULT_LANG, i18n } from './build/i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -19,6 +19,7 @@ async function createServer() {
   app.use(i18n.init);
   app.use('*', async (req, res, next) => {
     req.setLocale(getLocaleFromReq(req));
+    process.env.locale = getLocaleFromReq(req);
     const url = getFixedUrl(req);
 
     if (!url.endsWith('.html')) {

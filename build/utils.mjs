@@ -17,11 +17,10 @@ export const getHtmlFilesToProcess = () => {
 };
 
 
-export const compileHtml = (html, ejsData = {}, extractor = () => undefined) => {
+export const compileHtml = (html, ejsData = {}) => {
   const compiledHtml = html.replace(
     /<t\b[^>]*>(.*?)<\/t>/gs, // Match <Trans>...</Trans> tags
     (match, p1) => {
-      extractor(p1);
       return `<%= __('${p1.trim()}') %>`;
     }
   );
@@ -30,6 +29,6 @@ export const compileHtml = (html, ejsData = {}, extractor = () => undefined) => 
     views: [SRC],
     async: false,
   })({
-    ...ejsData
+    ...ejsData,
   });
 };
