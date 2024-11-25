@@ -2,7 +2,7 @@ import { defineConfig, loadEnv } from 'vite';
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { compileHtml, getHtmlFilesToProcess } from './build/utils.mjs';
-import i18n from 'i18n/i18n';
+import { i18n } from './build/i18n-utils.mjs';
 
 const SRC = resolve(__dirname, 'src');
 

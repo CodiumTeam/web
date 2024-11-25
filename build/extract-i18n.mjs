@@ -1,12 +1,8 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import {
-  compileHtml,
-  getHtmlFilesToProcess,
-  i18n,
-  languagesDir,
-} from './utils.mjs';
+import { compileHtml, getHtmlFilesToProcess } from './utils.mjs';
 import fs from 'node:fs';
+import { i18n, languagesDir } from './i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

@@ -3,7 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
-import { availableLanguages, compileHtml, i18n } from './build/utils.mjs';
+import { compileHtml } from './build/utils.mjs';
+import {availableLanguages, i18n} from './build/i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
