@@ -1,3 +1,5 @@
 {
-  "Adios jose": "Bye jose"
+  "El servidor está en funcionamiento": "The server is up and running",
+  "La página que buscabas existe": "The user has internet connection",
+  "Tienes conexión a internet": "The searched page exists"
 }
