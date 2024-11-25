@@ -1,8 +1,10 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import ejs from 'ejs';
-import glob from "glob";
-import {basename} from "path";
+import glob from 'glob';
+import {basename} from 'node:path';
+import {JSDOM} from 'jsdom';
+import {decode} from 'html-entities';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -16,19 +18,29 @@ export const getHtmlFilesToProcess = () => {
   }, {});
 };
 
-
 export const compileHtml = (html, ejsData = {}) => {
-  const compiledHtml = html.replace(
-    /<t\b[^>]*>(.*?)<\/t>/gs, // Match <Trans>...</Trans> tags
-    (match, p1) => {
-      return `<%= __('${p1.trim()}') %>`;
-    }
-  );
+  function replaceHtml(html) {
+    const dom = new JSDOM(html);
+    const transElements = dom.window.document.documentElement.querySelectorAll('t');
+    transElements.forEach((transElement) => {
+      const content = transElement.innerHTML.trim();
+      transElement.outerHTML = `<span><%= __('${content}') %></span>`;
+    });
 
-  return ejs.compile(compiledHtml, {
-    views: [SRC],
-    async: false,
-  })({
-    ...ejsData,
-  });
+    return dom.window.document.documentElement.innerHTML;
+  }
+
+  function compileHTML(toCompileHTML) {
+    return ejs.compile(toCompileHTML, {
+      views: [SRC],
+      async: false,
+      cache: false,
+    })({
+      ...ejsData,
+    });
+  }
+
+  const result = compileHTML(html);
+  // now the partials was inline it, we need to re-compile it
+  return compileHTML(decode(replaceHtml(result)));
 };

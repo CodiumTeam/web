@@ -21,6 +21,7 @@ function main() {
       __: keysExtractorDecorator(i18n.__),
     });
   }
+
   saveInFile(`es.json`, defaultTranslations);
 
   const languages = i18n.getLocales();
@@ -34,7 +35,7 @@ function main() {
 function keysExtractorDecorator(i18n__) {
   return (text) => {
     defaultTranslations[text] = text;
-    return i18n__;
+    return i18n__(text);
   };
 }
 

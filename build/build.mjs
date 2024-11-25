@@ -1,4 +1,4 @@
-import { execSync } from 'child_process';
+import { execSync } from 'node:child_process';
 import { i18n } from './i18n-utils.mjs';
 
 function runBuild(locale) {

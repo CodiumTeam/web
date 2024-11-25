@@ -14,5 +14,7 @@
   "Quality Assurance": "Quality Assurance",
   "Taller de Front-end <span class=\"badge bg-primary\">online</span>": "Front-end Workshop <span class=\"badge bg-primary\">online</span>",
   "Equipo": "Team",
-  "Contactar": "Contact"
+  "Contactar": "Contact",
+  "Desarrollamos software de calidad. Formamos a equipos de programación. Estamos especializados en TDD, código legacy y patrones de diseño.": "We develop quality software. We train programming teams. We are specialized in TDD, legacy code and design patterns.",
+  "Especializados en TDD y Legacy code.": "Specialized in TDD and Legacy code."
 }
