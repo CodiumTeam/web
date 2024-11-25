@@ -3,7 +3,10 @@ import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { compileHtml, getHtmlFilesToProcess } from './build/utils.mjs';
 import { DEFAULT_LANG, i18n } from './build/i18n-utils.mjs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SRC = resolve(__dirname, 'src');
 
 export default defineConfig(({ mode }) => {
@@ -48,9 +51,11 @@ function parseTranslationTag() {
 }
 
 function getOutDir() {
-  return resolve(
-    __dirname,
-    'dist',
-    process.env.locale === DEFAULT_LANG ? '' : process.env.locale
-  );
+  const path = resolve(__dirname, 'dist');
+
+  if (process.env.locale === DEFAULT_LANG) {
+    return path;
+  }
+
+  return resolve(path, process.env.locale || DEFAULT_LANG);
 }
