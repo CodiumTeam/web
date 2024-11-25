@@ -34,6 +34,7 @@
     "@testing-library/cypress": "^9.0.0",
     "@vitejs/plugin-react": "3.1.0",
     "cypress": "12.6.0",
+    "ejs": "^3.1.10",
     "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-cypress": "2.12.1",
@@ -42,13 +43,10 @@
     "express": "^4.21.1",
     "glob": "^8.1.0",
     "i18n": "^0.15.1",
-    "i18next-scanner": "^4.2.0",
     "lint-staged": "13.1.2",
     "prettier": "2.8.4",
     "sass": "1.58.3",
-    "static-i18n": "^0.2.10",
-    "vite": "4.1.4",
-    "vite-plugin-ejs-engine": "1.0.4"
+    "vite": "4.1.4"
   },
   "dependencies": {
     "@babel/eslint-parser": "7.19.1",

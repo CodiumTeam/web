@@ -1,30 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
+import { fileURLToPath } from 'node:url';
 import express from 'express';
-import {createServer as createViteServer} from 'vite';
-import ejs from 'ejs';
-import {I18n} from 'i18n';
-import {replaceTTagByEjsTranslation} from "./build-utils.mjs";
+import { createServer as createViteServer } from 'vite';
+import { availableLanguages, compileHtml, i18n } from './build-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const languagesDir = path.join(__dirname, 'src', 'locales');
-const availableLanguages = fs
-  .readdirSync(languagesDir)
-  .filter((file) => file.endsWith('.json'))
-  .map((file) => path.basename(file, '.json'));
 
 async function createServer() {
   const app = express();
   const vite = await createViteServer({
     server: { middlewareMode: true },
     appType: 'custom',
-  });
-
-  const i18n = new I18n({
-    locales: availableLanguages,
-    directory: languagesDir,
-    register: global,
   });
 
   app.use(vite.middlewares);
@@ -42,10 +29,7 @@ async function createServer() {
         path.resolve(__dirname, 'src', url),
         'utf-8'
       );
-      const html = ejs.compile(replaceTTagByEjsTranslation(template), {
-        views: [path.join(__dirname, 'src')],
-        async: false,
-      })({
+      const html = compileHtml(template, {
         ...res.locals,
       });
 

@@ -1,21 +1,10 @@
 import { defineConfig, loadEnv } from 'vite';
 import { basename, resolve } from 'path';
-import ejs from 'vite-plugin-ejs-engine';
 import react from '@vitejs/plugin-react';
 import glob from 'glob';
-import { replaceTTagByEjsTranslation } from './build-utils.mjs';
+import { compileHtml } from './build-utils.mjs';
 
 const SRC = resolve(__dirname, 'src');
-
-const parseTranslationTag = () => ({
-  name: 'transform-html',
-  transformIndexHtml: {
-    enforce: 'pre',
-    transform(html) {
-      return replaceTTagByEjsTranslation(html);
-    },
-  },
-});
 
 export default defineConfig(({ mode }) => {
   process.env = {
@@ -32,7 +21,7 @@ export default defineConfig(({ mode }) => {
     publicDir: resolve(__dirname, 'public'),
     root: SRC,
     envDir: __dirname,
-    plugins: [isProduction && parseTranslationTag(), ejs(), react()],
+    plugins: [isProduction && parseTranslationTag(), react()],
     build: {
       outDir: resolve(__dirname, 'dist'),
       emptyOutDir: false,
@@ -49,4 +38,16 @@ function getHtmlFilesToProcess() {
     acc[basename(file)] = file;
     return acc;
   }, {});
+}
+
+function parseTranslationTag() {
+  return {
+    name: 'transform-html',
+    transformIndexHtml: {
+      enforce: 'pre',
+      transform(html) {
+        return compileHtml(html);
+      },
+    },
+  };
 }
