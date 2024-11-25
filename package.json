@@ -9,7 +9,7 @@
   "scripts": {
     "i18n:extract": "node build/extract-i18n.mjs",
     "start": "node server.mjs",
-    "build": "NODE_ENV=production vite build --mode=production",
+    "build": "node build/build.mjs",
     "lint-staged": "lint-staged",
     "lint": "eslint **/*.{js,ts}",
     "cypress:run": "cypress run",

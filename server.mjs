@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import { compileHtml } from './build/utils.mjs';
-import {availableLanguages, i18n} from './build/i18n-utils.mjs';
+import {availableLanguages, DEFAULT_LANG, i18n} from './build/i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -53,7 +53,7 @@ createServer().then(() => {
 });
 
 function getLocaleFromReq(req) {
-  let locale = 'es';
+  let locale = DEFAULT_LANG;
   const parts = req.originalUrl.split('/');
   if (availableLanguages.includes(parts[1])) {
     locale = parts[1];

@@ -2,7 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compileHtml, getHtmlFilesToProcess } from './utils.mjs';
 import fs from 'node:fs';
-import { i18n, languagesDir } from './i18n-utils.mjs';
+import {DEFAULT_LANG, i18n, languagesDir} from './i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -29,7 +29,7 @@ saveInFile(`es.json`, defaultTranslations);
 const languages = i18n.getLocales();
 
 for (const language of languages) {
-  if (language !== 'es') {
+  if (language !== DEFAULT_LANG) {
     const langFile = `${language}.json`;
     const oldTranslations = readFile(langFile);
     saveInFile(langFile, mergeLanguages(oldTranslations, defaultTranslations));
