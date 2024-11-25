@@ -1,3 +1,4 @@
 {
-  "*.js": "eslint --fix"
+  "*.js": "eslint --fix",
+   "*.{html,ejs}": "npm run i18n:extract"
 }

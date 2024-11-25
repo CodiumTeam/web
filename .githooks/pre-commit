@@ -1,0 +1,13 @@
+#!/bin/sh
+
+make lint
+
+
+FOLDER="src/locales"
+
+# Check for unstaged changes only inside the specified folder
+if ! git diff --quiet "$FOLDER"; then
+  echo "❌ Commit failed: i18n extraction generated changes in the $FOLDER folder."
+  echo "Please review and commit the changes before proceeding."
+  exit 1
+fi

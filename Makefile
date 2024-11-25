@@ -7,7 +7,7 @@ default: up
 .PHONY: install
 install:
 	docker compose run web npm install
-	git config --local core.hooksPath git-hooks/
+	git config --local core.hooksPath .githooks/
 
 .PHONY: lint
 lint:
