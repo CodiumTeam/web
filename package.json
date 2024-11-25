@@ -7,8 +7,10 @@
     "node": ">18.x"
   },
   "scripts": {
+    "i18n:scan": "i18next-scanner --config i18next-scanner.config.js",
     "start": "vite --host 0.0.0.0 --port 3000",
     "build": "NODE_ENV=production vite build --mode=production",
+    "postbuild": "NODE_ENV=production npm run i18n:scan && static-i18n -l es -i en -i es dist --replace true",
     "lint-staged": "lint-staged",
     "lint": "eslint **/*.js",
     "heroku-cleanup": "rm -rf node_modules",
@@ -38,9 +40,11 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "glob": "^8.1.0",
+    "i18next-scanner": "^4.2.0",
     "lint-staged": "13.1.2",
     "prettier": "2.8.4",
     "sass": "1.58.3",
+    "static-i18n": "^0.2.10",
     "vite": "4.1.4",
     "vite-plugin-ejs-engine": "1.0.4"
   },

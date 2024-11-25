@@ -1,8 +1,24 @@
 import { defineConfig, loadEnv } from 'vite';
-import { resolve, basename } from 'path';
+import { basename, resolve } from 'path';
 import ejs from 'vite-plugin-ejs-engine';
 import react from '@vitejs/plugin-react';
 import glob from 'glob';
+
+export const replaceTransWithSpan = (html) =>
+  html.replace(
+    /<Trans\b[^>]*>(.*?)<\/Trans>/gs, // Match <Trans>...</Trans> tags
+    (match, p1) => `<span data-t="${p1.trim()}">${p1.trim()}</span>` // Replace with <span data-t>
+  );
+
+const transformHtmlPlugin = () => ({
+  name: 'transform-html',
+  transformIndexHtml: {
+    enforce: 'pre',
+    transform(html) {
+      return replaceTransWithSpan(html);
+    },
+  },
+});
 
 const SRC = resolve(__dirname, 'src');
 
@@ -25,7 +41,7 @@ export default defineConfig(({ mode }) => {
     publicDir: resolve(__dirname, 'public'),
     root: SRC,
     envDir: __dirname,
-    plugins: [ejs(), react()],
+    plugins: [ejs(), react(), transformHtmlPlugin()],
     build: {
       outDir: resolve(__dirname, 'dist'),
       emptyOutDir: false,
