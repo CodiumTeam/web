@@ -5,6 +5,7 @@ import express from 'express';
 import {createServer as createViteServer} from 'vite';
 import ejs from 'ejs';
 import {I18n} from 'i18n';
+import {replaceTTagByEjsTranslation} from "./build-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const languagesDir = path.join(__dirname, 'src', 'locales');
@@ -12,12 +13,6 @@ const availableLanguages = fs
   .readdirSync(languagesDir)
   .filter((file) => file.endsWith('.json'))
   .map((file) => path.basename(file, '.json'));
-
-export const replaceTransWithSpan = (html) =>
-  html.replace(
-    /<t\b[^>]*>(.*?)<\/t>/gs, // Match <Trans>...</Trans> tags
-    (match, p1) => `<%= __('${p1.trim()}') %>`
-  );
 
 async function createServer() {
   const app = express();
@@ -47,7 +42,7 @@ async function createServer() {
         path.resolve(__dirname, 'src', url),
         'utf-8'
       );
-      const html = ejs.compile(replaceTransWithSpan(template), {
+      const html = ejs.compile(replaceTTagByEjsTranslation(template), {
         views: [path.join(__dirname, 'src')],
         async: false,
       })({
