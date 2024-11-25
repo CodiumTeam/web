@@ -4,29 +4,7 @@ import ejs from 'vite-plugin-ejs-engine';
 import react from '@vitejs/plugin-react';
 import glob from 'glob';
 
-export const replaceTransWithSpan = (html) =>
-  html.replace(
-    /<Trans\b[^>]*>(.*?)<\/Trans>/gs, // Match <Trans>...</Trans> tags
-    (match, p1) => `<%= t['${p1}'] %>`
-  );
-
-const transformHtmlPlugin = () => ({
-  name: 'transform-html',
-  transformIndexHtml: {
-    enforce: 'pre',
-    transform(html) {
-      return replaceTransWithSpan(html);
-    },
-  },
-});
-
 const SRC = resolve(__dirname, 'src');
-
-const htmlFiles = glob.sync(`${SRC}/*.html`);
-const inputs = htmlFiles.reduce((acc, file) => {
-  acc[basename(file)] = file;
-  return acc;
-}, {});
 
 export default defineConfig(({ mode }) => {
   process.env = {
@@ -41,16 +19,21 @@ export default defineConfig(({ mode }) => {
     publicDir: resolve(__dirname, 'public'),
     root: SRC,
     envDir: __dirname,
-    plugins: [ejs(), react(), transformHtmlPlugin()],
+    plugins: [ejs(), react()],
     build: {
       outDir: resolve(__dirname, 'dist'),
       emptyOutDir: false,
       rollupOptions: {
-        input: inputs,
+        input: getHtmlFilesToProcess(),
       },
-    },
-    server: {
-      middlewareMode: true,
     },
   };
 });
+
+function getHtmlFilesToProcess() {
+  const htmlFiles = glob.sync(`${SRC}/*.html`);
+  return htmlFiles.reduce((acc, file) => {
+    acc[basename(file)] = file;
+    return acc;
+  }, {});
+}
