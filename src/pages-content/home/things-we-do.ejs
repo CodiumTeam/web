@@ -1,60 +1,62 @@
 <div class="container">
-  <h2 class="title">¿Qué podemos hacer por ti?</h2>
+    <h2 class="title">
+        <t>¿Qué podemos hacer por ti?</t>
+    </h2>
 
-  <p class="text-center text--summary text-dark-grey">
-      Resolvemos retos complejos.
-  </p>
-  <p class="text-center text--summary text-dark-grey">
-      Entregamos valor rápido y de forma sostenible.
-  </p>
+    <p class="text-center text--summary text-dark-grey">
+        <t>Resolvemos retos complejos.</t>
+    </p>
+    <p class="text-center text--summary text-dark-grey">
+        <t>Entregamos valor rápido y de forma sostenible.</t>
+    </p>
 
-  <div class="section__grid section__max">
-    <% var values = [
-        {
-          title: "Programación de calidad",
-          description: "Desarrollamos tu producto autónomamente o junto a tu equipo.",
-        },
-        {
-          title: "Nos atrevemos con tu legacy",
-          description: "Recuperamos el control de tu producto actualizando y modernizando el código.",
-        },
-        {
-          title: "Expertos en testing",
-          description: "Reducimos las incidencias y costes definiendo y ejecutando una estrategia de testing.",
-        },
-        {
-          title: "DevEx",
-          description: "Mejoramos la eficiencia y mentalidad de tu equipo.",
-        },
-        {
-          title: "Infrastructura y cloud",
-          description: "Dockerizamos y creamos una pipeline de test y despliegamos en la nube con kubernetes.",
-        },
-        {
-          title: "Data engineering",
-          description: "Transformamos investigaciones en productos.",
-        }
-    ]; %>
+    <div class="section__grid section__max">
+        <% var values = [
+            {
+                title: __("Programación de calidad"),
+                description: __("Desarrollamos tu producto autónomamente o junto a tu equipo."),
+            },
+            {
+                title: __("Nos atrevemos con tu legacy"),
+                description: __("Recuperamos el control de tu producto actualizando y modernizando el código."),
+            },
+            {
+                title: __("Expertos en testing"),
+                description: __("Reducimos las incidencias y costes definiendo y ejecutando una estrategia de testing."),
+            },
+            {
+                title: __("DevEx"),
+                description: __("Mejoramos la eficiencia y mentalidad de tu equipo."),
+            },
+            {
+                title: __("Infrastructura y cloud"),
+                description: __("Dockerizamos y creamos una pipeline de test y despliegamos en la nube con kubernetes."),
+            },
+            {
+                title: __("Data engineering"),
+                description: __("Transformamos investigaciones en productos."),
+            }
+        ]; %>
 
-      <% values.forEach(function(value){ %>
-        <%- include('../../partials/cards/card', {
-              icon: value.icon,
-              title: value.title,
-              description: value.description
+        <% values.forEach(function(value){ %>
+            <%- include('../../partials/cards/card', {
+            icon: value.icon,
+            title: value.title,
+            description: value.description
             }) %>
         <% });
-      %>
+        %>
 
-  </div>
+    </div>
 
-  <p class="text-center text--summary text-dark-grey">
-      <br/>
-    Explicanos tus retos y te ayudamos a resolverlos.
-  </p>
+    <p class="text-center text--summary text-dark-grey">
+        <br/>
+        <t>Explicanos tus retos y te ayudamos a resolverlos.</t>
+    </p>
 
-  <div class="button__wrapper">
-    <a href="#contactForm" class="button button--primary" type="button">
-      Contactar
-    </a>
-  </div>
+    <div class="button__wrapper">
+        <a href="#contactForm" class="button button--primary" type="button">
+            <t>Contactar</t>
+        </a>
+    </div>
 </div>

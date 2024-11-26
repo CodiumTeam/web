@@ -1,34 +1,34 @@
 <div class="container">
-  <h2 class="title">Qué ofrecemos</h2>
-  <div class="section__grid section__grid--services">
-    <%- include('../../partials/cards/card-large', {
-      title: 'Desarrollo',
-      description: 'Quieres un equipo de alto rendimiento para desarrollar tu producto. Colaboramos con tu equipo o de forma autónoma.',
-      imageUrl: '/img/illustrations/development-team.svg',
-      buttonUrl: '/desarrollo.html',
-    }) %>
+    <h2 class="title"><t>Qué ofrecemos</t></h2>
+    <div class="section__grid section__grid--services">
+        <%- include('../../partials/cards/card-large', {
+            title: __('Desarrollo'),
+            description: __('Quieres un equipo de alto rendimiento para desarrollar tu producto. Colaboramos con tu equipo o de forma autónoma.'),
+            imageUrl: '/img/illustrations/development-team.svg',
+            buttonUrl: '/desarrollo.html',
+        }) %>
 
-    <%- include('../../partials/cards/card-large', {
-      title: 'Cursos',
-      description: 'Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.',
-      imageUrl: 'img/illustrations/classroom-learning.svg',
-      buttonUrl: '#courses-list'
-    }) %>
+        <%- include('../../partials/cards/card-large', {
+            title: __('Cursos'),
+            description: __('Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.'),
+            imageUrl: 'img/illustrations/classroom-learning.svg',
+            buttonUrl: '#courses-list'
+        }) %>
 
-    <%- include('../../partials/cards/card-large', {
-      title: 'Formación continua',
-      description: 'Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.',
-      imageUrl: '/img/illustrations/virtual-education.svg',
-      buttonUrl: '#contact',
-      buttonText: 'Hablemos'
-    }) %>
+        <%- include('../../partials/cards/card-large', {
+            title: __('Formación continua'),
+            description: __('Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.'),
+            imageUrl: '/img/illustrations/virtual-education.svg',
+            buttonUrl: '#contact',
+            buttonText: 'Hablemos'
+        }) %>
 
-    <%- include('../../partials/cards/card-large', {
-      title: 'Aceleración técnica',
-      description: 'Quieres que tu equipo suba de nivel y/o formar a las nuevas incorporaciones de forma intensiva.',
-      imageUrl: '/img/illustrations/bootcamp.svg',
-      buttonUrl: '/programa-de-aceleracion.html'
-    }) %>
+        <%- include('../../partials/cards/card-large', {
+            title: __('Aceleración técnica'),
+            description: __('Quieres que tu equipo suba de nivel y/o formar a las nuevas incorporaciones de forma intensiva.'),
+            imageUrl: '/img/illustrations/bootcamp.svg',
+            buttonUrl: '/programa-de-aceleracion.html'
+        }) %>
 
-  </div>
+    </div>
 </div>

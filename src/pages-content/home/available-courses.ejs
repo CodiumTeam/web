@@ -1,86 +1,85 @@
-
 <div class="container">
-  <h2 class="title">Cursos disponibles</h2>
-  <div class="section__grid section__grid--trainings trainings">
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Working with Legacy Code',
-      description: 'Reduce los costes de desarrollo y mantenimiento desacoplando y testeando.',
-      imageUrl: '/img/legacy-code.svg',
-      buttonUrl: '/curso-legacy-code.html',
-      list: [
-        'Identifica y soluciona problemas en el código',
-        'Mejora el código desacoplando las dependencias',
-        'Cambia el software con seguridad gracias a los tests',
-        'Diseña una estrategia de testing efectiva y barata de mantener'
-      ]
-    }) %>
+    <h2 class="title"><t>Cursos disponibles</t></h2>
+    <div class="section__grid section__grid--trainings trainings">
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Working with Legacy Code'),
+            description: __('Reduce los costes de desarrollo y mantenimiento desacoplando y testeando.'),
+            imageUrl: '/img/legacy-code.svg',
+            buttonUrl: '/curso-legacy-code.html',
+            list: [
+                __('Identifica y soluciona problemas en el código'),
+                __('Mejora el código desacoplando las dependencias'),
+                __('Cambia el software con seguridad gracias a los tests'),
+                __('Diseña una estrategia de testing efectiva y barata de mantener')
+            ]
+        }) %>
 
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Test-driven development',
-      description: 'Desarrolla software adaptable, con calidad y de forma simple.',
-      imageUrl: '/img/tdd-logo.svg',
-      buttonUrl: '/curso-tdd.html',
-      list: [
-        'Aprende los beneficios de TDD',
-        'Evita los problemas más frecuentes en la creación de los tests',
-        'Testea sin acoplamiento con los dobles de pruebas',
-        'Descubre la tranquilidad del código bien testeado'
-      ]
-    }) %>
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Test-driven development'),
+            description: __('Desarrolla software adaptable, con calidad y de forma simple.'),
+            imageUrl: '/img/tdd-logo.svg',
+            buttonUrl: '/curso-tdd.html',
+            list: [
+                __('Aprende los beneficios de TDD'),
+                __('Evita los problemas más frecuentes en la creación de los tests'),
+                __('Testea sin acoplamiento con los dobles de pruebas'),
+                __('Descubre la tranquilidad del código bien testeado')
+            ]
+        }) %>
 
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Refactoring a Patrones',
-      description: 'Mejora el diseño de tu código usando patrones de diseño.',
-      imageUrl: '/img/refactoring-to-patterns.svg',
-      buttonUrl: '/curso-refactoring-a-patrones.html',
-      list: [
-        'Aprende buenas soluciones a problemas recurrentes',
-        'Crea código flexible, mantenible y reutilizable',
-        'Refactoriza un código en mal estado evitando la sobreingeniería',
-        'Saca partido al IDE para que el refactor se más sencillo',
-      ]
-    }) %>
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Refactoring a Patrones'),
+            description: __('Mejora el diseño de tu código usando patrones de diseño.'),
+            imageUrl: '/img/refactoring-to-patterns.svg',
+            buttonUrl: '/curso-refactoring-a-patrones.html',
+            list: [
+                __('Aprende buenas soluciones a problemas recurrentes'),
+                __('Crea código flexible, mantenible y reutilizable'),
+                __('Refactoriza un código en mal estado evitando la sobreingeniería'),
+                __('Saca partido al IDE para que el refactor se más sencillo',)
+            ]
+        }) %>
 
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Docker',
-      description: 'Simplifica la gestión de la infraestructura.',
-      imageUrl: '/img/moby-logo.svg',
-      buttonUrl: '/curso-docker.html',
-      height: 130,
-      list: [
-        'Elimina el famoso \'en mi máquina funciona\'',
-        'Habilita que todo tu equipo pueda construir y mantener las imágenes',
-        'Evita los problemas de seguridad al crear imágenes',
-        'Mejora tus procesos de Integración Continua automatizando el despliegue'
-      ]
-    }) %>
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Docker'),
+            description: __('Simplifica la gestión de la infraestructura.'),
+            imageUrl: '/img/moby-logo.svg',
+            buttonUrl: '/curso-docker.html',
+            height: 130,
+            list: [
+                __('Elimina el famoso \'en mi máquina funciona\''),
+                __('Habilita que todo tu equipo pueda construir y mantener las imágenes'),
+                __('Evita los problemas de seguridad al crear imágenes'),
+                __('Mejora tus procesos de Integración Continua automatizando el despliegue')
+            ]
+        }) %>
 
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Quality Assurance',
-      description: 'Automatiza las validaciones de tu web.',
-      imageUrl: '/img/qa-quality-v2.svg',
-      buttonUrl: '/curso-quality-assurance.html',
-      height: 180,
-      list: [
-        'Automatiza pruebas repetitivas y monótonas',
-        'Potencia tus habilidades de QA aprendiendo las bases y fundamentos del testing',
-        'Ahorra tiempo y obtén feedback más rápido al automatizar pruebas manuales',
-        'Mejora la experiencia de desarrollo con tests que detectarán errores con mayor precisión'
-      ]
-    }) %>
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Quality Assurance'),
+            description: __('Automatiza las validaciones de tu web.'),
+            imageUrl: '/img/qa-quality-v2.svg',
+            buttonUrl: '/curso-quality-assurance.html',
+            height: 180,
+            list: [
+                __('Automatiza pruebas repetitivas y monótonas'),
+                __('Potencia tus habilidades de QA aprendiendo las bases y fundamentos del testing'),
+                __('Ahorra tiempo y obtén feedback más rápido al automatizar pruebas manuales'),
+                __('Mejora la experiencia de desarrollo con tests que detectarán errores con mayor precisión')
+            ]
+        }) %>
 
-    <%- include('../../partials/cards/card-large-course', {
-      title: 'Taller de Frontend online',
-      description: 'Testeando legacy code. De e2e a unitario.',
-      imageUrl: '/img/online-workshop.svg',
-      buttonUrl: 'https://online-trainings.codium.team',
-      height: 180,
-      list: [
-        'Automatiza pruebas con tests e2e y cypress',
-        'Refactoriza tu código para separar la lógica de negocio y presentación',
-        'Aprende a escribir tests unitarios rápidos siguiendo el acrónimo FIRST',
-        'Desarrolla la nueva funcionalidad haciendo TDD'
-      ]
-    }) %>
-  </div>
+        <%- include('../../partials/cards/card-large-course', {
+            title: __('Taller de Frontend online'),
+            description: __('Testeando legacy code. De e2e a unitario.'),
+            imageUrl: '/img/online-workshop.svg',
+            buttonUrl: 'https://online-trainings.codium.team',
+            height: 180,
+            list: [
+                __('Automatiza pruebas con tests e2e y cypress'),
+                __('Refactoriza tu código para separar la lógica de negocio y presentación'),
+                __('Aprende a escribir tests unitarios rápidos siguiendo el acrónimo FIRST'),
+                __('Desarrolla la nueva funcionalidad haciendo TDD')
+            ]
+        }) %>
+    </div>
 </div>
