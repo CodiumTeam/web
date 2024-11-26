@@ -24,7 +24,7 @@ export const compileHtml = (html, ejsData = {}) => {
     const transElements = dom.window.document.documentElement.querySelectorAll('t');
     transElements.forEach((transElement) => {
       const content = transElement.innerHTML.trim();
-      transElement.outerHTML = `<span><%= __('${content}') %></span>`;
+      transElement.outerHTML = `<span><%- __('${content}') %></span>`;
     });
 
     return dom.window.document.documentElement.innerHTML;

@@ -16,5 +16,8 @@ export const availableLanguages = fs
 export const i18n = new I18n({
   locales: availableLanguages,
   directory: languagesDir,
-  register: global,
+  retryInDefaultLocale: false,
+    updateFiles: false,
+  syncFiles: false,
+
 });

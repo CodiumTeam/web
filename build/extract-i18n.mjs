@@ -67,7 +67,7 @@ function readFile(file) {
 function mergeLanguages(baseLanguages, newLanguages) {
   // Step 1: Add or update keys from newLanguages
   for (const key in newLanguages) {
-    baseLanguages[key] = baseLanguages[key] || '';
+    baseLanguages[key] = baseLanguages[key] || '__NEED_TRANSLATIONS__';
   }
 
   // Step 2: Remove keys that are no longer in newLanguages
