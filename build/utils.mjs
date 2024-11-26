@@ -1,10 +1,11 @@
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
+import { fileURLToPath } from 'node:url';
 import ejs from 'ejs';
 import glob from 'glob';
-import {basename} from 'node:path';
-import {JSDOM} from 'jsdom';
-import {decode} from 'html-entities';
+import { basename } from 'node:path';
+import { JSDOM } from 'jsdom';
+import { decode } from 'html-entities';
+import { urlResolver } from './url-resolver.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -21,7 +22,8 @@ export const getHtmlFilesToProcess = () => {
 export const compileHtml = (html, ejsData = {}) => {
   function replaceHtml(html) {
     const dom = new JSDOM(html);
-    const transElements = dom.window.document.documentElement.querySelectorAll('t');
+    const transElements =
+      dom.window.document.documentElement.querySelectorAll('t');
     transElements.forEach((transElement) => {
       const content = transElement.innerHTML.trim();
       transElement.outerHTML = `<span><%- __('${content}') %></span>`;
@@ -30,16 +32,19 @@ export const compileHtml = (html, ejsData = {}) => {
     return dom.window.document.documentElement.innerHTML;
   }
 
-  function compileHTML(toCompileHTML) {
+  function compile(toCompileHTML) {
     return ejs.compile(toCompileHTML, {
       views: [SRC],
       async: false,
     })({
+      url: (path) => {
+        return urlResolver(path, ejsData.locale || process.env.locale);
+      },
       ...ejsData,
     });
   }
 
-  const result = compileHTML(html);
+  const result = compile(html);
   // now the partials was inline it, we need to re-compile it
-  return compileHTML(decode(replaceHtml(result)));
+  return compile(decode(replaceHtml(result)));
 };
