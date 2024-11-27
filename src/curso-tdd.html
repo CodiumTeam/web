@@ -3,32 +3,30 @@
   <head>
     <meta name="robots" content="index, follow">
     <%- include('partials/analytics_head') %>
-    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-    <% var og_image = host + "/img/og-tdd.png" %>
 
     <%- include('partials/metatags', {
-        title: 'Curso de TDD - Test Driven Development - Codium Team',
-        description: 'Aprende a escribir código simple, robusto y moldeable aplicando TDD: Test Driven Development. Curso práctico, divertido e intenso.',
-        og_title: 'Curso de TDD',
-        og_description: 'Aprende a escribir código simple, robusto y moldeable a partir de los tests. Curso práctico, divertido e intenso.',
-        og_image,
+        title: __('Curso de TDD - Test Driven Development - Codium Team'),
+        description: __('Aprende a escribir código simple, robusto y moldeable aplicando TDD: Test Driven Development. Curso práctico, divertido e intenso.'),
+        og_title: __('Curso de TDD'),
+        og_description: __('Aprende a escribir código simple, robusto y moldeable a partir de los tests. Curso práctico, divertido e intenso.'),
+        og_image: url('/img/og-tdd.png'),
     }) %>
     <meta
       name="keywords"
-      content="Curso,Formación,Training,TDD,Test-Driven development,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido"
+      content="<%= __('Curso,Formación,Training,TDD,Test-Driven development,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido') %>"
     />
-    <link rel="canonical" href="<%= host %>/curso-tdd.html"/>
+    <link rel="canonical" href="<%= url('/curso-tdd.html') %>"/>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "Curso de TDD - Test Driven Development",
-        "headline": "Curso de TDD - Test Driven Development",
-        "description": "Aprende a escribir código simple, robusto y moldeable a partir de los tests",
+        "name": <%= __("Curso de TDD - Test Driven Development") %>,
+        "headline": <%= __("Curso de TDD - Test Driven Development") %>,
+        "description": <%= __("Aprende a escribir código simple, robusto y moldeable a partir de los tests") %>,
         "provider": {
           "@type": "Organization",
           "name": "Codium",
-          "sameAs": "https://www.codium.team/"
+          "sameAs": "<%= url('https://www.codium.team') %>"
         }
       }
     </script>
@@ -40,23 +38,23 @@
     <%- include('partials/header/landing-navbar', {
       menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits',
         },
         {
-          title: 'Contenido',
+          title: __('Contenido'),
           url: '#training-content-timeline',
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology',
         },
         {
-          title: 'FAQs',
+          title: __('FAQs'),
           url: '#faqs',
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact',
         },
       ]
@@ -65,18 +63,18 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <%- include('pages-content/curso-common/hero-block', {
-          title: 'Curso de Test-Driven Development',
-          subtitle: 'Revoluciona tu forma de desarrollar',
+          title: __('Curso de Test-Driven Development'),
+          subtitle: __('Revoluciona tu forma de desarrollar'),
           image: './img/tdd-logo.svg'
         }) %>
 
         <%- include('pages-content/curso-common/course-card-information', {
-          hours: '16 horas',
-          hoursDesc: '(2 días o 4 medios días)',
+          hours: __('16 horas'),
+          hoursDesc: __('(2 días o 4 medios días)'),
           fromWhere: __('Remoto o presencial'),
-          languages: 'Java, Python, Js, PHP,  C#, C++, Go...',
-          availableInLanguages: 'Español, inglés y catalán',
-          price: '650 € + IVA por persona'
+          languages: __('Java, Python, Js, PHP,  C#, C++, Go...'),
+          availableInLanguages: __('Español, inglés y catalán'),
+          price: __('650 € + IVA por persona')
         }) %>
       </div>
     </div>

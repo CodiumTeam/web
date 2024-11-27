@@ -1,47 +1,35 @@
 <% var opinionAboutThisCourse = [
   {
     avatar: './img/testimonials/HelderDOliveira.jpg',
-    opinion: `Pragmático, directo, en la misma línea de la propia
-          filosofía de TDD​.​ ​M​e ha ayudado a desarrollar de
-          forma más segura y limpia, ​descubriendo a la vez
-          otras formas de hacer TDD que desconocía y siempre
-          guiado desde ejercicios muy potentes.
-    `,
+    opinion: __(`Pragmático, directo, en la misma línea de la propia filosofía de TDD. Me ha ayudado a desarrollar de forma más segura y limpia, descubriendo a la vez otras formas de hacer TDD que desconocía y siempre guiado desde ejercicios muy potentes.`),
     name: 'Helder De Oliveira',
     profession: 'Software Craftsman',
   },
   {
     avatar: './img/testimonials/JoanMiralles.jpg',
-    opinion: `Aunque conocía TDD a nivel teórico, después de
-          realizar este curso, ha sido cuándo he entendido cómo
-          llevarlo a mi día a día.`,
+    opinion: __(`Aunque conocía TDD a nivel teórico, después de realizar este curso, ha sido cuándo he entendido cómo llevarlo a mi día a día.`),
     name: 'Joan Miralles',
-    profession: 'Software Architect en Brújula Tecnologías de la Información',
+    profession: __('Software Architect en Brújula Tecnologías de la Información'),
   },
   {
     avatar: './img/testimonials/ilya.png',
-    opinion: `El curso ha sido un buen punto de inflexión para
-          empezar a usar TDD en mi día a día y profundizar en
-          todo lo aprendido. Las katas guiadas por el equipo de
-          Codium le dan muchísimo valor al curso y están muy
-          bien escogidas para remarcar los fallos que se suelen
-          cometer al empezar con TDD.`,
+    opinion: __(`El curso ha sido un buen punto de inflexión para empezar a usar TDD en mi día a día y profundizar en todo lo aprendido. Las katas guiadas por el equipo de Codium le dan muchísimo valor al curso y están muy bien escogidas para remarcar los fallos que se suelen cometer al empezar con TDD.`),
     name: 'Ilya Kabushko',
-    profession: 'Software developer en Travel Compositor',
+    profession: __('Software developer en Travel Compositor'),
   },
   {
     avatar: './img/testimonials/sara-revilla.jpg',
-    opinion: `Gracias a los ejercicios propuestos y a los instructores, este curso me ha dotado de conocimientos teóricos, así como de estrategias prácticas, que ahora me permiten identificar y solucionar los problemas a los que me enfrento en el día a día a la hora de hacer TDD.`,
+    opinion: __(`Gracias a los ejercicios propuestos y a los instructores, este curso me ha dotado de conocimientos teóricos, así como de estrategias prácticas, que ahora me permiten identificar y solucionar los problemas a los que me enfrento en el día a día a la hora de hacer TDD.`),
     name: 'Sara Revilla',
-    profession: 'Data engineer en Clarity AI',
+    profession: __('Data engineer en Clarity AI'),
   },
 ] %>
 
 <section class="block block--white">
   <div class="container">
-    <h2 class="text-center title">Testimonios</h2>
+    <h2 class="text-center title"><t>Testimonios</t></h2>
     <p class="text-center">
-      Conoce qué han dicho los alumnos sobre este curso
+      <t>Conoce qué han dicho los alumnos sobre este curso</t>
     </p>
 
     <%- include('../../partials/carousel/opinion', {
