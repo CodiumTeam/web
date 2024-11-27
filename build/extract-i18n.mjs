@@ -34,18 +34,16 @@ function main() {
 
 function keysExtractorDecorator(i18n__) {
   return (text) => {
-    defaultTranslations[text] = text;
-    return i18n__(text);
+    const cleanedText = text.replace(/\s+/g, ' ').trim();
+    defaultTranslations[cleanedText] = cleanedText;
+    return i18n__(cleanedText);
   };
 }
 
 function updateJsonForLanguage(language) {
   const langFile = `${language}.json`;
   const oldTranslations = readFile(langFile);
-  saveInFile(
-    langFile,
-    mergeLanguages(oldTranslations, defaultTranslations)
-  );
+  saveInFile(langFile, mergeLanguages(oldTranslations, defaultTranslations));
 }
 
 function saveInFile(inFile, translations) {
