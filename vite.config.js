@@ -1,9 +1,8 @@
 import { defineConfig, loadEnv } from 'vite';
-import { resolve } from 'node:path';
+import path, { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
 import { compileHtml, getHtmlFilesToProcess } from './build/utils.mjs';
 import { DEFAULT_LANG, i18n } from './build/i18n-utils.mjs';
-import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -37,7 +36,7 @@ export default defineConfig(({ mode }) => {
 });
 
 function parseTranslationTag() {
-  i18n.setLocale(process.env.locale);
+  i18n.setLocale(process.env.locale || 'es');
   return {
     name: 'transform-html',
     transformIndexHtml: {

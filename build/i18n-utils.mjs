@@ -1,7 +1,7 @@
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {fileURLToPath} from 'node:url';
 import fs from 'node:fs';
-import { I18n } from 'i18n';
+import {I18n} from 'i18n';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SRC = path.resolve(__dirname, '..', 'src');
@@ -13,11 +13,11 @@ export const availableLanguages = fs
   .filter((file) => file.endsWith('.json'))
   .map((file) => path.basename(file, '.json'));
 
+
 export const i18n = new I18n({
   locales: availableLanguages,
   directory: languagesDir,
   retryInDefaultLocale: false,
-    updateFiles: false,
+  updateFiles: false,
   syncFiles: false,
-
 });

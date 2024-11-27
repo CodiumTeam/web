@@ -1,11 +1,10 @@
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import path, {basename} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import ejs from 'ejs';
 import glob from 'glob';
-import { basename } from 'node:path';
-import { JSDOM } from 'jsdom';
-import { decode } from 'html-entities';
-import { urlResolver } from './url-resolver.mjs';
+import {JSDOM} from 'jsdom';
+import {decode} from 'html-entities';
+import {urlResolver} from './url-resolver.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
