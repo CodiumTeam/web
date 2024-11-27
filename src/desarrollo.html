@@ -3,22 +3,19 @@
   <head>
     <meta name="robots" content="index, follow">
     <%- include('partials/analytics_head') %>
-    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-    <% var og_image = host + "/img/og-development.png" %>
-
     <%- include('partials/metatags', {
-        title: 'Desarollo - Codium',
-        description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
-        og_title: 'Desarollo',
-        og_description: 'Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.',
-        og_image
+        title: __('Desarollo - Codium'),
+        description: __('Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.'),
+        og_title: __('Desarollo'),
+        og_description: __('Tu equipo de programación de alto rendimiento integrados en tu empresa u outsourcing. Entregamos el máximo valor en cada iteración.'),
+        og_image: url('/img/og-development.png')
     }) %>
 
     <meta
       name="keywords"
-      content="Curso,Formación,Training,TDD,Legacy Code,Calidad de código,Programación,Desarrollo,Producto,Lean,Agile,Software"
+      content="<%- __('Curso,Formación,Training,TDD,Legacy Code,Calidad de código,Programación,Desarrollo,Producto,Lean,Agile,Software') %>"
     />
-    <link rel="canonical" href="<%= host %>/desarrollo.html"/>
+    <link rel="canonical" href="<%= url('/desarrollo.html') %>"/>
   </head>
 
   <body class="bootcamp-page">
@@ -27,19 +24,19 @@
     <%- include('partials/header/landing-navbar', {
       menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits'
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology'
         },
         {
-          title: 'Equipo',
+          title: __('Equipo'),
           url: '#team'
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact'
         },
       ]
@@ -48,17 +45,17 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <%- include('pages-content/curso-common/hero-block', {
-          title: `Desarrollo`,
-          subtitle: 'Entregamos el máximo valor en cada iteración.',
+          title: __('Desarrollo'),
+          subtitle: __('Entregamos el máximo valor en cada iteración.'),
           image: './img/illustrations/development-team.svg'
         }) %>
 
         <%- include('pages-content/curso-common/course-card-information', {
-          hours: '3 meses a 1 año',
-          hoursDesc: '150 y 500 horas al mes',
-          fromWhere: 'Remoto',
-          languages: 'PHP, Python, React, React Native...',
-          availableInLanguages: 'Español, inglés y catalán',
+          hours: __('3 meses a 1 año'),
+          hoursDesc: __('150 y 500 horas al mes'),
+          fromWhere: __('Remoto'),
+          languages: __('PHP, Python, React, React Native...'),
+          availableInLanguages: __('Español, inglés y catalán'),
         }) %>
       </div>
     </div>
@@ -89,7 +86,7 @@
       <section class="contact block block--lila" id="contact">
         <%- include('partials/contact-form', {
           type: 'development',
-          action: 'Desarrollo'
+          action: __('Desarrollo')
         }) %>
       </section>
 

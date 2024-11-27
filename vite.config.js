@@ -24,7 +24,14 @@ export default defineConfig(({ mode }) => {
     publicDir: resolve(__dirname, 'public'),
     root: SRC,
     envDir: __dirname,
-    plugins: [isProduction && parseTranslationTag(), react()],
+    plugins: [
+      isProduction && parseTranslationTag(),
+      react(),
+      {
+        name: 'custom-hmr',
+        handleHotUpdate,
+      },
+    ],
     build: {
       outDir: getOutDir(),
       emptyOutDir: false,
@@ -58,4 +65,18 @@ function getOutDir() {
   }
 
   return resolve(path, process.env.locale || DEFAULT_LANG);
+}
+
+function handleHotUpdate(context) {
+  const filename = path.resolve(context.file);
+
+  if (filename.endsWith('.html') || filename.endsWith('.ejs')) {
+    console.info(
+      `Template file ${path.basename(
+        filename
+      )} has been changed. Sending full-reload.`
+    );
+    context.server.ws.send({ type: 'full-reload' });
+    return [];
+  }
 }

@@ -46,7 +46,8 @@
     "lint-staged": "13.1.2",
     "prettier": "2.8.4",
     "sass": "1.58.3",
-    "vite": "4.1.4"
+    "vite": "4.1.4",
+    "vite-plugin-ejs-engine": "^2.0.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "7.19.1",
