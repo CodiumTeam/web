@@ -70,11 +70,13 @@ function getOutDir() {
 function handleHotUpdate(context) {
   const filename = path.resolve(context.file);
 
-  if (filename.endsWith('.html') || filename.endsWith('.ejs')) {
+  if (
+    filename.endsWith('.html') ||
+    filename.endsWith('.ejs') ||
+    filename.endsWith('.json')
+  ) {
     console.info(
-      `Template file ${path.basename(
-        filename
-      )} has been changed. Sending full-reload.`
+      `File ${path.basename(filename)} has been changed. Sending full-reload.`
     );
     context.server.ws.send({ type: 'full-reload' });
     return [];
