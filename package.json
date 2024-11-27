@@ -7,8 +7,8 @@
     "node": ">18.x"
   },
   "scripts": {
-    "i18n:extract": "node build/extract-i18n.mjs",
-    "start": "node server.mjs",
+    "i18n:extract": "NODE_ENV=production node build/extract-i18n.mjs",
+    "start": "NODE_ENV=development node server.mjs",
     "build": "node build/build.mjs",
     "lint-staged": "lint-staged",
     "lint": "eslint **/*.{js,ts}",

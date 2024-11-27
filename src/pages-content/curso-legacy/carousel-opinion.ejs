@@ -2,66 +2,57 @@
  <% var opinionAboutThisCourse = [
   {
     avatar: './img/testimonials/luis_ruiz_pavon.jpeg',
-    opinion: `Ha cumplido con todas mis expectativas. El formato es perfecto donde se mezclan teoría y práctica. Programar con otras personas te abre la mente y genera debates muy interesantes. Ahora puedo decir que tengo una navaja suiza para enfrentarme al monstruo del Legacy.`,
+    opinion: __(`Ha cumplido con todas mis expectativas. El formato es perfecto donde se mezclan teoría y práctica. Programar con otras personas te abre la mente y genera debates muy interesantes. Ahora puedo decir que tengo una navaja suiza para enfrentarme al monstruo del Legacy.`),
     name: 'Luis Ruiz Pavón',
-    profession: 'Principal Software Engineer en Eventbrite',
+    profession: __('Principal Software Engineer en Eventbrite'),
   },  {
     avatar: './img/testimonials/francois.png',
-    opinion: `Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy. Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!`,
+    opinion: __(`Un curso práctico basado en una filosofía sólida. El equipo salió con más ganas de trabajar sobre un legacy. Al día siguiente empezamos ya a mejorar nuestras prácticas. ¡Exitazo!`),
     name: 'François Delaunay',
-    profession: 'GE Renewable Energy',
+    profession: __('GE Renewable Energy'),
   },
   {
     avatar: './img/testimonials/jorgeSanchez.jpeg',
-    opinion: `Curso fundamental para sensibilizar al equipo con problemas del Legacy Code, los cuales no siempre son vistos como tal, a la par de alinear al equipo en cómo abordarlos. Apropiado para ya no sólo trabajar con Legacy Code si no ¡para dejar de generarlo!`,
+    opinion: __(`Curso fundamental para sensibilizar al equipo con problemas del Legacy Code, los cuales no siempre son vistos como tal, a la par de alinear al equipo en cómo abordarlos. Apropiado para ya no sólo trabajar con Legacy Code si no ¡para dejar de generarlo!`),
     name: 'Jorge Sánchez',
-    profession: 'Software Architect en Digi Spain Telecom',
+    profession: __('Software Architect en Digi Spain Telecom'),
   },
   {
     avatar: './img/testimonials/OriolTorne.png',
-    opinion: `El curso fue un punto de inflexión para atrevernos a
-        hacer las cosas de otra forma: con más seguridad y más
-        calidad. Un año después del curso, hemos notado
-        una mejoría importante en el código y las metodologías
-        que aplicamos.`,
+    opinion: __(`El curso fue un punto de inflexión para atrevernos a hacer las cosas de otra forma: con más seguridad y más calidad. Un año después del curso, hemos notado una mejoría importante en el código y las metodologías que aplicamos.`),
     name: 'Oriol Torné',
-    profession: 'Dev en Esblada Medical',
+    profession: __('Dev en Esblada Medical'),
   },
   {
     avatar: './img/testimonials/logedo.jpg',
-    opinion: `Una formación imprescindible para enfrentarte a ese
-        gran monstruo que es el legacy code. Con formaciones así es imposible no apasionarse por
-        nuestro trabajo.`,
+    opinion: __(`Una formación imprescindible para enfrentarte a ese gran monstruo que es el legacy code. Con formaciones así es imposible no apasionarse por nuestro trabajo.`),
     name: 'Juan Carlos Logedo',
-    profession: 'Sr. Dev en Hotelbeds',
+    profession: __('Sr. Dev en Hotelbeds'),
   },
   {
     avatar: './img/testimonials/alberto-de-la-cruz.jpg',
-    opinion: `¡Salimos con las pilas cargadas!. Trabajar con Legacy
-        no es fácil pero gracias a este curso ahora el equipo
-        comparte herramientas, vocabulario y otra perspectiva
-        de cara a enfrentarse a él. Estamos encantados.`,
+    opinion: __(`¡Salimos con las pilas cargadas!. Trabajar con Legacy no es fácil pero gracias a este curso ahora el equipo comparte herramientas, vocabulario y otra perspectiva de cara a enfrentarse a él. Estamos encantados.`),
     name: 'Alberto de la Cruz Grijalvo',
-    profession: 'Allroad en Alea Soluciones',
+    profession: __('Allroad en Alea Soluciones'),
   },
   {
     avatar: './img/testimonials/joseIgnacioDominguez.jpg',
-    opinion: `Ha sido una oportunidad magnífica para aprender,
+    opinion: __(`Ha sido una oportunidad magnífica para aprender,
           trabajar como un equipo, compartir
           y validar ideas.
           Es muy práctico y se favorecen las
           conversaciones sobre distintas soluciones a un mismo
-          problema. ¡Salimos con ganas de mejorar nuestro código!`,
+          problema. ¡Salimos con ganas de mejorar nuestro código!`),
     name: 'Jose Ignacio Domínguez',
-    profession: 'Staff Software Engineer en Clarity AI',
+    profession: __('Staff Software Engineer en Clarity AI'),
   },
 ] %>
 
 <section class="block block--white">
   <div class="container">
-    <h2 class="text-center title">Testimonios</h2>
+    <h2 class="text-center title"><t>Testimonios</t></h2>
     <p class="text-center">
-      Conoce qué han dicho los alumnos sobre este curso
+      <t>Conoce qué han dicho los alumnos sobre este curso</t>
     </p>
 
     <%- include('../../partials/carousel/opinion', {

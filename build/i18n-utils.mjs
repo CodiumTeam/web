@@ -20,4 +20,5 @@ export const i18n = new I18n({
   retryInDefaultLocale: false,
   updateFiles: false,
   syncFiles: false,
+  autoReload: process.env.NODE_ENV === 'development',
 });

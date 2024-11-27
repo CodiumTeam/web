@@ -3,21 +3,19 @@
   <head>
     <meta name="robots" content="index, follow">
     <%- include('partials/analytics_head') %>
-    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-    <% var og_image = host + "/img/og-legacy.png" %>
 
     <%- include('partials/metatags', {
-        title: 'Curso de Código Legado - Codium',
-        description: 'Aprende dos pilares imprescindibles: a desacoplar tu código y a testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
-        og_title: 'Curso de legacy code',
-        og_description: 'Aprende a desacoplar tu código y testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
-        og_image,
+        title: __('Curso de Código Legado - Codium'),
+        description: __('Aprende dos pilares imprescindibles: a desacoplar tu código y a testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto.'),
+        og_title: __('Curso de legacy code'),
+        og_description: __('Aprende a desacoplar tu código y testear tu producto. Curso práctico, divertido y intenso. En tus oficinas o en remoto.'),
+        og_image: url('/img/og-legacy.png'),
     }) %>
     <meta
       name="keywords"
-      content="Curso,Formación,Training,Legacy Code,Código Legado,Clean Code,Tests,Refactoring,Code smells,Best practices,Buenas prácticas,Práctico,Divertido"
+      content="<%- __('Curso,Formación,Training,Legacy Code,Código Legado,Clean Code,Tests,Refactoring,Code smells,Best practices,Buenas prácticas,Práctico,Divertido') %>"
     />
-    <link rel="canonical" href="<%= host %>/curso-legacy-code.html"/>
+    <link rel="canonical" href="<%= url('curso-legacy-code.html') %>"/>
   </head>
 
   <body>
@@ -26,23 +24,23 @@
     <%- include('partials/header/landing-navbar', {
       menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits',
         },
         {
-          title: 'Contenido',
+          title: __('Contenido'),
           url: '#training-content-timeline',
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology',
         },
         {
-          title: 'FAQs',
+          title: __('FAQs'),
           url: '#faqs',
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact',
         },
       ]
@@ -51,18 +49,18 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <%- include('pages-content/curso-common/hero-block', {
-          title: 'Curso de Working with Legacy code',
-          subtitle: 'Recupera el control de tu producto',
+          title: __('Curso de Working with Legacy code'),
+          subtitle: __('Recupera el control de tu producto'),
           image: './img/legacy-code.svg'
         }) %>
 
       <%- include('pages-content/curso-common/course-card-information', {
-        hours: '16 horas',
-        hoursDesc: '(2 días o 4 medios días)',
-        fromWhere: 'Remoto o presencial',
-        languages: 'Java, Python, Js, PHP, C#, C++, Go...',
-        availableInLanguages: 'Español, inglés y catalán',
-        price: '650 € + IVA por persona'
+        hours: __('16 horas'),
+        hoursDesc: __('(2 días o 4 medios días)'),
+        fromWhere: __('Remoto o presencial'),
+        languages: __('Java, Python, Js, PHP, C#, C++, Go...'),
+        availableInLanguages: __('Español, inglés y catalán'),
+        price: __('650 € + IVA por persona')
         }) %>
       </div>
     </div>

@@ -1,110 +1,118 @@
 <div class="container">
-  <section>
-    <h2 class="title text-center">Me gustaría saber más...</h2>
-    <p class="text-center text--summary">
-      La mejor forma de obtener más información es hablando con
-      nosotros. Rellena este formulario o envía un email al
-      <strong>info@codium.team</strong> y busquemos un momento para
-      hablar.
-    </p>
-  </section>
+    <section>
+        <h2 class="title text-center"><t>Me gustaría saber más...</t></h2>
+        <p class="text-center text--summary">
+            <t>
+                La mejor forma de obtener más información es hablando con
+                nosotros. Rellena este formulario o envía un email al
+                <strong>info@codium.team</strong> y busquemos un momento para
+                hablar.
+            </t>
+        </p>
+    </section>
 
-  <%- include('../../partials/form-sent-successfully') %>
-  <%- include('../../partials/form-error') %>
+    <%- include('../../partials/form-sent-successfully') %>
+    <%- include('../../partials/form-error') %>
 
-  <form
-    class="form"
-    id="contactForm"
-    data-testid="contactForm"
-    method="post"
-    data-training-type="<%= type %>"
-  >
+    <form
+            class="form"
+            id="contactForm"
+            data-testid="contactForm"
+            method="post"
+            data-training-type="<%= type %>"
+    >
 
-    <div>
-      <label for="name" class="label-name"
-        >Nombre<span class="required-asterisk">*</span></label
-      >
-      <input type="text" id="name" placeholder="Mi nombre" name="name" />
-    </div>
-      <div class="myradio">
-          <input
-                  type="radio"
-                  name="myRadio"
-                  id="for-company"
-                  class="myradio__input"
-                  checked
-                  value="business"
-          />
-          <label for="for-company" class="myradio__label">Para mi empresa</label>
-      </div>
-      <div class="myradio">
-          <input
-                  type="radio"
-                  name="myRadio"
-                  id="for-me"
-                  class="myradio__input"
-                  value="user"
-          />
-          <label for="for-me" class="myradio__label">Sólo para mí</label>
-      </div>
-    <div>
-      <label for="email"
-        ><span id="email-label">Email de empresa</span><span class="required-asterisk">*</span></label
-      >
-      <input
-        type="email"
-        id="email"
-        placeholder="mi-email@empresa.com"
-        name="email"
-      />
-    </div>
+        <div>
+            <label for="name" class="label-name"
+            >
+                <t>Nombre</t><span class="required-asterisk">*</span>
+            </label>
+            <input type="text" id="name" placeholder="<%- __('Mi nombre')%>" name="name"/>
+        </div>
+        <div class="myradio">
+            <input
+                    type="radio"
+                    name="myRadio"
+                    id="for-company"
+                    class="myradio__input"
+                    checked
+                    value="business"
+            />
+            <label for="for-company" class="myradio__label">
+                <t>Para mi empresa</t>
+            </label>
+        </div>
+        <div class="myradio">
+            <input
+                    type="radio"
+                    name="myRadio"
+                    id="for-me"
+                    class="myradio__input"
+                    value="user"
+            />
+            <label for="for-me" class="myradio__label">
+                <t>Sólo para mí</t>
+            </label>
+        </div>
+        <div>
+            <label for="email"
+            ><span id="email-label">
+                    <t>Email de empresa</t></span><span class="required-asterisk">*</span>
+            </label>
+            <input
+                    type="email"
+                    id="email"
+                    placeholder="<%- __('mi-email@empresa.com') %>"
+                    name="email"
+            />
+        </div>
 
-    <div id="js-numProgrammers">
-      <label for="numProgrammers">
-        Número de programadores<span class="required-asterisk">*</span>
-      </label>
-      <input
-        type="number"
-        min="1"
-        id="numProgrammers"
-        placeholder="10"
-        name="numEmployees"
-      />
-    </div>
-    <div id="js-locality" class="hidden">
-      <label for="locality">
-        Localidad dónde vives<span class="required-asterisk">*</span>
-      </label>
-      <input
-        type="text"
-        min="0"
-        id="locality"
-        placeholder="Madrid"
-        name="location"
-      />
-    </div>
+        <div id="js-numProgrammers">
+            <label for="numProgrammers">
+                <t>Número de programadores</t><span class="required-asterisk">*</span>
+            </label>
+            <input
+                    type="number"
+                    min="1"
+                    id="numProgrammers"
+                    placeholder="10"
+                    name="numEmployees"
+            />
+        </div>
+        <div id="js-locality" class="hidden">
+            <label for="locality">
+                <t>Localidad dónde vives</t><span class="required-asterisk">*</span>
+            </label>
+            <input
+                    type="text"
+                    min="0"
+                    id="locality"
+                    placeholder="Madrid"
+                    name="location"
+            />
+        </div>
 
-    <div class="text-center">
-      <button
-        class="button button--primary submit-button"
-        id="js-submit"
-      >
-        Pedir información
-      </button>
-    </div>
+        <div class="text-center">
+            <button
+                    class="button button--primary submit-button"
+                    id="js-submit"
+            >
+                <t>Pedir información</t>
+            </button>
+        </div>
 
-    <p class="g-recaptcha-text">
-      This site is protected by reCAPTCHA and the Google
-      <a href="https://policies.google.com/privacy">Privacy Policy</a>
-      and
-      <a href="https://policies.google.com/terms">Terms of Service</a>
-      apply.
-    </p>
-    <div
-      class="g-recaptcha"
-      data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
-      data-callback="onContactFormSubmit"
-      data-size="invisible"
-    ></div>
-  </form>
+        <p class="g-recaptcha-text">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a>
+            and
+            <a href="https://policies.google.com/terms">Terms of Service</a>
+            apply.
+        </p>
+        <div
+                class="g-recaptcha"
+                data-sitekey="6LfCAJQUAAAAAKps9ZjFFpOh-0bSVu-2igwXu1lW"
+                data-callback="onContactFormSubmit"
+                data-size="invisible"
+        ></div>
+    </form>
 </div>

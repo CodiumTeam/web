@@ -1,56 +1,66 @@
 <div class="container">
-  <h2 class="text-center title">Metodología</h2>
+    <h2 class="text-center title">
+        <t>Metodología</t>
+    </h2>
 
-  <div class="course__metodology">
-    <p class="text-dark-grey">
-      Hoy en día cualquiera puede leer un libro o ver un vídeo, pero lo
-      realmente difícil es poner en práctica lo aprendido. Por eso, en
-      nuestro curso, queremos que los alumnos pasen la mayor parte del
-      tiempo practicando y no escuchando teoría.
-    </p>
-    <p class="text-dark-grey">
-      En busca de la calidad y satisfacción de todos los asistentes,
-      creemos que es indispensable ser dos profesores senior. Esto nos
-      permite tener la disponibilidad suficiente para ayudar de forma
-      personalizada mientras los alumnos programan.
-    </p>
-    <p class="text-dark-grey">
-      Perseguimos maximizar el aprendizaje. Para ello creamos un
-      ambiente dinámico (Flow) gracias a trabajar en parejas, ejercicios
-      cortos, resolver las dudas rápido, la discusión de forma conjunta
-      de las diferentes soluciones y un trato muy cercano.
-    </p>
-    <p class="text-dark-grey">
-      Por nuestra experiencia como profesores, desarrolladores y
-      emprendedores, comprendemos las problemáticas del desarrollo de
-      software. Haber impartido más de 60 cursos a más de 800 alumnos
-      nos permite conocer las necesidades de los alumnos y cuidar cada
-      detalle de la formación.
-    </p>
-    <p class="text-dark-grey">
-      Todo lo anterior garantiza nuestro objetivo de que quedes
-      satisfecho, adquieras las habilidades necesarias para transformar
-      tu forma de desarrollar y empieces a escribir código sostenible.
-    </p>
-  </div>
+    <div class="course__metodology">
+        <p class="text-dark-grey">
+            <t>Hoy en día cualquiera puede leer un libro o ver un vídeo, pero lo
+                realmente difícil es poner en práctica lo aprendido. Por eso, en
+                nuestro curso, queremos que los alumnos pasen la mayor parte del
+                tiempo practicando y no escuchando teoría.
+            </t>
+        </p>
+        <p class="text-dark-grey">
+            <t>
+                En busca de la calidad y satisfacción de todos los asistentes,
+                creemos que es indispensable ser dos profesores senior. Esto nos
+                permite tener la disponibilidad suficiente para ayudar de forma
+                personalizada mientras los alumnos programan.
+            </t>
+        </p>
+        <p class="text-dark-grey">
+            <t>
+                Perseguimos maximizar el aprendizaje. Para ello creamos un
+                ambiente dinámico (Flow) gracias a trabajar en parejas, ejercicios
+                cortos, resolver las dudas rápido, la discusión de forma conjunta
+                de las diferentes soluciones y un trato muy cercano.
+            </t>
+        </p>
+        <p class="text-dark-grey">
+            <t>
+                Por nuestra experiencia como profesores, desarrolladores y
+                emprendedores, comprendemos las problemáticas del desarrollo de
+                software. Haber impartido más de 60 cursos a más de 800 alumnos
+                nos permite conocer las necesidades de los alumnos y cuidar cada
+                detalle de la formación.
+            </t>
+        </p>
+        <p class="text-dark-grey">
+            <t>
+                Todo lo anterior garantiza nuestro objetivo de que quedes
+                satisfecho, adquieras las habilidades necesarias para transformar
+                tu forma de desarrollar y empieces a escribir código sostenible.
+            </t>
+        </p>
+    </div>
 
 
-
-  <div class="course__team">
-    <% professors.forEach(function(professor){ %>
-      <%- include('./cards/card-team', {
-          ...professor,
-          }) %>
-      <% });
-    %>
-  </div>
-  <div class="button__wrapper">
-    <a
-      class="button button--primary"
-      href="#contactForm"
-      data-trackevent="contact_us.show_form.team"
-    >
-      Hablemos
-    </a>
-  </div>
+    <div class="course__team">
+        <% professors.forEach(function(professor){ %>
+            <%- include('./cards/card-team', {
+            ...professor,
+            }) %>
+        <% });
+        %>
+    </div>
+    <div class="button__wrapper">
+        <a
+                class="button button--primary"
+                href="#contactForm"
+                data-trackevent="contact_us.show_form.team"
+        >
+            <t>Hablemos</t>
+        </a>
+    </div>
 </div>
