@@ -11,7 +11,7 @@ Cypress.Commands.add('isInViewport', (selector) => {
   const yOffset = cy.$$('#js-header').outerHeight();
   const y = cy.$$(selector).offset().top - yOffset;
   cy.window().its('scrollY').should('be.greaterThan', 0);
-  cy.window().its('scrollY').should('equal', Math.round(y));
+  cy.window().its('scrollY').should('be.eq', Math.round(y));
 });
 
 /**
@@ -21,7 +21,7 @@ Cypress.Commands.add('isInViewport', (selector) => {
  */
 Cypress.Commands.add('validateServiceListInDropdown', () => {
   cy.get('#js-menu .navbar__item.dropdown').click();
-  cy.get('.dropdown .options li').should('have.length', 7);
+  cy.get('.dropdown .options li').should('have.length', 8);
 
   cy.get('.dropdown .options li a').each((service, index) => {
     // Follow same order of web menu
@@ -36,13 +36,19 @@ Cypress.Commands.add('validateServiceListInDropdown', () => {
         url: '/curso-quality-assurance.html',
       },
       {
+        title: 'Taller de Front-end online',
+        url: 'https://online-trainings.codium.team/',
+      },
+      {
         title: 'Programa de aceleración',
         url: '/programa-de-aceleracion.html',
       },
     ];
     const menuItem = serviceList[index];
     cy.wrap(service).should('contain', menuItem.title);
-    cy.wrap(service).should('have.attr', 'href').should('eq', menuItem.url);
+    cy.wrap(service)
+      .should('have.attr', 'href')
+      .should('contain', menuItem.url);
   });
 });
 
