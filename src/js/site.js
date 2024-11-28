@@ -1,5 +1,5 @@
 import * as events from './common/trackEvents';
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 import './common/contact-form-with-message';
 
 import '../sass/site.scss';
@@ -7,6 +7,7 @@ import { scrollToElement } from './common/scrollToElement';
 import { isInView } from 'isinview';
 
 listenDropdown();
+langsSwitcher();
 events.initTrackEvents();
 
 document

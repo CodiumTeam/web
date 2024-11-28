@@ -3,13 +3,14 @@ import Glide, {
   Breakpoints,
 } from '@glidejs/glide/dist/glide.modular.esm';
 import './common/contact-form-with-message';
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../sass/development.scss';
 
 listenDropdown();
+langsSwitcher();
 mountClientsCarousel();
 
 function mountClientsCarousel() {

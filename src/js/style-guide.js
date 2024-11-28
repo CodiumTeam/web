@@ -1,4 +1,4 @@
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 import Glide, {
   Controls,
   Breakpoints,
@@ -9,6 +9,7 @@ import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../sass/style-guide.scss';
 
 listenDropdown();
+langsSwitcher();
 mountOpinionCarousel();
 mountClientsCarousel();
 

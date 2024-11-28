@@ -5,7 +5,7 @@ import Glide, {
 import { isInView } from 'isinview';
 import * as events from './common/trackEvents';
 import * as formValidation from './common/fromValidation';
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import { scrollToElement } from './common/scrollToElement';
@@ -14,6 +14,7 @@ import { sendEmail } from './email-sender';
 import { configureFormWithRecaptcha } from './common/recaptcha-loader';
 
 listenDropdown();
+langsSwitcher();
 events.initTrackEvents();
 mountOpinionCarousel();
 mountClientsCarousel();

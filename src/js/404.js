@@ -1,8 +1,9 @@
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 
 import '../sass/404.scss';
 
 listenDropdown();
+langsSwitcher();
 
 document.querySelectorAll('.icon-test').forEach((item) => {
   const timeInMS = Math.floor(Math.random() * 6);

@@ -1,6 +1,7 @@
 import './common/contact-form-with-message';
-import { listenDropdown } from './common/dropdown';
+import { langsSwitcher, listenDropdown } from './common/dropdown';
 
 import '../sass/bootcamp.scss';
 
 listenDropdown();
+langsSwitcher();
