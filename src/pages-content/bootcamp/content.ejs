@@ -1,56 +1,56 @@
 
 <article class="container">
-  <h2 class="text-center title text--summary">Contenido del curso</h2>
+  <h2 class="text-center title text--summary"><t>Contenido del curso</t></h2>
   <p class="text-center text-dark-grey">
-    El temario está organizado en temáticas
+    <t>El temario está organizado en temáticas</t>
   </p>
 
   <div class="bootcamp">
     <%- include('../../partials/cards/card-bootcamp', {
-      title: 'Mentalidad',
+      title: __('Mentalidad'),
       list: [
-        'eXtreme Programming',
-        'Agile',
-        'Lean',
-        'Artesanía de software'
+        __('eXtreme Programming'),
+        __('Agile'),
+        __('Lean'),
+        __('Artesanía de software')
       ],
       image: './img/illustrations/bootcamp/lean.png'
     }) %>
 
     <%- include('../../partials/cards/card-bootcamp', {
-      title: 'Herramientas',
+      title: __('Herramientas'),
       list: [
-        'Conocer las herramientas que te hacen productivo.',
-        'Conocer las herramientas que te permiten automatizar procesos repetitivos.'
+        __('Conocer las herramientas que te hacen productivo.'),
+        __('Conocer las herramientas que te permiten automatizar procesos repetitivos.')
       ],
       image: './img/illustrations/bootcamp/tools.png'
     }) %>
 
     <%- include('../../partials/cards/card-bootcamp', {
-      title: 'Calidad de código',
+      title: __('Calidad de código'),
       list: [
-        'Escribir código fácil de entender y mantener.',
-        'Aplicar patrones de diseño.',
-        'Cómo crear una buena arquitectura'
+        __('Escribir código fácil de entender y mantener.'),
+        __('Aplicar patrones de diseño.'),
+        __('Cómo crear una buena arquitectura')
       ],
       image: './img/illustrations/bootcamp/code-quality.png'
     }) %>
 
     <%- include('../../partials/cards/card-bootcamp', {
-      title: 'Testing',
+      title: __('Testing'),
       list: [
-        'Escribir buenos tests de diferentes tipos.',
-        'Comprender las propiedades, beneficios de crear tests.',
-        'Entender los costes de cada tipo de test.'
+        __('Escribir buenos tests de diferentes tipos.'),
+        __('Comprender las propiedades, beneficios de crear tests.'),
+        __('Entender los costes de cada tipo de test.')
       ],
       image: './img/illustrations/bootcamp/testing.png'
     }) %>
 
     <%- include('../../partials/cards/card-bootcamp', {
-      title: 'Producto',
+      title: __('Producto'),
       list: [
-        'Entender que lo más importante es el valor aportado.',
-        'Centrarnos en el problema a resolver, cómo impacta en el usuario, cómo aportar valor antes y cómo simplificar producto.',
+        __('Entender que lo más importante es el valor aportado.'),
+        __('Centrarnos en el problema a resolver, cómo impacta en el usuario, cómo aportar valor antes y cómo simplificar producto.'),
       ],
       image: './img/illustrations/bootcamp/product-win.png'
     }) %>
@@ -63,7 +63,7 @@
     href="#contactForm"
     data-trackevent="contact_us.show_form.course_value"
   >
-    ¡Me interesa!
+    <t>¡Me interesa!</t>
   </a>
 </div>
 
