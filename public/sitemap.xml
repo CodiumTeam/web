@@ -30,4 +30,32 @@
     <url>
         <loc>https://blog.codium.team/2022-05_que-es-tdd</loc>
     </url>
+
+     <url>
+        <loc>https://www.codium.team/en</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/tdd-training.html</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/legacy-code-training.html</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/docker-training.html</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/refactoring-patterns-training.html</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/quality-assurance-training.html</loc>
+    </url>
+    <url>
+        <loc>https://blog.codium.team</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/development.html</loc>
+    </url>
+    <url>
+        <loc>https://www.codium.team/en/acceleration-program.html</loc>
+    </url>
 </urlset>
