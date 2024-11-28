@@ -101,6 +101,7 @@ section {
   max-width: 1000px;
   margin: 2.5rem auto 1rem auto;
 }
+
 //SECTION TEAM
 .team {
   display: flex;
@@ -159,10 +160,10 @@ section {
     height: auto;
 
     &.clients {
-      &--ge, &--iram {
+      &--ge,
+      &--iram {
         max-width: 65px;
       }
-
     }
   }
 
@@ -235,33 +236,40 @@ section {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0%, 0);
   }
 
-  3%, 93% {
+  3%,
+  93% {
     transform: translate(0%, 0);
   }
 
-  30%, 33% {
+  30%,
+  33% {
     transform: translate(0%, 34%);
   }
 
-  50%, 53% {
+  50%,
+  53% {
     transform: translate(-40%, 25%);
   }
 
-  75%, 78% {
+  75%,
+  78% {
     transform: translate(-40%, -10%);
   }
 }
 
 @keyframes scale {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
 
-  3%, 97% {
+  3%,
+  97% {
     opacity: 0;
   }
 
@@ -344,4 +352,50 @@ section {
 
 .isFor {
   margin-top: 2rem;
+}
+
+.lang-switcher {
+  padding: 0;
+
+  &.active {
+    .lang-option {
+      @media screen and (max-width: 768px) {
+        &:before {
+          top: 10px !important;
+        }
+      }
+    }
+  }
+
+  .lang-option {
+    display: flex !important;
+    align-items: center;
+    gap: 2px;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      display: inline-block !important;
+      &:before {
+        top: 6px !important;
+      }
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+      color: $darkest-grey;
+      position: relative;
+      top: -2px;
+    }
+
+    span {
+      padding: 0;
+      color: $darkest-grey;
+    }
+  }
+
+  .options {
+    padding-top: 0 !important;
+  }
 }

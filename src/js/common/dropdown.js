@@ -8,10 +8,14 @@ export function listenDropdown() {
 
   menuButton.addEventListener('click', controlMobileMenu);
 
-  const dropdown = document.querySelector('.dropdown');
-  dropdown.addEventListener('click', function () {
-    dropdown.classList.toggle('active');
-  });
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  for (let i = 0; i < dropdowns.length; i++) {
+    const dropdown = dropdowns[i];
+    dropdown.addEventListener('click', function () {
+      dropdown.classList.toggle('active');
+    });
+  }
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
