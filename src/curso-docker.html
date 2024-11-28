@@ -2,22 +2,20 @@
 <html lang="<%= process.env.locale %>">
   <head>
     <%- include('partials/analytics_head') %>
-    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-    <% var og_image = host + "/img/og-docker.png" %>
 
     <%- include('partials/metatags', {
-        title: 'Curso de Docker - Codium Team',
-        description: 'Acaba de una vez con los problemas: de infraestructura, del despliegue de tu aplicación o el conocido \'funciona en mi máquina\'. En tus oficinas o en remoto.',
-        og_title: 'Curso de Docker',
-        og_description: 'Acaba con los problemas de infraestructura, despliegue y el conocido \'funciona en mi máquina\'. Curso práctico, divertido y intenso. En tus oficinas o en remoto.',
-        og_image,
+        title: __('Curso de Docker - Codium Team'),
+        description: __('Acaba de una vez con los problemas: de infraestructura, del despliegue de tu aplicación o el conocido \'funciona en mi máquina\'. En tus oficinas o en remoto.'),
+        og_title: __('Curso de Docker'),
+        og_description: __('Acaba con los problemas de infraestructura, despliegue y el conocido \'funciona en mi máquina\'. Curso práctico, divertido y intenso. En tus oficinas o en remoto.'),
+        og_image: url("/img/og-docker.png"),
     }) %>
 
     <meta
       name="keywords"
-      content="Curso,Formación,Training,Docker,docker-compose,dockerizar,imagen,Infraestructura,Buildkit,Desarrollo,Devops,Escalabilidad,Seguridad,CI,Pipeline,CD,CI/CD,Crafter,Craftsmanship,Práctico,Divertido"
+      content="<%= __('Curso,Formación,Training,Docker,docker-compose,dockerizar,imagen,Infraestructura,Buildkit,Desarrollo,Devops,Escalabilidad,Seguridad,CI,Pipeline,CD,CI/CD,Crafter,Craftsmanship,Práctico,Divertido') %>"
     />
-    <link rel="canonical" href="<%= host %>/curso-docker.html"/>
+    <link rel="canonical" href="<%= url('/curso-docker.html') %>"/>
   </head>
 
   <body>
@@ -26,23 +24,23 @@
     <%- include('partials/header/landing-navbar', {
       menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits',
         },
         {
-          title: 'Contenido',
+          title: __('Contenido'),
           url: '#training-content-timeline',
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology',
         },
         {
-          title: 'FAQs',
+          title: __('FAQs'),
           url: '#faqs',
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact',
         },
       ]
@@ -51,18 +49,18 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <%- include('pages-content/curso-common/hero-block', {
-          title: 'Curso de Docker',
-          subtitle: 'Infraestructura como código al poder',
+          title: __('Curso de Docker'),
+          subtitle: __('Infraestructura como código al poder'),
           image: './img/moby-logo.svg'
         }) %>
 
         <%- include('pages-content/curso-common/course-card-information', {
-          hours: '16 horas',
+          hours: __('16 horas'),
           hoursDesc: '(2 días o 4 medios días)',
           fromWhere: __('Remoto o presencial'),
           languages: 'Docker',
-          availableInLanguages: 'Español, inglés y catalán',
-          price: '650 € + IVA por persona'
+          availableInLanguages: __('Español, inglés y catalán'),
+          price: __('650 € + IVA por persona')
         }) %>
       </div>
     </div>

@@ -2,44 +2,27 @@
  <% var opinionAboutThisCourse = [
   {
     avatar: './img/testimonials/garazi.png',
-    opinion: `Me ha gustado mucho el formato de curso que habéis
-              diseñado y cómo lo impartis. Me parece acertado que el
-              curso se divida en una parte práctica y otra teórica.
-              Para una persona que no ha visto nunca nada de Docker
-              o que no tenga los conceptos claros viene muy bien.
-    `,
+    opinion: __(`Me ha gustado mucho el formato de curso que habéis diseñado y cómo lo impartis. Me parece acertado que el curso se divida en una parte práctica y otra teórica. Para una persona que no ha visto nunca nada de Docker o que no tenga los conceptos claros viene muy bien.`),
     name: 'Garazi Alfaro',
-    profession: 'Ayudante de Investigación en Vicomtech',
+    profession: __('Ayudante de Investigación en Vicomtech'),
   },
   {
     avatar: './img/testimonials/marco.png',
-    opinion: `No tenía ninguna experiencia con Docker y el curso me
-              ha servido mucho para entender qué es, cómo funciona y
-              aprender a utilizarlo de una manera clara y concisa..
-    `,
+    opinion: __(`No tenía ninguna experiencia con Docker y el curso me ha servido mucho para entender qué es, cómo funciona y aprender a utilizarlo de una manera clara y concisa..`),
     name: 'Marco Ojero',
-    profession: 'Investigador en Vicomtech',
+    profession: __('Investigador en Vicomtech'),
   },
   {
     avatar: './img/testimonials/manex.png',
-    opinion: `El curso de Docker me ha servido para refrescar y
-              asentar tanto conceptos básicos como avanzados sobre
-              el uso de Docker. Al ser una formación hands-on he
-              podido integrar estos nuevos conocimientos en mi día a
-              día sin problemas.
-    `,
+    opinion: __(`El curso de Docker me ha servido para refrescar y asentar tanto conceptos básicos como avanzados sobre el uso de Docker. Al ser una formación hands-on he podido integrar estos nuevos conocimientos en mi día a día sin problemas.`),
     name: 'Manex Serras',
-    profession: 'Investigador en Vicomtech',
+    profession: __('Investigador en Vicomtech'),
   },
   {
     avatar: './img/testimonials/oscarSalgado.jpeg',
-    opinion: `Un curso bien organizado que ha servido para reforzar
-              y ampliar nuestros conocimientos básicos de Docker
-              para poder sacarle un mayor rendimiento en nuestro día
-              a día.
-    `,
+    opinion: __(`Un curso bien organizado que ha servido para reforzar y ampliar nuestros conocimientos básicos de Docker para poder sacarle un mayor rendimiento en nuestro día a día.`),
     name: 'Salgado Oscar',
-    profession: 'Senior Researcher en Ikerlan',
+    profession: __('Senior Researcher en Ikerlan'),
   },
 ] %>
 
@@ -47,7 +30,7 @@
   <div class="container">
     <h2 class="text-center title"><t>Testimonios</t></h2>
     <p class="text-center">
-      Conoce qué han dicho los alumnos sobre éste curso
+        <t>Conoce qué han dicho los alumnos sobre este curso</t>
     </p>
 
     <%- include('../../partials/carousel/opinion', {
