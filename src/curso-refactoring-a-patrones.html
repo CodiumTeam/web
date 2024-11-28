@@ -3,32 +3,30 @@
   <head>
     <meta name="robots" content="index, follow">
     <%- include('partials/analytics_head') %>
-    <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-    <% var og_image = host + "/img/og-patterns-v3.png" %>
 
     <%- include('partials/metatags', {
-        title: 'Curso Refactoring a Patrones - Patrones de diseño - Codium Team',
-        description: 'Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.',
-        og_title: 'Curso Refactoring a Patrones de diseño',
-        og_description: 'Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.',
-        og_image,
+        title: __('Curso Refactoring a Patrones - Patrones de diseño - Codium Team'),
+        description: __('Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.'),
+        og_title: __('Curso Refactoring a Patrones de diseño'),
+        og_description: __('Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.'),
+        og_image: url('/img/og-patterns-v3.png'),
     }) %>
     <meta
       name="keywords"
-      content="Curso,Formación,Training,Patrones de diseño,Design patterns,Refactoring,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido"
+      content="<%= __('Curso,Formación,Training,Patrones de diseño,Design patterns,Refactoring,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido') %>"
     />
-    <link rel="canonical" href="<%= host %>/curso-refactoring-a-patrones.html"/>
+    <link rel="canonical" href="<%= url('/curso-refactoring-a-patrones.html') %>"/>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "Curso Refactoring a Patrones - Patrones de diseño",
-        "headline": "Curso Refactoring a Patrones - Patrones de diseño",
-        "description": "Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.",
+        "name": <%= __("Curso Refactoring a Patrones - Patrones de diseño") %>,
+        "headline": <%= __("Curso Refactoring a Patrones - Patrones de diseño") %>,
+        "description": <%= __("Aprende los patrones de diseño más utilizados en el mundo del software. Crea código de alta calidad, extensible, mantenible y flexible.") %>,
         "provider": {
           "@type": "Organization",
           "name": "Codium",
-          "sameAs": "https://www.codium.team/"
+          "sameAs": <%= url("https://www.codium.team/") %>
         }
       }
     </script>
@@ -40,23 +38,23 @@
     <%- include('partials/header/landing-navbar', {
       menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits',
         },
         {
-          title: 'Contenido',
+          title: __('Contenido'),
           url: '#training-content-timeline',
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology',
         },
         {
-          title: 'FAQs',
+          title: __('FAQs'),
           url: '#faqs',
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact',
         },
       ]
@@ -65,18 +63,18 @@
     <div class="hero-wrapper">
       <div class="container course-hero">
         <%- include('pages-content/curso-common/hero-block', {
-          title: 'Curso Refactoring a Patrones',
-          subtitle: 'Mejora el diseño de tu código',
+          title: __('Curso Refactoring a Patrones'),
+          subtitle: __('Mejora el diseño de tu código'),
           image: './img/refactoring-to-patterns.svg'
         }) %>
 
         <%- include('pages-content/curso-common/course-card-information', {
-          hours: '16 horas',
-          hoursDesc: '(2 días o 4 medios días)',
+          hours: __('16 horas'),
+          hoursDesc: __('(2 días o 4 medios días)'),
           fromWhere: __('Remoto o presencial'),
-          languages: 'Java, Python, Js, PHP,  C#, C++, Go...',
-          availableInLanguages: 'Español, inglés y catalán',
-          price: '650 € + IVA por persona'
+          languages: __('Java, Python, Js, PHP,  C#, C++, Go...'),
+          availableInLanguages: __('Español, inglés y catalán'),
+          price: __('650 € + IVA por persona')
         }) %>
       </div>
     </div>

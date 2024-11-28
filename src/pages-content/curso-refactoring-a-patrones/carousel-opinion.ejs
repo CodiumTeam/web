@@ -2,48 +2,41 @@
 <% var opinionAboutThisCourse = [
   {
     avatar: './img/testimonials/adrian-ferrera.jpg',
-    opinion: `Un curso esencial para todas las personas que valoran la calidad y mantenibilidad del código. Me ha dado la oportunidad de optimizar los procesos de desarrollo diario y ser más eficiente. Las conversaciones surgidas durante el mismo han sido sumamente enriquecedoras.`,
+    opinion: __(`Un curso esencial para todas las personas que valoran la calidad y mantenibilidad del código. Me ha dado la oportunidad de optimizar los procesos de desarrollo diario y ser más eficiente. Las conversaciones surgidas durante el mismo han sido sumamente enriquecedoras.`),
     name: 'Adrián Ferrera González',
-    profession: 'Principal Development Consultant en Lean Mind',
+    profession: __('Principal Development Consultant en Lean Mind'),
   },
   {
     avatar: './img/testimonials/maria_calzada.jpeg',
-    opinion: `En 4 días hemos aprendido y practicado más de 15 patrones. Me ha encantado la experiencia de aplicar cada patrón, manteniendo los tests en verde y utilizar la potencia del IDE.
-    Pero sobre todo, me quedo con la sensación de haber evolucionado muchísimo.`,
+    opinion: __(`En 4 días hemos aprendido y practicado más de 15 patrones. Me ha encantado la experiencia de aplicar cada patrón, manteniendo los tests en verde y utilizar la potencia del IDE. Pero sobre todo, me quedo con la sensación de haber evolucionado muchísimo.`),
     name: 'María Calzada',
-    profession: 'Software Engineering Manager en HolaLuz',
+    profession: __('Software Engineering Manager en HolaLuz'),
   },
   {
     avatar: './img/testimonials/carlos_castillo.jpg',
-    opinion: `El curso es muy fácil de seguir y el ambiente es muy colaborativo. Al trabajar en parejas rotativas he aprendido un montón de trucos
-    Para mi, refactorizar es una técnica que te da el superpoder de hacer tu código moldeable y la tranquilidad de poder aplazar decisiones.`,
+    opinion: __(`El curso es muy fácil de seguir y el ambiente es muy colaborativo. Al trabajar en parejas rotativas he aprendido un montón de trucos. Para mi, refactorizar es una técnica que te da el superpoder de hacer tu código moldeable y la tranquilidad de poder aplazar decisiones.`),
     name: 'Carlos Castillo',
-    profession: 'Engineering Manager en Cabify',
+    profession: __('Engineering Manager en Cabify'),
   },
   {
     avatar: './img/testimonials/chema.jpg',
-    opinion: `Menudo workshop sobre refactoring más espectacular, me lo he pasado genial.
-      La atmósfera, la gente, el contenido y sobre todo el manejo del mismo.
-      ¡Lo recomiendo muy mucho!`,
+    opinion: __(`Menudo workshop sobre refactoring más espectacular, me lo he pasado genial. La atmósfera, la gente, el contenido y sobre todo el manejo del mismo. ¡Lo recomiendo muy mucho!`),
     name: 'Jose Maria Valera Reales',
-    profession: 'Tech Lead en Teufel Audio',
+    profession: __('Tech Lead en Teufel Audio'),
   },
   {
     avatar: './img/testimonials/xavier_belloso.jpeg',
-    opinion: `Aporta una serie de herramientas que puedes aplicar desde el primer día
-siendo un curso muy dinámico en la participación.
-    Gracias a Codium por el
-acompañamiento respetuoso para probar, implementar y discutir las soluciones.`,
+    opinion: __(`Aporta una serie de herramientas que puedes aplicar desde el primer día siendo un curso muy dinámico en la participación. Gracias a Codium por el acompañamiento respetuoso para probar, implementar y discutir las soluciones.`),
     name: 'Xavier Belloso Guillen',
-    profession: 'Software Engineer en Voxel',
+    profession: __('Software Engineer en Voxel'),
   },
 ] %>
 
 <section class="block block--white">
   <div class="container">
-    <h2 class="text-center title">Testimonios</h2>
+    <h2 class="text-center title"><t>Testimonios</t></h2>
     <p class="text-center">
-      Conoce qué han dicho los alumnos sobre este curso
+      <t>Conoce qué han dicho los alumnos sobre este curso</t>
     </p>
 
     <%- include('../../partials/carousel/opinion', {
