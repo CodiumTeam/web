@@ -1,10 +1,10 @@
-import path, {basename} from 'node:path';
-import {fileURLToPath} from 'node:url';
+import path, { basename } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import ejs from 'ejs';
 import glob from 'glob';
-import {JSDOM} from 'jsdom';
-import {decode} from 'html-entities';
-import {urlResolver} from './url-resolver.mjs';
+import { JSDOM } from 'jsdom';
+import { decode } from 'html-entities';
+import { urlResolver } from './url-resolver.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -24,8 +24,8 @@ export const compileHtml = (html, ejsData = {}) => {
     const transElements =
       dom.window.document.documentElement.querySelectorAll('t');
     transElements.forEach((transElement) => {
-      const content = transElement.innerHTML.trim();
-      transElement.outerHTML = `<span><%- __('${content.replace(/\s+/g, ' ')}') %></span>`;
+      const content = transElement.innerHTML.trim().replace(/\s+/g, ' ');
+      transElement.outerHTML = `<span><%- __(\`${content}\`) %></span>`;
     });
 
     return dom.window.document.documentElement.innerHTML;

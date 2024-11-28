@@ -6,7 +6,7 @@ import { DEFAULT_LANG, i18n, languagesDir } from './i18n-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const htmlFiles = getHtmlFilesToProcess();
-const defaultTranslations = {};
+const translations = {};
 
 main();
 
@@ -22,7 +22,7 @@ function main() {
     });
   }
 
-  saveInFile(`es.json`, defaultTranslations);
+  saveInFile(`es.json`, translations);
 
   const languages = i18n.getLocales();
   for (const language of languages) {
@@ -35,7 +35,7 @@ function main() {
 function keysExtractorDecorator(i18n__) {
   return (text) => {
     const cleanedText = text.replace(/\s+/g, ' ').trim();
-    defaultTranslations[cleanedText] = cleanedText;
+    translations[cleanedText] = cleanedText;
     return i18n__(cleanedText);
   };
 }
@@ -43,7 +43,7 @@ function keysExtractorDecorator(i18n__) {
 function updateJsonForLanguage(language) {
   const langFile = `${language}.json`;
   const oldTranslations = readFile(langFile);
-  saveInFile(langFile, mergeLanguages(oldTranslations, defaultTranslations));
+  saveInFile(langFile, mergeLanguages(oldTranslations, translations));
 }
 
 function saveInFile(inFile, translations) {
