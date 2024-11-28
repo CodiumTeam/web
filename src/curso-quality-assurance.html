@@ -3,32 +3,29 @@
 <head>
   <meta name="robots" content="index, follow">
   <%- include('partials/analytics_head') %>
-  <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
-  <% var og_image = host + "/img/og-qa-v2.png" %>
-
   <%- include('partials/metatags', {
-    title: 'Quality Assurance - Automatiza las validaciones de cualquier web - Codium Team',
-    description: 'Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.',
-    og_title: 'Curso de testing automático',
-    og_description: 'Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.',
-    og_image,
+    title: __('Quality Assurance - Automatiza las validaciones de cualquier web - Codium Team'),
+    description: __('Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.'),
+    og_title: __('Curso de testing automático'),
+    og_description: __('Aprende las técnicas de testing automáticos de software y sus conceptos más importantes. Curso práctico, divertido e intenso.'),
+    og_image: url('/img/og-qa-v2.png'),
   }) %>
   <meta
           name="keywords"
-          content="Curso,Formación,Training,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido"
+          content="<%= __('Curso,Formación,Training,Testing,Mocks,Craftsmanship,Extreme programming,Práctico,Divertido') %>"
   />
-  <link rel="canonical" href="<%= host %>/curso-quality-assurance.html"/>
+  <link rel="canonical" href="<%= url('curso-quality-assurance.html') %>"/>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "Quality Assurance - Automatiza las validaciones de cualquier web - Codium Team",
-      "headline": "Curso de Testing - QA - Testing manual a automático",
-      "description": "Aprende las técnicas de testing automáticos de software y sus conceptos más importantes",
+      "name": __("Quality Assurance - Automatiza las validaciones de cualquier web - Codium Team"),
+      "headline": __("Curso de Testing - QA - Testing manual a automático"),
+      "description": __("Aprende las técnicas de testing automáticos de software y sus conceptos más importantes"),
       "provider": {
         "@type": "Organization",
         "name": "Codium",
-        "sameAs": "https://www.codium.team/"
+        "sameAs": url("https://www.codium.team/")
       }
     }
   </script>
@@ -40,23 +37,23 @@
   <%- include('partials/header/landing-navbar', {
     menu: [
         {
-          title: 'Beneficios',
+          title: __('Beneficios'),
           url: '#benefits',
         },
         {
-          title: 'Contenido',
+          title: __('Contenido'),
           url: '#training-content-timeline',
         },
         {
-          title: 'Metodología',
+          title: __('Metodología'),
           url: '#methodology',
         },
         {
-          title: 'FAQs',
+          title: __('FAQs'),
           url: '#faqs',
         },
         {
-          title: 'Contactar',
+          title: __('Contactar'),
           url: '#contact',
         },
       ]
@@ -65,18 +62,18 @@
   <div class="hero-wrapper">
     <div class="container course-hero">
       <%- include('pages-content/curso-common/hero-block', {
-        title: 'Quality Assurance',
-        subtitle: 'Automatiza las validaciones de cualquier web',
+        title: __('Quality Assurance'),
+        subtitle: __('Automatiza las validaciones de cualquier web'),
         image: './img/qa-quality-v2.svg'
       }) %>
 
       <%- include('pages-content/curso-common/course-card-information', {
-        hours: '12 horas',
-        hoursDesc: '(1,5 días o 3 medios días)',
+        hours: __('12 horas'),
+        hoursDesc: __('(1,5 días o 3 medios días)'),
         fromWhere: __('Remoto o presencial'),
         languages: 'JavaScript',
-        availableInLanguages: 'Español, inglés y catalán',
-        price: '500 € + IVA por persona'
+        availableInLanguages: __('Español, inglés y catalán'),
+        price: __('500 € + IVA por persona')
       }) %>
     </div>
   </div>
