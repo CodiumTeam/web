@@ -1,10 +1,10 @@
 import { execSync } from 'node:child_process';
 import {DEFAULT_LANG, i18n} from './i18n-utils.mjs';
-import {keyTranslations} from "./url-resolver.mjs";
 import path from "node:path";
 import fs from "node:fs";
 
 import {fileURLToPath} from "node:url";
+import {keyTranslations} from "./url-translated.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -18,8 +18,8 @@ function runBuild(locale) {
 
 function renameFilesToMatchUrls(directory) {
   for (const [originalName, translatedName] of Object.entries(keyTranslations)) {
-    const originalPath = path.join(directory, originalName.replace('/', ''));
-    const translatedPath = path.join(directory, translatedName.replace('/', ''));
+    const originalPath = path.join(directory, originalName);
+    const translatedPath = path.join(directory, translatedName);
 
     if (fs.existsSync(originalPath)) {
         fs.renameSync(originalPath, translatedPath);

@@ -1,4 +1,5 @@
 import { scrollToElement } from './scrollToElement';
+import {keyTranslations, translateUrlInProduction} from '../../../build/url-translated.mjs';
 
 export function listenDropdown() {
   const menuButton = document.getElementById('js-menu-button');
@@ -66,8 +67,9 @@ export function langsSwitcher() {
             .split('/')
             .filter(Boolean)
             .filter((x) => !availableLanguages.includes(x));
-          const url = urls[0] || '';
-          currentUrl.pathname = `/${locale}/${url}`.replace('/es/', '');
+          const path = urls[0] || '';
+          const fixedPath = translateUrlInProduction(path);
+          currentUrl.pathname = `/${locale}/${fixedPath}`.replace('/es/', '');
         }
         window.location.href = currentUrl.href;
       }
