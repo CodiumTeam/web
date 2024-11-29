@@ -2,6 +2,9 @@
 <html lang="<%= process.env.locale %>">
   <head>
     <meta name="robots" content="index, follow">
+    <%- include('partials/langs_alternate', {
+      path: '/curso-refactoring-a-patrones.html'
+    }) %>
     <%- include('partials/analytics_head') %>
 
     <%- include('partials/metatags', {

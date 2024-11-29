@@ -4,6 +4,9 @@
 <html lang="<%= process.env.locale %>">
   <!--<![endif]-->
   <head>
+      <%- include('partials/langs_alternate', {
+        path: '/style-guide.html'
+        }) %>
     <meta name="robots" content="index, follow">
     <%- include('partials/analytics_head') %>
     <%- include('partials/metatags', {

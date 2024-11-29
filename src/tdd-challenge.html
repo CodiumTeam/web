@@ -2,6 +2,9 @@
 <html lang="<%= process.env.locale %>">
 <head>
     <meta name="robots" content="noindex">
+     <%- include('partials/langs_alternate', {
+        path: '/tdd-challenge.html'
+    }) %>
     <%- include('partials/analytics_head') %>
     <% var host = process.env.BASE_DOMAIN || "https://www.codium.team" %>
     <% var og_image = host + "/img/og-tdd.png" %>

@@ -2,6 +2,9 @@
 <html lang="<%= process.env.locale %>">
 <head>
   <meta name="robots" content="index, follow">
+  <%- include('partials/langs_alternate', {
+      path: '/curso-quality-assurance.html'
+  }) %>
   <%- include('partials/analytics_head') %>
   <%- include('partials/metatags', {
     title: __('Quality Assurance - Automatiza las validaciones de cualquier web - Codium Team'),

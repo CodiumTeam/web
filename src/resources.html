@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="<%= process.env.locale %>">
   <head>
+    <%- include('partials/langs_alternate', {
+      path: '/resources.html'
+    }) %>
     <%- include('partials/analytics_head') %>
     <%- include('partials/metatags', {
         title: 'Codium - Resultados, Calidad y Mejora',
