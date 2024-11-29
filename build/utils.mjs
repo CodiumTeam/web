@@ -28,7 +28,7 @@ export const compileHtml = (html, ejsData = {}) => {
       transElement.outerHTML = `<span><%- __(\`${content}\`) %></span>`;
     });
 
-    return dom.window.document.documentElement.innerHTML;
+    return dom.window.document.documentElement.outerHTML;
   }
 
   function compile(toCompileHTML) {
