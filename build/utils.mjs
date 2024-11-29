@@ -36,8 +36,8 @@ export const compileHtml = (html, ejsData = {}) => {
       views: [SRC],
       async: false,
     })({
-      url: (path) => {
-        return urlResolver(path, ejsData.locale || process.env.locale);
+      url: (path, lang) => {
+        return urlResolver(path, lang || ejsData.locale || process.env.locale);
       },
       ...ejsData,
     });

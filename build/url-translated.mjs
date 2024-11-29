@@ -8,8 +8,21 @@ export const keyTranslations = {
   'programa-de-aceleracion.html': 'acceleration-program.html',
 };
 
-export function translateUrlInProduction(path) {
+export function translateUrlInProduction(path, locale) {
   if (process.env.NODE_ENV !== 'production') return path;
 
-  return keyTranslations[path] || path; // Return the translated path or the original if not found
+  if (path.startsWith('/')) {
+    path = path.replace('/', '');
+  }
+
+  if (locale === 'es') {
+    // Find the key corresponding to the given path value
+    const originalKey = Object.keys(keyTranslations).find(
+      (key) => keyTranslations[key] === path
+    );
+    return originalKey ? `/${originalKey}` : `/${path}`;
+  }
+
+  const newUrl = keyTranslations[path] || path;
+  return `/${newUrl}`;
 }
