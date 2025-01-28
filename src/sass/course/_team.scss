@@ -8,6 +8,7 @@
   .card.card--personal {
     margin: 1rem 0;
 
+
     &:first-child {
       margin-left: 0;
     }
@@ -21,7 +22,8 @@
     flex-direction: row;
     .card.card--personal {
       margin: 1rem;
-      max-width: 250px;
+      flex: 1 1 calc(40%); /* Cada foto ocupa el 40% del ancho  */
+      max-width: calc(40%); /* Asegura que no exceda el 40% */
     }
   }
 }
