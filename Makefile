@@ -21,9 +21,10 @@ up:
 clean:
 	rm -rf dist/
 
+.PHONY: dist
 dist:
 	docker compose build web
-	docker compose run -T -v /code/node_modules web npm run build
+	docker compose run -T web npm run build
 
 .PHONY: get-cypress-version
 get-cypress-version:
@@ -46,4 +47,4 @@ test-email: get-cypress-version
 		--config baseUrl=http://host.docker.internal:3000
 
 i18n-extract:
-	docker compose run -T -v /code/node_modules web npm run i18n:extract
+	docker compose run -T web npm run i18n:extract
