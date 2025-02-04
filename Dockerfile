@@ -1,12 +1,10 @@
 FROM node:16 AS builder
 
-USER node
-
 WORKDIR /code
 
-COPY --chown=node:node .npmrc package-lock.json package.json ./
+COPY .npmrc package-lock.json package.json ./
 RUN npm install
-COPY --chown=node:node . .
+COPY . .
 RUN npm run build
 
 VOLUME ["/code", "/code/node_modules"]
