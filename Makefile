@@ -24,8 +24,7 @@ clean:
 .PHONY: dist
 dist:
 	docker compose build web
-	make clean
-	docker compose run -T web npm run build
+	docker compose run -T -v /code/node_modules web npm run build
 
 .PHONY: get-cypress-version
 get-cypress-version:
