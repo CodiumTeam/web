@@ -9,7 +9,7 @@ RUN npm install
 COPY --chown=node:node . .
 RUN npm run build
 
-VOLUME ["/code", "/code/node_modules", "/code/dist"]
+VOLUME ["/code", "/code/node_modules"]
 
 
 FROM nginx AS server
