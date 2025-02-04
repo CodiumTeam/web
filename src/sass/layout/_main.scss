@@ -19,7 +19,12 @@ section {
   gap: 1rem;
   margin-top: 2rem;
 
-  &--services,
+  &--services {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   &--trainings {
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);

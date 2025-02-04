@@ -7,8 +7,8 @@
     }) %>
     <%- include('partials/analytics_head') %>
     <%- include('partials/metatags', {
-        title: __('Codium: Desarrollo de producto y formación'),
-        description: __('Desarrollamos software de calidad. Formamos a equipos de programación. Estamos especializados en TDD, código legacy y patrones de diseño.'),
+        title: __('Codium: Formación para equipos de programación'),
+        description: __('Estamos especializados en TDD, código legacy, patrones de diseño y ingeniería de producto.'),
     }) %>
     <link rel="canonical" href="https://www.codium.team/"/>
   </head>
@@ -76,28 +76,24 @@
     <%- include('pages-content/home/hero') %>
 
     <main class="main">
+      <section class="services block block--white" id="courses-list">
+        <%- include('pages-content/home/available-courses') %>
+      </section>
 
-      <section class="values block block--grey" id="things-we-do">
-        <%- include('pages-content/home/things-we-do') %>
+      <%- include('pages-content/home/our-clients') %>
+
+      <section class="values block block--grey" id="values-and-methodology">
+        <%- include('pages-content/home/values-and-methodology') %>
       </section>
 
       <section class="services block block--white" id="our-services">
         <%- include('pages-content/home/our-services') %>
       </section>
 
-      <section class="values block block--grey" id="values-and-methodology">
-        <%- include('pages-content/home/values-and-methodology') %>
-      </section>
-
-      <section class="services block block--white" id="courses-list">
-        <%- include('pages-content/home/available-courses') %>
-      </section>
-
       <section class="team block block--grey"  id="team">
         <%- include('pages-content/common/teams') %>
       </section>
 
-      <%- include('pages-content/home/our-clients') %>
 
       <section class="contact block block--lila" id="contact">
         <%- include('partials/contact-form') %>

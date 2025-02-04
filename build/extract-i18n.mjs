@@ -19,6 +19,7 @@ function main() {
     compileHtml(template, {
       ...i18n,
       __: keysExtractorDecorator(i18n.__),
+      locale: 'es'
     });
   }
 

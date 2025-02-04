@@ -1,18 +1,11 @@
 <div class="container">
-    <h2 class="title"><t>Qué ofrecemos</t></h2>
+    <h2 class="title"><t>Otros servicios que ofrecemos</t></h2>
     <div class="section__grid section__grid--services">
         <%- include('../../partials/cards/card-large', {
             title: __('Desarrollo'),
             description: __('Quieres un equipo de alto rendimiento para desarrollar tu producto. Colaboramos con tu equipo o de forma autónoma.'),
             imageUrl: '/img/illustrations/development-team.svg',
             buttonUrl: url('/desarrollo.html'),
-        }) %>
-
-        <%- include('../../partials/cards/card-large', {
-            title: __('Cursos'),
-            description: __('Quieres aprender una nueva habilidad y generar un punto de inflexión en tu equipo. Enseñamos con cursos prácticos.'),
-            imageUrl: 'img/illustrations/classroom-learning.svg',
-            buttonUrl: '#courses-list'
         }) %>
 
         <%- include('../../partials/cards/card-large', {
