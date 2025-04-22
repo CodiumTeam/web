@@ -7,7 +7,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-VOLUME ["/code", "/code/node_modules"]
+VOLUME ["/code"]
 
 
 FROM nginx AS server

@@ -5,8 +5,7 @@ DOCKER_COMMAND = docker run --rm -u $(shell id -u) -v ${PWD}:/code -w /code
 default: up
 
 .PHONY: install
-install:
-	docker compose run web npm install
+install: .dependencies
 	git config --local core.hooksPath .githooks/
 
 .PHONY: lint
@@ -14,8 +13,8 @@ lint:
 	docker compose run -T web sh scripts/lint.sh
 
 .PHONY: up
-up:
-	docker compose up
+up: .dependencies
+	docker compose up --remove-orphans
 
 .PHONY: clean
 clean:
@@ -48,3 +47,7 @@ test-email: get-cypress-version
 
 i18n-extract:
 	docker compose run -T web npm run i18n:extract
+
+.dependencies: package-lock.json
+	docker compose run web npm install
+	touch .dependencies
