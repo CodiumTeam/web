@@ -25,6 +25,10 @@ dist:
 	docker compose build web
 	docker compose run -T -v /code/node_modules web npm run build
 
+.PHONY: run-production
+run-production: dist
+	docker run --rm -v ${PWD}/dist:/usr/share/nginx/html -p 3000:80 nginx
+
 .PHONY: get-cypress-version
 get-cypress-version:
 	$(eval CYPRESS_VERSION=$(shell docker compose run web npm list cypress --depth=0 -p -l | cut -d'@' -f2))
