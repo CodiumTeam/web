@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="<%= process.env.locale %>">
+  <head>
+    <meta name="robots" content="index, follow">
+    <%- include('partials/langs_alternate', {
+      path: '/curso-product-engineer.html'
+    }) %>
+    <%- include('partials/analytics_head') %>
+
+    <%- include('partials/metatags', {
+        title: __('Curso de Product Engineer - Codium Team'),
+        description: __('Aprende a desarrollar productos de software de calidad con enfoque en la experiencia del usuario y el valor de negocio. Curso práctico, divertido e intenso.'),
+        og_title: __('Curso de Product Engineer'),
+        og_description: __('Aprende a desarrollar productos de software de calidad con enfoque en la experiencia del usuario y el valor de negocio. Curso práctico, divertido e intenso.'),
+        og_image: url('/img/og-product-engineer.png'),
+    }) %>
+    <meta
+      name="keywords"
+      content="<%= __('Curso,Formación,Training,Product Engineer,Product Development,UX,User Experience,Business Value,Agile,Scrum,Lean,Craftsmanship,Práctico,Divertido') %>"
+    />
+    <link rel="canonical" href="<%= url('/curso-product-engineer.html') %>"/>
+  </head>
+
+  <body>
+    <%- include('partials/analytics_body') %>
+
+    <%- include('partials/header/landing-navbar', {
+      menu: [
+        {
+          title: __('Beneficios'),
+          url: '#benefits',
+        },
+        {
+          title: __('Contenido'),
+          url: '#training-content-timeline',
+        },
+        {
+          title: __('Metodología'),
+          url: '#methodology',
+        },
+        {
+          title: __('FAQs'),
+          url: '#faqs',
+        },
+        {
+          title: __('Contactar'),
+          url: '#contact',
+        },
+      ]
+    }) %>
+
+    <div class="hero-wrapper">
+      <div class="container course-hero">
+        <%- include('pages-content/curso-common/hero-block', {
+          title: __('Curso de Product Engineer'),
+          subtitle: __('Desarrollando productos de valor'),
+          image: './img/skills.svg'
+        }) %>
+
+        <%- include('pages-content/curso-common/course-card-information', {
+          hours: __('16 horas'),
+          hoursDesc: __('(2 días o 4 medios días)'),
+          fromWhere: __('Remoto o presencial'),
+          languages: __('Metodologías y herramientas de Product Development'),
+          availableInLanguages: __('Español, inglés y catalán'),
+          price: __('650 € + IVA por persona')
+        }) %>
+      </div>
+    </div>
+
+    <main>
+
+      <%- include('pages-content/curso-product-engineer/carousel-clients') %>
+
+      <%- include('pages-content/curso-product-engineer/carousel-opinion') %>
+
+      <section class="block block--white" id="benefits">
+        <%- include('pages-content/curso-product-engineer/benefits') %>
+      </section>
+
+      <section class="block block--lila" id="training-content-timeline">
+        <%- include('pages-content/curso-product-engineer/content') %>
+      </section>
+
+      <section class="block block--white" id="methodology">
+        <%- include('pages-content/curso-product-engineer/methodology') %>
+      </section>
+
+      <%- include('partials/summary-by-numbers') %>
+
+      <section class="block block--white" id="faqs">
+        <%- include('pages-content/curso-product-engineer/faqs') %>
+      </section>
+
+      <section class="block block--lila" id="contact">
+        <%- include('pages-content/curso-common/form', {
+          type: 'product_engineer_training'
+        }) %>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <%- include('pages-content/curso-common/scripts') %>
+  </body>
+</html>

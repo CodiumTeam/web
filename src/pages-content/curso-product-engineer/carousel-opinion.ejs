@@ -1,0 +1,39 @@
+<% var opinionAboutThisCourse = [
+  {
+    avatar: './img/testimonials/HelderDOliveira.jpg',
+    opinion: __(`El curso de Product Engineer me ha proporcionado una visión integral del desarrollo de productos, combinando aspectos técnicos con una comprensión profunda de las necesidades del usuario. Ahora puedo aportar mucho más valor en mi equipo.`),
+    name: 'Helder De Oliveira',
+    profession: 'Software Craftsman',
+  },
+  {
+    avatar: './img/testimonials/JoanMiralles.jpg',
+    opinion: __(`Este curso ha cambiado mi forma de abordar el desarrollo de software. Ahora entiendo que no solo se trata de escribir buen código, sino de crear productos que realmente resuelvan problemas de los usuarios.`),
+    name: 'Joan Miralles',
+    profession: __('Software Architect en Brújula Tecnologías de la Información'),
+  },
+  {
+    avatar: './img/testimonials/ilya.png',
+    opinion: __(`El enfoque práctico del curso me ha permitido aplicar inmediatamente los conceptos aprendidos en mi trabajo diario. Las metodologías y herramientas presentadas son extremadamente valiosas para cualquier desarrollador que quiera evolucionar hacia un rol más completo.`),
+    name: 'Ilya Kabushko',
+    profession: __('Software developer en Travel Compositor'),
+  },
+  {
+    avatar: './img/testimonials/sara-revilla.jpg',
+    opinion: __(`Gracias a este curso, ahora puedo comunicarme de manera más efectiva con los equipos de producto y diseño. He aprendido a equilibrar las consideraciones técnicas con las necesidades del negocio y los usuarios, lo que ha mejorado significativamente la calidad de nuestros productos.`),
+    name: 'Sara Revilla',
+    profession: __('Data engineer en Clarity AI'),
+  },
+] %>
+
+<section class="block block--white">
+  <div class="container">
+    <h2 class="text-center title"><t>Testimonios</t></h2>
+    <p class="text-center">
+      <t>Conoce qué han dicho los alumnos sobre este curso</t>
+    </p>
+
+    <%- include('../../partials/carousel/opinion', {
+      opinions: opinionAboutThisCourse
+    })  %>
+  </div>
+</section>
