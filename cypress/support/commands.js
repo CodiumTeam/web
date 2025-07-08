@@ -36,7 +36,7 @@ Cypress.Commands.add('validateServiceListInDropdown', () => {
         url: '/curso-quality-assurance.html',
       },
       {
-        title: 'Taller de Front-end online',
+        title: 'Taller de Front-end',
         url: 'https://online-trainings.codium.team/',
       },
       {
