@@ -1,0 +1,113 @@
+<div class="container">
+
+    <h2 class="text-center title">
+        <t>El valor de Product Engineer</t>
+    </h2>
+
+    <p class="text-center text-dark-grey">
+        <t>El enfoque de Product Engineer combina habilidades técnicas con una comprensión profunda
+           de las necesidades del usuario y los objetivos de negocio, permitiendo crear productos
+           de software que realmente aportan valor.
+        </t>
+    </p>
+
+    <article class="tdd-value">
+        <div class="text-center tdd-value__item">
+             <% if (locale === 'es') { %>
+                <svg xmlns="http://www.w3.org/2000/svg" width="399" height="337" viewBox="0 0 399 337" fill="none"
+                     class="tdd-value__image" alt="<%= __('El valor del curso explicado con bueno-bonito-barato') %>">
+                    <circle cx="194.5" cy="115.5" r="115.5" fill="#E84A4B" fill-opacity="0.8"/>
+                    <circle cx="115.5" cy="221.5" r="115.5" fill="#FFD700" fill-opacity="0.8"/>
+                    <path d="M399 221.5C399 285.289 347.289 337 283.5 337C219.711 337 168 285.289 168 221.5C168 157.711 219.711 106 283.5 106C347.289 106 399 157.711 399 221.5Z"
+                          fill="#5BC3EE" fill-opacity="0.8"/>
+                </svg>
+            <% } else if (locale === 'en') { %>
+                <svg xmlns="http://www.w3.org/2000/svg" width="399" height="337" viewBox="0 0 399 337" fill="none"
+                     class="tdd-value__image" alt="<%= __('El valor del curso explicado con bueno-bonito-barato') %>">
+                    <circle cx="194.5" cy="115.5" r="115.5" fill="#E84A4B" fill-opacity="0.8"/>
+                    <circle cx="115.5" cy="221.5" r="115.5" fill="#FFD700" fill-opacity="0.8"/>
+                    <path d="M399 221.5C399 285.289 347.289 337 283.5 337C219.711 337 168 285.289 168 221.5C168 157.711 219.711 106 283.5 106C347.289 106 399 157.711 399 221.5Z"
+                          fill="#5BC3EE" fill-opacity="0.8"/>
+                </svg>
+            <% } %>
+        </div>
+
+        <aside class="tdd-value__item">
+            <h2 class="tdd-value__title" id="what-is-product-engineer">
+                <t>¿Qué es Product Engineer?</t>
+            </h2>
+            <p class="text-dark-grey">
+                <t>Product Engineer es un enfoque que combina ingeniería de software con diseño de producto.</t>
+            </p>
+            <p class="text-dark-grey">
+                <t>Es un rol que va más allá del desarrollo técnico, involucrándose en la comprensión de las necesidades
+                   del usuario, la definición de requisitos, y la creación de soluciones que aporten valor real al negocio
+                   y a los usuarios finales.
+                </t>
+            </p>
+            <p class="text-dark-grey">
+                <t>Un Product Engineer no solo se preocupa por cómo construir algo, sino también por qué y para quién se está
+                   construyendo, asegurando que el producto final sea útil, usable y deseable.
+                </t>
+            </p>
+            <div>
+                <h2>
+                    <t>Beneficios de Product Engineer</t>
+                </h2>
+
+                <h3>
+                    <t>Mejora la eficiencia en el desarrollo de productos</t>
+                </h3>
+                <ul class="course-calendar__items">
+                    <li class="text-dark-grey">
+                        <t>Enfocándose en lo que realmente aporta valor al usuario</t>
+                    </li>
+                    <li class="text-dark-grey">
+                        <t>Reduciendo el tiempo de desarrollo al evitar características innecesarias</t>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>
+                    <t>Aumenta la calidad y el éxito de los productos</t>
+                </h3>
+                <ul class="course-calendar__items">
+                    <li class="text-dark-grey">
+                        <t>Asegurando que el producto resuelva problemas reales de los usuarios</t>
+                    </li>
+                    <li class="text-dark-grey">
+                        <t>Mejorando la experiencia del usuario y la satisfacción</t>
+                    </li>
+                    <li class="text-dark-grey">
+                        <t>Alineando el desarrollo con los objetivos de negocio</t>
+                    </li>
+                    <li class="text-dark-grey">
+                        <t>Facilitando la adaptación a cambios en el mercado o en las necesidades de los usuarios</t>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>
+                    <t>Potencia la colaboración y la comunicación</t>
+                </h3>
+                <ul class="course-calendar__items">
+                    <li class="text-dark-grey">
+                        <t>Mejorando la comunicación entre equipos técnicos y no técnicos</t>
+                    </li>
+                    <li class="text-dark-grey">
+                        <t>Fomentando un enfoque colaborativo en la resolución de problemas</t>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </article>
+
+    <div class="button__wrapper">
+        <a class="button button--primary" href="#contactForm"
+           data-trackevent="contact_us.show_form.course_value">
+            <t>Contactar</t>
+        </a>
+    </div>
+</div>
