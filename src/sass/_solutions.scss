@@ -99,22 +99,22 @@
   // Team solution styling
   &--team {
     .solution-item__icon {
-      background: linear-gradient(135deg, #6A67F4, #5A57E8);
+      background: linear-gradient(135deg, #5ac3fd, #0794e3);
     }
 
     &::before {
-      background: linear-gradient(90deg, #6A67F4, #5A57E8);
+      background: linear-gradient(90deg, #5ac3fd, #0794e3);
     }
   }
 
   // Training solution styling
   &--training {
     .solution-item__icon {
-      background: linear-gradient(135deg, #57B894, #4A9B7E);
+      background: linear-gradient(135deg, #95e3c6, #4A9B7E);
     }
 
     &::before {
-      background: linear-gradient(90deg, #57B894, #4A9B7E);
+      background: linear-gradient(90deg, #95e3c6, #4A9B7E);
     }
   }
 }
