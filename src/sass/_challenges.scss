@@ -1,0 +1,128 @@
+.challenges {
+  padding: 4rem 25px;
+
+  .title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $darkest-grey;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+.challenge-item {
+  background: $white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  &__icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__text {
+    color: $dark-grey;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  // Color variations for different challenge items
+  &:nth-child(1) {
+    .challenge-item__icon {
+      background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.2));
+    }
+  }
+
+  &:nth-child(2) {
+    .challenge-item__icon {
+      background: linear-gradient(135deg, rgba(255, 167, 38, 0.1), rgba(255, 167, 38, 0.2));
+    }
+  }
+
+  &:nth-child(3) {
+    .challenge-item__icon {
+      background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(244, 67, 54, 0.2));
+    }
+  }
+
+  &:nth-child(4) {
+    .challenge-item__icon {
+      background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.2));
+    }
+  }
+}
+
+// Mobile optimizations
+@media (max-width: 767px) {
+  .challenges {
+    padding: 3rem 20px;
+
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    &__grid {
+      gap: 1.5rem;
+    }
+  }
+
+  .challenge-item {
+    padding: 1.5rem;
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1rem;
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
