@@ -42,9 +42,6 @@
   "Email": "Email",
   "Mensaje": "Message",
   "Enviar mensaje": "Send message",
-  "Quieres un equipo de alto rendimiento para desarrollar tu producto. Colaboramos con tu equipo o de forma autónoma.": "You want a high-performance team to develop your product. We collaborate with your team or work independently.",
-  "Formación continua": "Continuous training",
-  "Quieres que tu equipo se mantenga en forma a nivel tecnológico. Sesiones periódicas para desarrollar diferentes áreas.": "You want your team to stay fit technologically. Periodic sessions to develop different areas.",
   "Aceleración técnica": "Technical acceleration",
   "Quieres que tu equipo suba de nivel y/o formar a las nuevas incorporaciones de forma intensiva.": "You want your team to level up and/or train new hires intensively.",
   "Simplicidad": "Simplicity",
@@ -588,7 +585,6 @@
   "Estamos especializados en TDD, código legacy, patrones de diseño y ingeniería de producto.": "Specialized in TDD, legacy code, design patterns, and product engineering.",
   "Convertimos <span class=\"text-logo-color\">equipos técnicos</span> en motores de innovación que <span class=\"text-logo-color\">impulsan tu crecimiento</span>.": "We transform <span class=\"text-logo-color\">technical teams</span> into innovation engines that <span class=\"text-logo-color\">drive your growth</span>.",
   "Con años de experiencia técnica, formamos a tu equipo con metodologías probadas y orientadas a resultados.": "With years of technical experience, we train your team with proven and results-oriented methodologies.",
-  "Otros servicios que ofrecemos": "Other services we offer",
   "Podemos ayudarte": "We can help you",
   "Necesito un equipo": "I need a team",
   "Podemos integrarnos dentro de tu equipo o trabajar de forma autónoma. Diseñamos, construimos y lanzamos nuevas funcionalidades de forma rápida y con la calidad que esperas.": "We can integrate within your team or work autonomously. We design, build, and launch new features quickly and with the quality you expect.",
@@ -599,5 +595,6 @@
   "Formación": "Training",
   "Mentorización": "Mentoring",
   "Cultura": "Culture",
-  "Agendar reunión de 30 minutos": "Schedule 30-minute meeting"
+  "Agendar reunión de 30 minutos": "Schedule 30-minute meeting",
+  "IA": "AI"
 }
