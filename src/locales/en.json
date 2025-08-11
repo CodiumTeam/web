@@ -80,7 +80,6 @@
   "Formulario de contacto": "Contact form",
   "Empresas que ya han confiado en nosotros": "Companies that have already trusted us",
   "Información sobre": "Need information about",
-  "Lo bueno, si simple, dos veces bueno.": "The good, if simple, is twice as good.",
   "Más información": "More information",
   "Valores y metodología": "Values and methodology",
   "Curso Working with Legacy": "Working with Legacy training",
@@ -593,5 +592,6 @@
   "Simplifica la gestión de la infraestructura.": "Simplify infrastructure management.",
   "Automatiza las validaciones de tu web.": "Automate your website validations.",
   "Testeando legacy code. De e2e a unitario.": "Testing legacy code. From E2E to unit tests.",
-  "Quieres que tu equipo suba de nivel y/o formar a las nuevas incorporaciones de forma intensiva.": "You want your team to level up and/or train new hires intensively."
+  "Quieres que tu equipo suba de nivel y/o formar a las nuevas incorporaciones de forma intensiva.": "You want your team to level up and/or train new hires intensively.",
+  "Creemos que lo complejo es el problema y lo simple, la solución.": "We believe that complexity is the problem and simplicity is the solution."
 }
