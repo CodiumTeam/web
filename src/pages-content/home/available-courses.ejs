@@ -2,6 +2,17 @@
     <h2 class="title"><%- __('Potencia las habilidades de tu equipo') %></h2>
     <div class="section__grid section__grid--trainings trainings">
         <%- include('../../partials/cards/card-large-course', {
+        title: __('Crea productos que enamoren'),
+        imageUrl: '/img/illustrations/product-engineer.png',
+        buttonUrl: url('/curso-product-engineer.html'),
+        list: [
+        __('Céntrate en el problema y no en la solución'),
+        __('Entrega valor más rápido'),
+        __('Acelera la entrega de valor'),
+        __('Crea software mantenible y escalable')
+        ]
+        }) %>
+        <%- include('../../partials/cards/card-large-course', {
             title: __('Reduce los costes de desarrollo y mantenimiento desacoplando y testeando.'),
             imageUrl: '/img/legacy-code.svg',
             buttonUrl: url('/curso-legacy-code.html'),
