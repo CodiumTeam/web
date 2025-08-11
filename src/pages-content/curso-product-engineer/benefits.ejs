@@ -1,7 +1,7 @@
 <div class="container">
 
     <h2 class="text-center title">
-        <t>El valor de Product Engineer</t>
+        <t>El valor de un Product Engineer</t>
     </h2>
 
     <p class="text-center text-dark-grey">
@@ -13,23 +13,16 @@
 
     <article class="tdd-value">
         <div class="text-center tdd-value__item">
-             <% if (locale === 'es') { %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="399" height="337" viewBox="0 0 399 337" fill="none"
-                     class="tdd-value__image" alt="<%= __('El valor del curso explicado con bueno-bonito-barato') %>">
-                    <circle cx="194.5" cy="115.5" r="115.5" fill="#E84A4B" fill-opacity="0.8"/>
-                    <circle cx="115.5" cy="221.5" r="115.5" fill="#FFD700" fill-opacity="0.8"/>
-                    <path d="M399 221.5C399 285.289 347.289 337 283.5 337C219.711 337 168 285.289 168 221.5C168 157.711 219.711 106 283.5 106C347.289 106 399 157.711 399 221.5Z"
-                          fill="#5BC3EE" fill-opacity="0.8"/>
-                </svg>
-            <% } else if (locale === 'en') { %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="399" height="337" viewBox="0 0 399 337" fill="none"
-                     class="tdd-value__image" alt="<%= __('El valor del curso explicado con bueno-bonito-barato') %>">
-                    <circle cx="194.5" cy="115.5" r="115.5" fill="#E84A4B" fill-opacity="0.8"/>
-                    <circle cx="115.5" cy="221.5" r="115.5" fill="#FFD700" fill-opacity="0.8"/>
-                    <path d="M399 221.5C399 285.289 347.289 337 283.5 337C219.711 337 168 285.289 168 221.5C168 157.711 219.711 106 283.5 106C347.289 106 399 157.711 399 221.5Z"
-                          fill="#5BC3EE" fill-opacity="0.8"/>
-                </svg>
-            <% } %>
+            <img
+                    src="./img/illustrations/product-engineer.png"
+                    alt="<%= __('Ilustración: el valor de un Product Engineer') %>"
+                    width="768"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
+                    class="tdd-value__image"
+            />
+
         </div>
 
         <aside class="tdd-value__item">
