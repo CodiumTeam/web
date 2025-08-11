@@ -1,6 +1,8 @@
 <div class="carousel">
   <div class="glide" id="clients">
+    <% const hasManyClients = Array.isArray(clients) && clients.length > 5; %>
 
+    <% if (hasManyClients) { %>
     <div class="glide__arrows">
       <p
         class="glide__arrow glide__arrow--left js-clients-arrow"
@@ -9,23 +11,25 @@
         <i class="icon icon-keyboard_arrow_left"></i>
       </p>
     </div>
+    <% } %>
 
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides slides">
         <% clients.forEach(function(client){ %>
           <li class="glide__slide slide">
-             <div class="client__item <%= client.customClass %>">
-               <img
-                 class="glide__slide-image"
-                 src="<%= client.image %>"
-                 alt="<%= client.name %> logo"
-               />
-             </div>
+            <div class="client__item <%= client.customClass %>">
+              <img
+                class="glide__slide-image"
+                src="<%= client.image %>"
+                alt="<%= client.name %> logo"
+              />
+            </div>
           </li>
         <% }); %>
       </ul>
     </div>
 
+    <% if (hasManyClients) { %>
     <div class="glide__arrows">
       <p
         class="glide__arrow glide__arrow--right js-clients-arrow"
@@ -34,6 +38,6 @@
         <i class="icon icon-keyboard_arrow_right"></i>
       </p>
     </div>
-
+    <% } %>
   </div>
 </div>
