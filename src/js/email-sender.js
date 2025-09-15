@@ -42,6 +42,7 @@ function getSubject(trainingType, emailAddress) {
     development: 'Desarrollo',
     refactoring_to_patterns_training: 'Curso de Refactoring to patterns',
     qa_training: 'Curso de QA',
+    product_engineer_training: 'Curso de Product Engineer',
   };
 
   const subject = trainings[trainingType]
