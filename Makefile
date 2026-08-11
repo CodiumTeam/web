@@ -8,9 +8,13 @@ default: up
 install: .dependencies
 	git config --local core.hooksPath .githooks/
 
+# Run as the host user: as root npm de-escalates scripts to the uid owning /code
+# but keeps HOME=/root, so nested npm calls (lint-staged -> npm run i18n:extract)
+# fail to write the cache. Uids missing from the image get HOME=/, so the cache
+# needs an explicit writable path too.
 .PHONY: lint
 lint:
-	docker compose run -T web sh scripts/lint.sh
+	docker compose run -T -u $(shell id -u) -e npm_config_cache=/tmp/.npm web sh scripts/lint.sh
 
 .PHONY: up
 up: .dependencies
