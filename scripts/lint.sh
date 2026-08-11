@@ -1,4 +1,4 @@
-#!/bin/node
+#!/bin/sh
 
 GIT_NAME="Lint-staged"
 GIT_EMAIL="nobody@codium.team"

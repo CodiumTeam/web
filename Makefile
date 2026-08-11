@@ -14,7 +14,7 @@ install: .dependencies
 # needs an explicit writable path too.
 .PHONY: lint
 lint:
-	docker compose run -T -u $(shell id -u) -e npm_config_cache=/tmp/.npm web sh scripts/lint.sh
+	docker compose run --rm -T -u $(shell id -u) -e npm_config_cache=/tmp/.npm web ./scripts/lint.sh
 
 .PHONY: up
 up: .dependencies
